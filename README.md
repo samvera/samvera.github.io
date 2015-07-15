@@ -1,6 +1,6 @@
 # jekyll-bootstrap-theme
 
-Jekyll theme w/ Bootstrap; live demo [drjekyllthemes.github.io/jekyll-bootstrap-theme](http://drjekyllthemes.github.io/jekyll-bootstrap-theme/)
+Jekyll theme w/ Bootstrap; see a live demo @ [`drjekyllthemes.github.io/jekyll-bootstrap-theme` »](http://drjekyllthemes.github.io/jekyll-bootstrap-theme/)
 
 
 Note: The theme uses the bootstrap sass/scss (source) version
