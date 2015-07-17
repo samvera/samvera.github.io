@@ -1,8 +1,13 @@
 ###########
 # site.url, site.title
 
-url:   'http://drjekyllthemes.github.io/jekyll-bootstrap-theme'
 title: 'Jekyll Bootstrap Theme'
+
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+path: /jekyll-bootstrap-theme
+url:  'http://drjekyllthemes.github.io/jekyll-bootstrap-theme'
 
 
 ########
