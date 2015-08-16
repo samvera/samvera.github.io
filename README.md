@@ -32,3 +32,19 @@ tbd
 
 - [Shiori](https://github.com/ellekasai/shiori) by Elle Kasai
   (ships w/ pre-defined color themes e.g. Dark, Turquoise, Green, Blue, Purple, Orange, Red)
+
+
+
+### More Themes
+
+See the [Dr. Jekyll's Themes](https://drjekyllthemes.github.io) directory.
+
+### More Quick Starter Wizard Scripts
+
+See the [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
+
+
+## Questions? Comments?
+
+Send them along to the [wwwmake forum](http://groups.google.com/group/wwwmake).
+Thanks!
