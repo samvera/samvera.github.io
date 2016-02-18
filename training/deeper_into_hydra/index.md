@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Dive Deeper into Hydra"
 ---
 
