@@ -4,6 +4,8 @@ title: "Dive Deeper into Hydra"
 
 # Dive Deeper into Hydra
 
+_This is a draft for a course first offered at Code4Lib 2016. It is not complete. Caveat emptor._
+
 1. Legacy Data modeling
   1. What modeling looked like in "Dive into Hydra"
     * `has_many/belongs_to` or `has_and_belongs_to_many`
