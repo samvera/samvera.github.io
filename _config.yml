@@ -15,6 +15,9 @@ url:  'http://projecthydra.github.io/'
 
 markdown: kramdown
 
+kramdown:
+  input: GFM # Github Flavored Markdown
+
 sass:
   sass_dir: css
   style:    expanded
