@@ -1,0 +1,83 @@
+---
+layout: deck
+title: "Dive Deeper into Hydra"
+---
+
+<section class="slide" id="title-slide">
+  <h1>Dive Deeper into Hydra</h1>
+  <p><i>This is a draft for a course first offered at Code4Lib 2016. It is not complete. Caveat emptor.</i></p>
+</section>
+
+<section class="slide">
+  <h2>Legacy Data modeling</h2>
+</section>
+<section class="slide">
+     1. What modeling looked like in "Dive into Hydra"
+        * `has_many/belongs_to` or `has_and_belongs_to_many`
+</section>
+<section class="slide">
+     1. Shortcomings
+        * Every project has a unique structure
+        * Lack of ordering
+        * Resource contention
+</section>
+<section class="slide">
+  <h1>PCDM</h1>
+  <aside>History</aside>
+</section>
+<section class="slide">
+  <h2>Structural model</h2>
+  <img src="outdated_hydra_works.png">
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+</section>
+
+<section class="slide">
+  <h2>Projection onto LDP</h2>
+  * LDP Containers
+  * ORE Aggregation
+  * List node
+</section>
+<section class="slide">
+  <h2>Problems</h2>
+  <ul>
+    <li>Lots of writes</li>
+    <li>Resource contention</li>
+    <aside>
+      * Explain multiple process writing to a linked list.
+      * Redlock
+    </aside>
+</section>
+
+<section class="slide">
+  <h1>Curation Concerns</h1>
+</section>
+<section class="slide">
+  <h2>Model</h2>
+</section>
+<section class="slide">
+  <h2>Actor</h2>
+</section>
+<section class="slide">
+  <h2>Indexer</h2>
+</section>
+<section class="slide">
+  <h2>Presenter</h2>
+</section>
+<section class="slide">
+  <h2>Form</h2>
+        Replace the "rights" field with "copyright_status"
+  <pre><code>
+    module CurationConcerns
+      class AudioRecordingForm &lt; CurationConcerns::Forms::WorkForm
+        self.model_class = ::AudioRecording
+        delegate :copyright_status, to: :model
+
+        self.terms -= [:rights]
+        self.terms += [:copyright_status]
+      end
+    end
+   </code></pre>
+</section>
