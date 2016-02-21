@@ -39,6 +39,103 @@ title: "Dive Deeper into Hydra"
 
 <section class="slide">
   <h2>Hands on</h2>
+  <pre><code>
+  gem 'hydra-head', '9.1.0.rc5'
+  gem 'hydra-works', '0.7.0'
+  </code></pre>
+  <pre><code>
+  bundle install
+  rails generate hydra:install
+  rake hydra:server
+  </code></pre>
+
+  Then open a new tab.
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+  <pre><code>
+class Collection &lt; ActiveFedora::Base
+  include Hydra::Works::CollectionBehavior
+  property :title, predicate: ::RDF::Vocab::DC.title
+end
+  </code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+  <pre><code>
+class BibliographicWork &lt; ActiveFedora::Base
+  include Hydra::Works::WorkBehavior
+  property :title, predicate: ::RDF::DC.title
+  property :author, predicate: ::RDF::DC.creator
+  property :abstract, predicate: ::RDF::DC.abstract
+end
+  </code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+  <pre><code>
+class FileSet &lt; ActiveFedora::Base
+  include Hydra::Works::FileSetBehavior
+  property :title, predicate: ::RDF::DC.title
+end
+  </code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+  <pre><code>
+col = Collection.create(id: 'col-1', title: ["Works by Edgar Allan Poe"])
+col.uri
+=> #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/col-1&gt;
+  </code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+  <pre><code>
+bw = BibliographicWork.create(id: 'work-1', title: ["The Raven"], author: ["Poe, Edgar Allan"])
+bw.uri
+=> #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/work-1&gt;
+  </code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+  <pre><code>
+fs = FileSet.create(id: 'fileset-1', title: ["The PDF"])
+fs.uri
+=> #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/work-1&gt;
+  </code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+  <pre><code>
+  col.members &lt;&lt; bw
+  col.save
+  bw.members &lt;&lt; fs
+  bw.save
+  </code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands on</h2>
+  <pre><code>
+  col.works
+=&gt; [#&lt;BibliographicWork id: "work-1", title: "The Raven", author: "Poe, Edgar Allan", head_id: nil, tail_id: nil&gt;]
+
+bw.in_collections
+=&gt; [#&lt;Collection id: "col-1", title: "Works by Edgar Allan Poe", head_id: nil, tail_id: nil&gt;]
+
+bw.file_sets
+=&gt; [#&lt;FileSet id: "fileset-1", title: "The Raven pdf", head_id: nil, tail_id: nil&gt;]
+
+fs.in_works       ### TODO in_works returns []
+=&gt; [#&lt;BibliographicWork id: "work-1", title: "The Raven", author: "Poe, Edgar Allan", abstract: "A lonely man tries to ease his 'sorrow for the lost Lenore', by distracting his mind with old books of 'forgotten lore'.", head_id: nil, tail_id: nil&gt;]
+  </code></pre>
 </section>
 
 <section class="slide">
@@ -60,7 +157,7 @@ title: "Dive Deeper into Hydra"
 </section>
 
 <section class="slide">
-  <h1>Curation Concerns</h1>
+  <h1 style="font-family: 'Cherry Cream Soda', serif">Curation Concerns</h1>
 </section>
 <section class="slide">
   <h2>Model</h2>
