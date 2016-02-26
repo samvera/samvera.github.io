@@ -170,7 +170,61 @@ fs.in_works       ### TODO in_works returns []
 </section>
 <section class="slide">
   <h2>Presenter</h2>
+  What is a presenter for?
 </section>
+<section class="slide">
+  <h2>Customize the Presenter</h2>
+  Display a new field: <code>:restrictions</code>
+</section>
+
+<section class="slide">
+  <h3>Create a presenter</h3>
+    <pre><code>
+    class AudioRecordingPresenter &lt; CurationConcerns::WorkShowPresenter
+      delegate :restrictions, to: :solr_document
+    end
+    </code></pre>
+</section>
+
+<section class="slide">
+  <h3>Update the solr document</h3>
+    <pre><code>
+    # app/models/solr_document.rb
+    class SolrDocument
+      ...
+      def restrictions
+        fetch('restrictions_tesim', [])
+      end
+      ...
+    end
+    </code></pre>
+</section>
+
+<section class="slide">
+  <h3>Update the controller</h3>
+      <pre><code>
+class CurationConcerns::AudioRecordingsController &lt; ApplicationController
+  include CurationConcerns::CurationConcernController
+  set_curation_concern_type AudioRecording
+
+  # Gives the class of the show presenter. Override this if you want
+  # to use a different presenter.
+  def show_presenter
+    # CurationConcerns::WorkShowPresenter
+    ::AudioRecordingPresenter
+  end
+end
+      </code></pre>
+</section>
+<section class="slide">
+  <h3>Update the view partial</h3>
+      <pre><code>
+      copy <CurationConcern path>/app/views/curation_concerns/base/_attribute_rows.html.erb to
+      app/views/curation_concerns/audio_recordings/_attribute_rows.html.erb
+      </code></pre>
+
+</section>
+
 <section class="slide">
   <h2>Form</h2>
         Replace the "rights" field with "copyright_status"
