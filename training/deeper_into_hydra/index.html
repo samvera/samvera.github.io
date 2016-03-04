@@ -113,9 +113,10 @@ col.uri
 <section class="slide">
   <h2>Hands on</h2>
   <pre><code>
-bw = BibliographicWork.create(id: 'work-1',
-                              title: ["The Raven"],
-                              author: ["Poe, Edgar Allan"])
+bw = BibliographicWork.create(
+       id: 'work-1',
+       title: ["The Raven"],
+       author: ["Poe, Edgar Allan"])
 bw.uri
 => #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/work-1&gt;
   </code></pre>
