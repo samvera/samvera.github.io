@@ -102,7 +102,9 @@ end
 <section class="slide">
   <h2>Hands on</h2>
   <pre><code>
-col = Collection.create(id: 'col-1', title: ["Works by Edgar Allan Poe"])
+col = Collection.create(
+        id: 'col-1',
+        title: ["Works by Edgar Allan Poe"])
 col.uri
 => #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/col-1&gt;
   </code></pre>
