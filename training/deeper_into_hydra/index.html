@@ -8,6 +8,21 @@ title: "Dive Deeper into Hydra"
   <p><i>This is a draft for a course first offered at Code4Lib 2016. It is not complete. Caveat emptor.</i></p>
 </section>
 
+<section class="slide" style="text-align: center">
+  <h2 style="font-family: 'Amarante', cursive; color:white; background-color: #cc0000; border-radius: 40px; font-size: 2em; display: inline-block; padding: 0 30px 0 30px; margin: 10px; text-align: center; text-transform: uppercase;">Choose your own adventure</h2>
+  <h3 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a">You're the star of the story!</br>
+    Choose from 2 possible endings</h3>
+  <img src="stonehenge.png" style="height: 60vh">
+  <div class="row">
+    <div class="col-sm-6">
+      <h4 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a"><a href="#slide-2">Theory</a></h4>
+    </div>
+    <div class="col-sm-6">
+      <h4 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a"><a href="#slide-33">Practice</a></h4>
+    </div>
+  </div>
+</section>
+
 <section class="slide">
   <h2>Legacy data modeling</h2>
   <img src="legacy_modeling.svg">
@@ -96,7 +111,9 @@ col.uri
 <section class="slide">
   <h2>Hands on</h2>
   <pre><code>
-bw = BibliographicWork.create(id: 'work-1', title: ["The Raven"], author: ["Poe, Edgar Allan"])
+bw = BibliographicWork.create(id: 'work-1',
+                              title: ["The Raven"],
+                              author: ["Poe, Edgar Allan"])
 bw.uri
 => #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/work-1&gt;
   </code></pre>
@@ -140,13 +157,81 @@ fs.in_works       ### TODO in_works returns []
 
 <section class="slide">
   <h2>Projection onto LDP</h2>
-  * LDP Containers
-  * ORE Aggregation
-  * List node
 </section>
 <section class="slide">
-  <h2>Problems</h2>
-  <ul>
+  <h2>LDP Containers</h2>
+</section>
+<section class="slide">
+  <h2>LDP Basic Container</h2>
+  <pre class="slide"><code>&lt;/blog/entry1&gt; a ldp:Container .
+&lt;/blog/entry1&gt; dc:title "First blog entry" .</code></pre>
+  <pre class="slide"><code>&lt;/blog/entry1/comment1&gt; a ldp:RDFSource .
+&lt;/blog/entry1/comment1&gt; dc:title "this is a new comment" .</code></pre>
+</section>
+
+<section class="slide">
+  <h2>LDP Basic Container</h2>
+  <pre><code>&lt;/blog/entry1&gt; a ldp:Container .
+&lt;/blog/entry1&gt; dc:title "First blog entry" .
+&lt;/blog/entry1&gt; ldp:contains &lt;/blog/entry1/comment1&gt; .</code></pre>
+</section>
+
+<section class="slide">
+  <h2>LDP Direct Container</h2>
+  <pre class="slide"><code>&lt;/book1/files&gt; a ldp:DirectContainer .
+&lt;/book1/files&gt; ldp:membershipResource &lt;/book1&gt; .
+&lt;/book1/files&gt; ldp:hasMemberRelation pcdm:hasFile .
+&lt;/book1/files&gt; ldp:contains &lt;/book1/files/file1&gt; .</code></pre>
+</section>
+
+<section class="slide">
+  <h2>LDP Direct Container</h2>
+  <pre><code>&lt;/book1&gt; pcdm:hasFile &lt;/book1/files/file1&gt; .</code></pre>
+</section>
+
+<section class="slide">
+  <h2>LDP Indirect Container</h2>
+  <pre class="slide"><code>&lt;/collection1/members&gt; a ldp:IndirectContainer .
+&lt;/collection1/members&gt; ldp:membershipResource &lt;/collection1&gt; .
+&lt;/collection1/members&gt; ldp:hasMemberRelation pcdm:hasMember .
+&lt;/collection1/members&gt; ldp:insertedContentRelation ore:proxyFor .
+&lt;/collection1/members&gt; ldp:contains &lt;/book1&gt; .</code></pre>
+</section>
+
+<section class="slide">
+  <h2>LDP Indirect Container</h2>
+  <pre><code>&lt;/collection1&gt; pcdm:hasMember &lt;/book1&gt; .</code></pre>
+
+  <pre class="slide"><code>&lt;/collection1/members/proxy1&gt; ore:proxyFor &lt;/book1&gt; .</code></pre>
+</section>
+
+<section class="slide">
+  <h4 style="text-align: center; padding-top: 30vh">Let's investigate...</h4>
+</section>
+
+<section class="slide">
+  <h2>ORE Aggregation</h2>
+  <img src="ore_proxy.jpg">
+</section>
+
+<section class="slide">
+  <h2>List node</h2>
+  <p>Allows us to reorder a whole list in a single HTTP request</p>
+  <table class="table table-bordered table-hover">
+    <tr><td>&lt;book1/list_source&gt;</td><td>iana:first</td><td>&lt;book1/list_source#g1234&gt;</td></tr>
+    <tr><td>&lt;book1/list_source&gt;</td><td>iana:last</td><td>&lt;book1/list_source#g5678&gt;</td></tr>
+    <tr><td>&lt;book1/list_source#g1234&gt;</td><td>ore:proxyFor</td><td>&lt;page1&gt;</td></tr>
+    <tr><td>&lt;book1/list_source#g1234&gt;</td><td>ore:proxyIn	</td><td>&lt;book1&gt;</td></tr>
+    <tr><td>&lt;book1/list_source#g1234&gt;</td><td>iana:next</td><td>&lt;book1/list_source#g5678&gt;</td></tr>
+    <tr><td>&lt;book1/list_source#g5678&gt;</td><td>ore:proxyFor</td><td>&lt;page1&gt;</td></tr>
+    <tr><td>&lt;book1/list_source#g5678&gt;</td><td>ore:proxyIn</td><td>&lt;book1&gt;</td></tr>
+    <tr><td>&lt;book1/list_source#g5678&gt;</td><td>iana:prev</td><td>&lt;book1/list_source#g1234&gt;</td></tr>
+</table>
+</section>
+
+<section class="slide">
+<h2>Problems</h2>
+<ul>
     <li>Lots of writes</li>
     <li>Resource contention</li>
   </ul>
@@ -168,7 +253,6 @@ fs.in_works       ### TODO in_works returns []
     <li class="slide">HTML form output to object properties</li>
     <li class="slide">index search results to an HTML page</li>
   </ul>
-
 </section>
 
 <section class="slide">
