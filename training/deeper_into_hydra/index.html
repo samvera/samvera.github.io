@@ -517,3 +517,32 @@ end
 </code></pre>
 </section>
 
+<section class="slide">
+  <h2>Actor</h2>
+  <p>Customize such that a librarian is notified when a new item is added.</p>
+</section>
+
+<section class="slide">
+  <h2>Actor</h2>
+  <pre><code class="language-ruby"># app/actors/curation_concerns/book_actor.rb
+module CurationConcerns
+  class BookActor < CurationConcerns::BaseActor
+    include ::CurationConcerns::WorkActorBehavior
+
+    def create
+      result = super
+      NewDepositMailer.book_created(curation_concern).deliver_now
+  end
+end
+</code></pre>
+</section>
+
+<section class="slide">
+  <h1>Fin</h1>
+  <h3>More information</h3>
+  <ul>
+    <li><a href="https://github.com/projecthydra-labs/curation_concerns" target="new">https://github.com/projecthydra-labs/curation_concerns</a></li>
+    <li><a href="https://github.com/projecthydra-labs/hydra-works" target="new">https://github.com/projecthydra-labs/hydra-works</a></li>
+    <li><a href="https://github.com/projecthydra/sufia" target="new">https://github.com/projecthydra/sufia</a></li>
+</section>
+
