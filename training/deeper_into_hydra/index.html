@@ -17,7 +17,7 @@ title: "Dive Deeper into Hydra"
       <h4 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a"><a href="#slide-2">Theory</a></h4>
     </div>
     <div class="col-sm-6">
-      <h4 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a"><a href="#slide-34">Practice</a></h4>
+      <h4 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a"><a href="#slide-39">Practice</a></h4>
     </div>
   </div>
 </section>
@@ -53,11 +53,25 @@ title: "Dive Deeper into Hydra"
 
 <section class="slide">
   <h2>Hands On</h2>
+  <h3>VM Only</h3>
+  <pre><code>$ vagrant up
+$ vagrant ssh
+$ cp ~/downloads/solr-5.4.1.zip /tmp
+$ cp ~/downloads/fcrepo-webapp-4.5.0-jetty-console.jar /tmp
+$ cd /vagrant
+</code></pre>
+</section>
+
+
+<section class="slide">
+  <h2>Hands On</h2>
   <pre><code>$ rails new demo_works
 $ cd demo_works/</code></pre>
 <p>Then open <code>Gemfile</code> in your editor and add these lines:</p>
 <pre><code class="language-ruby">gem 'hydra', '9.1.0'
 gem 'hydra-works', '0.7.0'</code></pre>
+<p>Then uncomment this line (unless you're on MacOS)</p>
+<pre><code class="language-ruby">gem 'therubyracer', platforms: :ruby</code></pre>
 Next, save the file and exit the editor.
 </section>
 
@@ -67,8 +81,34 @@ Next, save the file and exit the editor.
 <pre><code>$ bundle install
 $ rails generate hydra:install
 </code></pre>
+</section>
 
+<section class="slide">
+  <h2>Hands On</h2>
+  <h3>Not on a VM</h3>
 <pre><code>$ rake hydra:server</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands On</h2>
+  <h3>VM Only</h3>
+  <pre><code>$ vagrant ssh
+$ cd /vagrant/hydra-demo
+$ solr_wrapper -p 8983 -d solr/config/ --collection_name hydra-development -i ~/services/solr-5.4.1
+</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands On</h2>
+  <h3>VM Only</h3>
+  <pre><code>$ vagrant ssh
+$ cd /vagrant/hydra-demo
+$ fcrepo_wrapper -p 8984 -d ~/services/fcrepo-data -i ~/services/fcrepo-4.5.0
+</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands On</h2>
 <p>Now open a new terminal window and run: </p>
 <pre><code>$ rails console</code></pre>
 </section>
@@ -295,9 +335,42 @@ $ rails generate curation_concerns:install
 
   <p>We will generate a kind of work called a Book:</p>
 <pre><code>$ rails generate curation_concerns:work Book</code></pre>
+</section>
 
-<p>Now we can start the server:</p>
+<section class="slide">
+  <h2>Hands On</h2>
+  <h3>Not on a VM</h3>
 <pre><code>$ rake hydra:server</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands On</h2>
+  <h3>VM Only</h3>
+  <pre><code>$ vagrant ssh
+$ cd /vagrant/hydra-demo
+$ solr_wrapper -p 8983 -d solr/config/ --collection_name hydra-development -i ~/services/solr-5.4.1
+</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands On</h2>
+  <h3>VM Only</h3>
+  <pre><code>$ vagrant ssh
+$ cd /vagrant/hydra-demo
+$ fcrepo_wrapper -p 8984 -d ~/services/fcrepo-data -i ~/services/fcrepo-4.5.0
+</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Hands On</h2>
+  <h3>VM Only</h3>
+  <pre><code>$ vagrant ssh
+$ cd /vagrant/hydra-demo
+$ rails server -b 0.0.0.0
+</code></pre>
+</section>
+
+<section class="slide">
 <p>When you see <code>WEBrick::HTTPServer#start: pid=5962 port=3000</code> the server is ready to visit at <a href="http://localhost:3000/" target="_new">http://localhost:3000/</a>
 
 </section>
