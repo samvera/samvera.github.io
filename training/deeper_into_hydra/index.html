@@ -432,7 +432,7 @@ indexer.generate_solr_document
 
 <section class="slide">
   <h2>Indexer</h2>
-  <pre><code class="language-ruby"># app/indexers/book_indexers.rb
+  <pre><code class="language-ruby"># app/indexers/book_indexer.rb
 class BookIndexer < CurationConcerns::WorkIndexer
 end
 </code></pre>
@@ -449,13 +449,13 @@ end
 
 <section class="slide">
   <h2>Indexer</h2>
-  <pre><code class="language-ruby"># app/indexers/book_indexers.rb
+  <pre><code class="language-ruby"># app/indexers/book_indexer.rb
 class BookIndexer < CurationConcerns::WorkIndexer
   def generate_solr_document
     super.tap do |solr_doc|
       Solrizer.set_field(solr_doc,
                          'number_of_files',
-                         file_sets.count,
+                         object.file_sets.count,
                          :displayable)
     end
   end
