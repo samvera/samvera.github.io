@@ -93,8 +93,7 @@ $ rails generate hydra:install
   <h2>Hands On</h2>
   <h3>VM Only</h3>
   <pre><code>$ vagrant ssh
-$ cd /vagrant/hydra-demo
-$ solr_wrapper -p 8983 -d solr/config/ --collection_name hydra-development -i ~/services/solr-5.4.1
+$ solr_wrapper -p 8983 -d /vagrant/demo_works/solr/config/ --collection_name hydra-development -i ~/services/solr-5.4.1
 </code></pre>
 </section>
 
@@ -102,7 +101,6 @@ $ solr_wrapper -p 8983 -d solr/config/ --collection_name hydra-development -i ~/
   <h2>Hands On</h2>
   <h3>VM Only</h3>
   <pre><code>$ vagrant ssh
-$ cd /vagrant/hydra-demo
 $ fcrepo_wrapper -p 8984 -d ~/services/fcrepo-data -i ~/services/fcrepo-4.5.0
 </code></pre>
 </section>
@@ -347,8 +345,7 @@ $ rails generate curation_concerns:install
   <h2>Hands On</h2>
   <h3>VM Only</h3>
   <pre><code>$ vagrant ssh
-$ cd /vagrant/hydra-demo
-$ solr_wrapper -p 8983 -d solr/config/ --collection_name hydra-development -i ~/services/solr-5.4.1
+$ solr_wrapper -p 8983 -d /vagrant/demo_repo/solr/config/ --collection_name hydra-development -i ~/services/solr-5.4.1
 </code></pre>
 </section>
 
@@ -356,7 +353,6 @@ $ solr_wrapper -p 8983 -d solr/config/ --collection_name hydra-development -i ~/
   <h2>Hands On</h2>
   <h3>VM Only</h3>
   <pre><code>$ vagrant ssh
-$ cd /vagrant/hydra-demo
 $ fcrepo_wrapper -p 8984 -d ~/services/fcrepo-data -i ~/services/fcrepo-4.5.0
 </code></pre>
 </section>
