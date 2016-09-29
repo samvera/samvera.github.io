@@ -1,0 +1,289 @@
+---
+layout: deck
+title: "Touring the design patterns in Hydra"
+---
+
+<section class="slide" id="title-slide">
+  <h1>Touring the design patterns in Hydra</h1>
+</section>
+
+<section class="slide" style="text-align: center">
+  <img src="bike.png" alt="a touring bike">
+</section>
+
+<section class="slide" style="text-align: center">
+  <h2>Where are we? What are we doing here?</h2>
+
+  <p>MVC, "The Rails Way", "Working code wins"</p>
+</section>
+
+<section class="slide" style="text-align: center">
+  <h1>Where are we going?<br>What are our goals?<br>Where to next?</h1>
+</section>
+
+<section class="slide">
+  <h1>Maintainable software</h1>
+  <p>Well defined interfaces</p>
+  <p>Fewer included modules</p>
+  <p>Customize without gymnasics to override controller/helper methods</p>
+  <p>Keep it working</p>
+</section>
+
+<section class="slide" style="text-align: center">
+  <img src="" alt="uncle bob">
+</section>
+
+<section class="slide">
+  <img src="agile_software_development.jpg">
+</section>
+
+<section class="slide">
+  <h2>SOLID: The first five principles</h2>
+  <ul>
+    <li>Single responsibility</li>
+    <li>Open for extension, closed for modification</li>
+    <li>Liskov substitution</li>
+    <li>Interface Segregation</li>
+    <li>Dependency Inversion</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Anti-pattern: <span class="slide">Rails Helpers</span></h2>
+  <span class="slide">
+    <h4>Multiple responsibilities:</h4>
+    <p><a href="https://github.com/projectblacklight/blacklight/blob/c57262d10f415b1661fa7860cc920b793a7af2bf/app/helpers/blacklight/facets_helper_behavior.rb" target="_new">blacklight/facets_helper_behavior.rb</a></p>
+  </span>
+</section>
+
+<section class="slide">
+  <h2>Solution: <span class="slide">Presenter</span></h2>
+  <h3 class="slide">a.k.a.: Decorator or View-Model</h3>
+  The presenter is responsible for translating values from the model to a presentable form.
+  <pre class="slide"><code  class="language-ruby">class BookPresenter
+  def initialize(book)
+    @book = book
+  end
+
+  delegate :title, :creator, to: :@book
+
+  def glitter_title
+    '★' + @book.title + '☆'
+  end
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Presenter usage</h2>
+  <pre><code  class="language-ruby">class BooksController < ApplicationController
+  def show
+    book = Book.find(params[:id])
+    @presenter = BookPresenter.new(book)
+  end
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>In real code</h2>
+  <a href="https://github.com/projecthydra/curation_concerns/blob/master/app/controllers/concerns/curation_concerns/curation_concern_controller.rb#L56" target="_new">app/controllers/concerns/curation_concerns/curation_concern_controller.rb#L56</a>
+</section>
+
+<section class="slide">
+  <h2>Hands on exercise</h2>
+  <ul>
+    <li>Start up the VM</li>
+    <li>Log into curation_concerns</li>
+  </ul>
+  <p><strong>Task:</strong> Display a new field 'restrictions'</p>
+</section>
+
+<section class="slide">
+  <h3>Start up the VM</h3>
+  <pre><code>$ vagrant up
+$ vagrant ssh</code></pre>
+</section>
+
+<section class="slide">
+  <h3>Generate CurationConcerns application</h3>
+  <pre><code>$ cd cc-sample
+$ rails generate curation_concerns:install
+$ rake db:migrate</code></pre>
+</section>
+
+
+<section class="slide">
+  <h3>Generate a book</h3>
+  <pre><code>$ rails generate curation_concerns:work Book</code></pre>
+</section>
+
+<section class="slide">
+  <h3>Start up the services</h3>
+  <p>Open 3 more terminal windows. In each window:</p>
+  <pre><code>$ vagrant ssh
+$ cd cc-sample</code></pre>
+</section>
+
+<section class="slide">
+  <h3>Start up the services</h3>
+  <p>Start Solr:
+  <code>$ solr_wrapper</code></p>
+  <p>Start Fedora:
+  <code>$ fcrepo_wrapper</code></p>
+  <p>Start Rails:
+  <code>$ rails server -b 0.0.0.0</code></p>
+</section>
+
+<section class="slide">
+  <h3>Create an account</h3>
+  <p>When you see <code>WEBrick::HTTPServer#start: pid=5962 port=3000</code> the server is ready 
+  to visit at <a href="http://localhost:3000/">http://localhost:3000/</a></p>
+
+</section>
+
+<section class="slide">
+  <h3>Create a presenter</h3>
+  <p><strong>Task:</strong> Display a new field 'restrictions'</p>
+  <p>in the fourth terminal window:</p>
+  <pre><code>$ mkdir app/presenters
+$ nano app/presenters/book_presenter.rb</code></pre>
+</section>
+
+<section class="slide">
+  <h3>Create a presenter</h3>
+    <pre><code class="language-ruby"># app/presenters/book_presenter.rb
+class BookPresenter &lt; CurationConcerns::WorkShowPresenter
+  delegate :restrictions, to: :solr_document
+end</code></pre>
+    <p>* You need to restart your rails server</p>
+</section>
+
+<section class="slide">
+  <h3>Update the solr document</h3>
+    <pre><code class="language-ruby"># app/models/solr_document.rb
+class SolrDocument
+  ...
+  def restrictions
+    fetch('restrictions_tesim', ['nothing'])
+  end
+  ...
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h3>Update the controller</h3>
+      <pre><code class="language-ruby"># app/controllers/cu.../books_controller.rb
+class CurationConcerns::BooksController &lt; ApplicationController
+  include CurationConcerns::CurationConcernController
+  self.curation_concern_type = Book
+
+  # Set our custom presenter
+  self.show_presenter = ::BookPresenter
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h3>Update the view partial</h3>
+      <pre><code>$ cp `bundle show curation_concerns`/app/views/curation_concerns/base/_attribute_rows.html.erb
+app/views/curation_concerns/books/
+
+$ nano app/views/curation_concerns/books/_attribute_rows.html.erb
+      </code></pre>
+</section>
+
+<section class="slide">
+  <h3>Update the view partial</h3>
+      <pre><code class="language-ruby"># app/view/curation_concerns/books/_attribute_rows.html.erb
+&lt;%= presenter.attribute_to_html(:description) %&gt;
+&lt;%= presenter.attribute_to_html(:creator, render_as: :linked ) %&gt;
+...
+&lt;%= presenter.attribute_to_html(:source) %&gt;
+
+&lt;%= presenter.attribute_to_html(:restrictions) %&gt;
+      </code></pre>
+</section>
+<section class="slide">
+  <h3>View your work</h3>
+  Now, if you create a book, you should see the "restrictions" row display in the metadata.
+</section>
+
+<section class="slide">
+  <h3>Update the a presenter</h3>
+    <pre><code class="language-ruby"># app/presenters/book_presenter.rb
+class BookPresenter &lt; CurationConcerns::WorkShowPresenter
+  # delegate :restrictions, to: :solr_document
+
+  def restrictions
+    if solr_document.restrictions.first == 'nothing'
+     "There are no restrictions on this object"
+    else
+      solr_document.restrictions
+    end
+  end
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Presenters in conclusion</h2>
+  <ul>
+    <li>A pattern to encapsulate helpers that work on a particular model</li>
+    <li>Also called decorators or view-models</li>
+    <li>You can find them in hydra-editor, curation_concerns and sufia</li>
+    <li>In Hydra the Presenter is delegating to a SolrDocument</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Forms</h2>
+  <p>Like a presenter but backed by a ActiveFedora object, not a SolrDocument</p>
+  <p><strong>Task:</strong> Add 'restrictions' to the create/edit page.</p>
+</section>
+
+<section class="slide">
+  <h3>Customize the model</h3>
+  <pre><code class="language-ruby"># app/models/book.rb
+class Book &lt; ActiveFedora::Base
+  include ::CurationConcerns::WorkBehavior
+  include ::CurationConcerns::BasicMetadata
+  # Change this to restrict which works can be added as a child.
+  # self.valid_child_concerns = []
+  validates :title, presence: { message: 'Your work must have a title.' }
+  property :restrictions, predicate: ::RDF::Vocab::DC.accessRights do |index|
+    index.as :stored_searchable
+  end
+end</code></pre>
+</section>
+<section class="slide">
+  <h3>Customize the form</h3>
+  <pre><code class="language-ruby"># app/forms/curation_concers/book_form.rb
+module CurationConcerns
+  class BookForm &lt; CurationConcerns::Forms::WorkForm
+    self.model_class = ::book
+
+    delegate :restrictions, to: :model
+    self.terms += [:restrictions]
+  end
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h3>Update the view partial</h3>
+  <pre><code>$ cp `bundle show curation_concerns`/app/views/curation_concerns/base/_form_additional_information.html.erb
+app/views/curation_concerns/books/
+
+$ nano app/views/curation_concerns/books/_form_additional_information.html.erb
+      </code></pre>
+</section>
+
+<section class="slide">
+  <h3>Update the view partial</h3>
+  <pre><code class="language-html">...
+<%= f.input :source,       as: :multi_value, input_html: { class: 'form-control' } %>
+<%= f.input :language,     as: :multi_value, input_html: { class: 'form-control' } %>
+<%= f.input :restrictions, as: :multi_value, input_html: { class: 'form-control' } %>
+...</code></pre>
+</section>
+
+<section class="slide">
+  <h1>Fin</h1>
+</section>
+
