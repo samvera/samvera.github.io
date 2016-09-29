@@ -8,7 +8,8 @@ title: "Touring the design patterns in Hydra"
 </section>
 
 <section class="slide" style="text-align: center">
-  <img src="bike.png" alt="a touring bike">
+  <img src="touring.jpg" alt="touring bicycles" style="height: 85vh; margin-top: 5vh;">
+  <p><small>cc-by-nd: <a href="https://flic.kr/p/gHzsqC">8barbikes</a></small></p>
 </section>
 
 <section class="slide" style="text-align: center">
@@ -22,7 +23,7 @@ title: "Touring the design patterns in Hydra"
 </section>
 
 <section class="slide">
-  <h1>Maintainable software</h1>
+  <h2>Maintainable software</h2>
   <p>Well defined interfaces</p>
   <p>Fewer included modules</p>
   <p>Customize without gymnasics to override controller/helper methods</p>
@@ -30,11 +31,11 @@ title: "Touring the design patterns in Hydra"
 </section>
 
 <section class="slide" style="text-align: center">
-  <img src="" alt="uncle bob">
+  <img src="https://d26o5k45lnmm4v.cloudfront.net/authors-robert-martin-v0.jpg" style="height: 90vh; margin-top: 5vh;" alt="uncle bob">
 </section>
 
 <section class="slide">
-  <img src="agile_software_development.jpg">
+  <img src="agile_software_development.jpg" style="height: 90vh; margin-top: 5vh;">
 </section>
 
 <section class="slide">
@@ -50,17 +51,32 @@ title: "Touring the design patterns in Hydra"
 
 <section class="slide">
   <h2>Anti-pattern: <span class="slide">Rails Helpers</span></h2>
+  <div style="float: right; margin-right: 5vw">
+    <img src="anti-pattern.jpg" alt="touring bicycles" style="width: 45vw;">
+    <p><small>cc-by-nc: <a href="https://flic.kr/p/8sp6Y4">Edmund White</a></small></p>
+  </div>
+
   <span class="slide">
     <h4>Multiple responsibilities:</h4>
-    <p><a href="https://github.com/projectblacklight/blacklight/blob/c57262d10f415b1661fa7860cc920b793a7af2bf/app/helpers/blacklight/facets_helper_behavior.rb" target="_new">blacklight/facets_helper_behavior.rb</a></p>
+    <p><a href="https://github.com/projectblacklight/blacklight/blob/c57262d10f415b1661fa7860cc920b793a7af2bf/app/helpers/blacklight/facets_helper_behavior.rb" target="_new">FacetsHelperBehavior</a></p>
   </span>
 </section>
 
 <section class="slide">
   <h2>Solution: <span class="slide">Presenter</span></h2>
+  <div style="float: right; margin-right: 5vw; margin-left: 10px">
+    <img src="paceline.jpg" alt="track bicycles" style="width: 45vw;">
+    <p><small>cc-by-nc: <a href="https://flic.kr/p/7tpXgx">Steve McFarland</a></small></p>
+  </div>
   <h3 class="slide">a.k.a.: Decorator or View-Model</h3>
+  <span class="slide">
   The presenter is responsible for translating values from the model to a presentable form.
-  <pre class="slide"><code  class="language-ruby">class BookPresenter
+  </span>
+</section>
+
+<section class="slide">
+  <h2>Presenter</h2>
+  <pre><code  class="language-ruby">class BookPresenter
   def initialize(book)
     @book = book
   end
@@ -90,6 +106,10 @@ end</code></pre>
 
 <section class="slide">
   <h2>Hands on exercise</h2>
+  <div style="float: right; margin-right: 5vw; margin-left: 10px">
+    <img src="dummy.jpg" alt="crash test dummy" style="width: 45vw;">
+    <p><small>cc-by: <a href="https://flic.kr/p/nmV7A9">Timmy_L</a></small></p>
+  </div>
   <ul>
     <li>Start up the VM</li>
     <li>Log into curation_concerns</li>
@@ -284,6 +304,105 @@ $ nano app/views/curation_concerns/books/_form_additional_information.html.erb
 </section>
 
 <section class="slide">
-  <h1>Fin</h1>
+  <h3>Maybe make the property single value?</h3>
+</section>
+
+<section class="slide">
+  <h2>Anti-pattern: <span class="slide">bloated services</span></h2>
+  <div style="float: right; margin-right: 5vw">
+    <img src="anti-pattern2.jpg" alt="crash" style="width: 45vw;">
+    <p><small>cc-by-nc-nd: <a href="https://flic.kr/p/9J5nCV">Rob Lucas</a></small></p>
+  </div>
+
+  <span class="slide">
+    <h4>Multiple responsibilities:</h4>
+    <p><a href="https://github.com/projecthydra/sufia/blob/6.x-stable/sufia-models/app/actors/sufia/generic_file/actor.rb#L32-L43" target="_new">GenericFile::Actor</a></p>
+  </span>
+</section>
+
+<section class="slide">
+  <h2>Solution: <span class="slide">Stack</span></h2>
+  <div style="float: right; margin-right: 5vw; margin-left: 10px">
+    <img src="stacked.jpg" alt="stacked" style="height: 60vh;">
+    <p><small>cc-by: <a href="https://flic.kr/p/oc8g1c">Mark B. Schlemmer</a></small></p>
+  </div>
+  <span class="slide">
+    Flow from one stack frame at a time, with each frame having a single responsibility.
+    <p><a href="https://github.com/projecthydra/curation_concerns/blob/master/app/services/curation_concerns/actors/actor_factory.rb#L10-L18" target="_new">Actors::ActorFactory</a></p>
+  </span>
+</section>
+
+<section class="slide">
+  <h2>Actor Stack</h2>
+  <img src="actor_stack.png" alt="actor stack" style="height: 70vh;">
+</section>
+
+<section class="slide">
+  <h2>Actor Stack</h2>
+  <pre><code class="language-ruby"># app/actors/curation_concerns/actors/add_to_collection_actor.rb
+class AddToCollectionActor < AbstractActor
+  def create(attributes)
+    collection_ids = attributes.delete(:collection_ids)
+    next_actor.create(attributes) && add_to_collections(collection_ids)
+  end
+
+  def update(attributes)
+    collection_ids = attributes.delete(:collection_ids)
+    add_to_collections(collection_ids) && next_actor.update(attributes)
+  end
+  
+  private
+  ...
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Create actor</h2>
+  <pre><code class="language-ruby"># app/actors/curation_concerns/actors/metadata_enrichment_actor.rb
+module CurationConcerns::Actors
+  class MetadataEnrichmentActor < AbstractActor
+    def create(attributes)
+      enrich_metadata(attributes) && next_actor.create(attributes)
+    end
+
+    private
+      def enrich_metadata(attributes)
+        if attributes.fetch('creator').include?("Carla Hayden")
+          attributes['description'] &lt;&lt; "She's the Librarian of Congress"
+        end
+        true
+      end
+  end
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Add actor to the stack</h2>
+  <pre><code class="language-ruby"># config/initializers/actor_stack.rb
+require 'curation_concerns/actors/actor_factory'
+
+class CurationConcerns::Actors::ActorFactory
+  def self.stack_actors(curation_concern)
+    [MetadataEnrichmentActor,
+     AddToCollectionActor,
+     AddToWorkActor,
+     AssignRepresentativeActor,
+     AttachFilesActor,
+     ApplyOrderActor,
+     InterpretVisibilityActor,
+     model_actor(curation_concern)]
+  end
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Add actor to the stack</h2>
+  <p>Since we just changed an initializer, we'll need to restart the Rails server. Now try it out!</p>
+</section>
+
+<section class="slide">
+  <h2>Fin</h2>
+  <img src="victory.jpg" alt="track bicycles" style="width: 80vw;">
+  <p><small>cc-by-sa: <a href="https://flic.kr/p/9QKXEf">Brandon O'Connor</a></small></p>
 </section>
 
