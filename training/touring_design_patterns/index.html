@@ -308,6 +308,15 @@ $ nano app/views/curation_concerns/books/_form_additional_information.html.erb
 </section>
 
 <section class="slide">
+  <h2>Forms in conclusion</h2>
+  <ul>
+    <li>Just like a presenter, but with an ActiveFedora object instead of a SolrDocument</li>
+    <li>Follows the decorator/view-model pattern</li>
+    <li>You can find them in hydra-editor, curation_concerns and sufia</li>
+  </ul>
+</section>
+
+<section class="slide">
   <h2>Anti-pattern: <span class="slide">bloated services</span></h2>
   <div style="float: right; margin-right: 5vw">
     <img src="anti-pattern2.jpg" alt="crash" style="width: 45vw;">
@@ -399,6 +408,34 @@ end</code></pre>
   <h2>Add actor to the stack</h2>
   <p>Since we just changed an initializer, we'll need to restart the Rails server. Now try it out!</p>
 </section>
+
+<section class="slide">
+  <h2>Actor stack in conclusion</h2>
+  <ul>
+    <li>An ordered collection of classes that implement create and update</li>
+    <li>The create/update methods return true to continue and false to abort</li>
+    <li>Inspired by Rack middleware</li>
+    <li>Still needs work to be more configurable by end users</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Anti-pattern: <span class="slide">bloated controller</span></h2>
+  <div style="float: right; margin-right: 5vw">
+    <img src="anti-pattern3.jpg" alt="crash" style="width: 45vw;">
+    <p><small>cc-by-nc: <a href="https://flic.kr/p/pv5B1d">Brad Hammonds</a></small></p>
+  </div>
+
+  <span class="slide">
+    <h4>Multiple responsibilities:</h4>
+    <p><a href="https://github.com/projectblacklight/blacklight/blob/v5.2.0/lib/blacklight/request_builders.rb#L7" target="_new">RequestBuilders</a> (included onto CatalogController)</p>
+  </span>
+</section>
+
+<section class="slide">
+  <h2>Search Builders</h2>
+</section>
+
 
 <section class="slide">
   <h2>Fin</h2>
