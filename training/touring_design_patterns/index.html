@@ -124,9 +124,14 @@ $ vagrant ssh</code></pre>
 </section>
 
 <section class="slide">
+  <h3>Change directory to the CurationConcerns sample application</h3>
+  <pre><code>$ cd cc-sample</code></pre>
+</section>
+
+<section class="slide">
   <h3>Generate CurationConcerns application</h3>
-  <pre><code>$ cd cc-sample
-$ rails generate curation_concerns:install
+  <p><strong>If you're using the provided VM, this is already done. You can skip this step.</strong></p>
+  <pre><code>$ rails generate curation_concerns:install
 $ rake db:migrate</code></pre>
 </section>
 
@@ -155,8 +160,10 @@ $ cd cc-sample</code></pre>
 
 <section class="slide">
   <h3>Create an account</h3>
-  <p>When you see <code>WEBrick::HTTPServer#start: pid=5962 port=3000</code> the server is ready 
+  <p>When you see <code>Listening on tcp://0.0.0.0:3000</code> the server is ready 
   to visit at <a href="http://localhost:3000/">http://localhost:3000/</a></p>
+
+  <p><small>* If you're using Rails 4, you'll see <code>WEBrick::HTTPServer#start: pid=5962 port=3000</code> instead.</small></p>
 
 </section>
 
@@ -203,8 +210,7 @@ end</code></pre>
 
 <section class="slide">
   <h3>Update the view partial</h3>
-      <pre><code>$ cp `bundle show curation_concerns`/app/views/curation_concerns/base/_attribute_rows.html.erb
-app/views/curation_concerns/books/
+      <pre><code>$ cp `bundle show curation_concerns`/app/views/curation_concerns/base/_attribute_rows.html.erb app/views/curation_concerns/books/
 
 $ nano app/views/curation_concerns/books/_attribute_rows.html.erb
       </code></pre>
@@ -274,7 +280,7 @@ end</code></pre>
 </section>
 <section class="slide">
   <h3>Customize the form</h3>
-  <pre><code class="language-ruby"># app/forms/curation_concers/book_form.rb
+  <pre><code class="language-ruby"># app/forms/curation_concerns/book_form.rb
 module CurationConcerns
   class BookForm &lt; CurationConcerns::Forms::WorkForm
     self.model_class = ::book
@@ -347,7 +353,7 @@ $ nano app/views/curation_concerns/books/_form_additional_information.html.erb
 </section>
 
 <section class="slide">
-  <h2>Actor Stack</h2>
+  <h2>Actor Stack: In the wild</h2>
   <pre><code class="language-ruby"># app/actors/curation_concerns/actors/add_to_collection_actor.rb
 class AddToCollectionActor < AbstractActor
   def create(attributes)
@@ -434,8 +440,100 @@ end</code></pre>
 
 <section class="slide">
   <h2>Search Builders</h2>
+  <ul>
+    <li>Build a query for the index (Solr)</li>
+    <li>Decouples the controller from the index implementation</li>
+    <li>Allows us to build queryies outside of the Controller</li>
+    <li>Blacklight generates one for you: <code>app/models/search_builder.rb</code></li>
+  </ul>
 </section>
 
+<section class="slide">
+  <h2>Search Builder: In the wild</h2>
+  <pre><code class="language-ruby"># app/search_builders/curation_concerns/collection_search_builder.rb
+class CollectionSearchBuilder < ::SearchBuilder
+  include FilterByType
+  # Defines which search_params_logic should be used when searching for Collections
+  self.default_processor_chain = [:default_solr_parameters, :add_query_to_solr,
+                                  :add_access_controls_to_solr_params, :filter_models,
+                                  :some_rows, :sort_by_title]
+
+  ...
+end</code></pre>
+</section>
+
+
+
+<section class="slide">
+  <h2>Search Builder: In the wild (cont.)</h2>
+  <pre><code class="language-ruby"># app/search_builders/curation_concerns/collection_search_builder.rb
+class CollectionSearchBuilder < ::SearchBuilder
+  ...
+  def some_rows(solr_parameters)
+    solr_parameters[:rows] = '100'
+  end
+
+  # This overrides FilterByType and ensures we only match on collections.
+  def only_collections?
+    true
+  end
+  ...
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Search Builder: In the wild (cont.)</h2>
+  <pre><code class="language-ruby"># app/search_builders/curation_concerns/collection_search_builder.rb
+module FilterByType
+  # Add queries that excludes everything except for works and collections
+  def filter_models(solr_parameters)
+    solr_parameters[:fq] ||= []
+    solr_parameters[:fq] << "{!terms f=has_model_ssim}#{models_to_solr_clause}"
+  end
+
+  # Override this method if you want to filter for a different set of models.
+  # @return [Array<Class>] a list of classes to include
+  def models
+    work_classes + collection_classes
+  end
+  
+  def models_to_solr_clause
+    models.map(&:to_rdf_representation).join(',')
+  end
+  ...
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Exercise</h2>
+  <p>Create a search builder that finds books by a particular person</p>
+  <pre><code class="language-ruby">class CreatedBySearchBuilder &lt; ::SearchBuilder
+  self.default_processor_chain = [:for_users]
+  def for_users(solr_parameters)
+    solr_parameters[:fq] ||= []
+    solr_parameters[:fq] << "{!terms f=creator_tesim}#{blacklight_params[:creator]}"
+  end
+end</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Exercise</h2>
+  <pre><code class="language-ruby">builder = CreatedBySearchBuilder.new(nil).where(creator: 'Zoia Horn')
+builder.query
+  => {"facet.field"=>[], "facet.query"=>[], "facet.pivot"=>[],
+      "fq"=>["{!terms f=creator_tesim}Zoia Horn"], "hl.fl"=>[]}
+</code></pre>
+</section>
+
+<section class="slide">
+  <h2>Exercise</h2>
+  <p>Create a search builder that finds books by a particular person</p>
+  <pre><code class="language-ruby">repository = CatalogController.new.repository
+builder = CreatedBySearchBuilder.new(nil).where(creator: 'Zoia Horn')
+response = repository.search(builder)
+response.documents
+</code></pre>
+</section>
 
 <section class="slide">
   <h2>Fin</h2>
