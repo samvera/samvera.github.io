@@ -402,16 +402,18 @@ end</code></pre>
   <pre><code class="language-ruby"># config/initializers/actor_stack.rb
 require 'curation_concerns/actors/actor_factory'
 
-class CurationConcerns::Actors::ActorFactory
-  def self.stack_actors(curation_concern)
-    [MetadataEnrichmentActor,
-     AddToCollectionActor,
-     AddToWorkActor,
-     AssignRepresentativeActor,
-     AttachFilesActor,
-     ApplyOrderActor,
-     InterpretVisibilityActor,
-     model_actor(curation_concern)]
+module CurationConcerns::Actors
+  class ActorFactory
+    def self.stack_actors(curation_concern)
+      [MetadataEnrichmentActor,
+       AddToCollectionActor,
+       AddToWorkActor,
+       AssignRepresentativeActor,
+       AttachFilesActor,
+       ApplyOrderActor,
+       InterpretVisibilityActor,
+       model_actor(curation_concern)]
+    end
   end
 end</code></pre>
 </section>
@@ -517,17 +519,17 @@ end</code></pre>
   self.default_processor_chain = [:for_users]
   def for_users(solr_parameters)
     solr_parameters[:fq] ||= []
-    solr_parameters[:fq] << "{!terms f=creator_tesim}#{blacklight_params[:creator]}"
+    solr_parameters[:fq] << "{!terms f=creator_sim}#{blacklight_params[:creator]}"
   end
 end</code></pre>
 </section>
 
 <section class="slide">
   <h2>Exercise</h2>
-  <pre><code class="language-ruby">builder = CreatedBySearchBuilder.new(nil).where(creator: 'Zoia Horn')
+  <pre><code class="language-ruby">builder = CreatedBySearchBuilder.new(nil).with(creator: 'Zoia Horn')
 builder.query
   => {"facet.field"=>[], "facet.query"=>[], "facet.pivot"=>[],
-      "fq"=>["{!terms f=creator_tesim}Zoia Horn"], "hl.fl"=>[]}
+      "fq"=>["{!terms f=creator_sim}Zoia Horn"], "hl.fl"=>[]}
 </code></pre>
 </section>
 
