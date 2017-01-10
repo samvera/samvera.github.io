@@ -107,7 +107,7 @@ end</code></pre>
 
 <section class="slide">
   <h2>In real code</h2>
-  <a href="https://github.com/projecthydra/curation_concerns/blob/master/app/controllers/concerns/curation_concerns/curation_concern_controller.rb#L56" target="_new">app/controllers/concerns/curation_concerns/curation_concern_controller.rb#L56</a>
+  <a href="https://github.com/projecthydra-labs/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56" target="_new">https://github.com/projecthydra-labs/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56</a>
 </section>
 
 <section class="slide">
@@ -118,7 +118,7 @@ end</code></pre>
   </div>
   <ul>
     <li>Start up the VM</li>
-    <li>Log into curation_concerns</li>
+    <li>Log into Hyrax</li>
   </ul>
   <p><strong>Task:</strong> Display a new field 'restrictions'</p>
 </section>
@@ -130,28 +130,30 @@ $ vagrant ssh</code></pre>
 </section>
 
 <section class="slide">
-  <h3>Change directory to the CurationConcerns sample application</h3>
-  <pre><code>$ cd cc-sample</code></pre>
+  <h3>Change directory to the Hyrax sample application</h3>
+  <pre><code>$ cd hyrax-sample</code></pre>
 </section>
 
 <section class="slide">
-  <h3>Generate CurationConcerns application</h3>
+  <h3>Generate Hyrax application</h3>
   <p><strong>If you're using the provided VM, this is already done. You can skip this step.</strong></p>
-  <pre><code>$ rails generate curation_concerns:install
-$ rake db:migrate</code></pre>
+  <p>If you don't already have Rails 5+ installed</p>
+  <pre><code>$ gem install rails -v 5.0.0.1
+  <pre><code>rails new hyrax-sample -m
+  https://raw.githubusercontent.com/projecthydra-labs/hyrax/master/template.rb</code></pre>
 </section>
 
 
 <section class="slide">
   <h3>Generate a book</h3>
-  <pre><code>$ rails generate curation_concerns:work Book</code></pre>
+  <pre><code>$ rails generate hyrax:work Book</code></pre>
 </section>
 
 <section class="slide">
   <h3>Start up the services</h3>
   <p>Open 3 more terminal windows. In each window:</p>
   <pre><code>$ vagrant ssh
-$ cd cc-sample</code></pre>
+$ cd hyrax-sample</code></pre>
 </section>
 
 <section class="slide">
@@ -166,7 +168,7 @@ $ cd cc-sample</code></pre>
 
 <section class="slide">
   <h3>Create an account</h3>
-  <p>When you see <code>Listening on tcp://0.0.0.0:3000</code> the server is ready 
+  <p>When you see <code>Listening on tcp://0.0.0.0:3000</code> the server is ready
   to visit at <a href="http://localhost:3000/">http://localhost:3000/</a></p>
 
   <p><small>* If you're using Rails 4, you'll see <code>WEBrick::HTTPServer#start: pid=5962 port=3000</code> instead.</small></p>
@@ -184,7 +186,7 @@ $ nano app/presenters/book_presenter.rb</code></pre>
 <section class="slide">
   <h3>Create a presenter</h3>
     <pre><code class="language-ruby"># app/presenters/book_presenter.rb
-class BookPresenter &lt; CurationConcerns::WorkShowPresenter
+class BookPresenter &lt; Hyrax::WorkShowPresenter
   delegate :restrictions, to: :solr_document
 end</code></pre>
     <p>* You need to restart your rails server</p>
@@ -204,27 +206,31 @@ end</code></pre>
 
 <section class="slide">
   <h3>Update the controller</h3>
-      <pre><code class="language-ruby"># app/controllers/cu.../books_controller.rb
-class CurationConcerns::BooksController &lt; ApplicationController
-  include CurationConcerns::CurationConcernController
-  self.curation_concern_type = Book
+      <pre><code class="language-ruby"># app/controllers/hyrax/books_controller.rb
+module Hyrax
+  class BooksController &lt; ApplicationController
+    include Hyrax::WorksControllerBehavior
+    include Hyrax::BreadcrumbsForWorks
+    self.curation_concern_type = Book
 
-  # Set our custom presenter
-  self.show_presenter = ::BookPresenter
+    # Set our custom presenter
+    self.show_presenter = ::BookPresenter
+  end
 end</code></pre>
 </section>
 
 <section class="slide">
   <h3>Update the view partial</h3>
-      <pre><code>$ cp `bundle show curation_concerns`/app/views/curation_concerns/base/_attribute_rows.html.erb app/views/curation_concerns/books/
+      <pre><code>$ cp `bundle show hyrax`/app/views/hyrax/base/_attribute_rows.html.erb
+      app/views/hyrax/books/
 
-$ nano app/views/curation_concerns/books/_attribute_rows.html.erb
+$ nano app/views/hyrax/books/_attribute_rows.html.erb
       </code></pre>
 </section>
 
 <section class="slide">
   <h3>Update the view partial</h3>
-      <pre><code class="language-ruby"># app/view/curation_concerns/books/_attribute_rows.html.erb
+      <pre><code class="language-ruby"># app/view/hyrax/books/_attribute_rows.html.erb
 &lt;%= presenter.attribute_to_html(:description) %&gt;
 &lt;%= presenter.attribute_to_html(:creator, render_as: :linked ) %&gt;
 ...
@@ -241,7 +247,7 @@ $ nano app/views/curation_concerns/books/_attribute_rows.html.erb
 <section class="slide">
   <h3>Update the a presenter</h3>
     <pre><code class="language-ruby"># app/presenters/book_presenter.rb
-class BookPresenter &lt; CurationConcerns::WorkShowPresenter
+class BookPresenter &lt; Hyrax::WorkShowPresenter
   # delegate :restrictions, to: :solr_document
 
   def restrictions
@@ -259,7 +265,7 @@ end</code></pre>
   <ul>
     <li>A pattern to encapsulate helpers that work on a particular model</li>
     <li>Also called decorators or view-models</li>
-    <li>You can find them in hydra-editor, curation_concerns and sufia</li>
+    <li>You can find them in hydra-editor and hyrax</li>
     <li>In Hydra the Presenter is delegating to a SolrDocument</li>
   </ul>
 </section>
@@ -274,49 +280,37 @@ end</code></pre>
   <h3>Customize the model</h3>
   <pre><code class="language-ruby"># app/models/book.rb
 class Book &lt; ActiveFedora::Base
-  include ::CurationConcerns::WorkBehavior
-  include ::CurationConcerns::BasicMetadata
+  include ::Hyrax::WorkBehavior
+  include ::Hyrax::BasicMetadata
   # Change this to restrict which works can be added as a child.
   # self.valid_child_concerns = []
   validates :title, presence: { message: 'Your work must have a title.' }
   property :restrictions, predicate: ::RDF::Vocab::DC.accessRights do |index|
     index.as :stored_searchable
   end
+  self.human_readable_type = 'Book'
 end</code></pre>
 </section>
 <section class="slide">
   <h3>Customize the form</h3>
-  <pre><code class="language-ruby"># app/forms/curation_concerns/book_form.rb
-module CurationConcerns
-  class BookForm &lt; CurationConcerns::Forms::WorkForm
-    self.model_class = ::book
+  <pre><code class="language-ruby"># app/forms/hyrax/book_form.rb
+module Hyrax
+  class BookForm &lt; Hyrax::Forms::WorkForm
+    self.model_class = ::Book
 
-    delegate :restrictions, to: :model
-    self.terms += [:restrictions]
+    self.terms += [:resource_type, :restrictions]
   end
 end</code></pre>
 </section>
 
 <section class="slide">
-  <h3>Update the view partial</h3>
-  <pre><code>$ cp `bundle show curation_concerns`/app/views/curation_concerns/base/_form_additional_information.html.erb
-app/views/curation_concerns/books/
-
-$ nano app/views/curation_concerns/books/_form_additional_information.html.erb
-      </code></pre>
-</section>
-
-<section class="slide">
-  <h3>Update the view partial</h3>
-  <pre><code class="language-html">...
-<%= f.input :source,       as: :multi_value, input_html: { class: 'form-control' } %>
-<%= f.input :language,     as: :multi_value, input_html: { class: 'form-control' } %>
-<%= f.input :restrictions, as: :multi_value, input_html: { class: 'form-control' } %>
-...</code></pre>
-</section>
-
-<section class="slide">
   <h3>Maybe make the property single value?</h3>
+  <pre><code class="language-ruby"># app/models/book.rb
+  ...
+  property :restrictions, predicate: ::RDF::Vocab::DC.accessRights, multiple: false do |index|
+    index.as :stored_searchable
+  end
+  ...</code></pre>
 </section>
 
 <section class="slide">
@@ -324,7 +318,7 @@ $ nano app/views/curation_concerns/books/_form_additional_information.html.erb
   <ul>
     <li>Just like a presenter, but with an ActiveFedora object instead of a SolrDocument</li>
     <li>Follows the decorator/view-model pattern</li>
-    <li>You can find them in hydra-editor, curation_concerns and sufia</li>
+    <li>You can find them in hydra-editor and hyrax</li>
   </ul>
 </section>
 
@@ -349,7 +343,7 @@ $ nano app/views/curation_concerns/books/_form_additional_information.html.erb
   </div>
   <span class="slide">
     Flow from one stack frame at a time, with each frame having a single responsibility.
-    <p><a href="https://github.com/projecthydra/curation_concerns/blob/master/app/services/curation_concerns/actors/actor_factory.rb#L10-L18" target="_new">Actors::ActorFactory</a></p>
+    <p><a href="https://github.com/projecthydra-labs/hyrax/blob/f1dd22484163b776ec73907b5e39756d2a62924c/app/services/hyrax/actor_factory.rb#L3-L17" target="_new">Hyrax::ActorFactory</a></p>
   </span>
 </section>
 
@@ -360,18 +354,17 @@ $ nano app/views/curation_concerns/books/_form_additional_information.html.erb
 
 <section class="slide">
   <h2>Actor Stack: In the wild</h2>
-  <pre><code class="language-ruby"># app/actors/curation_concerns/actors/add_to_collection_actor.rb
-class AddToCollectionActor < AbstractActor
+  <pre><code class="language-ruby"># app/actors/hyrax/actors/add_as_member_of_collections_actor.rb
+class AddAsMemberOfCollectionsActor &lt; AbstractActor
   def create(attributes)
-    collection_ids = attributes.delete(:collection_ids)
-    next_actor.create(attributes) && add_to_collections(collection_ids)
+    collection_ids = attributes.delete(:member_of_collection_ids)
+    add_to_collections(collection_ids) && next_actor.create(attributes)
   end
 
   def update(attributes)
-    collection_ids = attributes.delete(:collection_ids)
+    collection_ids = attributes.delete(:member_of_collection_ids)
     add_to_collections(collection_ids) && next_actor.update(attributes)
   end
-  
   private
   ...
 end</code></pre>
@@ -379,40 +372,46 @@ end</code></pre>
 
 <section class="slide">
   <h2>Create actor</h2>
-  <pre><code class="language-ruby"># app/actors/curation_concerns/actors/metadata_enrichment_actor.rb
-module CurationConcerns::Actors
-  class MetadataEnrichmentActor < AbstractActor
-    def create(attributes)
-      enrich_metadata(attributes) && next_actor.create(attributes)
-    end
-
-    private
-      def enrich_metadata(attributes)
-        if attributes.fetch('creator').include?("Carla Hayden")
-          attributes['description'] &lt;&lt; "She's the Librarian of Congress"
-        end
-        true
+  <pre><code class="language-ruby"># app/actors/hyrax/actors/metadata_enrichment_actor.rb
+module Hyrax
+  module Actors
+    class MetadataEnrichmentActor &lt; Hyrax:Actors:BaseActor
+      def create(attributes)
+        enrich_metadata(attributes) && next_actor.create(attributes)
       end
+
+      private
+        def enrich_metadata(attributes)
+          if attributes.fetch('creator').include?("Carla Hayden")
+            attributes['description'] &lt;&lt; "She's the Librarian of Congress"
+          end
+          true
+        end
+    end
   end
 end</code></pre>
 </section>
 
 <section class="slide">
   <h2>Add actor to the stack</h2>
-  <pre><code class="language-ruby"># config/initializers/actor_stack.rb
-require 'curation_concerns/actors/actor_factory'
-
-module CurationConcerns::Actors
+  <pre><code>$ mkdir -p app/services/hyrax
+  $ cp `bundle show hyrax`/app/services/hyrax/actor_factory.rb app/services/hyrax/
+  </code></pre>
+  <pre><code class="language-ruby"># app/services/hyrax/actor_factory.rb
+module Hyrax
   class ActorFactory
     def self.stack_actors(curation_concern)
       [MetadataEnrichmentActor,
-       AddToCollectionActor,
-       AddToWorkActor,
-       AssignRepresentativeActor,
-       AttachFilesActor,
-       ApplyOrderActor,
-       InterpretVisibilityActor,
-       model_actor(curation_concern)]
+        CreateWithRemoteFilesActor,
+        CreateWithFilesActor,
+        Hyrax::Actors::AddAsMemberOfCollectionsActor,
+        Hyrax::Actors::AddToWorkActor,
+        Hyrax::Actors::AssignRepresentativeActor,
+        Hyrax::Actors::AttachFilesActor,
+         ....
+       model_actor(curation_concern),
+       # Initialize workflow after model is saved
+       Hyrax::Actors::InitializeWorkflowActor]
     end
   end
 end</code></pre>
@@ -458,14 +457,13 @@ end</code></pre>
 
 <section class="slide">
   <h2>Search Builder: In the wild</h2>
-  <pre><code class="language-ruby"># app/search_builders/curation_concerns/collection_search_builder.rb
-class CollectionSearchBuilder < ::SearchBuilder
-  include FilterByType
-  # Defines which search_params_logic should be used when searching for Collections
-  self.default_processor_chain = [:default_solr_parameters, :add_query_to_solr,
-                                  :add_access_controls_to_solr_params, :filter_models,
-                                  :some_rows, :sort_by_title]
-
+  <pre><code class="language-ruby"># hyrax: app/search_builders/hyrax/catalog_search_builder.rb
+class Hyrax::CatalogSearchBuilder &lt; ::SearchBuilder
+  self.default_processor_chain += [
+    :add_access_controls_to_solr_params,
+    :show_works_or_works_that_contain_files,
+    :show_only_active_records
+  ]
   ...
 end</code></pre>
 </section>
@@ -474,40 +472,49 @@ end</code></pre>
 
 <section class="slide">
   <h2>Search Builder: In the wild (cont.)</h2>
-  <pre><code class="language-ruby"># app/search_builders/curation_concerns/collection_search_builder.rb
-class CollectionSearchBuilder < ::SearchBuilder
+  <pre><code class="language-ruby"># hyrax: app/search_builders/hyrax/catalog_search_builder.rb
+class Hyrax::CatalogSearchBuilder &lt; ::SearchBuilder
   ...
-  def some_rows(solr_parameters)
-    solr_parameters[:rows] = '100'
-  end
+  # show both works that match the query and works that contain files that match the query
+    def show_works_or_works_that_contain_files(solr_parameters)
+        return if blacklight_params[:q].blank? || blacklight_params[:search_field]
+        solr_parameters[:user_query] = blacklight_params[:q]
+        solr_parameters[:q] = new_query
+    end
 
-  # This overrides FilterByType and ensures we only match on collections.
-  def only_collections?
-    true
-  end
-  ...
+    # show works that are in the active state.
+    def show_only_active_records(solr_parameters)
+      solr_parameters[:fq] ||= []
+      solr_parameters[:fq] &lt;&lt; '-suppressed_bsi:true'
+    end
+    ...
 end</code></pre>
 </section>
 
 <section class="slide">
   <h2>Search Builder: In the wild (cont.)</h2>
-  <pre><code class="language-ruby"># app/search_builders/curation_concerns/collection_search_builder.rb
+  <pre><code class="language-ruby"># hyrax: app/search_builders/hyrax/filter_by_type.rb
 module FilterByType
+  ...
   # Add queries that excludes everything except for works and collections
   def filter_models(solr_parameters)
     solr_parameters[:fq] ||= []
-    solr_parameters[:fq] << "{!terms f=has_model_ssim}#{models_to_solr_clause}"
+    solr_parameters[:fq] &lt;&lt; "{!terms f=has_model_ssim}#{models_to_solr_clause}"
   end
-
-  # Override this method if you want to filter for a different set of models.
-    # @return [Array<Class>] a list of classes to include
-  def models
-    work_classes + collection_classes
-  end
-  
-  def models_to_solr_clause
-    models.map(&:to_rdf_representation).join(',')
-  end
+  ...
+  protected
+  ...
+    # Override this method if you want to filter for a different set of models.
+      # @return [Array<Class>] a list of classes to include
+    def models
+      work_classes + collection_classes
+    end
+  private
+  ...
+    def models_to_solr_clause
+      # to_class_uri is deprecated in AF 11
+      [ActiveFedora::Base.respond_to?(:to_rdf_representation) ? models.map(&:to_rdf_representation) : models.map(&:to_class_uri)].join(',')
+    end
   ...
 end</code></pre>
 </section>
@@ -515,21 +522,27 @@ end</code></pre>
 <section class="slide">
   <h2>Exercise</h2>
   <p>Create a search builder that finds books by a particular person</p>
-  <pre><code class="language-ruby">class CreatedBySearchBuilder &lt; ::SearchBuilder
+  <pre><code class="language-ruby"># app/models/created_by_search_builder.rb
+class CreatedBySearchBuilder &lt; Blacklight::SearchBuilder
+  include Blacklight::Solr::SearchBuilderBehavior
+  include Hydra::AccessControlsEnforcement
+  include Hyrax::SearchFilters
+
   self.default_processor_chain = [:for_users]
   def for_users(solr_parameters)
     solr_parameters[:fq] ||= []
-    solr_parameters[:fq] << "{!terms f=creator_sim}#{blacklight_params[:creator]}"
+    solr_parameters[:fq] &lt;&lt; "{!field f=creator_tesim v=#{blacklight_params[:q][:creator]}}"
   end
 end</code></pre>
 </section>
 
 <section class="slide">
   <h2>Exercise</h2>
-  <pre><code class="language-ruby">builder = CreatedBySearchBuilder.new(nil).with(creator: 'Zoia Horn')
+  <pre><code class="language-ruby">builder = CreatedBySearchBuilder.new(nil).with(creator: 'Carla
+  Hayden')
 builder.query
   => {"facet.field"=>[], "facet.query"=>[], "facet.pivot"=>[],
-      "fq"=>["{!terms f=creator_sim}Zoia Horn"], "hl.fl"=>[]}
+      "fq"=>["{!field f=creator_tesim v=Carla Hayden}"], "hl.fl"=>[]}
 </code></pre>
 </section>
 
@@ -537,7 +550,7 @@ builder.query
   <h2>Exercise</h2>
   <p>Create a search builder that finds books by a particular person</p>
   <pre><code class="language-ruby">repository = CatalogController.new.repository
-builder = CreatedBySearchBuilder.new(nil).where(creator: 'Zoia Horn')
+builder = CreatedBySearchBuilder.new(nil).where(creator: 'Carla Hayden')
 response = repository.search(builder)
 response.documents
 </code></pre>
@@ -548,4 +561,3 @@ response.documents
   <img src="victory.jpg" alt="track bicycles" style="width: 80vw;">
   <p><small>cc-by-sa: <a href="https://flic.kr/p/9QKXEf">Brandon O'Connor</a></small></p>
 </section>
-
