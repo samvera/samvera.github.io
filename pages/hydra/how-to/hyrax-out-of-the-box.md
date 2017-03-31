@@ -2,7 +2,7 @@
 title: "How to Hyrax: Out of the Box "
 keywords: How to Hyrax Out of the Box
 categories: How to Do All the Things
-permalink: hydra/how-to/hyrax.html
+permalink: hyrax.html
 folder: hydra/how-to/hyrax.md
 sidebar: mydoc_sidebar
 tags: [development_resources]

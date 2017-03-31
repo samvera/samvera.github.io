@@ -2,8 +2,8 @@
 title:  "Amazon Web Services"
 keywords: Hosting your Hydra app on AWS
 categories: Production
-permalink: hydra/production/aws.html
-folder: hydra/production/aws.md
+permalink: aws.html
+folder: hydra/production/
 tags: [production]
 ---
 
