@@ -4,6 +4,6 @@ keywords: Characterization, Derivatives, File Attachments
 categories: How to Do All the Things
 permalink: what-happens-deposit.html
 folder: hydra/how-to/what-happens-deposit.md
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 tags: [development_resources]
 ---

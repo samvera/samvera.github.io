@@ -3,7 +3,7 @@ title: "Development Community"
 tagName: community
 search: exclude
 permalink: tag_community.html
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 folder: tags
 ---
 {% include taglogic.html %}

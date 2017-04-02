@@ -4,6 +4,6 @@ keywords: Predicates, Common Ontologies, Notes from Linked Data WG, @Christina H
 categories: How to Do All the Things
 permalink: pcdm.html
 folder: hydra/how-to/pcdm.md
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 tags: [development_resources]
 ---

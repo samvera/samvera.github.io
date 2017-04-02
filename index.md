@@ -2,7 +2,7 @@
 title: A Guide For The Perplexed Hydra Developer
 keywords: sample homepage
 tags: [getting_started]
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 permalink: index.html
 toc: false
 ---

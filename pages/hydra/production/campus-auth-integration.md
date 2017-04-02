@@ -4,6 +4,6 @@ keywords: integration
 categories: Production
 permalink: campus-auth-integrating.html
 folder: hydra/production/
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 tags: [production]
 ---

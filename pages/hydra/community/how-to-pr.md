@@ -4,6 +4,6 @@ keywords: hydra community PR guidelines
 categories: Community
 permalink: how-to-pr.html
 folder: hydra/production/how-to-pr.md
-sidebar: mydoc_sidebar
+sidebar: home_sidebar
 tags: [community]
 ---
