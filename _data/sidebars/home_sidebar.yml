@@ -11,7 +11,7 @@ entries:
       url: /getting_started.html
       output: web, pdf
 
-    - title: More Getting Started Docs
+    - title: Other Helpful Getting Started Docs
       url: /other-getting-started.html
       output: web, pdf
 
