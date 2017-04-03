@@ -1,8 +1,8 @@
 ---
 title:  "Quality Practices"
-keywords: see Community: TDD & CI, Rubocop, Yardocs, Inch, Coveralls, how to submit pull requests
+keywords: see Community - TDD and CI, Rubocop, Yardocs, Inch, Coveralls, how to submit pull requests
 permalink: quality.html
-folder: hydra/getting_started/quality.md
+folder: hydra/getting_started/
 tags: [getting_started]
 ---
 

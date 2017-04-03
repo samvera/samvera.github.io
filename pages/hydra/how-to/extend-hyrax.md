@@ -1,6 +1,6 @@
 ---
-title: "How to Hyrax: Extend"
-keywords: How to Extend Hyrax
+title: "How to Extend Hyrax"
+keywords: How to Extend Hyrax, Plugins
 categories: How to Do All the Things
 permalink: extend-hyrax.html
 folder: hydra/how-to/extend-hyrax.md

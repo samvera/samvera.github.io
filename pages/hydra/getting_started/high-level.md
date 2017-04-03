@@ -6,6 +6,4 @@ folder: hydra/getting_started/high-level.md
 tags: [getting_started]
 ---
 
-Hello
-
 {% include links.html %}
