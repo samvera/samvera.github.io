@@ -7,8 +7,12 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Get up and running
-      url: /getting_started.html
+    - title: Introduction
+      url: /introduction.html
+      output: web, pdf
+
+    - title: Our Technology Stack
+      url: /our_technology_stack.html
       output: web, pdf
 
     - title: Other Helpful Getting Started Docs
@@ -17,10 +21,6 @@ entries:
 
     - title: Quality Practices
       url: /quality.html
-      output: web, pdf
-
-    - title: High-level Introduction
-      url: /high-level.html
       output: web, pdf
 
     - title: Why Hydra?
@@ -34,10 +34,6 @@ entries:
     - title: Hyku vs Hyrax
       url: /hyku-vs-hyrax.html
       output: web, pdf
-
-    - title: The Stack
-      url: /the-stack.html
-      output: web
 
     - title: Other Blacklight Plugins
       url: /blacklight-plugins.html
