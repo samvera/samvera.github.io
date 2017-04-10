@@ -91,9 +91,46 @@ entries:
       url: /add-new-work-type.html
       output: web
 
-    - title: How Do I Customize Metadata?
-      url: /customize-metadata.html
-      output: web
+      subfolders:
+      - title: How Do I Customize Metadata?
+        output: web
+        subfolderitems:
+
+        - title: "Prereq: Generating a Work Type"
+          url: /customize-metadata-generate-work-type.html
+          output: web
+
+        - title: "Prereq: Defining a Controlled Vocabulary"
+          url: /customize-metadata-controlled-vocabulary.html
+          output: web
+
+        - title: Labels and Help Text
+          url: /customize-metadata-labels.html
+          output: web
+
+        - title: Understanding the Controller
+          url: /customize-metadata-controller.html
+          output: web
+
+        - title: Defining Metadata in the Model
+          url: /customize-metadata-model.html
+          output: web
+
+        - title: Modifying the Edit Form
+          url: /customize-metadata-edit-form.html
+          output: web
+
+        - title: Modifying the Show Page
+          url: /customize-metadata-show-page.html
+          output: web
+
+        - title: Configuring Discovery
+          url: /customize-metadata-discovery.html
+          output: web
+
+        - title: Other Metadata Customizations
+          url: /customize-metadata-other-customizations.html
+          output: web
 
     - title: How Do I Build Searches?
       url: /building-searches.html
