@@ -43,7 +43,7 @@ entries:
       url: /training.html
       output: web, pdf
 
-  - title: Developer Resources
+  - title: Development Resources
     output: web, pdf
     folderitems:
 
