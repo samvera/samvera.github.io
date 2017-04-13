@@ -34,7 +34,7 @@ toc: false
                      </span>
                  </div>
                  <div class="panel-body">
-                     <h4>Developer Resources</h4>
+                     <h4>Development Resources</h4>
                      <p>Questions and answer articles and tutorials.</p>
                      <a href="tag_development_resources.html" class="btn btn-primary">Learn More</a>
                  </div>
