@@ -95,6 +95,10 @@ entries:
       url: /customize-metadata.html
       output: web
 
+    - title: How Do I Build Searches?
+      url: /building-searches.html
+      output: web
+
     - title: Access Controls and Visibility
       url: /access-controls.html
       output: web
