@@ -8,9 +8,18 @@ sidebar: home_sidebar
 tags: [development_resources]
 ---
 
+### Overview
+
+Blacklight generates `app/models/search_builder.rb` into your application. It defaults to including `Blacklight::Solr::SearchBuilderBehavior` which are functions that allow Blacklight to talk to Solr (vs another search engine).  Hydra generates `include Hydra::AccessControlsEnforcement` for filtering
+searches by access (groups & users).  Finally Hyrax generates `include Hyrax::SearchFilters` which overrides the Hydra filters and allows users with the admin role to see all documents.
+
+Hyrax then sets the `blacklight_config.config.search_builder_class = Hyrax::CatalogSearchBuilder` in the catalog controller. This enables the public search to not show works that are suppressed (in workflow) and to find a work if an attached file matches the search query.
+
+
+
 ### Search Builders
 
-Building searches is core to any Blacklight app. The app/search_builders/ directory contains our Search Builders, originally so-named because the class design followed a Builder pattern. Builder setter methods return the object itself when invoked, so that invocations can be chained, like:
+Building searches is a core component of any Blacklight app. The app/search_builders/ directory contains our Search Builders, originally so-named because the class design followed a Builder pattern. Builder setter methods return the object itself when invoked, so that invocations can be chained, like:
 
 ```ruby
 builder = Blacklight::SearchBuilder.new(processor_chain, scope)
