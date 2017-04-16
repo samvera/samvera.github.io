@@ -1,0 +1,228 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  folders:
+  - title: New? Start Here
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /introduction.html
+      output: web, pdf
+
+    - title: Our Technology Stack
+      url: /our_technology_stack.html
+      output: web, pdf
+
+    - title: Dive Deeper into Hyrax
+      url: /dive-deeper.html
+      output: web, pdf
+
+    - title: Design Patterns in Hyrax
+      url: /design_patterns.html
+      output: web, pdf
+
+    - title: Other Helpful Getting Started Docs
+      url: /other-getting-started.html
+      output: web, pdf
+
+    - title: Quality Practices
+      url: /quality.html
+      output: web, pdf
+
+    - title: Why Hydra?
+      url: /why-hydra.html
+      output: web, pdf
+
+    - title: Solutions
+      url: /solutions.html
+      output: web, pdf
+
+    - title: Hyku vs Hyrax
+      url: /hyku-vs-hyrax.html
+      output: web, pdf
+
+    - title: Other Blacklight Plugins
+      url: /blacklight-plugins.html
+      output: web, pdf
+
+    - title: Training
+      url: /training.html
+      output: web, pdf
+
+  - title: Development Resources
+    output: web, pdf
+    folderitems:
+
+    - title: Install Hyrax
+      url: /install-hyrax.html
+      output: web
+
+    - title: Hyrax Out of the Box
+      url: /hyrax-out-of-the-box.html
+      output: web
+
+    - title: Extending Hyrax
+      url: /extend-hyrax.html
+      output: web
+
+    - title: What Happens When I Deposit Something
+      url: /what-happens-deposit.html
+      output: web
+
+    - title: What Happens When I Edit Something
+      url: /what-happens-edit.html
+      output: web
+
+    - title: What Happens When I Search for Something
+      url: /what-happens-search.html
+      output: web
+
+    - title: What Happens When I Index Something
+      url: /what-happens-index.html
+      output: web
+
+    - title: What Happens When I View Something
+      url: /what-happens-view.html
+      output: web
+
+      subfolders:
+      - title: Admin How to - Create User Groups
+        output: web
+        subfolderitems:
+
+        - title: Default Setup
+          url: /groups.html
+          output: web
+
+        - title: Database-backed Setup
+          url: /admin-users.html
+          output: web
+
+    - title: What Are The Main Things
+      url: /what-are-things.html
+      output: web
+
+      subfolders:
+      - title: What Are Admin Sets
+        output: web
+        subfolderitems:
+
+        - title: Key Terms
+          url: /what-are-admin-things.html
+          output: web
+
+        - title: Participants
+          url: /participants.html
+          output: web
+
+
+    - title: How Do I Add a New Work Type?
+      url: /add-new-work-type.html
+      output: web
+
+      subfolders:
+      - title: How Do I Customize Metadata?
+        output: web
+        subfolderitems:
+
+        - title: "Prereq: Generating a Work Type"
+          url: /customize-metadata-generate-work-type.html
+          output: web
+
+        - title: "Prereq: Defining a Controlled Vocabulary"
+          url: /customize-metadata-controlled-vocabulary.html
+          output: web
+
+        - title: Labels and Help Text
+          url: /customize-metadata-labels.html
+          output: web
+
+        - title: Understanding the Controller
+          url: /customize-metadata-controller.html
+          output: web
+
+        - title: Defining Metadata in the Model
+          url: /customize-metadata-model.html
+          output: web
+
+        - title: Modifying the Edit Form
+          url: /customize-metadata-edit-form.html
+          output: web
+
+        - title: Modifying the Show Page
+          url: /customize-metadata-show-page.html
+          output: web
+
+        - title: Configuring Discovery
+          url: /customize-metadata-discovery.html
+          output: web
+
+        - title: Other Metadata Customizations
+          url: /customize-metadata-other-customizations.html
+          output: web
+
+    - title: How Do I Build Searches?
+      url: /building-searches.html
+      output: web
+
+    - title: Access Controls and Visibility
+      url: /access-controls.html
+      output: web
+
+    - title: Working With Background Jobs
+      url: /background-jobs.html
+      output: web
+
+    - title: Working With PCDM
+      url: /pcdm.html
+      output: web
+
+    - title: Writing Hyrax Plugins
+      url: /plugins.html
+      output: web
+
+  - title: Running in Production
+    output: web, pdf
+    folderitems:
+
+    - title: Hardware Considerations
+      url: /hardware-considerations.html
+      output: web, pdf
+
+    - title: Hydra Services Stack
+      url: /service-stack.html
+      output: web, pdf
+
+    - title: Amazon Web Services
+      url: /aws.html
+      output: web, pdf
+
+    - title: DevOps
+      url: /devops.html
+      output: web, pdf
+
+    - title: Troubleshooting Production
+      url: /troubleshooting-production.html
+      output: web, pdf
+
+  - title: Developer Community
+    output: web, pdf
+    folderitems:
+
+    - title: Real Life Hyrax
+      url: /real-life-hyrax.html
+      output: web, pdf
+
+    - title: Releases
+      url: /hyrax-releases.html
+      output: web, pdf
+
+    - title: Contribution Tools
+      url: /contribution-tools.html
+      output: web, pdf
+
+    - title: How to Submit Pull Reqeusts
+      url: /how-to-pr.html
+      output: web, pdf
