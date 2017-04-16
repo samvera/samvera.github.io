@@ -1,50 +1,18 @@
-# jekyll-bootstrap-theme
+# How Does This Work?
 
-Jekyll theme w/ Bootstrap; see a live demo @ [`henrythemes.github.io/jekyll-bootstrap-theme` »](http://henrythemes.github.io/jekyll-bootstrap-theme)
+We use a Jekyll-based custom theme for markup and display, and pages are published to http://projecthydra.github.io.
 
+## Adding or Editing Content
 
-Note: The theme uses the bootstrap sass/scss (source) version
-letting you change (override) all bootstrap css variables.
+These are community documents, so we rely on the pull request model. If you'd like to contribute content:
 
-Example:
-
-~~~
-tbd
-~~~
-
-
-Note: GitHub Pages has built-in support for sass/scss, thus, your static
-site will result in a single all-in-one-file stylesheet, that is, `style.css`.
+- clone the project
+- make a branch  
+- create/edit pages within the Hydra directory
+- add their links to home_sidebar.yml
+- tag them appropriately
 
 
+## Our Custom Theme
 
-## Build & Update Notes
-
-- Get a copy of the [`bootstrap-sass`](https://github.com/twbs/bootstrap-sass)
-  archive - the official Sass port of Bootstrap
-
-tbd
-
-
-
-
-## Alternative Jekyll Themes
-
-- [Shiori](https://github.com/ellekasai/shiori) by Elle Kasai
-  (ships w/ pre-defined color themes e.g. Dark, Turquoise, Green, Blue, Purple, Orange, Red)
-
-
-
-### More Themes
-
-See the [Dr. Jekyll's Themes](https://drjekyllthemes.github.io) directory.
-
-### More Quick Starter Wizard Scripts
-
-See the [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
-
-
-## Questions? Comments?
-
-Send them along to the [wwwmake forum](http://groups.google.com/group/wwwmake).
-Thanks!
+We created a [gem](https://github.com/elrayle/documentation-theme-jekyll) from a Jekyll theme designed for [documentation](https://github.com/tomjohnson1492/documentation-theme-jekyll), primarily for ease in updating content. We chose the Documentation Theme because of its excellent navigation and clear page layout. 
