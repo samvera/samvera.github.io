@@ -1,7 +1,7 @@
-theme: hyrax-documentation-theme-jekyll
+theme: documentation-theme-jekyll
 
 
-repository: projecthydra/projecthydra.github.io
+repository: elrayle/documentation-theme-jekyll
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -106,5 +106,6 @@ description: ""
 # needed for sitemap.xml file only
 url: http://projecthydra.github.io
 
-production_url : https://github.com/projecthydra/projecthydra.github.io
-BASE_PATH : https://github.com/projecthydra/projecthydra.github.io
+production_url : https://projecthydra.github.io
+
+BASE_PATH : https://projecthydra.github.io
