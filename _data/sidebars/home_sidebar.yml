@@ -15,6 +15,14 @@ entries:
       url: /our_technology_stack.html
       output: web, pdf
 
+    - title: Dive Deeper into Hyrax
+      url: /dive-deeper.html
+      output: web, pdf
+
+    - title: Design Patterns in Hyrax
+      url: /design_patterns.html
+      output: web, pdf
+
     - title: Other Helpful Getting Started Docs
       url: /other-getting-started.html
       output: web, pdf
