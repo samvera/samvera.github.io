@@ -79,13 +79,36 @@ entries:
       url: /what-happens-view.html
       output: web
 
+      subfolders:
+      - title: Admin How to - Create User Groups
+        output: web
+        subfolderitems:
+
+        - title: Default Setup
+          url: /groups.html
+          output: web
+
+        - title: Database-backed Setup
+          url: /admin-users.html
+          output: web
+
     - title: What Are The Main Things
       url: /what-are-things.html
       output: web
 
-    - title: What Are The Admin Things
-      url: /what-are-admin-things.html
-      output: web
+      subfolders:
+      - title: What Are Admin Sets
+        output: web
+        subfolderitems:
+
+        - title: Key Terms
+          url: /what-are-admin-things.html
+          output: web
+
+        - title: Participants
+          url: /participants.html
+          output: web
+
 
     - title: How Do I Add a New Work Type?
       url: /add-new-work-type.html
