@@ -9,415 +9,380 @@ folder: hydra
 toc: false
 ---
 
-<section class="slide" style="text-align: center">
-  <h2 style="font-family: 'Amarante', cursive; color:white; background-color: #cc0000; border-radius: 40px; font-size: 2em; display: inline-block; padding: 0 30px 0 30px; margin: 10px; text-align: center; text-transform: uppercase;">Choose your own adventure</h2>
-  <h3 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a">You're the star of the story!
+## Choose your own adventure
+### You're the star of the story! Choose from 2 possible endings
 
-    Choose from 2 possible endings</h3>
-  <img src="images/stonehenge.png" style="height: 60vh">
-  <div class="row">
-    <div class="col-sm-6">
-      <h4 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a"><a href="#slide-2">Theory</a></h4>
-    </div>
-    <div class="col-sm-6">
-      <h4 style="font-family: 'Amarante', cursive; text-align: center; text-transform: uppercase; color: #ffa40a"><a href="#slide-39">Practice</a></h4>
-    </div>
-  </div>
-</section>
+![stonehenge](images/stonehenge.png "Stonehenge")
 
-<section class="slide">
-  <h2>Legacy data modeling</h2>
+### [Theory](#slide-2 "Theory")
+### [Practice](#slide-39 "Practice")
+
+
+## Legacy data modeling: 1
+![Legacy](images/legacy_modeling.svg "Legacy")
   <img src="images/legacy_modeling.svg">
-</section>
 
-<section class="slide">
-  <h2>Legacy data modeling</h2>
-  <img src="images/legacy_HABTM.svg">
-</section>
+## Legacy data modeling: 2
+![Legacy](images/legacy_HABTM.svg "Legacy")
 
-<section class="slide">
-  <h2>Shortcomings of legacy modeling</h2>
-  <ul>
-    <li>Every project has a unique structure</li>
-    <li>Lack of ordering</li>
-    <li>Resource contention</li>
-  </ul>
-</section>
+## Shortcomings of legacy modeling
+- Every project has a unique structure
+- Lack of ordering
+- Resource contention
 
-<section class="slide">
-  <img src="images/pcdm.png" alt="PCDM" style="height: 100vh">
-  <aside>History</aside>
-</section>
+![PCDM](images/pcdm.png "PCDM")
 
-<section class="slide">
-  <h2>Structural model</h2>
-  <img src="images/outdated_hydra_works.png" style="height: 70vh">
-</section>
+*History*
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <h3>VM Only</h3>
-  <pre><code>$ vagrant up
+
+## Structural model
+![Outdated](images/outdated_hydra_works.png "Outdated")
+
+## Hands On
+
+### VM Only
+```
+$ vagrant up
 $ vagrant ssh
 $ cp ~/downloads/solr-5.4.1.zip /tmp
 $ cp ~/downloads/fcrepo-webapp-4.5.0-jetty-console.jar /tmp
 $ cd /vagrant
-</code></pre>
-</section>
+```
 
+## Hands On
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <pre><code>$ rails new demo_works
-$ cd demo_works/</code></pre>
-<p>Then open <code>Gemfile</code> in your editor and add these lines:</p>
-<pre><code class="language-ruby">gem 'hydra', '9.1.0'
-gem 'hydra-works', '0.7.0'</code></pre>
-<p>Then uncomment this line (unless you're on MacOS)</p>
-<pre><code class="language-ruby">gem 'therubyracer', platforms: :ruby</code></pre>
+```
+$ rails new demo_works
+$ cd demo_works/
+```
+
+Then open `Gemfile` in your editor and add these lines:
+
+```ruby
+gem 'hydra', '9.1.0'
+gem 'hydra-works', '0.7.0'
+```
+
+Then uncomment this line (unless you're on MacOS)
+
+`gem 'therubyracer', platforms: :ruby`
+
 Next, save the file and exit the editor.
-</section>
 
-<section class="slide">
-  <h2>Hands On</h2>
+## Hands On
 
-<pre><code>$ bundle install
+```
+$ bundle install
 $ rails generate hydra:install
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <h3>Not on a VM</h3>
-<pre><code>$ rake hydra:server</code></pre>
-</section>
+## Hands On
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <h3>VM Only</h3>
-  <pre><code>$ vagrant ssh
+### Not on a VM
+
+`$ rake hydra:server`
+
+## Hands On
+
+### VM Only
+```
+$ vagrant ssh
 $ solr_wrapper -p 8983 -d /vagrant/demo_works/solr/config/ --collection_name hydra-development -i ~/services/solr-5.4.1
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <h3>VM Only</h3>
-  <pre><code>$ vagrant ssh
+## Hands On
+
+### VM Only
+```
+$ vagrant ssh
 $ fcrepo_wrapper -p 8984 -d ~/services/fcrepo-data -i ~/services/fcrepo-4.5.0
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Hands On</h2>
-<p>Now open a new terminal window and run: </p>
-<pre><code>$ rails console</code></pre>
-</section>
+## Hands On
 
-<section class="slide">
-  <h2>Hands on</h2>
-  <pre><code  class="language-ruby"># app/models/collection.rb
-class Collection &lt; ActiveFedora::Base
+### VM Only
+
+Now open a new terminal window and run:
+
+`$ rails console`
+
+## Hands on
+``` ruby
+# app/models/collection.rb
+class Collection < ActiveFedora::Base
   include Hydra::Works::CollectionBehavior
   property :title, predicate: ::RDF::Vocab::DC.title
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Hands on</h2>
-  <pre><code class="language-ruby"># app/models/bibliographic_work.rb
-class BibliographicWork &lt; ActiveFedora::Base
+## Hands on
+```ruby
+# app/models/bibliographic_work.rb
+class BibliographicWork < ActiveFedora::Base
   include Hydra::Works::WorkBehavior
   property :title, predicate: ::RDF::DC.title
   property :author, predicate: ::RDF::DC.creator
   property :abstract, predicate: ::RDF::DC.abstract
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Hands on</h2>
-  <pre><code class="language-ruby"># app/models/file_set.rb
-class FileSet &lt; ActiveFedora::Base
+## Hands on
+```ruby
+# app/models/file_set.rb
+class FileSet < ActiveFedora::Base
   include Hydra::Works::FileSetBehavior
   property :title, predicate: ::RDF::DC.title
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Hands on</h2>
-  <pre><code class="language-ruby">col = Collection.create(
+## Hands on
+```ruby
+col = Collection.create(
         id: 'col-1',
         title: ["Works by Edgar Allan Poe"])
 col.uri
-=> #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/col-1&gt;
-  </code></pre>
-</section>
+=> #<RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/col-1>
+```
 
-<section class="slide">
-  <h2>Hands on</h2>
-  <pre><code class="language-ruby">bw = BibliographicWork.create(
+## Hands on
+```ruby
+bw = BibliographicWork.create(
        id: 'work-1',
        title: ["The Raven"],
        author: ["Poe, Edgar Allan"])
 bw.uri
-=> #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/work-1&gt;
-  </code></pre>
-</section>
+=> #<RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/work-1>
+```
 
-<section class="slide">
-  <h2>Hands on</h2>
-  <pre><code class="language-ruby">fs = FileSet.create(
+## Hands on
+``` ruby
+fs = FileSet.create(
        id: 'fileset-1',
        title: ["The PDF"])
 fs.uri
-=> #&lt;RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/work-1&gt;
-  </code></pre>
-</section>
+=> #<RDF::URI:0x3ffb2941693c URI:http://127.0.0.1:8984/rest/dev/work-1>
+```
 
-<section class="slide">
-  <h2>Hands on</h2>
-  <pre><code class="language-ruby">col.members &lt;&lt; bw
+## Hands on
+
+``` ruby
+col.members << bw
 col.save
-bw.members &lt;&lt; fs
-bw.save</code></pre>
-</section>
+bw.members << fs
+bw.save
 
-<section class="slide">
-  <h2>Hands on</h2>
-  <pre><code  class="language-ruby">col.works
-=&gt; [#&lt;BibliographicWork id: "work-1", title: "The Raven", author: "Poe, Edgar Allan", head_id: nil, tail_id: nil&gt;]
+```
+
+## Hands on
+``` ruby
+col.works
+=> [#<BibliographicWork id: "work-1", title: "The Raven", author: "Poe, Edgar Allan", head_id: nil, tail_id: nil>]
 
 bw.in_collections
-=&gt; [#&lt;Collection id: "col-1", title: "Works by Edgar Allan Poe", head_id: nil, tail_id: nil&gt;]
+=> [#<Collection id: "col-1", title: "Works by Edgar Allan Poe", head_id: nil, tail_id: nil>]
 
 bw.file_sets
-=&gt; [#&lt;FileSet id: "fileset-1", title: "The Raven pdf", head_id: nil, tail_id: nil&gt;]
+=> [#<FileSet id: "fileset-1", title: "The Raven pdf", head_id: nil, tail_id: nil>]
 
 fs.in_works       ### TODO in_works returns []
-=&gt; [#&lt;BibliographicWork id: "work-1", title: "The Raven", author: "Poe, Edgar Allan", abstract: "A lonely man tries to ease his 'sorrow for the lost Lenore', by distracting his mind with old books of 'forgotten lore'.", head_id: nil, tail_id: nil&gt;]
-  </code></pre>
-</section>
+=> [#<BibliographicWork id: "work-1", title: "The Raven", author: "Poe, Edgar Allan", abstract: "A lonely man tries to ease his 'sorrow for the lost Lenore', by distracting his mind with old books of 'forgotten lore'.", head_id: nil, tail_id: nil>]
+```
 
-<section class="slide">
-  <h2>Projection onto LDP</h2>
-</section>
-<section class="slide">
-  <h2>LDP Containers</h2>
-</section>
-<section class="slide">
-  <h2>LDP Basic Container</h2>
-  <pre class="slide"><code>&lt;/blog/entry1&gt; a ldp:Container .
-&lt;/blog/entry1&gt; dc:title "First blog entry" .</code></pre>
-  <pre class="slide"><code>&lt;/blog/entry1/comment1&gt; a ldp:RDFSource .
-&lt;/blog/entry1/comment1&gt; dc:title "this is a new comment" .</code></pre>
-</section>
 
-<section class="slide">
-  <h2>LDP Basic Container</h2>
-  <pre><code>&lt;/blog/entry1&gt; a ldp:Container .
-&lt;/blog/entry1&gt; dc:title "First blog entry" .
-&lt;/blog/entry1&gt; ldp:contains &lt;/blog/entry1/comment1&gt; .</code></pre>
-</section>
+## Projection onto LDP
 
-<section class="slide">
-  <h2>LDP Direct Container</h2>
-  <pre class="slide"><code>&lt;/book1/files&gt; a ldp:DirectContainer .
-&lt;/book1/files&gt; ldp:membershipResource &lt;/book1&gt; .
-&lt;/book1/files&gt; ldp:hasMemberRelation pcdm:hasFile .
-&lt;/book1/files&gt; ldp:contains &lt;/book1/files/file1&gt; .</code></pre>
-</section>
+## LDP Containers
 
-<section class="slide">
-  <h2>LDP Direct Container</h2>
-  <pre><code>&lt;/book1&gt; pcdm:hasFile &lt;/book1/files/file1&gt; .</code></pre>
-</section>
+## LDP Basic Container
+```ruby
+</blog/entry1> a ldp:Container .
+</blog/entry1> dc:title "First blog entry" .
+```
+``` ruby
+</blog/entry1/comment1> a ldp:RDFSource .
+</blog/entry1/comment1> dc:title "this is a new comment" .
+```
 
-<section class="slide">
-  <h2>LDP Indirect Container</h2>
-  <pre class="slide"><code>&lt;/collection1/members&gt; a ldp:IndirectContainer .
-&lt;/collection1/members&gt; ldp:membershipResource &lt;/collection1&gt; .
-&lt;/collection1/members&gt; ldp:hasMemberRelation pcdm:hasMember .
-&lt;/collection1/members&gt; ldp:insertedContentRelation ore:proxyFor .
-&lt;/collection1/members&gt; ldp:contains &lt;/book1&gt; .</code></pre>
-</section>
+## LDP Basic Container
+```ruby
+</blog/entry1> a ldp:Container .
+</blog/entry1> dc:title "First blog entry" .
+</blog/entry1> ldp:contains
+</blog/entry1/comment1> .
+```
 
-<section class="slide">
-  <h2>LDP Indirect Container</h2>
-  <pre><code>&lt;/collection1&gt; pcdm:hasMember &lt;/book1&gt; .</code></pre>
+## LDP Direct Container
+``` ruby
+</book1/files> a ldp:DirectContainer .
+</book1/files> ldp:membershipResource </book1> .
+</book1/files> ldp:hasMemberRelation pcdm:hasFile .
+</book1/files> ldp:contains </book1/files/file1> .
 
-  <pre class="slide"><code>&lt;/collection1/members/proxy1&gt; ore:proxyFor &lt;/book1&gt; .</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h4 style="text-align: center; padding-top: 30vh">Let's investigate...</h4>
-</section>
+## LDP Direct Container
+```ruby
+</book1> pcdm:hasFile </book1/files/file1> .
+```
 
-<section class="slide">
-  <h2>ORE Aggregation</h2>
-  <img src="images/ore_proxy.jpg">
-</section>
+## LDP Indirect Container
+```ruby
+</collection1/members> a ldp:IndirectContainer .
+</collection1/members> ldp:membershipResource </collection1> .
+</collection1/members> ldp:hasMemberRelation pcdm:hasMember .
+</collection1/members> ldp:insertedContentRelation ore:proxyFor .
+</collection1/members> ldp:contains </book1> .
+```
 
-<section class="slide">
-  <h2>List node</h2>
-  <p>Allows us to reorder a whole list in a single HTTP request</p>
-  <table class="table table-bordered table-hover">
-    <tr><td>&lt;book1/list_source&gt;</td><td>iana:first</td><td>&lt;book1/list_source#g1234&gt;</td></tr>
-    <tr><td>&lt;book1/list_source&gt;</td><td>iana:last</td><td>&lt;book1/list_source#g5678&gt;</td></tr>
-    <tr><td>&lt;book1/list_source#g1234&gt;</td><td>ore:proxyFor</td><td>&lt;page1&gt;</td></tr>
-    <tr><td>&lt;book1/list_source#g1234&gt;</td><td>ore:proxyIn	</td><td>&lt;book1&gt;</td></tr>
-    <tr><td>&lt;book1/list_source#g1234&gt;</td><td>iana:next</td><td>&lt;book1/list_source#g5678&gt;</td></tr>
-    <tr><td>&lt;book1/list_source#g5678&gt;</td><td>ore:proxyFor</td><td>&lt;page1&gt;</td></tr>
-    <tr><td>&lt;book1/list_source#g5678&gt;</td><td>ore:proxyIn</td><td>&lt;book1&gt;</td></tr>
-    <tr><td>&lt;book1/list_source#g5678&gt;</td><td>iana:prev</td><td>&lt;book1/list_source#g1234&gt;</td></tr>
-</table>
-</section>
+## LDP Indirect Container
+  `</collection1> pcdm:hasMember </book1> .`
+  `</collection1/members/proxy1> ore:proxyFor </book1> .`
 
-<section class="slide">
-<h2>Problems</h2>
-<ul>
-    <li>Lots of writes</li>
-    <li>Resource contention</li>
-  </ul>
-  <aside style="display: none">
-    * Explain multiple process writing to a linked list.
-    * Redlock
-  </aside>
-</section>
+#### Let's investigate...
+## ORE Aggregation
+![ORE Aggregation](images/ore_proxy.jpg "Ore Aggregation")
 
-<section class="slide">
-  <h2 >The responsibilities of Hydra</h2>
-  For each class of objects in the repository, map from...
-  <ul>
-    <li class="slide">repository representation to object properties</li>
-    <li class="slide">object properties to repository representation</li>
-    <li class="slide">object properties to an index representation</li>
-    <li class="slide">index representation to an HTML show page</li>
-    <li class="slide">object properties to an HTML form</li>
-    <li class="slide">HTML form output to object properties</li>
-    <li class="slide">index search results to an HTML page</li>
-  </ul>
-</section>
 
-<section class="slide">
-  <h1 style="font-family: 'Cherry Cream Soda', serif">Curation Concerns</h1>
-</section>
-<section class="slide">
-  <h2>Hands On</h2>
-  <pre><code>$ rails new demo_repo
-$ cd demo_repo/</code></pre>
-Then open <code>Gemfile</code> in your editor and add this line:
-<pre><code class="language-ruby">gem 'curation_concerns', '~> 0.10.0'</code></pre>
+## List node
+
+Allows us to reorder a whole list in a single HTTP request
+
+    <book1/list_source> | iana:first | <book1/list_source#g1234>
+
+    <book1/list_source> | iana:last | <book1/list_source#g5678>
+
+    <book1/list_source#g1234> | ore:proxyFor | <page1>
+    <book1/list_source#g1234> | ore:proxyIn	 | <book1>
+    <book1/list_source#g1234> | iana:next | <book1/list_source#g5678>
+    <book1/list_source#g5678> | ore:proxyFor | <page1>
+    <book1/list_source#g5678> | ore:proxyIn | <book1>
+    <book1/list_source#g5678> | iana:prev | <book1/list_source#g1234>
+
+
+## Problems
+- Lots of writes
+- Resource contention
+
+## The responsibilities of Hydra
+
+For each class of objects in the repository, map from...
+
+- repository representation to object properties
+- object properties to repository representation
+- object properties to an index representation
+- index representation to an HTML show page
+- object properties to an HTML form
+- HTML form output to object properties
+- index search results to an HTML page
+
+## Curation Concerns
+
+## Hands On
+`$ rails new demo_repo
+$ cd demo_repo/`
+
+Then open `Gemfile` in your editor and add this line:
+`gem 'curation_concerns', '~> 0.10.0'`
 Then save the file and exit the editor.
-</section>
 
-<section class="slide">
-  <h2>Hands On</h2>
+## Hands On
 
-<pre><code>$ bundle install
-$ rails generate curation_concerns:install
-</code></pre>
+`$ bundle install
+$ rails generate curation_concerns:install`
 
-<p>Say "Y" when it asks if you want to overwrite <code>catalog_controller.rb</code>.</p>
-</section>
+Say "Y" when it asks if you want to overwrite `catalog_controller.rb`.
 
-<section class="slide">
-  <h2>Hands On</h2>
+## Hands On
 
-<pre><code>$ rake db:migrate</code></pre>
+`$ rake db:migrate`
 
-  <p>In <code>config/application.rb</code> set up the queuing backend</p>
+In `config/application.rb` set up the queuing backend
 
-  <pre><code>config.active_job.queue_adapter = :resque</code></pre>
+`config.active_job.queue_adapter = :resque`
 
-</section>
+## Hands On
 
-<section class="slide">
-  <h2>Hands On</h2>
+We will generate a kind of work called a Book:
 
-  <p>We will generate a kind of work called a Book:</p>
-<pre><code>$ rails generate curation_concerns:work Book</code></pre>
-</section>
+`$ rails generate curation_concerns:work Book`
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <h3>Not on a VM</h3>
-<pre><code>$ rake hydra:server</code></pre>
-</section>
+## Hands On
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <h3>VM Only</h3>
-  <pre><code>$ vagrant ssh
+### Not on a VM
+`$ rake hydra:server`
+
+## Hands On
+
+### VM Only
+```
+$ vagrant ssh
 $ solr_wrapper -p 8983 -d /vagrant/demo_repo/solr/config/ --collection_name hydra-development -i ~/services/solr-5.4.1
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <h3>VM Only</h3>
-  <pre><code>$ vagrant ssh
+## Hands On
+
+### VM Only
+```
+$ vagrant ssh
 $ fcrepo_wrapper -p 8984 -d ~/services/fcrepo-data -i ~/services/fcrepo-4.5.0
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Hands On</h2>
-  <h3>VM Only</h3>
-  <pre><code>$ vagrant ssh
+## Hands On
+
+### VM Only
+
+```
+$ vagrant ssh
 $ cd /vagrant/demo_repo
 $ rails server -b 0.0.0.0
-</code></pre>
-</section>
+```
+When you see `WEBrick::HTTPServer#start: pid=5962 port=3000` the server is ready to visit at http://localhost:3000/
 
-<section class="slide">
-<p>When you see <code>WEBrick::HTTPServer#start: pid=5962 port=3000</code> the server is ready to visit at <a href="http://localhost:3000/" target="_new">http://localhost:3000/</a>
+## Hands On
 
-</section>
-<section class="slide">
-  <h2>Hands On</h2>
-  <p>Open a new terminal window to start resque-web</p>
-  <pre><code>resque-web -N curation_concerns:development</code></pre>
-  <p>Open <a href="http://localhost:5678/" target="_new">http://localhost:5678/</a>
+Open a new terminal window to start resque-web
 
+`resque-web -N curation_concerns:development`
 
-  <p>Open a new terminal window to start the workers</p>
-<pre><code>$ QUEUE=* rake resque:work</code></pre>
-</section>
+Open http://localhost:5678/
 
-<section class="slide">
-  <h2>Model</h2>
-  <p>The model is responsible for maping the repository representation to object properties.</p>
-  <pre><code class="language-ruby">class Book < ActiveFedora::Base
+Open a new terminal window to start the workers
+`$ QUEUE=* rake resque:work`
+
+## Model
+
+The model is responsible for maping the repository representation to object properties.
+
+```ruby
+class Book < ActiveFedora::Base
   include ::CurationConcerns::WorkBehavior
   include ::CurationConcerns::BasicMetadata
   validates :title,
             presence: { message: 'Your work must have a title.' }
 end
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Model</h2>
-  <pre><code class="language-ruby">book = Book.new(title: ["The Captain's Daughter"]) do |b|
+## Model
+```ruby
+book = Book.new(title: ["The Captain's Daughter"]) do |b|
   b.apply_depositor_metadata('Tabatha')
 end
 book.creator = ['Pushkin, Alexander']
 book.save!
-=&gt; #&lt;Book id: "n870zr08h", head: [], tail: [], depositor: "Tabatha", title: ["The Captain's Daughter"], date_uploaded: nil, date_modified: nil, owner: nil, label: nil, relative_path: nil, import_url: nil, part_of: [], resource_type: [], creator: ['Pushkin, Alexander'], contributor: [], description: [], tag: [], rights: [], publisher: [], date_created: [], subject: [], language: [], identifier: [], based_near: [], related_url: [], bibliographic_citation: [], source: [], representative_id: nil, thumbnail_id: nil, embargo_id: nil, lease_id: nil&gt;
+=> #<Book id: "n870zr08h", head: [], tail: [], depositor: "Tabatha", title: ["The Captain's Daughter"], date_uploaded: nil, date_modified: nil, owner: nil, label: nil, relative_path: nil, import_url: nil, part_of: [], resource_type: [], creator: ['Pushkin, Alexander'], contributor: [], description: [], tag: [], rights: [], publisher: [], date_created: [], subject: [], language: [], identifier: [], based_near: [], related_url: [], bibliographic_citation: [], source: [], representative_id: nil, thumbnail_id: nil, embargo_id: nil, lease_id: nil>
 
 other_book = Book.find('1r66j140x')
-=&gt; #&lt;Book id: "1r66j140x", head: [], tail: [], depositor: "Justin", title: ["Anna Karenina"], date_uploaded: nil, date_modified: nil, owner: nil, label: nil, relative_path: nil, import_url: nil, part_of: [], resource_type: [], creator: ["Tolstoy, Leo"], contributor: [], description: [], tag: [], rights: [], publisher: [], date_created: [], subject: [], language: [], identifier: [], based_near: [], related_url: [], bibliographic_citation: [], source: [], representative_id: nil, thumbnail_id: nil, embargo_id: nil, lease_id: nil&gt;
-</code></pre>
-</section>
+=> #<Book id: "1r66j140x", head: [], tail: [], depositor: "Justin", title: ["Anna Karenina"], date_uploaded: nil, date_modified: nil, owner: nil, label: nil, relative_path: nil, import_url: nil, part_of: [], resource_type: [], creator: ["Tolstoy, Leo"], contributor: [], description: [], tag: [], rights: [], publisher: [], date_created: [], subject: [], language: [], identifier: [], based_near: [], related_url: [], bibliographic_citation: [], source: [], representative_id: nil, thumbnail_id: nil, embargo_id: nil, lease_id: nil>
+```
 
-<section class="slide">
-  <h2>Indexer</h2>
-  <p>The indexer is responsible for mapping an object properties to a document in the Solr index</p>
-</section>
+## Indexer
 
-<section class="slide">
-  <h2>Indexer</h2>
-  <pre><code class="language-ruby">book = Book.create(title: ["The Captain's Daughter"]) do
+The indexer is responsible for mapping an object properties to a document in the Solr index
+
+
+### Indexer
+```ruby
+book = Book.create(title: ["The Captain's Daughter"]) do
   |b| b.apply_depositor_metadata('Justin')
 end
 
@@ -425,34 +390,30 @@ indexer = CurationConcerns::WorkIndexer.new(book)
 
 indexer.generate_solr_document
 # indexer.generate_solr_document.except('object_profile_ssm')
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Indexer</h2>
-  <p>Let's customize the indexer to add a count of all the associated FileSets</p>
-</section>
+## Indexer
 
-<section class="slide">
-  <h2>Indexer</h2>
-  <pre><code class="language-ruby"># app/indexers/book_indexer.rb
+Let's customize the indexer to add a count of all the associated FileSets
+
+## Indexer
+```ruby
+# app/indexers/book_indexer.rb
 class BookIndexer < CurationConcerns::WorkIndexer
 end
-</code></pre>
-  <pre><code class="language-ruby"># app/models/book.rb
+
+# app/models/book.rb
 class Book < ActiveFedora::Base
   ...
   def self.indexer
     BookIndexer
   end
 end
-</code></pre>
-</section>
+```
 
-
-<section class="slide">
-  <h2>Indexer</h2>
-  <pre><code class="language-ruby"># app/indexers/book_indexer.rb
+## Indexer
+```ruby
+# app/indexers/book_indexer.rb
 class BookIndexer < CurationConcerns::WorkIndexer
   def generate_solr_document
     super.tap do |solr_doc|
@@ -463,43 +424,40 @@ class BookIndexer < CurationConcerns::WorkIndexer
     end
   end
 end
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Presenter</h2>
-  The presenter is responsible for translating values from the model to a presentable form.
-</section>
+## Presenter
 
-<section class="slide">
-  <h2>Customize the Presenter</h2>
-  Display a new field: <code>:restrictions</code>
-</section>
+The presenter is responsible for translating values from the model to a presentable form.
 
-<section class="slide">
-  <h3>Create a presenter</h3>
-    <pre><code class="language-ruby"># app/presenters/book_presenter.rb
-class BookPresenter &lt; CurationConcerns::WorkShowPresenter
+## Customize the Presenter
+
+Display a new field: `:restrictions`
+
+### Create a presenter
+```ruby
+# app/presenters/book_presenter.rb
+class BookPresenter < CurationConcerns::WorkShowPresenter
   delegate :restrictions, to: :solr_document
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h3>Update the solr document</h3>
-    <pre><code class="language-ruby"># app/models/solr_document.rb
+### Update the solr document
+```ruby
+# app/models/solr_document.rb
 class SolrDocument
   ...
   def restrictions
     fetch('restrictions_tesim', [])
   end
   ...
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h3>Update the controller</h3>
-      <pre><code class="language-ruby"># app/controllers/cu.../books_controller.rb
-class CurationConcerns::BooksController &lt; ApplicationController
+### Update the controller
+```ruby
+# app/controllers/cu.../books_controller.rb
+class CurationConcerns::BooksController < ApplicationController
   include CurationConcerns::CurationConcernController
   set_curation_concern_type Book
 
@@ -509,50 +467,50 @@ class CurationConcerns::BooksController &lt; ApplicationController
     # CurationConcerns::WorkShowPresenter
     ::BookPresenter
   end
-end</code></pre>
-</section>
-<section class="slide">
-  <h3>Update the view partial</h3>
-      <pre><code>
-copy &lt;CurationConcerns path&gt;/app/views/curation_concerns/base/_attribute_rows.html.erb to
+end
+```
+
+### Update the view partial
+```
+copy <CurationConcerns path>/app/views/curation_concerns/base/_attribute_rows.html.erb to
 app/views/curation_concerns/books/_attribute_rows.html.erb
-      </code></pre>
-</section>
+```
 
-<section class="slide">
-  <h3>Update the view partial</h3>
-      <pre><code class="language-ruby"># app/view/curation_concerns/books/_attribute_rows.html.erb
-&lt;%= presenter.attribute_to_html(:description) %&gt;
-&lt;%= presenter.attribute_to_html(:creator, catalog_search_link: true ) %&gt;
-&lt;%= presenter.attribute_to_html(:contributor, label: 'Contributors', catalog_search_link: true) %&gt;
-&lt;%= presenter.attribute_to_html(:subject, catalog_search_link: true) %&gt;
-&lt;%= presenter.attribute_to_html(:publisher) %&gt;
-&lt;%= presenter.attribute_to_html(:language) %&gt;
+### Update the view partial
 
-&lt;%= presenter.attribute_to_html(:restrictions) %&gt;
-      </code></pre>
-</section>
+```
+#app/view/curation_concerns/books/_attribute_rows.html.erb
+<%= presenter.attribute_to_html(:description) %>
+<%= presenter.attribute_to_html(:creator, catalog_search_link: true ) %>
+<%= presenter.attribute_to_html(:contributor, label: 'Contributors', catalog_search_link: true) %>
+<%= presenter.attribute_to_html(:subject, catalog_search_link: true) %>
+<%= presenter.attribute_to_html(:publisher) %>
+<%= presenter.attribute_to_html(:language) %>
+<%= presenter.attribute_to_html(:restrictions) %>
 
+```
 
-<section class="slide">
-  <h2>Customize the Form</h2>
-  <p>Replace the "rights" field with "copyright_status"</p>
-  <pre><code class="language-ruby"># app/forms/curation_concers/book_form.rb
+## Customize the Form
+Replace the "rights" field with "copyright_status"
+
+```ruby
+# app/forms/curation_concers/book_form.rb
 module CurationConcerns
-  class BookForm &lt; CurationConcerns::Forms::WorkForm
+  class BookForm < CurationConcerns::Forms::WorkForm
     self.model_class = ::Book
     delegate :copyright_status, to: :model
 
     self.terms -= [:rights]
     self.terms += [:copyright_status]
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Customize the Form</h2>
-  <p>Update the model</p>
-  <pre><code class="language-ruby"># app/models/book.rb
+## Customize the Form
+
+Update the model
+```ruby
+# app/models/book.rb
 class Book < ActiveFedora::Base
   include ::CurationConcerns::WorkBehavior
   include ::CurationConcerns::BasicMetadata
@@ -560,43 +518,35 @@ class Book < ActiveFedora::Base
 
   property :copyright_status, predicate: ::RDF::URI('http://example.com/copyright')
 end
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Customize the Form</h2>
-  <pre><code class="language-ruby">params = ActionController::Parameters.new(
+### Customize the Form
+```ruby
+params = ActionController::Parameters.new(
            copyright_status: ['All Rights Reserved'])
-=&gt; {"copyright_status"=&gt;["All Rights Reserved"]}
+=> {"copyright_status"=>["All Rights Reserved"]}
 
 CurationConcerns::BookForm.model_attributes(params)
-=&gt; {"copyright_status"=&gt;["All Rights Reserved"]}
-</pre></code>
-</section>
+=> {"copyright_status"=>["All Rights Reserved"]}
+```
 
-<section class="slide">
-  <h2>Actor</h2>
-</section>
+## Actor
 
-<section class="slide">
-  <h2>Actor</h2>
-  <pre><code class="language-ruby"># app/actors/curation_concerns/book_actor.rb
+```ruby
+# app/actors/curation_concerns/book_actor.rb
 module CurationConcerns
   class BookActor < CurationConcerns::BaseActor
     include ::CurationConcerns::WorkActorBehavior
   end
 end
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Actor</h2>
-  <p>Customize such that a librarian is notified when a new item is added.</p>
-</section>
+## Actor
+Customize such that a librarian is notified when a new item is added.
 
-<section class="slide">
-  <h2>Actor</h2>
-  <pre><code class="language-ruby"># app/actors/curation_concerns/book_actor.rb
+### Actor
+``` ruby
+#app/actors/curation_concerns/book_actor.rb
 module CurationConcerns
   class BookActor < CurationConcerns::BaseActor
     include ::CurationConcerns::WorkActorBehavior
@@ -606,14 +556,10 @@ module CurationConcerns
       NewDepositMailer.book_created(curation_concern).deliver_now
   end
 end
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h1>Fin</h1>
-  <h3>More information</h3>
-  <ul>
-    <li><a href="https://github.com/projecthydra-labs/curation_concerns" target="new">https://github.com/projecthydra-labs/curation_concerns</a></li>
-    <li><a href="https://github.com/projecthydra-labs/hydra-works" target="new">https://github.com/projecthydra-labs/hydra-works</a></li>
-    <li><a href="https://github.com/projecthydra/sufia" target="new">https://github.com/projecthydra/sufia</a></li>
-</section>
+# Fin
+### More information
+- [Curation Concerns](https://github.com/projecthydra-labs/curation_concerns "Curation Concerns")
+- [Hydra Works](https://github.com/projecthydra-labs/hydra-works "Hydra Works")
+- [Sufia](https://github.com/projecthydra/sufia "Sufia")

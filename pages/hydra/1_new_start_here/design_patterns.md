@@ -9,83 +9,71 @@ folder: hydra
 toc: false
 ---
 
+![touring bicycles](images/touring.jpg "Logo Title Text 1")
 
-<section class="slide" style="text-align: center">
-  <img src="images/touring.jpg" alt="touring bicycles" style="height: 85vh; margin-top: 5vh;">
-  <p><small>cc-by-nd: <a href="https://flic.kr/p/gHzsqC">8barbikes</a></small></p>
-</section>
+[8barbikes](https://flic.kr/p/gHzsqC)
 
-<section class="slide">
-  <h2>Where are we? What are we doing here?</h2>
 
-  <ul>
-    <li class="slide">Working code wins</li>
-    <li class="slide">Go far together</li>
-    <li class="slide">Scratch your own itch</li>
-    <li class="slide">"The Rails Way"</li>
-    <li class="slide">The Model-View-Controller (MVC) Pattern</li>
-  </ul>
-</section>
+### Where are we? What are we doing here?
 
-<section class="slide" style="text-align: center">
-  <h1>Where are we going?<br>What are our goals?<br>Where to next?</h1>
-</section>
+- Working code wins
+- Go far together
+- Scratch your own itch
+- "The Rails Way"
+- The Model-View-Controller (MVC) Pattern
 
-<section class="slide">
-  <h2>Maintainable software</h2>
-  <p class="slide">Well defined interfaces</p>
-  <p class="slide">Fewer included modules</p>
-  <p class="slide">Customize without contortions to override controller/helper methods</p>
-  <p class="slide">Keep it working</p>
-</section>
 
-<section class="slide" style="text-align: center">
-  <img src="https://cleancoders.com/assets/images/authors-robert-martin-v0.jpg" style="height: 90vh; margin-top: 5vh;" alt="uncle bob">
-</section>
+#### Where are we going? What are our goals? Where to next?
 
-<section class="slide">
-  <img src="/images/agile_software_development.jpg" style="height: 90vh; margin-top: 5vh;">
-</section>
 
-<section class="slide">
-  <h2>SOLID: The first five principles</h2>
-  <ul>
-    <li>Single responsibility</li>
-    <li>Open for extension, closed for modification</li>
-    <li>Liskov substitution</li>
-    <li>Interface Segregation</li>
-    <li>Dependency Inversion</li>
-  </ul>
-</section>
+### Maintainable software
 
-<section class="slide">
-  <h2>Anti-pattern: <span class="slide">Rails Helpers</span></h2>
-  <div>
-    <img src="images/anti-pattern.jpg" alt="touring bicycles" style="width: 45vw;">
-    <p><small>cc-by-nc: <a href="https://flic.kr/p/8sp6Y4">Edmund White</a></small></p>
-  </div>
+- Well defined interfaces
+- Fewer included modules
+- Customize without contortions to override controller/helper methods
+- Keep it working
 
-  <span class="slide">
-    <h4>Multiple responsibilities:</h4>
-    <p><a href="https://github.com/projectblacklight/blacklight/blob/c57262d10f415b1661fa7860cc920b793a7af2bf/app/helpers/blacklight/facets_helper_behavior.rb" target="_new">FacetsHelperBehavior</a></p>
-  </span>
-</section>
+![uncle bob](https://cleancoders.com/assets/images/authors-robert-martin-v0.jpg "uncle bob")
 
-<section class="slide">
-  <h2>Solution: <span class="slide">Presenter</span></h2>
-  <div>
-    <img src="images/paceline.jpg" alt="track bicycles" style="width: 45vw;">
-    <p><small>cc-by-nc: <a href="https://flic.kr/p/7tpXgx">Steve McFarland</a></small></p>
-  </div>
-  <h3 class="slide">a.k.a.: Decorator or View-Model</h3>
-  <span class="slide">
-  The presenter is responsible for translating values from the model to a presentable form.
-  </span>
-</section>
 
-<section class="slide">
-  <h2>Presenter</h2>
-  <pre><code  class="language-ruby">class BookPresenter
+![agile](/images/agile_software_development.jpg "agile")
+
+### SOLID: The first five principles
+
+- Single responsibility
+- Open for extension, closed for modification
+- Liskov substitution
+- Interface Segregation
+- Dependency Inversion
+
+
+### Anti-pattern: Rails Helpers
+
+![touring bicycles](images/anti-pattern.jpg "touring bicycles")
+
+[Edmund White](https://flic.kr/p/8sp6Y4)
+
+
+### Multiple responsibilities:
+
+[FacetsHelperBehavior](https://github.com/projectblacklight/blacklight/blob/c57262d10f415b1661fa7860cc920b793a7af2bf/app/helpers/blacklight/facets_helper_behavior.rb)
+
+
+### Solution: Presenter
+
+![track bicycles](images/paceline.jpg "track bicycles")
+
+[Steve McFarland](https://flic.kr/p/7tpXgx)
+
+### a.k.a.: Decorator or View-Model
+
+The presenter is responsible for translating values from the model to a presentable form.
+
+
+## Presenter
+
+``` ruby
+class BookPresenter
   def initialize(book)
     @book = book
   end
@@ -95,121 +83,122 @@ toc: false
   def glitter_title
     '★' + @book.title + '☆'
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Presenter usage</h2>
-  <pre><code  class="language-ruby">class BooksController < ApplicationController
+### Presenter usage
+``` ruby
+class BooksController < ApplicationController
   def show
     book = Book.find(params[:id])
     @presenter = BookPresenter.new(book)
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>In real code</h2>
-  <a href="https://github.com/projecthydra-labs/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56" target="_new">https://github.com/projecthydra-labs/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56</a>
-</section>
-
-<section class="slide">
-  <h2>Hands on exercise</h2>
-  <div>
-    <img src="images/dummy.jpg" alt="crash test dummy" style="width: 45vw;">
-    <p><small>cc-by: <a href="https://flic.kr/p/nmV7A9">Timmy_L</a></small></p>
-  </div>
-  <ul>
-    <li>Start up the VM</li>
-    <li>Log into Hyrax</li>
-  </ul>
-  <p><strong>Task:</strong> Display a new field 'restrictions'</p>
-</section>
-
-<section class="slide">
-  <h3>Start up the VM</h3>
-  <pre><code>$ vagrant up
-$ vagrant ssh</code></pre>
-</section>
-
-<section class="slide">
-  <h3>Change directory to the Hyrax sample application</h3>
-  <pre><code>$ cd hyrax-sample</code></pre>
-</section>
-
-<section class="slide">
-  <h3>Generate Hyrax application</h3>
-  <p><strong>If you're using the provided VM, this is already done. You can skip this step.</strong></p>
-  <p>If you don't already have Rails 5+ installed</p>
-  <pre><code>$ gem install rails -v 5.0.0.1</code></pre>
-  <pre><code>$ rails new hyrax-sample -m
-                https://raw.githubusercontent.com/projecthydra-labs/hyrax/master/template.rb</code></pre>
-</section>
+### In real code
+  [https://github.com/projecthydra-labs/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56](https://github.com/projecthydra-labs/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56)
 
 
-<section class="slide">
-  <h3>Generate a book</h3>
-  <pre><code>$ rails generate hyrax:work Book</code></pre>
-</section>
+### Hands on exercise
 
-<section class="slide">
-  <h3>Start up the services</h3>
-  <p>Open 3 more terminal windows. In each window:</p>
-  <pre><code>$ vagrant ssh
-$ cd hyrax-sample</code></pre>
-</section>
+![crash test dummy](images/dummy.jpg "crash test dummy")
 
-<section class="slide">
-  <h3>Start up the services</h3>
-  <p>Start Solr:
-  <code>$ solr_wrapper</code></p>
-  <p>Start Fedora:
-  <code>$ fcrepo_wrapper</code></p>
-  <p>Start Rails:
-  <code>$ rails server -b 0.0.0.0</code></p>
-</section>
+[Timmy_L](https://flic.kr/p/nmV7A9)
 
-<section class="slide">
-  <h3>Create an account</h3>
-  <p>When you see <code>Listening on tcp://0.0.0.0:3000</code> the server is ready
-  to visit at <a href="http://localhost:3000/">http://localhost:3000/</a></p>
+- Start up the VM
+- Log into Hyrax
 
-  <p><small>* If you're using Rails 4, you'll see <code>WEBrick::HTTPServer#start: pid=5962 port=3000</code> instead.</small></p>
+Display a new field 'restrictions'
 
-</section>
+### Start up the VM
+```
+$ vagrant up
+$ vagrant ssh
 
-<section class="slide">
-  <h3>Create a presenter</h3>
-  <p><strong>Task:</strong> Display a new field 'restrictions'</p>
-  <p>in the fourth terminal window:</p>
-  <pre><code>$ mkdir app/presenters
-$ nano app/presenters/book_presenter.rb</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h3>Create a presenter</h3>
-    <pre><code class="language-ruby"># app/presenters/book_presenter.rb
+### Change directory to the Hyrax sample application
+
+` cd hyrax-sample `
+
+
+### Generate Hyrax application
+
+**If you're using the provided VM, this is already done. You can skip this step.**
+
+If you don't already have Rails 5+ installed
+
+`$ gem install rails -v 5.0.0.1
+$ rails new hyrax-sample -m `
+
+https://raw.githubusercontent.com/projecthydra-labs/hyrax/master/template.rb
+
+
+
+### Generate a book
+` $ rails generate hyrax:work Book `
+
+
+### Start up the services
+
+Open 3 more terminal windows. In each window:
+` $ vagrant ssh
+$ cd hyrax-sample `
+
+
+#### Start up the services
+
+Start Solr:
+
+` $ solr_wrapper `
+
+Start Fedora:
+
+` $ fcrepo_wrapper `
+
+Start Rails:
+
+` $ rails server -b 0.0.0.0 `
+
+### Create an account
+
+When you see `Listening on tcp://0.0.0.0:3000` the server is ready to visit at http://localhost:3000/
+
+*If you're using Rails 4, you'll see `WEBrick::HTTPServer#start: pid=5962 port=3000` instead.*
+
+### Create a presenter
+*Task:* Display a new field 'restrictions'
+
+in the fourth terminal window:
+`$ mkdir app/presenters
+$ nano app/presenters/book_presenter.rb`
+
+### Create a presenter
+``` ruby
+# app/presenters/book_presenter.rb
 class BookPresenter &lt; Hyrax::WorkShowPresenter
   delegate :restrictions, to: :solr_document
-end</code></pre>
-    <p>* You need to restart your rails server</p>
-</section>
+end
+```
+*You need to restart your rails server*
 
-<section class="slide">
-  <h3>Update the solr document</h3>
-    <pre><code class="language-ruby"># app/models/solr_document.rb
+
+### Update the solr document
+``` ruby
+# app/models/solr_document.rb
 class SolrDocument
   ...
   def restrictions
     fetch('restrictions_tesim', ['nothing'])
   end
   ...
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h3>Update the controller</h3>
-      <pre><code class="language-ruby"># app/controllers/hyrax/books_controller.rb
+### Update the controller
+``` ruby
+# app/controllers/hyrax/books_controller.rb
 module Hyrax
   class BooksController &lt; ApplicationController
     include Hyrax::WorksControllerBehavior
@@ -219,38 +208,40 @@ module Hyrax
     # Set our custom presenter
     self.show_presenter = ::BookPresenter
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h3>Update the view partial</h3>
-      <pre><code>$ cp `bundle show hyrax`/app/views/hyrax/base/_attribute_rows.html.erb
+### Update the view partial
+```
+$ cp `bundle show hyrax`/app/views/hyrax/base/_attribute_rows.html.erb
       app/views/hyrax/books/
 
 $ nano app/views/hyrax/books/_attribute_rows.html.erb
-      </code></pre>
-</section>
+```
 
-<section class="slide">
-  <h3>Update the view partial</h3>
-      <pre><code class="language-ruby"># app/view/hyrax/books/_attribute_rows.html.erb
-&lt;%= presenter.attribute_to_html(:description) %&gt;
-&lt;%= presenter.attribute_to_html(:creator, render_as: :linked ) %&gt;
+### Update the view partial
+
+``` ruby
+# app/view/hyrax/books/_attribute_rows.html.erb
+
+<%= presenter.attribute_to_html(:description) %>
+<%= presenter.attribute_to_html(:creator, render_as: :linked ) %>
 ...
-&lt;%= presenter.attribute_to_html(:source) %&gt;
+<%= presenter.attribute_to_html(:source) %>
 
-&lt;%= presenter.attribute_to_html(:restrictions) %&gt;
-      </code></pre>
-</section>
-<section class="slide">
-  <h3>View your work</h3>
-  Now, if you create a book, you should see the "restrictions" row display in the metadata.
-</section>
+<%= presenter.attribute_to_html(:restrictions) %>
 
-<section class="slide">
-  <h3>Update the a presenter</h3>
-    <pre><code class="language-ruby"># app/presenters/book_presenter.rb
-class BookPresenter &lt; Hyrax::WorkShowPresenter
+```
+
+### View your work
+
+Now, if you create a book, you should see the "restrictions" row display in the metadata.
+
+### Update the presenter
+
+``` ruby
+# app/presenters/book_presenter.rb
+class BookPresenter < Hyrax::WorkShowPresenter
   # delegate :restrictions, to: :solr_document
 
   def restrictions
@@ -260,28 +251,26 @@ class BookPresenter &lt; Hyrax::WorkShowPresenter
       solr_document.restrictions
     end
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Presenters in conclusion</h2>
-  <ul>
-    <li>A pattern to encapsulate helpers that work on a particular model</li>
-    <li>Also called decorators or view-models</li>
-    <li>You can find them in hydra-editor and hyrax</li>
-    <li>In Hydra the Presenter is delegating to a SolrDocument</li>
-  </ul>
-</section>
+### Presenters in conclusion
 
-<section class="slide">
-  <h2>Forms</h2>
-  <p>Like a presenter but backed by a ActiveFedora object, not a SolrDocument</p>
-  <p><strong>Task:</strong> Add 'restrictions' to the create/edit page.</p>
-</section>
+- A pattern to encapsulate helpers that work on a particular model
+- Also called decorators or view-models
+- You can find them in hydra-editor and hyrax
+- In Hydra the Presenter is delegating to a SolrDocument
 
-<section class="slide">
-  <h3>Customize the model</h3>
-  <pre><code class="language-ruby"># app/models/book.rb
+
+### Forms
+
+Like a presenter but backed by a ActiveFedora object, not a SolrDocument
+*Task:* Add 'restrictions' to the create/edit page.
+
+
+### Customize the model
+``` ruby
+# app/models/book.rb
 class Book &lt; ActiveFedora::Base
   include ::Hyrax::WorkBehavior
   include ::Hyrax::BasicMetadata
@@ -292,73 +281,69 @@ class Book &lt; ActiveFedora::Base
     index.as :stored_searchable
   end
   self.human_readable_type = 'Book'
-end</code></pre>
-</section>
-<section class="slide">
-  <h3>Customize the form</h3>
-  <pre><code class="language-ruby"># app/forms/hyrax/book_form.rb
+end
+```
+
+### Customize the form
+
+```ruby
+# app/forms/hyrax/book_form.rb
 module Hyrax
   class BookForm &lt; Hyrax::Forms::WorkForm
     self.model_class = ::Book
 
     self.terms += [:resource_type, :restrictions]
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h3>Maybe make the property single value?</h3>
-  <pre><code class="language-ruby"># app/models/book.rb
+
+### Maybe make the property single value?
+``` ruby
+# app/models/book.rb
   ...
   property :restrictions, predicate: ::RDF::Vocab::DC.accessRights, multiple: false do |index|
     index.as :stored_searchable
   end
-  ...</code></pre>
-</section>
+  ...
+  ```
 
-<section class="slide">
-  <h2>Forms in conclusion</h2>
-  <ul>
-    <li>Just like a presenter, but with an ActiveFedora object instead of a SolrDocument</li>
-    <li>Follows the decorator/view-model pattern</li>
-    <li>You can find them in hydra-editor and hyrax</li>
-  </ul>
-</section>
+### Forms in conclusion
 
-<section class="slide">
-  <h2>Anti-pattern: <span class="slide">bloated services</span></h2>
-  <div>
-    <img src="images/anti-pattern2.jpg" alt="crash" style="width: 45vw;">
-    <p><small>cc-by-nc-nd: <a href="https://flic.kr/p/9J5nCV">Rob Lucas</a></small></p>
-  </div>
+- Just like a presenter, but with an ActiveFedora object instead of a SolrDocument
+- Follows the decorator/view-model pattern
+- You can find them in hydra-editor and hyrax
 
-  <span class="slide">
-    <h4>Multiple responsibilities:</h4>
-    <p><a href="https://github.com/projecthydra/sufia/blob/6.x-stable/sufia-models/app/actors/sufia/generic_file/actor.rb#L32-L43" target="_new">GenericFile::Actor</a></p>
-  </span>
-</section>
 
-<section class="slide">
-  <h2>Solution: <span class="slide">Stack</span></h2>
-  <div>
-    <img src="images/stacked.jpg" alt="stacked" style="height: 60vh;">
-    <p><small>cc-by: <a href="https://flic.kr/p/oc8g1c">Mark B. Schlemmer</a></small></p>
-  </div>
-  <span class="slide">
-    Flow from one stack frame at a time, with each frame having a single responsibility.
-    <p><a href="https://github.com/projecthydra-labs/hyrax/blob/f1dd22484163b776ec73907b5e39756d2a62924c/app/services/hyrax/actor_factory.rb#L3-L17" target="_new">Hyrax::ActorFactory</a></p>
-  </span>
-</section>
 
-<section class="slide">
-  <h2>Actor Stack</h2>
-  <img src="images/actor_stack.png" alt="actor stack" style="height: 70vh;">
-</section>
+### Anti-pattern: Bloated Services
 
-<section class="slide">
-  <h2>Actor Stack: In the wild</h2>
-  <pre><code class="language-ruby"># app/actors/hyrax/actors/add_as_member_of_collections_actor.rb
-class AddAsMemberOfCollectionsActor &lt; AbstractActor
+![creash](images/anti-pattern2.jpg "crash")
+
+[Rob Lucas](https://flic.kr/p/9J5nCV)
+
+
+#### Multiple responsibilities:
+[GenericFile::Actor](https://github.com/projecthydra/sufia/blob/6.x-stable/sufia-models/app/actors/sufia/generic_file/actor.rb#L32-L43)
+
+
+### Solution: Stack
+
+![stacked](images/stacked.jpg "stacked")
+[Mark B. Schlemmer](https://flic.kr/p/oc8g1c)
+
+
+Flow from one stack frame at a time, with each frame having a single responsibility.
+
+[Hyrax::ActorFactory](https://github.com/projecthydra-labs/hyrax/blob/f1dd22484163b776ec73907b5e39756d2a62924c/app/services/hyrax/actor_factory.rb#L3-L17)
+
+### Actor Stack
+![actor stack](images/actor_stack.png "actor stack")
+
+### Actor Stack: In the wild
+```ruby
+# app/actors/hyrax/actors/add_as_member_of_collections_actor.rb
+class AddAsMemberOfCollectionsActor < AbstractActor
   def create(attributes)
     collection_ids = attributes.delete(:member_of_collection_ids)
     add_to_collections(collection_ids) && next_actor.create(attributes)
@@ -370,12 +355,12 @@ class AddAsMemberOfCollectionsActor &lt; AbstractActor
   end
   private
   ...
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Create actor</h2>
-  <pre><code class="language-ruby"># app/actors/hyrax/actors/metadata_enrichment_actor.rb
+### Create actor
+``` ruby
+# app/actors/hyrax/actors/metadata_enrichment_actor.rb
 module Hyrax
   module Actors
     class MetadataEnrichmentActor &lt; Hyrax:Actors:BaseActor
@@ -392,15 +377,16 @@ module Hyrax
         end
     end
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Add actor to the stack</h2>
-  <pre><code>$ mkdir -p app/services/hyrax
+### Add actor to the stack
+```
+$ mkdir -p app/services/hyrax
   $ cp `bundle show hyrax`/app/services/hyrax/actor_factory.rb app/services/hyrax/
-  </code></pre>
-  <pre><code class="language-ruby"># app/services/hyrax/actor_factory.rb
+```
+```ruby
+# app/services/hyrax/actor_factory.rb
 module Hyrax
   class ActorFactory
     def self.stack_actors(curation_concern)
@@ -417,66 +403,56 @@ module Hyrax
        Hyrax::Actors::InitializeWorkflowActor]
     end
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Add actor to the stack</h2>
-  <p>Since we just changed an initializer, we'll need to restart the Rails server. Now try it out!</p>
-</section>
+### Add actor to the stack
 
-<section class="slide">
-  <h2>Actor stack in conclusion</h2>
-  <ul>
-    <li>An ordered collection of classes that implement create and update</li>
-    <li>The create/update methods return true to continue and false to abort</li>
-    <li>Inspired by Rack middleware</li>
-    <li>Still needs work to be more configurable by end users</li>
-  </ul>
-</section>
+Since we just changed an initializer, we'll need to restart the Rails server. Now try it out!
 
-<section class="slide">
-  <h2>Anti-pattern: <span class="slide">bloated controller</span></h2>
-  <div>
-    <img src="images/anti-pattern3.jpg" alt="crash" style="width: 45vw;">
-    <p><small>cc-by-nc: <a href="https://flic.kr/p/pv5B1d">Brad Hammonds</a></small></p>
-  </div>
+### Actor stack in conclusion
 
-  <span class="slide">
-    <h4>Multiple responsibilities:</h4>
-    <p><a href="https://github.com/projectblacklight/blacklight/blob/v5.2.0/lib/blacklight/request_builders.rb#L7" target="_new">RequestBuilders</a> (included onto CatalogController)</p>
-  </span>
-</section>
+- An ordered collection of classes that implement create and update
+- The create/update methods return true to continue  and false to abort
+- Inspired by Rack middleware
+- Still needs work to be more configurable by end users
 
-<section class="slide">
-  <h2>Search Builders</h2>
-  <ul>
-    <li>Build a query for the index (Solr)</li>
-    <li>Decouples the controller from the index implementation</li>
-    <li>Allows us to build queries outside of the Controller</li>
-    <li>Blacklight generates one for you: <code>app/models/search_builder.rb</code></li>
-  </ul>
-</section>
 
-<section class="slide">
-  <h2>Search Builder: In the wild</h2>
-  <pre><code class="language-ruby"># hyrax: app/search_builders/hyrax/catalog_search_builder.rb
-class Hyrax::CatalogSearchBuilder &lt; ::SearchBuilder
+### Anti-pattern: Bloated Controller
+
+  ![crash](images/anti-pattern3.jpg "crash")
+  
+  [Brad Hammonds](https://flic.kr/p/pv5B1d)
+
+#### Multiple responsibilities:
+[RequestBuilders](https://github.com/projectblacklight/blacklight/blob/v5.2.0/lib/blacklight/request_builders.rb#L7)  (included onto CatalogController)
+
+### Search Builders
+
+- Build a query for the index (Solr)
+- Decouples the controller from the index implementation
+- Allows us to build queries outside of the Controller
+- Blacklight generates one for you: `app/models/search_builder.rb`
+
+
+### Search Builder: In the wild
+``` ruby
+# hyrax: app/search_builders/hyrax/catalog_search_builder.rb
+class Hyrax::CatalogSearchBuilder < ::SearchBuilder
   self.default_processor_chain += [
     :add_access_controls_to_solr_params,
     :show_works_or_works_that_contain_files,
     :show_only_active_records
   ]
   ...
-end</code></pre>
-</section>
+end
+```
 
+### Search Builder: In the wild (cont.)
 
-
-<section class="slide">
-  <h2>Search Builder: In the wild (cont.)</h2>
-  <pre><code class="language-ruby"># hyrax: app/search_builders/hyrax/catalog_search_builder.rb
-class Hyrax::CatalogSearchBuilder &lt; ::SearchBuilder
+```ruby
+  # hyrax: app/search_builders/hyrax/catalog_search_builder.rb
+class Hyrax::CatalogSearchBuilder < ::SearchBuilder
   ...
   # show both works that match the query and works that contain files that match the query
     def show_works_or_works_that_contain_files(solr_parameters)
@@ -491,12 +467,12 @@ class Hyrax::CatalogSearchBuilder &lt; ::SearchBuilder
       solr_parameters[:fq] &lt;&lt; '-suppressed_bsi:true'
     end
     ...
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Search Builder: In the wild (cont.)</h2>
-  <pre><code class="language-ruby"># hyrax: app/search_builders/hyrax/filter_by_type.rb
+### Search Builder: In the wild (cont.)
+``` ruby
+# hyrax: app/search_builders/hyrax/filter_by_type.rb
 module FilterByType
   ...
   # Add queries that excludes everything except for works and collections
@@ -519,13 +495,15 @@ module FilterByType
       [ActiveFedora::Base.respond_to?(:to_rdf_representation) ? models.map(&:to_rdf_representation) : models.map(&:to_class_uri)].join(',')
     end
   ...
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Exercise</h2>
-  <p>Create a search builder that finds books by a particular person</p>
-  <pre><code class="language-ruby"># app/models/created_by_search_builder.rb
+### Exercise
+
+Create a search builder that finds books by a particular person
+
+  ``` ruby
+  # app/models/created_by_search_builder.rb
 class CreatedBySearchBuilder &lt; Blacklight::SearchBuilder
   include Blacklight::Solr::SearchBuilderBehavior
   include Hydra::AccessControlsEnforcement
@@ -536,31 +514,30 @@ class CreatedBySearchBuilder &lt; Blacklight::SearchBuilder
     solr_parameters[:fq] ||= []
     solr_parameters[:fq] &lt;&lt; "{!field f=creator_tesim v=#{blacklight_params[:q][:creator]}}"
   end
-end</code></pre>
-</section>
+end
+```
 
-<section class="slide">
-  <h2>Exercise</h2>
-  <pre><code class="language-ruby">builder = CreatedBySearchBuilder.new(nil).with(creator: 'Carla
+### Exercise
+``` ruby
+builder = CreatedBySearchBuilder.new(nil).with(creator: 'Carla
   Hayden')
 builder.query
   => {"facet.field"=>[], "facet.query"=>[], "facet.pivot"=>[],
       "fq"=>["{!field f=creator_tesim v=Carla Hayden}"], "hl.fl"=>[]}
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Exercise</h2>
-  <p>Create a search builder that finds books by a particular person</p>
-  <pre><code class="language-ruby">repository = CatalogController.new.repository
+### Exercise
+
+Create a search builder that finds books by a particular person
+
+``` ruby
+repository = CatalogController.new.repository
 builder = CreatedBySearchBuilder.new(nil).where(creator: 'Carla Hayden')
 response = repository.search(builder)
 response.documents
-</code></pre>
-</section>
+```
 
-<section class="slide">
-  <h2>Fin</h2>
-  <img src="images/victory.jpg" alt="track bicycles" style="width: 80vw;">
-  <p><small>cc-by-sa: <a href="https://flic.kr/p/9QKXEf">Brandon O'Connor</a></small></p>
-</section>
+## Fin
+![track bicycles](images/victory.jpg "track bicycles")
+
+[Brandon O'Connor](https://flic.kr/p/9QKXEf)
