@@ -13,6 +13,6 @@ These are community documents, so we rely on the pull request model. If you'd li
 - tag them appropriately
 
 
-## Our Custom Theme
+## Our Theme
 
-We created a [gem](https://github.com/elrayle/documentation-theme-jekyll) from a Jekyll theme designed for [documentation](https://github.com/tomjohnson1492/documentation-theme-jekyll), primarily for ease in updating content. We chose the Documentation Theme because of its excellent navigation and clear page layout.
+We use a Jekyll theme designed for [documentation](https://github.com/tomjohnson1492/documentation-theme-jekyll). We chose the Documentation Theme because of its excellent navigation and clear page layout, and for the ease of working in markdown.
