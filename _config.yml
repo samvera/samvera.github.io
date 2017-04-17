@@ -1,7 +1,5 @@
-theme: documentation-theme-jekyll
-
-
-repository: elrayle/documentation-theme-jekyll
+# theme: documentation-theme-jekyll
+# repository: tomjohnson1492/documentation-theme-jekyll
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
