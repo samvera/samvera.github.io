@@ -51,6 +51,14 @@ entries:
       url: /training.html
       output: web, pdf
 
+    - title: Dive Deeper Into Hydra (Slideshow)
+      url: /deeper_hydra_index.html
+      output: web, pdf
+
+    - title: Touring Hydra Design Patterns (Slideshow)
+      url: /touring_hydra_index.html
+      output: web, pdf
+
   - title: Development Resources
     output: web, pdf
     folderitems:
