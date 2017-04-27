@@ -15,16 +15,16 @@ entries:
       url: /our_technology_stack.html
       output: web, pdf
 
-    - title: Dive Deeper into Hyrax
-      url: /dive-deeper.html
-      output: web, pdf
-
-    - title: Design Patterns in Hyrax
-      url: /design_patterns.html
-      output: web, pdf
-
     - title: Other Helpful Getting Started Docs
       url: /other-getting-started.html
+      output: web, pdf
+
+    - title: Dive Deeper Into Hydra (Slideshow)
+      url: /deeper_hydra_index.html
+      output: web, pdf
+
+    - title: Hydra Design Patterns (Slideshow)
+      url: /touring_hydra_index.html
       output: web, pdf
 
     - title: Quality Practices
@@ -49,14 +49,6 @@ entries:
 
     - title: Training
       url: /training.html
-      output: web, pdf
-
-    - title: Dive Deeper Into Hydra (Slideshow)
-      url: /deeper_hydra_index.html
-      output: web, pdf
-
-    - title: Touring Hydra Design Patterns (Slideshow)
-      url: /touring_hydra_index.html
       output: web, pdf
 
   - title: Development Resources
