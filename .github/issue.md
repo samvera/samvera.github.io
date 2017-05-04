@@ -25,3 +25,7 @@ When possible, please tag your issue with the provided labels:
 - Change to Documentation
 - Documentation Request (for new documentation)
 - Question (when submitting a general question)
+
+### Make it so!
+
+[New Documentation Issue](https://github.com/projecthydra/projecthydra.github.io/issues/new)
