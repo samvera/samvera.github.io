@@ -1177,3 +1177,28 @@ h4.panel-title {
     padding-top: 0px;
     margin-top: 0px;
 }
+
+
+/* To use...
+ * <ul.info><li>Test for the info box.</li></ul>
+ */
+ul.info {
+    list-style-image: url('/assets/images/icons/info_24.png');
+    border-style: solid;
+    border-width: 2px;
+    border-color: #17adec;
+}
+
+ul.question {
+    list-style-image: url('/assets/images/icons/question_24.png');
+    border-style: solid;
+    border-width: 2px;
+    border-color: #edcc12;
+}
+
+ul.warning {
+    list-style-image: url('/assets/images/icons/warning_24.png');
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ac1e26;
+}

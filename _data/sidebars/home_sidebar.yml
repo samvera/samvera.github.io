@@ -63,6 +63,23 @@ entries:
       url: /hyrax-out-of-the-box.html
       output: web
 
+      subfolders:
+      - title: Coding Best Practices
+        output: web
+        subfolderitems:
+
+        - title: Coding Style with RuboCop
+          url: /best-practices-coding-styles.html
+          output: web
+
+        - title: Testing
+          url: /best-practices-testing.html
+          output: web
+
+        - title: Use of Module Includes
+          url: /best-practices-modules.html
+          output: web
+
     - title: Extending Hyrax
       url: /extend-hyrax.html
       output: web
