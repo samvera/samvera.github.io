@@ -15,6 +15,10 @@ entries:
       url: /our_technology_stack.html
       output: web, pdf
 
+    - title: How to Ask for Help
+      url: /get-help.html
+      output: web, pdf
+
     - title: Other Helpful Getting Started Docs
       url: /other-getting-started.html
       output: web, pdf
