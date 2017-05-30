@@ -6,6 +6,8 @@ tags: false
 toc: false
 ---
 
+#### Note: The project formerly known as Hydra is being renamed to Samvera; links below will be updated soon. 
+
 ### Chat Channels, Email Lists, Telephone Calls, Wiki Pages
 
 There are many ways to ask for for help from the community, whether your question is about developing, metadata, project planning, or institutional policies. This page contains contact information for all of these points of interest.
