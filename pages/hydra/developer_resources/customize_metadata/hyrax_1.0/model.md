@@ -62,7 +62,7 @@ Core metadata properties (**_that should never be removed_**) are defined in [ap
 
 | Property | Predicate | Multiple |
 | -------- | --------- | -------- |
-| depositor | ::RDF::URI.new('http://id.loc.gov/vocabulary/relators/dpt') | **FALSE** |
+| depositor | ::RDF::Vocab::MARCRelators.dpt | **FALSE** |
 | title | ::RDF::Vocab::DC.title | TRUE |
 | date_uploaded | ::RDF::Vocab::DC.dateSubmitted | **FALSE** |
 | date_modified | ::RDF::Vocab::DC.modified | **FALSE** |
