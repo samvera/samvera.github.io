@@ -30,14 +30,47 @@ end
 
 ## Basic and Core metadata
 
-* Basic metadata fields are defined in (app/models/concerns/hyrax/basic_metadata.rb)[https://github.com/projecthydra-labs/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb]
-* Core metadata fields (that should never be removed) are defined in (app/models/concerns/hyrax/core_metadata.rb)[https://github.com/projecthydra-labs/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb]
+### Basic metadata
 
+Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/projecthydra-labs/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb)
 
-## Extend the model 
+| Property | Predicate | Multiple |
+| -------- | --------- | -------- |
+| label | ActiveFedora::RDF::Fcrepo::Model.downloadFilename | **FALSE** |
+| relative_path | ::RDF::URI.new('http://scholarsphere.psu.edu/ns#relativePath') | **FALSE** |
+| import_url | ::RDF::URI.new('http://scholarsphere.psu.edu/ns#importUrl') | **FALSE** |
+| resource_type | ::RDF::Vocab::DC.type | TRUE |
+| creator | ::RDF::Vocab::DC11.creator | TRUE |
+| contributor | ::RDF::Vocab::DC11.contributor | TRUE |
+| description | ::RDF::Vocab::DC11.description | TRUE |
+| keyword | ::RDF::Vocab::DC11.relation | TRUE |
+| license | ::RDF::Vocab::DC.rights | TRUE |
+| rights_statement | ::RDF::Vocab::EDM.rights | TRUE |
+| publisher | ::RDF::Vocab::DC11.publisher | TRUE |
+| date_created | ::RDF::Vocab::DC.created | TRUE |
+| subject | ::RDF::Vocab::DC11.subject | TRUE |
+| language | ::RDF::Vocab::DC11.language | TRUE |
+| identifier | ::RDF::Vocab::DC.identifier | TRUE |
+| based_near | ::RDF::Vocab::FOAF.based_near | TRUE |
+| related_url | ::RDF::RDFS.seeAlso | TRUE |
+| bibliographic_citation | ::RDF::Vocab::DC.bibliographicCitation | TRUE |
+| source | ::RDF::Vocab::DC.source | TRUE |
+
+### Core metadata
+
+Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/projecthydra-labs/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb)
+
+| Property | Predicate | Multiple |
+| -------- | --------- | -------- |
+| depositor | ::RDF::Vocab::MARCRelators.dpt | **FALSE** |
+| title | ::RDF::Vocab::DC.title | TRUE |
+| date_uploaded | ::RDF::Vocab::DC.dateSubmitted | **FALSE** |
+| date_modified | ::RDF::Vocab::DC.modified | **FALSE** |
+
+## Extend the model
 
 ### To add a new single-value property
- 
+
 To define a property that has a single text value, add the following to the GenericWork model.
 ```ruby
   property :contact_email, predicate: ::RDF::Vocab::VCARD.hasEmail, multiple: false do |index|
@@ -47,7 +80,7 @@ To define a property that has a single text value, add the following to the Gene
 
 - It will be limited to a single value (set multiple: true  or leave off for multi-value, which is the default behavior)
 - If included in the new/edit form, it will have `input type=text`  (There is a bit more configuration under section [Add the new single-value property to the new/edit form](#add-the-new-single-value-property-to-the-newedit-form) to have this included in the form.)
-- By setting `index.as :stored_searchable`, values will be added to the solr_doc as contact_email_tesi indicating this field is English text (te), stored (s), indexed (i) 
+- By setting `index.as :stored_searchable`, values will be added to the solr_doc as contact_email_tesi indicating this field is English text (te), stored (s), indexed (i)
   - See [Solr Schema](https://github.com/projecthydra/hydra-head/wiki/Solr-Schema) documentation for more information on dynamic solr field postfixes.
   - See [Solrizer::DefaultDescriptors](http://www.rubydoc.info/gems/solrizer/3.4.0/Solrizer/DefaultDescriptors) documentation for more information on values for `index.as`
 
