@@ -8,7 +8,7 @@ sidebar: home_sidebar
 tags: [development_resources]
 ---
 
-Note: This page borrows heavily, and hopes to update, the information contained on [the Sufia Mediated Deposit page](https://github.com/projecthydra/sufia/wiki/Mediated-Deposit-Workflow).
+Note: This page borrows heavily, and hopes to update, the information contained on [the Sufia Mediated Deposit page](https://github.com/samvera/sufia/wiki/Mediated-Deposit-Workflow).
 
 ## Why mediated deposit?
 

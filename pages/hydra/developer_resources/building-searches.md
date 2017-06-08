@@ -40,11 +40,11 @@ The generated parent class `SearchBuilder` descends from `Blacklight::SearchBuil
 As modified by the Hyrax installer, it includes additional modules and overrides.  So if your SearchBuilder has `::SearchBuilder` as a parent class, you are getting:
 - [Blacklight::SearchBuilder](https://github.com/projectblacklight/blacklight/blob/master/lib/blacklight/search_builder.rb) grandparent class
 - [Blacklight::Solr::SearchBuilderBehavior](https://github.com/projectblacklight/blacklight/blob/master/lib/blacklight/solr/search_builder_behavior.rb) associated methods
-- [Hydra::AccessControlsEnforcement](https://github.com/projecthydra/hydra-head/blob/master/hydra-access-controls/lib/hydra/access_controls_enforcement.rb) module
+- [Hydra::AccessControlsEnforcement](https://github.com/samvera/hydra-head/blob/master/hydra-access-controls/lib/hydra/access_controls_enforcement.rb) module
   -  [Blacklight::AccessControls::Enforcement](https://github.com/projectblacklight/blacklight-access_controls/blob/master/lib/blacklight/access_controls/enforcement.rb) ancestor of `Hydra::AccessControlsEnforcement`
-- [CurationConcerns::SearchFilters](https://github.com/projecthydra/curation_concerns/blob/master/app/search_builders/curation_concerns/search_filters.rb)  module that itself includes:
+- [CurationConcerns::SearchFilters](https://github.com/samvera/curation_concerns/blob/master/app/search_builders/curation_concerns/search_filters.rb)  module that itself includes:
   - [BlacklightAdvancedSearch::AdvancedSearchBuilder](https://github.com/projectblacklight/blacklight_advanced_search/blob/master/lib/blacklight_advanced_search/advanced_search_builder.rb) more magic for compound Boolean queries
-  - [CurationConcerns::FilterByType](https://github.com/projecthydra/curation_concerns/blob/master/app/search_builders/curation_concerns/filter_by_type.rb) Collection vs. Work filtering, specifically the `filter_models` method
+  - [CurationConcerns::FilterByType](https://github.com/samvera/curation_concerns/blob/master/app/search_builders/curation_concerns/filter_by_type.rb) Collection vs. Work filtering, specifically the `filter_models` method
 
 This is not a comprehensive list, but it is sufficient to trace some of the complexity of interaction between various layers.
 
@@ -90,8 +90,8 @@ There is no point having the other `filter_models` methods apply `:fq`s that we 
 
 ### Legacy
 
-[Blacklight Search Results, hydra-head version 6.0.0](https://github.com/projecthydra/hydra-head/wiki/Lesson:-make-blacklight-return-search-results)
+[Blacklight Search Results, hydra-head version 6.0.0](https://github.com/samvera/hydra-head/wiki/Lesson:-make-blacklight-return-search-results)
 
-[Gated Discovery Filter Search Results, permissions-based, hydra-head versions 6.4.0 and 7.2.2](https://github.com/projecthydra/hydra-head/wiki/Lesson---gated-discovery---filter-search-results-based-on-permissions)
+[Gated Discovery Filter Search Results, permissions-based, hydra-head versions 6.4.0 and 7.2.2](https://github.com/samvera/hydra-head/wiki/Lesson---gated-discovery---filter-search-results-based-on-permissions)
 
-[Filtering Search Results with Hydra Access Controls, 2012](https://github.com/projecthydra/hydra-head/wiki/Filtering-search-results-with-hydra-access-controls)
+[Filtering Search Results with Hydra Access Controls, 2012](https://github.com/samvera/hydra-head/wiki/Filtering-search-results-with-hydra-access-controls)

@@ -18,7 +18,7 @@ RuboCop is a Ruby static code analyzer.  The validations that RuboCop makes are 
 
 ## Recommended Configuration
 
-The recommended configuration of RuboCop for the Hydra community can be included in your app by installing the [Bixby gem](https://github.com/projecthydra-labs/bixby).  You can see the default configuration setup by Bixby in these three files:  [bixby_default.yml](https://github.com/projecthydra-labs/bixby/blob/master/bixby_default.yml), [bixby_rails_enabled.yml](https://github.com/projecthydra-labs/bixby/blob/master/bixby_rails_enabled.yml), [bixby_rspec_enabled.yml](https://github.com/projecthydra-labs/bixby/blob/master/bixby_rspec_enabled.yml).
+The recommended configuration of RuboCop for the Hydra community can be included in your app by installing the [Bixby gem](https://github.com/samvera-labs/bixby).  You can see the default configuration setup by Bixby in these three files:  [bixby_default.yml](https://github.com/samvera-labs/bixby/blob/master/bixby_default.yml), [bixby_rails_enabled.yml](https://github.com/samvera-labs/bixby/blob/master/bixby_rails_enabled.yml), [bixby_rspec_enabled.yml](https://github.com/samvera-labs/bixby/blob/master/bixby_rspec_enabled.yml).
 
 You can include the default bixby RuboCop configuration by adding the following to the top of your app's `.rubocop.yml` file.
 

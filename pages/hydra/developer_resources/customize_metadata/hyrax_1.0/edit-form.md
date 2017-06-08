@@ -29,13 +29,13 @@ end
 
 NOTE: 
 - As generated, model_class is the generated model class
-- As generated, terms includes basic work terms defined in [Hyrax's work_form.rb](https://github.com/projecthydra-labs/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb).
+- As generated, terms includes basic work terms defined in [Hyrax's work_form.rb](https://github.com/samvera-labs/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb).
 - A controller class was also generated and configures form_class to be the one described here, e.g., `self.form_class = Hyrax::Forms::GenericWorkForm` 
  
 
 ## Notable WorkForm methods
 
-This class inherits from [Hyrax::Forms::WorkForm](https://github.com/projecthydra-labs/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb) which has several methods of note.
+This class inherits from [Hyrax::Forms::WorkForm](https://github.com/samvera-labs/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb) which has several methods of note.
 
 | Method | Description | Overridden? |
 | ------ | ----------- | ----------- |
@@ -85,7 +85,7 @@ end
 
 Default behavior:
 - By adding the property to self.terms, it will be added to the new/edit form.
-- Without additional customization, the field will be a text input field.  (See [Sufia's app/views/records/edit_fields/_default.html.erb](https://github.com/projecthydra/sufia/blob/master/app/views/records/edit_fields/_default.html.erb)
+- Without additional customization, the field will be a text input field.  (See [Sufia's app/views/records/edit_fields/_default.html.erb](https://github.com/samvera/sufia/blob/master/app/views/records/edit_fields/_default.html.erb)
 - For contact_email and department, because we did NOT set multiple: true in the model, there will be only a single value set for this property.
 - For contact_phone, because we DID set multiple: true in the model, there will be an `Add another` link below these fields allowing for multiple values to be set.
 - Because we added contact_email to the required_fields set, it will be displayed as required on the initial display of metadata fields on the form. 
@@ -96,7 +96,7 @@ Default behavior:
 
 To customize a form field, you create a partial with the property name under `app/views/records/edit_fields`.  Add form code to display the form as desired.  If this is the first form field customization you have made, you will need to create the `records/edit_fields` directories under `app/views`.
 
-You can see [more examples](https://github.com/projecthydra-labs/hyrax/tree/master/app/views/records/edit_fields) by exploring those created for the default fields in Sufia.
+You can see [more examples](https://github.com/samvera-labs/hyrax/tree/master/app/views/records/edit_fields) by exploring those created for the default fields in Sufia.
 
 ### For a single-value field (optional)
 
@@ -135,7 +135,7 @@ For a controlled-value field, you can use something similar to...
 %>
 ```
 
-For additional instructions, see [Hyrax Autocomplete](https://github.com/projecthydra-labs/hyrax/wiki/Autocomplete-in-Hyrax).
+For additional instructions, see [Hyrax Autocomplete](https://github.com/samvera-labs/hyrax/wiki/Autocomplete-in-Hyrax).
 
 ---
 

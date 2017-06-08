@@ -49,9 +49,9 @@ You can do this by overriding the `admin?` method on the `Ability` class like th
 
 In-depth tutorials and explanations of the structure
 
-- [Access Controls with Hydra 9](https://github.com/projecthydra/hydra-head/wiki/Access-Controls-with-Hydra)
+- [Access Controls with Hydra 9](https://github.com/samvera/hydra-head/wiki/Access-Controls-with-Hydra)
 
-- [Access Controls with Hydra < 9](https://github.com/projecthydra/hydra-head/wiki/Access-Controls)
+- [Access Controls with Hydra < 9](https://github.com/samvera/hydra-head/wiki/Access-Controls)
 
 ### Potential for Refactoring
 

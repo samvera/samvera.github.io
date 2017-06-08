@@ -560,6 +560,6 @@ end
 
 # Fin
 ### More information
-- [Curation Concerns](https://github.com/projecthydra-labs/curation_concerns "Curation Concerns")
-- [Hydra Works](https://github.com/projecthydra-labs/hydra-works "Hydra Works")
-- [Sufia](https://github.com/projecthydra/sufia "Sufia")
+- [Curation Concerns](https://github.com/samvera-labs/curation_concerns "Curation Concerns")
+- [Hydra Works](https://github.com/samvera-labs/hydra-works "Hydra Works")
+- [Sufia](https://github.com/samvera/sufia "Sufia")

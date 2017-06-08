@@ -32,7 +32,7 @@ end
 
 ### Basic metadata
 
-Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/projecthydra-labs/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb)
+Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera-labs/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb)
 
 | Property | Predicate | Multiple |
 | -------- | --------- | -------- |
@@ -58,7 +58,7 @@ Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metada
 
 ### Core metadata
 
-Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/projecthydra-labs/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb)
+Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/samvera-labs/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb)
 
 | Property | Predicate | Multiple |
 | -------- | --------- | -------- |
@@ -81,7 +81,7 @@ To define a property that has a single text value, add the following to the Gene
 - It will be limited to a single value (set multiple: true  or leave off for multi-value, which is the default behavior)
 - If included in the new/edit form, it will have `input type=text`  (There is a bit more configuration under section [Add the new single-value property to the new/edit form](#add-the-new-single-value-property-to-the-newedit-form) to have this included in the form.)
 - By setting `index.as :stored_searchable`, values will be added to the solr_doc as contact_email_tesi indicating this field is English text (te), stored (s), indexed (i)
-  - See [Solr Schema](https://github.com/projecthydra/hydra-head/wiki/Solr-Schema) documentation for more information on dynamic solr field postfixes.
+  - See [Solr Schema](https://github.com/samvera/hydra-head/wiki/Solr-Schema) documentation for more information on dynamic solr field postfixes.
   - See [Solrizer::DefaultDescriptors](http://www.rubydoc.info/gems/solrizer/3.4.0/Solrizer/DefaultDescriptors) documentation for more information on values for `index.as`
 
 

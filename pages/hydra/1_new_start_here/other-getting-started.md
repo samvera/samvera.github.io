@@ -7,7 +7,7 @@ tags: [getting_started]
 toc: false
 ---
 ### The Hyrax Stack
-- [Hyrax ](https://github.com/projecthydra-labs/hyrax#getting-started)
+- [Hyrax ](https://github.com/samvera-labs/hyrax#getting-started)
 
 - [Solr](http://lucene.apache.org/solr/quickstart.html)
 
@@ -21,4 +21,4 @@ toc: false
 
 ### Legacy
 
-[Hydra Head Getting Started, 2016](https://github.com/projecthydra/hydra-head/wiki/How-to-Get-Started)
+[Hydra Head Getting Started, 2016](https://github.com/samvera/hydra-head/wiki/How-to-Get-Started)
