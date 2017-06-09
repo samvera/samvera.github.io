@@ -32,7 +32,7 @@ end
 
 ### Basic metadata
 
-Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera-labs/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb)
+Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb)
 
 | Property | Predicate | Multiple |
 | -------- | --------- | -------- |
@@ -58,7 +58,7 @@ Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metada
 
 ### Core metadata
 
-Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/samvera-labs/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb)
+Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb)
 
 | Property | Predicate | Multiple |
 | -------- | --------- | -------- |

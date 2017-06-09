@@ -23,7 +23,7 @@ information on broader community communication, please see the Hydra wiki
 Slack has become the primary mode of synchronous communication in the Hydra community. There is a Hydra Slack team that is used for discussion, questions, announcements, interest groups, and working groups. Topics span very general discussion to in-depth interest/working group work, from metadata work to development coordination. Anyone can create a new channel within the Hydra Slack team once they have registered for an account.
 
 * Slack: http://project-hydra.slack.com/
-* Signup form: http://slack.samvera.org/
+* Signup form: http://slack.projecthydra.org/
 
 ## Mailing Lists
 

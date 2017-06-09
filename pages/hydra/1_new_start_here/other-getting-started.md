@@ -7,7 +7,7 @@ tags: [getting_started]
 toc: false
 ---
 ### The Hyrax Stack
-- [Hyrax ](https://github.com/samvera-labs/hyrax#getting-started)
+- [Hyrax ](https://github.com/samvera/hyrax#getting-started)
 
 - [Solr](http://lucene.apache.org/solr/quickstart.html)
 

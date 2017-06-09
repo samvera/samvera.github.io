@@ -16,7 +16,7 @@ This tutorial assumes that you generated a work type name GenericWork.  If you u
 
 ## Default properties for the show page
 
-By default, the new properties will **NOT** be displayed on the show page for works of this type.   If you do nothing, which properties will be on the show page is guided by [Hyrax::WorkShowPresenter](https://github.com/samvera-labs/hyrax/blob/master/app/presenters/hyrax/work_show_presenter.rb) class.  Look for the property names delegated to the solr_document near the top of the file.
+By default, the new properties will **NOT** be displayed on the show page for works of this type.   If you do nothing, which properties will be on the show page is guided by [Hyrax::WorkShowPresenter](https://github.com/samvera/hyrax/blob/master/app/presenters/hyrax/work_show_presenter.rb) class.  Look for the property names delegated to the solr_document near the top of the file.
 
 
 ## Create a custom presenter class.
@@ -103,7 +103,7 @@ end
 
 ### Add to set of attributes to display
 
-If this is the first custom property added to the show page, you will need to copy [Hyrax's `app/views/hyrax/base/_attribute_rows.html.erb`](https://github.com/samvera-labs/hyrax/blob/master/app/views/hyrax/base/_attribute_rows.html.erb) to the same directory structure in your app.  NOTE: The link goes to master.  Make sure you copy from the release/branch of Hyrax that your app has installed.
+If this is the first custom property added to the show page, you will need to copy [Hyrax's `app/views/hyrax/base/_attribute_rows.html.erb`](https://github.com/samvera/hyrax/blob/master/app/views/hyrax/base/_attribute_rows.html.erb) to the same directory structure in your app.  NOTE: The link goes to master.  Make sure you copy from the release/branch of Hyrax that your app has installed.
  
 Add the properties to the local copy of `app/views/curation_concerns/base/_attribute_rows.html.erb`
 ```erb
@@ -127,7 +127,7 @@ config.add_show_field solr_name("department", :stored_searchable), label: "Depar
 
 ### Default display behavior
 
-Each value for the property, in this case the single value, will be displayed using a `<span>` tag.  See [Hyrax's default AttributeRenderer](https://github.com/samvera-labs/hyrax/blob/master/app/renderers/hyrax/renderers/attribute_renderer.rb).
+Each value for the property, in this case the single value, will be displayed using a `<span>` tag.  See [Hyrax's default AttributeRenderer](https://github.com/samvera/hyrax/blob/master/app/renderers/hyrax/renderers/attribute_renderer.rb).
 
 
 ## Customizing the property display
@@ -136,9 +136,9 @@ Optionally, you can customize the display of the property value on the show page
 
 ### Using an existing renderer
 
-There are a number of common renderers already defined and in use within the Hyrax app.  You can use these existing renderers for your fields.  See [Hyrax's renderers](https://github.com/samvera-labs/hyrax/tree/master/app/renderers/hyrax/renderers) for existing renderers.  
+There are a number of common renderers already defined and in use within the Hyrax app.  You can use these existing renderers for your fields.  See [Hyrax's renderers](https://github.com/samvera/hyrax/tree/master/app/renderers/hyrax/renderers) for existing renderers.  
 
-To use an existing renderer (e.g. (`FacetedAttributeRender`)[https://github.com/samvera-labs/hyrax/blob/master/app/renderers/hyrax/renderers/faceted_attribute_renderer.rb]) add the attribute to `app/views/hyrax/base/_attribute_rows.html.erb` using `render_as`.
+To use an existing renderer (e.g. (`FacetedAttributeRender`)[https://github.com/samvera/hyrax/blob/master/app/renderers/hyrax/renderers/faceted_attribute_renderer.rb]) add the attribute to `app/views/hyrax/base/_attribute_rows.html.erb` using `render_as`.
 
 ```erb
 <%= presenter.attribute_to_html(:contact_email, render_as: :faceted) %>
@@ -179,7 +179,7 @@ NOTES:
 * To identify a renderer, use the renderer name (everything upto, but not including AttributeRenderer)
 * You can use one of the renderers defined in Hyrax.
 * You can make more complex renderers.  See Hyrax defined renderers for examples. 
-* See [Hyrax defined renderers](https://github.com/samvera-labs/hyrax/tree/master/app/renderers/hyrax/renderers).
+* See [Hyrax defined renderers](https://github.com/samvera/hyrax/tree/master/app/renderers/hyrax/renderers).
 
 
 ### Write a property specific custom renderer

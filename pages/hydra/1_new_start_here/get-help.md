@@ -18,7 +18,7 @@ For technical questions, the first place to reach people is in the Samvera Slack
 
 - [Samvera Slack team](https://project-hydra.slack.com)
 
-Joining the Slack team requires an invitation, but anyone can generate an automatic invite using this [form](http://slack.samvera.org/). (If this form does not work, you may want to use this backup [form](https://docs.google.com/forms/d/1cRJaOTo2pHAeMzfE3hKL3toPHF2_e4ZXw3ufOXlF2vU/viewform). If you need help getting connected, ping slack@samvera.org and someone will be in touch.
+Joining the Slack team requires an invitation, but anyone can generate an automatic invite using this [form](http://slack.projecthydra.org/). (If this form does not work, you may want to use this backup [form](https://docs.google.com/forms/d/1cRJaOTo2pHAeMzfE3hKL3toPHF2_e4ZXw3ufOXlF2vU/viewform). If you need help getting connected, ping slack@projecthydra.org and someone will be in touch.
 
 Several Samvera Partners use Slack within their institutions for team communication and collaboration. There is a Samvera Slack team that is used for discussion, questions, announcements, interest groups, and working groups. Anyone can create a new channel within the Samvera Slack team once they have registered for an account.
 
@@ -60,7 +60,7 @@ A tutorial can be found [here](https://project-hydra.slack.com/getting-started).
 
 - **Samvera-Slack-Admins**
 
-  This is a closed list available to Samvera Slack administrators. Send email to slack@samvera.org if you're having trouble with Slack.  
+  This is a closed list available to Samvera Slack administrators. Send email to slack@projecthydra.org if you're having trouble with Slack.  
 
 - **Blacklight**
 

@@ -29,13 +29,13 @@ end
 
 NOTE: 
 - As generated, model_class is the generated model class
-- As generated, terms includes basic work terms defined in [Hyrax's work_form.rb](https://github.com/samvera-labs/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb).
+- As generated, terms includes basic work terms defined in [Hyrax's work_form.rb](https://github.com/samvera/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb).
 - A controller class was also generated and configures form_class to be the one described here, e.g., `self.form_class = Hyrax::Forms::GenericWorkForm` 
  
 
 ## Notable WorkForm methods
 
-This class inherits from [Hyrax::Forms::WorkForm](https://github.com/samvera-labs/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb) which has several methods of note.
+This class inherits from [Hyrax::Forms::WorkForm](https://github.com/samvera/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb) which has several methods of note.
 
 | Method | Description | Overridden? |
 | ------ | ----------- | ----------- |
@@ -96,7 +96,7 @@ Default behavior:
 
 To customize a form field, you create a partial with the property name under `app/views/records/edit_fields`.  Add form code to display the form as desired.  If this is the first form field customization you have made, you will need to create the `records/edit_fields` directories under `app/views`.
 
-You can see [more examples](https://github.com/samvera-labs/hyrax/tree/master/app/views/records/edit_fields) by exploring those created for the default fields in Sufia.
+You can see [more examples](https://github.com/samvera/hyrax/tree/master/app/views/records/edit_fields) by exploring those created for the default fields in Sufia.
 
 ### For a single-value field (optional)
 
@@ -135,7 +135,7 @@ For a controlled-value field, you can use something similar to...
 %>
 ```
 
-For additional instructions, see [Hyrax Autocomplete](https://github.com/samvera-labs/hyrax/wiki/Autocomplete-in-Hyrax).
+For additional instructions, see [Hyrax Autocomplete](https://github.com/samvera/hyrax/wiki/Autocomplete-in-Hyrax).
 
 ---
 
