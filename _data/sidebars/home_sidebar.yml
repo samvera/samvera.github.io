@@ -88,27 +88,35 @@ entries:
       url: /extend-hyrax.html
       output: web
 
-    - title: What Happens When I Deposit Something
-      url: /what-happens-deposit.html
-      output: web
-
-    - title: What Happens When I Edit Something
-      url: /what-happens-edit.html
-      output: web
-
-    - title: What Happens When I Search for Something
-      url: /what-happens-search.html
-      output: web
-
-    - title: What Happens When I Index Something
-      url: /what-happens-index.html
-      output: web
-
-    - title: What Happens When I View Something
-      url: /what-happens-view.html
-      output: web
-
       subfolders:
+      - title: 'What happens when...'
+        output: web
+        subfolderitems:
+
+        - title: I Deposit Something (1.0)
+          url: /what-happens-deposit-1.0.html
+          output: web
+
+        - title: I Deposit Something (2.0)
+          url: /what-happens-deposit-2.0.html
+          output: web
+
+        - title: I Edit Something
+          url: /what-happens-edit.html
+          output: web
+
+        - title: I Search for Something
+          url: /what-happens-search.html
+          output: web
+
+        - title: I Index Something
+          url: /what-happens-index.html
+          output: web
+
+        - title: I View Something
+          url: /what-happens-view.html
+          output: web
+
       - title: Admin How to - Create User Groups
         output: web
         subfolderitems:
