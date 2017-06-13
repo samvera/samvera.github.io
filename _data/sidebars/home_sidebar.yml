@@ -67,6 +67,10 @@ entries:
       url: /hyrax-out-of-the-box.html
       output: web
 
+    - title: Enabling Features
+      url: /toggle-features.html
+      output: web
+      
       subfolders:
       - title: Coding Best Practices
         output: web
