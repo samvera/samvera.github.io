@@ -38,5 +38,5 @@ They can also be used for more general discussion, such as asking a question.
 
 Most Hydra community sprints use Waffle.io to manage GitHub issues and organize their work, e.g.:
 
-* https://waffle.io/projecthydra/curation_concerns
-* https://waffle.io/projecthydra/sufia
+* https://waffle.io/samvera/curation_concerns
+* https://waffle.io/samvera/sufia

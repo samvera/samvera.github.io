@@ -1,6 +1,6 @@
 # How Does This Work?
 
-We use a Jekyll-based custom theme for markup and display, and pages are published to http://projecthydra.github.io.
+We use a Jekyll-based custom theme for markup and display, and pages are published to http://samvera.github.io.
 
 ## Adding or Editing Content
 

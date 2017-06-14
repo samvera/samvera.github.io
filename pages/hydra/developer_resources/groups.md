@@ -54,4 +54,4 @@ We can change the groups implementation (default is `RoleMapper`) by setting
 User.groups_service = MyCustomService
 ```
 
-Here is the original implementation of the [RoleMapper class]( https://github.com/projecthydra/hydra-head/blob/master/hydra-access-controls/lib/hydra/role_mapper_behavior.rb).
+Here is the original implementation of the [RoleMapper class]( https://github.com/samvera/hydra-head/blob/master/hydra-access-controls/lib/hydra/role_mapper_behavior.rb).

@@ -37,8 +37,8 @@ Slack has become the primary mode of synchronous communication in the Hydra comm
   documentation, meeting notes, and working group pages
   * To request an account, please email [sysadmin@duraspace.org](mailto:sysadmin@duraspace.org)
 * GitHub codebase-specific wikis for technical documentation and tutorials: e.g.,
-  * https://github.com/projecthydra/hydra-head/wiki
-  * https://github.com/projecthydra/sufia/wiki
+  * https://github.com/samvera/hydra-head/wiki
+  * https://github.com/samvera/sufia/wiki
 
 ## Conferences
 
@@ -61,6 +61,6 @@ Slack has become the primary mode of synchronous communication in the Hydra comm
 
 ## IRC
 
-Slack is more active, but there is still a #projecthydra IRC channel on chat.freenode.net.  Connect
+Slack is more active, but there is still a #samvera IRC channel on chat.freenode.net.  Connect
 using your favorite IRC client, or using http://webchat.freenode.net/.  If you are new to IRC, the
 Code4lib [IRC wiki page](http://code4lib.org/irc) is a good introduction.

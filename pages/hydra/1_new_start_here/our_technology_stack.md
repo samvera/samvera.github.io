@@ -20,23 +20,23 @@ We use [Fedora 4](http://fedorarepository.org/) as our persistence layer. This i
 
 ## Solr
 
-We use [Apache Solr](http://lucene.apache.org/solr/) for our search. Content from Fedora is indexed into solr via [ActiveFedora](https://github.com/projecthydra/active_fedora), one of our middleware gems. Interaction with solr also happens via an HTTP API.
+We use [Apache Solr](http://lucene.apache.org/solr/) for our search. Content from Fedora is indexed into solr via [ActiveFedora](https://github.com/samvera/active_fedora), one of our middleware gems. Interaction with solr also happens via an HTTP API.
 
 ## Middleware
 
 ### hydra-head
 
-[Hydra-Head](https://github.com/projecthydra/hydra-head) is a Ruby-on-Rails gem containing the core code for a web application using the full stack of hydra building blocks.
+[Hydra-Head](https://github.com/samvera/hydra-head) is a Ruby-on-Rails gem containing the core code for a web application using the full stack of hydra building blocks.
 
 ### active_fedora
 
-Ruby on Rails usually follows the [Active Record](http://guides.rubyonrails.org/active_record_basics.html) pattern to persist objects to a database. We instead use [ActiveFedora](https://github.com/projecthydra/active_fedora) to persist objects to Fedora.
+Ruby on Rails usually follows the [Active Record](http://guides.rubyonrails.org/active_record_basics.html) pattern to persist objects to a database. We instead use [ActiveFedora](https://github.com/samvera/active_fedora) to persist objects to Fedora.
 
 ### ldp
 
-We use a ruby gem called [ldp](https://github.com/projecthydra/ldp) to implement the LDP ([Linked Data Platform](http://www.dataversity.net/introduction-linked-data-platform/)) interaction patterns for interaction with Fedora 4.
+We use a ruby gem called [ldp](https://github.com/samvera/ldp) to implement the LDP ([Linked Data Platform](http://www.dataversity.net/introduction-linked-data-platform/)) interaction patterns for interaction with Fedora 4.
 
-You can read more about how we use LDP containers [here](https://github.com/projecthydra/hydra/wiki/LDP-Containers-for-the-perplexed).
+You can read more about how we use LDP containers [here](https://github.com/samvera/hydra/wiki/LDP-Containers-for-the-perplexed).
 
 ### rsolr
 
@@ -50,19 +50,19 @@ Much of our search and display behavior is inherited from [Blacklight](http://pr
 
 ### derivatives
 
-A gem to create [derivatives](https://github.com/projecthydra/hydra-derivatives) for uploaded content. This might include, for example, generating thumbnails for large images, down-sampled audio and video for web steaming, or thumbnail snapshots of PDF documents.
+A gem to create [derivatives](https://github.com/samvera/hydra-derivatives) for uploaded content. This might include, for example, generating thumbnails for large images, down-sampled audio and video for web steaming, or thumbnail snapshots of PDF documents.
 
 ### editor
 
-[Hydra-editor](https://github.com/projecthydra/hydra-editor) is a basic editor for hydra objects.
+[Hydra-editor](https://github.com/samvera/hydra-editor) is a basic editor for hydra objects.
 
 ### browse-everything
 
-[Browse-everything](https://github.com/projecthydra/browse-everything) is a rails engine providing access to files in cloud storage. Currently there are drivers implemented for Dropbox, Skydrive, Google Drive, Box, and a server-side directory share.
+[Browse-everything](https://github.com/samvera/browse-everything) is a rails engine providing access to files in cloud storage. Currently there are drivers implemented for Dropbox, Skydrive, Google Drive, Box, and a server-side directory share.
 
 ### file-characterization
 
-[hydra-file_characterization](https://github.com/projecthydra/hydra-file_characterization) uses [fits](https://github.com/harvard-lts/fits) to characterize files and extract metadata about them. It might tell you what kind of image encoding an image uses, along with it's height and width for example.
+[hydra-file_characterization](https://github.com/samvera/hydra-file_characterization) uses [fits](https://github.com/harvard-lts/fits) to characterize files and extract metadata about them. It might tell you what kind of image encoding an image uses, along with it's height and width for example.
 
 
 

@@ -44,7 +44,7 @@ The model class, which is part of the standard Rails Model-View-Controller, has 
 
 ### Form class
 
-The form class is used to control how metadata appears on the new/edit work form.  A form class is created for each work type when the work type is generated.  The controller knows about this class through the [work_form_service.rb form_class](https://github.com/projecthydra-labs/hyrax/blob/master/app/services/hyrax/work_form_service.rb) method.
+The form class is used to control how metadata appears on the new/edit work form.  A form class is created for each work type when the work type is generated.  The controller knows about this class through the [work_form_service.rb form_class](https://github.com/samvera/hyrax/blob/master/app/services/hyrax/work_form_service.rb) method.
 
 Default: form_class = model_name.name + Form (e.g. GenericWorkForm)
 
@@ -61,7 +61,7 @@ NOTE:
 
 ### Presenter class
 
-The presenter class is used to control how metadata appears on the work show page.  This class is NOT generated.  See [Modifying the Show Page](customize-metadata-show-page.html) for more information on creating a presenter class.  The default presenter class is defined in [works_controller_behavior.rb](https://github.com/projecthydra-labs/hyrax/blob/master/app/controllers/concerns/hyrax/works_controller_behavior.rb)
+The presenter class is used to control how metadata appears on the work show page.  This class is NOT generated.  See [Modifying the Show Page](customize-metadata-show-page.html) for more information on creating a presenter class.  The default presenter class is defined in [works_controller_behavior.rb](https://github.com/samvera/hyrax/blob/master/app/controllers/concerns/hyrax/works_controller_behavior.rb)
 
 Default: show_presenter = Hyrax::WorkShowPresenter
 

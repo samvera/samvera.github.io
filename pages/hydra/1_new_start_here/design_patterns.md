@@ -97,7 +97,7 @@ end
 ```
 
 ### In real code
-  [https://github.com/projecthydra-labs/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56](https://github.com/projecthydra-labs/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56)
+  [https://github.com/samvera/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56](https://github.com/samvera/hyrax/blob/ac57f4a931459f8f9b15cccd838d29307627dff5/app/controllers/concerns/hyrax/curation_concern_controller.rb#L56)
 
 
 ### Hands on exercise
@@ -132,7 +132,7 @@ If you don't already have Rails 5+ installed
 `$ gem install rails -v 5.0.0.1
 $ rails new hyrax-sample -m `
 
-https://raw.githubusercontent.com/projecthydra-labs/hyrax/master/template.rb
+https://raw.githubusercontent.com/samvera/hyrax/master/template.rb
 
 
 
@@ -324,7 +324,7 @@ end
 
 
 #### Multiple responsibilities:
-[GenericFile::Actor](https://github.com/projecthydra/sufia/blob/6.x-stable/sufia-models/app/actors/sufia/generic_file/actor.rb#L32-L43)
+[GenericFile::Actor](https://github.com/samvera/sufia/blob/6.x-stable/sufia-models/app/actors/sufia/generic_file/actor.rb#L32-L43)
 
 
 ### Solution: Stack
@@ -335,7 +335,7 @@ end
 
 Flow from one stack frame at a time, with each frame having a single responsibility.
 
-[Hyrax::ActorFactory](https://github.com/projecthydra-labs/hyrax/blob/f1dd22484163b776ec73907b5e39756d2a62924c/app/services/hyrax/actor_factory.rb#L3-L17)
+[Hyrax::ActorFactory](https://github.com/samvera/hyrax/blob/f1dd22484163b776ec73907b5e39756d2a62924c/app/services/hyrax/actor_factory.rb#L3-L17)
 
 ### Actor Stack
 ![actor stack](images/actor_stack.png "actor stack")

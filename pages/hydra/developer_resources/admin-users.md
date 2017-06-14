@@ -13,17 +13,17 @@ toc: false
   This page demonstrates managing groups with Hyrax Role Management, but there are a few other options available. See:
 
   - [Rolify](https://github.com/RolifyCommunity/rolify),
-  - [Hydra-ldap]( https://github.com/projecthydra-labs/hydra-ldap)
+  - [Hydra-ldap]( https://github.com/samvera-labs/hydra-ldap)
 
 ### Setup - Development Note
 
 If you need to add administrative users in a production or production-like application, please proceed with following this guide.
 
-If you only need to set up an admin user in development, this guide may be too heavyweight for your needs. Instead you should edit `config/role_map.yml` in the internal test application per [these instructions](https://github.com/projecthydra-labs/hyrax/wiki/Setting-up-test-app-for-workflow).
+If you only need to set up an admin user in development, this guide may be too heavyweight for your needs. Instead you should edit `config/role_map.yml` in the internal test application per [these instructions](https://github.com/samvera/hyrax/wiki/Setting-up-test-app-for-workflow).
 
 ### Install hydra-role-management
 
-Follow the directions for installing [hydra-role-management](https://github.com/projecthydra/hydra-role-management#installing).
+Follow the directions for installing [hydra-role-management](https://github.com/samvera/hydra-role-management#installing).
 
 Add the following to your application's Gemfile:
 

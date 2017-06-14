@@ -46,4 +46,4 @@ Groups of users, controlled by administrators; can refer to only end-users or gr
 
 ### Reference Documents
 
-[Mediated Deposit](https://github.com/projecthydra/sufia/wiki/Mediated-Deposit-Workflow)
+[Mediated Deposit](https://github.com/samvera/sufia/wiki/Mediated-Deposit-Workflow)

@@ -23,7 +23,7 @@ Edit app/forms/generic_work_form.rb  (substitute your work-type name for generic
     self.required_fields -= [:keyword, :rights] 
 ```
 
-| ![warning32](https://cloud.githubusercontent.com/assets/6855473/13064700/3f18cd1a-d423-11e5-9c1e-9c52cc0024fb.png) | WARNING: Do not remove any of the core metadata fields.  Works will not save correctly without these fields.  Core metadata fields are defined as properties in [Hyrax's core_metadata.rb](https://github.com/projecthydra-labs/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb) |  
+| ![warning32](https://cloud.githubusercontent.com/assets/6855473/13064700/3f18cd1a-d423-11e5-9c1e-9c52cc0024fb.png) | WARNING: Do not remove any of the core metadata fields.  Works will not save correctly without these fields.  Core metadata fields are defined as properties in [Hyrax's core_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb) |  
 
 ### Making a default property single-value
 
@@ -106,7 +106,7 @@ To modify the display of a colleciton property...
 * add a partial with the property's name to app/views/records/show_fields  (e.g. _department.html.erb)
 * in that file, include markup to control the display of the field
 
-NOTE: See [Hyrax's show_fields](https://github.com/projecthydra-labs/hyrax/tree/master/app/views/records/show_fields) for examples. 
+NOTE: See [Hyrax's show_fields](https://github.com/samvera/hyrax/tree/master/app/views/records/show_fields) for examples. 
 
 
 ---
