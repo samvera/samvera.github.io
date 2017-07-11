@@ -3,14 +3,14 @@ title: "Visibility and Access Controls"
 keywords: Visibility and Access Controls
 categories: How to Do All the Things
 permalink: access-controls.html
-folder: hydra/how-to/access-controls.md
+folder: samvera/how-to/access-controls.md
 sidebar: home_sidebar
 tags: [development_resources]
 ---
 ### Quickstart
-Hydra uses [cancancan](https://github.com/CanCanCommunity/cancancan#1-define-abilities) to do authorization of many actions.
+Samvera uses [cancancan](https://github.com/CanCanCommunity/cancancan#1-define-abilities) to do authorization of many actions.
 
-Cancancan generates `app/models/ability.rb` into your application and then Hydra's generator and later Hyrax's generator each adds a couple of lines so that the class looks like this:
+Cancancan generates `app/models/ability.rb` into your application and then hydra-head's generator and later Hyrax's generator each adds a couple of lines so that the class looks like this:
 
 ```
 class Ability

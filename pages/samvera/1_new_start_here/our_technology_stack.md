@@ -1,8 +1,8 @@
 ---
 title:  "Our Technology Stack"
-keywords: front end, Blacklight, Rails, Hydra Editor and other gems, search/Solr, persistance/Fedora
+keywords: front end, Blacklight, Rails, Hydra Editor and other gems, search/Solr, persistence/Fedora
 permalink: our_technology_stack.html
-folder: pages/hydra/1_new_start_here/our_technology_stack.md
+folder: pages/samvera/1_new_start_here/our_technology_stack.md
 tags: [getting_started]
 ---
 
@@ -10,9 +10,9 @@ tags: [getting_started]
 
 ## Hyrax
 
-If you are starting a new Hydra project, we strongly recommend you start with [Hyrax](http://hyr.ax/about/).
+If you are starting a new Samvera project, we strongly recommend you start with [Hyrax](http://hyr.ax/about/).
 
-At the top of our architecture diagram is "Hydra Applications." Broadly, these are [Ruby on Rails](http://rubyonrails.org/) based applications that follow Hydra conventions. While it is possible to create your own Hydra application by assembling the right components, and this has been a common practice in the Hydra community in the past, ongoing maintenance of home grown solutions will be more expensive than sharing maintenance costs with the rest of the community. We are in the process of focusing our community development efforts on Hyrax, and that will be the code base we are best able to support and maintain.  
+At the top of our architecture diagram is "Samvera Applications." Broadly, these are [Ruby on Rails](http://rubyonrails.org/) based applications that follow Samvera conventions. While it is possible to create your own Samvera application by assembling the right components, and this has been a common practice in the Samvera community in the past, ongoing maintenance of home grown solutions will be more expensive than sharing maintenance costs with the rest of the community. We are in the process of focusing our community development efforts on Hyrax, and that will be the code base we are best able to support and maintain.
 
 ## Fedora 4
 
@@ -26,7 +26,7 @@ We use [Apache Solr](http://lucene.apache.org/solr/) for our search. Content fro
 
 ### hydra-head
 
-[Hydra-Head](https://github.com/samvera/hydra-head) is a Ruby-on-Rails gem containing the core code for a web application using the full stack of hydra building blocks.
+[Hydra-Head](https://github.com/samvera/hydra-head) is a Ruby-on-Rails gem containing the core code for a web application using the full stack of samvera building blocks.
 
 ### active_fedora
 
@@ -44,7 +44,7 @@ You can read more about how we use LDP containers [here](https://github.com/samv
 
 ### blacklight
 
-Much of our search and display behavior is inherited from [Blacklight](http://projectblacklight.org/). Many Hydra institutions also run Blacklight applications separately from Hydra, to provide search and discovery for their collections. The Blacklight Project also has many of its own plugins, such as [Spotlight](http://spotlight.projectblacklight.org/), for building virtual exhibits, and [GeoBlacklight](http://geoblacklight.org/), which enhances Blacklight for use with geospatial data.
+Much of our search and display behavior is inherited from [Blacklight](http://projectblacklight.org/). Many Samvera institutions also run Blacklight applications separately from Samvera, to provide search and discovery for their collections. The Blacklight Project also has many of its own plugins, such as [Spotlight](http://spotlight.projectblacklight.org/), for building virtual exhibits, and [GeoBlacklight](http://geoblacklight.org/), which enhances Blacklight for use with geospatial data.
 
 ## Plugins
 
@@ -54,7 +54,7 @@ A gem to create [derivatives](https://github.com/samvera/hydra-derivatives) for 
 
 ### editor
 
-[Hydra-editor](https://github.com/samvera/hydra-editor) is a basic editor for hydra objects.
+[Hydra-editor](https://github.com/samvera/hydra-editor) is a basic editor for samvera objects.
 
 ### browse-everything
 

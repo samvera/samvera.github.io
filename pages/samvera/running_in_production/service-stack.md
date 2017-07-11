@@ -3,7 +3,7 @@ title:  "Solr Fedora Rails Redis"
 keywords: All of the Services
 categories: Production
 permalink: service-stack.html
-folder: hydra/production/
+folder: samvera/production/
 tags: [production]
 ---
 
@@ -17,6 +17,6 @@ Fedora is a data store that uses the LDP protocol to store linked data and binar
 Rails is a web application Framework for Ruby.
 
 ## Redis
-Redis is a key-value store that we use to back our worker queues (using Resque or Sidekiq). Hyrax also uses Redis for user notifications.  
+Redis is a key-value store that we use to back our worker queues (using Resque or Sidekiq). Hyrax also uses Redis for user notifications.
 
 {% include links.html %}

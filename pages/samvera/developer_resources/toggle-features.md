@@ -3,7 +3,7 @@ title: "How to Enable and Disable Features"
 keywords: Configuration, Features
 categories: How to Do All the Things
 permalink: toggle-features.html
-folder: hydra/how-to/toggle-features.md
+folder: samvera/how-to/toggle-features.md
 sidebar: home_sidebar
 toc: false
 tags: [development_resources]

@@ -37,7 +37,7 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='a'>&nbsp;</a>
     <span class='atoz_section_label'>A</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/index.html'>A Guide For The Perplexed Hydra Developer</a>
+      <a class='atoz_term' href='/index.html'>A Guide For The Perplexed Samvera Developer</a>
       <br>
       <a class='atoz_term' href='/participants.html'>Admin Sets - Participants</a>
       <br>
@@ -95,9 +95,9 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/tag_development_resources.html'>Development Resources</a>
       <br>
-      <a class='atoz_term' href='/deeper_hydra_index.html'>Dive Deeper into Hydra</a>
+      <a class='atoz_term' href='/deeper_samvera_index.html'>Dive Deeper into Samvera</a>
       <br>
-      <a class='atoz_term' href='/training/deeper_into_hydra/'>Dive Deeper into Hydra</a>
+      <a class='atoz_term' href='/training/deeper_into_samvera/'>Dive Deeper into Samvera</a>
       <br>
       <a class='atoz_term' href='/dive-deeper.html'>Dive Deeper into Hyrax</a>
       <br>
@@ -233,7 +233,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/customize-metadata-generate-work-type.html'>Prereq: Generating a Work Type</a>
       <br>
-      <a class='atoz_term' href='/test.html'>Project Hydra Training</a>
+      <a class='atoz_term' href='/test.html'>Samvera Community Training</a>
       <br>
     </div>
   </div>
@@ -279,9 +279,9 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/best-practices-testing.html'>Testing</a>
       <br>
-      <a class='atoz_term' href='/touring_hydra_index.html'>Touring the design patterns in Hydra</a>
+      <a class='atoz_term' href='/touring_samvera_index.html'>Touring the design patterns in Samvera</a>
       <br>
-      <a class='atoz_term' href='/training/touring_design_patterns/'>Touring the design patterns in Hydra</a>
+      <a class='atoz_term' href='/training/touring_design_patterns/'>Touring the design patterns in Samvera</a>
       <br>
       <a class='atoz_term' href='/design_patterns.html'>Touring the design patterns in Hyrax</a>
       <br>
@@ -329,7 +329,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/solutions.html'>What Solutions are Available?</a>
       <br>
-      <a class='atoz_term' href='/why-hydra.html'>Why Hydra?</a>
+      <a class='atoz_term' href='/why-samvera.html'>Why Samvera?</a>
       <br>
       <a class='atoz_term' href='/workflow_and_mediated_deposit.html'>Workflow and Mediated Deposit in Hyrax 1.x</a>
       <br>

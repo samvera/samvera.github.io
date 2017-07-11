@@ -3,9 +3,9 @@ title: Dive Deeper into Hyrax
 keywords: up-and-running
 last_updated: April 16, 2017
 tags: [getting_started]
-sidebar: hydra_sidebar
+sidebar: samvera_sidebar
 permalink: /dive-deeper.html
-folder: hydra
+folder: samvera
 toc: false
 ---
 
@@ -263,7 +263,7 @@ Allows us to reorder a whole list in a single HTTP request
 - Lots of writes
 - Resource contention
 
-## The responsibilities of Hydra
+## The responsibilities of Samvera
 
 For each class of objects in the repository, map from...
 
@@ -560,6 +560,6 @@ end
 
 # Fin
 ### More information
-- [Curation Concerns](https://github.com/samvera-labs/curation_concerns "Curation Concerns")
-- [Hydra Works](https://github.com/samvera-labs/hydra-works "Hydra Works")
+- [Curation Concerns](https://github.com/samvera/curation_concerns "Curation Concerns")
+- [Hydra Works](https://github.com/samvera/hydra-works "Hydra Works")
 - [Sufia](https://github.com/samvera/sufia "Sufia")

@@ -3,7 +3,7 @@ title: "Other Metadata Customizations"
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-other-customizations.html
-folder: hydra/how-to/customize_metadata/hyrax_1.0/other-customizations.md
+folder: samvera/how-to/customize_metadata/hyrax_1.0/other-customizations.md
 sidebar: home_sidebar
 tags: [development_resources]
 ---
@@ -20,10 +20,10 @@ This tutorial assumes that you generated a work type name GenericWork.  If you u
 Edit app/forms/generic_work_form.rb  (substitute your work-type name for generic_work) and make add the following to make keyword and rights optional fields.  NOTE: This also moves these fields below all required fields and they only display on the form when the Additional Fields button is clicked.
 
 ```ruby
-    self.required_fields -= [:keyword, :rights] 
+    self.required_fields -= [:keyword, :rights]
 ```
 
-| ![warning32](https://cloud.githubusercontent.com/assets/6855473/13064700/3f18cd1a-d423-11e5-9c1e-9c52cc0024fb.png) | WARNING: Do not remove any of the core metadata fields.  Works will not save correctly without these fields.  Core metadata fields are defined as properties in [Hyrax's core_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb) |  
+| ![warning32](https://cloud.githubusercontent.com/assets/6855473/13064700/3f18cd1a-d423-11e5-9c1e-9c52cc0024fb.png) | WARNING: Do not remove any of the core metadata fields.  Works will not save correctly without these fields.  Core metadata fields are defined as properties in [Hyrax's core_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb) |
 
 ### Making a default property single-value
 
@@ -42,8 +42,8 @@ The form class after making these changes looks like...
 #  `rails generate hyrax:work GenericWork`
 module Hyrax
   class GenericWorkForm < Hyrax::Forms::WorkForm
-    self.model_class = ::GenericWork	
-    	
+    self.model_class = ::GenericWork
+
     def self.multiple?(field)
       if [:title, :description, :publisher].include? field.to_sym
         false
@@ -51,7 +51,7 @@ module Hyrax
         super
       end
     end
-		
+
     def self.model_attributes(_)
       attrs = super
       attrs[:title] = Array(attrs[:title]) if attrs[:title]
@@ -63,14 +63,14 @@ module Hyrax
     def title
       super.first || ""
     end
-    
+
     def description
       super.first || ""
     end
-    
+
     def publisher
       super.first || ""
-    end    
+    end
   end
 end
 ```
@@ -100,13 +100,13 @@ Lastly, create your own `app/views/static/agreement.html.erb` page with the cont
 ---
 ## Customizing display of Collection properties
 
-The collection properties do not use the renderer process to control the display of properties.  
+The collection properties do not use the renderer process to control the display of properties.
 
 To modify the display of a colleciton property...
 * add a partial with the property's name to app/views/records/show_fields  (e.g. _department.html.erb)
 * in that file, include markup to control the display of the field
 
-NOTE: See [Hyrax's show_fields](https://github.com/samvera/hyrax/tree/master/app/views/records/show_fields) for examples. 
+NOTE: See [Hyrax's show_fields](https://github.com/samvera/hyrax/tree/master/app/views/records/show_fields) for examples.
 
 
 ---

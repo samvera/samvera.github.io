@@ -3,7 +3,7 @@ title: "Creating User Groups"
 keywords: Roles, Groups
 categories: How to Do All the Things - Glossary
 permalink: admin-users.html
-folder: hydra/how-to/admin-users.md
+folder: samvera/how-to/admin-users.md
 sidebar: home_sidebar
 tags: [development_resources]
 toc: false

@@ -3,7 +3,7 @@ title: "Workflow and Mediated Deposit in Hyrax 1.x"
 keywords: Mediated Deposit, Workflow, Sipity
 categories: Workflow
 permalink: workflow_and_mediated_deposit.html
-folder: hydra/developer_resources/workflow_and_mediated_deposit/hyrax_1.0/workflow_and_mediated_deposit.md
+folder: samvera/developer_resources/workflow_and_mediated_deposit/hyrax_1.0/workflow_and_mediated_deposit.md
 sidebar: home_sidebar
 tags: [development_resources]
 ---
@@ -12,7 +12,7 @@ Note: This page borrows heavily, and hopes to update, the information contained 
 
 ## Why mediated deposit?
 
-In the hydra community, there are many people who would like to be able to ingest an item and make sure it doesn't go live until the item and its metadata have been thoroughly reviewed. This is where *mediated deposit* comes in. In Hyrax, a user can describe groups of steps they want to take to have an item "properly" reviewed. Hyrax uses *workflows* to describe these groups of steps to review an item that was ingested.
+In the Samvera community, there are many people who would like to be able to ingest an item and make sure it doesn't go live until the item and its metadata have been thoroughly reviewed. This is where *mediated deposit* comes in. In Hyrax, a user can describe groups of steps they want to take to have an item "properly" reviewed. Hyrax uses *workflows* to describe these groups of steps to review an item that was ingested.
 
 ## What is a workflow?
 
@@ -117,4 +117,4 @@ coming soon ...
 
 ## How do I test that all of this is working correctly?
 
-coming soon ... 
+coming soon ...

@@ -1,9 +1,9 @@
 ---
 title:  "Amazon Web Services"
-keywords: Hosting your Hydra app on AWS
+keywords: Hosting your Samvera app on AWS
 categories: Production
 permalink: aws.html
-folder: hydra/production/
+folder: samvera/production/
 tags: [production]
 ---
 

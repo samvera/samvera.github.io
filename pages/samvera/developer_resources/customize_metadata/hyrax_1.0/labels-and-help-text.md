@@ -3,7 +3,7 @@ title: "Labels and Help Text"
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-labels.html
-folder: hydra/how-to/customize_metadata/hyrax_1.0/labels.md
+folder: samvera/how-to/customize_metadata/hyrax_1.0/labels.md
 sidebar: home_sidebar
 tags: [development_resources]
 ---

@@ -1,8 +1,8 @@
 ---
 title:  "High-level Introduction to the Project"
-keywords: Hydra's Mission and Purpose
+keywords: Samvera's Mission and Purpose
 permalink: high-level.html
-folder: hydra/getting_started/high-level.md
+folder: samvera/getting_started/high-level.md
 tags: [getting_started]
 ---
 

@@ -3,7 +3,7 @@ title: "Understanding the Controller"
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-controller.html
-folder: hydra/how-to/customize_metadata/hyrax_1.0/controller.md
+folder: samvera/how-to/customize_metadata/hyrax_1.0/controller.md
 sidebar: home_sidebar
 tags: [development_resources]
 ---
@@ -37,7 +37,7 @@ As usual, you can add code for special processing to the controller.  The contro
 
 ### Model class
 
-The model class, which is part of the standard Rails Model-View-Controller, has its name determined by Rails convention.  
+The model class, which is part of the standard Rails Model-View-Controller, has its name determined by Rails convention.
 
 `model_name = controller_name minus 'Controller'` (e.g. GenericWork)
 
@@ -48,7 +48,7 @@ The form class is used to control how metadata appears on the new/edit work form
 
 Default: form_class = model_name.name + Form (e.g. GenericWorkForm)
 
-Modifying: You can change the class that is used as the form class by setting it in the controller.  
+Modifying: You can change the class that is used as the form class by setting it in the controller.
 
 ```ruby
     self.form_class = GenericWorkExtForm # UNCOMMON, see note below.
@@ -65,7 +65,7 @@ The presenter class is used to control how metadata appears on the work show pag
 
 Default: show_presenter = Hyrax::WorkShowPresenter
 
-Modifying: You can change the class that is used as the presenter class by setting it in the controller.  
+Modifying: You can change the class that is used as the presenter class by setting it in the controller.
 
 ```ruby
     self.show_presenter = GenericWorkPresenter

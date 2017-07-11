@@ -3,7 +3,7 @@ title: "Modifying the Edit Form"
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-edit-form.html
-folder: hydra/how-to/customize_metadata/hyrax_1.0/edit-form.md
+folder: samvera/how-to/customize_metadata/hyrax_1.0/edit-form.md
 sidebar: home_sidebar
 tags: [development_resources]
 ---
