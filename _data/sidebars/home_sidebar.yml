@@ -74,7 +74,7 @@ entries:
     - title: Enabling Features
       url: /toggle-features.html
       output: web
-      
+
       subfolders:
       - title: Coding Best Practices
         output: web
@@ -208,9 +208,18 @@ entries:
       url: /access-controls.html
       output: web
 
-    - title: Workflow and Mediated Deposit
-      url: /workflow_and_mediated_deposit.html
-      output: web
+      subfolders:
+      - title: Workflow and Mediated Deposit
+        output: web
+        subfolderitems:
+
+        - title: Workflow and Mediated Deposit Overview
+          url: /workflow_and_mediated_deposit.html
+          output: web
+
+        - title: Workflow and Mediated Deposit Cheatsheet
+          url: /workflow_cheat_sheet.html
+          output: web
 
     - title: Working With Background Jobs
       url: /background-jobs.html
