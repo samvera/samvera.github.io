@@ -3,10 +3,10 @@ title: "Prereq: Defining a Controlled Vocabulary"
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-controlled-vocabulary.html
-folder: hydra/how-to/customize_metadata/hyrax_1.0/controlled-vocabulary.md
+folder: samvera/how-to/customize_metadata/hyrax_1.0/controlled-vocabulary.md
 sidebar: home_sidebar
 tags: [development_resources]
-a-z: ['Customizing Metadata (Controlled Vocabularies)', 'Controlled Vocabularies (Customizing Metadata)'] 
+a-z: ['Customizing Metadata (Controlled Vocabularies)', 'Controlled Vocabularies (Customizing Metadata)']
 ---
 
 NOTE: Please note that this documentation applies to Hyrax 1.0.

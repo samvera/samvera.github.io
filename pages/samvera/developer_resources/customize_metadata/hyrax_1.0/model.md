@@ -3,7 +3,7 @@ title: "Defining Metadata in the Model"
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-model.html
-folder: hydra/how-to/customize_metadata/hyrax_1.0/model.md
+folder: samvera/how-to/customize_metadata/hyrax_1.0/model.md
 sidebar: home_sidebar
 tags: [development_resources]
 ---

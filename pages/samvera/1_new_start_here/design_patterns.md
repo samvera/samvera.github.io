@@ -3,9 +3,9 @@ title: Touring the design patterns in Hyrax
 keywords: Design Patterns
 last_updated: April 16, 2017
 tags: [getting_started]
-sidebar: hydra_sidebar
+sidebar: samvera_sidebar
 permalink: /design_patterns.html
-folder: hydra
+folder: samvera
 toc: false
 ---
 
@@ -421,7 +421,7 @@ Since we just changed an initializer, we'll need to restart the Rails server. No
 ### Anti-pattern: Bloated Controller
 
   ![crash](images/anti-pattern3.jpg "crash")
-  
+
   [Brad Hammonds](https://flic.kr/p/pv5B1d)
 
 #### Multiple responsibilities:

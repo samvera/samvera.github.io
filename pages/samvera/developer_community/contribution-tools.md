@@ -1,9 +1,9 @@
 ---
 title: "TDD & CI, Rubocop, Yard, Inch"
-keywords: hydra contribution tools
+keywords: samvera contribution tools
 categories: Community
 permalink: contribution-tools.html
-folder: hydra/community/
+folder: samvera/community/
 sidebar: home_sidebar
 tags: [community]
 ---

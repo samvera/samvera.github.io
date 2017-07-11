@@ -6,8 +6,6 @@ tags: false
 toc: false
 ---
 
-#### Note: The project formerly known as Hydra is being renamed to Samvera; links below will be updated soon. 
-
 ### Chat Channels, Email Lists, Telephone Calls, Wiki Pages
 
 There are many ways to ask for for help from the community, whether your question is about developing, metadata, project planning, or institutional policies. This page contains contact information for all of these points of interest.
@@ -28,39 +26,39 @@ A tutorial can be found [here](https://project-hydra.slack.com/getting-started).
 
 - **Samvera-Releases** (1-2 messages a month)
 
-  [Subscribe](https://groups.google.com/forum/#!forum/hydra-releases/join) to this list if you want notification of every new point (bugfix) release of Samvera and related software.  Most people will not need this density of release information.  Major releases are notified to the Samvera-Announces list.
+  [Subscribe](https://groups.google.com/forum/#!forum/samvera-releases/join) to this list if you want notification of every new point (bugfix) release of Samvera and related software.  Most people will not need this density of release information.  Major releases are notified to the Samvera-Announces list.
 
 - **Samvera-Announces** (2-5 messages a month)
 
-  [Subscribe](https://groups.google.com/forum/#!forum/hydra-announces/join) to this list if you want the minimum mailings - only the most important security, major release, and event announcements
+  [Subscribe](https://groups.google.com/forum/#!forum/samvera-announces/join) to this list if you want the minimum mailings - only the most important security, major release, and event announcements
 
 - **Samvera-Community** (5-10 messages a week on average)
 
-  [Subscribe](https://groups.google.com/forum/#!forum/hydra-community/join) to this list if you want a broader spectrum of non-technical information related to Samvera. If you have general questions about adopting Samvera, project planning, requirements definition, etc., feel free to e-mail this list.
+  [Subscribe](https://groups.google.com/forum/#!forum/samvera-community/join) to this list if you want a broader spectrum of non-technical information related to Samvera. If you have general questions about adopting Samvera, project planning, requirements definition, etc., feel free to e-mail this list.
 
   All messages to Samvera-Announces are sent also to the Samvera-Community list - if you’re subscribed to Samvera-Community, you don’t need to subscribe to Samvera-Announces
 
 - **Samvera-Tech** (15-20 messages per week on average)
 
-  [Subscribe](https://groups.google.com/forum/#!forum/hydra-tech/join) to this list if you want to follow current technical discussions about Samvera and all of its components. If you have technical questions about implementing or developing with Hydra, email this list.
+  [Subscribe](https://groups.google.com/forum/#!forum/samvera-tech/join) to this list if you want to follow current technical discussions about Samvera and all of its components. If you have technical questions about implementing or developing with Samvera, email this list.
 
   All messages to Samvera-Announces are sent also to the Samvera-Tech list - if you’re subscribed to Samvera-Tech, you don’t need to subscribe to Samvera-Announces
 
 - **Samvera-Metadata**
 
-  [Subscribe](https://groups.google.com/forum/#!forum/hydra-metadata/join) to this list if you want to get help with or discuss metadata issues in Samvera
+  [Subscribe](https://groups.google.com/forum/#!forum/samvera-metadata/join) to this list if you want to get help with or discuss metadata issues in Samvera
 
 - **Samvera-Partners**
 
-  [This](https://groups.google.com/forum/?hl=en#!forum/hydra-partners) is a closed list available only to formal Samvera Partners and is typically used only for community governance discussions
+  [This](https://groups.google.com/forum/?hl=en#!forum/samvera-partners) is a closed list available only to formal Samvera Partners and is typically used only for community governance discussions
 
 - **Samvera-Steering**
 
-  This is a closed list available to Steering Group members and is typically used for community maintenance and licensing activities. If you have questions about becoming a partner, code licensing, or usage rights, please [e-mail](hydra-steering@googlegroups.com)
+  This is a closed list available to Steering Group members and is typically used for community maintenance and licensing activities. If you have questions about becoming a partner, code licensing, or usage rights, please [e-mail](samvera-steering@googlegroups.com)
 
 - **Samvera-Slack-Admins**
 
-  This is a closed list available to Samvera Slack administrators. Send email to slack@projecthydra.org if you're having trouble with Slack.  
+  This is a closed list available to Samvera Slack administrators. Send email to slack@projecthydra.org if you're having trouble with Slack.
 
 - **Blacklight**
 
@@ -103,11 +101,11 @@ A tutorial can be found [here](https://project-hydra.slack.com/getting-started).
   Nickname: pick a name,
   Channels: #samvera
 
-  For more information on how to start using irc, check out the instructions on the [code4lib](http://code4lib.org/irc) site.  
+  For more information on how to start using irc, check out the instructions on the [code4lib](http://code4lib.org/irc) site.
 
 ## DuraSpace Wiki
 
-The [DuraSpace Wiki](Hydra Wiki (this site) http://wiki.duraspace.org/display/hydra) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the DuraSpace Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to sysadmin@duraspace.org.
+The [DuraSpace Wiki](Samvera Wiki (this site) http://wiki.duraspace.org/display/samvera) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the DuraSpace Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to sysadmin@duraspace.org.
 
 
 ## Samvera Connect, Partner & Steering Group Meetings
@@ -116,5 +114,5 @@ Once each academic year, there is a global Samvera Connect meeting; this is a ch
 
 ## Social Media
 
-- Twitter: [@hydraSphere](https://twitter.com/HydraSphere)
-- Linked In: [Project Hydra](http://www.linkedin.com/groups?home=&gid=6615333)
+- Twitter: [@SamveraRepo](https://twitter.com/SamveraRepo)
+- Linked In: [Samvera Community](http://www.linkedin.com/groups?home=&gid=6615333)

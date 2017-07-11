@@ -2,7 +2,7 @@
 title:  "Other Helpful Getting Started Docs"
 keywords: Dive Into Hydra Works
 permalink: /other-getting-started.html
-folder: hydra/getting_started/other-getting-started-docs.md
+folder: samvera/getting_started/other-getting-started-docs.md
 tags: [getting_started]
 toc: false
 ---

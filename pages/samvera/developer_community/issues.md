@@ -4,9 +4,9 @@ keywords: issues, submitting, pull requests,
 last_updated: March 30, 2017
 tags: [community]
 summary: "Issues"
-sidebar: hydra_sidebar
+sidebar: samvera_sidebar
 permalink: issues.html
-folder: hydra
+folder: samvera
 ---
 
 # Issues
@@ -14,7 +14,7 @@ folder: hydra
 ## Submitting an Issue
 
 Each GitHub project has an Issues tab, and you can add an issue by clicking the New issue button.
-Hydra uses GitHub issues to track bugs that should be fixed and new features that should be added.
+Samvera uses GitHub issues to track bugs that should be fixed and new features that should be added.
 They can also be used for more general discussion, such as asking a question.
 
 ## What Makes a Good Issue?
@@ -36,7 +36,7 @@ They can also be used for more general discussion, such as asking a question.
 
 ## Waffle
 
-Most Hydra community sprints use Waffle.io to manage GitHub issues and organize their work, e.g.:
+Most Samvera community sprints use Waffle.io to manage GitHub issues and organize their work, e.g.:
 
 * https://waffle.io/samvera/curation_concerns
 * https://waffle.io/samvera/sufia

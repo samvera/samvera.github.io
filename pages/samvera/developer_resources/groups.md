@@ -3,7 +3,7 @@ title: "Creating User Groups"
 keywords: Roles, Groups
 categories: How to Do All the Things - Glossary
 permalink: groups.html
-folder: hydra/how-to/
+folder: samvera/how-to/
 sidebar: home_sidebar
 tags: [development_resources]
 toc: false
@@ -11,7 +11,7 @@ toc: false
 
 ### Creating Groups of Users: The Default Setup
 
-Hydra ships with a YAML based group management system.  Typically this is only used when learning Hydra.
+Samvera ships with a YAML based group management system.  Typically this is only used when learning Samvera.
 
 To change the groups in the default YAML implementation, you want to edit `config/role_map.yml`. That file should look something like this:
 

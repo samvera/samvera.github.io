@@ -3,7 +3,7 @@ title: "Configuring Discovery"
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-discovery.html
-folder: hydra/how-to/customize_metadata/hyrax_1.0/discovery.md
+folder: samvera/how-to/customize_metadata/hyrax_1.0/discovery.md
 sidebar: home_sidebar
 tags: [development_resources]
 ---
@@ -15,9 +15,9 @@ This tutorial assumes that you generated a work type name GenericWork.  If you u
 ---
 
 ## Configure Blacklight to show the property in search results
- 
+
 Optionally, you can configure a property to be shown in the search results for a work.
- 
+
 Edit `app/controllers/catalog_controller.rb` and look for the section including `add_index_field` statements.  Add the following:
 
 ```ruby

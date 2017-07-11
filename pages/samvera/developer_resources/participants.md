@@ -3,7 +3,7 @@ title: "Admin Sets - Participants"
 keywords: Admin Sets, Participants
 categories: How to Do All the Things - Glossary
 permalink: participants.html
-folder: hydra/how-to/
+folder: samvera/how-to/
 sidebar: home_sidebar
 tags: [development_resources]
 toc: false

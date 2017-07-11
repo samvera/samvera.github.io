@@ -1,9 +1,9 @@
 ---
 title: "How to Submit Pull Requests"
-keywords: hydra community PR guidelines
+keywords: samvera community PR guidelines
 categories: Community
 permalink: how-to-pr.html
-folder: hydra/community/
+folder: samvera/community/
 sidebar: home_sidebar
 tags: [community]
 ---

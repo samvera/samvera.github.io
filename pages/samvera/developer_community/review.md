@@ -2,9 +2,9 @@
 title: Code Review
 last_updated: March 30, 2017
 tags: [getting_started, community]
-sidebar: hydra_sidebar
+sidebar: samvera_sidebar
 permalink: review.html
-folder: hydra
+folder: samvera
 ---
 # Code review
 
@@ -63,7 +63,7 @@ The key things to focus on are:
 
 As a reviewer, it's also your responsibility to make sure:
 
-* Does the submitter have a signed CLA [on file](https://wiki.duraspace.org/display/hydra/CLA+submission+list)?
+* Does the submitter have a signed CLA [on file](https://wiki.duraspace.org/display/samvera/CLA+submission+list)?
 * Did the Travis tests complete successfully?
 * Is there a significant drop in code coverage?
 * Do all new or changed methods, modules, and classes have comments?
