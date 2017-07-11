@@ -1,10 +1,10 @@
 ---
 layout: deck
-title: "Touring the design patterns in Hydra"
+title: "Touring the design patterns in Samvera"
 ---
 
 <section class="slide" id="title-slide">
-  <h1>Touring the design patterns in Hydra</h1>
+  <h1>Touring the design patterns in Samvera</h1>
 </section>
 
 <section class="slide" style="text-align: center">
@@ -143,7 +143,6 @@ $ vagrant ssh</code></pre>
                 https://raw.githubusercontent.com/samvera/hyrax/master/template.rb</code></pre>
 </section>
 
-
 <section class="slide">
   <h3>Generate a book</h3>
   <pre><code>$ rails generate hyrax:work Book</code></pre>
@@ -266,7 +265,7 @@ end</code></pre>
     <li>A pattern to encapsulate helpers that work on a particular model</li>
     <li>Also called decorators or view-models</li>
     <li>You can find them in hydra-editor and hyrax</li>
-    <li>In Hydra the Presenter is delegating to a SolrDocument</li>
+    <li>In Samvera, the Presenter is delegating to a SolrDocument</li>
   </ul>
 </section>
 
@@ -467,8 +466,6 @@ class Hyrax::CatalogSearchBuilder &lt; ::SearchBuilder
   ...
 end</code></pre>
 </section>
-
-
 
 <section class="slide">
   <h2>Search Builder: In the wild (cont.)</h2>

@@ -116,7 +116,6 @@ a_z:
       - '/feed/index.xml'
       - '/generated/a-z.md'
       - '/pages/a-z.md'
-      - '/pages/hydra/developer_resources/whwi-overview.md'
+      - '/pages/samvera/developer_resources/whwi-overview.md'
     front_matter_ext:
       - 'sidebar: home_sidebar'
-

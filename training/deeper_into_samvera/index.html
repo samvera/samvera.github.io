@@ -1,10 +1,10 @@
 ---
 layout: deck
-title: "Dive Deeper into Hydra"
+title: "Dive Deeper into Samvera"
 ---
 
 <section class="slide" id="title-slide">
-  <h1>Dive Deeper into Hydra</h1>
+  <h1>Dive Deeper into Samvera</h1>
 </section>
 
 <section class="slide" style="text-align: center">
@@ -61,7 +61,6 @@ $ cp ~/downloads/fcrepo-webapp-4.5.0-jetty-console.jar /tmp
 $ cd /vagrant
 </code></pre>
 </section>
-
 
 <section class="slide">
   <h2>Hands On</h2>
@@ -282,7 +281,7 @@ fs.in_works       ### TODO in_works returns []
 </section>
 
 <section class="slide">
-  <h2 >The responsibilities of Hydra</h2>
+  <h2 >The responsibilities of Samvera</h2>
   For each class of objects in the repository, map from...
   <ul>
     <li class="slide">repository representation to object properties</li>
@@ -376,7 +375,6 @@ $ rails server -b 0.0.0.0
   <pre><code>resque-web -N curation_concerns:development</code></pre>
   <p>Open <a href="http://localhost:5678/" target="_new">http://localhost:5678/</a>
 
-
   <p>Open a new terminal window to start the workers</p>
 <pre><code>$ QUEUE=* rake resque:work</code></pre>
 </section>
@@ -445,7 +443,6 @@ class Book < ActiveFedora::Base
 end
 </code></pre>
 </section>
-
 
 <section class="slide">
   <h2>Indexer</h2>
@@ -530,7 +527,6 @@ app/views/curation_concerns/books/_attribute_rows.html.erb
       </code></pre>
 </section>
 
-
 <section class="slide">
   <h2>Customize the Form</h2>
   <p>Replace the "rights" field with "copyright_status"</p>
@@ -610,7 +606,7 @@ end
   <h1>Fin</h1>
   <h3>More information</h3>
   <ul>
-    <li><a href="https://github.com/samvera-labs/curation_concerns" target="new">https://github.com/samvera-labs/curation_concerns</a></li>
-    <li><a href="https://github.com/samvera-labs/hydra-works" target="new">https://github.com/samvera-labs/hydra-works</a></li>
+    <li><a href="https://github.com/samvera/curation_concerns" target="new">https://github.com/samvera/curation_concerns</a></li>
+    <li><a href="https://github.com/samvera/hydra-works" target="new">https://github.com/samvera/hydra-works</a></li>
     <li><a href="https://github.com/samvera/sufia" target="new">https://github.com/samvera/sufia</a></li>
 </section>
