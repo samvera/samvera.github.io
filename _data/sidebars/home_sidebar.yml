@@ -27,20 +27,20 @@ entries:
       url: /other-getting-started.html
       output: web, pdf
 
-    - title: Dive Deeper Into Hydra (Slideshow)
-      url: /deeper_hydra_index.html
+    - title: Dive Deeper Into Samvera (Slideshow)
+      url: /deeper_samvera_index.html
       output: web, pdf
 
-    - title: Hydra Design Patterns (Slideshow)
-      url: /touring_hydra_index.html
+    - title: Samvera Design Patterns (Slideshow)
+      url: /touring_samvera_index.html
       output: web, pdf
 
     - title: Quality Practices
       url: /quality.html
       output: web, pdf
 
-    - title: Why Hydra?
-      url: /why-hydra.html
+    - title: Why Samvera?
+      url: /why-samvera.html
       output: web, pdf
 
     - title: Solutions
@@ -74,7 +74,7 @@ entries:
     - title: Enabling Features
       url: /toggle-features.html
       output: web
-      
+
       subfolders:
       - title: Coding Best Practices
         output: web
@@ -154,7 +154,6 @@ entries:
           url: /participants.html
           output: web
 
-
     - title: How Do I Add a New Work Type?
       url: /add-new-work-type.html
       output: web
@@ -232,7 +231,7 @@ entries:
       url: /hardware-considerations.html
       output: web, pdf
 
-    - title: Hydra Services Stack
+    - title: Samvera Services Stack
       url: /service-stack.html
       output: web, pdf
 
