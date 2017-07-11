@@ -33,11 +33,11 @@ where,
 * **title** [String] - _(required)__ - the title displayed on the generated html page
 * **permalink** [text] - _(required)_ - the name of the generated html file that will be part of the url accessed by users
 * **folder** [text] - _(required)_ - the location of this *.md file under the pages directory
-* **sidebar** [text] - _(required)_ - value is always `homr_sidebar` at this point
+* **sidebar** [text] - _(required)_ - value is always `home_sidebar` at this point
 * **a-z** [Array<Strings>] - _(recommended)_ - array of terms to link to this page in the A-Z Index
 * **keywords** [comma separated list] - _(recommended)_ - keywords that get populated into the metadata of the page for SEO
 * **tags** [Array<text>] - _(recommended)_ - array of tags where tags must be defined in your [_data/tags.yml](https://github.com/samvera/samvera.github.io/tree/master/_data/tags.yml) list. You also need a corresponding tag file inside the [pages/tags](https://github.com/samvera/samvera.github.io/tree/master/pages/tags) folder that follows the same pattern as the other tag files shown in the tags folder.  It is rare that a new tag would be created.  If you think you need a new tag, be sure to highlight it as requiring review in the issue.
-* **categories** [text] - _(recommended)_ - ???
+* **categories** [text] - _(recommended)_ - represents the 4 major headings under which a page can reside
 
 
 ### Generate the A-Z Index page
