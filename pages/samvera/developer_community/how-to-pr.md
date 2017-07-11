@@ -1,5 +1,6 @@
 ---
 title: "How to Submit Pull Requests"
+a-z: ["How to Submit Pull Requests"]
 keywords: samvera community PR guidelines
 categories: Community
 permalink: how-to-pr.html

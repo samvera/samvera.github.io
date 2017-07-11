@@ -1,5 +1,6 @@
 ---
 title: "Other Metadata Customizations"
+a-z: ["Other Metadata Customizations"]
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-other-customizations.html

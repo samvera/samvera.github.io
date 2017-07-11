@@ -1,5 +1,6 @@
 ---
 title: "Modifying the Show Page"
+a-z: ["Modifying the Show Page"]
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-show-page.html

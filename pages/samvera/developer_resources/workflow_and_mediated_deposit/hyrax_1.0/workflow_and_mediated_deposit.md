@@ -1,5 +1,6 @@
 ---
 title: "Workflow and Mediated Deposit in Hyrax 1.x"
+a-z: ["Workflow and Mediated Deposit in Hyrax 1.x"]
 keywords: Mediated Deposit, Workflow, Sipity
 categories: Workflow
 permalink: workflow_and_mediated_deposit.html

@@ -1,5 +1,6 @@
 ---
 title: "Modifying the Edit Form"
+a-z: ["Modifying the Edit Form"]
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-edit-form.html

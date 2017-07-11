@@ -1,5 +1,6 @@
 ---
-title:  "Amazon Web Services"
+title: "Amazon Web Services"
+a-z: ["Amazon Web Services"]
 keywords: Hosting your Samvera app on AWS
 categories: Production
 permalink: aws.html

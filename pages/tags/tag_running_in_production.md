@@ -1,5 +1,6 @@
 ---
 title: "Running in Production"
+a-z: ["Running in Production"]
 tagName: production
 search: exclude
 permalink: tag_running_in_production.html

@@ -1,5 +1,6 @@
 ---
 title: "What Happens When I Deposit Something?"
+a-z: ["What Happens When I Deposit Something?"]
 keywords: Characterization, Derivatives, File Attachments
 categories: How to Do All the Things
 permalink: what-happens-deposit-2.0.html

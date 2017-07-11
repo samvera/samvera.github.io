@@ -1,5 +1,6 @@
 ---
 title: "Getting started pages"
+a-z: ["Getting started pages"]
 tagName: getting_started
 search: exclude
 permalink: tag_getting_started.html
