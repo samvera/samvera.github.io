@@ -27,11 +27,11 @@ module Hyrax
 end
 ```
 
-NOTE: 
+NOTE:
 - As generated, model_class is the generated model class
 - As generated, terms includes basic work terms defined in [Hyrax's work_form.rb](https://github.com/samvera/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb).
-- A controller class was also generated and configures form_class to be the one described here, e.g., `self.form_class = Hyrax::Forms::GenericWorkForm` 
- 
+- A controller class was also generated and configures form_class to be the one described here, e.g., `self.form_class = Hyrax::Forms::GenericWorkForm`
+
 
 ## Notable WorkForm methods
 
@@ -59,7 +59,7 @@ Now we want to update GenericWorkForm to include each of the new properties.  Ed
 
 Optionally, you can add properties to the set of required fields.  In this example, we will require the department and contact email.
 ```ruby
-    self.required_fields += [:department, :contact_email] 
+    self.required_fields += [:department, :contact_email]
 ```
 
 Optionally, you can also remove one of the basic properties defined by Hyrax from the set of required fields.  See [Other Metadata Customizations](customize-metadata-other-customizations.html) in section [Remove a default property from the set of required fields](customize-metadata-other-customizations.html#remove-a-default-property-from-the-set-of-required-fields) for an example of removing a basic metadata property from the set of required properties.
@@ -76,7 +76,7 @@ module Hyrax
   class GenericWorkForm < Hyrax::Forms::WorkForm
     self.model_class = ::GenericWork
     self.terms += [:resource_type, :contact_email, :contact_phone, :department]
-    self.required_fields += [:department, :contact_email] 
+    self.required_fields += [:department, :contact_email]
   end
 end
 ```
@@ -88,7 +88,7 @@ Default behavior:
 - Without additional customization, the field will be a text input field.  (See [Sufia's app/views/records/edit_fields/_default.html.erb](https://github.com/samvera/sufia/blob/master/app/views/records/edit_fields/_default.html.erb)
 - For contact_email and department, because we did NOT set multiple: true in the model, there will be only a single value set for this property.
 - For contact_phone, because we DID set multiple: true in the model, there will be an `Add another` link below these fields allowing for multiple values to be set.
-- Because we added contact_email to the required_fields set, it will be displayed as required on the initial display of metadata fields on the form. 
+- Because we added contact_email to the required_fields set, it will be displayed as required on the initial display of metadata fields on the form.
 - Because we did NOT add contact_phone and department to the required_fields set, they will only display in the form when you click the `Additional Fields` button.
 
 
@@ -120,7 +120,7 @@ Use something similar to...
 
 ### For a controlled vocabulary field (required)
 
-You must customize the creation of the form field to use autocomplete with a controlled vocabulary.  You can use one of the external authorities with access provided through the [Questions Authority]() gem.  Or you can create your own controlled vocabulary.  This tutorial includes instructions for [defining a simple local controlled vocabulary](customizing-metadata-controlled-vocabulary.html).
+You must customize the creation of the form field to use autocomplete with a controlled vocabulary.  You can use one of the external authorities with access provided through the [Questions Authority]() gem.  Or you can create your own controlled vocabulary.  This tutorial includes instructions for [defining a simple local controlled vocabulary](customize-metadata-controlled-vocabulary.html).
 
 
 For a controlled-value field, you can use something similar to...
