@@ -1,5 +1,6 @@
 ---
 title: "Troubleshooting Production"
+a-z: ["Troubleshooting Production"]
 keywords: debugging
 categories: Production
 permalink: troubleshooting-production.html

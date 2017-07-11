@@ -1,5 +1,6 @@
 ---
 title: "How to Enable and Disable Features"
+a-z: ["How to Enable and Disable Features"]
 keywords: Configuration, Features
 categories: How to Do All the Things
 permalink: toggle-features.html

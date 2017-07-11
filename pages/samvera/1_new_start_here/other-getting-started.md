@@ -1,5 +1,6 @@
 ---
-title:  "Other Helpful Getting Started Docs"
+title: "Other Helpful Getting Started Docs"
+a-z: ["Other Helpful Getting Started Docs"]
 keywords: Dive Into Hydra Works
 permalink: /other-getting-started.html
 folder: samvera/getting_started/other-getting-started-docs.md

@@ -1,5 +1,6 @@
 ---
 title: "Understanding the Controller"
+a-z: ["Understanding the Controller"]
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-controller.html

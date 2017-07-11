@@ -1,5 +1,6 @@
 ---
-title:  "Solr Fedora Rails Redis"
+title: "Solr Fedora Rails Redis"
+a-z: ["Solr Fedora Rails Redis"]
 keywords: All of the Services
 categories: Production
 permalink: service-stack.html

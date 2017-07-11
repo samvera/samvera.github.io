@@ -1,5 +1,6 @@
 ---
 title: Introduction
+a-z: [Introduction]
 keywords: samvera orientation
 last_updated: March 30, 2017
 tags: [getting_started]

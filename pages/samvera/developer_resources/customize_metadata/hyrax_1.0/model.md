@@ -1,5 +1,6 @@
 ---
 title: "Defining Metadata in the Model"
+a-z: ["Defining Metadata in the Model"]
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-model.html

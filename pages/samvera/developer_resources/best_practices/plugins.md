@@ -1,5 +1,6 @@
 ---
 title: "Plugins"
+a-z: ["Plugins"]
 keywords: Best Practices
 categories: How to Do All the Things
 permalink: best-practices-plugins.html

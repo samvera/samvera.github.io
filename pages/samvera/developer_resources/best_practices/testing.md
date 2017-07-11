@@ -1,5 +1,6 @@
 ---
 title: "Testing"
+a-z: ["Testing"]
 keywords: Best Practices
 categories: How to Do All the Things
 permalink: best-practices-testing.html

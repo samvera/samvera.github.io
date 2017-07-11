@@ -1,5 +1,6 @@
 ---
 title: Formalities
+a-z: [Formalities]
 keywords: contributor license agreements, github
 last_updated: March 30, 2017
 tags: [community]
