@@ -107,7 +107,7 @@ A tutorial can be found [here](https://project-hydra.slack.com/getting-started).
 
 ## DuraSpace Wiki
 
-The [DuraSpace Wiki](Hydra Wiki (this site) http://wiki.duraspace.org/display/hydra) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the DuraSpace Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to sysadmin@duraspace.org.
+The [DuraSpace Wiki](http://wiki.duraspace.org/display/samvera) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the DuraSpace Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to sysadmin@duraspace.org.
 
 
 ## Samvera Connect, Partner & Steering Group Meetings
