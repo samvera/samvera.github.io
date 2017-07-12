@@ -6,13 +6,11 @@ permalink: customize-metadata-controller.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/controller.md
 sidebar: home_sidebar
 tags: [development_resources]
+version: 
+  id: 'hyrax_1.0-stable'
 ---
 
-NOTE: Please note that this documentation applies to Hyrax 1.0.
-
-This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.
-
----
+<ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>
 
 The GenericWorksController class is generated with some default behaviors.  It is located at `app/controllers/curation_concerns/generic_works_controller.rb`
 
