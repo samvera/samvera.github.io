@@ -1,0 +1,27 @@
+{% case page.version.id %}
+{% when 'hyrax_1.0-stable' %}
+  {% include version_info/version_hyrax_1.0-stable.html %}
+{% when 'hyrax_2.0-master' %}
+  {% include version_info/version_hyrax_2.0-master.html %}
+{% else %}
+  {% include version_info/version_custom.html %}
+{% endcase %}
+
+<div id='version_container'>
+  <div class='version_label'>{{ version_label }} ( branch: <a href='{{ branch_link }}'>{{ branch_label }}</a> )</div>
+
+  {% if page.version.versions %}
+  <div class='version_selector'>
+    Documentation for Versions:
+    <select onChange="window.location.href=this.value">
+      {% for version in page.version.versions %}
+        {% assign selected = '' %}
+        {% if version.selected == 'true' %}
+          {% assign selected = ' selected' %}
+        {% endif %}
+      <option value='{{version.link}}'{{selected}}>{{version.label}}</option>
+      {% endfor %}
+    </select>
+  </div>
+  {% endif %}
+</div>

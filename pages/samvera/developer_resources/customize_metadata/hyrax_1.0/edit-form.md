@@ -6,13 +6,11 @@ permalink: customize-metadata-edit-form.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/edit-form.md
 sidebar: home_sidebar
 tags: [development_resources]
+version: 
+  id: 'hyrax_1.0-stable'
 ---
 
-NOTE: Please note that this documentation applies to Hyrax 1.0.
-
-This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.
-
----
+<ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>
 
 The inclusion of properties in the new/edit form is controlled by the GenericWorkForm class.  The GenericWorkForm class is generated with the basic set of properties (aka terms, aka metadata fields) to include.  The generated version of the file looks like...
 

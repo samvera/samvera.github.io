@@ -3,16 +3,16 @@ title: "Other Metadata Customizations"
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-other-customizations.html
-folder: samvera/how-to/customize_metadata/hyrax_1.0/other-customizations.md
+folder: hydra/how-to/customize_metadata/hyrax_1.0/other.md
 sidebar: home_sidebar
 tags: [development_resources]
+a-z: ['Other Metadata Customizions', 'Customizing Metadata (Other Metadata Customizations)', 'Modifying default Hyrax fields', 'Remove a default property from the set of required fields', 'Making a default property single-value', 'Default property, making single-value', 'Creating a Default Deposit Agreement', 'Deposit Agreement, creating a default', 'Customizing display of Collection properties', 'Collection Metadata, customizing display of']
+version: 
+  id: 'hyrax_1.0-stable'
 ---
 
-NOTE: Please note that this documentation applies to Hyrax 1.0.
+<ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>
 
-This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.
-
----
 ## Modifying default Hyrax fields
 
 ### Remove a default property from the set of required fields

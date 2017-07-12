@@ -6,13 +6,11 @@ permalink: customize-metadata-model.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/model.md
 sidebar: home_sidebar
 tags: [development_resources]
+version: 
+  id: 'hyrax_1.0-stable'
 ---
 
-NOTE: Please note that this documentation applies to Hyrax 1.0.
-
-This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.
-
----
+<ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>
 
 The GenericWork class is generated with some default metadata, but we want to update it with our own metadata.  The generated version of the file looks like...
 
