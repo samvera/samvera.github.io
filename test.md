@@ -1,5 +1,4 @@
 ---
 layout: default
-title:  'Project Hydra Training'
+title:  Samvera Community Training'
 ---
-

@@ -1,5 +1,5 @@
 ---
-title: A Guide For The Perplexed Hydra Developer
+title: A Guide For The Perplexed Samvera Developer
 keywords: sample homepage
 tags: [getting_started]
 sidebar: home_sidebar
@@ -65,17 +65,12 @@ toc: false
                </span>
            </div>
            <div class="panel-body">
-               <h4>Hydra Development Community</h4>
+               <h4>Samvera Development Community</h4>
                <p>Contributing, development patterns</p>
                <a href="tag_community.html" class="btn btn-primary">Learn More</a>
            </div>
        </div>
    </div>
 </div>
-
-
-
-
-
 
 {% include links.html %}
