@@ -7,8 +7,8 @@ We use a Jekyll-based custom theme for markup and display, and pages are publish
 These are community documents, so we rely on the pull request model. If you'd like to contribute content:
 
 - clone the project
-- make a branch  
-- create/edit pages within the Hydra directory
+- make a branch
+- create/edit pages within the Samvera directory
 - add/update [front matter](#basic-front-matter)
 - add links to the page in home_sidebar.yml
 - [generate the A-Z Index](#generate-the-a-z-index-page), if needed
@@ -16,12 +16,12 @@ These are community documents, so we rely on the pull request model. If you'd li
 
 ### Basic Front Matter
 
-Example front matter for page [Best Practices -> Coding Styles](https://raw.githubusercontent.com/samvera/samvera.github.io/master/pages/hydra/developer_resources/best_practices/coding_style.md)
+Example front matter for page [Best Practices -> Coding Styles](https://raw.githubusercontent.com/samvera/samvera.github.io/master/pages/samvera/developer_resources/best_practices/coding_style.md)
 ```
 ---
 title: "Coding Style with RuboCop"
 permalink: best-practices-coding-styles.html
-folder: hydra/how-to/best_practices/coding_styles.md
+folder: samvera/how-to/best_practices/coding_styles.md
 sidebar: home_sidebar
 a-z: ['Coding Styles', 'Rubocop']
 keywords: Best Practices
@@ -39,7 +39,6 @@ where,
 * **tags** [Array<text>] - _(recommended)_ - array of tags where tags must be defined in your [_data/tags.yml](https://github.com/samvera/samvera.github.io/tree/master/_data/tags.yml) list. You also need a corresponding tag file inside the [pages/tags](https://github.com/samvera/samvera.github.io/tree/master/pages/tags) folder that follows the same pattern as the other tag files shown in the tags folder.  It is rare that a new tag would be created.  If you think you need a new tag, be sure to highlight it as requiring review in the issue.
 * **categories** [text] - _(recommended)_ - represents the 4 major headings under which a page can reside
 
-
 ### Generate the A-Z Index page
 
 ```
@@ -47,7 +46,6 @@ bundle exec jekyll build
 mv generated/atoz.md pages
 ```
 Then commit pages/atoz.md to github
-
 
 ## Our Theme
 
