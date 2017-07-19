@@ -6,4 +6,4 @@ source "https://rubygems.org"
 
 # gem 'github-pages', group: :jekyll_plugins
 gem 'github-pages' # plugins will not run if group: :jekyll_plugins is used
-
+gem 'html-proofer'
