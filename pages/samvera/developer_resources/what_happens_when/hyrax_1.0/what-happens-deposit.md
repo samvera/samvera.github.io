@@ -6,9 +6,16 @@ permalink: what-happens-deposit-1.0.html
 folder: samvera/how-to/what_happens_when/hyrax_1.0/what-happens-deposit.md
 sidebar: home_sidebar
 tags: [development_resources]
+a-z: ['What Happens When I Deposit Something? (Hyrax 1.0)', 'Deposit Work Process (Hyrax 1.0)', 'Save Work (Hyrax 1.0)', 'Actor Stack for Work (Hyrax 1.0)']
+version: 
+  id: 'hyrax_1.0-stable'
+  versions:  
+    - label: 'Hyrax 1.0'
+      link:  'what-happens-deposit-1.0.html'
+      selected: 'true'
+    - label: 'Hyrax 2.0'
+      link:  'what-happens-deposit-2.0.html'
 ---
-
-<ul class='info'><li>These instructions apply to Hyrax 1.0.  The instructions are likely similar for later releases.  The links in this document go to the <a href='https://github.com/samvera/hyrax/tree/1-0-stable'>1-0-stable</a> branch.</li></ul>
 
 1. I'm on the form to create a new work and I click the `Save` button.
 1. The data is submitted to the controller for the correct work type.  This controller was generated when you did `bin/rails generate hyrax:work <type>`.  For example the `app/controllers/hyrax/generic_works_controller.rb` if you generated a work type of `GenericWork`.
