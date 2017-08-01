@@ -198,12 +198,8 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
-<<<<<<< ac0cac71cc9dc1317308be15c69e8cf5ae27c911
-    unicode-display_width (1.1.3)
-    yell (2.0.7)
-=======
     unicode-display_width (1.3.0)
->>>>>>> Adds page title to A-Z index
+    yell (2.0.7)
 
 PLATFORMS
   ruby
