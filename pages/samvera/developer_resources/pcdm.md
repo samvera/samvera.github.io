@@ -1,5 +1,6 @@
 ---
 title: "PCDM"
+a-z: ["PCDM"]
 keywords: Predicates, Common Ontologies, Notes from Linked Data WG, @Christina Harlow
 categories: How to Do All the Things
 permalink: pcdm.html

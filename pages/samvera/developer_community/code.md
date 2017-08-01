@@ -1,5 +1,6 @@
 ---
 title: Code Guidelines
+a-z: [Code Guidelines]
 last_updated: March 30, 2017
 tags: [getting_started]
 sidebar: samvera_sidebar

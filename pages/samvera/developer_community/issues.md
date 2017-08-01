@@ -1,5 +1,6 @@
 ---
 title: Issues
+a-z: [Issues]
 keywords: issues, submitting, pull requests,
 last_updated: March 30, 2017
 tags: [community]

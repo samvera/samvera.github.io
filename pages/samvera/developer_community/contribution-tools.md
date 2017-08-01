@@ -1,5 +1,6 @@
 ---
 title: "TDD & CI, Rubocop, Yard, Inch"
+a-z: ["TDD & CI, Rubocop, Yard, Inch"]
 keywords: samvera contribution tools
 categories: Community
 permalink: contribution-tools.html

@@ -1,5 +1,6 @@
 ---
 title: "What Happens When I Search For Something?"
+a-z: ["What Happens When I Search For Something?"]
 keywords: Solr and Blacklight Search Builders
 categories: How to Do All the Things
 permalink: what-happens-search.html

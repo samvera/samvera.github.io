@@ -1,5 +1,6 @@
 ---
 title: "What Happens When I View Something?"
+a-z: ["What Happens When I View Something?"]
 keywords: Presenters, Solr Documents
 categories: How to Do All the Things
 permalink: what-happens-view.html

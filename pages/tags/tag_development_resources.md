@@ -1,5 +1,6 @@
 ---
 title: "Development Resources"
+a-z: ["Development Resources"]
 tagName: development_resources
 search: exclude
 permalink: tag_development_resources.html

@@ -1,5 +1,6 @@
 ---
 title: "Prereq: Generating a Work Type"
+a-z: ["Prereq: Generating a Work Type"]
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-generate-work-type.html
