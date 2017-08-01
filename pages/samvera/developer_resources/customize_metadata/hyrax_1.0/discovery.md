@@ -1,5 +1,6 @@
 ---
 title: "Configuring Discovery"
+a-z: ["Configuring Discovery"]
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-discovery.html

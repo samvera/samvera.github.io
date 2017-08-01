@@ -1,5 +1,6 @@
 ---
 title: Touring the design patterns in Hyrax
+a-z: [Touring the design patterns in Hyrax]
 keywords: Design Patterns
 last_updated: April 16, 2017
 tags: [getting_started]

@@ -1,5 +1,6 @@
 ---
-title:  "What Solutions are Available?"
+title: "What Solutions are Available?"
+a-z: ["What Solutions are Available?"]
 keywords: Geolight, AV, etc
 permalink: solutions.html
 folder: samvera/getting_started/solutions.md

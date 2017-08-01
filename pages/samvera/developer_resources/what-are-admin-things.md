@@ -1,5 +1,6 @@
 ---
 title: "Admin Sets: Key Terms"
+a-z: ["Admin Sets: Key Terms"]
 keywords: Admin Sets, Display Sets, Participants, Workflows, Roles, Groups
 categories: How to Do All the Things - Glossary
 permalink: what-are-admin-things.html

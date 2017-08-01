@@ -1,5 +1,6 @@
 ---
 title: "Admin Sets - Participants"
+a-z: ["Admin Sets - Participants"]
 keywords: Admin Sets, Participants
 categories: How to Do All the Things - Glossary
 permalink: participants.html

@@ -1,5 +1,6 @@
 ---
 title: "What Happens When I Index Something?"
+a-z: ["What Happens When I Index Something?"]
 keywords: Solr Documents
 categories: How to Do All the Things
 permalink: what-happens-index.html

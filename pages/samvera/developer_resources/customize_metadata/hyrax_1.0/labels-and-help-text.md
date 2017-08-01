@@ -1,5 +1,6 @@
 ---
 title: "Labels and Help Text"
+a-z: ["Labels and Help Text"]
 keywords: Customize Metadata
 categories: How to Do All the Things
 permalink: customize-metadata-labels.html

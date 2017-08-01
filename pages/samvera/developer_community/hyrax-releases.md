@@ -1,5 +1,6 @@
 ---
 title: "Releases"
+a-z: ["Releases"]
 keywords: Of Hyrax, of gems
 categories: Community
 permalink: hyrax-releases.html

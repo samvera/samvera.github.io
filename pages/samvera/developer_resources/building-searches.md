@@ -1,5 +1,6 @@
 ---
 title: "How Do I Build Searches?"
+a-z: ["How Do I Build Searches?"]
 keywords: Solr and Blacklight Search Builders
 categories: How to Do All the Things
 permalink: building-searches.html

@@ -1,5 +1,6 @@
 ---
 title: "Visibility and Access Controls"
+a-z: ["Visibility and Access Controls"]
 keywords: Visibility and Access Controls
 categories: How to Do All the Things
 permalink: access-controls.html

@@ -1,5 +1,6 @@
 ---
 title: "Development Community"
+a-z: ["Development Community"]
 tagName: community
 search: exclude
 permalink: tag_community.html

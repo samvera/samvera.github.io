@@ -1,5 +1,6 @@
 ---
 title: Dive Deeper into Hyrax
+a-z: [Dive Deeper into Hyrax]
 keywords: up-and-running
 last_updated: April 16, 2017
 tags: [getting_started]
