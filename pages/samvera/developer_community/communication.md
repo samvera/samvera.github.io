@@ -23,8 +23,8 @@ information on broader community communication, please see the Samvera wiki
 
 Slack has become the primary mode of synchronous communication in the Samvera community. There is a Samvera Slack team that is used for discussion, questions, announcements, interest groups, and working groups. Topics span very general discussion to in-depth interest/working group work, from metadata work to development coordination. Anyone can create a new channel within the Samvera Slack team once they have registered for an account.
 
-* Slack: http://project-hydra.slack.com/
-* Signup form: http://slack.projecthydra.org/
+* Slack: http://samvera.slack.com/
+* Signup form: http://slack.samvera.org/
 
 ## Mailing Lists
 
