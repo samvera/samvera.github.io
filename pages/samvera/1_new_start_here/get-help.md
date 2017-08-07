@@ -15,13 +15,13 @@ There are many ways to ask for for help from the community, whether your questio
 
 For technical questions, the first place to reach people is in the Samvera Slack Team's channel #dev.
 
-- [Samvera Slack team](https://project-hydra.slack.com)
+- [Samvera Slack team](https://samvera.slack.com)
 
-Joining the Slack team requires an invitation, but anyone can generate an automatic invite using this [form](http://slack.projecthydra.org/). (If this form does not work, you may want to use this backup [form](https://docs.google.com/forms/d/1cRJaOTo2pHAeMzfE3hKL3toPHF2_e4ZXw3ufOXlF2vU/viewform). If you need help getting connected, ping slack@projecthydra.org and someone will be in touch.
+Joining the Slack team requires an invitation, but anyone can generate an automatic invite using this [form](http://slack.samvera.org/). (If this form does not work, you may want to use this backup [form](https://docs.google.com/forms/d/1cRJaOTo2pHAeMzfE3hKL3toPHF2_e4ZXw3ufOXlF2vU/viewform). If you need help getting connected, ping slack@samvera.org and someone will be in touch.
 
 Several Samvera Partners use Slack within their institutions for team communication and collaboration. There is a Samvera Slack team that is used for discussion, questions, announcements, interest groups, and working groups. Anyone can create a new channel within the Samvera Slack team once they have registered for an account.
 
-A tutorial can be found [here](https://project-hydra.slack.com/getting-started).  Slack has clients for Mac, PC, Linux, and mobile devices, and may be used via any web browser.
+A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slack has clients for Mac, PC, Linux, and mobile devices, and may be used via any web browser.
 
 ## Mailing Lists
 
@@ -59,7 +59,7 @@ A tutorial can be found [here](https://project-hydra.slack.com/getting-started).
 
 - **Samvera-Slack-Admins**
 
-  This is a closed list available to Samvera Slack administrators. Send email to slack@projecthydra.org if you're having trouble with Slack.
+  This is a closed list available to Samvera Slack administrators. Send email to slack@samvera.org if you're having trouble with Slack.
 
 - **Blacklight**
 
@@ -107,7 +107,6 @@ A tutorial can be found [here](https://project-hydra.slack.com/getting-started).
 ## DuraSpace Wiki
 
 The [DuraSpace Wiki](Samvera Wiki (this site) http://wiki.duraspace.org/display/samvera) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the DuraSpace Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to sysadmin@duraspace.org.
-
 
 ## Samvera Connect, Partner & Steering Group Meetings
 
