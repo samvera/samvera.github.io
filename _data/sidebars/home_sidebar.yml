@@ -266,3 +266,55 @@ entries:
     - title: How to Submit Pull Reqeusts
       url: /how-to-pr.html
       output: web, pdf
+
+  - title: Manager Guide
+    output: web, pdf
+    folderitems:
+
+        - title: Concepts and Definitions
+          url: /concepts.html
+          output: web, pdf
+
+        - title: Creating a Work
+          url: /create-works.html
+          output: web, pdf
+
+        - title: Editing a Work
+          url: /edit-works.html
+          output: web, pdf
+
+        - title: Creating Works via Batch
+          url: /batch-works.html
+          output: web, pdf
+
+  - title: User Interface Testing
+    output: web, pdf
+    folderitems:
+
+        - title: Administration
+          url: /administration-testing.html
+          output: web, pdf
+
+        - title: Dashboard
+          url: /dashboard-testing.html
+          output: web, pdf
+
+        - title: Works
+          url: /works-testing.html
+          output: web, pdf
+
+        - title: Collections
+          url: /collections-testing.html
+          output: web, pdf
+
+        - title: Workflows
+          url: /workflows-testing.html
+          output: web, pdf
+
+        - title: Navigation
+          url: /navigation-testing.html
+          output: web, pdf
+
+        - title: Discovery
+          url: /discovery-testing.html
+          output: web, pdf
