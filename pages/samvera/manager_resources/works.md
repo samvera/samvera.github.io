@@ -45,7 +45,7 @@ Select the type of work: Generic work or Image. The two requirements are Describ
 ## Create a new work, upload file from cloud storage
 
 ## Create a new batch of works
-Creating a batch of new works is very similar to creating a single new works. The primary difference involves the upload process, which creates a new work with each new file, and the metadata inputs, which are applied across the batch of new works.
+Creating a batch of new works is very similar to creating a single new work. The primary difference involves the upload process, which creates a new work with each new file, and the metadata inputs, which are applied across the batch of new works.
 
 To get started, select “Batch Create” beneath the Works heading in the top navigation.
 
