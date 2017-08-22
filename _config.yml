@@ -119,3 +119,5 @@ a_z:
       - '/pages/samvera/developer_resources/whwi-overview.md'
     front_matter_ext:
       - 'sidebar: home_sidebar'
+
+theme: jekyll-theme-minimal
