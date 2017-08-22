@@ -13,13 +13,31 @@ version:
 
 # Collections
 
+Collections are useful for creating landing pages and allowing users to link to related documents in the repository.
+
+Common use-cases might include:
+
+- Research materials by a faculty member, lab, or research center
+- Student work from an degree program, such as Masters theses or Dissertations
+- Books on a certain topic, from a certain time period, or from a certain publisher
+
 ## Create a new collection
-From the Dashboard, click on Create Collection to get started. Collections require Descriptions and Visibility to be created.
+From the Dashboard, click on Create Collection to get started. Collections require Descriptions and Visibility settings to be created.
 
 - Descriptions: The required descriptive metadata is Title. Users can describe Collections in the same way they describe Works (i.e. the same set of metadata fields are available).
 - Visibility: Unlike Works, Collections cannot be Embargoed or Leased. The options are Open Access, Institution, and Private.
 
-## View your collections
+## Adding Works to a collection
+
+### Works You deposited
+
+You may add works that you deposited to any collection you created by going to My Works '/dashboard/works', selecting works you want to add, then clicking on Add to Collection.
+
+### Works Deposited by others (Admin Users)
+
+As a repository administrator, you can add any work to any collection by going to the work page '/concern/generic_works/[PID]', clicking Edit, Relationships, select the collection, Save.
+
+## View your Collections
 From the Dashboard, click on Collections under Repository Contents. This will present you with a table of Your Collections (collections you own) including the collection title, date added, visibility, and a drop down menu of Actions you can take on the collection (edit or delete collection).
 
 Selecting Edit Collection will present you with a form that allows you to modify three major pieces of information for the collection (all are tabs across the top of the interface):
