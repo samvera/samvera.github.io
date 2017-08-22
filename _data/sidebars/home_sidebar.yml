@@ -267,9 +267,9 @@ entries:
       url: /how-to-pr.html
       output: web, pdf
 
-    - title: User Resources
-      output: web, pdf
-      folderitems:
+  - title: User Resources
+    output: web, pdf
+    folderitems:
 
         - title: Administration
           url: /administration.html
@@ -277,4 +277,4 @@ entries:
 
         - title: Dashboard
           url: /dashboard.html
-          output: web, pdf 
+          output: web, pdf
