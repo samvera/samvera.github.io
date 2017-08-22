@@ -266,3 +266,15 @@ entries:
     - title: How to Submit Pull Reqeusts
       url: /how-to-pr.html
       output: web, pdf
+
+    - title: User Resources
+      output: web, pdf
+      folderitems:
+
+        - title: Administration
+          url: /administration.html
+          output: web, pdf
+
+        - title: Dashboard
+          url: /dashboard.html
+          output: web, pdf 
