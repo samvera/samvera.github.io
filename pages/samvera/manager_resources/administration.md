@@ -1,7 +1,7 @@
 ---
-title: "Hyrax Administration"
+title: "Administration"
 permalink: administration.html
-folder: samvera/user_resources/administration.md
+folder: samvera/manager_resources/administration.md
 sidebar: home_sidebar
 a-z: ['Administration']
 keywords: Best Practices, managers, repo mangers, hyrax administration

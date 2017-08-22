@@ -1,7 +1,7 @@
 ---
 title: "Dashboard"
 permalink: dashboard.html
-folder: samvera/user_resources/dashboard.md
+folder: samvera/manager_resources/dashboard.md
 sidebar: home_sidebar
 a-z: ['Dashboard']
 keywords: Best Practices, managers, repo mangers, hyrax administration
