@@ -287,6 +287,10 @@ entries:
           url: /collections.html
           output: web, pdf
 
+        - title: Workflows
+          url: /workflows.html
+          output: web, pdf
+
         - title: Navigation
           url: /navigation.html
           output: web, pdf
