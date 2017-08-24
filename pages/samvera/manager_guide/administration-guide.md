@@ -1,7 +1,7 @@
 ---
 title: "Administration"
-permalink: administration.html
-folder: samvera/manager_resources/administration.md
+permalink: administration-guide.html
+folder: samvera/manager_guide/administration-guide.md
 sidebar: home_sidebar
 a-z: ['Administration']
 keywords: Best Practices, managers, repo mangers, hyrax administration

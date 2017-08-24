@@ -1,12 +1,12 @@
 ---
 title: "Search and Discovery"
-permalink: discovery.html
-folder: samvera/manager_resources/discovery.md
+permalink: discovery-testing.html
+folder: samvera/ui_testing/discovery-testing.md
 sidebar: home_sidebar
 a-z: ['discovery']
-keywords: Best Practices, managers, repo mangers, hyrax administration
+keywords: Discovery, testing
 tags: [discovery]
-categories: How to discover content within hyrax
+categories: Testing discovery methods in hyrax.
 version:
   id: 'hyrax_1.0-stable'
 ---

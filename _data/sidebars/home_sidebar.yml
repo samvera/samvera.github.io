@@ -267,34 +267,66 @@ entries:
       url: /how-to-pr.html
       output: web, pdf
 
-  - title: Manager Resources
+  - title: Manager Guide
     output: web, pdf
     folderitems:
 
         - title: Administration
-          url: /administration.html
+          url: /administration-guide.html
           output: web, pdf
 
         - title: Dashboard
-          url: /dashboard.html
+          url: /dashboard-guide.html
           output: web, pdf
 
         - title: Works
-          url: /works.html
+          url: /works-guide.html
           output: web, pdf
 
         - title: Collections
-          url: /collections.html
+          url: /collections-guide.html
           output: web, pdf
 
         - title: Workflows
-          url: /workflows.html
+          url: /workflows-guide.html
           output: web, pdf
 
         - title: Navigation
-          url: /navigation.html
+          url: /navigation-guide.html
           output: web, pdf
 
         - title: Discovery
-          url: /discovery.html
+          url: /discovery-guide.html
+          output: web, pdf
+
+  - title: User Interface Testing
+    output: web, pdf
+    folderitems:
+
+        - title: Administration
+          url: /administration-testing.html
+          output: web, pdf
+
+        - title: Dashboard
+          url: /dashboard-testing.html
+          output: web, pdf
+
+        - title: Works
+          url: /works-testing.html
+          output: web, pdf
+
+        - title: Collections
+          url: /collections-testing.html
+          output: web, pdf
+
+        - title: Workflows
+          url: /workflows-testing.html
+          output: web, pdf
+
+        - title: Navigation
+          url: /navigation-testing.html
+          output: web, pdf
+
+        - title: Discovery
+          url: /discovery-testing.html
           output: web, pdf

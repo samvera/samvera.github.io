@@ -1,7 +1,7 @@
 ---
 title: "Workflows"
-permalink: workflows.html
-folder: samvera/manager_resources/workflows.md
+permalink: workflows-guide.html
+folder: samvera/manager_guide/workflows-guide.md
 sidebar: home_sidebar
 a-z: ['workflows']
 keywords: Best Practices, managers, repo mangers, hyrax administration

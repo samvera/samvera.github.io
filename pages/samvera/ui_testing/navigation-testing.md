@@ -1,12 +1,12 @@
 ---
 title: "Main Navigation"
-permalink: navigation.html
-folder: samvera/manager_resources/navigation.md
+permalink: navigation-testing.html
+folder: samvera/ui_testing/navigation-testing.md
 sidebar: home_sidebar
 a-z: ['navigation']
 keywords: Best Practices, managers, repo mangers, hyrax administration
-tags: [navigation]
-categories: How to nagivate a hyrax application.
+tags: [navigation, testing]
+categories: Testing navigation methods within a hyrax application.
 version:
   id: 'hyrax_1.0-stable'
 ---
