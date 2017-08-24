@@ -1,6 +1,6 @@
 ---
 title: "Works"
-permalink: works.html
+permalink: works-testing.html
 folder: samvera/manager_resources/works.md
 sidebar: home_sidebar
 a-z: ['works']
