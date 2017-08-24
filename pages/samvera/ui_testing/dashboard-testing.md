@@ -1,12 +1,12 @@
 ---
 title: "Dashboard"
-permalink: dashboard.html
-folder: samvera/manager_resources/dashboard.md
+permalink: dashboard-testing.html
+folder: samvera/ui_testing/dashboard-testing.md
 sidebar: home_sidebar
 a-z: ['Dashboard']
 keywords: Best Practices, managers, repo mangers, hyrax administration
-tags: [user_resources]
-categories: How to use the Dashboard page in hyrax
+tags: [testing, test_scripts, dashboard]
+categories: How to test the user interface for the Hyrax Dashboard.
 version:
   id: 'hyrax_1.0-stable'
 ---
@@ -38,6 +38,12 @@ The Transfers Sent table will populate with works that you have attempted to tra
 
 The Transfers Received table will populate with requests for works that have been transferred to you. The table includes the work title, transfer date, the ID of the user the transfer is coming from, the status of the transfer, and the comments that were included with the transfer. The Status column will include a Reject button and an Accept drop-down list. In the Accept drop-down list, one has the ability to: Allow the depositor to retain edit access, Remove depositor access, and Authorize depositor as proxy. Selecting any of these Accept or Reject actions will update the table with a static Status of either accepted or rejected.
 
+### Comments: Transfers
+
+- Note: if the repo is CAS authenticating, the person assigned as batch user, nobody will be able to transfer content to them. so if CAS is enabled the default batch user is not created properly because password doesn't exist. for some reason we're also seeing that one cannot transfer content to the batch user.
+
+- Ideally the batch user would never be visible in the UI, IMO. And should work in CAS situations. New ticket?
+
 ## Reports
 The Reports page allows a user to submit a date range for which they would like statistics reported. The date range may be entered in the two date fields labelled Start and End. Selecting Load Stats will refresh the statistics in the Works Statistics, Newest Users, and Deposits by Users areas of the page. Leaving the End field should use today’s date as the default End date.
 
@@ -59,3 +65,8 @@ Selecting the collection name will return a collection page with basic statistic
 Selecting “Create Collection” returns a form for metadata about the collection, visibility of the collection, and sharing the collection with other users and groups. Sharing fields allow the user to search for another user or group with whom to share the collection and to define the type of access the user or group has to the collection (View/Download versus Edit).
 
 Adding works to a collection can be achieved by selecting Add Works button anywhere on a collection page, whereupon the user will be sent to the Works page (see below) with Your Works showing. To add other works, select All Works at the top of the page.
+
+### Comments: Collections
+
+- Currently, can't add works that are not in Your Works to a collection. Is this by design?
+- Yes, I believe the current model is that you can only add works to collections if you have edit access to them. And Your Works only shows works you can edit. Does that sound right, or is that too limited in modern-day Hyrax? Perhaps worth discussing in an issue?

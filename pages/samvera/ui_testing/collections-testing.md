@@ -1,25 +1,17 @@
 ---
 title: "Collections"
-permalink: collections.html
-folder: samvera/manager_resources/collections.md
+permalink: collections-testing.html
+folder: samvera/ui_testing/collections-testing.md
 sidebar: home_sidebar
 a-z: ['collections']
-keywords: Best Practices, managers, repo mangers, hyrax administration
-tags: [collections]
-categories: How to create and manage collections in hyrax
+keywords: testing, test scripts, hyrax, collections
+tags: [testing, collections]
+categories: Testing collections in hyrax
 version:
   id: 'hyrax_1.0-stable'
 ---
 
 # Collections
-
-Collections are useful for creating landing pages and allowing users to link to related documents in the repository.
-
-Common use-cases might include:
-
-- Research materials by a faculty member, lab, or research center
-- Student work from an degree program, such as Masters theses or Dissertations
-- Books on a certain topic, from a certain time period, or from a certain publisher
 
 ## Create a new collection
 From the Dashboard, click on Create Collection to get started. Collections require Descriptions and Visibility settings to be created.
