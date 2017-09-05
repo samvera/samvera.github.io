@@ -271,32 +271,20 @@ entries:
     output: web, pdf
     folderitems:
 
-        - title: Administration
-          url: /administration-guide.html
+        - title: Concepts and Definitions
+          url: /concepts.html
           output: web, pdf
 
-        - title: Dashboard
-          url: /dashboard-guide.html
+        - title: Creating a Work
+          url: /create-works.html
           output: web, pdf
 
-        - title: Works
-          url: /works-guide.html
+        - title: Editing a Work
+          url: /edit-works.html
           output: web, pdf
 
-        - title: Collections
-          url: /collections-guide.html
-          output: web, pdf
-
-        - title: Workflows
-          url: /workflows-guide.html
-          output: web, pdf
-
-        - title: Navigation
-          url: /navigation-guide.html
-          output: web, pdf
-
-        - title: Discovery
-          url: /discovery-guide.html
+        - title: Creating Works via Batch
+          url: /batch-works.html
           output: web, pdf
 
   - title: User Interface Testing

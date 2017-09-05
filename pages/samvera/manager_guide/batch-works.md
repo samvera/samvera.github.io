@@ -1,5 +1,5 @@
 ---
-title: "Uploading Works in a Batch"
+title: "Creating Works in a Batch"
 permalink: batch-works.html
 folder: samvera/manager_guide/batch-works.md
 sidebar: home_sidebar
