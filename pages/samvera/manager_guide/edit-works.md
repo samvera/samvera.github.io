@@ -13,7 +13,11 @@ version:
 
 # Editing a Work
 
-There are two views for works: Browse view and Edit view. The public-facing view of a work is the Browse view. A user will navigate to a work and then click “Edit” to access the edit view. As an admin user, you would be able to edit any work in the repository.
+There are two views for works: Browse view and Edit view. The public-facing view of a work is the Browse view. ![editing work](images/screenshots/Editing_work_8a.png )
+
+A user will navigate to a work and then click “Edit” to access the edit view. ![editing work](images/screenshots/Editing_work_8b.png )
+
+As an admin user, you would be able to edit any work in the repository.
 
 In the edit view for a work, you can change the description, add files, edit relationships, edit sharing, and edit visibility. ![editing work](images/screenshots/Editing_work_3.png )
 
