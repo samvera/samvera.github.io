@@ -21,7 +21,9 @@ A user must be logged in to create a Work. There are several ways to add a new w
 - In the top navigation menu, click “Works”, “New Work”.
 - In the Dashboard, click “Create Work” ![Creating work](images/screenshots/Creating_work_2.png)
 
-There four tabs in the Add New Work interface: “Description”, “Files”, “Relationships”, and “Share”. In order to be deposited, a work must minimally have: the required description fields filled out, at least one file uploaded, and the deposit agreement checkbox checked. ![Creating work](images/screenshots/Creating_work_3.png)
+There four tabs in the Add New Work interface: “Description”, “Files”, “Relationships”, and “Share”. In order to be deposited, a work must minimally have: the required description fields filled out, at least one file uploaded, and the deposit agreement checkbox checked.  
+
+![Creating work](images/screenshots/Creating_work_3.png)
 
 Once these required items are completed, the depositor must click “Save” in order to deposit the work. Navigating away from the deposit screen before clicking save causes user to have to redo deposit.
 
@@ -31,12 +33,14 @@ The “Description” tab is for adding descriptive metadata. Fill out the field
 Customizing fields is possible see bottom section Metadata
 
 ## Files (required)
-The “Files” tab is for uploading files, either locally or from a cloud service. You can browse local files to upload, or drag and drop files from your desktop. ![Creating work](images/screenshots/Creating_work_5.png)
+The “Files” tab is for uploading files, either locally or from a cloud service. You can browse local files to upload, or drag and drop files from your desktop.  ![Creating work](images/screenshots/Creating_work_5b.png)
 
-If your repository is configured to interact with a cloud service such as Dropbox, users can click “Browse cloud files” and securely connect to their own Dropbox. They can then browse cloud files to upload. Files can also be removed from the deposit in the “Files” tab.
+If your repository is configured to interact with a cloud service such as Dropbox, users can click “Browse cloud files” and securely connect to their own Dropbox. They can then browse cloud files to upload. Files can also be removed from the deposit in the “Files” tab.  ![Creating work](images/screenshots/Creating_work_5.png)
 
 ## Relationships (optional)
-The “Relationships” tab lets you add the work to an Administrative Set or a Collection. ![Creating work](images/screenshots/Creating_work_6.png)  Administrative users can add a work to any Administrative Set or Collection in the repository; other users are only able to add works to Collections that they have created or that they have permission to deposit to. (See settings, admin sets below)
+The “Relationships” tab lets you add the work to an Administrative Set or a Collection. ![Creating work](images/screenshots/Creating_work_6.png)  
+
+Administrative users can add a work to any Administrative Set or Collection in the repository; other users are only able to add works to Collections that they have created or that they have permission to deposit to. (See settings, admin sets below)
 
 ## Sharing works (optional)
 The “Share” tab allows you to share the work with other users. Under “Share work with other users”, you can search for users using their email address. ![Creating work](images/screenshots/Creating_work_7.png)
@@ -64,6 +68,8 @@ The agreement can be customized [HERE]
 ## Depositing as a proxy
 Users can designate other users of the system to deposit on their behalf by visiting their dashboard. ![Creating work](images/screenshots/Creating_work_12a.png)  
 
-Once someone has been set as a proxy for another user, the sidebar will offer the option to deposit on behalf of yourself or the other user.  ![Creating work](images/screenshots/Creating_work_12b.png)
+Once someone has been set as a proxy for another user, the sidebar will offer the option to deposit on behalf of yourself or the other user.  
+
+![Creating work](images/screenshots/Creating_work_12b.png)
 
 If you deposit on behalf of another user, the ownership of the work will automatically be transferred to that user when the deposit completes.

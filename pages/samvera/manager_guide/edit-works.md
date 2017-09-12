@@ -43,6 +43,6 @@ In edit view, the user can edit the file description, upload a new version of th
 Edit description: In the “Descriptions” tab, enter a new file title in the “Title” field. Click “Update Attached File” to save changes. ![editing work](images/screenshots/Editing_work_3b.png )
 
 ## Uploading a new version
-Permissions: Visibility and sharing permissions can also be set at the file level, in the “Permissions” tab. ![editing work](images/screenshots/Editing_work_6a.png ) ![editing work](images/screenshots/Editing_work_6b.png )
+Permissions: Visibility and sharing permissions can also be set at the file level, in the “Permissions” tab. ![editing work](images/screenshots/Editing_work_6a.png ) 
 
 As a default, all files have the same permissions as the containing work. This can be edited in the “Permissions” tab for each file.
