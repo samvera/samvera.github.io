@@ -62,4 +62,8 @@ The depositor must check the deposit agreement checkbox in order to deposit. ![C
 The agreement can be customized [HERE]
 
 ## Depositing as a proxy
-Users can designate other users of the system to deposit on their behalf by visiting their dashboard. Once someone has been set as a proxy for another user, the sidebar will offer the option to deposit on behalf of yourself or the other user. If you deposit on behalf of another user, the ownership of the work will automatically be transferred to that user when the deposit completes.
+Users can designate other users of the system to deposit on their behalf by visiting their dashboard. ![Creating work](images/screenshots/Creating_work_12a.png)  
+
+Once someone has been set as a proxy for another user, the sidebar will offer the option to deposit on behalf of yourself or the other user.  ![Creating work](images/screenshots/Creating_work_12b.png)
+
+If you deposit on behalf of another user, the ownership of the work will automatically be transferred to that user when the deposit completes.
