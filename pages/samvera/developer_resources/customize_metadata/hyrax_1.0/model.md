@@ -31,20 +31,19 @@ end
 
 ### Basic metadata
 
-Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera/hyrax/blob/1-0-stable/app/models/concerns/hyrax/basic_metadata.rb)
+Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb)
 
 | Property | Predicate | Multiple |
 | -------- | --------- | -------- |
 | label | ActiveFedora::RDF::Fcrepo::Model.downloadFilename | **FALSE** |
 | relative_path | ::RDF::URI.new('http://scholarsphere.psu.edu/ns#relativePath') | **FALSE** |
 | import_url | ::RDF::URI.new('http://scholarsphere.psu.edu/ns#importUrl') | **FALSE** |
-| part_of | ::RDF::Vocab::DC.isPartOf | TRUE |
 | resource_type | ::RDF::Vocab::DC.type | TRUE |
 | creator | ::RDF::Vocab::DC11.creator | TRUE |
 | contributor | ::RDF::Vocab::DC11.contributor | TRUE |
 | description | ::RDF::Vocab::DC11.description | TRUE |
 | keyword | ::RDF::Vocab::DC11.relation | TRUE |
-| rights | ::RDF::Vocab::DC.rights | TRUE |
+| license | ::RDF::Vocab::DC.rights | TRUE |
 | rights_statement | ::RDF::Vocab::EDM.rights | TRUE |
 | publisher | ::RDF::Vocab::DC11.publisher | TRUE |
 | date_created | ::RDF::Vocab::DC.created | TRUE |
@@ -58,11 +57,11 @@ Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metada
 
 ### Core metadata
 
-Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/required_metadata.rb](https://github.com/samvera/hyrax/blob/1-0-stable/app/models/concerns/hyrax/required_metadata.rb)
+Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb)
 
 | Property | Predicate | Multiple |
 | -------- | --------- | -------- |
-| depositor | ::RDF::URI.new('http://id.loc.gov/vocabulary/relators/dpt') | **FALSE** |
+| depositor | ::RDF::Vocab::MARCRelators.dpt | **FALSE** |
 | title | ::RDF::Vocab::DC.title | TRUE |
 | date_uploaded | ::RDF::Vocab::DC.dateSubmitted | **FALSE** |
 | date_modified | ::RDF::Vocab::DC.modified | **FALSE** |
