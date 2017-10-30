@@ -14,9 +14,11 @@ version:
 # Administration
 
 Overview of the Administration ('/admin') user interface for repository mangers.
+![admin](images/screenshots/UIT_admin_1.png)  
 
 ## View repository activity summary
 Example (non-working) URL: https://insertyourtenanthere.demo.hydrainabox.org/admin
+![admin](images/screenshots/UIT_admin_2.png)  
 
 ## View repository system status
 Example (non-working) URL: https://insertyourtenanthere.demo.hydrainabox.org/status
