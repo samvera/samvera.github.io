@@ -10,7 +10,10 @@ toc: false
 <div class="row">
    <div class="col-lg-12">
       <h2 class="page-header">Knowledge Base Categories</h2>
-       <h4>Note: This site is under active development. Some pages do not yet contain content, and are either in creation or awaiting approval. If there's a page you'd like to see prioritized, create an <a href="https://github.com/samvera/samvera.github.io/issues/new">issue</a>. Pages that contain full content have been reviewed and approved of.</h4>
+
+      <a href="https://github.com/samvera/samvera.github.io" class="btn btn-lg btn-primary" target="_blank">Contribute New Documentation</a>
+
+      <h4>Note: This site is under active development. Some pages do not yet contain content, and are either in creation or awaiting approval. If there's a page you'd like to see prioritized, create an <a href="https://github.com/samvera/samvera.github.io/issues/new">issue</a>. Pages that contain full content have been reviewed and approved of.</h4>
    </div>
    <div class="col-md-3 col-sm-6">
        <div class="panel panel-default text-center">
