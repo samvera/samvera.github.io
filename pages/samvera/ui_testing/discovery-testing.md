@@ -34,11 +34,15 @@ With the search box empty, select the “go” button next to the search field -
 ![discovery](images/screenshots/UIT_discovery_3.png)
 
 ## Limit by facet
-Search or browse for a term or phrase, review results, further limit by facet (left-hand nav), select a record to view.
+Search or browse for a term or phrase, review results, further limit by facet (left-hand nav), select a record to view. ![discovery](images/screenshots/UIT_discovery_4.png)
 
 ![discovery](images/screenshots/UIT_discovery_4.png)
 
 ## Explore a found work
+<<<<<<< HEAD
 View a work, including visibility badge, workflow state, the UniversalViewer rendering of its content, descriptions, relationships, social media buttons, and items. Click into items to explore contained works and file sets and actions that can be executed thereupon.
 
 ![discovery](images/screenshots/UIT_discovery_5.png)
+=======
+View a work, including visibility badge, workflow state, the UniversalViewer rendering of its content, descriptions, relationships, social media buttons, and items. Click into items to explore contained works and file sets and actions that can be executed thereupon. ![discovery](images/screenshots/UIT_discovery_5.png)
+>>>>>>> added images to user interface testing

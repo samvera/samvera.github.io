@@ -20,7 +20,7 @@ Selecting “Share Your Work” on the Hyrax homepage will pop up a box of Work 
 
 Selecting the radio button next to a work type and then selecting the “Create Work” button at the bottom of the pop-up window will take the user to the metadata input form for that work type. Selecting the “X” at the top-right of the pop-up window or clicking anywhere outside of the pop-up window will make the pop-up window disappear.
 
-On the metadata form, the following tabs are available across the top of the form for entering information about the work:
+On the metadata form, the following tabs are available across the top of the form for entering information about the work: ![works](images/screenshots/UIT_works_2.png)
 
 ![works](images/screenshots/UIT_works_2.png)
 
@@ -85,7 +85,7 @@ You should see a listing of the files that you added, and each one should have a
 
 At this point you should see the edit page for the file itself, and the ‘Versions’ tab should be opened by default. In this tab are controls to manage versions of this specific file.  To upload a new version, simply click ‘Browse’ to bring up a file browser and choose a local file.  Once selected, click ‘Upload New Version’ to upload the new file as the active version associated with this work.
 
-Upon completion you should see the full detail view for the file, and the user activity section should contain a message showing the addition of a new version of the file.
+Upon completion you should see the full detail view for the file, and the user activity section should contain a message showing the addition of a new version of the file. ![works](images/screenshots/UIT_works_8.png)
 
 ![works](images/screenshots/UIT_works_8.png)
 

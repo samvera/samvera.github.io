@@ -13,12 +13,12 @@ version:
 
 # Dashboard
 
-Access the Dashboard by selecting your username from the top navigation bar and selecting the Dashboard link in the drop-down menu.
+Access the Dashboard by selecting your username from the top navigation bar and selecting the Dashboard link in the drop-down menu. ![dashboard](images/screenshots/UIT_dash_1.png)
 
 ![dashboard](images/screenshots/UIT_dash_1.png)
 
 ## Edit your profile
-On initial page load, Hyrax displays the heading “Edit Profile” and then input elements for avatar picture, ORCID profile, Twitter handle, Facebook handle, Google+ handle, then text that says “Remove Highlight Designation” with a help tooltip, then a save button, and lastly two column headings, “Authorize Proxies” and “Current Proxies,” with a search/select displaying “Search for a user” in the “Authorize” column.
+On initial page load, Hyrax displays the heading “Edit Profile” and then input elements for avatar picture, ORCID profile, Twitter handle, Facebook handle, Google+ handle, then text that says “Remove Highlight Designation” with a help tooltip, then a save button, and lastly two column headings, “Authorize Proxies” and “Current Proxies,” with a search/select displaying “Search for a user” in the “Authorize” column. ![dashboard](images/screenshots/UIT_dash_2.png)
 
 ![dashboard](images/screenshots/UIT_dash_2.png)
 
@@ -49,6 +49,7 @@ Clicking the email result displays it as an element in the Current Proxies colum
 
 ## Transfers
 Transfers shows two tables, one for Transfers Sent and one for Transfers Received.
+![dashboard](images/screenshots/UIT_dash_8.png)
 
 ![dashboard](images/screenshots/UIT_dash_8.png)
 
@@ -66,7 +67,7 @@ The Transfers Received table will populate with requests for works that have bee
 The Reports page allows a user to submit a date range for which they would like statistics reported. The date range may be entered in the two date fields labelled Start and End. Selecting Load Stats will refresh the statistics in the Works Statistics, Newest Users, and Deposits by Users areas of the page. Leaving the End field should use today’s date as the default End date.
 
 ## Administrative Sets
-The Administrative Sets page allows a user to view basic information about and to edit Administrative Sets (Admin Set). The page presents a table of Admin Sets by name, the date the Admin Set was created, the ID of the creator, and the number of items in the Admin Set.  Selecting an Admin Set from this table will return an information page about the Admin Set including basic statistics for the Admin Set, a table of all of the items in the admin set, and buttons that allow the user to Edit or Delete and Admin Set.
+The Administrative Sets page allows a user to view basic information about and to edit Administrative Sets (Admin Set). The page presents a table of Admin Sets by name, the date the Admin Set was created, the ID of the creator, and the number of items in the Admin Set.  Selecting an Admin Set from this table will return an information page about the Admin Set including basic statistics for the Admin Set, a table of all of the items in the admin set, and buttons that allow the user to Edit or Delete and Admin Set. ![dashboard](images/screenshots/UIT_dash_9.png)  ![dashboard](images/screenshots/UIT_dash_10.png)
 
 ![dashboard](images/screenshots/UIT_dash_9.png)  
 ![dashboard](images/screenshots/UIT_dash_10.png)
@@ -77,10 +78,12 @@ Selecting Edit returns a page that allows the user to edit the core elements of 
 - Participants: add participants to an admin set using the group or user search boxes and the role drop-down lists at the top of the page. This page also allows the user to review and change the participants in the admin set. Last, this page allows the user to allow all registered users of the repository to deposit content to the admin set.
 - Release and Visibility: control when works added to this set are made available for discovery and download and who can discover and download them. This page allows the user to select among a number of options using radio selectors and date fields.
 - Workflow: select the workflow that should be used for items deposited into this admin set
+![dashboard](images/screenshots/UIT_dash_11.png)
 
 ![dashboard](images/screenshots/UIT_dash_11.png)
 
 ## Collections
+<<<<<<< HEAD
 The Collections page allows the user to see a table of collections that have been created in Hyrax, edit those collections, or create new collections.
 
 ![dashboard](images/screenshots/UIT_dash_12.png)
@@ -88,9 +91,16 @@ The Collections page allows the user to see a table of collections that have bee
 ![dashboard](images/screenshots/UIT_dash_14.png)
 
 The table includes the names of collections, creation date, visibility, and a drop-down list of actions to take on the collection (Edit or Delete collection).
+=======
+The Collections page allows the user to see a table of collections that have been created in Hyrax, edit those collections, or create new collections. ![dashboard](images/screenshots/UIT_dash_12.png) ![dashboard](images/screenshots/UIT_dash_13.png) ![dashboard](images/screenshots/UIT_dash_14.png) The table includes the names of collections, creation date, visibility, and a drop-down list of actions to take on the collection (Edit or Delete collection).
 
-Selecting the collection name will return a collection page with basic statistics about the collection, a table of the items in the collection, and links to delete, edit, or add works to the collection. Editing the collection allows the user to modify the metadata and sharing settings as described in Create Collection (below).
+Selecting the collection name will return a collection page with basic statistics about the collection, a table of the items in the collection, and links to delete, edit, or add works to the collection. Editing the collection allows the user to modify the metadata and sharing settings as described in Create Collection (below). ![dashboard](images/screenshots/UIT_dash_15.png)
 
+>>>>>>> added images to user interface testing
+
+Selecting “Create Collection” returns a form for metadata about the collection, visibility of the collection, and sharing the collection with other users and groups. Sharing fields allow the user to search for another user or group with whom to share the collection and to define the type of access the user or group has to the collection (View/Download versus Edit). ![dashboard](images/screenshots/UIT_dash_16.png)
+
+<<<<<<< HEAD
 ![dashboard](images/screenshots/UIT_dash_15.png)
 
 Selecting “Create Collection” returns a form for metadata about the collection, visibility of the collection, and sharing the collection with other users and groups. Sharing fields allow the user to search for another user or group with whom to share the collection and to define the type of access the user or group has to the collection (View/Download versus Edit).
@@ -98,6 +108,10 @@ Selecting “Create Collection” returns a form for metadata about the collecti
 ![dashboard](images/screenshots/UIT_dash_16.png)
 
 Adding works to a collection can be achieved by selecting Add Works button anywhere on a collection page, whereupon the user will be sent to the Works page (see below) with Your Works showing. To add other works, select All Works at the top of the page.
+=======
+Adding works to a collection can be achieved by selecting Add Works button anywhere on a collection page, whereupon the user will be sent to the Works page (see below) with Your Works showing. To add other works, select All Works at the top of the page. ![dashboard](images/screenshots/UIT_dash_17.png)
+
+>>>>>>> added images to user interface testing
 
 ![dashboard](images/screenshots/UIT_dash_17.png)
 
