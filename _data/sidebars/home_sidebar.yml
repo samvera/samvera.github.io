@@ -207,6 +207,10 @@ entries:
       url: /access-controls.html
       output: web
 
+    - title: Email Notifications
+      url: /email_notifications.html
+      output: web
+
     - title: Workflow and Mediated Deposit
       url: /workflow_and_mediated_deposit.html
       output: web
