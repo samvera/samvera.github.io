@@ -1203,24 +1203,22 @@ ul.warning {
     border-color: #ac1e26;
 }
 
-h4.version {
-
-}
-
 div#version_container {
     display:inline-block;
     padding-top: 3px;
     padding-bottom: 20px;
     border-top: solid 2px #17adec;
     color: #696969;
-    font-size: 75%;
+    font-size: .8em;
     width: 100%;
 }
 
 div.version_label {
     display:inline-block;
+    padding-top: 3px;
     vertical-align: top;
     width: 50%;
+    font-weight: bold;
     /*padding-bottom: 3px;*/
     /*border-bottom: solid 2px #17adec;*/
 }
@@ -1230,24 +1228,6 @@ div.version_selector {
     vertical-align: top;
     width: 48%;
     text-align: right;
-}
-
-span.active_version {
-    font-weight: bold;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-left: solid 1px #17adec;
-    border-right: solid 1px #17adec;
-    background-color: #f5f5b2;
-}
-
-a.alternate_version {
-    /*font-weight: bold;*/
-    padding-left: 10px;
-    padding-right: 10px;
-    border-left: solid 1px #17adec;
-    border-right: solid 1px #17adec;
-    /*background-color: lightcyan;*/
 }
 
 div#atoz {

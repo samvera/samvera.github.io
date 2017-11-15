@@ -26,7 +26,6 @@ Clicking save with an invalid ORCID reloads the page with the validation copy: O
 
 Any validation error will prevent the persisting of all the data entered. A successful save will load the user’s profile page with a green success message and the new information on display. ![dashboard](images/screenshots/UIT_dash_6.png)
 
-
 Clicking in the search/select for Authorizing Proxies displays a panel that says: Please enter 2 or more characters. Entering characters changes its copy to “Searching…”. Two characters that don’t return any results will change it to “No matches found”, and two matching characters return the email of the matched user(s). ![dashboard](images/screenshots/UIT_dash_7.png) Clicking the email result displays it as an element in the Current Proxies column, that contains a clickable “x” icon in it that removes the user from the list of authorized proxies. Adding and removing authorized proxy users is not persisted through the page’s Save button, but handled by the elements themselves.
 
 ## Notifications
@@ -69,7 +68,6 @@ Selecting the collection name will return a collection page with basic statistic
 Selecting “Create Collection” returns a form for metadata about the collection, visibility of the collection, and sharing the collection with other users and groups. Sharing fields allow the user to search for another user or group with whom to share the collection and to define the type of access the user or group has to the collection (View/Download versus Edit). ![dashboard](images/screenshots/UIT_dash_16.png)
 
 Adding works to a collection can be achieved by selecting Add Works button anywhere on a collection page, whereupon the user will be sent to the Works page (see below) with Your Works showing. To add other works, select All Works at the top of the page. ![dashboard](images/screenshots/UIT_dash_17.png)
-
 
 ### Comments: Collections
 

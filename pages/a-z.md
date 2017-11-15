@@ -37,7 +37,11 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='a'>&nbsp;</a>
     <span class='atoz_section_label'>A</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/index.html'>A Guide For The Perplexed Hydra Developer</a>
+      <a class='atoz_term' href='/index.html'>A Guide For The Perplexed Samvera Developer</a>
+      <br>
+      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Actor Stack for Work (Hyrax 1.0)</a>
+      <br>
+      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Actor Stack for Work (Hyrax 2.0)</a>
       <br>
       <a class='atoz_term' href='/participants.html'>Admin Sets - Participants</a>
       <br>
@@ -69,6 +73,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/best-practices-coding-styles.html'>Coding Styles</a>
       <br>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Collection Metadata, customizing display of</a>
+      <br>
       <a class='atoz_term' href='/communication.html'>Communication</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-discovery.html'>Configuring Discovery</a>
@@ -79,7 +85,13 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/groups.html'>Creating User Groups</a>
       <br>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Creating a Default Deposit Agreement</a>
+      <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Customizing Metadata (Controlled Vocabularies)</a>
+      <br>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Customizing Metadata (Other Metadata Customizations)</a>
+      <br>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Customizing display of Collection properties</a>
       <br>
     </div>
   </div>
@@ -87,7 +99,15 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='d'>&nbsp;</a>
     <span class='atoz_section_label'>D</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Default property, making single-value</a>
+      <br>
       <a class='atoz_term' href='/customize-metadata-model.html'>Defining Metadata in the Model</a>
+      <br>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Deposit Agreement, creating a default</a>
+      <br>
+      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Deposit Work Process (Hyrax 1.0)</a>
+      <br>
+      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Deposit Work Process (Hyrax 2.0)</a>
       <br>
       <a class='atoz_term' href='/devops.html'>DevOps</a>
       <br>
@@ -95,11 +115,11 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/tag_development_resources.html'>Development Resources</a>
       <br>
-      <a class='atoz_term' href='/deeper_hydra_index.html'>Dive Deeper into Hydra</a>
-      <br>
-      <a class='atoz_term' href='/training/deeper_into_hydra/'>Dive Deeper into Hydra</a>
-      <br>
       <a class='atoz_term' href='/dive-deeper.html'>Dive Deeper into Hyrax</a>
+      <br>
+      <a class='atoz_term' href='/deeper_samvera_index.html'>Dive Deeper into Samvera</a>
+      <br>
+      <a class='atoz_term' href='/training/deeper_into_samvera/'>Dive Deeper into Samvera</a>
       <br>
     </div>
   </div>
@@ -195,6 +215,10 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='m'>&nbsp;</a>
     <span class='atoz_section_label'>M</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Making a default property single-value</a>
+      <br>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Modifying default Hyrax fields</a>
+      <br>
       <a class='atoz_term' href='/customize-metadata-edit-form.html'>Modifying the Edit Form</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-show-page.html'>Modifying the Show Page</a>
@@ -217,6 +241,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Other Metadata Customizations</a>
       <br>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Other Metadata Customizions</a>
+      <br>
       <a class='atoz_term' href='/our_technology_stack.html'>Our Technology Stack</a>
       <br>
     </div>
@@ -232,8 +258,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Prereq: Defining a Controlled Vocabulary</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-generate-work-type.html'>Prereq: Generating a Work Type</a>
-      <br>
-      <a class='atoz_term' href='/test.html'>Project Hydra Training</a>
       <br>
     </div>
   </div>
@@ -251,6 +275,8 @@ sidebar: home_sidebar
     <div class='atoz_terms'>
       <a class='atoz_term' href='/hyrax-releases.html'>Releases</a>
       <br>
+      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Remove a default property from the set of required fields</a>
+      <br>
       <a class='atoz_term' href='/best-practices-coding-styles.html'>Rubocop</a>
       <br>
       <a class='atoz_term' href='/tag_running_in_production.html'>Running in Production</a>
@@ -261,6 +287,12 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='s'>&nbsp;</a>
     <span class='atoz_section_label'>S</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/test.html'>Samvera Community Training'</a>
+      <br>
+      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Save Work (Hyrax 1.0)</a>
+      <br>
+      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Save Work (Hyrax 2.0)</a>
+      <br>
       <a class='atoz_term' href='/js/mydoc_scroll.html'>Scroll layout</a>
       <br>
       <a class='atoz_term' href='/service-stack.html'>Solr Fedora Rails Redis</a>
@@ -279,11 +311,11 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/best-practices-testing.html'>Testing</a>
       <br>
-      <a class='atoz_term' href='/touring_hydra_index.html'>Touring the design patterns in Hydra</a>
-      <br>
-      <a class='atoz_term' href='/training/touring_design_patterns/'>Touring the design patterns in Hydra</a>
-      <br>
       <a class='atoz_term' href='/design_patterns.html'>Touring the design patterns in Hyrax</a>
+      <br>
+      <a class='atoz_term' href='/touring_samvera_index.html'>Touring the design patterns in Samvera</a>
+      <br>
+      <a class='atoz_term' href='/training/touring_design_patterns/'>Touring the design patterns in Samvera</a>
       <br>
       <a class='atoz_term' href='/training.html'>Training</a>
       <br>
@@ -319,6 +351,10 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something?</a>
       <br>
+      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>What Happens When I Deposit Something? (Hyrax 1.0)</a>
+      <br>
+      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something? (Hyrax 2.0)</a>
+      <br>
       <a class='atoz_term' href='/what-happens-edit.html'>What Happens When I Edit Something?</a>
       <br>
       <a class='atoz_term' href='/what-happens-index.html'>What Happens When I Index Something?</a>
@@ -329,7 +365,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/solutions.html'>What Solutions are Available?</a>
       <br>
-      <a class='atoz_term' href='/why-hydra.html'>Why Hydra?</a>
+      <a class='atoz_term' href='/why-samvera.html'>Why Samvera?</a>
       <br>
       <a class='atoz_term' href='/workflow_and_mediated_deposit.html'>Workflow and Mediated Deposit in Hyrax 1.x</a>
       <br>
