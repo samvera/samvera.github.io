@@ -55,7 +55,7 @@ Mailboxer.setup do |config|
   config.uses_emails = true
 
   #Configures the default from for emails sent for Messages and Notifications
-  config.default_from = "no-reply@mailboxer.com"
+  config.default_from = "My Application Name <whatever@yourdomain.com>"
 
   #Configures the methods needed by mailboxer
   config.email_method = :mailboxer_email
@@ -76,3 +76,32 @@ end
 ```
 
 That's it! Now when your Hyrax app sends notifications, it should send them by email as well as within the application.
+
+## More helpful tips
+
+### Setting ActionMailer hostname
+If you get an error saying you don't have a hostname set, you might need to explicitly set your ActionMailer hostname. If you're only ever going to deploy this application to one production server, you could set it explicitly in `config/environments/production.rb`:
+```
+  config.action_mailer.default_url_options = { host: "yourhostname.domain.name" }
+```
+
+Or, if you're going to be deploying the same app to multiple servers and environments, you could reference an environment variable in  `config/application.rb`:
+```ruby
+  config.action_mailer.default_url_options = { host: ENV["ACTION_MAILER_HOST"] }
+```
+and set the `ACTION_MAILER_HOST` environment variable on the servers where you're running your application. To do this in Ubuntu, add this to `/etc/apache2/envvars`:
+```
+  export ACTION_MAILER_HOST=yourhostname.domain.name
+```
+
+### Customizing the subject lines of emails
+By default, Mailboxer sends emails with subject lines that start with "Mailboxer new message: ". If you want to remove that, or customize what it says, do it in your `config/locales/en.yml` file:
+```
+en:
+  mailboxer:
+    message_mailer:
+      subject_new: My customized prefix: "%{subject}"
+      subject_reply: My customized prefix: "%{subject}"
+    notification_mailer:
+      subject: My customized prefix: "%{subject}"
+```
