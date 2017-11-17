@@ -1,7 +1,7 @@
 ---
 title: "Editing a Work"
-permalink: edit-works.html
-folder: samvera/manager_guide/edit-works.md
+permalink: edit-works-1.0.html
+folder: samvera/manager_guide/edit-works-1.0.md
 sidebar: home_sidebar
 a-z: ['Administration']
 keywords: Best Practices, managers, repo mangers, hyrax administration
@@ -9,7 +9,14 @@ tags: [user_resources]
 categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_1.0-stable'
+  - label: 'Hyrax 1.0'
+    link:  'edit-works-1.0.html'
+    selected: 'true'
+  - label: 'Hyrax 2.0'
+    link:  'edit-works-2.0.html'
 ---
+
+*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
 
 # Editing a Work
 
@@ -19,7 +26,7 @@ In the edit view for a work, you can change the description, add files, edit rel
 
 If you edit the sharing or visibility of the work, you can either opt to have all files in the work inherit these permissions, or you can opt to have the individual files retain their permissions so that they can be edited manually.
 
-Set child/parent work: In the “Relationships” tab, you can now add a child or parent work to the work - this is only available after the work is deposited, not at the time of deposit. A child work added to this work will appear as an Item in this work. A parent work will add this work to its Items. To add a child or parent work, enter the unique ID (found at ???) of the work under “Child Work” or “Parent Work” and click “Add”. Click “Save” to apply your changes.
+Set child/parent work: In the “Relationships” tab, you can now add a child or parent work to the work - this is only available after the work is deposited, not at the time of deposit. A child work added to this work will appear as an Item in this work. A parent work will add this work to its Items. To add a child or parent work, enter the title of the work under “Child Work” or “Parent Work” and click “Add”. Click “Save” to apply your changes.
 
 ## Editing a work - file manager
 To change the order of files in a work or set a representative file, you have to use the File Manager. In the Browse view of a work, click “File Manager”.
