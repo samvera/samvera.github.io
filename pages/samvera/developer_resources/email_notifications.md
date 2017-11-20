@@ -105,3 +105,20 @@ en:
     notification_mailer:
       subject: My customized prefix: "%{subject}"
 ```
+
+### Including the full URL in email notifications
+By default, Hyrax notifications use relative links. However, when you're sending notifications by email, the user is no longer within the context of the application, so those relative links won't work anymore. Instead, you're going to want to use fully qualified URIs.
+
+1. Hyrax notifications use a method called `document_path`. You'll need to define a new method to use instead. Let's call it `document_url`. You can add this method wherever it makes sense in your application.
+```ruby
+  def document_url
+    key = document.model_name.singular_route_key
+    Rails.application.routes.url_helpers.send(key + "_url", document.id)
+  end
+```
+
+2. Generating those urls is going to require that you've set the `:host` option for `default_url_options`. To do that, add a line like this to your `application.rb` file:
+```ruby
+  config.action_mailer.default_url_options = { host: ENV["HYRAX_HOST"] }
+```
+3. In your notifications, replace all instances of `document_path` with `document_url`
