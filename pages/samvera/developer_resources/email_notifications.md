@@ -55,7 +55,7 @@ Mailboxer.setup do |config|
   config.uses_emails = true
 
   #Configures the default from for emails sent for Messages and Notifications
-  config.default_from = "no-reply@mailboxer.com"
+  config.default_from = "My Application Name <whatever@yourdomain.com>"
 
   #Configures the methods needed by mailboxer
   config.email_method = :mailboxer_email
@@ -76,3 +76,49 @@ end
 ```
 
 That's it! Now when your Hyrax app sends notifications, it should send them by email as well as within the application.
+
+## More helpful tips
+
+### Setting ActionMailer hostname
+If you get an error saying you don't have a hostname set, you might need to explicitly set your ActionMailer hostname. If you're only ever going to deploy this application to one production server, you could set it explicitly in `config/environments/production.rb`:
+```
+  config.action_mailer.default_url_options = { host: "yourhostname.domain.name" }
+```
+
+Or, if you're going to be deploying the same app to multiple servers and environments, you could reference an environment variable in  `config/application.rb`:
+```ruby
+  config.action_mailer.default_url_options = { host: ENV["ACTION_MAILER_HOST"] }
+```
+and set the `ACTION_MAILER_HOST` environment variable on the servers where you're running your application. To do this in Ubuntu, add this to `/etc/apache2/envvars`:
+```
+  export ACTION_MAILER_HOST=yourhostname.domain.name
+```
+
+### Customizing the subject lines of emails
+By default, Mailboxer sends emails with subject lines that start with "Mailboxer new message: ". If you want to remove that, or customize what it says, do it in your `config/locales/en.yml` file:
+```
+en:
+  mailboxer:
+    message_mailer:
+      subject_new: My customized prefix: "%{subject}"
+      subject_reply: My customized prefix: "%{subject}"
+    notification_mailer:
+      subject: My customized prefix: "%{subject}"
+```
+
+### Including the full URL in email notifications
+By default, Hyrax notifications use relative links. However, when you're sending notifications by email, the user is no longer within the context of the application, so those relative links won't work anymore. Instead, you're going to want to use fully qualified URIs.
+
+1. Hyrax notifications use a method called `document_path`. You'll need to define a new method to use instead. Let's call it `document_url`. You can add this method wherever it makes sense in your application.
+```ruby
+  def document_url
+    key = document.model_name.singular_route_key
+    Rails.application.routes.url_helpers.send(key + "_url", document.id)
+  end
+```
+
+2. Generating those urls is going to require that you've set the `:host` option for `default_url_options`. To do that, add a line like this to your `application.rb` file:
+```ruby
+  config.action_mailer.default_url_options = { host: ENV["HYRAX_HOST"] }
+```
+3. In your notifications, replace all instances of `document_path` with `document_url`
