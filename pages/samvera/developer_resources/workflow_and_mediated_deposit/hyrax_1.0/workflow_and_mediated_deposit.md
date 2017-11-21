@@ -110,23 +110,25 @@ Putting this code in `db/seeds.rb` means it will be called at the end of `bin/se
 
 ## How do I assign reviewers for my ETDs without creating lots of AdminSets?
 
-**Goal: Assigning a person to review a submission based on properties of the work.** *And you don't need multiple admin sets to do this.*
+Create a [Sipity::Method][sipity_method] to assign a reviewer based on the ETDs department.
 
-### Whirlwind Workflow
+Before getting into the specifics of how to do this, let's do a quick overview of some key workflow concepts for this problem.
 
-Two primary concepts of the workflow in Hyrax 1.0:
+### Quick Overview of Workflow
+
+For this particular issue, there are three primary concepts that you may want to reference:
 
 1) Permissions are assigned at two levels:
   1) [Sipity::WorkflowResponsibility][sipity_workflow_responsibility] - A person has permissions to all things using this workflow
   1) [Sipity::EntitySpecificResponsibility][sipity_entity_specific_responsibility] - A person has permissions to only the work/entity
-2) [Sipity::Method][sipity_method] - Something we "call" when we take a Sipity::Action.
-3) [Hyrax::Workflow::PermissionGenerator][hyrax_workflow_permission_generator]
+2) [Sipity::Method][sipity_method] - Something we `.call` when we take a Sipity::Action.
+3) [Hyrax::Workflow::PermissionGenerator][hyrax_workflow_permission_generator] - Responsible for assigning permissions. **This could be bettern named as Hyrax::Workflow::PermissionAssigner**
 
 ### How to Do This
 
-You'll need to understand the [JSON workflow schema][json_workflow_schema]. See the [default workflow][template_workflows] of the method called when a user deposits a work: One method object, [Hyrax::Workflow::GrantEditToDepositor][hyrax_workflow_grant_edit_to_depositor], grants the user depositing rights for the deposit worked (eg. Sipity::EntitySpecificResponsibility).
+Referencing the [default workflow][template_workflows] there is a method object that is called when a user deposits a work: One method object, [Hyrax::Workflow::GrantEditToDepositor][hyrax_workflow_grant_edit_to_depositor], grants the user depositing rights for the deposit worked (eg. Sipity::EntitySpecificResponsibility).
 
-You'll need to modify the workflow (an exercise left up to the reader) to include a method for the appropriate action.
+You'll need to modify your workflow (an exercise left up to the reader) to include a method for the appropriate action. You may want to reference the [JSON workflow schema][json_workflow_schema] for proper syntax.
 
 Then create (and test) your method object.
 
