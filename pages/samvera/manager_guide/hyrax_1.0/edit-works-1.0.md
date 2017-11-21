@@ -9,6 +9,7 @@ tags: [user_resources]
 categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_1.0-stable'
+  versions:
   - label: 'Hyrax 1.0'
     link:  'edit-works-1.0.html'
     selected: 'true'

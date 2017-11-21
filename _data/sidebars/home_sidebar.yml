@@ -275,71 +275,71 @@ entries:
     output: web, pdf
     folderitems:
 
-        - title: What's New in Hyrax 2.0?
-          url: /whats-new.html
+    - title: What's New in Hyrax 2.0?
+      url: /whats-new.html
+      output: web, pdf
+
+      subfolders:
+      - title: Hyrax 2.0
+        output: web
+        subfolderitems:
+
+        - title: Concepts and Definitions
+          url: /concepts-2.0.html
           output: web, pdf
 
-        subfolders:
-          - title: Hyrax 2.0
-            output: web
-            subfolderitems:
+        - title: Configuration
+          url: /configuration.html
+          output: web, pdf
 
-            - title: Concepts and Definitions
-              url: /concepts-2.0.html
-              output: web, pdf
+        - title: Creating a Work
+          url: /create-works-2.0.html
+          output: web, pdf
 
-            - title: Configuration
-              url: /configuration.html
-              output: web, pdf
+        - title: Editing a Work
+          url: /edit-works-2.0.html
+          output: web, pdf
 
-            - title: Creating a Work
-              url: /create-works-2.0.html
-              output: web, pdf
+        - title: Administrative Sets
+          url: /admin-sets-2.0.html
+          output: web, pdf
 
-            - title: Editing a Work
-              url: /edit-works-2.0.html
-              output: web, pdf
+        - title: Collections
+          url: /collections-2.0.html
+          output: web, pdf
 
-            - title: Administrative Sets
-              url: /admin-sets-2.0.html
-              output: web, pdf
+        - title: Batch Uploading Works
+          url: /batch-works-2.0.html
+          output: web, pdf
 
-            - title: Collections
-              url: /collections-2.0.html
-              output: web, pdf
+      subfolders:
+      - title: Hyrax 1.0
+        output: web
+        subfolderitems:
 
-            - title: Batch Uploading Works
-              url: /batch-works-2.0.html
-              output: web, pdf
+        - title: Concepts and Definitions
+          url: /concepts-1.0.html
+          output: web, pdf
 
-          subfolders:
-              - title: Hyrax 1.0
-                output: web
-                subfolderitems:
+        - title: Creating a Work
+          url: /create-works-1.0.html
+          output: web, pdf
 
-            - title: Concepts and Definitions
-              url: /concepts-1.0.html
-              output: web, pdf
+        - title: Editing a Work
+          url: /edit-works-1.0.html
+          output: web, pdf
 
-            - title: Creating a Work
-              url: /create-works-1.0.html
-              output: web, pdf
+        - title: Administrative Sets
+          url: /admin-sets-1.0.html
+          output: web, pdf
 
-            - title: Editing a Work
-              url: /edit-works-1.0.html
-              output: web, pdf
+        - title: Collections
+          url: /collections-1.0.html
+          output: web, pdf
 
-            - title: Administrative Sets
-              url: /admin-sets-1.0.html
-              output: web, pdf
-
-            - title: Collections
-              url: /collections-1.0.html
-              output: web, pdf
-
-            - title: Batch Uploading Works
-              url: /batch-works-1.0.html
-              output: web, pdf
+        - title: Batch Uploading Works
+          url: /batch-works-1.0.html
+          output: web, pdf
 
   - title: User Interface Testing
     output: web, pdf
