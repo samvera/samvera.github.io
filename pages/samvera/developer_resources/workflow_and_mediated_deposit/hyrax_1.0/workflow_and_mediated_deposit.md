@@ -108,9 +108,9 @@ w.setup
 ```
 Putting this code in `db/seeds.rb` means it will be called at the end of `bin/setup`, and you can call it anytime via `rake db:seed`
 
-## How do I assign reviewers for my ETDs without creating lots of AdminSets?
+## How do I assign reviewers for a deposited work (e.g. ETDs) without creating lots of AdminSets?
 
-Create a [Sipity::Method][sipity_method] to assign a reviewer based on the ETDs department.
+Create a [Sipity::Method][sipity_method] to assign a reviewer based on some property of the deposited work (e.g. reviewers based on the work's department).
 
 Before getting into the specifics of how to do this, let's do a quick overview of some key workflow concepts for this problem.
 
@@ -150,6 +150,8 @@ end
 RSpec.describe Hyrax::Workflow::AssignReviewerByDepartment do
   let(:workflow_method) { described_class }
   it_behaves_like "a Hyrax workflow method"
+
+  # Don't forget to write specs for the business logic of this method
 end
 ```
 
