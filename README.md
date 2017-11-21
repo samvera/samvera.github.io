@@ -1,4 +1,7 @@
-# How Does This Work?
+# samvera.github.io
+
+[![Build Status](https://travis-ci.org/samvera/samvera.github.io.svg?branch=master)](https://travis-ci.org/samvera/samvera.github.io)
+## How Does This Work?
 
 We use a Jekyll-based custom theme for markup and display, and pages are published to http://samvera.github.io.
 
@@ -100,7 +103,7 @@ If the predefined version information does not exist.  You can specify custom va
 
 Example custom version information:
 ```
-version: 
+version:
   label: 'Hydra Role Management v0.2.2'
   branch:
     label: 'master'
@@ -108,12 +111,12 @@ version:
 ```
 
 ##### Adding predefined version information for a gem version
- 
+
 It is good practice to add predefined version information, as this allows reuse and consistent encoding of gem names and versions.  
 
 Adding predefined version information is a two step process.
 
-1. Add the version information to a new version file in directory [_includes/version_info/](https://github.com/samvera/samvera.github.io/tree/master/_includes/version_info) naming the file with the gem and verion number (e.g. version_hyrax_1.0-stable.html).  Include in the new file assignments for version_label, branch_label, and branch_link. 
+1. Add the version information to a new version file in directory [_includes/version_info/](https://github.com/samvera/samvera.github.io/tree/master/_includes/version_info) naming the file with the gem and verion number (e.g. version_hyrax_1.0-stable.html).  Include in the new file assignments for version_label, branch_label, and branch_link.
 
 Example assignments for Hyrax v1.0:
 ```
@@ -136,7 +139,7 @@ Example conditional include based on id:
 #### Selector for switching versions
 
 Identifying multiple versions is done by specifying each version in front matter including its label and link.  If the version is the active version that the current page is describing, then also include `selected: 'true'`.  The multi-version information is repeated on every version's page for the documentation topic.
-  
+
 Example front matter for multiple versions:
 ```
 version:
