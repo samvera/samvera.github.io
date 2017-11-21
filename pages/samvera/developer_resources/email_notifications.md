@@ -95,16 +95,7 @@ and set the `ACTION_MAILER_HOST` environment variable on the servers where you'r
 ```
 
 ### Customizing the subject lines of emails
-By default, Mailboxer sends emails with subject lines that start with "Mailboxer new message: ". If you want to remove that, or customize what it says, do it in your `config/locales/en.yml` file:
-```
-en:
-  mailboxer:
-    message_mailer:
-      subject_new: My customized prefix: "%{subject}"
-      subject_reply: My customized prefix: "%{subject}"
-    notification_mailer:
-      subject: My customized prefix: "%{subject}"
-```
+By default, Mailboxer sends emails with subject lines that start with "Mailboxer new message: ". If you want to remove that, or customize what it says, copy the locale from https://github.com/mailboxer/mailboxer/blob/master/config/locales/en.yml to your local `config/locales/en.yml` file and customize it there.
 
 ### Including the full URL in email notifications
 By default, Hyrax notifications use relative links. However, when you're sending notifications by email, the user is no longer within the context of the application, so those relative links won't work anymore. Instead, you're going to want to use fully qualified URIs.
