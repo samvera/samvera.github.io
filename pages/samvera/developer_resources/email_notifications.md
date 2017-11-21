@@ -117,8 +117,8 @@ By default, Hyrax notifications use relative links. However, when you're sending
   end
 ```
 
-2. Generating those urls is going to require that you've set the `:host` option for `default_url_options`. To do that, add a line like this to your `application.rb` file:
+2. Generating those urls is going to require that you've set the `:host` option for `default_url_options`. To do that, add a line like this at the end of your `application.rb` file:
 ```ruby
-  config.action_mailer.default_url_options = { host: ENV["HYRAX_HOST"] }
+  Rails.application.routes.default_url_options[:host] = ENV["HYRAX_HOST"]
 ```
 3. In your notifications, replace all instances of `document_path` with `document_url`
