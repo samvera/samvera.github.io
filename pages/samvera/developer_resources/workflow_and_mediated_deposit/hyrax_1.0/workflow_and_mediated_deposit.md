@@ -108,6 +108,61 @@ w.setup
 ```
 Putting this code in `db/seeds.rb` means it will be called at the end of `bin/setup`, and you can call it anytime via `rake db:seed`
 
+## How do I assign reviewers for a deposited work (e.g. ETDs) without creating lots of AdminSets?
+
+Create a [Sipity::Method][sipity_method] to assign a reviewer based on some property of the deposited work (e.g. reviewers based on the work's department).
+
+Before getting into the specifics of how to do this, let's do a quick overview of some key workflow concepts for this problem.
+
+### Quick Overview of Workflow
+
+For this particular issue, there are three primary concepts that you may want to reference:
+
+1) Permissions are assigned at two levels:
+  1) [Sipity::WorkflowResponsibility][sipity_workflow_responsibility] - A person has permissions to all things using this workflow
+  1) [Sipity::EntitySpecificResponsibility][sipity_entity_specific_responsibility] - A person has permissions to only the work/entity
+2) [Sipity::Method][sipity_method] - Something we `.call` when we take a Sipity::Action.
+3) [Hyrax::Workflow::PermissionGenerator][hyrax_workflow_permission_generator] - Responsible for assigning permissions. **This could be bettern named as Hyrax::Workflow::PermissionAssigner**
+
+### How to Do This
+
+Referencing the [default workflow][template_workflows] there is a method object that is called when a user deposits a work: One method object, [Hyrax::Workflow::GrantEditToDepositor][hyrax_workflow_grant_edit_to_depositor], grants the user depositing rights for the deposit worked (eg. Sipity::EntitySpecificResponsibility).
+
+You'll need to modify your workflow (an exercise left up to the reader) to include a method for the appropriate action. You may want to reference the [JSON workflow schema][json_workflow_schema] for proper syntax.
+
+Then create (and test) your method object.
+
+```ruby
+module Hyrax::Workflow::AssignReviewerByDepartment
+   def self.call(target:, **)
+     reviewer = find_reviewer_for(department: target.department)
+     # This assigns database permissions, but does not grant permissions on the Fedora object.
+     Hyrax::Workflow::PermissionGenerator.call(entity: target, agent: reviewer, role: 'Reviewer')
+     # Do you want to update the Fedora object? Then you'll need to make adjustments.
+   end
+
+   def self.find_reviewer_for(department:)
+     # You do the work
+   end
+end
+
+# Make sure to test that your method conforms to the Hyrax workflow method interface
+RSpec.describe Hyrax::Workflow::AssignReviewerByDepartment do
+  let(:workflow_method) { described_class }
+  it_behaves_like "a Hyrax workflow method"
+
+  # Don't forget to write specs for the business logic of this method
+end
+```
+
+[sipity_method]:https://github.com/samvera/hyrax/blob/b64ea8e0d20a60327c2e7a37a919d6daef8d9f00/app/models/sipity/method.rb
+[sipity_entity_specific_responsibility]:https://github.com/samvera/hyrax/blob/b64ea8e0d20a60327c2e7a37a919d6daef8d9f00/app/models/sipity/entity_specific_responsibility.rb
+[sipity_workflow_responsibility]:https://github.com/samvera/hyrax/blob/b64ea8e0d20a60327c2e7a37a919d6daef8d9f00/app/models/sipity/workflow_responsibility.rb
+[json_workflow_schema]:https://github.com/samvera/hyrax/blob/b64ea8e0d20a60327c2e7a37a919d6daef8d9f00/app/services/hyrax/workflow/workflow_schema.rb#L57
+[hyrax_workflow_grant_edit_to_depositor]:https://github.com/samvera/hyrax/blob/b64ea8e0d20a60327c2e7a37a919d6daef8d9f00/app/services/hyrax/workflow/grant_edit_to_depositor.rb
+[templates_workflow]:https://github.com/samvera/hyrax/blob/b64ea8e0d20a60327c2e7a37a919d6daef8d9f00/lib/generators/hyrax/templates/workflow.json.erb#L14
+[hyrax_workflow_permission_generator]:https://github.com/samvera/hyrax/blob/b64ea8e0d20a60327c2e7a37a919d6daef8d9f00/app/models/sipity/method.rb
+
 ## How do I set up an app to use a given workflow by default?
 
 coming soon...
