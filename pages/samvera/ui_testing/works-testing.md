@@ -24,8 +24,6 @@ On the metadata form, the following tabs are available across the top of the for
 
 ![works](images/screenshots/UIT_works_2.png)
 
-![works](images/screenshots/UIT_works_2.png)
-
 - Descriptions: This is where descriptive metadata can be entered about the item. Fields labelled “Required” are required before the item can be uploaded. Part way down the Descriptions page is a button labelled “Additional Fields” which will reveal the full suite of descriptive metadata fields available for the model.
 
 - Files: This is where you define the files or sets of files you wish to upload. You may either select a single file or folder of files or drag and drop the file onto the interface. Loading a file results in the filename and size appearing in a table above the upload buttons with the option to delete the file. Loading a folder of files results in the individual files in the folder being uploaded individually. Last, as the file is being uploaded, a progress bar appears in the interface, as does the option to cancel the upload.
@@ -88,8 +86,6 @@ You should see a listing of the files that you added, and each one should have a
 At this point you should see the edit page for the file itself, and the ‘Versions’ tab should be opened by default. In this tab are controls to manage versions of this specific file.  To upload a new version, simply click ‘Browse’ to bring up a file browser and choose a local file.  Once selected, click ‘Upload New Version’ to upload the new file as the active version associated with this work.
 
 Upon completion you should see the full detail view for the file, and the user activity section should contain a message showing the addition of a new version of the file.
-
-![works](images/screenshots/UIT_works_8.png)
 
 ![works](images/screenshots/UIT_works_8.png)
 

@@ -17,8 +17,6 @@ Access the Dashboard by selecting your username from the top navigation bar and 
 
 ![dashboard](images/screenshots/UIT_dash_1.png)
 
-![dashboard](images/screenshots/UIT_dash_1.png)
-
 ## Edit your profile
 On initial page load, Hyrax displays the heading “Edit Profile” and then input elements for avatar picture, ORCID profile, Twitter handle, Facebook handle, Google+ handle, then text that says “Remove Highlight Designation” with a help tooltip, then a save button, and lastly two column headings, “Authorize Proxies” and “Current Proxies,” with a search/select displaying “Search for a user” in the “Authorize” column.
 
@@ -54,8 +52,6 @@ Transfers shows two tables, one for Transfers Sent and one for Transfers Receive
 
 ![dashboard](images/screenshots/UIT_dash_8.png)
 
-![dashboard](images/screenshots/UIT_dash_8.png)
-
 The Transfers Sent table will populate with works that you have attempted to transfer to another user. The table includes the work title, transfer request date, the ID of the user you sent the transfer request to, the status of the transfer request, and the comments you included in your transfer request. The Status column of the table offers a Cancel button that allows the cancellation of transfer request. Selecting the Cancel button activates a pop-up message asking you to confirm the cancellation. Confirming the cancellation changes the Status field for this item in the table to “Cancelled”.
 
 The Transfers Received table will populate with requests for works that have been transferred to you. The table includes the work title, transfer date, the ID of the user the transfer is coming from, the status of the transfer, and the comments that were included with the transfer. The Status column will include a Reject button and an Accept drop-down list. In the Accept drop-down list, one has the ability to: Allow the depositor to retain edit access, Remove depositor access, and Authorize depositor as proxy. Selecting any of these Accept or Reject actions will update the table with a static Status of either accepted or rejected.
@@ -75,15 +71,12 @@ The Administrative Sets page allows a user to view basic information about and t
 ![dashboard](images/screenshots/UIT_dash_9.png)  
 ![dashboard](images/screenshots/UIT_dash_10.png)
 
-
 Selecting Edit returns a page that allows the user to edit the core elements of the Admin Set including:
 
 - Description: modify the Admin Set title, the text description of the Admin Set, and a thumbnail that is used to represent the Admin Set visually
 - Participants: add participants to an admin set using the group or user search boxes and the role drop-down lists at the top of the page. This page also allows the user to review and change the participants in the admin set. Last, this page allows the user to allow all registered users of the repository to deposit content to the admin set.
 - Release and Visibility: control when works added to this set are made available for discovery and download and who can discover and download them. This page allows the user to select among a number of options using radio selectors and date fields.
 - Workflow: select the workflow that should be used for items deposited into this admin set
-
-![dashboard](images/screenshots/UIT_dash_11.png)
 
 ![dashboard](images/screenshots/UIT_dash_11.png)
 
