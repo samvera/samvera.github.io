@@ -272,53 +272,69 @@ entries:
       output: web, pdf
 
   - title: Manager Guide
-    output: web, pdf
+    output: web
     folderitems:
 
-        - title: Concepts and Definitions
-          url: /concepts.html
-          output: web, pdf
+    - title: What's New in Hyrax 2.0?
+      url: /whats-new.html
+      output: web, pdf
 
-        - title: Creating a Work
-          url: /create-works.html
-          output: web, pdf
+    - title: Concepts and Definitions
+      url: /concepts-2.0.html
+      output: web, pdf
 
-        - title: Editing a Work
-          url: /edit-works.html
-          output: web, pdf
+    - title: Configuring the Repository
+      url: /configuration.html
+      output: web, pdf
 
-        - title: Creating Works via Batch
-          url: /batch-works.html
-          output: web, pdf
+    - title: Creating a Work
+      url: /create-works-2.0.html
+      output: web, pdf
+
+    - title: Editing a Work
+      url: /edit-works-2.0.html
+      output: web, pdf
+
+    - title: Administrative Sets
+      url: /admin-sets-2.0.html
+      output: web, pdf
+
+    - title: Collections
+      url: /collections-2.0.html
+      output: web, pdf
+
+    - title: Batch Uploading Works
+      url: /batch-works-2.0.html
+      output: web, pdf
 
   - title: User Interface Testing
-    output: web, pdf
+    output: web
     folderitems:
 
-        - title: Administration
-          url: /administration-testing.html
-          output: web, pdf
+    - title: Administration
+      url: /administration-testing.html
+      output: web, pdf
 
-        - title: Dashboard
-          url: /dashboard-testing.html
-          output: web, pdf
+    - title: Dashboard
+      url: /dashboard-testing.html
+      output: web, pdf
 
-        - title: Works
-          url: /works-testing.html
-          output: web, pdf
+    - title: Works
+      url: /works-testing.html
+      output: web, pdf
 
-        - title: Collections
-          url: /collections-testing.html
-          output: web, pdf
+    - title: Collections
+      url: /collections-testing.html
+      output: web, pdf
 
-        - title: Workflows
-          url: /workflows-testing.html
-          output: web, pdf
+    - title: Workflows
+      url: /workflows-testing.html
+      output: web, pdf
 
-        - title: Navigation
-          url: /navigation-testing.html
-          output: web, pdf
+    - title: Navigation
+      url: /navigation-testing.html
+      output: web, pdf
 
-        - title: Discovery
-          url: /discovery-testing.html
-          output: web, pdf
+    - title: Discovery
+      url: /discovery-testing.html
+      output: web, pdf
