@@ -119,7 +119,7 @@ Use something similar to...
 
 ### For a controlled vocabulary field (required)
 
-You must customize the creation of the form field to use autocomplete with a controlled vocabulary.  You can use one of the external authorities with access provided through the [Questions Authority]() gem.  Or you can create your own controlled vocabulary.  This tutorial includes instructions for [defining a simple local controlled vocabulary](customize-metadata-controlled-vocabulary.html).
+You must customize the creation of the form field to use autocomplete with a controlled vocabulary.  You can use one of the external authorities with access provided through the [Questioning Authority](https://github.com/samvera/questioning_authority) gem.  Or you can create your own controlled vocabulary.  This tutorial includes instructions for [defining a simple local controlled vocabulary](customize-metadata-controlled-vocabulary.html).
 
 
 For a controlled-value field, you can use something similar to...
