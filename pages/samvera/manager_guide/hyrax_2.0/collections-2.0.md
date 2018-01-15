@@ -3,7 +3,7 @@ title: "Collections (2.0)"
 permalink: collections-2.0.html
 folder: samvera/manager_guide/collections-2.0.md
 sidebar: home_sidebar
-a-z: ['Administration']
+a-z: ['manager_guide', 'user_guide']
 keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: How to use the Administration panel in hyrax
@@ -33,8 +33,8 @@ You can only set visibility and sharing AFTER the collection is created.
 
 There are several ways to add works to collections:
 
-- From the Dashboard, click “Works” and select one or more works. Click “Add to Collection”. To add the works to a new collection, click “Add to new Collection” in the dialog box.  To add the works to an existing collection, select the collection in the dialog box, then click “Update Collection.”
-- In the Browse view of a work, click “Edit” and select a collection in the “Relationships” tab.  To select more than one collection, hold Control while selecting.
+- From the Dashboard, click “Works” and select one or more works. Click “Add to Collection”. To add the works to a new collection, click “Add to new Collection” at the bottom of the dialog box. To add the works to an existing collection, select the collection in the dialog box, then click “Save Changes.”
+- In the Browse view of a work, click “Edit” and select a collection in the “Relationships” tab. Click “Add.”  To select more than one collection, hold Control while selecting.
 - When creating a new work, select a collection in the “Relationships” tab.
 
 The visibility of a collection does not affect the visibility of a work. For example, if an Open Access work is added to a Private collection, the work will remain Open Access, but a link to the collection itself can not be discovered.
@@ -42,13 +42,13 @@ The visibility of a collection does not affect the visibility of a work. For exa
 ## Editing Collections
 
 - To edit metadata for a collection, click on the “Collections” link in the Dashboard and click on the collection.  Click the “Edit” button.
-- To change collection visibility, click on the “Collections” link in the Dashboard and click on the collection.  Select the “Visibility” tab at the top of the page.  
+- To change collection visibility, click on the “Collections” link in the Dashboard and click on the collection. Click the “Edit” button. Select the “Discovery” tab at the top of the page.  
 - Collections can be either public, limited to institution only, or private.
-- To remove works from a collection, click on the “Collections” link in the Dashboard and click on the collection.  Navigate to the “Manage Items in this Collection” heading.  Check the box next to the work that you would like to delete, them select “Remove from Collection” from the “Select an action” dropdown menu.
+- To remove works from a collection, click on the “Collections” link in the Dashboard and click on the collection. Navigate to the “Works” heading. Click “Remove” next to the work that you would like to delete.
 - To delete a collection, click on the “Collections” link in the Dashboard.  Select “Delete Collection” from the “Actions” dropdown menu next to the collection that you would like to delete.
 
 ## Sharing Collections with Other Users
 
-- To share a collection, click on the “Collections” link in the Dashboard and click on the collection. Select the “Sharing” tab at the top of the page.
-- To share a work with a single user at a time, search for them in the “Share Work with other users” search box, then select the appropriate level of access.  Click the “+” button to add the new user to the “Share With” list.  When you are finished adding users, click  “Update Collection.”
-- To share a work with multiple users, make sure that they are assigned to a group.  Select the group from the “Share work with groups of users” drop down menu, then select the appropriate level of access.  Click the “+” button to add the new group of users to the “Share With” list.  Click “Update Collection.”
+- To share a collection, click on the “Collections” link in the Dashboard and click on the collection. Click the “Edit” button. Select the “Sharing” tab at the top of the page.
+- To share a work with a single user at a time, search for them in the “Add user” search box, then select the appropriate level of access. Click the “Add” button to add the new user to the “Currently Shared With” list. The “Currently Shared With” list is grouped by access level. When you are finished adding users, click “Save changes” at the bottom of the page.
+- To share a work with multiple users, make sure that they are assigned to a group. Select the group from the “Add group” drop down menu, then select the appropriate level of access. Click the “Add” button to add the new group of users to the “Currently Shared With” list. Click “Save changes.”

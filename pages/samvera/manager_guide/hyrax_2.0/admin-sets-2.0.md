@@ -3,7 +3,7 @@ title: "Administrative Sets"
 permalink: admin-sets-2.0.html
 folder: samvera/manager_guide/admin-sets-2.0.md
 sidebar: home_sidebar
-a-z: ['Administration']
+a-z: ['manager_guide', 'user_guide']
 keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: How to use the Administration panel in hyrax
@@ -21,10 +21,11 @@ version:
 
 Hyrax must have at least one Admin set in order for users to add content to the repository. Repository Administrators can create additional Admin sets as needed. Admin sets are advised to use when you have a set of works that need default behaviors and/or permissions. For example, if you have a set of works that specific users need to be able to edit or view. Admin sets also work well for sets of works that need to follow a particular publishing workflow, like supporting the mediated deposit of student papers.
 
-You must create at least one Admin Set. All works in your repository must belong to one, and only one Admin Set.
+You *must* create at least one Admin Set. This is usually done at the time of setup. All works in your repository must belong to one, and only one Admin Set. Repository Admins can create additional Admin sets as needed.
 
 ## To create a new Administrative Set
-As a Repository Admin, navigate to your dashboard and then to Administrative Sets on the left hand menu.
+As a Repository Admin, navigate to your dashboard and then to Collections on the left hand menu. Click “New Collection” in the upper right.  Select “Admin Set” in the dialog box and click “Create collection”
+
 - Description: Assign a title and description.
 
 ![Create Admin Set](images\screenshots\create-admin-set.png)
@@ -54,20 +55,33 @@ Here are the available settings.
 - Deleting an Admin Set - You must first delete all items in an admin set in order to delete the admin set itself. Deletion is permanent and can not be undone.
 
 ## Mediated Deposit/Workflow
-Mediated Deposit Workflows enable repository managers or collection owners to implement a review process before works become available for access.
+Workflows dictate how a Work moves through review and publishing stages in your repository. There are two workflows that come with Hyrax, Default Workflow and One-step Mediated Deposit. Every Admin Set has the Default Workflow unless otherwise specified. [Custom workflows can be created](/workflow_and_mediated_deposit.html) to accommodate additional use cases.
 
-- Configuration: https://github.com/projecthydra/sufia/wiki/Mediated-Deposit-Workflow
-- Settings: Turn on deposit to Admin Sets
-- Create Admin Set
-  - Add reviewers to Manager Role
-  - Add student to depositor role
-  - Add workflow 1-step mediated deposit (you would have 1 workflow per admin set, so name it after the admin set)
+**Default Workflow:** With this workflow applied to your Admin Set, all deposited works become available to the public without any mediation required. As soon as someone saves a work in the repository, it becomes available according to the visibility settings assigned at the time of deposit.
 
-Workflows:
-- Add workflow specific roles to each person who needs to deposit and review
-- Default workflow
-- 1-step workflow
-- Create your own workflow
+*Example: Use the Default Workflow for a “Scholarly Posters and Presentations” Admin Set that does not have any visibility requirements and you want the posters and presentations to be available immediately.*
 
-Reviewing submissions
-- *Coming soon*
+**One-step Mediated Deposit:** With this workflow applied to your Admin Set, all works must go through a mediated review process before the works become available to the public. With this workflow, a specific user is granted the ability to approve, ask for changes and comment on a particular work.
+
+*Example: A department requires students to submit a Senior Honors Thesis, but faculty must read and approve them before they are available to the public.*
+
+![Features - Turn on Mediated Deposits](/images/screenshots/dashboard-features.png)
+
+**Set up a mediated deposit workflow:**
+
+- Click on “Settings”, then “Features” in the Dashboard. Turn on the setting “Assign Admin Set” to allow users to upload to admin sets
+- Navigate to the admin set that you’d like to use and click “Edit”.  Click the “Participants” tab and select “Allow all registered users to deposit” or add a specific group.
+- Add managers who will become “Reviewers” of the set. You do not need to assign these roles under “Workflow Roles” unless you have set up a custom workflow.
+- Click the Workflow tab and select “One-step Mediated Deposit Workflow”
+
+![Review Submissions](/images/screenshots/review-submissions.png)
+
+**Reviewing Works in Mediated Deposit:**
+- In the Dashboard, click on “Tasks,” then “Review Submissions.”  You will see a list of works requiring your review. Repository Admins will see all works in the repository, other reviewers will only see works in Admin Sets for which they are designated Managers.
+- Click on a work that needs review: The “Review and Approval” bar will appear at the top of the page. Click on the “Review and Approval” bar to display three actions with an option to provide comments.
+- Request changes - sends the work back to the student, then the student can make changes and resubmit.
+- Approve - makes the work available immediately
+- Comment only - this action should be chosen if there is a person in your workflow who needs to review, but not publish, the submission.
+- Click “Submit.”
+
+Notifications help reviewers and depositors know when an action is required. Notifications can be accessed from any page by clicking the “bell” icon at the top right of the page.

@@ -3,7 +3,7 @@ title: "Concepts and Definitions"
 permalink: concepts-2.0.html
 folder: samvera/manager_guide/concepts-2.0.md
 sidebar: home_sidebar
-a-z: ['glossary']
+a-z: ['manager_guide', 'user_guide']
 keywords: hyrax administration, glossary
 tags: [user_resources]
 categories:
@@ -23,10 +23,10 @@ version:
 An Administrative Set is a top-level grouping of Works that is managed by a user with administrative privileges, such as reviewing deposited Works before they are made accessible. Unlike Collections, Administrative Sets are not discoverable by searching or browsing the catalog. They are intended to provide repository administrators the ability to apply a workflow, define behaviors, and apply policies on a set of works. Only repository administrators can create an administrative set, but they can designate any user to have management or edit access to an administrative set. All works must belong to one, and only, one Admin Set. Example: Electronic Dissertations and Theses.
 
 ## Collection
-A themeatic grouping of works or collections. Any user in the system can create a Collection. Collections can be visible publicly or kept private. Collections can have a dedicated thumbnail and be shared among repository users with defined access levels: view/download or edit. Only users with access to a collection can add Works to it. Example: Professor creates a collection of Works related to her funded research project.
+A thematic grouping of works or collections. Any user in the system can create a Collection. Collections can be visible publicly or kept private. Collections can have a dedicated thumbnail and be shared among repository users with defined access levels: view/download or edit. Only users with access to a collection can add Works to it. Example: Professor creates a collection of Works related to her funded research project.
 
 ## Mediated deposit
-The group of steps necessary for reviewing a deposited work, culminating in approval before publishing it for public viewing. Commonly used in the context of colllecting Electronic Theses and Dissertations or staff-facing metadata workflows for digital collections.
+The group of steps necessary for reviewing a deposited work, culminating in approval before publishing it for public viewing. Commonly used in the context of collecting Electronic Theses and Dissertations or staff-facing metadata workflows for digital collections.
 
 ## Participants
 Participants for Administrative Sets allow the repository manager to define what individual types of users can do with or to items in an Admin Set, such as deposit, approve, edit, or withdraw.
@@ -39,7 +39,8 @@ A classification for content that is assigned to the Work by the depositor. Reso
 
 ## Roles
 **System Roles**
-Repository Administrator is the only system wide role that exists out of the box. Repository Administrators:
+
+Repository Administrator is the only system-wide role that exists out of the box. Repository Administrators:
 - Can see, edit, delete all works, collections, admin sets regardless of access controls and workflows on the objects.
 - Only Repository Administrators can
   - create Administrative Sets
@@ -50,6 +51,7 @@ Registered User is any user that is logged into the repository.
 Public User is anyone visiting the public contents of the repository.
 
 **Collections & Administrative Set Participants**
+
 In addition to system roles, there are collection-based and admin-set based roles, but these are limited to specific collections and sets and not across all content in the system. These include:
 - Viewers, Depositors, Managers of an Administrative Set
 - Editors and Viewers of a Collection

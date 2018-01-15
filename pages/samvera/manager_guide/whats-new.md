@@ -3,8 +3,8 @@ title: "What's New in Hyrax 2?"
 permalink: whats-new.html
 folder: samvera/manager_guide/whats-new.md
 sidebar: home_sidebar
-a-z: ['Administration']
-keywords: Best Practices, managers, repo mangers, hyrax administration
+a-z: ['manager_guide', 'user_guide']
+keywords: Hyrax, Samvera, Manager Guide
 tags: [user_resources]
 categories: What's New
 version:
@@ -15,7 +15,7 @@ version:
 
 ## Dashboard
 
-Administrator and user functions used to be performed though separate dashboards. In Hyrax 2, these are consolidted into a single dashboard with sections: Activity, Reports (Administrator Only), Repository Contents, Tasks, and Configuration (Administrator Only).
+Administrator and user functions used to be performed through separate dashboards. In Hyrax 2, these are consolidated into a single dashboard with sections: Activity, Reports (Administrator Only), Repository Contents, Tasks, and Configuration (Administrator Only).
 
 ![Adminstrator Dashboard](images\screenshots\admin-dashboard-2.png)
 
@@ -23,19 +23,19 @@ The User dashboard no longer contains the Create Work, Create Collection, View F
 
 ![User Dashboard](images\screenshots\user-dashboard-2.png)
 
-The Administrator dashboard renamed the Statistics page to Reports to reflect new reporting functionalities: Statistics by Date. Administators can query the repository directly on the page to see statistics related to Works and Users.
+The Administrator dashboard renamed the Statistics page to Reports to reflect new reporting functionalities: Statistics by Date. Administrators can query the repository directly on the page to see statistics related to Works and Users.
 
 ![Administrator Reports](images\screenshots\admin-reports-2.png)
 
-The Configuration section is also a new addition to the Administrator dashbaord. This allows you to change repository settings and edit user roles for workflows. New settings will allow you to change the colors of the repository's header, background, links, and footer. The Configuration section also enables you to edit the About, Help, Deposit Agreement, and Terms of Use pages with a simple text editor.
+The Configuration section is also a new addition to the Administrator dashboard. This allows you to change repository settings and edit user roles for workflows. New settings will allow you to change the colors of the repository's header, background, links, and footer. The Configuration section also enables you to edit the About, Help, Deposit Agreement, and Terms of Use pages with a simple text editor.
 
 ## Languages
 
-The user interface can now be translated into seven languages: English, Spanish, German, French, Italian, Portugese, and Chinese. Hyrax 1 only supports English and Spanish.
+The user interface can now be translated into seven languages: English, Spanish, German, French, Italian, Portuguese, and Chinese. Hyrax 1 only supports English and Spanish.
 
 ## Metadata
 
-Licenses and Rights Statements used to be used to be in the required License field. They are now separate. The Rights Statement is required by default.
+Licenses and Rights Statements used to be in the required License field. They are now separate. The Rights Statement is required by default.
 
 ![Rights Statement](images\screenshots\work-rightstatement-2.png)
 
