@@ -141,6 +141,10 @@ entries:
       url: /what-are-things.html
       output: web
 
+    - title: Working with the Actor Stack
+      url: /actor_stack.html
+      output: web
+
       subfolders:
       - title: What Are Admin Sets
         output: web
