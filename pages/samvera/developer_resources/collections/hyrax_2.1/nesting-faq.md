@@ -3,15 +3,15 @@ title: "FAQ - Collection Nesting"
 keywords: Nesting, Collection, FAQ
 categories: How to Do All the Things
 permalink: collection-nesting-faq.html
-folder: samvera/how-to/collection_extensions/hyrax_2.1/nesting-faq.md
+folder: samvera/how-to/collections/hyrax_2.1/nesting-faq.md
 sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['FAQ - Collection Nesting', 'Collections - Nesting', 'Nesting of Collections']
 version:
-  label: 'Hyrax v2.1.0.beta1'
+  label: 'targeted for Hyrax v2.1.0'
   branch:
-    label: 'master'
-    link: 'https://github.com/samvera/hyrax/tree/master'
+    label: 'collections-sprint'
+    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
 ---
 
 ### What is collection nesting?
@@ -24,9 +24,7 @@ Yes.  A collection can have all sub-collections, all works, or a combination of 
 
 ### Is there a limit to how deep the nesting can go?
 
-The depth of nesting is limited. By default the limit is set to 5.  You can modify the limit by...  
-
-<b style='padding-left: 30px; color: purple; font-size: 1.3em;'>TODO: how to change limit?</b>
+The depth of nesting is limited. By default the limit is set to 5.  It is defined in the hyrax engine in `config/initializers/samvera-nesting_indexer_initializer.rb` by config `config.maximum_nesting_depth = 5`.  You can override this to set a different maximum_nesting_depth. 
 
 ### Can a collection be its own descendant?
 
@@ -38,7 +36,7 @@ No.  At this time, nesting is limited to collections of the same type.  For exam
 
 In the future, this could be relaxed to allow a configuration that identifies which collection types can be nested in which, if this is determined to be a priority.
 
-### Where do I set collection nesting?
+### Where do I manage collection nesting relationships?
 
 There are two places in the UI for managing nesting.
 
@@ -47,9 +45,10 @@ There are two places in the UI for managing nesting.
 
 ### How can I see what collections are nested?
 
-Right now, there is only one place to see nesting and it only shows the immediate parents and subcollections.
+Right now, there are two place to see nesting relationships and in both places, they only shows the immediate parents and subcollections.
 
 * Collection show page at Dashboard -> Collections -> click title of collection
+* Collection edit form at Dashboard -> Collections -> click action menu beside collection -> Edit collection -> Relationship tab
 
 We hope to update the Dashboard -> Collections index page in later releases to include the ability to view nesting hierarchies, but there is extensive UI/UX design work required before implementation can happen. 
 

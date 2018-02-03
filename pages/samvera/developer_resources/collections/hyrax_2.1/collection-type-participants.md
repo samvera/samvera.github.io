@@ -8,10 +8,10 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['Collection Type Participants', 'Participants for Collection Types']
 version:
-  label: 'Hyrax v2.1.0.beta1'
+  label: 'targeted for Hyrax v2.1.0'
   branch:
-    label: 'master'
-    link: 'https://github.com/samvera/hyrax/tree/master'
+    label: 'collections-sprint'
+    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
 ---
 
 ## Understanding Collection Type Participants

@@ -3,15 +3,15 @@ title: "FAQ - Collection Metadata"
 keywords: Metadata, Collection, FAQ
 categories: How to Do All the Things
 permalink: collection-metadata-faq.html
-folder: samvera/how-to/collection_extensions/hyrax_2.1/metadata-faq.md
+folder: samvera/how-to/collections/hyrax_2.1/metadata-faq.md
 sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['FAQ - Collection Metadata', 'Collections - Metadata', 'Metadata for Collections']
 version:
-  label: 'Hyrax v2.1.0.beta1'
+  label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
   branch:
-    label: 'master'
-    link: 'https://github.com/samvera/hyrax/tree/master'
+    label: 'collections-sprint'
+    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
 ---
 
 ### What metadata is included in collections by default?
