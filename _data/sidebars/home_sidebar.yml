@@ -142,7 +142,7 @@ entries:
       output: web
 
       subfolders:
-      - title: What Are Admin Sets
+      - title: What Are Admin Sets?
         output: web
         subfolderitems:
 
@@ -152,6 +152,30 @@ entries:
 
         - title: Participants
           url: /participants.html
+          output: web
+
+      - title: Features of Collections and Admin Sets
+        output: web
+        subfolderitems:
+
+        - title: "Collection Type Participants"
+          url: /collection-type-participants.html
+          output: web
+
+        - title: "Collection Sharing"
+          url: /collection-sharing.html
+          output: web
+
+        - title: "Collection Nesting FAQ"
+          url: /collection-nesting-faq.html
+          output: web
+
+        - title: "Collection Discovery FAQ"
+          url: /collection-discovery-faq.html
+          output: web
+
+        - title: "Collection Metadata FAQ"
+          url: /collection-metadata-faq.html
           output: web
 
     - title: How Do I Add a New Work Type?
