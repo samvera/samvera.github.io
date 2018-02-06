@@ -13,7 +13,7 @@ folder: samvera
 
 Each release will have a release testing coordinator. This person can vary from release to release. You will work closely with the Hyrax Tech Lead and Product Owner.
 
-Follow the process outlined in [Hyrax Testing and Release Process](https://wiki.duraspace.org/display/samvera/Hyrax+Testing+and+Release+Process). As this is a new process, you may find that some sections need adjustment or more detail.
+Follow the newly-defined process outlined in [Hyrax Testing and Release Process](/release_process.html). As this is a new process, you may find that some sections need adjustment or more detail.
 
 <br />
 
