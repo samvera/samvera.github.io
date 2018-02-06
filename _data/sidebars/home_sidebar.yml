@@ -71,6 +71,10 @@ entries:
       url: /hyrax-releases.html
       output: web, pdf
 
+    - title: Release Testing
+      url: /release_testing.html
+      output: web, pdf
+      
     - title: Contribution Tools
       url: /contribution-tools.html
       output: web, pdf
