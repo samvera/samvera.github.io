@@ -59,6 +59,66 @@ entries:
       url: /training.html
       output: web, pdf
 
+  - title: Developer Community
+    output: web, pdf
+    folderitems:
+
+    - title: Real Life Hyrax
+      url: /real-life-hyrax.html
+      output: web, pdf
+
+    - title: Releases
+      url: /hyrax-releases.html
+      output: web, pdf
+
+    - title: Contribution Tools
+      url: /contribution-tools.html
+      output: web, pdf
+
+    - title: How to Submit Pull Reqeusts
+      url: /how-to-pr.html
+      output: web, pdf
+
+  - title: Manager Guide
+    output: web
+    folderitems:
+
+    - title: What's New in Hyrax 2.0?
+      url: /whats-new.html
+      output: web, pdf
+
+    - title: Concepts and Definitions
+      url: /concepts-2.0.html
+      output: web, pdf
+
+    - title: Configuring the Repository
+      url: /configuration.html
+      output: web, pdf
+
+    - title: Creating a Work
+      url: /create-works-2.0.html
+      output: web, pdf
+
+    - title: Editing a Work
+      url: /edit-works-2.0.html
+      output: web, pdf
+
+    - title: Administrative Sets
+      url: /admin-sets-2.0.html
+      output: web, pdf
+
+    - title: Collections
+      url: /collections-2.0.html
+      output: web, pdf
+
+    - title: Batch Uploading Works
+      url: /batch-works-2.0.html
+      output: web, pdf
+
+    - title: Leases and Embargoes
+      url: /lease-embargoes-2.0.html
+      output: web, pdf
+
   - title: Development Resources
     output: web, pdf
     folderitems:
@@ -263,90 +323,6 @@ entries:
       url: /plugins.html
       output: web
 
-  - title: Running in Production
-    output: web, pdf
-    folderitems:
-
-    - title: Hardware Considerations
-      url: /hardware-considerations.html
-      output: web, pdf
-
-    - title: Samvera Services Stack
-      url: /service-stack.html
-      output: web, pdf
-
-    - title: Amazon Web Services
-      url: /aws.html
-      output: web, pdf
-
-    - title: DevOps
-      url: /devops.html
-      output: web, pdf
-
-    - title: Troubleshooting Production
-      url: /troubleshooting-production.html
-      output: web, pdf
-
-  - title: Developer Community
-    output: web, pdf
-    folderitems:
-
-    - title: Real Life Hyrax
-      url: /real-life-hyrax.html
-      output: web, pdf
-
-    - title: Releases
-      url: /hyrax-releases.html
-      output: web, pdf
-
-    - title: Contribution Tools
-      url: /contribution-tools.html
-      output: web, pdf
-
-    - title: How to Submit Pull Reqeusts
-      url: /how-to-pr.html
-      output: web, pdf
-
-  - title: Manager Guide
-    output: web
-    folderitems:
-
-    - title: What's New in Hyrax 2.0?
-      url: /whats-new.html
-      output: web, pdf
-
-    - title: Concepts and Definitions
-      url: /concepts-2.0.html
-      output: web, pdf
-
-    - title: Configuring the Repository
-      url: /configuration.html
-      output: web, pdf
-
-    - title: Creating a Work
-      url: /create-works-2.0.html
-      output: web, pdf
-
-    - title: Editing a Work
-      url: /edit-works-2.0.html
-      output: web, pdf
-
-    - title: Administrative Sets
-      url: /admin-sets-2.0.html
-      output: web, pdf
-
-    - title: Collections
-      url: /collections-2.0.html
-      output: web, pdf
-
-    - title: Batch Uploading Works
-      url: /batch-works-2.0.html
-      output: web, pdf
-
-    - title: Leases and Embargoes
-      url: /lease-embargoes-2.0.html
-      output: web, pdf
-
   - title: User Interface Testing
     output: web
     folderitems:
@@ -377,4 +353,28 @@ entries:
 
     - title: Discovery
       url: /discovery-testing.html
+      output: web, pdf
+
+  - title: Running in Production
+    output: web, pdf
+    folderitems:
+
+    - title: Hardware Considerations
+      url: /hardware-considerations.html
+      output: web, pdf
+
+    - title: Samvera Services Stack
+      url: /service-stack.html
+      output: web, pdf
+
+    - title: Amazon Web Services
+      url: /aws.html
+      output: web, pdf
+
+    - title: DevOps
+      url: /devops.html
+      output: web, pdf
+
+    - title: Troubleshooting Production
+      url: /troubleshooting-production.html
       output: web, pdf
