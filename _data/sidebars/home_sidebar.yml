@@ -154,9 +154,21 @@ entries:
           url: /participants.html
           output: web
 
-      - title: Features of Collections and Admin Sets
+      - title: Collections and Admin Sets
         output: web
         subfolderitems:
+
+        - title: "Overview"
+          url: /collection-overview.html
+          output: web
+
+        - title: "Collection Types"
+          url: /collection-types.html
+          output: web
+
+        - title: "Admin Sets as Collections FAQ"
+          url: /admin-sets-as-collections-faq.html
+          output: web
 
         - title: "Collection Type Participants"
           url: /collection-type-participants.html

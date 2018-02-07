@@ -1,5 +1,5 @@
 ---
-title: "FAQ - Collection Discovery"
+title: "Collection Discovery FAQ"
 keywords: Discovery, discoverable, discoverability, Collection, FAQ
 categories: How to Do All the Things
 permalink: collection-discovery-faq.html

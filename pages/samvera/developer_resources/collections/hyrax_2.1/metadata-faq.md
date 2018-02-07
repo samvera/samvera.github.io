@@ -1,5 +1,5 @@
 ---
-title: "FAQ - Collection Metadata"
+title: "Collection Metadata FAQ"
 keywords: Metadata, Collection, FAQ
 categories: How to Do All the Things
 permalink: collection-metadata-faq.html
