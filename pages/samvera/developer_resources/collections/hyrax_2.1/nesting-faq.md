@@ -1,5 +1,5 @@
 ---
-title: "FAQ - Collection Nesting"
+title: "Collection Nesting FAQ"
 keywords: Nesting, Collection, FAQ
 categories: How to Do All the Things
 permalink: collection-nesting-faq.html
@@ -21,6 +21,14 @@ Collections that have collections as members.
 ### Can a collection have collections and works as members?
 
 Yes.  A collection can have all sub-collections, all works, or a combination of both.
+
+### How do I setup a collection type that can be nested?
+
+* Dashboard -> Settings -> Collection Types
+* click Create new collection type, set title and description, save  (or edit a type that doesn't yet have any collections created)
+* click Settings tab (visible after saving a new collection)
+* check the box beside NESTABLE
+* save changes
 
 ### Is there a limit to how deep the nesting can go?
 

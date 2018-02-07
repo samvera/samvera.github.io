@@ -1,5 +1,5 @@
 ---
-title: "Collection Type Participants"
+title: "Understanding Collection Type Participants"
 keywords: Participant, Collection Type, Sharing
 categories: How to Do All the Things
 permalink: collection-type-participants.html
@@ -14,11 +14,9 @@ version:
     link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
 ---
 
-## Understanding Collection Type Participants
-
 NOTE: Only admins can create, edit, and delete collection types.  Participants set for a collection type effect how users can interact with collections of this type.
 
-### How to set participants for a collection type?
+## How to set participants for a collection type?
 
 * Dashboard -> Settings -> Collection Types
 * Click Edit beside the collection type you want to update
@@ -26,6 +24,8 @@ NOTE: Only admins can create, edit, and delete collection types.  Participants s
 * Search for user/group
 * Set access level to Manager or Creator
 * Click Add button
+
+## Participant Roles
 
 ### Manager
 
@@ -47,7 +47,7 @@ Managers for a collection type can edit collections other users created, includi
 * **Default:**  Repository Administrators
 * A site can assign managers to the Admin Set collection type.  This grants them `:manage` access to admin sets created after they became a manager.  At the collection type level, assigning managers to an admin set collection type has the same effect as for other collection types.
 
-<ul class='warning'><li>Access to a collection is granted when the collection is created.  Changes to managers after a collection is created do not change the access grants of the collection.</li></ul>
+<ul class='warning'><li>Access to a collection is granted when the collection is created.  Changes to managers after a collection is created do not change the access grants of the collection.  See also <a href="collection-sharing.html#setting-groups-vs-users-as-participants">Setting groups vs. users as participants</a>.</li></ul>
 
 ### Creator
 

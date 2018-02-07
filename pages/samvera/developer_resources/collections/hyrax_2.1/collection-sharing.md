@@ -1,5 +1,5 @@
 ---
-title: "Collection Sharing"
+title: "Understanding Collection Sharing"
 keywords: Participant, Collection, Sharing
 categories: How to Do All the Things
 permalink: collection-sharing.html
@@ -14,9 +14,7 @@ version:
     link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
 ---
 
-## Understanding Collection Sharing
-
-### How to set participants for a collection?
+## How to set participants for a collection?
 
 * Dashboard -> Collections
 * Click Edit collection in action menu beside the collection you want to update
@@ -24,6 +22,8 @@ version:
 * Search for user/group
 * Set access level to Manager or Depositor or Viewer
 * Click Add button
+
+## Sharing Roles
 
 ### Manager
 
