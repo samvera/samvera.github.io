@@ -378,3 +378,8 @@ entries:
     - title: Discovery
       url: /discovery-testing.html
       output: web, pdf
+
+  - title: Glossary
+    url: /glossary-2.1.html
+    output: web, pdf
+

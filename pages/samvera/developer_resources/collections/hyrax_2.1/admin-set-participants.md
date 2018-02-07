@@ -1,15 +1,19 @@
 ---
-title: "Admin Sets - Participants"
-a-z: ["Admin Sets - Participants"]
+title: "Understanding Participants for Admin Sets"
 keywords: Admin Sets, Participants
-categories: How to Do All the Things - Glossary
-permalink: participants.html
+categories: How to Do All the Things - Admin Sets
+permalink: admin-set-participants.html
 folder: samvera/how-to/
 sidebar: home_sidebar
 tags: [development_resources]
 toc: false
+a-z: ["Admin Sets - Participants", "Collections - Admin Set Participants]
+version:
+  label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
+  branch:
+    label: 'collections-sprint'
+    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'---
 ---
-
 
 ### Impact on Admin Set Access
 
@@ -37,4 +41,4 @@ Participant access to a work is assigned when a new work is saved.  Based on the
 
 Once a work is created and access is assigned, the Admin Set's participants have no more bearing on the work.  That is, if the participants are changed in the Admin Set, any existing works remain unchanged.  Any new works will get access assigned based on the new participants for the Admin Set.
 
-Also, if you edit a work and change its Admin Set, the membership of the work will be set to the new Admin Set, but the access assignments will remain unchanged.
+<ul class='warning'><li>Access to works in an Admin Set is granted when the work is created.  Changes to manager and viewer roles after a work is created do not change the access grants of the work.  See also <a href="collection-sharing.html#setting-groups-vs-users-as-participants">Setting groups vs. users as participants</a>.</li></ul>
