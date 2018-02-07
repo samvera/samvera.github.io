@@ -67,9 +67,18 @@ entries:
       url: /real-life-hyrax.html
       output: web, pdf
 
-    - title: Releases
-      url: /hyrax-releases.html
-      output: web, pdf
+      subfolders:
+      - title: Releases
+        output: web, pdf
+        subfolderitems:
+
+        - title: Release Process
+          url: /release_process.html
+          output: web, pdf
+
+        - title: Release Testing
+          url: /release_testing.html
+          output: web, pdf
 
     - title: Contribution Tools
       url: /contribution-tools.html
