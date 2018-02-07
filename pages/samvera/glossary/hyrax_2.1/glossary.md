@@ -22,10 +22,12 @@ An Administrative Set is a top-level grouping of Works that is managed by a user
 A thematic grouping of works or collections. Any user in the system can create a Collection. Collections can be visible publicly or kept private. Collections can have a dedicated thumbnail and be shared among repository users with defined access levels: view/download or edit. Only users with access to a collection can add Works to it. Example: Professor creates a collection of Works related to her funded research project. ([more information...](collection-overview.html)) 
 
 ## Collection Type
-Collection Types provide a means for configuring behavior of collections within a site.  The functionality that can be switched on/off are [nesting](collection-nesting-faq.html), [sharing](collection-sharing.html), [discovery](collection-discovery-faq.html)), multiple-membership, and branding.  Once collections of a type have been created, these configurations can no longer be changed.  A site may want to create several collection types (e.g. exhibits and user collections).  ([more information...](collection-types.html))
+Collection Types provide a means for configuring behavior of collections within a site.  The functionality that can be switched on/off are [nesting](collection-nesting-faq.html), [sharing](collection-sharing.html), [discovery](collection-discovery-faq.html), multiple-membership, and branding.  Once collections of a type have been created, these configurations can no longer be changed.  A site may want to create several collection types (e.g. exhibits and user collections).  ([more information...](collection-types.html))
 
 ## Groups
-Groups of users, controlled by administrators.  Groups can be assigned as Participants for Collection Types and Admin Sets and given Sharing roles for Collections and Works.  ([more information...](collection-sharing.html##setting-groups-vs-users-as-participants))
+Groups of users, controlled by administrators.  Groups can be assigned as Participants for Collection Types and Admin Sets and given Sharing roles for Collections and Works.  
+
+See also [Setting groups vs. users as participants](collection-sharing.html#setting-groups-vs-users-as-participants).
 
 ## Mediated deposit
 The group of steps necessary for reviewing a deposited work, culminating in approval before publishing it for public viewing. Commonly used in the context of collecting Electronic Theses and Dissertations or staff-facing metadata workflows for digital collections.
@@ -35,7 +37,8 @@ Participants for Administrative Sets allow the repository manager to define what
 
 Participants for Collection Types allow the repository manager to define which individual users or groups of users can have roles related to collections of a type.  A manager is given full edit access to collections of this type.  A creator is allowed to create new collections of this type.  ([more information...](collection-type-participants.html))
 
-See also [Sharing](#sharing) which describes roles for Collections and Works.
+See also [Sharing](#sharing) which describes roles for Collections and Works.<br>
+See also [Setting groups vs. users as participants](collection-sharing.html#setting-groups-vs-users-as-participants).
 
 **Permission Templates**
 A template that defines the Visibility, Release, Workflow, and Participants for an Admin Set or Collection.  The template is applied to works when the work is created.  The template is created through the UI when an Admin Set or Collection is created or edited.  Permission Templates are applied to works when the item is created.  Changes to the template are not applied to existing works and will only effect new works created after the change.
@@ -76,22 +79,25 @@ In addition to system roles, there are Collection Type based, Collection based, 
 
 **Workflow Roles**
 
-Roles that a user or group of users can perform in a workflow.  These define the functions a person performs during a step in a workflow.  ([more information on Mediated Deposit](#mediated_deposit))
+Roles that a user or group of users can perform in a workflow.  These define the functions a person performs during a step in a workflow.
 - creating work
 - approving work
+
+See also [Medidated Deposit Workflow](#mediated-deposit-workflow)
 
 ## Sharing
 Sharing roles for Collections allow editors of the collection to share responsibility of the collection with individual users or groups of users.  Managers are given full edit access to the collection.  Depositors can add resources to the collection.  And viewers can see the collection even when it is private.  These roles can optionally be applied to works created in the collection.  ([more information...](collection-sharing.html))
 
 Works can be shared giving individual users or groups of users edit access or read access.  Edit access give the users full editing access to the work.  Read access allows users to view the work even when it is private.
 
-See also [Participants](#participants) which describes roles for Collections and Works.
+See also [Participants](#participants) which describes roles for Collections and Works.<br>
+See also [Setting groups vs. users as participants](collection-sharing.html#setting-groups-vs-users-as-participants).
 
 ## Work
 The basic content item in the repository. Works bring together file(s) and associated metadata and presents them as one intellectual object. Example: A single dissertation (PDF and descriptive information) or a dataset containing multiple files (spreadsheets, images, text files and descriptive information).
 
 ## Workflows
-Workflows can be used in conjunction with and Admin Set to dictate the process by which a work is submitted, reviewed, and published. For example, Senior Honors Theses need to be reviewed and approved by advisors before becoming available to the general public in the repository.  Two workflows come predefined.  The first immediately saves the work as complete.  The other is a [Mediated Deposit](#mediated-deposit) workflow requiring review.
+Workflows can be used in conjunction with and Admin Set to dictate the process by which a work is submitted, reviewed, and published. For example, Senior Honors Theses need to be reviewed and approved by advisors before becoming available to the general public in the repository.  Two workflows come predefined.  The first immediately saves the work as complete.  The other is a [Mediated Deposit](#mediated-deposit-workflow) workflow requiring review.
 
 ## Work Ownership
 Works are usually owned by the user who makes the deposit, unless that user is a Proxy for another user. Work ownership can be transferred between current users of the system.
