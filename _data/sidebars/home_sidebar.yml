@@ -259,6 +259,10 @@ entries:
           url: /collection-metadata-faq.html
           output: web
 
+        - title: "Collection Indexing"
+          url: /nested-indexing.html
+          output: web
+
     - title: How Do I Add a New Work Type?
       url: /add-new-work-type.html
       output: web
