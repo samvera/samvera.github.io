@@ -29,3 +29,8 @@ Checklist to use when creating and reviewing a PR.
   - [ ] Solr Migrations: Changes to the solr documents should not happen for bug releases, should not be required for minor releases.  Are ok for major releases. 
   - [ ] Fedora Migrations: Changes to the fedora objects should not happen for bug releases, should not be required for minor releases.  Are ok for major releases.  
   - [ ] Database Migrations: Changes to the database should not happen for bug releases, should not be required for minor releases.  Are ok for major releases.
+- Documentation
+  - [ ] Yard Doc: Class, Module, and Method documentation is included.  Method documentation includes a description of the method's purpose, documentation of parameters' type and description, documentaiton of return value's type and description.
+  - [ ] Community Documenation: For new features, documentation is added to the community documentation (samvera.github.io) to describe how to use the feature and technical details for understanding the implementation and potential customization path for the feature.  For changes to features, existing community documentation is updated.
+  - [ ] QA Testing Documentation: Test descriptions for new features are added to the QA Test spread sheet.  Test descriptions for changed features are updated in the QA Test spread sheet.
+   
