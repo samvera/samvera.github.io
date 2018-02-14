@@ -19,7 +19,8 @@ Checklist to use when creating and reviewing a PR.
   - [ ] UI changes: Ad hoc testing of the expected behavior in the UI appears correct.  Expected behavior should be described in the related issue.
   - [ ] UI existing: Ad hoc testing of related features in the UI appear to continue to operate correctly.
   - [ ] Hound issues:  Hound issues are either fixed or comments identify why it doesn't need to be fixed.
-  - [ ] Test: There are tests written for all changes and new functionality, including feature tests for regression behavior nd new behaviors.
+  - [ ] Unit tests: There are unit tests for new methods.
+  - [ ] Feature tests:  There are tests that cover the functionality as it is used by end users in the UI.
   - [ ] Test efficiency: Tests use factorybot `build` instead of `create` where ever possible.  This is especially important for repository objects that cause the object to be created in Fedora.
   - [ ] Test coverage: Test coverage stayed the same or rose.  Review coveralls report for the PR.
   - [ ] Travis completes without error for continuous-integration/travis-ci/push.
@@ -27,7 +28,9 @@ Checklist to use when creating and reviewing a PR.
 - Backward compatibility
   - [ ] Public API: Public method signatures are not changed when going into a bug release or minor release.  These are ok for a major release, but should be an intentional change that is deemed necessary.
   - [ ] Public API: Requires unit tests exist that ensure correct behavior of new classes/modules/methods
-  - [ ] Solr Migrations: Changes to the solr documents should not happen for bug releases, should not be required for minor releases.  Are ok for major releases.
+  - [ ] Functional changes: The functional implementation of public methods are not changed for bug release and minor releases.  These are ok for a major release, but should be an intentional change that is deemed necessary.  A change in processing can be added to a method as long as the older approach continues to work with the older code having a deprecation warning.
+  - [ ] Deprecation: Code that is targeted for removal in the next major release should have a deprecation warning.
+  - [ ] Solr Migrations: Changes to the solr documents should not happen for bug releases, should not be required for minor releases.  Are ok for major releases. 
   - [ ] Fedora Migrations: Changes to the fedora objects should not happen for bug releases, should not be required for minor releases.  Are ok for major releases.  
   - [ ] Database Migrations: Changes to the database should not happen for bug releases, should not be required for minor releases.  Are ok for major releases.
 - Documentation
