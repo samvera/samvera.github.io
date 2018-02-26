@@ -62,9 +62,13 @@ entries:
   - title: Developer Community
     output: web, pdf
     folderitems:
+      
+    - title: Communication
+      url: /communication.html
+      output: web, pdf
 
-    - title: Real Life Hyrax
-      url: /real-life-hyrax.html
+    - title: Contribution Tools
+      url: /contribution-tools.html
       output: web, pdf
 
       subfolders:
@@ -79,12 +83,24 @@ entries:
         - title: Release Testing
           url: /release_testing.html
           output: web, pdf
+          
+      - title: Labs, Core, and Deprecation
+        output: web, pdf
+        subfolderitems:
 
-    - title: Contribution Tools
-      url: /contribution-tools.html
-      output: web, pdf
+        - title: Samvera Labs
+          url: /samvera_labs.html
+          output: web, pdf
 
-    - title: How to Submit Pull Reqeusts
+        - title: Core Components
+          url: /core_components.html
+          output: web, pdf
+          
+        - title: Deprecation
+          url: /deprecation.html
+          output: web, pdf
+
+    - title: How to Submit Pull Requests
       url: /how-to-pr.html
       output: web, pdf
 
