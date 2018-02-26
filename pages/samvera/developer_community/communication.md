@@ -3,9 +3,9 @@ title: Communication
 a-z: [Communication]
 last_updated: March 30, 2017
 tags: [getting_started, community]
-sidebar: samvera_sidebar
+sidebar: home_sidebar
 permalink: communication.html
-folder: samvera
+folder: samvera/community/
 ---
 # Communication
 
