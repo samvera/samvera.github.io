@@ -45,7 +45,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Vital Statistics:**
 
-[![Gem Version](https://badge.fury.io/rb/questioning_authority.svg)](https://badge.fury.io/rb/questioning_authority)
+[![Gem Version](https://badge.fury.io/rb/qa.svg)](https://badge.fury.io/rb/qa)
 [![Build Status](https://travis-ci.org/samvera/questioning_authority.svg?branch=master)](https://travis-ci.org/samvera/questioning_authority)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/questioning_authority/badge.svg?branch=master)](https://coveralls.io/github/samvera/questioning_authority?branch=master)
 
@@ -105,7 +105,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Vital Statistics:**
 
-[![Gem Version](https://badge.fury.io/rb/active_fedora.svg)](https://badge.fury.io/rb/active_fedora)
+[![Gem Version](https://badge.fury.io/rb/active-fedora.svg)](https://badge.fury.io/rb/active-fedora)
 [![Build Status](https://travis-ci.org/samvera/active_fedora.svg?branch=master)](https://travis-ci.org/samvera/active_fedora)
  no Coverage info
 
