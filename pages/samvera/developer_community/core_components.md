@@ -41,7 +41,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [questioning_authority](https://github.com/samvera/questioning_authority)
 
-**Product Owner:** tbd  
+**Product Owner:** [Lynette Rayle](https://github.com/elrayle)
 
 **Vital Statistics:**
 
@@ -65,7 +65,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [browse-everything](https://github.com/samvera/browse-everything)
 
-**Product Owner:** tbd  
+**Product Owner:** [Michael Klein](https://github.com/mbklein)
 
 **Vital Statistics:**
 
@@ -77,7 +77,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [noid-rails](https://github.com/samvera/noid-rails)
 
-**Product Owner:** tbd  
+**Product Owner:** [Justin Coyne](https://github.com/jcoyne)
 
 **Vital Statistics:**
 
@@ -149,7 +149,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-role-management](https://github.com/samvera/hydra-role-management)
 
-**Product Owner:** tbd  
+**Product Owner:** [James Griffin III](https://github.com/jrgriffiniii)
 
 **Vital Statistics:**
 
@@ -197,7 +197,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-editor](https://github.com/samvera/hydra-editor)
 
-**Product Owner:** tbd  
+**Product Owner:** [James Griffin III](https://github.com/jrgriffiniii)
 
 **Vital Statistics:**
 
