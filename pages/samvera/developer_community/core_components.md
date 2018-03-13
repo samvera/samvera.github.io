@@ -101,7 +101,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [active_fedora](https://github.com/samvera/active_fedora)
 
-**Product Owner:** tbd  
+**Product Owner:** [Tom Johnson](https://github.com/no-reply)
 
 **Vital Statistics:**
 
@@ -113,7 +113,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [ldp](https://github.com/samvera/ldp)
 
-**Product Owner:** tbd  
+**Product Owner:** [Tom Johnson](https://github.com/no-reply)
 
 **Vital Statistics:**
 
