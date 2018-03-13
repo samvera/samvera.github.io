@@ -185,7 +185,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-file_characterization](https://github.com/samvera/hydra-file_characterization)
 
-**Product Owner:** tbd  
+**Product Owner:** [Jamie Little](https://github.com/little9)
 
 **Vital Statistics:**
 
