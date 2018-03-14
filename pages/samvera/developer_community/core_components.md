@@ -29,7 +29,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-derivatives](https://github.com/samvera/hydra-derivatives)
 
-**Product Owner:** tbd
+**Product Owner:** [Jennifer Lindner](https://github.com/jenlindner)
 
 **Vital Statistics:**
 
