@@ -113,7 +113,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [ldp](https://github.com/samvera/ldp)
 
-**Product Owner:** [Tom Johnson](https://github.com/no-reply)
+**Product Owner:** [Carrick Rogers](https://github.com/carrickr)
 
 **Vital Statistics:**
 
