@@ -53,7 +53,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-head](https://github.com/samvera/hydra-head)
 
-**Product Owner:** tbd  
+**Product Owner:** [Chris Colvard](https://github.com/cjcolvar)
 
 **Vital Statistics:**
 
