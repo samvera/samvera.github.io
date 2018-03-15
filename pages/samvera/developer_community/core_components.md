@@ -10,20 +10,20 @@ toc: true
 ---
 # Samvera Code Repository
 
-The [primary Samvera code repository](https://github.com/samvera) contains the 
-Samvera community's current consensus 
-on what we are using, maintaining, and recommending. Ideally, this repository 
-only contains code modules that are being actively used and maintained. Anything 
-that falls into disuse should be a candidate for [deprecation](deprecation.html). 
+The [primary Samvera code repository](https://github.com/samvera) contains the
+Samvera community's current consensus
+on what we are using, maintaining, and recommending. Ideally, this repository
+only contains code modules that are being actively used and maintained. Anything
+that falls into disuse should be a candidate for [deprecation](deprecation.html).
 
 ## Maintenance
 
-The Core Components Maintenance Working Group (CCMWG) is in the process of creating a framework for 
-addressing ongoing maintenance of shared code repositories. 
+The Core Components Maintenance Working Group (CCMWG) is in the process of creating a framework for
+addressing ongoing maintenance of shared code repositories.
 
 ## Core Components and Product Owners
 
-Please note that Hyrax is not considered a 'component' under the definition used by the CCMWG. 
+Please note that Hyrax is not considered a 'component' under the definition used by the CCMWG.
 
 ### hydra-derivatives
 
@@ -137,7 +137,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [rubydora](https://github.com/samvera/rubydora)
 
-**Product Owner:** tbd  
+**Product Owner:** [Justin Coyne](https://github.com/jcoyne)
 
 **Vital Statistics:**
 
