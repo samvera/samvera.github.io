@@ -227,18 +227,6 @@ entries:
       output: web
 
       subfolders:
-      - title: What Are Admin Sets?
-        output: web
-        subfolderitems:
-
-        - title: Key Terms
-          url: /what-are-admin-things.html
-          output: web
-
-        - title: Participants
-          url: /participants.html
-          output: web
-
       - title: Collections and Admin Sets
         output: web
         subfolderitems:
