@@ -120,13 +120,15 @@ RSpec.configure do |config|
     Capybara.app = Rack::Jekyll.new(force_build: true)
 
     # Sleep a while to let the site build. Tell the user what you're doing.
-    @wait_for = 5
-    puts "\nWaiting #{@wait_for} seconds for the site to build.\n\n"
-    @wait_for.times { sleep 1 }
+    @wait_for_jekyll = ENV['WAIT_FOR_JEKYLL'].to_i || 5
+    puts "\nWaiting #{@wait_for_jekyll} seconds for the site to build.\n\n"
+    @wait_for_jekyll.times { sleep 1 }
+
+    # Run HTMLProofer
+    # require 'html-proofer'
+    # puts "\nRunning HTML Proofer....\n"
+    # HTMLProofer.check_directory("./_site", allow_hash_href: true).run
   end
 
-  # config.after :suite do
-  #   capybara_temp_file_regex = /capybara\-\d+\.html/
-  #   Dir()
-  # end
+  config.default_formatter = 'doc'
 end
