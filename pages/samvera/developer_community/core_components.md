@@ -16,6 +16,19 @@ on what we are using, maintaining, and recommending. Ideally, this repository
 only contains code modules that are being actively used and maintained. Anything
 that falls into disuse should be a candidate for [deprecation](deprecation.html).
 
+## Requirements for a Core Component
+
+1. Code is stored in a repository in the Samvera github organization
+   [https://github.com/samvera](https://github.com/samvera) and meets the
+   [requirements](/samvera_labs.html#guidelines-for-promotion-to-samvera-from-labs)
+   for being there.
+
+2. Component has a designated product owner.
+
+3. A participant of the Core Component Maintenance Working Group must have a
+   vested interest in the maintenance of that component, acting as a
+   representative for their institution's needs.
+
 ## Maintenance
 
 The Core Components Maintenance Working Group (CCMWG) is in the process of creating a framework for
