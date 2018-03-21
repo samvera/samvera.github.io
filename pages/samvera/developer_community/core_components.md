@@ -222,7 +222,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [samvera.github.io](https://github.com/samvera/samvera.github.io)
 
-**Product Owner:** [Bess Sadler](https://github.com/bess)
+**Product Owner:** [Andrew Myers](https://github.com/afred)
 
 **Vital Statistics:**
 
