@@ -138,7 +138,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [solrizer](https://github.com/samvera/solrizer)
 
-**Product Owner:** tbd  
+**Product Owner:** [Carolyn Cole](https://github.com/cam156)
 
 **Vital Statistics:**
 
