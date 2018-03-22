@@ -217,3 +217,13 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Gem Version](https://badge.fury.io/rb/hydra-editor.svg)](https://badge.fury.io/rb/hydra-editor)
 [![Build Status](https://travis-ci.org/samvera/hydra-editor.svg?branch=master)](https://travis-ci.org/samvera/hydra-editor)
  no Coverage info
+
+### samvera.github.io
+
+**Code:** [samvera.github.io](https://github.com/samvera/samvera.github.io)
+
+**Product Owner:** [Andrew Myers](https://github.com/afred)
+
+**Vital Statistics:**
+
+[![Build Status](https://travis-ci.org/samvera/samvera.github.io.svg?branch=master)](https://travis-ci.org/samvera/samvera.github.io)
