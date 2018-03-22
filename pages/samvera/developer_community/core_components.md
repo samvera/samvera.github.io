@@ -34,6 +34,40 @@ that falls into disuse should be a candidate for [deprecation](deprecation.html)
 The Core Components Maintenance Working Group (CCMWG) is in the process of creating a framework for
 addressing ongoing maintenance of shared code repositories.
 
+## Product Owner Responsibilities
+
+Product owners act as representatives for stakeholders of each component, an
+organizational force to enable the component maintenance working group to do its
+work, and a point of contact for distributing or recording information regarding
+the component. They are not required to have a deep technical understanding of
+their component. Their responsibilities are as follows:
+
+1. Ensure a release gets cut.
+  * Decide when a release is done, what the version number should be, what will
+     be in a release, ensure the CHANGELOG is updated, and announce the release to
+     the community.
+  * Decide what the policy for your component is in regards to backwards
+    compatibility and which versions are supported.
+2. Own the Backlog
+  * Handle incoming issue labeling
+  * Create tickets for security issues discovered by automated tooling.
+  * Ensure pull requests aren’t sitting around without any response for a long time.
+  * Know what priorities are by being in touch with stakeholders enough to understand what the greatest pain points/desires for features are.
+  * Be able to give the Core Components Working Group a gauge of how important a set of work is and when it needs to be done. Have a ready answer for “if we could give you a week of work, what would you spend it on?”
+  * Be able to find answers for “so and so wants to do this with the library, is that a good idea?”
+3. Act as point of contact for questions about the component’s goals and path
+4. Ensure there’s sufficient documentation for the component to be useful
+   * Doesn’t necessarily have to write the documentation, but should know what’s out
+     there and have an idea of what might need to be updated if the scope changes,
+     etc.
+5. Actively participate during sprints to provide guidance and prioritization.
+6. Report on whether the component still meets the requirements for being a core
+   component.
+   * Meets the criteria here:
+     [http://samvera-labs.github.io/promotion.html](http://samvera-labs.github.io/promotion.html)
+7. Recruit any necessary positions for better maintaining their component.
+   * E.g a technical lead.
+
 ## Core Components and Product Owners
 
 Please note that Hyrax is not considered a 'component' under the definition used by the CCMWG.
@@ -227,3 +261,13 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Build Status](https://travis-ci.org/samvera/samvera.github.io.svg?branch=master)](https://travis-ci.org/samvera/samvera.github.io)
+
+## Component Statistics
+
+The Component Maintenance Working Group occasionally generates reports on the
+current usage of components in Gemfiles across repositories. The code to
+generate the reports can be found at
+[https://github.com/samvera-labs/core-dependency-report](https://github.com/samvera-labs/core-dependency-report).
+The reports are linked below:
+
+* [2018-03-09](https://docs.google.com/spreadsheets/d/1Cvg4fxhJPyC2KRj43kmXK24YA2GXubuqNRNMP0e2kfw#gid=1356649611)
