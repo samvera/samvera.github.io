@@ -12,7 +12,7 @@ These are community documents, so we rely on the pull request model. If you'd li
 - clone this project (link on [samvera/samvera.github.io](http://samvera.github.io))
 - make a branch for your new documentation
 - run `bundle install`
-- create/edit pages within the Samvera directory (e.g. [/pages/samvera/](https://github.com/samvera/samvera.github.io/tree/master/pages/hydra))
+- create/edit pages within the Samvera directory (e.g. [/pages/samvera/](https://github.com/samvera/samvera.github.io/tree/master/pages/samvera))
 - add/update [front matter](#basic-front-matter)
 - add links to the page in home_sidebar.yml
 - write content ([notes on writing content](#notes-on-writing-content))
