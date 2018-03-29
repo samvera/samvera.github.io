@@ -136,7 +136,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-pcdm](https://github.com/samvera/hydra-pcdm)
 
-**Product Owner:** tbd  
+**Product Owner:** [Mark Bussey](https://github.com/mark-dce)  
 
 **Vital Statistics:**
 
@@ -208,7 +208,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra](https://github.com/samvera/hydra)
 
-**Product Owner:** tbd  
+**Product Owner:** [Mark Bussey](https://github.com/mark-dce)    
 
 **Vital Statistics:**
 
@@ -220,7 +220,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-works](https://github.com/samvera/hydra-works)
 
-**Product Owner:** tbd  
+**Product Owner:** [Mark Bussey](https://github.com/mark-dce)    
 
 **Vital Statistics:**
 
