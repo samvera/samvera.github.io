@@ -67,6 +67,8 @@ requirements must be met:
 
 1. In active use for six months
 
+1. Has an ongoing maintenance plan.
+
 
 ## Mechanism for Promotion
 
