@@ -55,7 +55,7 @@ toc: false
            </div>
            <div class="panel-body">
                <h4>Running in Production</h4>
-               <p>How to run parts of the solr stack in production.</p>
+               <p>How to run parts of the Samvera stack in production.</p>
                <a href="tag_running_in_production.html" class="btn btn-primary">Learn More</a>
            </div>
        </div>
