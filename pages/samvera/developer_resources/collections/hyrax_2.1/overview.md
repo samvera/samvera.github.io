@@ -6,7 +6,7 @@ permalink: collection-overview.html
 folder: samvera/how-to/collections/hyrax_2.1/metadata-faq.md
 sidebar: home_sidebar
 tags: [development_resources]
-a-z: ['Collections Overview', Overview of Collections']
+a-z: ['Collections Overview', 'Overview of Collections']
 version:
   label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
   branch:
