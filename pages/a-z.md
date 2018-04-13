@@ -389,7 +389,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/our_technology_stack.html'>Our Technology Stack</a>
       <br>
-      <a class='atoz_term' href='/collection-overview.html'>Overview of Collections'</a>
+      <a class='atoz_term' href='/collection-overview.html'>Overview of Collections</a>
       <br>
     </div>
   </div>
