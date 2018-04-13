@@ -20,6 +20,8 @@ proxy_deposit:
   enabled: false
 ```
 
-If both options exist, whichever option is set from the Administrative Dashboard will take precedence.
+For a list of flipper features that can be configured in this way, see the [https://github.com/samvera/hyrax/blob/master/config/features.rb](https://github.com/samvera/hyrax/blob/master/config/features.rb) which defines keys and whether they are enabled by default.
 
-[Here is the list of all the features](https://github.com/samvera/hyrax/wiki/Feature-matrix) available to your Hyrax application, with instructions on how to configure them.
+<ul class='warning'><li>If both options exist, whichever option is set from the Administrative Dashboard will take precedence.</li></ul>
+
+For a complete list of features and instructions on how to configure them, see the [Hyrax Feature-matrix](https://github.com/samvera/hyrax/wiki/Feature-matrix).
