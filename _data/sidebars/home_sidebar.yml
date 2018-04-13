@@ -62,7 +62,7 @@ entries:
   - title: Developer Community
     output: web, pdf
     folderitems:
-      
+
     - title: Communication
       url: /communication.html
       output: web, pdf
@@ -83,7 +83,7 @@ entries:
         - title: Release Testing
           url: /release_testing.html
           output: web, pdf
-          
+
       - title: Labs, Core, and Deprecation
         output: web, pdf
         subfolderitems:
@@ -95,7 +95,7 @@ entries:
         - title: Core Components
           url: /core_components.html
           output: web, pdf
-          
+
         - title: Deprecation
           url: /deprecation.html
           output: web, pdf
@@ -241,6 +241,10 @@ entries:
 
         - title: "Admin Sets as Collections FAQ"
           url: /admin-sets-as-collections-faq.html
+          output: web
+
+        - title: "Admin Set Participants"
+          url: /admin-set-participants.html
           output: web
 
         - title: "Collection Type Participants"
