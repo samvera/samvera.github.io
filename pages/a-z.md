@@ -43,13 +43,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Actor Stack for Work (Hyrax 2.0)</a>
       <br>
-      <a class='atoz_term' href='/participants.html'>Admin Sets - Participants</a>
-      <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Admin Sets as Collections FAQ</a>
-      <br>
-      <a class='atoz_term' href='/how-to-admin-sets.html'>Admin Sets, Collections, Display Sets</a>
-      <br>
-      <a class='atoz_term' href='/what-are-admin-things.html'>Admin Sets: Key Terms</a>
       <br>
       <a class='atoz_term' href='/admin-sets-1.0.html'>Administration</a>
       <br>
@@ -135,6 +129,12 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Controlled Vocabularies (Customizing Metadata)</a>
       <br>
+      <a class='atoz_term' href='/core_components.html'>Core Components</a>
+      <br>
+      <a class='atoz_term' href='/deprecation.html'>Core Components</a>
+      <br>
+      <a class='atoz_term' href='/core_components.html'>Core Samvera Code Repository</a>
+      <br>
       <a class='atoz_term' href='/admin-users.html'>Creating User Groups</a>
       <br>
       <a class='atoz_term' href='/groups.html'>Creating User Groups</a>
@@ -174,6 +174,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Deposit Work Process (Hyrax 1.0)</a>
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Deposit Work Process (Hyrax 2.0)</a>
+      <br>
+      <a class='atoz_term' href='/deprecation.html'>Deprecation</a>
       <br>
       <a class='atoz_term' href='/devops.html'>DevOps</a>
       <br>
@@ -230,6 +232,12 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/getting_started.html'>Get up and running</a>
       <br>
       <a class='atoz_term' href='/tag_getting_started.html'>Getting started pages</a>
+      <br>
+      <a class='atoz_term' href='/core_components.html'>Github</a>
+      <br>
+      <a class='atoz_term' href='/deprecation.html'>Github</a>
+      <br>
+      <a class='atoz_term' href='/glossary-2.1.html'>Glossary of Terms</a>
       <br>
       <a class='atoz_term' href='/concepts-1.0.html'>glossary</a>
       <br>
@@ -301,6 +309,8 @@ sidebar: home_sidebar
     <div class='atoz_terms'>
       <a class='atoz_term' href='/customize-metadata-labels.html'>Labels and Help Text</a>
       <br>
+      <a class='atoz_term' href='/samvera_labs.html'>Labs</a>
+      <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>Leases</a>
       <br>
     </div>
@@ -310,6 +320,10 @@ sidebar: home_sidebar
     <span class='atoz_section_label'>M</span>
     <div class='atoz_terms'>
       <a class='atoz_term' href='/navigation-testing.html'>Main Navigation</a>
+      <br>
+      <a class='atoz_term' href='/core_components.html'>Maintenance</a>
+      <br>
+      <a class='atoz_term' href='/deprecation.html'>Maintenance</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Making a default property single-value</a>
       <br>
@@ -371,7 +385,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/our_technology_stack.html'>Our Technology Stack</a>
       <br>
-      <a class='atoz_term' href='/collection-overview.html'>Overview of Collections'</a>
+      <a class='atoz_term' href='/collection-overview.html'>Overview of Collections</a>
       <br>
     </div>
   </div>
@@ -380,6 +394,14 @@ sidebar: home_sidebar
     <span class='atoz_section_label'>P</span>
     <div class='atoz_terms'>
       <a class='atoz_term' href='/pcdm.html'>PCDM</a>
+      <br>
+      <a class='atoz_term' href='/pr-checklist.html'>PR</a>
+      <br>
+      <a class='atoz_term' href='/pr-checklist.html'>PR Checklist</a>
+      <br>
+      <a class='atoz_term' href='/pr-checklist.html'>PR Creation</a>
+      <br>
+      <a class='atoz_term' href='/pr-checklist.html'>PR Review</a>
       <br>
       <a class='atoz_term' href='/collection-type-participants.html'>Participants for Collection Types</a>
       <br>
@@ -390,6 +412,10 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/customize-metadata-generate-work-type.html'>Prereq: Generating a Work Type</a>
       <br>
       <a class='atoz_term' href='/release_process.html'>Product Owners</a>
+      <br>
+      <a class='atoz_term' href='/pr-checklist.html'>Pull Request</a>
+      <br>
+      <a class='atoz_term' href='/pr-checklist.html'>Pull Request Checklist</a>
       <br>
     </div>
   </div>
@@ -423,7 +449,7 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='s'>&nbsp;</a>
     <span class='atoz_section_label'>S</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/test.html'>Samvera Community Training'</a>
+      <a class='atoz_term' href='/samvera_labs.html'>Samvera Labs</a>
       <br>
       <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Save Work (Hyrax 1.0)</a>
       <br>
@@ -438,6 +464,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/service-stack.html'>Solr Fedora Rails Redis</a>
       <br>
       <a class='atoz_term' href='/tag_special_layouts.html'>Special layout pages</a>
+      <br>
+      <a class='atoz_term' href='/samvera_labs.html'>Starting a Project</a>
       <br>
       <a class='atoz_term' href='/search.json'>search</a>
       <br>
