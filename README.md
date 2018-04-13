@@ -155,7 +155,7 @@ version:
 
 ```
 bundle exec jekyll build
-mv generated/atoz.md pages
+cp generated/a-z.md pages
 ```
 Then commit pages/atoz.md to github
 
