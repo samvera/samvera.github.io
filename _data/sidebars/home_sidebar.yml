@@ -62,7 +62,7 @@ entries:
   - title: Developer Community
     output: web, pdf
     folderitems:
-      
+
     - title: Communication
       url: /communication.html
       output: web, pdf
@@ -83,7 +83,7 @@ entries:
         - title: Release Testing
           url: /release_testing.html
           output: web, pdf
-          
+
       - title: Labs, Core, and Deprecation
         output: web, pdf
         subfolderitems:
@@ -95,7 +95,7 @@ entries:
         - title: Core Components
           url: /core_components.html
           output: web, pdf
-          
+
         - title: Deprecation
           url: /deprecation.html
           output: web, pdf
@@ -380,21 +380,14 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Hardware Considerations
-      url: /hardware-considerations.html
-      output: web, pdf
-
     - title: Samvera Services Stack
       url: /service-stack.html
       output: web, pdf
 
-    - title: Amazon Web Services
-      url: /aws.html
+    - title: Campus Authentication with Shibboleth
+      url: /campus-auth-integrating.html
       output: web, pdf
 
-    - title: DevOps
-      url: /devops.html
-      output: web, pdf
 
     - title: Troubleshooting Production
       url: /troubleshooting-production.html
