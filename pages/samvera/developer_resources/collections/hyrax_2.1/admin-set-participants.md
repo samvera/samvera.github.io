@@ -6,13 +6,12 @@ permalink: admin-set-participants.html
 folder: samvera/how-to/
 sidebar: home_sidebar
 tags: [development_resources]
-toc: false
 a-z: ["Admin Sets - Participants", "Collections - Admin Set Participants"]
 version:
   label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
   branch:
     label: 'collections-sprint'
-    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'---
+    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
 ---
 
 ### Impact on Admin Set Access

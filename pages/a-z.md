@@ -43,6 +43,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Actor Stack for Work (Hyrax 2.0)</a>
       <br>
+      <a class='atoz_term' href='/admin-set-participants.html'>Admin Sets - Participants</a>
+      <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Admin Sets as Collections FAQ</a>
       <br>
       <a class='atoz_term' href='/admin-sets-1.0.html'>Administration</a>
@@ -106,6 +108,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/collections-2.0.html'>Collections (2.0)</a>
       <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Collections - Admin Set Collection Type</a>
+      <br>
+      <a class='atoz_term' href='/admin-set-participants.html'>Collections - Admin Set Participants</a>
       <br>
       <a class='atoz_term' href='/collection-discovery-faq.html'>Collections - Discovery</a>
       <br>
@@ -506,6 +510,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/collection-types.html'>Understanding Collections Types</a>
       <br>
       <a class='atoz_term' href='/collection-overview.html'>Understanding Collections in Hyrax</a>
+      <br>
+      <a class='atoz_term' href='/admin-set-participants.html'>Understanding Participants for Admin Sets</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-controller.html'>Understanding the Controller</a>
       <br>

@@ -247,6 +247,10 @@ entries:
           url: /admin-sets-as-collections-faq.html
           output: web
 
+        - title: "Admin Set Participants"
+          url: /admin-set-participants.html
+          output: web
+
         - title: "Collection Type Participants"
           url: /collection-type-participants.html
           output: web
