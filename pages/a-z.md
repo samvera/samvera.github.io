@@ -37,7 +37,7 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='a'>&nbsp;</a>
     <span class='atoz_section_label'>A</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/index.html'>A Guide For The Perplexed Samvera Developer</a>
+      <a class='atoz_term' href='/index.html'>A Guide For The Samvera Community</a>
       <br>
       <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Actor Stack for Work (Hyrax 1.0)</a>
       <br>
