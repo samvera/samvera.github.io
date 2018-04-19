@@ -61,6 +61,8 @@ This testing process complements test coverage and regression testing in the cod
 
 - Once Final Release is ready, at least 1 in-production institutions should upgrade before wide release (This may not be doable, but would be good if there are institutions willing to do this, could rotate and plan ahead to help curb)
 
+- Make sure to update the README if the release requires any new system dependencies or startup steps.
+
 - Final Release is announced widely
 
 ### Minor release process:
