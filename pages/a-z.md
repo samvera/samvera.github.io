@@ -43,27 +43,21 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Actor Stack for Work (Hyrax 2.0)</a>
       <br>
+      <a class='atoz_term' href='/actor_stack.html'>Actor Stack, Middleware</a>
+      <br>
       <a class='atoz_term' href='/admin-set-participants.html'>Admin Sets - Participants</a>
       <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Admin Sets as Collections FAQ</a>
-      <br>
-      <a class='atoz_term' href='/admin-sets-1.0.html'>Administration</a>
       <br>
       <a class='atoz_term' href='/administration-testing.html'>Administration</a>
       <br>
       <a class='atoz_term' href='/batch-works-1.0.html'>Administration</a>
       <br>
-      <a class='atoz_term' href='/collections-1.0.html'>Administration</a>
-      <br>
       <a class='atoz_term' href='/create-works-1.0.html'>Administration</a>
       <br>
       <a class='atoz_term' href='/edit-works-1.0.html'>Administration</a>
       <br>
-      <a class='atoz_term' href='/admin-sets-1.0.html'>Administrative Sets</a>
-      <br>
       <a class='atoz_term' href='/admin-sets-2.0.html'>Administrative Sets</a>
-      <br>
-      <a class='atoz_term' href='/aws.html'>Amazon Web Services</a>
       <br>
     </div>
   </div>
@@ -71,8 +65,6 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='b'>&nbsp;</a>
     <span class='atoz_section_label'>B</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/background-jobs.html'>Background Jobs</a>
-      <br>
     </div>
   </div>
   <div class='atoz_section'>
@@ -102,8 +94,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/collection-types.html'>Collection Types</a>
       <br>
       <a class='atoz_term' href='/collections-testing.html'>Collections</a>
-      <br>
-      <a class='atoz_term' href='/collections-1.0.html'>Collections (1.0)</a>
       <br>
       <a class='atoz_term' href='/collections-2.0.html'>Collections (2.0)</a>
       <br>
@@ -181,8 +171,6 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/deprecation.html'>Deprecation</a>
       <br>
-      <a class='atoz_term' href='/devops.html'>DevOps</a>
-      <br>
       <a class='atoz_term' href='/tag_community.html'>Development Community</a>
       <br>
       <a class='atoz_term' href='/tag_development_resources.html'>Development Resources</a>
@@ -251,27 +239,13 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='h'>&nbsp;</a>
     <span class='atoz_section_label'>H</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/hardware-considerations.html'>Hardware Considerations</a>
-      <br>
-      <a class='atoz_term' href='/high-level.html'>High-level Introduction to the Project</a>
-      <br>
-      <a class='atoz_term' href='/add-new-work-type.html'>How Do I Add a New Work Type?</a>
-      <br>
       <a class='atoz_term' href='/building-searches.html'>How Do I Build Searches?</a>
-      <br>
-      <a class='atoz_term' href='/plugins.html'>How Do I Make a Hyrax Plugin?</a>
       <br>
       <a class='atoz_term' href='/get-help.html'>How to Ask for Help</a>
       <br>
       <a class='atoz_term' href='/release_testing.html'>How to Coordinate Testing for a Release</a>
       <br>
       <a class='atoz_term' href='/toggle-features.html'>How to Enable and Disable Features</a>
-      <br>
-      <a class='atoz_term' href='/extend-hyrax.html'>How to Extend Hyrax</a>
-      <br>
-      <a class='atoz_term' href='/hyrax-out-of-the-box.html'>How to Hyrax: Out of the Box </a>
-      <br>
-      <a class='atoz_term' href='/install-hyrax.html'>How to Install Hyrax</a>
       <br>
       <a class='atoz_term' href='/how-to-pr.html'>How to Submit Pull Requests</a>
       <br>
@@ -286,8 +260,6 @@ sidebar: home_sidebar
     <span class='atoz_section_label'>I</span>
     <div class='atoz_terms'>
       <a class='atoz_term' href='/campus-auth-integrating.html'>Integrating with Campus Authorization</a>
-      <br>
-      <a class='atoz_term' href='/real-life-hyrax.html'>Interest Groups, Working Groups, Conferences</a>
       <br>
       <a class='atoz_term' href='/introduction.html'>Introduction</a>
       <br>
@@ -397,8 +369,6 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='p'>&nbsp;</a>
     <span class='atoz_section_label'>P</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/pcdm.html'>PCDM</a>
-      <br>
       <a class='atoz_term' href='/pr-checklist.html'>PR</a>
       <br>
       <a class='atoz_term' href='/pr-checklist.html'>PR Checklist</a>
@@ -408,8 +378,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/pr-checklist.html'>PR Review</a>
       <br>
       <a class='atoz_term' href='/collection-type-participants.html'>Participants for Collection Types</a>
-      <br>
-      <a class='atoz_term' href='/best-practices-plugins.html'>Plugins</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Prereq: Defining a Controlled Vocabulary</a>
       <br>
@@ -427,8 +395,6 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='q'>&nbsp;</a>
     <span class='atoz_section_label'>Q</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/quality.html'>Quality Practices</a>
-      <br>
     </div>
   </div>
   <div class='atoz_section'>
@@ -438,8 +404,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/release_process.html'>Release Process</a>
       <br>
       <a class='atoz_term' href='/release_testing.html'>Release Process</a>
-      <br>
-      <a class='atoz_term' href='/hyrax-releases.html'>Releases</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Remove a default property from the set of required fields</a>
       <br>
@@ -479,10 +443,6 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='t'>&nbsp;</a>
     <span class='atoz_section_label'>T</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/contribution-tools.html'>TDD & CI, Rubocop, Yard, Inch</a>
-      <br>
-      <a class='atoz_term' href='/best-practices-testing.html'>Testing</a>
-      <br>
       <a class='atoz_term' href='/release_process.html'>Testing</a>
       <br>
       <a class='atoz_term' href='/release_testing.html'>Testing</a>
@@ -514,8 +474,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/admin-set-participants.html'>Understanding Participants for Admin Sets</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-controller.html'>Understanding the Controller</a>
-      <br>
-      <a class='atoz_term' href='/best-practices-modules.html'>Use of Modules</a>
       <br>
       <a class='atoz_term' href='/admin-sets-2.0.html'>user_guide</a>
       <br>
@@ -549,8 +507,6 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='w'>&nbsp;</a>
     <span class='atoz_section_label'>W</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/what-are-things.html'>What Are the Things?</a>
-      <br>
       <a class='atoz_term' href='/what-happens-deposit-1.0.html'>What Happens When I Deposit Something?</a>
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something?</a>
@@ -559,23 +515,13 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something? (Hyrax 2.0)</a>
       <br>
-      <a class='atoz_term' href='/what-happens-edit.html'>What Happens When I Edit Something?</a>
-      <br>
-      <a class='atoz_term' href='/what-happens-index.html'>What Happens When I Index Something?</a>
-      <br>
-      <a class='atoz_term' href='/what-happens-search.html'>What Happens When I Search For Something?</a>
-      <br>
-      <a class='atoz_term' href='/what-happens-view.html'>What Happens When I View Something?</a>
-      <br>
-      <a class='atoz_term' href='/solutions.html'>What Solutions are Available?</a>
-      <br>
       <a class='atoz_term' href='/whats-new.html'>What's New in Hyrax 2?</a>
-      <br>
-      <a class='atoz_term' href='/why-samvera.html'>Why Samvera?</a>
       <br>
       <a class='atoz_term' href='/workflow_and_mediated_deposit.html'>Workflow and Mediated Deposit in Hyrax 1.x</a>
       <br>
       <a class='atoz_term' href='/workflows-testing.html'>Workflows</a>
+      <br>
+      <a class='atoz_term' href='/actor_stack.html'>Working with the Actor Stack</a>
       <br>
       <a class='atoz_term' href='/works-testing.html'>Works</a>
       <br>
