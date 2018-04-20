@@ -4,4 +4,4 @@
 bundle exec jekyll build
 cp generated/a-z.md pages/
 ```
-Then commit pages/atoz.md to github
+Then make sure that commit of pages/atoz.md is in this PR
