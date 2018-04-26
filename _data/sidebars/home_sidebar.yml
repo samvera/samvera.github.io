@@ -348,38 +348,6 @@ entries:
       url: /plugins.html
       output: web
 
-  - title: User Interface Testing
-    output: web
-    folderitems:
-
-    - title: Administration
-      url: /administration-testing.html
-      output: web, pdf
-
-    - title: Dashboard
-      url: /dashboard-testing.html
-      output: web, pdf
-
-    - title: Works
-      url: /works-testing.html
-      output: web, pdf
-
-    - title: Collections
-      url: /collections-testing.html
-      output: web, pdf
-
-    - title: Workflows
-      url: /workflows-testing.html
-      output: web, pdf
-
-    - title: Navigation
-      url: /navigation-testing.html
-      output: web, pdf
-
-    - title: Discovery
-      url: /discovery-testing.html
-      output: web, pdf
-
   - title: Running in Production
     output: web, pdf
     folderitems:
