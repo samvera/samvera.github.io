@@ -1,6 +1,6 @@
 ---
-title: A Guide For The Perplexed Samvera Developer
-a-z: [A Guide For The Perplexed Samvera Developer]
+title: A Guide For The Samvera Community
+a-z: [A Guide For The Samvera Community]
 keywords: sample homepage
 tags: [getting_started]
 sidebar: home_sidebar
