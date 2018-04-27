@@ -35,18 +35,6 @@ entries:
       url: /touring_samvera_index.html
       output: web, pdf
 
-    - title: Quality Practices
-      url: /quality.html
-      output: web, pdf
-
-    - title: Why Samvera?
-      url: /why-samvera.html
-      output: web, pdf
-
-    - title: Solutions
-      url: /solutions.html
-      output: web, pdf
-
     - title: Hyku vs Hyrax
       url: /hyku-vs-hyrax.html
       output: web, pdf
@@ -65,10 +53,6 @@ entries:
 
     - title: Communication
       url: /communication.html
-      output: web, pdf
-
-    - title: Contribution Tools
-      url: /contribution-tools.html
       output: web, pdf
 
       subfolders:
@@ -148,37 +132,12 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Install Hyrax
-      url: /install-hyrax.html
-      output: web
-
-    - title: Hyrax Out of the Box
-      url: /hyrax-out-of-the-box.html
-      output: web
-
     - title: Enabling Features
       url: /toggle-features.html
       output: web
 
-      subfolders:
-      - title: Coding Best Practices
-        output: web
-        subfolderitems:
-
-        - title: Coding Style with RuboCop
-          url: /best-practices-coding-styles.html
-          output: web
-
-        - title: Testing
-          url: /best-practices-testing.html
-          output: web
-
-        - title: Use of Module Includes
-          url: /best-practices-modules.html
-          output: web
-
-    - title: Extending Hyrax
-      url: /extend-hyrax.html
+    - title: Coding Style with RuboCop
+      url: /best-practices-coding-styles.html
       output: web
 
       subfolders:
@@ -194,22 +153,6 @@ entries:
           url: /what-happens-deposit-2.0.html
           output: web
 
-        - title: I Edit Something
-          url: /what-happens-edit.html
-          output: web
-
-        - title: I Search for Something
-          url: /what-happens-search.html
-          output: web
-
-        - title: I Index Something
-          url: /what-happens-index.html
-          output: web
-
-        - title: I View Something
-          url: /what-happens-view.html
-          output: web
-
       - title: Admin How to - Create User Groups
         output: web
         subfolderitems:
@@ -221,10 +164,6 @@ entries:
         - title: Database-backed Setup
           url: /admin-users.html
           output: web
-
-    - title: What Are The Main Things
-      url: /what-are-things.html
-      output: web
 
     - title: Working with the Actor Stack
       url: /actor_stack.html
@@ -274,10 +213,6 @@ entries:
         - title: "Collection Indexing"
           url: /nested-indexing.html
           output: web
-
-    - title: How Do I Add a New Work Type?
-      url: /add-new-work-type.html
-      output: web
 
       subfolders:
       - title: How Do I Customize Metadata?
@@ -336,18 +271,6 @@ entries:
       url: /workflow_and_mediated_deposit.html
       output: web
 
-    - title: Working With Background Jobs
-      url: /background-jobs.html
-      output: web
-
-    - title: Working With PCDM
-      url: /pcdm.html
-      output: web
-
-    - title: Writing Hyrax Plugins
-      url: /plugins.html
-      output: web
-
   - title: Running in Production
     output: web, pdf
     folderitems:
@@ -359,7 +282,6 @@ entries:
     - title: Campus Authentication with Shibboleth
       url: /campus-auth-integrating.html
       output: web, pdf
-
 
     - title: Troubleshooting Production
       url: /troubleshooting-production.html
