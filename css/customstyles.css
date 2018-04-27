@@ -1284,3 +1284,6 @@ a.atoz_term:hover {
     font-weight: bold;
     font-size: 12px;
 }
+ul.info {
+  margin: 20px 0px;
+}
