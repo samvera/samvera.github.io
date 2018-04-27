@@ -1,6 +1,6 @@
 ---
 title: "Configure Hyrax 1 User Polling Notifications"
-a-z: ["Configuration, Notifications, Polling"]
+a-z: ["Notifications", "Polling"]
 keywords: Configuration, Notifications
 categories: How to Do All the Things
 permalink: how-to-disable-notifications.html
@@ -8,6 +8,11 @@ folder: samvera/how-to/
 sidebar: home_sidebar
 tags: [development_resources]
 toc: false
+version:
+  id: 'hyrax_1.0-stable'
+  versions:
+    - label: 'Hyrax 1.0'
+      link:  'how-to-disable-notifications.html'
 ---
 
 
