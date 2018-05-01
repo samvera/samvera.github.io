@@ -49,8 +49,6 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Admin Sets as Collections FAQ</a>
       <br>
-      <a class='atoz_term' href='/administration-testing.html'>Administration</a>
-      <br>
       <a class='atoz_term' href='/batch-works-1.0.html'>Administration</a>
       <br>
       <a class='atoz_term' href='/create-works-1.0.html'>Administration</a>
@@ -93,8 +91,6 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/collection-types.html'>Collection Types</a>
       <br>
-      <a class='atoz_term' href='/collections-testing.html'>Collections</a>
-      <br>
       <a class='atoz_term' href='/collections-2.0.html'>Collections (2.0)</a>
       <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Collections - Admin Set Collection Type</a>
@@ -116,6 +112,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/concepts-1.0.html'>Concepts and Definitions</a>
       <br>
       <a class='atoz_term' href='/concepts-2.0.html'>Concepts and Definitions</a>
+      <br>
+      <a class='atoz_term' href='/how-to-disable-notifications.html'>Configure Hyrax 1 User Polling Notifications</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-discovery.html'>Configuring Discovery</a>
       <br>
@@ -149,16 +147,12 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Customizing display of Collection properties</a>
       <br>
-      <a class='atoz_term' href='/collections-testing.html'>collections</a>
-      <br>
     </div>
   </div>
   <div class='atoz_section'>
     <a class='atoz_anchor' name='d'>&nbsp;</a>
     <span class='atoz_section_label'>D</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/dashboard-testing.html'>Dashboard</a>
-      <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Default property, making single-value</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-model.html'>Defining Metadata in the Model</a>
@@ -182,8 +176,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/deeper_samvera_index.html'>Dive Deeper into Samvera</a>
       <br>
       <a class='atoz_term' href='/training/deeper_into_samvera/'>Dive Deeper into Samvera</a>
-      <br>
-      <a class='atoz_term' href='/discovery-testing.html'>discovery</a>
       <br>
     </div>
   </div>
@@ -295,8 +287,6 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='m'>&nbsp;</a>
     <span class='atoz_section_label'>M</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/navigation-testing.html'>Main Navigation</a>
-      <br>
       <a class='atoz_term' href='/core_components.html'>Maintenance</a>
       <br>
       <a class='atoz_term' href='/deprecation.html'>Maintenance</a>
@@ -343,7 +333,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/collection-nesting-faq.html'>Nesting of Collections</a>
       <br>
-      <a class='atoz_term' href='/navigation-testing.html'>navigation</a>
+      <a class='atoz_term' href='/how-to-disable-notifications.html'>Notifications</a>
       <br>
     </div>
   </div>
@@ -378,6 +368,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/pr-checklist.html'>PR Review</a>
       <br>
       <a class='atoz_term' href='/collection-type-participants.html'>Participants for Collection Types</a>
+      <br>
+      <a class='atoz_term' href='/how-to-disable-notifications.html'>Polling</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Prereq: Defining a Controlled Vocabulary</a>
       <br>
@@ -424,8 +416,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Save Work (Hyrax 2.0)</a>
       <br>
       <a class='atoz_term' href='/js/mydoc_scroll.html'>Scroll layout</a>
-      <br>
-      <a class='atoz_term' href='/discovery-testing.html'>Search and Discovery</a>
       <br>
       <a class='atoz_term' href='/collection-sharing.html'>Sharing for Collections</a>
       <br>
@@ -519,15 +509,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/workflow_and_mediated_deposit.html'>Workflow and Mediated Deposit in Hyrax 1.x</a>
       <br>
-      <a class='atoz_term' href='/workflows-testing.html'>Workflows</a>
-      <br>
       <a class='atoz_term' href='/actor_stack.html'>Working with the Actor Stack</a>
-      <br>
-      <a class='atoz_term' href='/works-testing.html'>Works</a>
-      <br>
-      <a class='atoz_term' href='/workflows-testing.html'>workflows</a>
-      <br>
-      <a class='atoz_term' href='/works-testing.html'>works</a>
       <br>
     </div>
   </div>
