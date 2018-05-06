@@ -447,6 +447,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/troubleshooting-production.html'>Troubleshooting Production</a>
       <br>
+      <a class='atoz_term' href='/troubleshooting_riiif.html'>Troubleshooting RIIIF</a>
+      <br>
     </div>
   </div>
   <div class='atoz_section'>
