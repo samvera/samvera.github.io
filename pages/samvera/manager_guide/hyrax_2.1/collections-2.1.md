@@ -21,13 +21,11 @@ version:
 
 *This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
 
-## View Your Collections
+## Create a Collection
 
-To view your collections, navigate to the Dashboard, then click “Collections” in the left navigation menu under “Repository Contents.”
+Login to the repository, navigate to the Dashboard, click on Collections in the sidebar:
 
-There are two ways to create a new collection:
-- From the Dashboard, click “Collections”, then “New Collection” in the upper right
-- From the Dashboard, click “Works” and select one or more works. Click “Add to Collection”. Click “Add to new Collection” at the bottom of the dialog box.
+![Collections Dashboard](/images/screenshots/collections-2.1.png)
 
 You can only set visibility and sharing AFTER the collection is created.
 
