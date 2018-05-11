@@ -214,7 +214,6 @@ entries:
           url: /nested-indexing.html
           output: web
 
-      subfolders:
       - title: How Do I Customize Metadata?
         output: web
         subfolderitems:
@@ -266,7 +265,7 @@ entries:
     - title: Email Notifications
       url: /email_notifications.html
       output: web
-      
+
     - title: RIIIF
       url: /troubleshooting_riiif.html
       output: web
