@@ -27,6 +27,12 @@ Login to the repository, navigate to the Dashboard, click on Collections in the 
 
 ![Collections Dashboard](/images/screenshots/collections-2.1.png)
 
+Click on the `New Collection` button at the top of the screen. If the repository contains more than one collection type, then a dialog box will pop up, giving you the option to select a collection type for the new collection.
+
+Once you have selected a collection type, you will be required to name your new collection. You will also have the option to add additional metadata fields for your collection.
+
+![Collections Dashboard](/images/screenshots/new-collection-2.1.png)
+
 You can only set visibility and sharing AFTER the collection is created.
 
 ## Adding Works to Collections
