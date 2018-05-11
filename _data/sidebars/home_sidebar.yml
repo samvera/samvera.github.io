@@ -88,44 +88,32 @@ entries:
       url: /how-to-pr.html
       output: web, pdf
 
-  - title: Manager Guide
+  - title: Feature Guide
     output: web
     folderitems:
 
-    - title: What's New in Hyrax 2.0?
-      url: /whats-new.html
-      output: web, pdf
-
-    - title: Concepts and Definitions
-      url: /concepts-2.0.html
-      output: web, pdf
-
     - title: Configuring the Repository
-      url: /configuration.html
+      url: /configuration-2.1.html
       output: web, pdf
 
     - title: Creating a Work
-      url: /create-works-2.0.html
+      url: /create-works-2.1.html
       output: web, pdf
 
     - title: Editing a Work
-      url: /edit-works-2.0.html
-      output: web, pdf
-
-    - title: Administrative Sets
-      url: /admin-sets-2.0.html
+      url: /edit-works-2.1.html
       output: web, pdf
 
     - title: Collections
-      url: /collections-2.0.html
+      url: /collections-2.1.html
       output: web, pdf
 
-    - title: Batch Uploading Works
-      url: /batch-works-2.0.html
+    - title: Batch Operations
+      url: /batch-ops-2.1.html
       output: web, pdf
 
     - title: Leases and Embargoes
-      url: /lease-embargoes-2.0.html
+      url: /lease-embargoes-2.1.html
       output: web, pdf
 
   - title: Development Resources
@@ -266,7 +254,7 @@ entries:
     - title: Email Notifications
       url: /email_notifications.html
       output: web
-      
+
     - title: RIIIF
       url: /troubleshooting_riiif.html
       output: web
