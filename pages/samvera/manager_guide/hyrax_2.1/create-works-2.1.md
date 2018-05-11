@@ -1,7 +1,7 @@
 ---
 title: "Creating a Work"
-permalink: create-works-2.0.html
-folder: samvera/manager_guide/create-works-2.0.md
+permalink: create-works-2.1.html
+folder: samvera/manager_guide/create-works-2.1.md
 sidebar: home_sidebar
 a-z: ['manager_guide', 'user_guide']
 keywords: Best Practices, managers, repo mangers, hyrax administration

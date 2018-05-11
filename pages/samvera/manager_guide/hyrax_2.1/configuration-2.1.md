@@ -1,6 +1,6 @@
 ---
 title: "Configuring the Repository"
-permalink: configuration.html
+permalink: configuration-2.1.html
 folder: samvera/manager_guide/configuration.md
 sidebar: home_sidebar
 a-z: ['manager_guide', 'user_guide']
@@ -12,9 +12,9 @@ version:
   versions:  
   - label: 'Hyrax 2.0'
     link:  'configuration.html'
-    selected: 'true'
   - label: 'Hyrax 2.1'
     link:  'configuration-2.1.html'
+    selected: 'true'
 ---
 
 *This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
