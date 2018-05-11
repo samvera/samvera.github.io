@@ -75,8 +75,6 @@ Here is a console walk through of how to set up workflow programatically. This i
 ```
 The AdminSet will be visible on the "relationships" tab of the deposit form. If you only have one admin set, it will be set by default. In order for it to work, a non-admin user must deposit a work, and an admin user must approve it.
 
-<ul class="warning"><li>Calling `#activate!` on a Sipity::Workflow a second time will *deactivate* that workflow. If you want your workflow setup script to be idempotent, you should add a check to see if it is already activated.</li></ul>
-
 #### Add a user to a workflow
 
 ```ruby
