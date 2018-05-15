@@ -1,12 +1,8 @@
-<div class="grid" id="searchBar">
-  <div>
-     <div id="search">
-      <!-- this didn't work locally for me: form role="search" method="get" action="{{ site.baseurl }}//search/" -->
-      <form role="search" method="get" action="/search">
-          <input id="searchString" name="searchString"
-                 placeholder="Enter search term" type="text">
-          <input id="searchButton" name="googleSearchName" type="submit" value="Search">
-      </form>
-    </div>
-  </div>
+<div id="search-demo-container">
+  <!-- this didn't work locally for me: form role="search" method="get" action="{{ site.baseurl }}//search/" -->
+  <form role="search" method="get" action="/search" id="search-input">
+      <input id="searchString" name="searchString"
+       placeholder="Search..." type="text">
+    <button type="submit" title="Search for keywords"><i class="fa fa-search" name="googleSearchName"value="Search"></i></button>
+  </form>
 </div>
