@@ -3,9 +3,9 @@ title: "Batch Operations"
 permalink: batch-ops-2.1.html
 folder: samvera/manager_guide/batch-works-2.1.md
 sidebar: home_sidebar
-a-z: ['manager_guide', 'user_guide']
+a-z: ['Batch']
 keywords: Best Practices, managers, repo mangers, hyrax administration
-tags: [user_resources]
+tags: [feature_guide]
 categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.0-master'
@@ -15,21 +15,40 @@ version:
   - label: 'Hyrax 2.0'
     link:  'batch-works-2.0.html'
   - label: 'Hyrax 2.1'
-    link:  'batch-works-2.1.html'
+    link:  'batch-ops-2.1.html'
     selected: 'true'
 ---
+## Uploading Works
+Batch upload lets you upload multiple files at once as separate works. This is useful when you have several works, where each work is a single file, and each work has the same creator, such as technical reports from a organization or photographs by an artist.
 
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
+To create works as a batch, go to your Dashboard and click on `Works` in the sidebar. There, you will see a table of your works and options to `Add new work` or `Create batch of works`.
 
-# Uploading Works in a Batch
+![Create batch of works](/images/screenshots/create-batch-works-1.png)
 
-Batch upload lets you upload multiple files at once as separate works. Each work can be assigned a separate display label and resource type, but all other metadata will be applied to all works created in batch upload. There are two ways to access the batch upload form. In the top menu, click “Works” and “Batch Create”. Or click “Works” and “New Work”; this form gives you the option to go to Batch upload.
+If you have more than one work type, you will be prompted to select the work type. You can only create a batch of works of the same work type.
 
-As with creating a new work, a new batch upload must minimally have: the required description fields filled out, at least one file uploaded, and the deposit agreement checkbox checked. Once these required items are completed, the depositor must click “Save” in order to deposit the work.
+### Adding Files to Works
+The “Files” tab is for uploading files, either locally or from a cloud service. This works in the same way as adding files to a new work. You can upload one file at a time, or select multiple files.
 
-## Adding Files (required)
-The “Files” tab is for uploading files, either locally or from a cloud service. This works in the same way as adding files to a new work. After uploading files, you can edit the display label and resource type for each file. To change the resource type of all files at once, select the desired resource type for the first file and click “Set all to this Resource Type”
+![Upload files](/images/screenshots/create-batch-works-2.png)
 
-The “Description”, “Relationships”, and “Sharing” tabs and settings are identical to those for adding a new work
+After uploading files, you can edit the `Display Label` and `Resource Type` for each Work. Each work can be assigned its own `Display Label` (i.e. Title) and `Resource Type`, but all other metadata will be applied to all works created in the batch. To change the resource type of all files at once, select the desired resource type for the first file and click “Set all to this Resource Type”
 
-Limit 100 files at a time, 500MB per file.
+![Editing Display Labels and Resource Types](/images/screenshots/create-batch-works-3.png)
+
+### Describing Works
+The `Descriptions` tab asks for `Creator`, `Keyword`, and `Rights Statement`. You also have the option to apply additional description fields. Each description field you apply will be applied to all works in the batch.
+
+![Descriptions](/images/screenshots/create-batch-works-4.png)
+
+### Relationships, Sharing, and Saving
+The  `Relationships` and `Sharing` tabs are identical to the tabs you would see while depositing a work. The process for Saving the batch of works is the same as saving a single work. Every selection you make for these options will be applied to all of the works in the batch.
+
+## Adding Works to a Collection
+As a Repository Administrator or the owner of works, you have the ability to add one or more works to a collection. From your `Dashboard`, click on `Works`, in the sidebar. To the left of each collection title, there is a box that you can click on to select that work. Whenever you select a box, whether it is one or more or all, a red button will appear labelled `Add to collection`. Clicking the button will initiate a dialog box asking if you are sure. This step is irreversible.
+
+## Deleting Works
+As a Repository Administrator or the owner of works, you have the ability to delete works in bulk. From your `Dashboard`, click on `Works`, in the sidebar. To the left of each collection title, there is a box that you can click on to select that work. Whenever you select a box, whether it is one or more or all, a red button will appear labelled `Delete Selected`. Clicking the button will initiate a dialog box asking if you are sure. This step is irreversible.
+
+## Deleting Collections
+As a Repository Administrator, you have the ability to delete collections in bulk. From your `Dashboard`, click on `Collections`, in the sidebar. To the left of each collection title, there is a box that you can click on to select that collection. Whenever you select a box, whether it is one or more or all, a red button will appear labelled `Delete collections`. Clicking the button will initiate a dialog box asking if you are sure. This step is irreversible.
