@@ -1,12 +1,13 @@
 ---
 title: Formalities
-a-z: [Formalities]
-keywords: contributor license agreements, github
-last_updated: March 30, 2017
-tags: [community]
-sidebar: samvera_sidebar
 permalink: formalities.html
-folder: samvera
+folder: samvera/getting_started/
+sidebar: samvera_sidebar
+a-z: ["Formalities", "CLA", "License Agreements"]
+keywords: contributor license agreements, github
+categories: New Start Here
+tags: [getting_started]
+last_updated: March 30, 2017
 ---
 # Formalities
 
@@ -22,4 +23,4 @@ See https://wiki.duraspace.org/display/samvera/Samvera+Community+Intellectual+Pr
 
 First things first: sign up for a GitHub account. All development work within the Samvera community takes place on GitHub.
 
-When you begin doing Samvera development, you'll want the ability to push your work directly to Samvera-managed codebases. Fortunately, the community of developers is quite informal about this -- ask (on one of the established community [communication channels](communication.md)) to be added as a contributor to the codebase you're working on and you generally will be added in short order.
+When you begin doing Samvera development, you'll want the ability to push your work directly to Samvera-managed codebases. Fortunately, the community of developers is quite informal about this -- ask (on one of the established community [communication channels](communication.html)) to be added as a contributor to the codebase you're working on and you generally will be added in short order.
