@@ -8,7 +8,7 @@ keywords: Hyrax, Samvera, Manager Guide
 tags: [user_resources]
 categories: What's New
 version:
-  id: 'hyrax_2.0-master'
+  id: 'hyrax_2.0-stable'
 ---
 
 # What's New in Hyrax 2?

@@ -9,17 +9,15 @@ sidebar: home_sidebar
 tags: [development_resources]
 toc: false
 version:
-  label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
-  branch:
-    label: 'collections-sprint'
-    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
+  id: hyrax_2.1-stable
+  label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'
 ---
 
 ## Administrative Set
 An Administrative Set is a top-level grouping of Works that is managed by a user with administrative privileges, such as reviewing deposited Works before they are made accessible. Unlike Collections, Administrative Sets are not discoverable by searching or browsing the catalog. They are intended to provide repository administrators the ability to apply a workflow, define behaviors, and apply policies on a set of works. Only repository administrators can create an administrative set, but they can designate any user to have management or edit access to an administrative set. All works must belong to one, and only, one Admin Set. Example: Electronic Dissertations and Theses. ([more information...](admin-sets-as-collections-faq.html))
 
 ## Collection
-A thematic grouping of works or collections. Any user in the system can create a Collection. Collections can be visible publicly or kept private. Collections can have a dedicated thumbnail and be shared among repository users with defined access levels: view/download or edit. Only users with access to a collection can add Works to it. Example: Professor creates a collection of Works related to her funded research project. ([more information...](collection-overview.html)) 
+A thematic grouping of works or collections. Any user in the system can create a Collection. Collections can be visible publicly or kept private. Collections can have a dedicated thumbnail and be shared among repository users with defined access levels: view/download or edit. Only users with access to a collection can add Works to it. Example: Professor creates a collection of Works related to her funded research project. ([more information...](collection-overview.html))
 
 ## Collection Type
 Collection Types provide a means for configuring behavior of collections within a site.  The functionality that can be switched on/off are [nesting](collection-nesting-faq.html), [sharing](collection-sharing.html), [discovery](collection-discovery-faq.html), multiple-membership, and branding.  Once collections of a type have been created, these configurations can no longer be changed.  A site may want to create several collection types (e.g. exhibits and user collections).  ([more information...](collection-types.html))
@@ -48,7 +46,7 @@ A template that defines the Participants for Collection based on it's Collection
 
 ## Mediated Deposit Workflow
 The group of steps necessary for reviewing an ingested item and its metadata, culminating in approval before publishing it for public viewing.  ([more information...](https://github.com/samvera/sufia/wiki/Mediated-Deposit-Workflow))
- 
+
 ## Proxy
 A user who can deposit works on behalf of another user. Example. Research Assistant deposits articles written by a Professor.
 

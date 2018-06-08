@@ -8,7 +8,7 @@ keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: Configuration
 version:
-  id: 'hyrax_2.0-master'
+  id: 'hyrax_2.0-stable'
 ---
 
 *This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
