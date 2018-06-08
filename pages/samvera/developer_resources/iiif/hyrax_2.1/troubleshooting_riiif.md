@@ -15,7 +15,7 @@ version:
 
 [RIIIF](https://github.com/curationexperts/riiif) is a gem for installing a simple [IIIF](http://iiif.io/) server into your rails application. Hyrax 2.1 ships with it, but it can be used in any rails application. This guide is for troubleshooting your installation if it isn't working as expected.
 
-This guide assumes you have installed RIIIF either using the instructions in [the RIIIF README](https://github.com/curationexperts/riiif/blob/master/README.md), or in the Hyrax installation instructions. 
+This guide assumes you have installed RIIIF either using the instructions in [the RIIIF README](https://github.com/curationexperts/riiif/blob/master/README.md), or in the Hyrax installation instructions.
 
 ## 1. Ensure the RIIIF info service is running
 
@@ -29,7 +29,7 @@ config.iiif_info_url_builder = lambda do |file_id, base_url|
 end
 ```
 
-Open your console and make sure that `iiif_info_url_builder` is returning something expected for a given `FileSet`. For example: 
+Open your console and make sure that `iiif_info_url_builder` is returning something expected for a given `FileSet`. For example:
 
 ```ruby
 2.4.2 :014 > fs = FileSet.find("cz30ps64c")
@@ -73,7 +73,7 @@ If you do not see a json object like the one above, or if it is missing pieces, 
 3. Are your slashes being encoded / decoded properly? Notice that the url contains a string like `FILESET_ID/files/FILE_ID`. In the url, these are encoded as `%2F`. In some environments (commonly, Apache + Passenger) these slashes do not get decoded correctly. See [the RIIIF Readme section called "Special note for Passenger and Apache users"](https://github.com/curationexperts/riiif#special-note-for-passenger-and-apache-users) for more information about addressing this problem.
 
 ## 2. Ensure the riiif image service is working
-Once you are sure that the RIIIF info service is returning information as expected, make sure the graphics transformation in your environment is working. 
+Once you are sure that the RIIIF info service is returning information as expected, make sure the graphics transformation in your environment is working.
 
 1. Log in as the user who is running your webserver and ensure it can find and run `convert` and `identify`. You can customize the commands that are used if needed. See [the RIIIF README](https://github.com/curationexperts/riiif#graphicsmagick) for more details.
 
@@ -82,8 +82,8 @@ Once you are sure that the RIIIF info service is returning information as expect
   ```ruby
   2.4.2 :018 > Riiif::Engine.routes.url_helpers.image_url(fs.files.first.id, host: "http://localhost:3000", size: "100,")
    => "http://localhost:3000/images/cz30ps64c%2Ffiles%2F2ae0fa37-9052-460c-a56b-ab4603403f11/full/100,/0/default.jpg"
-  ``` 
-  Then, see if that URL returns an image to you in the browser. 
+  ```
+  Then, see if that URL returns an image to you in the browser.
 
 3. If your image url isn't returning an image, check your log files. You should see something like:
 
@@ -91,9 +91,17 @@ Once you are sure that the RIIIF info service is returning information as expect
   Riiif resolved cz30ps64c/files/2ae0fa37-9052-460c-a56b-ab4603403f11 to http://127.0.0.1:8984/rest/dev/cz/30/ps/64/cz30ps64c/files/2ae0fa37-9052-460c-a56b-ab4603403f11
   ```
 
-  See whether that Fedora URL resolves... Can RIIIF actually retrieve the URL from Fedora? 
-  
+  See whether that Fedora URL resolves... Can RIIIF actually retrieve the URL from Fedora?
+
 ## 3. Other issues
 
 ### Universal Viewer does not show new file version
 See https://github.com/curationexperts/nurax/issues/253
+
+### Universal Viewer does not display on Production server, but it displays in local development
+If '/universalviewer/dist/uv-2.0.1/lib/embed.js' is returning a 404  when you inspect a work type in production that displays correctly in your local dev environment you may need to modify the following key in `config/environments/production.rb`
+
+```ruby
+config.public_file_server.enabled = true
+```
+ See https://github.com/pulibrary/pul_uv_rails/issues/8 and https://github.com/samvera/hyrax/wiki/Hyrax-Management-Guide#image-server
