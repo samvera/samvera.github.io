@@ -1,8 +1,10 @@
 {% case page.version.id %}
 {% when 'hyrax_1.0-stable' %}
   {% include version_info/version_hyrax_1.0-stable.html %}
-{% when 'hyrax_2.0-master' %}
-  {% include version_info/version_hyrax_2.0-master.html %}
+{% when 'hyrax_2.0-stable' %}
+  {% include version_info/version_hyrax_2.0-stable.html %}
+{% when 'hyrax_2.1-stable' %}
+  {% include version_info/version_hyrax_2.1-stable.html %}
 {% else %}
   {% include version_info/version_custom.html %}
 {% endcase %}

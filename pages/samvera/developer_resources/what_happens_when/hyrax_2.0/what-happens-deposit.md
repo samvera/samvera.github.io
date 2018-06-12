@@ -8,8 +8,8 @@ folder: samvera/how-to/what_happens_when/hyrax_2.0/what-happens-deposit.md
 sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['What Happens When I Deposit Something? (Hyrax 2.0)', 'Deposit Work Process (Hyrax 2.0)', 'Save Work (Hyrax 2.0)', 'Actor Stack for Work (Hyrax 2.0)']
-version: 
-  id: 'hyrax_2.0-master'
+version:
+  id: 'hyrax_2.0-stable'
   versions:  
     - label: 'Hyrax 1.0'
       link:  'what-happens-deposit-1.0.html'

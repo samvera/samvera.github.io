@@ -8,10 +8,7 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['FAQ - Collection Discovery', 'Collections - Discovery', 'Discovery of Collections']
 version:
-  label: 'targeted for Hyrax v2.1.0'
-  branch:
-    label: 'collections-sprint'
-    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
+  id: hyrax_2.1-stable
 ---
 
 ### What does it mean for a collection to be discoverable?
