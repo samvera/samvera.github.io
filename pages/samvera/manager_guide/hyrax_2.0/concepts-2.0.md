@@ -16,9 +16,6 @@ version:
     link:  'concepts-2.0.html'
     selected: 'true'
 ---
-
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
-
 ## Administrative Set
 An Administrative Set is a top-level grouping of Works that is managed by a user with administrative privileges, such as reviewing deposited Works before they are made accessible. Unlike Collections, Administrative Sets are not discoverable by searching or browsing the catalog. They are intended to provide repository administrators the ability to apply a workflow, define behaviors, and apply policies on a set of works. Only repository administrators can create an administrative set, but they can designate any user to have management or edit access to an administrative set. All works must belong to one, and only, one Admin Set. Example: Electronic Dissertations and Theses.
 

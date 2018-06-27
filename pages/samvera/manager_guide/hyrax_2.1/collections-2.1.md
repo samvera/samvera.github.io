@@ -16,9 +16,6 @@ version:
     link:  'collections-2.1.html'
     selected: 'true'
 ---
-
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
-
 ## Create a Collection
 
 Login to the repository, navigate to the Dashboard, click on Collections in the sidebar:

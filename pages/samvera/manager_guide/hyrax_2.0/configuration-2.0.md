@@ -16,9 +16,6 @@ version:
   - label: 'Hyrax 2.1'
     link:  'configuration-2.1.html'
 ---
-
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
-
 # Configuring the Repository
 
 From the Dashboard, Administrators have several Configuration options.

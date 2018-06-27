@@ -18,9 +18,6 @@ version:
   - label: 'Hyrax 2.1'
     link:  'batch-ops-2.1.html'
 ---
-
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
-
 # Uploading Works in a Batch
 
 Batch upload lets you upload multiple files at once as separate works. Each work can be assigned a separate display label and resource type, but all other metadata will be applied to all works created in batch upload. There are two ways to access the batch upload form. In the top menu, click “Works” and “Batch Create”. Or click “Works” and “New Work”; this form gives you the option to go to Batch upload.
