@@ -8,10 +8,8 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['FAQ - Admin Sets as Collections', 'Collections - Admin Set Collection Type']
 version:
-  label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
-  branch:
-    label: 'collections-sprint'
-    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
+  id: hyrax_2.1-stable
+  label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'
 ---
 
 ### Are Admin Sets a type of collection?
@@ -48,11 +46,10 @@ The Hyrax 2.0 behaviors for Admin Sets determine the settings.  Effectively, the
 | Basic: | <font color='red'>X</font> <font color='grey'>NESTABLE</font><br><font color='red'>X</font> <font color='grey'>MULTIPLE MEMBERSHIP</font><br><font color='red'>X</font> <font color='grey'>DISCOVERY</font><br><font color='green'>√</font> SHARING |
 | Advanced: | <font color='green'>√</font> REQUIRE MEMBERSHIP<br><font color='green'>√</font> WORKFLOW<br><font color='green'>√</font> VISIBILITY |
 
-### Why not just go ahead and switch Admin Sets to be a Collection Type? 
+### Why not just go ahead and switch Admin Sets to be a Collection Type?
 
 * Changes at this level to Admin Sets would require significant changes to existing sites.
 * There is a lot of work required to create the extended functionality for collections. Due to time limitations, that work was not part of the initial implementation.
 * There are outstanding questions about the functional split between Admin Sets and Collections and what it would mean for more than one collection type to have some of the advanced settings.
 
 Ultimately, there was a conscious choice to minimize churn for those already moving toward production with Hyrax using the current definition of Admin Sets.
-

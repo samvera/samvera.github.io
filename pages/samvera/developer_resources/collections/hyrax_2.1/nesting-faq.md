@@ -8,10 +8,7 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['FAQ - Collection Nesting', 'Collections - Nesting', 'Nesting of Collections']
 version:
-  label: 'targeted for Hyrax v2.1.0'
-  branch:
-    label: 'collections-sprint'
-    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
+  id: hyrax_2.1-stable
 ---
 
 ### What is collection nesting?
@@ -32,7 +29,7 @@ Yes.  A collection can have all sub-collections, all works, or a combination of 
 
 ### Is there a limit to how deep the nesting can go?
 
-The depth of nesting is limited. By default the limit is set to 5.  It is defined in the hyrax engine in `config/initializers/samvera-nesting_indexer_initializer.rb` by config `config.maximum_nesting_depth = 5`.  You can override this to set a different maximum_nesting_depth. 
+The depth of nesting is limited. By default the limit is set to 5.  It is defined in the hyrax engine in `config/initializers/samvera-nesting_indexer_initializer.rb` by config `config.maximum_nesting_depth = 5`.  You can override this to set a different maximum_nesting_depth.
 
 ### Can a collection be its own descendant?
 
@@ -58,7 +55,7 @@ Right now, there are two place to see nesting relationships and in both places, 
 * Collection show page at Dashboard -> Collections -> click title of collection
 * Collection edit form at Dashboard -> Collections -> click action menu beside collection -> Edit collection -> Relationship tab
 
-We hope to update the Dashboard -> Collections index page in later releases to include the ability to view nesting hierarchies, but there is extensive UI/UX design work required before implementation can happen. 
+We hope to update the Dashboard -> Collections index page in later releases to include the ability to view nesting hierarchies, but there is extensive UI/UX design work required before implementation can happen.
 
 ### Can admin sets be nested?
 

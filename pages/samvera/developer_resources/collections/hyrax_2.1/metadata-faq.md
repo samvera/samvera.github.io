@@ -8,10 +8,8 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['FAQ - Collection Metadata', 'Collections - Metadata', 'Metadata for Collections']
 version:
-  label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
-  branch:
-    label: 'collections-sprint'
-    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
+  id: hyrax_2.1-stable
+  label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'
 ---
 
 ### What metadata is included in collections by default?

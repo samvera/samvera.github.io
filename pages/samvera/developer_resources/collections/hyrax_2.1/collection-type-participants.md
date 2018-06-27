@@ -8,10 +8,7 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['Collection Type Participants', 'Participants for Collection Types']
 version:
-  label: 'targeted for Hyrax v2.1.0'
-  branch:
-    label: 'collections-sprint'
-    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
+  id: hyrax_2.1-stable
 ---
 
 NOTE: Only admins can create, edit, and delete collection types.  Participants set for a collection type effect how users can interact with collections of this type.
@@ -29,7 +26,7 @@ NOTE: Only admins can create, edit, and delete collection types.  Participants s
 
 ### Manager
 
-**Description:** 
+**Description:**
 
 Managers for a collection type can edit collections other users created, including adding to and removing works from a collection, modifying collection metadata, and deleting collections, only for collections of the type they manage.
 
@@ -41,7 +38,7 @@ Managers for a collection type can edit collections other users created, includi
 * When a manager is removed, the entry added by `Hyrax::CollectionTypeParticipant` is removed from the database for this manager.
 * When the create new collection process is initiated, the user is allowed to create collections of types for which they have manage access.
 * When a collection is created of a type, each collection type manager is made a manager of the collection which grants them `edit_access` to the new collection regardless of which user creates the collection.  This `edit_access` grant is what grants managers the abilities to edit the collection, collection items, and metadata.
-  
+
 **Special Note on Admin Sets:**
 * Admin Set collection type is pre-defined and has default managers assigned.
 * **Default:**  Repository Administrators
@@ -51,7 +48,7 @@ Managers for a collection type can edit collections other users created, includi
 
 ### Creator
 
-**Description:** 
+**Description:**
 
 Creators for a collection type can create collections of this type.  They are given manage access only to collections they create.
 

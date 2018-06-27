@@ -8,10 +8,8 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['Collection Types']
 version:
-  label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
-  branch:
-    label: 'collections-sprint'
-    link: 'https://github.com/samvera/hyrax/tree/collections-sprint'
+  id: hyrax_2.1-stable
+  label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'
 ---
 
 ## Understanding Collection Types
@@ -30,7 +28,7 @@ An administrative grouping of works that an administrative unit is ultimately re
 
 **User Collections** (preconfigured)
 
-An intellectual grouping of works, primarily used by individual users to create groups of items or favorites. 
+An intellectual grouping of works, primarily used by individual users to create groups of items or favorites.
 
 **Exhibits**
 
@@ -40,7 +38,7 @@ A grouping of existing works into an exhibit oriented toward display of content 
 
 Provide the ability to nest collections for the purpose of organizing content.  Several use cases fall into this category and have significant overlap of requirements.  These include DSpace migrated content (i.e. Community → Collection), organization unit based collections (e.g. University → School → Department; Agency → Sub-agency; etc.), and general nesting for organizing materials.  
 
- 
+
 Don’t see your use case?  That’s ok, because Collection Types allow you to define and configure your own type.
 
 ### Configuring a Collection Type
@@ -89,9 +87,9 @@ The process for defining and configuring a collection type is quite simple.  Not
 
 **Step 2:  Set type name, type description, and click Save**  
 
-Note: 
+Note:
 * Users will see the type name and description when selecting a type of collection to create.  The information provided should help them decide the appropriate collection type to create.
-* The collection type name be used in filters and as a collection type badge in a number of places in the UI.  It is generally best to keep the collection type name short. 
+* The collection type name be used in filters and as a collection type badge in a number of places in the UI.  It is generally best to keep the collection type name short.
 
 **Step 3:  Define configuration settings**
 
@@ -137,7 +135,7 @@ Self-deposit site vs. Curated site...
 
 Exhibits
 * You may want to choose to apply share permissions to works if works are created as the exhibit collections are being built.
-* You may want to choose NOT to apply share permissions to works if the exhibit collections are mostly built from existing works. 
+* You may want to choose NOT to apply share permissions to works if the exhibit collections are mostly built from existing works.
 
 NOTE:  Your site may define User Collections and Exhibits different than what is presented here.
 
@@ -159,10 +157,10 @@ The short answer is NO.  But if you are asking this, then presumably you want to
 
 Here are some strategies.
 
-* If your application is new and you do not have any collections being migrated from Hyrax 2.0 or earlier, then you can 
+* If your application is new and you do not have any collections being migrated from Hyrax 2.0 or earlier, then you can
   * change the name of the preconfigured User Collection to UNUSED and remove all participants from the creator role (you can use something like rails console to delete it)
-  * create a new type called User Collection, which you can configure to meet you needs 
+  * create a new type called User Collection, which you can configure to meet you needs
 
-* If you migrated collections from Hyrax 2.0, you could 
+* If you migrated collections from Hyrax 2.0, you could
   * rename User collection to something like Legacy User Collection.  Migrated user collections will have this type.
-  * create a new type called User Collection, which you can configure to meet you needs.  New user collection will have this type. 
+  * create a new type called User Collection, which you can configure to meet you needs.  New user collection will have this type.

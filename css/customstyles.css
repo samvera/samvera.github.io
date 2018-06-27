@@ -209,9 +209,10 @@ p.post-meta {font-size: 80%; color: #777;}
 
 /* search area */
 #search-demo-container ul#results-container {
+    display: block;
     list-style: none;
     font-size: 12px;
-    background-color: white;
+    background-color: #347DBE;
     position: absolute;
     top: 40px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/
     left: 20px;
@@ -221,7 +222,6 @@ p.post-meta {font-size: 80%; color: #777;}
     box-shadow: 2px 3px 2px #dedede;
 }
 
-
 ul#results-container a {
     background-color: transparent;
 }
@@ -230,21 +230,28 @@ ul#results-container a:hover {
     color: black;
 }
 
-
 #search-demo-container a:hover {
     color: black;
+    }
+
+#search-demo-container button {
+  background: #347DBE;
+  color: #fff;
 }
+
 #search-input {
     padding: .5em;
     margin-left:20px;
     width:20em;
-    font-size: 0.8em;
+    font-size: 1em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: right;
-    margin-top:10px;
+    margin-top:0.5rem;
+    background: #347DBE;
 }
+
 /* end search */
 
 .filter-options {
@@ -941,7 +948,7 @@ span.soft {
 }
 
 /* this part adds an icon after external links, using FontAwesome*/
-a[href^="http://"]:after, a[href^="https://"]:after {
+/* a[href^="http://"]:after, a[href^="https://"]:after {
     content: "\f08e";
     font-family: FontAwesome;
     font-weight: normal;
@@ -949,7 +956,7 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     display: inline-block;
     text-decoration: none;
     padding-left: 3px;
-}
+} */
 
 /* Strip the outbound icon when this class is present */
 a[href].noCrossRef::after,

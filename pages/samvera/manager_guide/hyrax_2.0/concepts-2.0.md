@@ -8,7 +8,7 @@ keywords: hyrax administration, glossary
 tags: [user_resources]
 categories:
 version:
-  id: 'hyrax_2.0-master'
+  id: 'hyrax_2.0-stable'
   versions:  
   - label: 'Hyrax 1.0'
     link:  'concepts-1.0.html'

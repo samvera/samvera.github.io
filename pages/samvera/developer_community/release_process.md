@@ -63,6 +63,8 @@ This testing process complements test coverage and regression testing in the cod
 
 - Make sure to update the README if the release requires any new system dependencies or startup steps.
 
+- Update the [Hyrax Feature Matrix](https://github.com/samvera/hyrax/wiki/Feature-matrix)
+
 - Final Release is announced widely
 
 ### Minor release process:

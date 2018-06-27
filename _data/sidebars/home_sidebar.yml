@@ -11,6 +11,10 @@ entries:
       url: /introduction.html
       output: web, pdf
 
+    - title: Formalities
+      url: /formalities.html
+      output: web, pdf
+
     - title: Up and Running
       url: /getting_started.html
       output: web, pdf
@@ -202,7 +206,6 @@ entries:
           url: /nested-indexing.html
           output: web
 
-      subfolders:
       - title: How Do I Customize Metadata?
         output: web
         subfolderitems:

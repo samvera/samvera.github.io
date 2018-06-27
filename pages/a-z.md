@@ -69,6 +69,8 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='c'>&nbsp;</a>
     <span class='atoz_section_label'>C</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/formalities.html'>CLA</a>
+      <br>
       <a class='atoz_term' href='/code.html'>Code Guidelines</a>
       <br>
       <a class='atoz_term' href='/review.html'>Code Review</a>
@@ -281,6 +283,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>Leases</a>
       <br>
+      <a class='atoz_term' href='/formalities.html'>License Agreements</a>
+      <br>
     </div>
   </div>
   <div class='atoz_section'>
@@ -416,6 +420,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Save Work (Hyrax 2.0)</a>
       <br>
       <a class='atoz_term' href='/js/mydoc_scroll.html'>Scroll layout</a>
+      <br>
+      <a class='atoz_term' href='/search/'>Search</a>
       <br>
       <a class='atoz_term' href='/collection-sharing.html'>Sharing for Collections</a>
       <br>

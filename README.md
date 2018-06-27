@@ -45,6 +45,7 @@ tags: [development_resources]
 categories: How to Do All the Things
 version:
   id: 'hyrax_1.0-stable'
+last_updated: March 30, 2017
 ---
 ```
 where,
@@ -57,6 +58,7 @@ where,
 * **tags** [Array<text>] - _(recommended)_ - array of tags where tags must be defined in your [_data/tags.yml](https://github.com/samvera/samvera.github.io/tree/master/_data/tags.yml) list. You also need a corresponding tag file inside the [pages/tags](https://github.com/samvera/samvera.github.io/tree/master/pages/tags) folder that follows the same pattern as the other tag files shown in the tags folder.  It is rare that a new tag would be created.  If you think you need a new tag, be sure to highlight it as requiring review in the issue.
 * **categories** [text] - _(recommended)_ - represents the 4 major headings under which a page can reside
 * **version** [hash] - _(recommended)_ - specifies the gem's name and version that this documentation page describes.  See [Versioning Information](#versioning-information) for details.
+* **last_updated** [text] - (recommended) - Text version of updated date, to show in page footer.
 
 ### Notes on writing content
 

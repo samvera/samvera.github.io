@@ -8,10 +8,7 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['Nested Indexing', 'Collections - Indexing']
 version:
-  label: 'targeted for Hyrax v2.1.0'
-  branch:
-    label: 'master'
-    link: 'https://github.com/samvera/hyrax'
+  id: hyrax_2.1-stable
 ---
 
 ### Collections In Fedora and Solr
