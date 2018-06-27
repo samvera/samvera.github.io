@@ -1,6 +1,6 @@
 ---
 title: "Configuring the Repository"
-permalink: configuration.html
+permalink: configuration-2.0.html
 folder: samvera/manager_guide/configuration.md
 sidebar: home_sidebar
 a-z: ['manager_guide', 'user_guide']
@@ -11,7 +11,7 @@ version:
   id: 'hyrax_2.0-stable'
   versions:  
   - label: 'Hyrax 2.0'
-    link:  'configuration.html'
+    link:  'configuration-2.0.html'
     selected: 'true'
   - label: 'Hyrax 2.1'
     link:  'configuration-2.1.html'

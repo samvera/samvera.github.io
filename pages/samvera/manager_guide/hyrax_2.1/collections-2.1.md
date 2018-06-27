@@ -10,8 +10,6 @@ categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.1-stable'
   versions:  
-  - label: 'Hyrax 1.0'
-    link:  'collections-1.0.html'
   - label: 'Hyrax 2.0'
     link:  'collections-2.0.html'
   - label: 'Hyrax 2.1'
