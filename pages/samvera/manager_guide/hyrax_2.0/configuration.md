@@ -8,7 +8,7 @@ keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: Configuration
 version:
-  id: 'hyrax_2.0-master'
+  id: 'hyrax_2.0-stable'
   versions:  
   - label: 'Hyrax 2.0'
     link:  'configuration.html'

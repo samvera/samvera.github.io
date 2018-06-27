@@ -8,7 +8,7 @@ keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [feature_guide]
 categories: How to use the Administration panel in hyrax
 version:
-  id: 'hyrax_2.0-master'
+  id: 'hyrax_2.1-stable'
   versions:
   - label: 'Hyrax 1.0'
     link:  'batch-works-1.0.html'

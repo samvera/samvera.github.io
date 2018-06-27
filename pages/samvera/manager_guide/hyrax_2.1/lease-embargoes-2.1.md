@@ -8,7 +8,7 @@ keywords: Embargoes, Leases
 tags: [user_resources]
 categories: Managing Leases and Embargoes
 version:
-  id: 'hyrax_2.0-master'
+  id: 'hyrax_2.1-stable'
   versions:  
     - label: 'Hyrax 2.0'
       link:  'lease-embargoes-2.0.html'
