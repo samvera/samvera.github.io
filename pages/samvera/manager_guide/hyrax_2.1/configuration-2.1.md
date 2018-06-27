@@ -30,6 +30,12 @@ Administrators can change the general colors of the repository's appearance. Thi
 
 Click Save to make the changes.
 
+## Settings: Collection Types
+
+![Collection Types](images\screenshots\admin-configuration-collection-types.png)
+
+Repository Administrators can create and define collection types for the repository. Collection types include Administrative Sets and User Collections. Detailed information about collections and collection types are available in the [Collections and Admin Sets](http://samvera.github.io/collection-overview.html) section of this website.
+
 ## Settings: Pages
 
 ![Pages](images\screenshots\admin-configuration-pages.png)
@@ -62,7 +68,7 @@ The Featured Researcher content block allows you to add a note about any researc
 
 There are several features that are automatically enabled in Hyrax, but these can be toggled on and off from the Features panel:
 
-![Configuration Features](images\screenshots\admin-configuration-features.png)
+![Configuration Features](images\screenshots\admin-configuration-features-2.1.png)
 
 The highlighted option in the Actions column signifies the current selection. Click on the Off option for any feature you wish to disable for your repository. Here is a [complete list](https://github.com/samvera/hyrax/wiki/Feature-matrix) of features in Hyrax.
 
