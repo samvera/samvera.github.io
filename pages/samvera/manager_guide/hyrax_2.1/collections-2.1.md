@@ -16,7 +16,9 @@ version:
     link:  'collections-2.1.html'
     selected: 'true'
 ---
-## Create a Collection
+Hyrax 2.1 comes with a suite of new options for creating and configuring collection types to satisfy a number of use cases for cultural heritage and research institutions. This page focuses on the basics of an end user creating a collection. For a detailed overview of collection types and configurations, please visit the [Collections and Admin Sets](http://samvera.github.io/collection-overview.html) section of this website.
+
+## Create a User Collection
 
 Login to the repository, navigate to the Dashboard, click on Collections in the sidebar:
 
