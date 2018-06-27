@@ -16,13 +16,21 @@ version:
       link:  'lease-embargoes-2.1.html'
       selected: 'true'
 ---
+To manage leases, as a repository administrator, go to the Dashboard. Beneath the 'Tasks' heading you have the option to manage Leases and Embargoes.
+
+**Manage Leases:**
+
+![Manage Leases](/images/screenshots/admin-tasks-leases.png)
+
+**Manage Embargoes:**
+
+![Manage Leases](/images/screenshots/admin-tasks-embargoes.png)
+
 ## Leases
 
 ![Manage Leases](/images/screenshots/manage-leases.png)
 
 **Leases do not automatically expire. Leases need to be updated manually.**
-
-To manage leases, go to `repository-url/leases`
 
 The Manage Leases page contains three tabs:
 - All Active Leases: Works where leases are current
@@ -39,8 +47,6 @@ To deactivate leases:
 ![Manage Embargoes](/images/screenshots/manage-embargoes.png)
 
 **Embargoes do not automatically expire. Embargoes need to be updated and deactivated manually.**
-
-To manage embargoes, go to `repository-url/embargoes`
 
 The Embargo management page contains three tabs:
 - All Active Embargoes: Works where embargoes are current
