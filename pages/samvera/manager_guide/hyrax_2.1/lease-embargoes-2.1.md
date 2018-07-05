@@ -56,4 +56,4 @@ The Embargo management page contains three tabs:
 To deactivate embargoes:
 - Click the “Expired Active Embargoes” tab
 - Select works to release (optionally leave all files in embargo state by unchecking the box “Change all files within work __ to _ status _ )
-- Click button “Deactivate Embargoes for Selected” or deactivate individually
+- Click button “Deactivate Embargoes for Selected” or deactivate individually. Deactivating an embargo before the original embargo date has passed requires an additional step of manually updating the work's visibility in order for the work's visibility status to change. 

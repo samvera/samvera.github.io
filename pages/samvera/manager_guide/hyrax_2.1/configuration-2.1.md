@@ -74,7 +74,7 @@ The highlighted option in the Actions column signifies the current selection. Cl
 
 ## Workflow Roles
 
-The Workflow Roles panel will allow repository administrators to search for any registered user in the repository and assign them a role in an Administrative Set workflow. From the page, you can Assign Roles or view Current Roles.
+The Workflow Roles panel will allow repository administrators to search for any registered user in the repository and assign them a role in an Administrative Set workflow. From the page, you can Assign Roles or view Current Roles. This is a high-level view of users and their roles in various workflows in the administrative sets within your repository. It is recommended that repository managers assign and manage roles from the specific administrative set edit page.
 
 ### Assign Roles
 

@@ -16,7 +16,7 @@ version:
     link:  'collections-2.1.html'
     selected: 'true'
 ---
-Hyrax 2.1 comes with a suite of new options for creating and configuring collection types to satisfy a number of use cases for cultural heritage and research institutions. This page focuses on the basics of an end user creating a collection. For a detailed overview of collection types and configurations, please visit the [Collections and Admin Sets](http://samvera.github.io/collection-overview.html) section of this website.
+Hyrax 2.1 comes with a suite of new options for creating and configuring collection types to satisfy a number of use cases for cultural heritage and research institutions. Two types of User Collections are included by default in Hyrax - User Collections and Administrative Sets. This page focuses on the basics of an end user creating a collection. For a detailed overview of collection types and configurations, please visit the [Collections and Admin Sets](http://samvera.github.io/collection-overview.html) section of this website.
 
 ## Create a User Collection
 
@@ -24,7 +24,7 @@ Login to the repository, navigate to the Dashboard, click on Collections in the 
 
 ![Collections Dashboard](/images/screenshots/collections-2.1.png)
 
-Click on the `New Collection` button at the top of the screen. If the repository contains more than one collection type, then a dialog box will pop up, giving you the option to select a collection type for the new collection.
+Click on the `New Collection` button at the top of the screen. If the repository contains more than one collection type, then a dialog box will pop up, giving you the option to select a collection type for the new collection. Depending on the settings defined for the collection types within a repository, some collection types may not be available to all users of the system. Users will only see choices for collection types they have permissions to create.
 
 Once you have selected a collection type, you will be required to name your new collection. You will also have the option to add additional metadata fields for your collection.
 
@@ -48,7 +48,7 @@ The visibility of a collection does not affect the visibility of a work. For exa
 - To change collection visibility, click on the “Collections” link in the Dashboard and click on the collection. Click the “Edit” button. Select the “Discovery” tab at the top of the page.  
 - Collections can be either public, limited to institution only, or private.
 - To remove works from a collection, click on the “Collections” link in the Dashboard and click on the collection. Navigate to the “Works” heading. Click “Remove” next to the work that you would like to delete.
-- To delete a collection, click on the “Collections” link in the Dashboard.  Select “Delete Collection” from the “Actions” dropdown menu next to the collection that you would like to delete.
+- To delete a collection, click on the “Collections” link in the Dashboard.  Select “Delete Collection” from the “Actions” dropdown menu next to the collection that you would like to delete. Deleting a collection does not affect the works that are members of the collection. The collection can be deleted and the works will continue to exist in the repository.
 
 ## Sharing Collections with Other Users
 
