@@ -128,6 +128,20 @@ entries:
       url: /toggle-features.html
       output: web
 
+      subfolders:
+
+      - title: 'Design Patterns'
+        output: web
+        subfolderitems:
+
+        - title: Overview
+          url: /patterns-overview.html
+          output: web
+
+        - title: Presenters
+          url: /patterns-presenters.html
+          output: web
+
     - title: Coding Style with RuboCop
       url: /best-practices-coding-styles.html
       output: web

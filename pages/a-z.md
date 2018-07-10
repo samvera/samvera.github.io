@@ -181,6 +181,10 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/deprecation.html'>Deprecation</a>
       <br>
+      <a class='atoz_term' href='/patterns-overview.html'>Design Pattern - Overview</a>
+      <br>
+      <a class='atoz_term' href='/patterns-presenters.html'>Design Pattern - Presenters</a>
+      <br>
       <a class='atoz_term' href='/tag_community.html'>Development Community</a>
       <br>
       <a class='atoz_term' href='/tag_development_resources.html'>Development Resources</a>
@@ -379,6 +383,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/collection-overview.html'>Overview of Collections</a>
       <br>
+      <a class='atoz_term' href='/patterns-overview.html'>Overview of Design Pattern</a>
+      <br>
     </div>
   </div>
   <div class='atoz_section'>
@@ -400,6 +406,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Prereq: Defining a Controlled Vocabulary</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-generate-work-type.html'>Prereq: Generating a Work Type</a>
+      <br>
+      <a class='atoz_term' href='/patterns-presenters.html'>Presenters Design Pattern</a>
       <br>
       <a class='atoz_term' href='/release_process.html'>Product Owners</a>
       <br>
