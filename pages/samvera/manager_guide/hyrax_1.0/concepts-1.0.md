@@ -16,9 +16,6 @@ version:
     - label: 'Hyrax 2.0'
       link:  'concepts-2.0.html'
 ---
-
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
-
 ## Administrative Set
 An Administrative Set is a top-level grouping of Works that is managed by a user with administrative privileges, such as reviewing deposited Works before they are made accessible. Example: Electronic Dissertations and Theses.
 

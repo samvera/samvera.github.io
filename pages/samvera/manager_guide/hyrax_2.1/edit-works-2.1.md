@@ -1,22 +1,22 @@
 ---
 title: "Editing a Work"
-permalink: edit-works-2.0.html
-folder: samvera/manager_guide/edit-works-2.0.md
+permalink: edit-works-2.1.html
+folder: samvera/manager_guide/edit-works-2.1.md
 sidebar: home_sidebar
-a-z: ['manager_guide', 'user_guide']
+a-z: ['Works - Editing a Work', 'Editing a Work - Repository Administration']
 keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: How to use the Administration panel in hyrax
 version:
-  id: 'hyrax_2.0-stable'
+  id: 'hyrax_2.1-stable'
   versions:  
     - label: 'Hyrax 1.0'
       link:  'edit-works-1.0.html'
     - label: 'Hyrax 2.0'
       link:  'edit-works-2.0.html'
-      selected: 'true'
     - label: 'Hyrax 2.1'
-      link: 'edit-works-2.1.html'
+      link:  'edit-works-2.1.html'
+      selected: 'true'
 ---
 # Editing a Work
 
@@ -26,7 +26,7 @@ In the edit view for a work, you can change the description, add files, edit rel
 
 If you edit the sharing or visibility of the work, you can either opt to have all files in the work inherit these permissions, or you can opt to have the individual files retain their permissions so that they can be edited manually.
 
-Set child/parent work: In the “Relationships” tab, you can now add a child or parent work to the work - this is only available after the work is deposited, not at the time of deposit. A child work added to this work will appear as an Item in this work. A parent work will add this work to its Items. To add a child or parent work, enter the unique ID (found at ???) of the work under “Child Work” or “Parent Work” and click “Add”. Click “Save” to apply your changes.
+Set child/parent work: In the “Relationships” tab, you can now add a child or parent work to the work - this is only available after the work is deposited, not at the time of deposit. A child work added to this work will appear as an Item in this work. A parent work will add this work to its Items. To add a child or parent work, enter the Title of the work under “Child Work” or “Parent Work” and click “Add”. Click “Save” to apply your changes.
 
 ## Editing a work - file manager
 To change the order of files in a work or set a representative file, you have to use the File Manager. In the Browse view of a work, click “File Manager”.

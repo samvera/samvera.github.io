@@ -9,10 +9,15 @@ tags: [user_resources]
 categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.0-stable'
+  versions:  
+    - label: 'Hyrax 1.0'
+      link:  'admin-sets-1.0.html'
+    - label: 'Hyrax 2.0'
+      link:  'admin-sets-2.0.html'
+      selected: 'true'
+    - label: 'Hyrax 2.1'
+      link:  'collections-2.1.html'
 ---
-
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
-
 Hyrax must have at least one Admin set in order for users to add content to the repository. Repository Administrators can create additional Admin sets as needed. Admin sets are advised to use when you have a set of works that need default behaviors and/or permissions. For example, if you have a set of works that specific users need to be able to edit or view. Admin sets also work well for sets of works that need to follow a particular publishing workflow, like supporting the mediated deposit of student papers.
 
 You *must* create at least one Admin Set. This is usually done at the time of setup. All works in your repository must belong to one, and only one Admin Set. Repository Admins can create additional Admin sets as needed.

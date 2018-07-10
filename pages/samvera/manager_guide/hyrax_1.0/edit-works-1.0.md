@@ -15,10 +15,9 @@ version:
     selected: 'true'
   - label: 'Hyrax 2.0'
     link:  'edit-works-2.0.html'
+  - label: 'Hyrax 2.1'
+    link: 'edit-works-2.1.html'
 ---
-
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
-
 # Editing a Work
 
 There are two views for works: Browse view and Edit view. The public-facing view of a work is the Browse view. A user will navigate to a work and then click “Edit” to access the edit view. As an admin user, you would be able to edit any work in the repository.

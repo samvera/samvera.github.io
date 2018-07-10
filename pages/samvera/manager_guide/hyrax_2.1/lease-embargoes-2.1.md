@@ -1,28 +1,36 @@
 ---
 title: "Managing Leases and Embargoes"
-permalink: lease-embargoes-2.0.html
+permalink: lease-embargoes-2.1.html
 folder: samvera/manager_guide/lease-embargoes-2.0.md
 sidebar: home_sidebar
-a-z: ['manager_guide', 'user_guide', 'Leases', 'Embargoes']
+a-z: ['Leases - Repository Administration', 'Embargoes - Repository Administration']
 keywords: Embargoes, Leases
 tags: [user_resources]
 categories: Managing Leases and Embargoes
 version:
-  id: 'hyrax_2.0-stable'
+  id: 'hyrax_2.1-stable'
   versions:  
     - label: 'Hyrax 2.0'
       link:  'lease-embargoes-2.0.html'
-      selected: 'true'
     - label: 'Hyrax 2.1'
       link:  'lease-embargoes-2.1.html'
+      selected: 'true'
 ---
+To manage leases, as a repository administrator, go to the Dashboard. Beneath the 'Tasks' heading you have the option to manage Leases and Embargoes.
+
+**Manage Leases:**
+
+![Manage Leases](/images/screenshots/admin-tasks-leases.png)
+
+**Manage Embargoes:**
+
+![Manage Leases](/images/screenshots/admin-tasks-embargoes.png)
+
 ## Leases
 
 ![Manage Leases](/images/screenshots/manage-leases.png)
 
 **Leases do not automatically expire. Leases need to be updated manually.**
-
-To manage leases, go to `repository-url/leases`
 
 The Manage Leases page contains three tabs:
 - All Active Leases: Works where leases are current
@@ -40,8 +48,6 @@ To deactivate leases:
 
 **Embargoes do not automatically expire. Embargoes need to be updated and deactivated manually.**
 
-To manage embargoes, go to `repository-url/embargoes`
-
 The Embargo management page contains three tabs:
 - All Active Embargoes: Works where embargoes are current
 - Expired Active Embargoes: Works where embargo dates have passed but they are still under embargo status
@@ -50,4 +56,4 @@ The Embargo management page contains three tabs:
 To deactivate embargoes:
 - Click the “Expired Active Embargoes” tab
 - Select works to release (optionally leave all files in embargo state by unchecking the box “Change all files within work __ to _ status _ )
-- Click button “Deactivate Embargoes for Selected” or deactivate individually
+- Click button “Deactivate Embargoes for Selected” or deactivate individually. Deactivating an embargo before the original embargo date has passed requires an additional step of manually updating the work's visibility in order for the work's visibility status to change. 

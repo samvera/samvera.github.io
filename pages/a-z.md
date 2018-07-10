@@ -63,6 +63,10 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='b'>&nbsp;</a>
     <span class='atoz_section_label'>B</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/batch-ops-2.1.html'>Batch Operations</a>
+      <br>
+      <a class='atoz_term' href='/batch-ops-2.1.html'>Batch Operations - Repository Administration</a>
+      <br>
     </div>
   </div>
   <div class='atoz_section'>
@@ -93,6 +97,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/collection-types.html'>Collection Types</a>
       <br>
+      <a class='atoz_term' href='/collections-2.1.html'>Collections</a>
+      <br>
       <a class='atoz_term' href='/collections-2.0.html'>Collections (2.0)</a>
       <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Collections - Admin Set Collection Type</a>
@@ -107,6 +113,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/collection-nesting-faq.html'>Collections - Nesting</a>
       <br>
+      <a class='atoz_term' href='/collections-2.1.html'>Collections - Repository Administration</a>
+      <br>
       <a class='atoz_term' href='/collection-overview.html'>Collections Overview</a>
       <br>
       <a class='atoz_term' href='/communication.html'>Communication</a>
@@ -119,7 +127,11 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/customize-metadata-discovery.html'>Configuring Discovery</a>
       <br>
-      <a class='atoz_term' href='/configuration.html'>Configuring the Repository</a>
+      <a class='atoz_term' href='/configuration-2.0.html'>Configuring the Repository</a>
+      <br>
+      <a class='atoz_term' href='/configuration-2.1.html'>Configuring the Repository</a>
+      <br>
+      <a class='atoz_term' href='/configuration-2.1.html'>Configuring the Repository - Repository Administration</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Controlled Vocabularies (Customizing Metadata)</a>
       <br>
@@ -142,6 +154,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/create-works-1.0.html'>Creating a Work</a>
       <br>
       <a class='atoz_term' href='/create-works-2.0.html'>Creating a Work</a>
+      <br>
+      <a class='atoz_term' href='/create-works-2.1.html'>Creating a Work</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Customizing Metadata (Controlled Vocabularies)</a>
       <br>
@@ -189,9 +203,15 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/edit-works-2.0.html'>Editing a Work</a>
       <br>
+      <a class='atoz_term' href='/edit-works-2.1.html'>Editing a Work</a>
+      <br>
+      <a class='atoz_term' href='/edit-works-2.1.html'>Editing a Work - Repository Administration</a>
+      <br>
       <a class='atoz_term' href='/email_notifications.html'>Email Notifications</a>
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>Embargoes</a>
+      <br>
+      <a class='atoz_term' href='/lease-embargoes-2.1.html'>Embargoes - Repository Administration</a>
       <br>
     </div>
   </div>
@@ -283,6 +303,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>Leases</a>
       <br>
+      <a class='atoz_term' href='/lease-embargoes-2.1.html'>Leases - Repository Administration</a>
+      <br>
       <a class='atoz_term' href='/formalities.html'>License Agreements</a>
       <br>
     </div>
@@ -301,6 +323,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>Managing Leases and Embargoes</a>
       <br>
+      <a class='atoz_term' href='/lease-embargoes-2.1.html'>Managing Leases and Embargoes</a>
+      <br>
       <a class='atoz_term' href='/collection-metadata-faq.html'>Metadata for Collections</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Modifying default Hyrax fields</a>
@@ -317,15 +341,13 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/concepts-2.0.html'>manager_guide</a>
       <br>
-      <a class='atoz_term' href='/configuration.html'>manager_guide</a>
+      <a class='atoz_term' href='/configuration-2.0.html'>manager_guide</a>
       <br>
       <a class='atoz_term' href='/create-works-2.0.html'>manager_guide</a>
       <br>
       <a class='atoz_term' href='/edit-works-2.0.html'>manager_guide</a>
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>manager_guide</a>
-      <br>
-      <a class='atoz_term' href='/whats-new.html'>manager_guide</a>
       <br>
     </div>
   </div>
@@ -402,6 +424,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/release_testing.html'>Release Process</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Remove a default property from the set of required fields</a>
+      <br>
+      <a class='atoz_term' href='/configuration-2.1.html'>Repository Configuration</a>
       <br>
       <a class='atoz_term' href='/best-practices-coding-styles.html'>Rubocop</a>
       <br>
@@ -481,15 +505,13 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/concepts-2.0.html'>user_guide</a>
       <br>
-      <a class='atoz_term' href='/configuration.html'>user_guide</a>
+      <a class='atoz_term' href='/configuration-2.0.html'>user_guide</a>
       <br>
       <a class='atoz_term' href='/create-works-2.0.html'>user_guide</a>
       <br>
       <a class='atoz_term' href='/edit-works-2.0.html'>user_guide</a>
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>user_guide</a>
-      <br>
-      <a class='atoz_term' href='/whats-new.html'>user_guide</a>
       <br>
     </div>
   </div>
@@ -513,11 +535,13 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something? (Hyrax 2.0)</a>
       <br>
-      <a class='atoz_term' href='/whats-new.html'>What's New in Hyrax 2?</a>
-      <br>
       <a class='atoz_term' href='/workflow_and_mediated_deposit.html'>Workflow and Mediated Deposit in Hyrax 1.x</a>
       <br>
       <a class='atoz_term' href='/actor_stack.html'>Working with the Actor Stack</a>
+      <br>
+      <a class='atoz_term' href='/create-works-2.1.html'>Works - Creating a Work</a>
+      <br>
+      <a class='atoz_term' href='/edit-works-2.1.html'>Works - Editing a Work</a>
       <br>
     </div>
   </div>

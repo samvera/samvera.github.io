@@ -1,22 +1,22 @@
 ---
 title: "Creating a Work"
-permalink: create-works-2.0.html
-folder: samvera/manager_guide/create-works-2.0.md
+permalink: create-works-2.1.html
+folder: samvera/manager_guide/create-works-2.1.md
 sidebar: home_sidebar
-a-z: ['manager_guide', 'user_guide']
+a-z: ['Works - Creating a Work', 'Creating a Work']
 keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: How to use the Administration panel in hyrax
 version:
-  id: 'hyrax_2.0-stable'
+  id: 'hyrax_2.1-stable'
   versions:  
   - label: 'Hyrax 1.0'
     link:  'create-works-1.0.html'
   - label: 'Hyrax 2.0'
     link:  'create-works-2.0.html'
-    selected: 'true'
   - label: 'Hyrax 2.1'
     link:  'create-works-2.1.html'
+    selected: 'true'
 ---
 # Creating a Work
 
@@ -39,15 +39,15 @@ The “Description” tab is for adding descriptive metadata. Fill out the field
 ## Files (required)
 ![Add New Generic Work | Files](images\screenshots\user-addnewgenericwork-files-2.png)
 
-The “Files” tab is for uploading files, either locally or from a cloud service (e.g. DropBox, Google Drive, Box.com, etc.). You can browse local files to upload, or drag and drop files from your desktop. If your repository is configured to interact with a cloud service, users can click “Browse cloud files” and securely connect to their own Dropbox. They can then browse cloud files to upload. Files can also be removed from the deposit in the “Files” tab.
+The “Files” tab is for uploading files, either locally or from a cloud service (e.g. DropBox, Google Drive, Box.com, etc.). You can browse local files to upload, or drag and drop files from your desktop. If your repository is configured to interact with a cloud service, users can click “Browse cloud files” and securely connect to their own Dropbox. They can then browse cloud files to upload. Files can also be removed from the deposit in the “Files” tab. Repositories can be set up for metadata-only works, in this case files are _not_ required.
 
 ## Relationships (optional)
 ![Add New Generic Work | Relationships](images\screenshots\user-addnewgenericwork-relationships.png)
 
-The “Relationships” tab lets you add the work to an Administrative Set or a Collection. Administrative users can add a work to any Administrative Set or Collection in the repository. Regular users are only able to add works to Collections that they have created or collections for which they have been granted a depositor/manager role. The Administrative Set and Collections fields will be automaticall populated with options to which the user has depositor access.
+The “Relationships” tab lets you add the work to an Administrative Set or a Collection. Administrative users can add a work to any Administrative Set or Collection in the repository. Regular users are only able to add works to Collections that they have created or collections for which they have been granted a depositor/manager role. The Administrative Set and Collections fields will be automatically populated with options to which the user has depositor access.
 
 ## Visibility
-You can select one of five options for visibility: Public, Your Institution, Embargo, Lease, Private. If you are not seeing five visibility options, it is likely that your work is set to deposit to an administrative set with fewer visibility options than the default. Visibility only controls who can view or download your work -- it does not control edit access.
+You can select one of five options for visibility: Public, Your Institution, Embargo, Lease, Private. If you are not seeing five visibility options, it is likely that your work is set to deposit to an administrative set with fewer visibility options than the default. Visibility only controls who can view or download your work -- it does not control edit access. Options for visibility can be restricted if the Admin Set has applied restrictions.
 
 - Public makes the work available to the general public. Metadata is available to be crawled by search engines for discovery.
 - Institution restricts access to works and work metadata to users with login privileges. Users will need to be logged into the repostory to access the work.
@@ -58,4 +58,4 @@ You can select one of five options for visibility: Public, Your Institution, Emb
 The depositor must check the deposit agreement checkbox in order to deposit. The agreement can be customized by repository administrators by going to the Dashboard, and editing the Deposit Agreement from the Pages panel.
 
 ## Depositing as a proxy
-Users can designate other users of the system to deposit on their behalf by visiting their dashboard. Once someone has been set as a proxy for another user, the sidebar will offer the option to deposit on behalf of yourself or the other user. If you deposit on behalf of another user, the ownership of the work will automatically be transferred to that user when the deposit completes.
+Users can designate other users of the system to deposit on their behalf by visiting their dashboard. Once someone has been set as a proxy for another user, the sidebar will offer the option to deposit on behalf of yourself or the other user. If you deposit on behalf of another user, the ownership of the work will automatically be transferred to that user when the deposit completes. Proxies will retain editing privileges to works they deposit unless the owner revokes access.
