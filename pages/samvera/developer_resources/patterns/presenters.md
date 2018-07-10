@@ -18,8 +18,8 @@ categories: Design Patterns
 * Presenters provide access to controller instance variables.
 * `@presenter` should be the only instance variable accessed in the view.
 * `@presenter` can be passed as `presenter` to partials rendered from the primary view.
-* The same presenter can be shared by multiple views and partials. 
-* Presenters can be used with any kind of view.  Although, they are not used with new/edit forms.  The Forms pattern performs a similar role for the forms.
+* The same presenter can be shared by multiple views and partials.
+* Presenters are _not_ used for new/edit forms. Instead, Form objects are used. Form objects work similarly to Presenters, but include some additional features for dealing with forms, such as specifying which fields should be required.
 
 This documentation uses object show page presenters to highlight some characteristics of presenters.  Show page presenters are the most common to customize with overrides ond extensions.
 
@@ -52,9 +52,9 @@ Access to property values is provided by the solr document.  To allow presenters
 *Example Extension*
 
 The original delegations still exist.  The following is an example of adding more delegations for custom metadata fields.
- 
+
 ```ruby
-  # Custom Metadata Methods 
+  # Custom Metadata Methods
   delegate :contact_email, :contact_phone, :department, to: :solr_document
 ```
 
