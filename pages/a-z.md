@@ -359,6 +359,14 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='n'>&nbsp;</a>
     <span class='atoz_section_label'>N</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/release_process.html'>NURAX</a>
+      <br>
+      <a class='atoz_term' href='/release_testing.html'>NURAX</a>
+      <br>
+      <a class='atoz_term' href='/release_process.html'>NURAX-DEV</a>
+      <br>
+      <a class='atoz_term' href='/release_testing.html'>NURAX-DEV</a>
+      <br>
       <a class='atoz_term' href='/nested-indexing.html'>Nested Indexing</a>
       <br>
       <a class='atoz_term' href='/collection-nesting-faq.html'>Nesting of Collections</a>

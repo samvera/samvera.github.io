@@ -1,6 +1,6 @@
 ---
 title: Hyrax Testing and Release Process
-a-z: [Testing, Release Process, Managers, Product Owners]
+a-z: [Testing, Release Process, Managers, Product Owners, NURAX, NURAX-DEV]
 last_updated: February 5, 2018
 tags: [release, community]
 sidebar: samvera_sidebar
