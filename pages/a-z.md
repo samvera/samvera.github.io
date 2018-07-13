@@ -323,8 +323,6 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Making a default property single-value</a>
       <br>
-      <a class='atoz_term' href='/release_process.html'>Managers</a>
-      <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>Managing Leases and Embargoes</a>
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.1.html'>Managing Leases and Embargoes</a>
@@ -359,19 +357,13 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='n'>&nbsp;</a>
     <span class='atoz_section_label'>N</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/release_process.html'>NURAX</a>
-      <br>
-      <a class='atoz_term' href='/release_testing.html'>NURAX</a>
-      <br>
-      <a class='atoz_term' href='/release_process.html'>NURAX-DEV</a>
-      <br>
-      <a class='atoz_term' href='/release_testing.html'>NURAX-DEV</a>
-      <br>
       <a class='atoz_term' href='/nested-indexing.html'>Nested Indexing</a>
       <br>
       <a class='atoz_term' href='/collection-nesting-faq.html'>Nesting of Collections</a>
       <br>
       <a class='atoz_term' href='/how-to-disable-notifications.html'>Notifications</a>
+      <br>
+      <a class='atoz_term' href='/release_process.html'>Nurax</a>
       <br>
     </div>
   </div>
@@ -417,8 +409,6 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/patterns-presenters.html'>Presenters Design Pattern</a>
       <br>
-      <a class='atoz_term' href='/release_process.html'>Product Owners</a>
-      <br>
       <a class='atoz_term' href='/pr-checklist.html'>Pull Request</a>
       <br>
       <a class='atoz_term' href='/pr-checklist.html'>Pull Request Checklist</a>
@@ -437,7 +427,7 @@ sidebar: home_sidebar
     <div class='atoz_terms'>
       <a class='atoz_term' href='/release_process.html'>Release Process</a>
       <br>
-      <a class='atoz_term' href='/release_testing.html'>Release Process</a>
+      <a class='atoz_term' href='/release_testing.html'>Release Testing</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Remove a default property from the set of required fields</a>
       <br>
@@ -479,8 +469,6 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='t'>&nbsp;</a>
     <span class='atoz_section_label'>T</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/release_process.html'>Testing</a>
-      <br>
       <a class='atoz_term' href='/release_testing.html'>Testing</a>
       <br>
       <a class='atoz_term' href='/design_patterns.html'>Touring the design patterns in Hyrax</a>
