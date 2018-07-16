@@ -1,13 +1,12 @@
 ---
-title: "What Happens When I Deposit Something?"
-a-z: 
+title: "What Happens When I Deposit Something? (1.0)"
 keywords: Characterization, Derivatives, File Attachments
 categories: How to Do All the Things
 permalink: what-happens-deposit-1.0.html
 folder: samvera/how-to/what_happens_when/hyrax_1.0/what-happens-deposit.md
 sidebar: home_sidebar
 tags: [development_resources]
-a-z: ['What Happens When I Deposit Something? (Hyrax 1.0)', 'Deposit Work Process (Hyrax 1.0)', 'Save Work (Hyrax 1.0)', 'Actor Stack for Work (Hyrax 1.0)']
+a-z: ['Deposit Work Process (1.0)', 'Save Work (1.0)', 'Actor Stack for Work (1.0)']
 version:
   id: 'hyrax_1.0-stable'
   versions:  

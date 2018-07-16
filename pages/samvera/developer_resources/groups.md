@@ -1,6 +1,6 @@
 ---
 title: "Creating User Groups"
-a-z: ["Creating User Groups"]
+a-z: ["Default User Setup"]
 keywords: Roles, Groups
 categories: How to Do All the Things - Glossary
 permalink: groups.html

@@ -1,9 +1,9 @@
 ---
-title: "Collections"
+title: "Collections (2.1)"
 permalink: collections-2.1.html
 folder: samvera/manager_guide/collections-2.1.md
 sidebar: home_sidebar
-a-z: ['Collections for Managers (2.1)']
+a-z: ['Managing Collections (2.1)']
 keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: How to use the Administration panel in hyrax

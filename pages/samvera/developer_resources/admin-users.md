@@ -1,6 +1,6 @@
 ---
-title: "Creating User Groups"
-a-z: ["Creating User Groups"]
+title: "Creating User Groups with a Database"
+a-z: ["Database-backed User Setup"]
 keywords: Roles, Groups
 categories: How to Do All the Things - Glossary
 permalink: admin-users.html

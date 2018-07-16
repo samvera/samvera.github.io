@@ -1,5 +1,5 @@
 ---
-title: "Managing Leases and Embargoes"
+title: "Managing Leases and Embargoes (2.1)"
 permalink: lease-embargoes-2.1.html
 folder: samvera/manager_guide/lease-embargoes-2.0.md
 sidebar: home_sidebar

@@ -1,5 +1,5 @@
 ---
-title: "Configuring the Repository"
+title: "Configuring the Repository (2.1)"
 permalink: configuration-2.1.html
 folder: samvera/manager_guide/configuration.md
 sidebar: home_sidebar

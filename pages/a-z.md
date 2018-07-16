@@ -39,9 +39,9 @@ sidebar: home_sidebar
     <div class='atoz_terms'>
       <a class='atoz_term' href='/index.html'>A Guide For The Samvera Community</a>
       <br>
-      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Actor Stack for Work (Hyrax 1.0)</a>
+      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Actor Stack for Work (1.0)</a>
       <br>
-      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Actor Stack for Work (Hyrax 2.0)</a>
+      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Actor Stack for Work (2.0)</a>
       <br>
       <a class='atoz_term' href='/actor_stack.html'>Actor Stack, Middleware</a>
       <br>
@@ -95,9 +95,9 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/collection-types.html'>Collection Types</a>
       <br>
-      <a class='atoz_term' href='/collections-2.1.html'>Collections</a>
-      <br>
       <a class='atoz_term' href='/collections-2.0.html'>Collections (2.0)</a>
+      <br>
+      <a class='atoz_term' href='/collections-2.1.html'>Collections (2.1)</a>
       <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Collections - Admin Set Collection Type</a>
       <br>
@@ -113,35 +113,31 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/collection-overview.html'>Collections Overview</a>
       <br>
-      <a class='atoz_term' href='/collections-2.0.html'>Collections for Managers (2.0)</a>
-      <br>
-      <a class='atoz_term' href='/collections-2.1.html'>Collections for Managers (2.1)</a>
-      <br>
       <a class='atoz_term' href='/communication.html'>Communication</a>
       <br>
       <a class='atoz_term' href='/how-to-disable-notifications.html'>Configure Hyrax 1 User Polling Notifications</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-discovery.html'>Configuring Discovery</a>
       <br>
-      <a class='atoz_term' href='/configuration-2.0.html'>Configuring the Repository</a>
+      <a class='atoz_term' href='/configuration-2.0.html'>Configuring the Repository (2.0)</a>
       <br>
-      <a class='atoz_term' href='/configuration-2.1.html'>Configuring the Repository</a>
+      <a class='atoz_term' href='/configuration-2.1.html'>Configuring the Repository (2.1)</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Controlled Vocabularies (Customizing Metadata)</a>
       <br>
-      <a class='atoz_term' href='/core_components.html'>Core Components</a>
+      <a class='atoz_term' href='/deprecation.html'>Core Components Deprecation</a>
       <br>
-      <a class='atoz_term' href='/deprecation.html'>Core Components</a>
+      <a class='atoz_term' href='/core_components.html'>Core Components Overview</a>
       <br>
       <a class='atoz_term' href='/core_components.html'>Core Samvera Code Repository</a>
       <br>
-      <a class='atoz_term' href='/admin-users.html'>Creating User Groups</a>
-      <br>
       <a class='atoz_term' href='/groups.html'>Creating User Groups</a>
       <br>
-      <a class='atoz_term' href='/batch-works-1.0.html'>Creating Works in a Batch</a>
+      <a class='atoz_term' href='/admin-users.html'>Creating User Groups with a Database</a>
       <br>
-      <a class='atoz_term' href='/batch-works-2.0.html'>Creating Works in a Batch</a>
+      <a class='atoz_term' href='/batch-works-1.0.html'>Creating Works in a Batch (1.0)</a>
+      <br>
+      <a class='atoz_term' href='/batch-works-2.0.html'>Creating Works in a Batch (2.0)</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Creating a Default Deposit Agreement</a>
       <br>
@@ -153,8 +149,6 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Customizing Metadata (Controlled Vocabularies)</a>
       <br>
-      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Customizing Metadata (Other Metadata Customizations)</a>
-      <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Customizing display of Collection properties</a>
       <br>
     </div>
@@ -163,15 +157,19 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='d'>&nbsp;</a>
     <span class='atoz_section_label'>D</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/admin-users.html'>Database-backed User Setup</a>
+      <br>
+      <a class='atoz_term' href='/groups.html'>Default User Setup</a>
+      <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Default property, making single-value</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-model.html'>Defining Metadata in the Model</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Deposit Agreement, creating a default</a>
       <br>
-      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Deposit Work Process (Hyrax 1.0)</a>
+      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Deposit Work Process (1.0)</a>
       <br>
-      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Deposit Work Process (Hyrax 2.0)</a>
+      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Deposit Work Process (2.0)</a>
       <br>
       <a class='atoz_term' href='/deprecation.html'>Deprecation</a>
       <br>
@@ -190,6 +188,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/deeper_samvera_index.html'>Dive Deeper into Samvera</a>
       <br>
       <a class='atoz_term' href='/training/deeper_into_samvera/'>Dive Deeper into Samvera</a>
+      <br>
+      <a class='atoz_term' href='/training/deeper_into_samvera/'>Dive Deeper into Samvera - Training</a>
       <br>
     </div>
   </div>
@@ -309,9 +309,13 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Making a default property single-value</a>
       <br>
-      <a class='atoz_term' href='/lease-embargoes-2.0.html'>Managing Leases and Embargoes</a>
+      <a class='atoz_term' href='/collections-2.0.html'>Managing Collections (2.0)</a>
       <br>
-      <a class='atoz_term' href='/lease-embargoes-2.1.html'>Managing Leases and Embargoes</a>
+      <a class='atoz_term' href='/collections-2.1.html'>Managing Collections (2.1)</a>
+      <br>
+      <a class='atoz_term' href='/lease-embargoes-2.0.html'>Managing Leases and Embargoes (2.0)</a>
+      <br>
+      <a class='atoz_term' href='/lease-embargoes-2.1.html'>Managing Leases and Embargoes (2.1)</a>
       <br>
       <a class='atoz_term' href='/collection-metadata-faq.html'>Metadata for Collections</a>
       <br>
@@ -344,8 +348,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/other-getting-started.html'>Other Helpful Getting Started Docs</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Other Metadata Customizations</a>
-      <br>
-      <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Other Metadata Customizions</a>
       <br>
       <a class='atoz_term' href='/our_technology_stack.html'>Our Technology Stack</a>
       <br>
@@ -417,9 +419,9 @@ sidebar: home_sidebar
     <div class='atoz_terms'>
       <a class='atoz_term' href='/samvera_labs.html'>Samvera Labs</a>
       <br>
-      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Save Work (Hyrax 1.0)</a>
+      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>Save Work (1.0)</a>
       <br>
-      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Save Work (Hyrax 2.0)</a>
+      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>Save Work (2.0)</a>
       <br>
       <a class='atoz_term' href='/js/mydoc_scroll.html'>Scroll layout</a>
       <br>
@@ -450,6 +452,8 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/touring_samvera_index.html'>Touring the design patterns in Samvera</a>
       <br>
       <a class='atoz_term' href='/training/touring_design_patterns/'>Touring the design patterns in Samvera</a>
+      <br>
+      <a class='atoz_term' href='/training/touring_design_patterns/'>Touring the design patterns in Samvera - Training</a>
       <br>
       <a class='atoz_term' href='/training.html'>Training</a>
       <br>
@@ -489,13 +493,9 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='w'>&nbsp;</a>
     <span class='atoz_section_label'>W</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>What Happens When I Deposit Something?</a>
+      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>What Happens When I Deposit Something? (1.0)</a>
       <br>
-      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something?</a>
-      <br>
-      <a class='atoz_term' href='/what-happens-deposit-1.0.html'>What Happens When I Deposit Something? (Hyrax 1.0)</a>
-      <br>
-      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something? (Hyrax 2.0)</a>
+      <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something? (2.0)</a>
       <br>
       <a class='atoz_term' href='/workflow_and_mediated_deposit.html'>Workflow and Mediated Deposit in Hyrax 1.x</a>
       <br>
