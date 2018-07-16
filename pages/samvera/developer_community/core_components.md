@@ -1,6 +1,6 @@
 ---
 title: Core Samvera Code Repository
-a-z: ['Core Components', 'Github', 'Maintenance']
+a-z: ['Core Components', 'Maintenance']
 last_updated: February 26, 2018
 tags: [labs, community, development, maintenance]
 sidebar: samvera_sidebar

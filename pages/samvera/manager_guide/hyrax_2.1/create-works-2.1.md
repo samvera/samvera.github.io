@@ -1,9 +1,9 @@
 ---
-title: "Creating a Work"
+title: "Creating a Work (2.1)"
 permalink: create-works-2.1.html
 folder: samvera/manager_guide/create-works-2.1.md
 sidebar: home_sidebar
-a-z: ['Works - Creating a Work', 'Creating a Work']
+a-z: ['Works - Creating a work (2.1)']
 keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: How to use the Administration panel in hyrax
