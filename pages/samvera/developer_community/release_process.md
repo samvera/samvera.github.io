@@ -88,14 +88,14 @@ This testing process complements test coverage and regression testing in the cod
 - Github repo: [https://github.com/samvera/hyrax/](https://github.com/samvera/hyrax/)
 - Maintained and updated by committers in DCE and Samvera Community
 
-**Hyrax Manager Guide:** describes features, set up and concepts for Hyrax repositories
+**Hyrax Feature Guide:** describes features, set up and concepts for Hyrax repositories
 
- - [http://samvera.github.io/](http://samvera.github.io/) ('Manager Guide' in side navigation)
- - Maintained and updated by the [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group) ask Chris Diaz for more information.
+ - [http://samvera.github.io/](http://samvera.github.io/) (select **Feature Guide** in side navigation)
+ - Maintained and updated by the [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Ask Chris Diaz for more information.
 
 **Hyrax test tracking document:** google doc that helps us track what is tested (including browsers and accessibility) for each release.
 
--  <this will be shared on the #nurax slack each release> contact Julie Rudder for help.
+-  This will be shared on the #nurax slack for each release. Contact Julie Rudder for help.
 - Maintained and updated by the [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group)
 
 
