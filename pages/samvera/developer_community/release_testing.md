@@ -1,6 +1,6 @@
 ---
 title: How to Coordinate Testing for a Release
-a-z: [Testing, Release Process]
+a-z: [Release Testing, Testing]
 last_updated: March 30, 2017
 tags: [release, community]
 sidebar: samvera_sidebar
@@ -8,16 +8,14 @@ permalink: release_testing.html
 folder: samvera
 ---
 
-<br />
-<br />
+Each release will have a release testing coordinator, usually the QA specialist from the [Hyrax Working Group](https://wiki.duraspace.org/display/samvera/Hyrax+Working+Group). This person can vary from release to release. They will work closely with the Hyrax Tech Lead and Product Owner. Follow the newly-defined process outlined in [Hyrax Testing and Release Process](/release_process.html). As this is a new process, you may find that some sections need adjustment or more detail.
 
-Each release will have a release testing coordinator. This person can vary from release to release. You will work closely with the Hyrax Tech Lead and Product Owner.
+### PR testing:
 
-Follow the newly-defined process outlined in [Hyrax Testing and Release Process](/release_process.html). As this is a new process, you may find that some sections need adjustment or more detail.
+The Hyrax [Pull Request Template](https://github.com/samvera/hyrax/blob/master/.github/PULL_REQUEST_TEMPLATE.md) asks for guidance on QA testing. To the extent possible, pull requests will undergo QA testing from the QA Specialist _in addition to_ code review by the [Hyrax code reviewers](https://github.com/orgs/samvera/teams/hyrax-code-reviewers). The QA Specialist will either use [NURAX-DEV](https://nurax-dev.curationexperts.com) or a local instance of Hyrax for testing pull requests.
 
-<br />
 
-**When release is ready:**
+### When release is ready:
 
   - **Figure out what needs to be tested**
 
