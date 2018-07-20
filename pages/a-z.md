@@ -337,6 +337,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/how-to-disable-notifications.html'>Notifications</a>
       <br>
+      <a class='atoz_term' href='/release_process.html'>Nurax</a>
+      <br>
     </div>
   </div>
   <div class='atoz_section'>
@@ -378,8 +380,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/customize-metadata-generate-work-type.html'>Prereq: Generating a Work Type</a>
       <br>
       <a class='atoz_term' href='/patterns-presenters.html'>Presenters Design Pattern</a>
-      <br>
-      <a class='atoz_term' href='/release_process.html'>Product Owners</a>
       <br>
       <a class='atoz_term' href='/pr-checklist.html'>Pull Request</a>
       <br>
@@ -443,8 +443,6 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='t'>&nbsp;</a>
     <span class='atoz_section_label'>T</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/release_process.html'>Testing</a>
-      <br>
       <a class='atoz_term' href='/release_testing.html'>Testing</a>
       <br>
       <a class='atoz_term' href='/design_patterns.html'>Touring the design patterns in Hyrax</a>
