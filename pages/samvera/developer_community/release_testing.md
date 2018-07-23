@@ -1,6 +1,6 @@
 ---
 title: How to Coordinate Testing for a Release
-a-z: [Release Testing, Testing]
+a-z: ['Testing', 'Release Testing']
 last_updated: March 30, 2017
 tags: [release, community]
 sidebar: samvera_sidebar

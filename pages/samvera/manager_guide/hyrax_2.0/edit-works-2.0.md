@@ -1,9 +1,9 @@
 ---
-title: "Editing a Work"
+title: "Editing a Work (2.0)"
 permalink: edit-works-2.0.html
 folder: samvera/manager_guide/edit-works-2.0.md
 sidebar: home_sidebar
-a-z: ['manager_guide', 'user_guide']
+a-z: ['Works - Editing a work (2.0)']
 keywords: Best Practices, managers, repo mangers, hyrax administration
 tags: [user_resources]
 categories: How to use the Administration panel in hyrax

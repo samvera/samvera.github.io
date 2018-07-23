@@ -1,9 +1,9 @@
 ---
-title: "Managing Leases and Embargoes"
+title: "Managing Leases and Embargoes (2.1)"
 permalink: lease-embargoes-2.1.html
 folder: samvera/manager_guide/lease-embargoes-2.0.md
 sidebar: home_sidebar
-a-z: ['Leases - Repository Administration', 'Embargoes - Repository Administration']
+a-z: ['Leases for Managers (2.1)', 'Embargoes for Managers (2.1)']
 keywords: Embargoes, Leases
 tags: [user_resources]
 categories: Managing Leases and Embargoes
@@ -56,4 +56,4 @@ The Embargo management page contains three tabs:
 To deactivate embargoes:
 - Click the “Expired Active Embargoes” tab
 - Select works to release (optionally leave all files in embargo state by unchecking the box “Change all files within work __ to _ status _ )
-- Click button “Deactivate Embargoes for Selected” or deactivate individually. Deactivating an embargo before the original embargo date has passed requires an additional step of manually updating the work's visibility in order for the work's visibility status to change. 
+- Click button “Deactivate Embargoes for Selected” or deactivate individually. Deactivating an embargo before the original embargo date has passed requires an additional step of manually updating the work's visibility in order for the work's visibility status to change.

@@ -1,6 +1,6 @@
 ---
 title: Hyrax Testing and Release Process
-a-z: [Release Process, Nurax]
+a-z: ['Release Process', 'Nurax']
 last_updated: February 5, 2018
 tags: [release, community]
 sidebar: samvera_sidebar
