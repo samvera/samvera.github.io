@@ -12,7 +12,7 @@ toc: false
 
 - [Solr](http://lucene.apache.org/solr/quickstart.html)
 
-- [Fedora 4 ](https://wiki.duraspace.org/display/FEDORA471/Quick+Start)
+- [Fedora](https://wiki.duraspace.org/display/FEDORA4x/Quick+Start)
 
 - [Blacklight](https://github.com/projectblacklight/blacklight/wiki/Quickstart)
 

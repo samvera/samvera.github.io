@@ -71,15 +71,10 @@ A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slac
 
   There is a weekly Samvera technical call for developers and other folks who are contributing code or are actively using the core Samvera plugins & components.
 
-  Wednesdays at 9:00 AM Pacific Time
+  Wednesdays at 9:00 AM Pacific Time, noon Eastern Time
   Check out this helpful [time zone](http://www.timeanddate.com/worldclock/fixedtime.html?month=12&day=6&year=2010&hour=8&min=0&sec=0&p1=224) translation
 
-  Conference Line Information
-
-  **Dial: +1 (641) 715 3660
-  Access Code: 651025#**
-
-  Best methods of access are standard phone line or Google Talk.  Skype has proven unreliable and is not recommended.  Once you've dialed the main number, you'll be prompted for the access code.
+  Connect via [Zoom](https://psu.zoom.us/j/613720745), which will launch the Zoom client. Instructions to connect by telephone are included at the top of [the agenda for each call](https://wiki.duraspace.org/display/samvera/Notes+from+Meetings+and+Calls).  
 
 - **Monthly Partner Call**
 

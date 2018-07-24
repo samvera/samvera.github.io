@@ -18,7 +18,7 @@ We build repository systems to manage digital content for the long-term. This co
 
 ## Samvera is a framework
 
-![Architecture Diagram](https://wiki.duraspace.org/download/attachments/22022608/hydra_9_architecture_2016.png?version=1&modificationDate=1467992759221&api=v2)
+![Architecture Diagram](https://wiki.duraspace.org/download/attachments/87460044/hydra_9_architecture_2016.png?version=1&modificationDate=1497776440777&api=v2)
 
 Samvera began its life in 2008 as a framework: a shared set of patterns and tools, primarily in the
 form of Ruby code, for building repository applications atop the [Fedora Commons Repository](http://fedorarepository.org/)
@@ -26,7 +26,7 @@ and the [Apache Solr](http://lucene.apache.org/solr/) index.
 
 ## Samvera is a community
 
-![HydraConnect 2015 Group Photo](https://wiki.duraspace.org/download/attachments/67241821/HydraConnect2015-small-pano.jpg?version=1&modificationDate=1442945532177&api=v2)
+![HydraConnect 2015 Group Photo](https://wiki.duraspace.org/download/attachments/87459342/HydraConnect2015-pano.jpg?version=1&modificationDate=1497702812221&api=v2)
 
 Samvera is a growing and vibrant community of people, representing a diverse array of skill sets, backgrounds, and employers. None of us is paid directly by Samvera, and so we're also a community of volunteers; things happen in the Samvera community because individuals step forward to make advancements.
 

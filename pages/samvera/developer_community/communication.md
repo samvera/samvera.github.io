@@ -11,26 +11,26 @@ folder: samvera
 
 This page details the communication channels used by developers in the Samvera community.  For more
 information on broader community communication, please see the Samvera wiki
-[Get in touch!](https://wiki.duraspace.org/pages/viewpage.action?pageId=43910187) page.
+[Get in touch!](https://wiki.duraspace.org/pages/viewpage.action?pageId=87460391) page.
 
 ## Regular Calls
 
-* [Weekly Technical Call](https://wiki.duraspace.org/pages/viewpage.action?pageId=43910187#Getintouch!-TechnicalCall) for technical discussion, and coordinating releases and code review
-* [Monthly Partner Call](https://wiki.duraspace.org/pages/viewpage.action?pageId=43910187#Getintouch!-MonthlyPartnerCall) complements the tech call with a focus on community and functional progress
+* [Weekly Technical Call](https://wiki.duraspace.org/display/samvera/Notes+from+Meetings+and+Calls) for technical discussion, and coordinating releases and code review
+* [Monthly Partner Call](https://wiki.duraspace.org/display/samvera/Samvera+Partner+Calls) complements the tech call with a focus on community and functional progress
 * Community Sprint Calls are also organized to coordinate development
 
 ## Slack
 
 Slack has become the primary mode of synchronous communication in the Samvera community. There is a Samvera Slack team that is used for discussion, questions, announcements, interest groups, and working groups. Topics span very general discussion to in-depth interest/working group work, from metadata work to development coordination. Anyone can create a new channel within the Samvera Slack team once they have registered for an account.
 
-* Slack: http://samvera.slack.com/
-* Signup form: http://slack.samvera.org/
+* Slack: [http://samvera.slack.com/](http://samvera.slack.com/)
+* Signup form: [http://slack.samvera.org/](http://slack.samvera.org/)
 
 ## Mailing Lists
 
 * https://groups.google.com/group/samvera-community for general Samvera discussion
 * https://groups.google.com/group/samvera-tech for technical discussion
-* and several more listed in the [Samvera wiki](https://wiki.duraspace.org/pages/viewpage.action?pageId=43910187#Getintouch!-MailingLists)
+* and several more listed on [How to Ask for Help](/get-help.html#mailing-lists)
 
 ## Wiki
 

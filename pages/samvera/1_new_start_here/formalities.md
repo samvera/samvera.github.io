@@ -17,7 +17,7 @@ Samvera uses an Apache-based Contributor License Agreement to ensure that code c
 
 In short, to contribute any code to any Samvera codebase, we will need to have two CLAs on file for you: one that you sign yourself, and one that someone with signatory authority at your institution signs. To contribute non-code assets, such as documentation, you are not required to sign any CLAs; we merely ask that you make your contributions available under a Creative Commons license.
 
-See https://wiki.duraspace.org/display/samvera/Samvera+Community+Intellectual+Property+Licensing+and+Ownership for more details.
+See [Samvera Community Intellectual Property Licensing and Ownership](https://wiki.duraspace.org/display/samvera/Samvera+Community+Intellectual+Property+Licensing+and+Ownership) for more details.
 
 ## Membership in GitHub organizations and repositories
 
