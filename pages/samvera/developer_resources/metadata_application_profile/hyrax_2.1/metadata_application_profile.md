@@ -11,6 +11,8 @@ version:
   label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
 ---
 
+The following Metadata Application Profile lists properties provided by Hyrax by default upon installation. Core Metadata are properties required for Hyrax to function correctly. Basic Metadata properties listed as Required are configured for validation. Basic Metadata properties can be modified within Hyrax but Core Metadata properties cannot be modified. More details and links to code available below.
+
 ## Namespaces
 
 | Predicate Prefix | Rdf-vocab Predicate Prefix | Namespace |
@@ -23,12 +25,15 @@ version:
 | xsd: | | http://www.w3.org/2001/XMLSchema# |
 | mrel: | | http://id.loc.gov/vocabulary/relators/ |
 
+Distinction: The [MUST out of the box](https://github.com/samvera/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb#L33) is a slightly different set of things from what is in Core.
+Reference: Local controlled vocabularies and forms pulled in here: [https://github.com/samvera/hyrax/blob/4fd8d9ad3c32db7deffc3b5246af5d1459a4b046/lib/generators/hyrax/config_generator.rb](https://github.com/samvera/hyrax/blob/4fd8d9ad3c32db7deffc3b5246af5d1459a4b046/lib/generators/hyrax/config_generator.rb)
+
 ## Basic Metadata
 
 Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera/hyrax/blob/2.0-stable/app/models/concerns/hyrax/basic_metadata.rb)
 
 | Field | Predicate | Rdf-vocab Predicate | Recommendation | Expected Value (data type) | Expected Value (Controlled Source) | Multiple | Obligation |
-| -------- | --------- | -------- | -------- | -------- |-------- |-------- |-------- |
+| -------- | --------- | -------- | -------- | -------- | -------- | -------- | -------- |
 | creator | dce:creator | ::RDF::Vocab::DC11.creator | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {0,n} |
 | keyword | dce:relation | ::RDF::Vocab::DC11.relation | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {0,n} |
 | rights_statement | edm:rights | ::RDF::Vocab::EDM.rights | MUST (Required) | xsd:anyUri | Rights statements menu as YAML | FALSE | {0,n} |
@@ -44,6 +49,21 @@ Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metada
 | related_url | rdfs:seeAlso | ::RDF::RDFS.seeAlso | MAY | xsd:string or xsd:anyURI | n/a | TRUE | {0,n} |
 | source | dct:source | ::RDF::Vocab::DC.source | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
 | resource_type | dct:type | ::RDF::Vocab::DC.type | MAY | xsd:string (Literal) | Type menu as YAML | TRUE | {0,n} |
+
+## Core Metadata
+
+Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/samvera/hyrax/blob/2.0-stable/app/models/concerns/hyrax/core_metadata.rb)
+
+
+| Field | Predicate | Rdf-vocab Predicate | Recommendation | Expected Value (data type) | Expected Value (Controlled Source) | Multiple | Obligation |
+| -------- | --------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| title | dct:title | ::RDF::Vocab::DC.title | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {1,n} |
+| depositor | mrel:dpt | ::RDF::URI.new('http://id.loc.gov/vocabulary/relators/dpt') | MUST (Required) | user | n/a | FALSE | {1} |
+| date_uploaded | dct:dateSubmitted | ::RDF::Vocab::DC.dateSubmitted | MUST (Required) | Literal | n/a | FALSE | {1} |
+| date_modified | dct:modified | ::RDF::Vocab::DC.modified | MUST (Required) | Literal | n/a | FALSE | {1} |
+
+
+
 
 
 
