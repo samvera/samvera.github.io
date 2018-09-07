@@ -276,6 +276,10 @@ entries:
       url: /troubleshooting_riiif.html
       output: web
 
+    - title: External Binaries
+      url: /external_binaries.html
+      output: web
+
     - title: How Do I Disable Hyrax 1 User Notifications?
       url: /how-to-disable-notifications.html
       output: web
