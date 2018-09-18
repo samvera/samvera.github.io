@@ -9,6 +9,9 @@ tags: [development_resources]
 a-z: ['External Binaries']
 version:
   label: 'Sufia 7 (May apply to Hyrax but YMMV)'
+  branch:
+    label: 'Sufia 7.4.1'
+    link: 'https://github.com/samvera/sufia/tree/v7.4.1'
 ---
 
 # Storing binaries externally
