@@ -209,6 +209,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.1.html'>Embargoes for Managers (2.1)</a>
       <br>
+      <a class='atoz_term' href='/external_binaries.html'>External Binaries</a>
+      <br>
     </div>
   </div>
   <div class='atoz_section'>
