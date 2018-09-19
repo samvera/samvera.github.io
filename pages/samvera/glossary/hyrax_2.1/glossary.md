@@ -16,11 +16,17 @@ version:
 ## Administrative Set
 An Administrative Set is a top-level grouping of Works that is managed by a user with administrative privileges, such as reviewing deposited Works before they are made accessible. Unlike Collections, Administrative Sets are not discoverable by searching or browsing the catalog. They are intended to provide repository administrators the ability to apply a workflow, define behaviors, and apply policies on a set of works. Only repository administrators can create an administrative set, but they can designate any user to have management or edit access to an administrative set. All works must belong to one, and only, one Admin Set. Example: Electronic Dissertations and Theses. ([more information...](admin-sets-as-collections-faq.html))
 
+## Child Work
+The lower-level work in a work-to-work relationship. Children can have one or more parent works. The same work can be a parent and a child.
+
 ## Collection
 A thematic grouping of works or collections. Any user in the system can create a Collection. Collections can be visible publicly or kept private. Collections can have a dedicated thumbnail and be shared among repository users with defined access levels: view/download or edit. Only users with access to a collection can add Works to it. Example: Professor creates a collection of Works related to her funded research project. ([more information...](collection-overview.html))
 
 ## Collection Type
 Collection Types provide a means for configuring behavior of collections within a site.  The functionality that can be switched on/off are [nesting](collection-nesting-faq.html), [sharing](collection-sharing.html), [discovery](collection-discovery-faq.html), multiple-membership, and branding.  Once collections of a type have been created, these configurations can no longer be changed.  A site may want to create several collection types (e.g. exhibits and user collections).  ([more information...](collection-types.html))
+
+## Fileset
+The container representing a single file uploaded to the repository. It is a set that holds the original uploaded file and any generated derivative files (e.g. thumbnails, full text, etc.).
 
 ## Groups
 Groups of users, controlled by administrators.  Groups can be assigned as Participants for Collection Types and Admin Sets and given Sharing roles for Collections and Works.  
@@ -46,6 +52,9 @@ A template that defines the Participants for Collection based on it's Collection
 
 ## Mediated Deposit Workflow
 The group of steps necessary for reviewing an ingested item and its metadata, culminating in approval before publishing it for public viewing.  ([more information...](https://github.com/samvera/sufia/wiki/Mediated-Deposit-Workflow))
+
+## Parent Work
+The higher-level work in a work-to-work relationship where there is at least one child work relationship established. Parents can have one or more child works. The same work can be a parent and a child.
 
 ## Proxy
 A user who can deposit works on behalf of another user. Example. Research Assistant deposits articles written by a Professor.
