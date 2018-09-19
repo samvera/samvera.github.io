@@ -1,12 +1,10 @@
 ---
 title: "Collection Metadata FAQ"
-keywords: Metadata, Collection, FAQ
+keywords: ["Metadata", "Collection", "FAQ"]
 categories: How to Do All the Things
 permalink: collection-metadata-faq.html
 folder: samvera/how-to/collections/hyrax_2.1/metadata-faq.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['FAQ - Collection Metadata', 'Collections - Metadata', 'Metadata for Collections']
 version:
   id: hyrax_2.1-stable
   label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'

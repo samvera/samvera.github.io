@@ -1,13 +1,11 @@
 ---
 title: "Understanding the Controller"
-a-z: ["Understanding the Controller"]
-keywords: Customize Metadata
+keywords: ["Controller", "Customize", "Metadata"]
 categories: How to Do All the Things
 permalink: customize-metadata-controller.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/controller.md
 sidebar: home_sidebar
-tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 

@@ -1,12 +1,10 @@
 ---
 title: "Collection Nesting FAQ"
-keywords: Nesting, Collection, FAQ
+keywords: ["Nesting", "Collection", "FAQ"]
 categories: How to Do All the Things
 permalink: collection-nesting-faq.html
 folder: samvera/how-to/collections/hyrax_2.1/nesting-faq.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['FAQ - Collection Nesting', 'Collections - Nesting', 'Nesting of Collections']
 version:
   id: hyrax_2.1-stable
 ---

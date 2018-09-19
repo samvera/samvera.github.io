@@ -1,12 +1,12 @@
 ---
 title: "Other Metadata Customizations"
-keywords: Customize Metadata
+keywords: [ "Customize", "Metadata", "Properties", "Multi-value",
+            "Single-value",
+            "Display" ]
 categories: How to Do All the Things
 permalink: customize-metadata-other-customizations.html
 folder: hydra/how-to/customize_metadata/hyrax_1.0/other.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['Modifying default Hyrax fields', 'Remove a default property from the set of required fields', 'Making a default property single-value', 'Default property, making single-value', 'Creating a Default Deposit Agreement', 'Deposit Agreement, creating a default', 'Customizing display of Collection properties', 'Collection Metadata, customizing display of']
 version:
   id: 'hyrax_1.0-stable'
 ---

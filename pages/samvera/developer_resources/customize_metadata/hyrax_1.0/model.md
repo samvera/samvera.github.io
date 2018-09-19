@@ -1,13 +1,11 @@
 ---
 title: "Defining Metadata in the Model"
-a-z: ["Defining Metadata in the Model"]
-keywords: Customize Metadata
+keywords: ["Customize", "Metadata", "Work Type", "Model"]
 categories: How to Do All the Things
 permalink: customize-metadata-model.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/model.md
 sidebar: home_sidebar
-tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 

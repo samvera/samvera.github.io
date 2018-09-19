@@ -1,7 +1,6 @@
 ---
 title: "Visibility and Access Controls"
-a-z: ["Visibility and Access Controls"]
-keywords: Visibility and Access Controls
+keywords: ["Visibility", "Access Controls", "Authorization"]
 categories: How to Do All the Things
 permalink: access-controls.html
 folder: samvera/how-to/access-controls.md

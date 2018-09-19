@@ -1,10 +1,8 @@
 ---
 title: "Other Helpful Getting Started Docs"
-a-z: ["Other Helpful Getting Started Docs"]
-keywords: Dive Into Hydra Works
+keywords: ["Tutorials", "Hydra Works"]
 permalink: /other-getting-started.html
 folder: samvera/getting_started/other-getting-started-docs.md
-tags: [getting_started]
 toc: false
 ---
 ### The Hyrax Stack

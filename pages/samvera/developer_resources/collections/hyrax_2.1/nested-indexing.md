@@ -1,12 +1,10 @@
 ---
 title: "Nested Indexing"
-keywords: Indexing, Collection
+keywords: ["Indexing", "Collection", "Nested", "Nesting"]
 categories: How to Do All the Things
 permalink: nested-indexing.html
 folder: samvera/how-to/collections/hyrax_2.1/nested-indexing.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['Nested Indexing', 'Collections - Indexing']
 version:
   id: hyrax_2.1-stable
 ---

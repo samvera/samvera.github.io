@@ -1,12 +1,10 @@
 ---
 title: "Email Notifications"
-a-z: ["Email Notifications"]
-keywords: Email, Notifications
+keywords: ["Email", "Notifications"]
 categories: How to Do All the Things - Glossary
 permalink: email_notifications.html
 folder: samvera/how-to/
 sidebar: home_sidebar
-tags: [development_resources]
 toc: false
 ---
 

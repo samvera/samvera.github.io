@@ -1,12 +1,10 @@
 ---
 title: "Collection Discovery FAQ"
-keywords: Discovery, discoverable, discoverability, Collection, FAQ
+keywords: ["Discovery", "Discoverable", "Discoverability", "Collection", "FAQ"]
 categories: How to Do All the Things
 permalink: collection-discovery-faq.html
 folder: samvera/how-to/collections/hyrax_2.1/discovery-faq.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['FAQ - Collection Discovery', 'Collections - Discovery', 'Discovery of Collections']
 version:
   id: hyrax_2.1-stable
 ---

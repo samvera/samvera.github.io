@@ -1,8 +1,6 @@
 ---
 title: A Guide For The Samvera Community
-a-z: [A Guide For The Samvera Community]
-keywords: sample homepage
-tags: [getting_started]
+keywords: ["Guide", "Community"]
 sidebar: home_sidebar
 permalink: index.html
 toc: false

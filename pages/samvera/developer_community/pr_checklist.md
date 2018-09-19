@@ -1,12 +1,10 @@
 ---
 title: "PR Checklist"
-a-z: ["Pull Request", "PR", "PR Checklist", "Pull Request Checklist", "PR Review", "PR Creation" ]
-keywords: PR, Pull Request
+keywords: ["Pull Request", "PR", "PR Checklist", "Pull Request Checklist", "PR Review", "PR Creation" ]
 categories: Procedures
 permalink: pr-checklist.html
 folder: samvera/procedures/pr_checklist.md
 sidebar: home_sidebar
-tags: [procedures]
 ---
 
 Checklist to use when creating and reviewing a PR.
@@ -30,7 +28,7 @@ Checklist to use when creating and reviewing a PR.
   - [ ] Public API: Requires unit tests exist that ensure correct behavior of new classes/modules/methods
   - [ ] Functional changes: The functional implementation of public methods are not changed for bug release and minor releases.  These are ok for a major release, but should be an intentional change that is deemed necessary.  A change in processing can be added to a method as long as the older approach continues to work with the older code having a deprecation warning.
   - [ ] Deprecation: Code that is targeted for removal in the next major release should have a deprecation warning.
-  - [ ] Solr Migrations: Changes to the solr documents should not happen for bug releases, should not be required for minor releases.  Are ok for major releases. 
+  - [ ] Solr Migrations: Changes to the solr documents should not happen for bug releases, should not be required for minor releases.  Are ok for major releases.
   - [ ] Fedora Migrations: Changes to the fedora objects should not happen for bug releases, should not be required for minor releases.  Are ok for major releases.  
   - [ ] Database Migrations: Changes to the database should not happen for bug releases, should not be required for minor releases.  Are ok for major releases.
 - Documentation

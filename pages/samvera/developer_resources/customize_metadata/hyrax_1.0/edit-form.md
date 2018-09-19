@@ -1,13 +1,11 @@
 ---
 title: "Modifying the Edit Form"
-a-z: ["Modifying the Edit Form"]
-keywords: Customize Metadata
+keywords: ["Customize", "Metadata", "Edit Forms", "Forms"]
 categories: How to Do All the Things
 permalink: customize-metadata-edit-form.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/edit-form.md
 sidebar: home_sidebar
-tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 

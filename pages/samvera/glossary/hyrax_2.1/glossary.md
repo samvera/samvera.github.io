@@ -1,12 +1,10 @@
 ---
 title: "Glossary of Terms"
-a-z: ["Glossary of Terms"]
-keywords: Admin Sets, Collections, Participants, Workflows, Roles, Groups
+keywords: ["Glossary", "Terms"]
 categories: Glossary
 permalink: glossary-2.1.html
 folder: samvera/glossary.md
 sidebar: home_sidebar
-tags: [development_resources]
 toc: false
 version:
   id: hyrax_2.1-stable

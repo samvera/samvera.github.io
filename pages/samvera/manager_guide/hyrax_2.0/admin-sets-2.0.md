@@ -3,9 +3,14 @@ title: "Administrative Sets"
 permalink: admin-sets-2.0.html
 folder: samvera/manager_guide/admin-sets-2.0.md
 sidebar: home_sidebar
-a-z: ['Admin Sets for Managers (2.0)']
-keywords: Best Practices, managers, repo mangers, hyrax administration
-tags: [user_resources]
+keywords:
+  - "Best Practices"
+  - "Managers"
+  - "Repository Managers"
+  - "Hyrax Administration"
+  - "Creating Works"
+  - "Administrative Sets"
+  - "Admin Sets"
 categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.0-stable'

@@ -1,7 +1,6 @@
 ---
 title: "Integrating with Campus Authorization"
-a-z: ["Integrating with Campus Authorization"]
-keywords: integration
+keywords: ["integration", "campus", "authorization"]
 categories: Production
 permalink: campus-auth-integrating.html
 folder: samvera/production/

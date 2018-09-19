@@ -3,9 +3,14 @@ title: "Batch Operations"
 permalink: batch-ops-2.1.html
 folder: samvera/manager_guide/batch-works-2.1.md
 sidebar: home_sidebar
-a-z: ['Works - Uploading as a batch (2.1)', 'Works - Adding works to a collection (2.1)']
-keywords: Best Practices, managers, repo mangers, hyrax administration
-tags: [feature_guide]
+keywords:
+  - "Best Practices"
+  - "Managers"
+  - "Repository Managers"
+  - "Hyrax Administration"
+  - "Creating Works"
+  - "Batch"
+  - "Batch Operations"
 categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.1-stable'

@@ -1,9 +1,7 @@
 ---
 title: "How to Ask for Help"
-a-z: ["How to Ask for Help"]
-keywords: contact community help
+keywords: ["Contact", "Community", "Help"]
 permalink: get-help.html
-tags: false
 toc: false
 ---
 

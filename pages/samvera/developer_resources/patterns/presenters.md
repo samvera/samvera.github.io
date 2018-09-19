@@ -3,9 +3,7 @@ title: "Presenters Design Pattern"
 permalink: patterns-presenters.html
 folder: samvera/developer_resources/patterns/presenters.md
 sidebar: home_sidebar
-a-z: ['Design Pattern - Presenters', 'Presenters Design Pattern']
-keywords: Design Patterns
-tags: [development_resources]
+keywords: ["Design Patterns", "Presenters"]
 categories: Design Patterns
 ---
 
