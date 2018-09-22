@@ -181,6 +181,7 @@ table th[class*="col-"] {
 
 table td:first-child {
     width: 150px;
+    word-break: break-all;
     /*font-weight:bold;*/
 }
 
