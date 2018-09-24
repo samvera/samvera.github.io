@@ -8,10 +8,11 @@ sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['Metadata Application Profile']
 version:
-  label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
+  id: 'hyrax_2.1-stable'
+  label: 'Hyrax v2.1'
 ---
 
-The following Metadata Application Profile lists properties provided by Hyrax by default upon installation. Core Metadata are properties required for Hyrax to function correctly. Basic Metadata properties listed as Required are configured for validation. Basic Metadata properties can be modified within Hyrax but Core Metadata properties cannot be modified. More details and links to code available below.
+The following Metadata Application Profile lists properties provided by Hyrax by default upon installation. Core Metadata are properties required for Hyrax to function correctly. Basic Metadata properties listed as Required are configured for validation. Basic Metadata properties can be modified within Hyrax but Core Metadata properties cannot be modified. This profile also applies to Hyrax v2.0. More details and links to code available below.
 
 ## Namespaces
 
@@ -62,18 +63,3 @@ Core metadata properties (**_that should never be removed_**) are defined in [ap
 | depositor | mrel:dpt | ::RDF::URI.new('http://id.loc.gov/vocabulary/relators/dpt') | MUST (Required) | user | n/a | **FALSE** | {1} |
 | date_uploaded | dct:dateSubmitted | ::RDF::Vocab::DC.dateSubmitted | MUST (Required) | Literal | n/a | **FALSE** | {1} |
 | date_modified | dct:modified | ::RDF::Vocab::DC.modified | MUST (Required) | Literal | n/a | **FALSE** | {1} |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
