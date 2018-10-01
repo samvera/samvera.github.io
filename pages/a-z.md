@@ -319,6 +319,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/lease-embargoes-2.1.html'>Managing Leases and Embargoes (2.1)</a>
       <br>
+      <a class='atoz_term' href='/metadata_application_profile.html'>Metadata Application Profile</a>
+      <br>
       <a class='atoz_term' href='/collection-metadata-faq.html'>Metadata for Collections</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Modifying default Hyrax fields</a>

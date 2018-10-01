@@ -232,6 +232,10 @@ entries:
           url: /customize-metadata-controlled-vocabulary.html
           output: web
 
+        - title: "Metadata Application Profile"
+          url: /metadata_application_profile.html
+          output: web
+
         - title: Labels and Help Text
           url: /customize-metadata-labels.html
           output: web
