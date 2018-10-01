@@ -12,6 +12,13 @@ version:
   label: 'Hyrax v2.1'
 ---
 
+<style>
+  table {
+    white-space: nowrap;
+  }
+</style>
+
+
 The following Metadata Application Profile lists properties provided by Hyrax by default upon installation. Core Metadata are properties required for Hyrax to function correctly. Basic Metadata properties listed as Required are configured for validation. Basic Metadata properties can be modified within Hyrax but Core Metadata properties cannot be modified. This profile also applies to Hyrax v2.0. More details and links to code available below.
 
 ## Namespaces
