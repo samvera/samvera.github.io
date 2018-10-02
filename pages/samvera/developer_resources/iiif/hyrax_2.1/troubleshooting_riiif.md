@@ -1,12 +1,10 @@
 ---
 title: "Troubleshooting RIIIF"
-keywords: IIIF
+keywords: ["IIIF", "RIIIF", "Troubleshooting"]
 categories: IIIF
 permalink: troubleshooting_riiif.html
 folder: samvera/how-to/iiif/hyrax_2.1/troubleshooting_riiif.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['Troubleshooting RIIIF']
 version:
   label: 'Hyrax v2.1.0 (also applies to Hyrax v2.0.x)'
 ---

@@ -1,12 +1,11 @@
 ---
 title: "Admin Sets as Collections FAQ"
-keywords: Admin Set, Collection, FAQ
+keywords: ["Admin Set", "Collection", "FAQ"]
 categories: How to Do All the Things
 permalink: admin-sets-as-collections-faq.html
 folder: samvera/how-to/collections/hyrax_2.1/admin-sets-as-collections.md
 sidebar: home_sidebar
 tags: [development_resources]
-a-z: ['FAQ - Admin Sets as Collections', 'Collections - Admin Set Collection Type']
 version:
   id: hyrax_2.1-stable
   label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'

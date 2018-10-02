@@ -1,0 +1,67 @@
+---
+---
+
+%pill {
+  background-color: none;
+  color: black;
+  padding: 2px 10px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 11px;
+}
+
+#page_lists {
+  // clear <ul> styles for page lists
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .select_page_list {
+    @extend %pill;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      background-color: #ddd;
+    }
+  }
+
+  .keyword, .page_title {
+    font-size: 1.2em;
+    color: black;
+  }
+
+  .keyword {
+    @extend %pill;
+    font-weight: bold;
+    background-color: #ddd;
+  }
+
+  .keyword_group {
+    padding: 5px;
+    border-radius: 11px;
+    &:hover {
+      background-color: #f4f4f4;
+    }
+  }
+
+  .page_title {
+    @extend %pill;
+    // display: inline-block;
+    margin-top: 3px;
+    &:hover {
+      background-color: #999;
+      color: #f5f5f5;
+      text-decoration: none;
+    }
+  }
+}

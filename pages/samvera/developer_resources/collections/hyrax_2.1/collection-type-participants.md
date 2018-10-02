@@ -1,12 +1,10 @@
 ---
 title: "Understanding Collection Type Participants"
-keywords: Participant, Collection Type, Sharing
+keywords: ["Participant", "Collection Type", "Sharing", "Collections"]
 categories: How to Do All the Things
 permalink: collection-type-participants.html
 folder: samvera/how-to/collections/hyrax_2.1/collection-type-participants.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['Collection Type Participants', 'Participants for Collection Types']
 version:
   id: hyrax_2.1-stable
 ---

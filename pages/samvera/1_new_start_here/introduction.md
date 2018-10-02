@@ -1,9 +1,7 @@
 ---
 title: Introduction
-a-z: [Introduction]
-keywords: samvera orientation
+keywords: ["samvera", "orientation", "introduction"]
 last_updated: March 30, 2017
-tags: [getting_started]
 summary: "Introduction: What is Samvera?"
 sidebar: samvera_sidebar
 permalink: introduction.html

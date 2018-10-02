@@ -1,12 +1,10 @@
 ---
 title: "Understanding Collection Sharing"
-keywords: Participant, Collection, Sharing
+keywords: ["Participant", "Collection", "Sharing"]
 categories: How to Do All the Things
 permalink: collection-sharing.html
 folder: samvera/how-to/collections/hyrax_2.1/collection-sharing.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['Collection Sharing', 'Sharing for Collections']
 version:
   id: hyrax_2.1-stable
 ---

@@ -3,9 +3,7 @@ title: "Overview of Design Pattern"
 permalink: patterns-overview.html
 folder: samvera/developer_resources/patterns/overview.md
 sidebar: home_sidebar
-a-z: ['Design Pattern - Overview', 'Overview of Design Pattern']
-keywords: Design Patterns
-tags: [development_resources]
+keywords: ["Design Patterns"]
 categories: Design Patterns
 ---
 
@@ -23,4 +21,3 @@ Models, Views, and Controllers (MVC) are the basic patterns provided by Rails.  
 | <a href="patterns-presenters.html">Presenters</a> | Isolate views from business logic code related to showing information. Primarily used for constructing object show pages. |
 | Search Builders | Used to construct solr queries. |
 | Services | Handle processing that falls outside of other patterns. Characterized by each service having a single responsibility. |
-

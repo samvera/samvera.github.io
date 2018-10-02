@@ -1,7 +1,6 @@
 ---
 title: "Get up and running"
-a-z: ["Get up and running"]
-keywords: up and running
+keywords: ["Getting started"]
 permalink: getting_started.html
 folder: samvera/getting_started/
 tags: [getting_started]

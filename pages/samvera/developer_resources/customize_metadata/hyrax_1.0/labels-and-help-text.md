@@ -1,13 +1,11 @@
 ---
 title: "Labels and Help Text"
-a-z: ["Labels and Help Text"]
-keywords: Customize Metadata
+keywords: ["Customize", "Metadata", "Labels", "Help Text"]
 categories: How to Do All the Things
 permalink: customize-metadata-labels.html
 folder: hydra/how-to/customize_metadata/hyrax_1.0/labels-and-help-text.md
 sidebar: home_sidebar
-tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Hyku vs Hyrax?"
-a-z: ["Hyku vs Hyrax?"]
-keywords: Why use this if possible ... and Sufia and Curation Concerns and Avalon
+keywords: ["Hyku", "Hyrax", "Compare"]
 permalink: hyku-vs-hyrax.html
 folder: samvera/getting_started/hyku-vs-hyrax.md
 tags: [getting_started]

@@ -1,13 +1,11 @@
 ---
 title: "Prereq: Generating a Work Type"
-a-z: ["Prereq: Generating a Work Type"]
-keywords: Customize Metadata
+keywords: ["Customize", "Metadata", "Work Types"]
 categories: How to Do All the Things
 permalink: customize-metadata-generate-work-type.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/generate-work-type.md
 sidebar: home_sidebar
-tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 

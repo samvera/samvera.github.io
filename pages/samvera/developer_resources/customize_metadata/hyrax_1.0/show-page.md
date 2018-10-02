@@ -1,13 +1,11 @@
 ---
 title: "Modifying the Show Page"
-a-z: ["Modifying the Show Page"]
-keywords: Customize Metadata
+keywords: ["Customize", "Metadata", "Show Page", "Works"]
 categories: How to Do All the Things
 permalink: customize-metadata-show-page.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/show-page.md
 sidebar: home_sidebar
-tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 

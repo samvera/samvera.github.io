@@ -1,9 +1,7 @@
 ---
 title: Touring the design patterns in Hyrax
-a-z: [Touring the design patterns in Hyrax]
-keywords: Design Patterns
+keywords: ["Design Patterns"]
 last_updated: April 16, 2017
-tags: [getting_started]
 sidebar: samvera_sidebar
 permalink: /design_patterns.html
 folder: samvera

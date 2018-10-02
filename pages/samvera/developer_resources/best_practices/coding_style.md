@@ -3,9 +3,7 @@ title: "Coding Style with RuboCop"
 permalink: best-practices-coding-styles.html
 folder: samvera/how-to/best_practices/coding_styles.md
 sidebar: home_sidebar
-a-z: ['Coding Styles', 'Rubocop']
-keywords: Best Practices
-tags: [development_resources]
+keywords: ['Coding Styles', 'Rubocop', 'Best Practices']
 categories: How to Do All the Things
 ---
 

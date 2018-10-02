@@ -1,12 +1,11 @@
 ---
 title: "What Happens When I Deposit Something? (2.0)"
-keywords: Characterization, Derivatives, File Attachments
+keywords: [ "Characterization", "Derivatives", "File Attachments", "Deposit",
+            "Save Work", "Actor Stack" ]
 categories: How to Do All the Things
 permalink: what-happens-deposit-2.0.html
 folder: samvera/how-to/what_happens_when/hyrax_2.0/what-happens-deposit.md
 sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['Deposit Work Process (2.0)', 'Save Work (2.0)', 'Actor Stack for Work (2.0)']
 version:
   id: 'hyrax_2.0-stable'
   versions:  

@@ -3,10 +3,8 @@ title: Formalities
 permalink: formalities.html
 folder: samvera/getting_started/
 sidebar: samvera_sidebar
-a-z: ["Formalities", "CLA", "License Agreements"]
-keywords: contributor license agreements, github
+keywords: ["Formalities", "CLA", "License Agreements", "Contributor License Agreement"]
 categories: New Start Here
-tags: [getting_started]
 last_updated: March 30, 2017
 ---
 # Formalities

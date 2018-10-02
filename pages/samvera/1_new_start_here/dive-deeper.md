@@ -1,9 +1,7 @@
 ---
 title: Dive Deeper into Hyrax
-a-z: [Dive Deeper into Hyrax]
-keywords: up-and-running
+keywords: ["Dive Deeper", "Hyrax"]
 last_updated: April 16, 2017
-tags: [getting_started]
 sidebar: samvera_sidebar
 permalink: /dive-deeper.html
 folder: samvera

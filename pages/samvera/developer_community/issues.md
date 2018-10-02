@@ -1,9 +1,7 @@
 ---
 title: Issues
-a-z: [Issues]
-keywords: issues, submitting, pull requests,
+keywords: [ "Issues", "Pull Request", "PR" ]
 last_updated: March 30, 2017
-tags: [community]
 summary: "Issues"
 sidebar: samvera_sidebar
 permalink: issues.html

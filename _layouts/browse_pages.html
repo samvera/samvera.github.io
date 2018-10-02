@@ -1,0 +1,59 @@
+---
+layout: page
+---
+<!-- <link rel="stylesheet" href="{{ "/css/browse_pages.css" | prepend: site.baseurl | prepend: site.url }}"> -->
+<link rel="stylesheet" href="/css/browse_pages.css">
+
+<div id="page_lists">
+  <h1>Browse pages by:
+    <span class="select_page_list">
+      <button class="select_page_list active" value="title">Title</button>
+      <button class="select_page_list" value="keyword">Keyword</button>
+    </span>
+  </h1>
+
+  <dl class="page_list by_title" data-pages_listed_by="title">
+    {% for page_info in page.page_info_by_title %}
+      <dt><a class="page_title" href="{{ page_info.link }}">{{ page_info.title }}</a></dt>
+    {% endfor %}
+  </dl>
+
+  <dl class="page_list by_keyword" style="display: none;" data-pages_listed_by="keyword">
+    {% for keyword_and_page_info in page.page_info_by_keyword %}
+      <div class="keyword_group">
+        <dt class="keyword">{{ keyword_and_page_info.keyword }}</dt>
+        <dd>
+          <ul>
+            {% for page_info in keyword_and_page_info.pages %}
+              <li>
+                <a class="page_title" href="{{ page_info.link }}">{{ page_info.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </div>
+    {% endfor %}
+  </ul>
+</div>
+
+<script>
+$('document').ready(function() {
+  $('button.select_page_list').click(function(e) {
+    // Remove the 'active' class for all buttons, before adding it back to the
+    // one that was just clicked
+    $('button.select_page_list').each(function(i) {
+      $(this).removeClass('active')
+    });
+    $button = $(e.target)
+    $button.addClass('active')
+    $('.page_list').each(function (index) {
+      $page_list = $(this)
+      if ( $button.val() == $page_list.data('pages_listed_by') ) {
+        $page_list.show()
+      } else {
+        $page_list.hide()
+      }
+    })
+  });
+});
+</script>

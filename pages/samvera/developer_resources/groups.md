@@ -1,12 +1,10 @@
 ---
 title: "Creating User Groups"
-a-z: ["Default User Setup"]
-keywords: Roles, Groups
+keywords: ["Roles", "Groups", "User Groups"]
 categories: How to Do All the Things - Glossary
 permalink: groups.html
 folder: samvera/how-to/
 sidebar: home_sidebar
-tags: [development_resources]
 toc: false
 ---
 

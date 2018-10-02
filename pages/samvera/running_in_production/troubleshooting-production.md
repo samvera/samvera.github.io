@@ -1,21 +1,19 @@
 ---
 title: "Troubleshooting Production"
-a-z: ["Troubleshooting Production"]
-keywords: debugging
+keywords: ["debugging", "troubleshooting", "production"]
 categories: Production
 permalink: troubleshooting-production.html
 folder: samvera/production/
 sidebar: home_sidebar
-tags: [production]
 ---
 
 # Known gotchas
 
 ## displaying default admin set raises exception
 Hyrax creates a default admin set that has a slash in its id ("admin_set/default").
-This means that unless your webserver is configured to allow encoded slashes, 
+This means that unless your webserver is configured to allow encoded slashes,
 features that refer to the default admin set in the url will raise an exception.
-If you are using passenger on Ubuntu, you can fix this by adding this line to 
+If you are using passenger on Ubuntu, you can fix this by adding this line to
 `/etc/apache2/conf-enabled/passenger.conf`:
 ```
   PassengerAllowEncodedSlashes on
@@ -24,7 +22,7 @@ The actual syntax might vary depending on your webserver configuration.
 
 ## 'Failed to upgrade to WebSocket' ERROR for Hyrax notifications
 
-It's a known issue that Hyrax notifications don't work with Apache and Passenger. 
+It's a known issue that Hyrax notifications don't work with Apache and Passenger.
 
 An alternative approach is to use puma and have Apache reverse proxy to the puma port. In this configuration, you may find that notifications still don't work, with `ERROR: Failed to upgrade to WebSocket` repeatedly appearing in the logs.
 
@@ -37,7 +35,7 @@ Please note that this configuration MAY also work with Passenger, but has not be
   ServerName localhost
   DocumentRoot /var/lib/hyku/public
   ProxyPreserveHost On
-  
+
   # Needed for RIIIF image server
   AllowEncodedSlashes NoDecode
 

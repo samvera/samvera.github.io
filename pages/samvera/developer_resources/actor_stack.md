@@ -1,12 +1,10 @@
 ---
 title: "Working with the Actor Stack"
-a-z: ["Actor Stack, Middleware"]
-keywords: Actor Stack, Middleware
+keywords: ["Actor Stack", "Middleware"]
 categories: How to Do All the Things
 permalink: actor_stack.html
 folder: samvera/actor_stack.md
 sidebar: home_sidebar
-tags: [development_resources]
 toc: false
 ---
 

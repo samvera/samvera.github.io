@@ -1,6 +1,6 @@
 ---
 title: Deprecation
-a-z: ['Core Components Deprecation', 'Gem Maintenance', 'Deprecation']
+keywords: ['Deprecation', 'Gem Maintenance']
 last_updated: February 26, 2018
 tags: [labs, community, development, maintenance, deprecation]
 sidebar: samvera_sidebar

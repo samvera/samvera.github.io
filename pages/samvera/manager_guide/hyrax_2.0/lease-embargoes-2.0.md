@@ -3,9 +3,7 @@ title: "Managing Leases and Embargoes (2.0)"
 permalink: lease-embargoes-2.0.html
 folder: samvera/manager_guide/lease-embargoes-2.0.md
 sidebar: home_sidebar
-a-z: ['Leases for Managers (2.0)', 'Embargoes for Managers (2.0)']
-keywords: Embargoes, Leases
-tags: [user_resources]
+keywords: ["Embargoes", "Leases"]
 categories: Managing Leases and Embargoes
 version:
   id: 'hyrax_2.0-stable'

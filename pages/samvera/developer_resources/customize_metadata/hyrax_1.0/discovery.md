@@ -1,13 +1,11 @@
 ---
 title: "Configuring Discovery"
-a-z: ["Configuring Discovery"]
-keywords: Customize Metadata
+keywords: ["Customize", "Metadata", "Configuration", "Discovery"]
 categories: How to Do All the Things
 permalink: customize-metadata-discovery.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/discovery.md
 sidebar: home_sidebar
-tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 

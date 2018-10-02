@@ -1,6 +1,5 @@
 ---
 title: Communication
-a-z: [Communication]
 last_updated: March 30, 2017
 tags: [getting_started, community]
 sidebar: samvera_sidebar

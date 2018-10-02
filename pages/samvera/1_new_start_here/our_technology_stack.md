@@ -1,7 +1,7 @@
 ---
 title: "Our Technology Stack"
-a-z: ["Our Technology Stack"]
-keywords: front end, Blacklight, Rails, Hydra Editor and other gems, search/Solr, persistance/Fedora
+keywords: [ "Front End", "Blacklight", "Rails", "Hydra Editor", "Search",
+            "Persistence", "Solr", "Fedora" ]
 permalink: our_technology_stack.html
 folder: pages/samvera/1_new_start_here/our_technology_stack.md
 tags: [getting_started]
