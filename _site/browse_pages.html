@@ -1,0 +1,3631 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title> | Samvera Community Knowledge Base</title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<link rel="stylesheet" href="/css/lavish-bootstrap.css">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+</head>
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="http://localhost:4000/index.html">&nbsp;<span class="projectTitle"> Samvera Community Knowledge Base</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li class="active"><a href="/browse_pages.html">Browse Pages</a></li>
+                
+                
+                
+                <li><a href="/get-help.html">Contact</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+              <li>
+                <div id="search-demo-container">
+  <form role="search" method="get" action="http://localhost:4000/search/" id="search-input">
+      <input id="searchString" name="searchString"
+       placeholder="Search..." type="text">
+    <button type="submit" title="Search for keywords"><i class="fa fa-search" name="googleSearchName"value="Search"></i></button>
+  </form>
+</div>
+
+              </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+    <!-- Content Row -->
+    <div class="row">
+
+      <!-- Sidebar Column -->
+      <div class="col-md-3">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle"> </li>
+    
+    
+    
+    <li>
+        <a href="#">New? Start Here</a>
+        <ul>
+            
+            
+            
+            <li><a href="http://localhost:4000/introduction.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/formalities.html">Formalities</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/getting_started.html">Up and Running</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/our_technology_stack.html">Our Technology Stack</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/get-help.html">How to Ask for Help</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/other-getting-started.html">Other Helpful Getting Started Docs</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/deeper_samvera_index.html">Dive Deeper Into Samvera (Slideshow)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/touring_samvera_index.html">Samvera Design Patterns (Slideshow)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/hyku-vs-hyrax.html">Hyku vs Hyrax</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/blacklight-plugins.html">Other Blacklight Plugins</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/training.html">Training</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Developer Community</a>
+        <ul>
+            
+            
+            
+            <li><a href="http://localhost:4000/communication.html">Communication</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Releases</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/release_process.html">Release Process</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/release_testing.html">Release Testing</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Labs, Core, and Deprecation</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/samvera_labs.html">Samvera Labs</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/core_components.html">Core Components</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/deprecation.html">Deprecation</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/how-to-pr.html">How to Submit Pull Requests</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Feature Guide</a>
+        <ul>
+            
+            
+            
+            <li><a href="http://localhost:4000/configuration-2.1.html">Configuring the Repository</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/create-works-2.1.html">Creating a Work</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/edit-works-2.1.html">Editing a Work</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/collections-2.1.html">Collections</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/batch-ops-2.1.html">Batch Operations</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/lease-embargoes-2.1.html">Leases and Embargoes</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Development Resources</a>
+        <ul>
+            
+            
+            
+            <li><a href="http://localhost:4000/toggle-features.html">Enabling Features</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Design Patterns</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/patterns-overview.html">Overview</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/patterns-presenters.html">Presenters</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/best-practices-coding-styles.html">Coding Style with RuboCop</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">What happens when...</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/what-happens-deposit-1.0.html">I Deposit Something (1.0)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/what-happens-deposit-2.0.html">I Deposit Something (2.0)</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Admin How to - Create User Groups</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/groups.html">Default Setup</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/admin-users.html">Database-backed Setup</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/actor_stack.html">Working with the Actor Stack</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Collections and Admin Sets</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/collection-overview.html">Overview</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/collection-types.html">Collection Types</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/admin-sets-as-collections-faq.html">Admin Sets as Collections FAQ</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/admin-set-participants.html">Admin Set Participants</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/collection-type-participants.html">Collection Type Participants</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/collection-sharing.html">Collection Sharing</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/collection-nesting-faq.html">Collection Nesting FAQ</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/collection-discovery-faq.html">Collection Discovery FAQ</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/collection-metadata-faq.html">Collection Metadata FAQ</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/nested-indexing.html">Collection Indexing</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">How Do I Customize Metadata?</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-generate-work-type.html">Prereq: Generating a Work Type</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-controlled-vocabulary.html">Prereq: Defining a Controlled Vocabulary</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/metadata_application_profile.html">Metadata Application Profile</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-labels.html">Labels and Help Text</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-controller.html">Understanding the Controller</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-model.html">Defining Metadata in the Model</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-edit-form.html">Modifying the Edit Form</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-show-page.html">Modifying the Show Page</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-discovery.html">Configuring Discovery</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://localhost:4000/customize-metadata-other-customizations.html">Other Metadata Customizations</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/building-searches.html">How Do I Build Searches?</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/access-controls.html">Access Controls and Visibility</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/email_notifications.html">Email Notifications</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/troubleshooting_riiif.html">RIIIF</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/external_binaries.html">External Binaries</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/how-to-disable-notifications.html">How Do I Disable Hyrax 1 User Notifications?</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/workflow_and_mediated_deposit.html">Workflow and Mediated Deposit</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Running in Production</a>
+        <ul>
+            
+            
+            
+            <li><a href="http://localhost:4000/service-stack.html">Samvera Services Stack</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/campus-auth-integrating.html">Campus Authentication with Shibboleth</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="http://localhost:4000/troubleshooting-production.html">Troubleshooting Production</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+    <li>
+      <a href="http://localhost:4000/glossary-2.1.html">Glossary</a>
+    </li>
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+      </div>
+
+      <!-- Content Column -->
+      <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main"></h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+  <!-- <link rel="stylesheet" href="http://localhost:4000/css/browse_pages.css"> -->
+<link rel="stylesheet" href="/css/browse_pages.css">
+
+<div id="page_lists">
+  <h1>Browse pages by:
+    <span class="select_page_list">
+      <button class="select_page_list active" value="title">Title</button>
+      <button class="select_page_list" value="keyword">Keyword</button>
+    </span>
+  </h1>
+
+  <dl class="page_list by_title" data-pages_listed_by="title">
+    
+      <dt><a class="page_title" href="index.html">A Guide For The Samvera Community</a></dt>
+    
+      <dt><a class="page_title" href="admin-sets-as-collections-faq.html">Admin Sets as Collections FAQ</a></dt>
+    
+      <dt><a class="page_title" href="admin-sets-2.0.html">Administrative Sets</a></dt>
+    
+      <dt><a class="page_title" href="batch-ops-2.1.html">Batch Operations</a></dt>
+    
+      <dt><a class="page_title" href="code.html">Code Guidelines</a></dt>
+    
+      <dt><a class="page_title" href="review.html">Code Review</a></dt>
+    
+      <dt><a class="page_title" href="best-practices-coding-styles.html">Coding Style with RuboCop</a></dt>
+    
+      <dt><a class="page_title" href="collection-discovery-faq.html">Collection Discovery FAQ</a></dt>
+    
+      <dt><a class="page_title" href="collection-metadata-faq.html">Collection Metadata FAQ</a></dt>
+    
+      <dt><a class="page_title" href="collection-nesting-faq.html">Collection Nesting FAQ</a></dt>
+    
+      <dt><a class="page_title" href="collections-2.0.html">Collections (2.0)</a></dt>
+    
+      <dt><a class="page_title" href="collections-2.1.html">Collections (2.1)</a></dt>
+    
+      <dt><a class="page_title" href="communication.html">Communication</a></dt>
+    
+      <dt><a class="page_title" href="how-to-disable-notifications.html">Configure Hyrax 1 User Polling Notifications</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-discovery.html">Configuring Discovery</a></dt>
+    
+      <dt><a class="page_title" href="configuration-2.0.html">Configuring the Repository (2.0)</a></dt>
+    
+      <dt><a class="page_title" href="configuration-2.1.html">Configuring the Repository (2.1)</a></dt>
+    
+      <dt><a class="page_title" href="core_components.html">Core Samvera Code Repository</a></dt>
+    
+      <dt><a class="page_title" href="create-works-1.0.html">Creating a Work (1.0)</a></dt>
+    
+      <dt><a class="page_title" href="create-works-2.0.html">Creating a Work (2.0)</a></dt>
+    
+      <dt><a class="page_title" href="create-works-2.1.html">Creating a Work (2.1)</a></dt>
+    
+      <dt><a class="page_title" href="groups.html">Creating User Groups</a></dt>
+    
+      <dt><a class="page_title" href="admin-users.html">Creating User Groups with a Database</a></dt>
+    
+      <dt><a class="page_title" href="batch-works-1.0.html">Creating Works in a Batch (1.0)</a></dt>
+    
+      <dt><a class="page_title" href="batch-works-2.0.html">Creating Works in a Batch (2.0)</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-model.html">Defining Metadata in the Model</a></dt>
+    
+      <dt><a class="page_title" href="deprecation.html">Deprecation</a></dt>
+    
+      <dt><a class="page_title" href="tag_community.html">Development Community</a></dt>
+    
+      <dt><a class="page_title" href="tag_development_resources.html">Development Resources</a></dt>
+    
+      <dt><a class="page_title" href="/dive-deeper.html">Dive Deeper into Hyrax</a></dt>
+    
+      <dt><a class="page_title" href="/deeper_samvera_index.html">Dive Deeper into Samvera</a></dt>
+    
+      <dt><a class="page_title" href="/training/deeper_into_samvera/">Dive Deeper into Samvera</a></dt>
+    
+      <dt><a class="page_title" href="edit-works-1.0.html">Editing a Work (1.0)</a></dt>
+    
+      <dt><a class="page_title" href="edit-works-2.0.html">Editing a Work (2.0)</a></dt>
+    
+      <dt><a class="page_title" href="edit-works-2.1.html">Editing a Work (2.1)</a></dt>
+    
+      <dt><a class="page_title" href="email_notifications.html">Email Notifications</a></dt>
+    
+      <dt><a class="page_title" href="external_binaries.html">External Binaries</a></dt>
+    
+      <dt><a class="page_title" href="formalities.html">Formalities</a></dt>
+    
+      <dt><a class="page_title" href="getting_started.html">Get up and running</a></dt>
+    
+      <dt><a class="page_title" href="tag_getting_started.html">Getting started pages</a></dt>
+    
+      <dt><a class="page_title" href="glossary-2.1.html">Glossary of Terms</a></dt>
+    
+      <dt><a class="page_title" href="building-searches.html">How Do I Build Searches?</a></dt>
+    
+      <dt><a class="page_title" href="get-help.html">How to Ask for Help</a></dt>
+    
+      <dt><a class="page_title" href="release_testing.html">How to Coordinate Testing for a Release</a></dt>
+    
+      <dt><a class="page_title" href="toggle-features.html">How to Enable and Disable Features</a></dt>
+    
+      <dt><a class="page_title" href="how-to-pr.html">How to Submit Pull Requests</a></dt>
+    
+      <dt><a class="page_title" href="hyku-vs-hyrax.html">Hyku vs Hyrax?</a></dt>
+    
+      <dt><a class="page_title" href="release_process.html">Hyrax Testing and Release Process</a></dt>
+    
+      <dt><a class="page_title" href="campus-auth-integrating.html">Integrating with Campus Authorization</a></dt>
+    
+      <dt><a class="page_title" href="introduction.html">Introduction</a></dt>
+    
+      <dt><a class="page_title" href="issues.html">Issues</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-labels.html">Labels and Help Text</a></dt>
+    
+      <dt><a class="page_title" href="lease-embargoes-2.0.html">Managing Leases and Embargoes (2.0)</a></dt>
+    
+      <dt><a class="page_title" href="lease-embargoes-2.1.html">Managing Leases and Embargoes (2.1)</a></dt>
+    
+      <dt><a class="page_title" href="metadata_application_profile.html">Metadata Application Profile</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-edit-form.html">Modifying the Edit Form</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-show-page.html">Modifying the Show Page</a></dt>
+    
+      <dt><a class="page_title" href="nested-indexing.html">Nested Indexing</a></dt>
+    
+      <dt><a class="page_title" href="blacklight-plugins.html">Other Blacklight Plugins</a></dt>
+    
+      <dt><a class="page_title" href="/other-getting-started.html">Other Helpful Getting Started Docs</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-other-customizations.html">Other Metadata Customizations</a></dt>
+    
+      <dt><a class="page_title" href="our_technology_stack.html">Our Technology Stack</a></dt>
+    
+      <dt><a class="page_title" href="patterns-overview.html">Overview of Design Pattern</a></dt>
+    
+      <dt><a class="page_title" href="pr-checklist.html">PR Checklist</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-controlled-vocabulary.html">Prereq: Defining a Controlled Vocabulary</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-generate-work-type.html">Prereq: Generating a Work Type</a></dt>
+    
+      <dt><a class="page_title" href="patterns-presenters.html">Presenters Design Pattern</a></dt>
+    
+      <dt><a class="page_title" href="tag_running_in_production.html">Running in Production</a></dt>
+    
+      <dt><a class="page_title" href="samvera_labs.html">Samvera Labs</a></dt>
+    
+      <dt><a class="page_title" href="/js/mydoc_scroll.html">Scroll layout</a></dt>
+    
+      <dt><a class="page_title" href="/search.json">search</a></dt>
+    
+      <dt><a class="page_title" href="/search/">Search</a></dt>
+    
+      <dt><a class="page_title" href="service-stack.html">Solr Fedora Rails Redis</a></dt>
+    
+      <dt><a class="page_title" href="tag_special_layouts.html">Special layout pages</a></dt>
+    
+      <dt><a class="page_title" href="/design_patterns.html">Touring the design patterns in Hyrax</a></dt>
+    
+      <dt><a class="page_title" href="/touring_samvera_index.html">Touring the design patterns in Samvera</a></dt>
+    
+      <dt><a class="page_title" href="/training/touring_design_patterns/">Touring the design patterns in Samvera</a></dt>
+    
+      <dt><a class="page_title" href="training.html">Training</a></dt>
+    
+      <dt><a class="page_title" href="troubleshooting-production.html">Troubleshooting Production</a></dt>
+    
+      <dt><a class="page_title" href="troubleshooting_riiif.html">Troubleshooting RIIIF</a></dt>
+    
+      <dt><a class="page_title" href="collection-sharing.html">Understanding Collection Sharing</a></dt>
+    
+      <dt><a class="page_title" href="collection-type-participants.html">Understanding Collection Type Participants</a></dt>
+    
+      <dt><a class="page_title" href="collection-overview.html">Understanding Collections in Hyrax</a></dt>
+    
+      <dt><a class="page_title" href="collection-types.html">Understanding Collections Types</a></dt>
+    
+      <dt><a class="page_title" href="admin-set-participants.html">Understanding Participants for Admin Sets</a></dt>
+    
+      <dt><a class="page_title" href="customize-metadata-controller.html">Understanding the Controller</a></dt>
+    
+      <dt><a class="page_title" href="access-controls.html">Visibility and Access Controls</a></dt>
+    
+      <dt><a class="page_title" href="what-happens-deposit-1.0.html">What Happens When I Deposit Something? (1.0)</a></dt>
+    
+      <dt><a class="page_title" href="what-happens-deposit-2.0.html">What Happens When I Deposit Something? (2.0)</a></dt>
+    
+      <dt><a class="page_title" href="workflow_and_mediated_deposit.html">Workflow and Mediated Deposit in Hyrax 1.x</a></dt>
+    
+      <dt><a class="page_title" href="actor_stack.html">Working with the Actor Stack</a></dt>
+    
+  </dl>
+
+  <dl class="page_list by_keyword" style="display: none;" data-pages_listed_by="keyword">
+    
+      <div class="keyword_group">
+        <dt class="keyword">Access Controls</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="access-controls.html">Visibility and Access Controls</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Actor Stack</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="actor_stack.html">Working with the Actor Stack</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-2.0.html">What Happens When I Deposit Something? (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-1.0.html">What Happens When I Deposit Something? (1.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Admin</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collections-2.0.html">Collections (2.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Admin Set</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-set-participants.html">Understanding Participants for Admin Sets</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="admin-sets-as-collections-faq.html">Admin Sets as Collections FAQ</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Admin Sets</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-2.0.html">Administrative Sets</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Administrative Sets</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-2.0.html">Administrative Sets</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Advanced Samvera Camp</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="training.html">Training</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">authorization</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="campus-auth-integrating.html">Integrating with Campus Authorization</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Authorization</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="access-controls.html">Visibility and Access Controls</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Batch</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="batch-ops-2.1.html">Batch Operations</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-1.0.html">Creating Works in a Batch (1.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Batch Operations</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="batch-ops-2.1.html">Batch Operations</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Batch Upload</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="batch-works-1.0.html">Creating Works in a Batch (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-2.0.html">Creating Works in a Batch (2.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Best Practices</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-2.0.html">Administrative Sets</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-ops-2.1.html">Batch Operations</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-1.0.html">Creating Works in a Batch (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-2.0.html">Creating Works in a Batch (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="best-practices-coding-styles.html">Coding Style with RuboCop</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.0.html">Collections (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.1.html">Collections (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.0.html">Configuring the Repository (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.1.html">Configuring the Repository (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-1.0.html">Creating a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.0.html">Creating a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.1.html">Creating a Work (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-1.0.html">Editing a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.0.html">Editing a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.1.html">Editing a Work (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Blacklight</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="building-searches.html">How Do I Build Searches?</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="our_technology_stack.html">Our Technology Stack</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Blacklight CQL</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="blacklight-plugins.html">Other Blacklight Plugins</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Blacklight Gallery Views</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="blacklight-plugins.html">Other Blacklight Plugins</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Blacklight Maps</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="blacklight-plugins.html">Other Blacklight Plugins</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Blacklight Marc</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="blacklight-plugins.html">Other Blacklight Plugins</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Blacklight OAI Provider</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="blacklight-plugins.html">Other Blacklight Plugins</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">campus</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="campus-auth-integrating.html">Integrating with Campus Authorization</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Characterization</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-2.0.html">What Happens When I Deposit Something? (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-1.0.html">What Happens When I Deposit Something? (1.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">CLA</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="formalities.html">Formalities</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Code</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="code.html">Code Guidelines</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Code Review</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="review.html">Code Review</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Coding Styles</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="best-practices-coding-styles.html">Coding Style with RuboCop</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Collection</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-as-collections-faq.html">Admin Sets as Collections FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-sharing.html">Understanding Collection Sharing</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.0.html">Collections (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.1.html">Collections (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-discovery-faq.html">Collection Discovery FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-metadata-faq.html">Collection Metadata FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="nested-indexing.html">Nested Indexing</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-nesting-faq.html">Collection Nesting FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-overview.html">Understanding Collections in Hyrax</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Collection Type</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collection-type-participants.html">Understanding Collection Type Participants</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Collection Types</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collection-types.html">Understanding Collections Types</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Collections</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-set-participants.html">Understanding Participants for Admin Sets</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-type-participants.html">Understanding Collection Type Participants</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-types.html">Understanding Collections Types</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Community</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="core_components.html">Core Samvera Code Repository</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="get-help.html">How to Ask for Help</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="how-to-pr.html">How to Submit Pull Requests</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="index.html">A Guide For The Samvera Community</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="release_testing.html">How to Coordinate Testing for a Release</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="review.html">Code Review</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Compare</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="hyku-vs-hyrax.html">Hyku vs Hyrax?</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Components</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="core_components.html">Core Samvera Code Repository</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Configuration</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="configuration-2.0.html">Configuring the Repository (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.1.html">Configuring the Repository (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-discovery.html">Configuring Discovery</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="how-to-disable-notifications.html">Configure Hyrax 1 User Polling Notifications</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="toggle-features.html">How to Enable and Disable Features</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Contact</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="get-help.html">How to Ask for Help</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Contributor License Agreement</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="formalities.html">Formalities</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Controlled Vocabularies</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-controlled-vocabulary.html">Prereq: Defining a Controlled Vocabulary</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Controlled Vocabulary</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-controlled-vocabulary.html">Prereq: Defining a Controlled Vocabulary</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Controller</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-controller.html">Understanding the Controller</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Creating Works</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-2.0.html">Administrative Sets</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-ops-2.1.html">Batch Operations</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-1.0.html">Creating Works in a Batch (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-2.0.html">Creating Works in a Batch (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.1.html">Collections (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.1.html">Configuring the Repository (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-1.0.html">Creating a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.0.html">Creating a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.1.html">Creating a Work (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.1.html">Editing a Work (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Customize</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-controlled-vocabulary.html">Prereq: Defining a Controlled Vocabulary</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-controller.html">Understanding the Controller</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-discovery.html">Configuring Discovery</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-edit-form.html">Modifying the Edit Form</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-generate-work-type.html">Prereq: Generating a Work Type</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-labels.html">Labels and Help Text</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-model.html">Defining Metadata in the Model</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-other-customizations.html">Other Metadata Customizations</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-show-page.html">Modifying the Show Page</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Database</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-users.html">Creating User Groups with a Database</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">debugging</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="troubleshooting-production.html">Troubleshooting Production</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Deep Dive</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/training/deeper_into_samvera/">Dive Deeper into Samvera</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Deposit</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-2.0.html">What Happens When I Deposit Something? (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-1.0.html">What Happens When I Deposit Something? (1.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Deprecation</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="deprecation.html">Deprecation</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Derivatives</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-2.0.html">What Happens When I Deposit Something? (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-1.0.html">What Happens When I Deposit Something? (1.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Design Patterns</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/design_patterns.html">Touring the design patterns in Hyrax</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="/training/touring_design_patterns/">Touring the design patterns in Samvera</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="patterns-overview.html">Overview of Design Pattern</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="patterns-presenters.html">Presenters Design Pattern</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="/touring_samvera_index.html">Touring the design patterns in Samvera</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Development</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="core_components.html">Core Samvera Code Repository</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="samvera_labs.html">Samvera Labs</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Discoverability</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collection-discovery-faq.html">Collection Discovery FAQ</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Discoverable</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collection-discovery-faq.html">Collection Discovery FAQ</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Discovery</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collection-discovery-faq.html">Collection Discovery FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-discovery.html">Configuring Discovery</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Display</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-other-customizations.html">Other Metadata Customizations</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Dive</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/deeper_samvera_index.html">Dive Deeper into Samvera</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Dive Deeper</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/dive-deeper.html">Dive Deeper into Hyrax</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Edit Forms</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-edit-form.html">Modifying the Edit Form</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Editing Works</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="edit-works-1.0.html">Editing a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.0.html">Editing a Work (2.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Email</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="email_notifications.html">Email Notifications</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Embargoes</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="lease-embargoes-2.0.html">Managing Leases and Embargoes (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="lease-embargoes-2.1.html">Managing Leases and Embargoes (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Enable / Disable Features</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="toggle-features.html">How to Enable and Disable Features</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">external</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="external_binaries.html">External Binaries</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">FAQ</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-as-collections-faq.html">Admin Sets as Collections FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-discovery-faq.html">Collection Discovery FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-metadata-faq.html">Collection Metadata FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-nesting-faq.html">Collection Nesting FAQ</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Feature Flipper</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="toggle-features.html">How to Enable and Disable Features</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Fedora</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="our_technology_stack.html">Our Technology Stack</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="service-stack.html">Solr Fedora Rails Redis</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">File Attachments</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-2.0.html">What Happens When I Deposit Something? (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-1.0.html">What Happens When I Deposit Something? (1.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">FlipFlop</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="toggle-features.html">How to Enable and Disable Features</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Formalities</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="formalities.html">Formalities</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Forms</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-edit-form.html">Modifying the Edit Form</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Front End</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="our_technology_stack.html">Our Technology Stack</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Gem Maintenance</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="deprecation.html">Deprecation</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">GeoBlacklight</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="blacklight-plugins.html">Other Blacklight Plugins</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Getting started</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="getting_started.html">Get up and running</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Github</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="how-to-pr.html">How to Submit Pull Requests</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Glossary</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="glossary-2.1.html">Glossary of Terms</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Groups</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-users.html">Creating User Groups with a Database</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="groups.html">Creating User Groups</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Guide</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="index.html">A Guide For The Samvera Community</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Guidelines</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="code.html">Code Guidelines</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Help</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="get-help.html">How to Ask for Help</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Help Text</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-labels.html">Labels and Help Text</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Hydra Editor</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="our_technology_stack.html">Our Technology Stack</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Hydra Works</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/other-getting-started.html">Other Helpful Getting Started Docs</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Hyku</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="hyku-vs-hyrax.html">Hyku vs Hyrax?</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Hyrax</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/dive-deeper.html">Dive Deeper into Hyrax</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="hyku-vs-hyrax.html">Hyku vs Hyrax?</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-overview.html">Understanding Collections in Hyrax</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Hyrax Administration</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-2.0.html">Administrative Sets</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-ops-2.1.html">Batch Operations</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-1.0.html">Creating Works in a Batch (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-2.0.html">Creating Works in a Batch (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.0.html">Collections (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.1.html">Collections (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.0.html">Configuring the Repository (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.1.html">Configuring the Repository (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-1.0.html">Creating a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.0.html">Creating a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.1.html">Creating a Work (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-1.0.html">Editing a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.0.html">Editing a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.1.html">Editing a Work (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">IIIF</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="troubleshooting_riiif.html">Troubleshooting RIIIF</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Indexing</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="nested-indexing.html">Nested Indexing</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">integration</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="campus-auth-integrating.html">Integrating with Campus Authorization</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">introduction</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="introduction.html">Introduction</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Issues</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="issues.html">Issues</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">json, scrolling, scrollto, jquery plugin</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/js/mydoc_scroll.html">Scroll layout</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Labels</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-labels.html">Labels and Help Text</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Labs</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="core_components.html">Core Samvera Code Repository</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="samvera_labs.html">Samvera Labs</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Leases</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="lease-embargoes-2.0.html">Managing Leases and Embargoes (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="lease-embargoes-2.1.html">Managing Leases and Embargoes (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">License Agreements</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="formalities.html">Formalities</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Maintenance</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="core_components.html">Core Samvera Code Repository</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="core_components.html">Core Samvera Code Repository</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Managers</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-2.0.html">Administrative Sets</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-ops-2.1.html">Batch Operations</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-1.0.html">Creating Works in a Batch (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-2.0.html">Creating Works in a Batch (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.0.html">Collections (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.1.html">Collections (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.0.html">Configuring the Repository (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.1.html">Configuring the Repository (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-1.0.html">Creating a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.0.html">Creating a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.1.html">Creating a Work (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-1.0.html">Editing a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.0.html">Editing a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.1.html">Editing a Work (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Managing Collections</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collections-2.1.html">Collections (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Mediated Deposit</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="workflow_and_mediated_deposit.html">Workflow and Mediated Deposit in Hyrax 1.x</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">metadata</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="metadata_application_profile.html">Metadata Application Profile</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Metadata</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-controlled-vocabulary.html">Prereq: Defining a Controlled Vocabulary</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-controller.html">Understanding the Controller</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-discovery.html">Configuring Discovery</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-edit-form.html">Modifying the Edit Form</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-generate-work-type.html">Prereq: Generating a Work Type</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-labels.html">Labels and Help Text</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-metadata-faq.html">Collection Metadata FAQ</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-model.html">Defining Metadata in the Model</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-other-customizations.html">Other Metadata Customizations</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-show-page.html">Modifying the Show Page</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Middleware</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="actor_stack.html">Working with the Actor Stack</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Model</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-model.html">Defining Metadata in the Model</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Multi-value</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-other-customizations.html">Other Metadata Customizations</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Nested</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="nested-indexing.html">Nested Indexing</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Nesting</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="nested-indexing.html">Nested Indexing</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-nesting-faq.html">Collection Nesting FAQ</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Notifications</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="email_notifications.html">Email Notifications</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="how-to-disable-notifications.html">Configure Hyrax 1 User Polling Notifications</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Nurax</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="release_process.html">Hyrax Testing and Release Process</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">orientation</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="introduction.html">Introduction</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Participant</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collection-sharing.html">Understanding Collection Sharing</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-type-participants.html">Understanding Collection Type Participants</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Participants</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-set-participants.html">Understanding Participants for Admin Sets</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Persistence</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="our_technology_stack.html">Our Technology Stack</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Polling</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="how-to-disable-notifications.html">Configure Hyrax 1 User Polling Notifications</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">PR</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="how-to-pr.html">How to Submit Pull Requests</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="issues.html">Issues</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="pr-checklist.html">PR Checklist</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">PR Checklist</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="pr-checklist.html">PR Checklist</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">PR Creation</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="pr-checklist.html">PR Checklist</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">PR Review</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="pr-checklist.html">PR Checklist</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Presenters</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="patterns-presenters.html">Presenters Design Pattern</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">production</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="troubleshooting-production.html">Troubleshooting Production</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Properties</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-other-customizations.html">Other Metadata Customizations</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Pull Request</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="how-to-pr.html">How to Submit Pull Requests</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="issues.html">Issues</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="pr-checklist.html">PR Checklist</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Pull Request Checklist</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="pr-checklist.html">PR Checklist</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Rails</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="our_technology_stack.html">Our Technology Stack</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Redis</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="service-stack.html">Solr Fedora Rails Redis</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Release</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="release_process.html">Hyrax Testing and Release Process</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="release_testing.html">How to Coordinate Testing for a Release</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Repository Manager</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="lease-embargoes-2.1.html">Managing Leases and Embargoes (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Repository Managers</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-sets-2.0.html">Administrative Sets</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-ops-2.1.html">Batch Operations</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-1.0.html">Creating Works in a Batch (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="batch-works-2.0.html">Creating Works in a Batch (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.0.html">Collections (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collections-2.1.html">Collections (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.0.html">Configuring the Repository (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.1.html">Configuring the Repository (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-1.0.html">Creating a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.0.html">Creating a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="create-works-2.1.html">Creating a Work (2.1)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-1.0.html">Editing a Work (1.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.0.html">Editing a Work (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="edit-works-2.1.html">Editing a Work (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Review</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="review.html">Code Review</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">RIIIF</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="troubleshooting_riiif.html">Troubleshooting RIIIF</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Roles</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-users.html">Creating User Groups with a Database</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="groups.html">Creating User Groups</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Rubocop</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="best-practices-coding-styles.html">Coding Style with RuboCop</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">samvera</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="introduction.html">Introduction</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Samvera</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/deeper_samvera_index.html">Dive Deeper into Samvera</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="how-to-pr.html">How to Submit Pull Requests</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Samvera Camp</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="training.html">Training</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Samvera Labs</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="samvera_labs.html">Samvera Labs</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Save Work</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-2.0.html">What Happens When I Deposit Something? (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="what-happens-deposit-1.0.html">What Happens When I Deposit Something? (1.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Search</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="our_technology_stack.html">Our Technology Stack</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Search Builders</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="building-searches.html">How Do I Build Searches?</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Services</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="service-stack.html">Solr Fedora Rails Redis</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Settings</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="configuration-2.0.html">Configuring the Repository (2.0)</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="configuration-2.1.html">Configuring the Repository (2.1)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Setup</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="admin-users.html">Creating User Groups with a Database</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Sharing</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="collection-sharing.html">Understanding Collection Sharing</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="collection-type-participants.html">Understanding Collection Type Participants</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Show Page</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-show-page.html">Modifying the Show Page</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Single-value</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-other-customizations.html">Other Metadata Customizations</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Sipity</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="workflow_and_mediated_deposit.html">Workflow and Mediated Deposit in Hyrax 1.x</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Solr</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="building-searches.html">How Do I Build Searches?</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="our_technology_stack.html">Our Technology Stack</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="service-stack.html">Solr Fedora Rails Redis</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Spotlight</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="blacklight-plugins.html">Other Blacklight Plugins</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Starting a Project</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="samvera_labs.html">Samvera Labs</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Style</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="code.html">Code Guidelines</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Terms</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="glossary-2.1.html">Glossary of Terms</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Testing</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="release_process.html">Hyrax Testing and Release Process</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="release_testing.html">How to Coordinate Testing for a Release</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Training</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/training/deeper_into_samvera/">Dive Deeper into Samvera</a>
+              </li>
+            
+              <li>
+                <a class="page_title" href="training.html">Training</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">troubleshooting</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="troubleshooting-production.html">Troubleshooting Production</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Troubleshooting</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="troubleshooting_riiif.html">Troubleshooting RIIIF</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Tutorials</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="/other-getting-started.html">Other Helpful Getting Started Docs</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Upload</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="batch-works-2.0.html">Creating Works in a Batch (2.0)</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">User Groups</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="groups.html">Creating User Groups</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Visibility</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="access-controls.html">Visibility and Access Controls</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Work Type</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-model.html">Defining Metadata in the Model</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Work Types</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-generate-work-type.html">Prereq: Generating a Work Type</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Workflow</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="workflow_and_mediated_deposit.html">Workflow and Mediated Deposit in Hyrax 1.x</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+      <div class="keyword_group">
+        <dt class="keyword">Works</dt>
+        <dd>
+          <ul>
+            
+              <li>
+                <a class="page_title" href="customize-metadata-show-page.html">Modifying the Show Page</a>
+              </li>
+            
+          </ul>
+        </dd>
+      </div>
+    
+  </ul>
+</div>
+
+<script>
+$('document').ready(function() {
+  $('button.select_page_list').click(function(e) {
+    // Remove the 'active' class for all buttons, before adding it back to the
+    // one that was just clicked
+    $('button.select_page_list').each(function(i) {
+      $(this).removeClass('active')
+    });
+    $button = $(e.target)
+    $button.addClass('active')
+    $('.page_list').each(function (index) {
+      $page_list = $(this)
+      if ( $button.val() == $page_list.data('pages_listed_by') ) {
+        $page_list.show()
+      } else {
+        $page_list.hide()
+      }
+    })
+  });
+});
+</script>
+
+
+    <div class="tags">
+        
+    </div>
+
+    
+
+</div>
+
+
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2018 Samvera Community. All rights reserved. <br />
+ Site last generated: Oct 2, 2018 <br />
+<a href="http://samvera.org/">samvera.org</a><br />
+<a href="https://wiki.duraspace.org/display/samvera/Samvera">Community Wiki</a></a><br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+      </div>
+
+    <!-- /.row -->
+    </div>
+  <!-- /.container -->
+  </div>
+</body>
+
+
+
+</html>
