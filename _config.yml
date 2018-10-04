@@ -137,3 +137,5 @@ theme: jekyll-theme-minimal
 url: http://samvera.github.io
 gems:
   - jekyll-sitemap
+
+keep_files: [browse_pages.html]
