@@ -1,5 +1,4 @@
-_site/*
-!_site/browse_pages.html
+_site
 .sass-cache/
 generated/
 .DS_Store

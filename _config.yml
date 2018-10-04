@@ -138,4 +138,4 @@ url: http://samvera.github.io
 gems:
   - jekyll-sitemap
 
-keep_files: [browse_pages.html]
+github_pages_save_generated_files: ['browse_pages.html']
