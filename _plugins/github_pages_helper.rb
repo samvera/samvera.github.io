@@ -5,25 +5,25 @@ class GithubPagesHelper
   end
 
   def save_generated_files
-    site.config.fetch('github_pages_save_generated_files', []).each do |relative_path|
-      if changed?(relative_path)
+    if env_var_set?
+      site.config.fetch('github_pages_save_generated_files', []).each do |relative_path|
         FileUtils.cp generated_file_path(relative_path), source_file_path(relative_path)
+      end
+    end
+  end
+
+  def remove_generated_files
+    if env_var_set?
+      site.config.fetch('github_pages_save_generated_files', []).each do |relative_path|
+        FileUtils.rm source_file_path(relative_path) if File.exists? source_file_path(relative_path)
       end
     end
   end
 
   private
 
-    def changed?(relative_path)
-      generated_file_contents(relative_path) != source_file_contents(relative_path)
-    end
-
-    def generated_file_contents(relative_path)
-      File.read generated_file_path(relative_path) if File.exists? generated_file_path(relative_path)
-    end
-
-    def source_file_contents(relative_path)
-      File.read source_file_path(relative_path) if File.exists? source_file_path(relative_path)
+    def env_var_set?
+      ['1', 'true'].include? ENV.fetch('SAVE_GENERATED_FILES', '').to_s.downcase
     end
 
     def generated_file_path(relative_path)
@@ -33,6 +33,10 @@ class GithubPagesHelper
     def source_file_path(relative_path)
       File.join(site.source, relative_path)
     end
+end
+
+Jekyll::Hooks.register :site, :after_init do |site, payload|
+  GithubPagesHelper.new(site).remove_generated_files
 end
 
 Jekyll::Hooks.register :site, :post_write do |site|
