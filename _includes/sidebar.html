@@ -49,7 +49,11 @@
            </p>
            -->
     </li>
+    {% if page.url == "/glossary-2.1.html" %}
+    <li class="active">
+    {% else %}
     <li>
+    {% endif %}
       <a href="{{ site.url }}/glossary-2.1.html">Glossary</a>
     </li>
 </ul>
