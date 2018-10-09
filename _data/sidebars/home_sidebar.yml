@@ -92,6 +92,10 @@ entries:
       url: /how-to-pr.html
       output: web, pdf
 
+    - title: Help Improve This Site
+      url: /pages/help_improve_this_site.html
+      output: web, pdf
+
   - title: Feature Guide
     output: web
     folderitems:
