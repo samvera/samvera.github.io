@@ -1,4 +1,8 @@
 module Jekyll
+  # Responsible for generating the /browse_pages page, grabbing all of
+  # the pages and parsing them for title and keywords
+  #
+  # The #generate method is called as part of the Jekyll generate process
   class BrowsePagesGenerator < Generator
     safe true
 
