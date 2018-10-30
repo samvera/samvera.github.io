@@ -116,20 +116,6 @@ url: http://samvera.github.io
 production_url : https://samvera.github.io
 BASE_PATH : https://samvera.github.io
 
-a_z:
-    index_title: false
-    filename: a-z.md
-    alternate_dest: '/generated'
-    exclude:
-      - '/atom.xml'
-      - '/feed.xml'
-      - '/feed/index.xml'
-      - '/generated/a-z.md'
-      - '/pages/a-z.md'
-      - '/pages/samvera/developer_resources/whwi-overview.md'
-    front_matter_ext:
-      - 'sidebar: home_sidebar'
-
 theme: jekyll-theme-minimal
 
 # needed for sitemap.xml file only
