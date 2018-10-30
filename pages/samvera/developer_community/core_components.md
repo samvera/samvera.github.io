@@ -204,18 +204,6 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Build Status](https://travis-ci.org/samvera/hydra-role-management.svg?branch=master)](https://travis-ci.org/samvera/hydra-role-management)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-role-management/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-role-management?branch=master)
 
-### hydra
-
-**Code:** [hydra](https://github.com/samvera/hydra)
-
-**Product Owner:** [Mark Bussey](https://github.com/mark-dce)    
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/hydra.svg)](https://badge.fury.io/rb/hydra)
- no CI
- no Coverage info
-
 ### hydra-works
 
 **Code:** [hydra-works](https://github.com/samvera/hydra-works)
