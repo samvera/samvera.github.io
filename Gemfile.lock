@@ -36,7 +36,7 @@ GEM
     execjs (2.7.0)
     faraday (0.12.1)
       multipart-post (>= 1.2, < 3)
-    ffi (1.9.18)
+    ffi (1.9.25)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     github-pages (142)
@@ -235,7 +235,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
-    rubyzip (1.2.1)
+    rubyzip (1.2.2)
     safe_yaml (1.0.4)
     sass (3.4.25)
     sawyer (0.8.1)
@@ -262,6 +262,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   chromedriver-helper
+  ffi (>= 1.9.24)
   github-pages
   html-proofer
   launchy
@@ -270,7 +271,8 @@ DEPENDENCIES
   rack-jekyll
   rake
   rspec
+  rubyzip (>= 1.2.2)
   selenium-webdriver
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
