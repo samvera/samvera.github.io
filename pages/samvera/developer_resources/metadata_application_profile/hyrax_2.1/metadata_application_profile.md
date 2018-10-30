@@ -43,9 +43,9 @@ Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metada
 
 | Property (Field) | Predicate | Rdf-vocab Predicate | Recommendation | Expected Value (Data Type) | Expected Value (Controlled Source) | Multiple | Obligation |
 | ---------------- | --------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| creator          | dce:creator | ::RDF::Vocab::DC11.creator | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {0,n} |
-| keyword          | dce:relation | ::RDF::Vocab::DC11.relation | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {0,n} |
-| rights_statement | edm:rights | ::RDF::Vocab::EDM.rights | MUST (Required) | xsd:anyUri | Rights statements menu as YAML | **FALSE** | {0,n} |
+| creator          | dce:creator | ::RDF::Vocab::DC11.creator | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {1,n} |
+| keyword          | dce:relation | ::RDF::Vocab::DC11.relation | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {1,n} |
+| rights_statement | edm:rights | ::RDF::Vocab::EDM.rights | MUST (Required) | xsd:anyUri | Rights statements menu as YAML | **FALSE** | {1} |
 | contributor      | dce:contributor | ::RDF::Vocab::DC11.contributor | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
 | description      | dce:description | ::RDF::Vocab::DC11.description | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
 | license          | dct:rights | ::RDF::Vocab::DC.rights | MAY | xsd:anyURI | License menu as YAML | TRUE | {0,n} |
