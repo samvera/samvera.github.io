@@ -341,6 +341,11 @@ a.accordion-toggle, a.accordion-collapsed {
     margin:0px;
 }
 
+ul.navbar-nav li a {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 .nav {
     /* padding: 4px;*/
     padding:0px;
