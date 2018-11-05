@@ -29,7 +29,7 @@ In the edit view for a work, you can change the description, add files, edit rel
 
 If you edit the sharing or visibility of the work, you can either opt to have all files in the work inherit these permissions, or you can opt to have the individual files retain their permissions so that they can be edited manually.
 
-Set child/parent work: In the “Relationships” tab, you can now add a child or parent work to the work - this is only available after the work is deposited, not at the time of deposit. A child work added to this work will appear as an Item in this work. A parent work will add this work to its Items. To add a child or parent work, enter the Title of the work under “Child Work” or “Parent Work” and click “Add”. Click “Save” to apply your changes.
+Add Child Works: In the “Relationships” tab, you can now add a child to the work - this is only available after the work is deposited, not at the time of deposit. A child work added to this work will appear as an Item in this work. To add a child, enter the Title of the work under “Child Work” and click “Add”. Click “Save” to apply your changes.
 
 ## Editing a work - file manager
 To change the order of files in a work or set a representative file, you have to use the File Manager. In the Browse view of a work, click “File Manager”.
