@@ -1300,3 +1300,10 @@ a.atoz_term:hover {
 ul.info {
   margin: 20px 0px;
 }
+
+.navbar-brand a[href^="http://"]:after, a[href^="https://"]:after {
+    content: none;
+}
+.navbar-brand img {
+    height: 1.5em;
+}
