@@ -250,7 +250,6 @@ ul#results-container a:hover {
     box-sizing: border-box;
     float: right;
     margin-top:0.5rem;
-    background: #347DBE;
 }
 
 /* end search */
@@ -440,9 +439,9 @@ ul#mysidebar {
 }
 /* end sidebar */
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+/* .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     border-radius:5px;
-}
+} */
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
     border-radius: 5px;
@@ -1304,6 +1303,40 @@ ul.info {
 .navbar-brand a[href^="http://"]:after, a[href^="https://"]:after {
     content: none;
 }
-.navbar-brand img {
+/* .navbar-brand img {
     height: 1.5em;
+} */
+
+.navbar-inverse {
+  background-color: white;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #347DBE;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: white;
+  color: #347DBE;
+}
+
+.navbar-brand img {
+  height: 67px;
+}
+
+.nav.navbar-nav.navbar-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+body {
+  /* This is to accomodate the taller Samvera logo in the header */
+  padding-top: 85px;
 }
