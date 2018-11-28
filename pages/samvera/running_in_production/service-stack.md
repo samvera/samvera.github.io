@@ -1,6 +1,7 @@
 ---
 title: "Solr Fedora Rails Redis"
 keywords: ["Solr", "Fedora", "Redis", "Services"]
+tags: [production]
 categories: Production
 permalink: service-stack.html
 folder: samvera/production/
