@@ -78,6 +78,13 @@ You can highlight content with the following...
 
 NOTE: You cannot use markdown in these boxes.  For example, if you want a link, you will have to use an html anchor tag.
 
+### Browse pages
+
+This site incudes a generated browse page. When changes are committed, the page needs to be regenerated and included with the committed changes. To build and save the revised `browse_pages.html` file:
+  * Run command `SAVE_GENERATED_FILES=1 bundle exec jekyll build`
+
+Be sure to include the generated file in your pull request.
+
 ### Versioning-information
 
 The documentation on this site covers multiple gems and multiple versions of those gems.  The recommended best practice is to specify the gem's name and version, including a link to the applicable branch in github.  If there is documentation for multiple versions of the gem, then a selection list allows users to switch between versions.
