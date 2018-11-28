@@ -8,7 +8,7 @@
   text-align: center;
   display: inline-block;
   margin: 4px 2px;
-  border-radius: 11px;
+  border-radius: 6px;
 }
 
 #page_lists {
@@ -31,7 +31,7 @@
     }
 
     &.active {
-      background-color: #ddd;
+      background-color: #bbb5b3;
     }
   }
 
@@ -43,7 +43,7 @@
   .keyword {
     @extend %pill;
     font-weight: bold;
-    background-color: #ddd;
+    background-color: #bbb5b3;
   }
 
   .keyword_group {
