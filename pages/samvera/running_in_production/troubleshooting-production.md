@@ -1,6 +1,7 @@
 ---
 title: "Troubleshooting Production"
 keywords: ["debugging", "troubleshooting", "production"]
+tags: [production]
 categories: Production
 permalink: troubleshooting-production.html
 folder: samvera/production/

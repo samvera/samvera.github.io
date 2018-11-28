@@ -1,6 +1,7 @@
 ---
 title: "Integrating with Campus Authorization"
 keywords: ["integration", "campus", "authorization"]
+tags: [production]
 categories: Production
 permalink: campus-auth-integrating.html
 folder: samvera/production/
