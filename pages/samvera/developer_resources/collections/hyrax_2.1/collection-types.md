@@ -1,13 +1,12 @@
 ---
 title: "Understanding Collections Types"
-keywords: ["Collections", "Collection Types"]
-categories: How to Do All the Things
 permalink: collection-types.html
-folder: samvera/how-to/collections/hyrax_2.1/collection-types.md
-sidebar: home_sidebar
+keywords: ["Collection", "Collection Type"]
+last_updated:
 version:
   id: hyrax_2.1-stable
   label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'
+sidebar: home_sidebar
 ---
 
 ## Understanding Collection Types

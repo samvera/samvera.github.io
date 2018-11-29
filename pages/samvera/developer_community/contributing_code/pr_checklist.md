@@ -1,10 +1,9 @@
 ---
 title: "PR Checklist"
-keywords: ["Pull Request", "PR", "PR Checklist", "Pull Request Checklist", "PR Review", "PR Creation" ]
-categories: Procedures
 permalink: pr-checklist.html
-folder: samvera/procedures/pr_checklist.md
-sidebar: home_sidebar
+keywords: ["Pull Request", "PR", "Checklist", "Review", "Issues" ]
+last_updated:
+folder: samvera/developer_community/contributing_code/
 ---
 
 Checklist to use when creating and reviewing a PR.

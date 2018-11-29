@@ -9,9 +9,7 @@ keywords:
   - "Repository Managers"
   - "Hyrax Administration"
   - "Creating Works"
-  - "Administrative Sets"
-  - "Admin Sets"
-categories: How to use the Administration panel in hyrax
+  - "Admin Set"
 version:
   id: 'hyrax_2.0-stable'
   versions:  

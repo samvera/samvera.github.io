@@ -1,17 +1,17 @@
 ---
 title: Deprecation
-keywords: ['Deprecation', 'Gem Maintenance']
-last_updated: February 26, 2018
-tags: [labs, community, development, maintenance, deprecation]
-sidebar: samvera_sidebar
 permalink: deprecation.html
-folder: samvera
+keywords: ['Deprecation', 'Gems', 'Maintenance']
+last_updated: February 26, 2018
+tags: [community]
+summary: "Our process for the deprecation of legacy code"
+folder: samvera/developer_community/git_structure/
+sidebar: samvera_sidebar
 toc: true
 ---
 # Deprecation
 
-The [`samvera-deprecated` github organization](https://github.com/samvera-deprecated) is the place for older gems, apps, and
-experiments that we no longer recommend deploying in production but that may be
+The [`samvera-deprecated` github organization](https://github.com/samvera-deprecated) is the place for older gems, apps, and experiments that we no longer recommend deploying in production but that may be
 useful for sample code or reference. This also might be where legacy code that
 some organizations still use is kept, if it no longer meets criteria for community
 maintenance or is no longer recommended for new adoption.

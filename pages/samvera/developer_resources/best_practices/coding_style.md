@@ -1,10 +1,9 @@
 ---
 title: "Coding Style with RuboCop"
 permalink: best-practices-coding-styles.html
-folder: samvera/how-to/best_practices/coding_styles.md
+keywords: ['Code', 'Rubocop', 'Best Practices']
+last_updated:
 sidebar: home_sidebar
-keywords: ['Coding Styles', 'Rubocop', 'Best Practices']
-categories: How to Do All the Things
 ---
 
 # Importance of Consistent Coding Styles

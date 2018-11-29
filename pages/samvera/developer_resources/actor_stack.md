@@ -1,9 +1,8 @@
 ---
 title: "Working with the Actor Stack"
-keywords: ["Actor Stack", "Middleware"]
-categories: How to Do All the Things
 permalink: actor_stack.html
-folder: samvera/actor_stack.md
+keywords: ["Actor Stack", "Middleware", "Design Patterns"]
+last_updated:
 sidebar: home_sidebar
 toc: false
 ---

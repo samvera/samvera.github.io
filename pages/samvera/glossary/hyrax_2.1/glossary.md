@@ -1,14 +1,12 @@
 ---
 title: "Glossary of Terms"
-keywords: ["Glossary", "Terms"]
-categories: Glossary
 permalink: glossary-2.1.html
-folder: samvera/glossary.md
-sidebar: home_sidebar
-toc: false
+keywords: ["Glossary", "Terms"]
 version:
   id: hyrax_2.1-stable
   label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'
+sidebar: home_sidebar
+toc: false
 ---
 
 ## Administrative Set

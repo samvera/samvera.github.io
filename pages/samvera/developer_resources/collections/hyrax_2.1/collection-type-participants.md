@@ -1,12 +1,11 @@
 ---
 title: "Understanding Collection Type Participants"
-keywords: ["Participant", "Collection Type", "Sharing", "Collections"]
-categories: How to Do All the Things
 permalink: collection-type-participants.html
-folder: samvera/how-to/collections/hyrax_2.1/collection-type-participants.md
-sidebar: home_sidebar
+keywords: ["Participant", "Collection Type", "Sharing", "Collection"]
+last_updated:
 version:
   id: hyrax_2.1-stable
+sidebar: home_sidebar
 ---
 
 NOTE: Only admins can create, edit, and delete collection types.  Participants set for a collection type effect how users can interact with collections of this type.

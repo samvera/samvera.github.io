@@ -1,8 +1,12 @@
 ---
-title: "How to Ask for Help"
-keywords: ["Contact", "Community", "Help"]
+title: "Help Resources"
 permalink: get-help.html
-toc: false
+last_updated:
+keywords: ["Contact", "Community", "Help"]
+toc: true
+tags: [getting_started]
+summary: "Where to ask for help"
+folder: samvera/getting_started/
 ---
 
 ### Chat Channels, Email Lists, Telephone Calls, Wiki Pages

@@ -1,11 +1,11 @@
 ---
 title: Formalities
 permalink: formalities.html
-folder: samvera/getting_started/
-sidebar: samvera_sidebar
-keywords: ["Formalities", "CLA", "License Agreements", "Contributor License Agreement"]
-categories: New Start Here
 last_updated: March 30, 2017
+keywords: ["Formalities", "CLA", "License Agreements", "Contributor License Agreement"]
+tags: getting_started
+summary: "What is a CLA and why do I need one? How do I join the community as a contributor?"
+folder: samvera/getting_started/
 ---
 # Formalities
 

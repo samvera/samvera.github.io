@@ -1,11 +1,9 @@
 ---
 title: "Integrating with Campus Authorization"
-keywords: ["integration", "campus", "authorization"]
-tags: [production]
-categories: Production
 permalink: campus-auth-integrating.html
-folder: samvera/production/
-sidebar: home_sidebar
+keywords: ["Integration", "Shibboleth", "Authorization"]
+tags: production
+summary: "An example of integrating with Shibboleth"
 toc: false
 ---
 

@@ -1,11 +1,10 @@
 ---
-title: Introduction
-keywords: ["samvera", "orientation", "introduction"]
-last_updated: March 30, 2017
-summary: "Introduction: What is Samvera?"
-sidebar: samvera_sidebar
+title: Introduction to Samvera
 permalink: introduction.html
-folder: samvera
+last_updated: March 30, 2017
+keywords: ["Samvera", "Orientation", "Introduction"]
+sidebar: home_sidebar
+folder: samvera/getting_started/
 ---
 
 # Orientation: What is Samvera?

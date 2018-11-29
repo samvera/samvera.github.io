@@ -1,10 +1,9 @@
 ---
 title: "Understanding Participants for Admin Sets"
-categories: How to Do All the Things - Admin Sets
 permalink: admin-set-participants.html
-folder: samvera/how-to/
 sidebar: home_sidebar
-keywords: ["Admin Set", "Participants", "Collections"]
+keywords: ["Admin Set", "Participant", "Collection"]
+last_updated:
 version:
   id: hyrax_2.1-stable
   label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'

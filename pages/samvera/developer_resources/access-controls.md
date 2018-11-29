@@ -1,11 +1,11 @@
 ---
 title: "Visibility and Access Controls"
-keywords: ["Visibility", "Access Controls", "Authorization"]
-categories: How to Do All the Things
 permalink: access-controls.html
-folder: samvera/how-to/access-controls.md
-sidebar: home_sidebar
+keywords: ["Visibility", "Access Controls", "Authorization"]
+last_updated:
 tags: [development_resources]
+summary: 'An overview of how Samvera applications authorize users to see content and perform actions'
+sidebar: home_sidebar
 ---
 ### Quickstart
 Samvera uses [cancancan](https://github.com/CanCanCommunity/cancancan#1-define-abilities) to do authorization of many actions.

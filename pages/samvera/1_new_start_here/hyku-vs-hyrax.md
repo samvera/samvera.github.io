@@ -1,15 +1,16 @@
 ---
 title: "Hyku vs Hyrax?"
-keywords: ["Hyku", "Hyrax", "Compare"]
 permalink: hyku-vs-hyrax.html
-folder: samvera/getting_started/hyku-vs-hyrax.md
+sidebar: home_sidebar
+last_updated:
+keywords: ["Hyku", "Hyrax"]
+toc: false
 tags: [getting_started]
+summary: "What is the difference between Hyku and Hyrax? Which should I use?"
+folder: samvera/getting_started/
 ---
 
-
-{% include links.html %}
-
-# Where do I start Hyku or Hyrax?
+## Where do I start Hyku or Hyrax?
 
 Hyrax is a [Rails Engine](http://guides.rubyonrails.org/engines.html) that you can use to generate an application that you will deploy at your institution.  This application is the place for you to customize layouts, styles and behaviors so that it suits your purposes.  You will have to make some implementation decisions on your own (e.g. database, authentication, workers).  It should be easy to upgrade your application from one Hyrax version to the next.
 

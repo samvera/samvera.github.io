@@ -1,11 +1,11 @@
 ---
 title: Code Review
-keywords: ["Code Review", "Review", "Community"]
-last_updated: March 30, 2017
-tags: [getting_started, community]
-sidebar: samvera_sidebar
 permalink: review.html
-folder: samvera
+keywords: ["Code", "Review", "PR", "Pull Request"]
+last_updated: March 30, 2017
+folder: samvera/developer_community/contributing_code/
+tags: [getting_started, community]
+summary: "Procedure for adding code to a community repository"
 ---
 # Code review
 

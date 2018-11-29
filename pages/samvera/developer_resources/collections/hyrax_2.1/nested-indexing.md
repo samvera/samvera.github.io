@@ -1,12 +1,11 @@
 ---
 title: "Nested Indexing"
-keywords: ["Indexing", "Collection", "Nested", "Nesting"]
-categories: How to Do All the Things
 permalink: nested-indexing.html
-folder: samvera/how-to/collections/hyrax_2.1/nested-indexing.md
-sidebar: home_sidebar
+keywords: ["Indexing", "Collection", "Nested", "Nesting"]
+last_updated:
 version:
   id: hyrax_2.1-stable
+sidebar: home_sidebar
 ---
 
 ### Collections In Fedora and Solr

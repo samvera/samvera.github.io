@@ -1,12 +1,11 @@
 ---
 title: "Modifying the Edit Form"
-keywords: ["Customize", "Metadata", "Edit Forms", "Forms"]
-categories: How to Do All the Things
 permalink: customize-metadata-edit-form.html
-folder: samvera/how-to/customize_metadata/hyrax_1.0/edit-form.md
-sidebar: home_sidebar
+keywords: ["Customize", "Metadata", "Tutorial", "Forms"]
+last_updated:
 version:
   id: 'hyrax_1.0-stable'
+sidebar: home_sidebar
 ---
 
 <ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>

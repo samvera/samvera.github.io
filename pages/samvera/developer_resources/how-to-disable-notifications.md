@@ -1,17 +1,17 @@
 ---
 title: "Configure Hyrax 1 User Polling Notifications"
-keywords: ["Notifications", "Polling", "Configuration"]
-categories: How to Do All the Things
 permalink: how-to-disable-notifications.html
-folder: samvera/how-to/
-sidebar: home_sidebar
-tags: [development_resources]
-toc: false
+keywords: ["Notifications", "Configuration"]
+last_updated:
 version:
   id: 'hyrax_1.0-stable'
   versions:
     - label: 'Hyrax 1.0'
       link:  'how-to-disable-notifications.html'
+tags: [development_resources]
+summary: 'Notification frequency in Hyrax 1 can be problematic, but there are options to change or disable the polling interval'
+sidebar: home_sidebar
+toc: false
 ---
 
 

@@ -1,11 +1,10 @@
 ---
 title: "Other Blacklight Plugins"
-keywords: [ "Spotlight", "Blacklight Marc", "GeoBlacklight", "Blacklight Maps",
-            "Blacklight Gallery Views", "Blacklight OAI Provider",
-            "Blacklight CQL" ]
 permalink: blacklight-plugins.html
-folder: samvera/getting_started/
+last_updated:
+keywords: [ "Spotlight", "Blacklight" ]
 toc: false
+folder: samvera/getting_started/
 ---
 
 ### Blacklight Plugins

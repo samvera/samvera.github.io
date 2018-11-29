@@ -1,9 +1,7 @@
 ---
 title: "How Do I Build Searches?"
-keywords: ["Solr", "Blacklight", "Search Builders"]
-categories: How to Do All the Things
 permalink: building-searches.html
-folder: samvera/how-to/building-searches.md
+keywords: ["Solr", "Blacklight", "Search Builders"]
 sidebar: home_sidebar
 ---
 

@@ -4,7 +4,7 @@ permalink: collections-2.0.html
 folder: samvera/manager_guide/collections-2.0.md
 sidebar: home_sidebar
 keywords: [ "Best Practices", "Managers", "Repository Managers",
-            "Hyrax Administration", "Collection", "Admin"]
+            "Hyrax Administration", "Collection", "Admin Set"]
 categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.0-stable'

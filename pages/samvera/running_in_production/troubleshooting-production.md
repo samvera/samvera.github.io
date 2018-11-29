@@ -1,10 +1,10 @@
 ---
 title: "Troubleshooting Production"
-keywords: ["debugging", "troubleshooting", "production"]
-tags: [production]
-categories: Production
 permalink: troubleshooting-production.html
-folder: samvera/production/
+keywords: ["Debugging", "Troubleshooting", "Production"]
+last_updated:
+tags: production
+summary: "Known issues regarding running in production"
 sidebar: home_sidebar
 ---
 
