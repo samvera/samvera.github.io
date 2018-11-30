@@ -1,9 +1,7 @@
 ---
 title: "Creating User Groups with a Database"
-keywords: ["Roles", "Groups", "Database", "Setup"]
-categories: How to Do All the Things - Glossary
 permalink: admin-users.html
-folder: samvera/how-to/admin-users.md
+keywords: ["Roles", "Groups", "Setup"]
 sidebar: home_sidebar
 toc: false
 ---

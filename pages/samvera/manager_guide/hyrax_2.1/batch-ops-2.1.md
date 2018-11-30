@@ -10,7 +10,7 @@ keywords:
   - "Hyrax Administration"
   - "Creating Works"
   - "Batch"
-  - "Batch Operations"
+  - "Operations"
 categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.1-stable'

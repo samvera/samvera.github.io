@@ -1,12 +1,11 @@
 ---
 title: "Understanding Collection Sharing"
-keywords: ["Participant", "Collection", "Sharing"]
-categories: How to Do All the Things
 permalink: collection-sharing.html
-folder: samvera/how-to/collections/hyrax_2.1/collection-sharing.md
-sidebar: home_sidebar
+keywords: ["Participant", "Collection", "Sharing"]
+last_updated:
 version:
   id: hyrax_2.1-stable
+sidebar: home_sidebar
 ---
 
 ## How to set participants for a collection?

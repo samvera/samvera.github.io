@@ -13,47 +13,54 @@ These are community documents, so we rely on the pull request model. If you'd li
 - make a branch for your new documentation
 - run `bundle install`
 - create/edit pages within the Samvera directory (e.g. [/pages/samvera/](https://github.com/samvera/samvera.github.io/tree/master/pages/samvera))
-- add/update [front matter](#basic-front-matter)
 - add links to the page in home_sidebar.yml
 - write content ([notes on writing content](#notes-on-writing-content))
+- add/update [front matter](#basic-front-matter), including updating the last_updated date if content changed.
 - [add versioning information](#versioning-information) for the gem version the document page describes
+- update [browse pages](#browse-pages) if necessary
 - submit a Pull Request
 
 To Test in Jekyll:
-
 * Run the jekyll server
-
-```
-bundle exec jekyll serve
-```
-
+`bundle exec jekyll serve`
 * View the documentation in a browser at http://localhost:4000
 
 ### Basic Front Matter
+The front matter on each page controls how the page is built and functions.
 
 Example front matter for page [Best Practices -> Coding Styles](https://raw.githubusercontent.com/samvera/samvera.github.io/master/pages/samvera/developer_resources/best_practices/coding_style.md)
 ```
 ---
 title: "Coding Style with RuboCop"
 permalink: best-practices-coding-styles.html
-folder: samvera/how-to/best_practices/coding_styles.md
+folder: samvera/best_practices/
 sidebar: home_sidebar
 keywords: ["Best Practices", "Coding Styles", "Rubocop"]
-categories: How to Do All the Things
+tags: [development_resources]
 version:
   id: 'hyrax_1.0-stable'
 last_updated: March 30, 2017
 ---
 ```
-where,
-* **title** [String] - _(required)__ - the title displayed on the generated html page
-* **permalink** [text] - _(required)_ - the name of the generated html file that will be part of the url accessed by users
-* **folder** [text] - _(required)_ - the location of this *.md file under the pages directory
-* **sidebar** [text] - _(required)_ - value is always `home_sidebar` at this point
-* **keywords** [Array<Strings>] - _(recommended)_ - keywords that get populated into the metadata for SEO and page browsing.
-* **categories** [text] - _(recommended)_ - represents the 4 major headings under which a page can reside
-* **version** [hash] - _(recommended)_ - specifies the gem's name and version that this documentation page describes.  See [Versioning Information](#versioning-information) for details.
-* **last_updated** [text] - (recommended) - Text version of updated date, to show in page footer.
+#### Front Matter Options
+* **title** [String] _(required)_ - The title displayed on the generated html page
+* **permalink** [text] _(required)_ - The name of the generated html file that will be part of the url accessed by users
+* **last_updated** [text] _(recommended)_ - Text version of updated date, to show in page footer.
+* **keywords** [Array<Strings>] _(recommended)_ - Used as titles in the generated `browse_pages.html` for browsing by keyword, and as keywords that get populated into the metadata for SEO
+* **sidebar** [text] _(optional)_ - Default value is `home_sidebar`, and the only option at this point
+* **version** [hash] _(optional)_ - Specifies the gem's name and version that this documentation page describes.  See [Versioning Information](#versioning-information) for details.
+* **toc** false _(optional)_ - Prevents display of formatting-based table of contents on page. Default value of true displays the table of content.
+* **tags** [Array] _(optional)_ - Automatically populate pages for each of the 4 major categories included on the main page. If you use a tag, you should also add a summary. Valid tags values:
+  * getting_started
+  * development_resources
+  * production
+  * community
+* **summary** [text] _(optional)_ - Adds formatted summary text, prefaced by a vertical bar, at the top of a page. Also used as the excerpt text on the 4 category pages linked from the main page.
+* **layout** _(optional)_ - values:
+  * page _(default value)_
+  * post - adds breadcrumbs to the top of the page linking to corresponding tags page (see valid tags front matter above)
+  * deck - display as slideshow: see [Touring the Design Patterns in Samvera](http://samvera.github.io/touring_samvera_index.html)
+* **folder** [text] _(optional)_ - The location of this `*.md` file under the pages directory. Does not appear to have any functionality.
 
 ### Notes on writing content
 
@@ -80,7 +87,9 @@ NOTE: You cannot use markdown in these boxes.  For example, if you want a link, 
 
 ### Browse pages
 
-This site incudes a generated browse page. When changes are committed, the page needs to be regenerated and included with the committed changes. To build and save the revised `browse_pages.html` file:
+This site incudes a generated browse page. Each page's frontmatter `keywords` values are used to populate the browse by keyword page. The keywords should be written as titles, in upper and lower case, as they will be directly used as text on the page.
+
+When changes are committed, the page needs to be regenerated and included with the committed changes. To build and save the revised `browse_pages.html` file:
   * Run command `SAVE_GENERATED_FILES=1 bundle exec jekyll build`
 
 Be sure to include the generated file in your pull request.

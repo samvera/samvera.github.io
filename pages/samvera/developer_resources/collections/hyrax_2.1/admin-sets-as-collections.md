@@ -1,14 +1,14 @@
 ---
 title: "Admin Sets as Collections FAQ"
-keywords: ["Admin Set", "Collection", "FAQ"]
-categories: How to Do All the Things
 permalink: admin-sets-as-collections-faq.html
-folder: samvera/how-to/collections/hyrax_2.1/admin-sets-as-collections.md
-sidebar: home_sidebar
+keywords: ["Admin Set", "Collection", "FAQ"]
+last_updated:
 tags: [development_resources]
+summary: "A comparison of the similarities and differences between Administrative Sets and Collections in Hyrax 2.1"
 version:
   id: hyrax_2.1-stable
   label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'
+sidebar: home_sidebar
 ---
 
 ### Are Admin Sets a type of collection?

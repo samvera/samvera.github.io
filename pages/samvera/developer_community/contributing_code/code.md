@@ -1,10 +1,9 @@
 ---
 title: Code Guidelines
+permalink: code.html
 keywords: ["Code", "Guidelines", "Style"]
 last_updated: March 30, 2017
-sidebar: samvera_sidebar
-permalink: code.html
-folder: samvera
+folder: samvera/developer_community/contributing_code/
 ---
 
 # Code Guidelines

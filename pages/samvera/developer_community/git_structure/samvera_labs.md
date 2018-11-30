@@ -1,10 +1,10 @@
 ---
 title: Samvera Labs
-keywords: ["Labs", "Samvera Labs", "Starting a Project", "Development"]
-last_updated: February 26, 2018
-sidebar: samvera_sidebar
 permalink: samvera_labs.html
-folder: samvera
+keywords: ["Labs", "Experiments", "Starting a Project", "Development"]
+last_updated: February 26, 2018
+folder: samvera/developer_community/git_structure/
+sidebar: samvera_sidebar
 toc: true
 ---
 # What is Samvera-Labs?

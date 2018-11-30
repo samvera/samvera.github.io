@@ -1,10 +1,12 @@
 ---
-title: "Our Technology Stack"
-keywords: [ "Front End", "Blacklight", "Rails", "Hydra Editor", "Search",
-            "Persistence", "Solr", "Fedora" ]
+title: "Technology Stack"
 permalink: our_technology_stack.html
-folder: pages/samvera/1_new_start_here/our_technology_stack.md
+keywords: [ "Hyrax", "Front End", "Blacklight", "Rails", "Hydra Editor", "Search",
+            "Persistence", "Solr", "Fedora", "Middleware", "Hydra Head", "Ldp", "Plugins" ]
+last_updated:
 tags: [getting_started]
+summary: "An introduction to the technologies used in Samvera"
+folder: samvera/getting_started/
 ---
 
 ![Architecture Diagram](https://wiki.duraspace.org/download/attachments/87460044/hydra_9_architecture_2016.png?version=1&modificationDate=1497776440777&api=v2)
@@ -64,7 +66,3 @@ A gem to create [derivatives](https://github.com/samvera/hydra-derivatives) for 
 ### file-characterization
 
 [hydra-file_characterization](https://github.com/samvera/hydra-file_characterization) uses [fits](https://github.com/harvard-lts/fits) to characterize files and extract metadata about them. It might tell you what kind of image encoding an image uses, along with it's height and width for example.
-
-
-
-{% include links.html %}

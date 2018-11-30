@@ -1,15 +1,14 @@
 ---
 title: "Metadata Application Profile"
-keywords: metadata
-categories: metadata
 permalink: metadata_application_profile.html
-folder: samvera/how-to/metadata_application_profile/hyrax_2.1/metadata_application_profile.md
-sidebar: home_sidebar
-tags: [development_resources]
-a-z: ['Metadata Application Profile']
+keywords: ['Metadata', 'Customize']
+last_updated:
 version:
   id: 'hyrax_2.1-stable'
   label: 'Hyrax v2.1'
+tags: [development_resources]
+summary: "Describes the metadata properties provided in Hyrax upon default installation, and the core properties required for Hyrax to function correctly"
+sidebar: home_sidebar
 ---
 
 <style>

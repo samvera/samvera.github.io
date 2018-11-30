@@ -1,12 +1,11 @@
 ---
 title: "Prereq: Defining a Controlled Vocabulary"
-keywords: ["Customize", "Metadata", "Controlled Vocabulary", "Controlled Vocabularies"]
-categories: How to Do All the Things
 permalink: customize-metadata-controlled-vocabulary.html
-folder: samvera/how-to/customize_metadata/hyrax_1.0/controlled-vocabulary.md
-sidebar: home_sidebar
+keywords: ["Customize", "Metadata", "Controlled Vocabulary", "Controlled Vocabularies", "Tutorial"]
+last_updated:
 version:
   id: 'hyrax_1.0-stable'
+sidebar: home_sidebar
 ---
 
 <ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>

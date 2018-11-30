@@ -1,12 +1,11 @@
 ---
 title: "Collection Discovery FAQ"
-keywords: ["Discovery", "Discoverable", "Discoverability", "Collection", "FAQ"]
-categories: How to Do All the Things
 permalink: collection-discovery-faq.html
-folder: samvera/how-to/collections/hyrax_2.1/discovery-faq.md
-sidebar: home_sidebar
+keywords: ["Discovery", "Discoverable", "Collection", "FAQ"]
+last_updated:
 version:
   id: hyrax_2.1-stable
+sidebar: home_sidebar
 ---
 
 ### What does it mean for a collection to be discoverable?

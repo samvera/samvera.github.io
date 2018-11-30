@@ -1,10 +1,12 @@
 ---
 title: "Get up and running"
-keywords: ["Getting started"]
 permalink: getting_started.html
-folder: samvera/getting_started/
+last_updated:
+keywords: ["Getting started"]
 tags: [getting_started]
+summary: "External components needed, and setup instructions to get your application running locally"
 toc: false
+folder: samvera/getting_started/
 ---
 
 ### External Components

@@ -1,10 +1,9 @@
 ---
-title: "Solr Fedora Rails Redis"
-keywords: ["Solr", "Fedora", "Redis", "Services"]
-tags: [production]
-categories: Production
+title: "The Services Stack"
 permalink: service-stack.html
-folder: samvera/production/
+keywords: ["Solr", "Fedora", "Redis", "Services"]
+tags: production
+summary: "Services used in a production setting"
 ---
 
 ## Solr
@@ -18,5 +17,3 @@ Rails is a web application Framework for Ruby.
 
 ## Redis
 Redis is a key-value store that we use to back our worker queues (using Resque or Sidekiq). Hyrax also uses Redis for user notifications.
-
-{% include links.html %}

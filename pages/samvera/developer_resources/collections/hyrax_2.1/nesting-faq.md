@@ -1,12 +1,11 @@
 ---
 title: "Collection Nesting FAQ"
-keywords: ["Nesting", "Collection", "FAQ"]
-categories: How to Do All the Things
 permalink: collection-nesting-faq.html
-folder: samvera/how-to/collections/hyrax_2.1/nesting-faq.md
-sidebar: home_sidebar
+keywords: ["Nesting", "Collection", "FAQ"]
+last_updated:
 version:
   id: hyrax_2.1-stable
+sidebar: home_sidebar
 ---
 
 ### What is collection nesting?

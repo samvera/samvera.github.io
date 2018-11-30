@@ -1,10 +1,9 @@
 ---
 title: "Overview of Design Pattern"
 permalink: patterns-overview.html
-folder: samvera/developer_resources/patterns/overview.md
-sidebar: home_sidebar
 keywords: ["Design Patterns"]
-categories: Design Patterns
+last_updated:
+sidebar: home_sidebar
 ---
 
 <ul class="info"><li><b>Best practice for classes is for each class to have a single responsibility.</b></li></ul>

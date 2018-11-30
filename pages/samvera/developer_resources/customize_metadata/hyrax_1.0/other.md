@@ -1,14 +1,12 @@
 ---
 title: "Other Metadata Customizations"
-keywords: [ "Customize", "Metadata", "Properties", "Multi-value",
-            "Single-value",
-            "Display" ]
-categories: How to Do All the Things
 permalink: customize-metadata-other-customizations.html
-folder: hydra/how-to/customize_metadata/hyrax_1.0/other.md
-sidebar: home_sidebar
+keywords: [ "Customize", "Metadata", "Properties", "Multi-value",
+            "Single-value", "Display", "Tutorial" ]
+last_updated:
 version:
   id: 'hyrax_1.0-stable'
+sidebar: home_sidebar
 ---
 
 <ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>

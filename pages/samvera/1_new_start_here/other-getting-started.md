@@ -1,10 +1,15 @@
 ---
 title: "Other Helpful Getting Started Docs"
-keywords: ["Tutorials", "Hydra Works"]
 permalink: /other-getting-started.html
-folder: samvera/getting_started/other-getting-started-docs.md
+sidebar: home_sidebar
+last_updated:
+keywords: ["Tutorials", "Hydra Works"]
+tags: [getting_started]
+summary: "Some additional helpful links for getting started in Samvera"
 toc: false
+folder: samvera/getting_started/
 ---
+
 ### The Hyrax Stack
 - [Hyrax ](https://github.com/samvera/hyrax#getting-started)
 

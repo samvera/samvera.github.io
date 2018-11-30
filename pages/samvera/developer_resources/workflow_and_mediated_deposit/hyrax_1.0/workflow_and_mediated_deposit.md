@@ -1,9 +1,8 @@
 ---
 title: "Workflow and Mediated Deposit in Hyrax 1.x"
-keywords: ["Mediated Deposit", "Workflow", "Sipity"]
-categories: Workflow
 permalink: workflow_and_mediated_deposit.html
-folder: samvera/developer_resources/workflow_and_mediated_deposit/hyrax_1.0/workflow_and_mediated_deposit.md
+keywords: ["Mediated Deposit", "Workflow", "Sipity"]
+last_updated:
 sidebar: home_sidebar
 ---
 

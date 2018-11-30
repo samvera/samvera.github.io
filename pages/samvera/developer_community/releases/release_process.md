@@ -1,13 +1,11 @@
 ---
 title: Hyrax Testing and Release Process
+permalink: release_process.html
 keywords: ['Release', 'Nurax', "Testing"]
 last_updated: February 5, 2018
-sidebar: samvera_sidebar
-permalink: release_process.html
-folder: samvera
-toc: false
+toc: true
+folder: samvera/developer_community/releases/
 ---
-<br />
 
 The [Repository Managers Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group) will work with the Hyrax PO to test and document features for Hyrax releases. For each release cycle, there will be at least one designated QA Specialist from the [Hyrax Working Group](https://wiki.duraspace.org/display/samvera/Hyrax+Working+Group) or the Repo-Managers to facilitate the process. [Instructions for conducting release testing can be found here](/release_testing.html) (in progress).
 

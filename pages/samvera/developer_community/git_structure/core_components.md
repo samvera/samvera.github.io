@@ -1,12 +1,9 @@
 ---
 title: Core Samvera Code Repository
-keywords: [ 'Components', 'Maintenance', 'Labs', 'Community', 'Development',
-            'Maintenance' ]
-last_updated: February 26, 2018
-sidebar: samvera_sidebar
 permalink: core_components.html
-folder: samvera
-toc: true
+keywords: [ 'Components', 'Labs', 'Community', 'Development', 'Maintenance' ]
+last_updated: February 26, 2018
+folder: samvera/developer_community/git_structure/
 ---
 # Samvera Code Repository
 

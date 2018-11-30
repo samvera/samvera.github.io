@@ -1,11 +1,9 @@
 ---
 title: Issues
+permalink: issues.html
 keywords: [ "Issues", "Pull Request", "PR" ]
 last_updated: March 30, 2017
-summary: "Issues"
-sidebar: samvera_sidebar
-permalink: issues.html
-folder: samvera
+folder: samvera/developer_community/contributing_code/
 ---
 
 # Issues

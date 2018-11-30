@@ -1,12 +1,11 @@
 ---
 title: "Defining Metadata in the Model"
-keywords: ["Customize", "Metadata", "Work Type", "Model"]
-categories: How to Do All the Things
 permalink: customize-metadata-model.html
-folder: samvera/how-to/customize_metadata/hyrax_1.0/model.md
-sidebar: home_sidebar
+keywords: ["Customize", "Metadata", "Work Type", "Model", "Tutorial"]
+last_updated:
 version:
   id: 'hyrax_1.0-stable'
+sidebar: home_sidebar
 ---
 
 <ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>

@@ -120,7 +120,7 @@ theme: jekyll-theme-minimal
 
 # needed for sitemap.xml file only
 url: http://samvera.github.io
-gems:
+plugins:
   - jekyll-sitemap
 
 github_pages_save_generated_files: ['browse_pages.html']

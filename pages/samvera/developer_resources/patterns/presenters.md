@@ -1,10 +1,9 @@
 ---
 title: "Presenters Design Pattern"
 permalink: patterns-presenters.html
-folder: samvera/developer_resources/patterns/presenters.md
-sidebar: home_sidebar
 keywords: ["Design Patterns", "Presenters"]
-categories: Design Patterns
+last_updated:
+sidebar: home_sidebar
 ---
 
 # Understanding the Presenters Design Pattern

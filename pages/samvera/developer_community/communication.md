@@ -1,10 +1,10 @@
 ---
 title: Communication
+permalink: communication.html
 last_updated: March 30, 2017
 tags: [getting_started, community]
-sidebar: samvera_sidebar
-permalink: communication.html
-folder: samvera
+summary: "Community Channels of Communication"
+folder: samvera/developer_community/
 ---
 # Communication
 

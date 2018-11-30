@@ -1,10 +1,8 @@
 ---
 title: "How to Submit Pull Requests"
-keywords: ["Samvera", "Community", "Pull Request", "PR", "Github"]
-categories: Community
 permalink: how-to-pr.html
-folder: samvera/community/
-sidebar: home_sidebar
+keywords: ["Samvera", "Community", "Pull Request", "PR", "Github"]
+folder: samvera/developer_community/contributing_code/
 ---
 ## How do I contribute my changes to the project?
 

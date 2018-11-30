@@ -47,10 +47,6 @@ entries:
       url: /blacklight-plugins.html
       output: web, pdf
 
-    - title: Training
-      url: /training.html
-      output: web, pdf
-
   - title: Developer Community
     output: web, pdf
     folderitems:

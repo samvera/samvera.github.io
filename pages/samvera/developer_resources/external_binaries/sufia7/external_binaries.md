@@ -1,17 +1,16 @@
 ---
 title: "External Binaries"
-keywords: external
-categories: External Binaries
 permalink: external_binaries.html
-folder: samvera/how-to/external_binaries/sufia7/external_binaries.md
-sidebar: home_sidebar
+keywords: ['External Storage', 'Binaries', 'Sufia', 'Customize']
+last_updated:
 tags: [development_resources]
-a-z: ['External Binaries']
+summary: 'A guide to some custom development in Sufia, related to storing binary content in a filesystem rather than Fedora'
 version:
   label: 'Sufia 7 (May apply to Hyrax but YMMV)'
   branch:
     label: 'Sufia 7.4.1'
     link: 'https://github.com/samvera/sufia/tree/v7.4.1'
+sidebar: home_sidebar
 ---
 
 # Storing binaries externally

@@ -1,13 +1,12 @@
 ---
 title: "Understanding Collections in Hyrax"
-keywords: ["Collection", "Hyrax"]
-categories: How to Do All the Things
 permalink: collection-overview.html
-folder: samvera/how-to/collections/hyrax_2.1/metadata-faq.md
-sidebar: home_sidebar
+keywords: ["Collection", "Hyrax"]
+last_updated:
 version:
   id: hyrax_2.1-stable
   label: 'Hyrax v2.1 (also applies to Hyrax v2.0.x)'
+sidebar: home_sidebar
 ---
 
 ## History

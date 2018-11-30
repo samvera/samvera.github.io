@@ -1,13 +1,12 @@
 ---
 title: "How to Enable and Disable Features"
-keywords: [ "Configuration", "Enable / Disable Features",
-            "FlipFlop", "Feature Flipper" ]
-categories: How to Do All the Things
 permalink: toggle-features.html
-folder: samvera/how-to/toggle-features.md
+keywords: [ "Configuration", "FlipFlop", "Feature Flipper" ]
+last_updated:
+tags: [development_resources]
+summary: 'A number of Hyrax features can be flipped on and off, either via the Administrative Dashboard or via a YAML configuration file'
 sidebar: home_sidebar
 toc: false
-tags: [development_resources]
 ---
 
 Some features in Hyrax can be flipped on and off from either the Administrative Dashboard, or via a YAML configuration file at `config/features.yml`. This .yml file doesn't ship with Hyrax but can easily be created.

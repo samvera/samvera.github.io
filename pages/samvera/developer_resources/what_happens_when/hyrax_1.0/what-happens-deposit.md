@@ -1,11 +1,8 @@
 ---
 title: "What Happens When I Deposit Something? (1.0)"
-keywords: [ "Characterization", "Derivatives", "File Attachments", "Deposit",
-            "Save Work", "Actor Stack" ]
-categories: How to Do All the Things
 permalink: what-happens-deposit-1.0.html
-folder: samvera/how-to/what_happens_when/hyrax_1.0/what-happens-deposit.md
-sidebar: home_sidebar
+keywords: [ "Characterization", "Derivatives", "File Attachments", "Deposit", "Save Work", "Actor Stack" ]
+last_updated:
 version:
   id: 'hyrax_1.0-stable'
   versions:  
@@ -14,6 +11,7 @@ version:
       selected: 'true'
     - label: 'Hyrax 2.0'
       link:  'what-happens-deposit-2.0.html'
+sidebar: home_sidebar
 ---
 
 1. I'm on the form to create a new work and I click the `Save` button.
