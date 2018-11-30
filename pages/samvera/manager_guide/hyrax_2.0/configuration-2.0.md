@@ -1,11 +1,13 @@
 ---
 title: "Configuring the Repository (2.0)"
 permalink: configuration-2.0.html
-folder: samvera/manager_guide/configuration.md
-sidebar: home_sidebar
-keywords: [ "Best Practices", "Managers", "Repository Managers",
-            "Hyrax Administration", "Settings", "Configuration" ]
-categories: Configuration
+keywords:
+  - "Best Practices"
+  - "Managers"
+  - "Repository Managers"
+  - "Hyrax Administration"
+  - "Configuration"
+  - "Settings"
 version:
   id: 'hyrax_2.0-stable'
   versions:  

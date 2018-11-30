@@ -1,16 +1,12 @@
 ---
 title: "Creating a Work (2.0)"
 permalink: create-works-2.0.html
-folder: samvera/manager_guide/create-works-2.0.md
-sidebar: home_sidebar
 keywords:
   - "Best Practices"
   - "Managers"
   - "Repository Managers"
   - "Hyrax Administration"
   - "Creating Works"
-tags: [user_resources]
-categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.0-stable'
   versions:  

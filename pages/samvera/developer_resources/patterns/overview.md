@@ -12,11 +12,11 @@ Models, Views, and Controllers (MVC) are the basic patterns provided by Rails.  
 
 | Pattern | Primary Goal |
 | ------- | ------------ |
-| Actors | Single responsibility classes that each address one action that is part of the create/update process for objects. |
+| <a href="actor_stack.html">Actors</a> | Single responsibility classes that each address one action that is part of the create/update process for objects. |
 | Forms | Isolate new/edit form views from business logic code. Primarily used to control which and how data fields are displayed in the forms. |
 | Indexers | Creates solr documents for objects. |
 | Inputs | Custom processing of input fields in forms. Used to with controlled vocabularies and when the input of one field effects options for another field. |
 | Jobs | Background jobs. |
 | <a href="patterns-presenters.html">Presenters</a> | Isolate views from business logic code related to showing information. Primarily used for constructing object show pages. |
-| Search Builders | Used to construct solr queries. |
+|  <a href="building-searches.html">Search Builders</a> | Used to construct solr queries. |
 | Services | Handle processing that falls outside of other patterns. Characterized by each service having a single responsibility. |

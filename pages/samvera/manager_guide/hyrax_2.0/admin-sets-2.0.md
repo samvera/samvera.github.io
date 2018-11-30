@@ -1,8 +1,6 @@
 ---
 title: "Administrative Sets"
 permalink: admin-sets-2.0.html
-folder: samvera/manager_guide/admin-sets-2.0.md
-sidebar: home_sidebar
 keywords:
   - "Best Practices"
   - "Managers"
