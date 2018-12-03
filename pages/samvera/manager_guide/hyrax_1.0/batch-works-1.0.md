@@ -1,8 +1,6 @@
 ---
 title: "Creating Works in a Batch (1.0)"
 permalink: batch-works-1.0.html
-folder: samvera/manager_guide/batch-works-1.0.md
-sidebar: home_sidebar
 keywords:
   - "Best Practices"
   - "Managers"
@@ -11,7 +9,6 @@ keywords:
   - "Batch"
   - "Batch Upload"
   - "Creating Works"
-categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_1.0-stable'
   versions:

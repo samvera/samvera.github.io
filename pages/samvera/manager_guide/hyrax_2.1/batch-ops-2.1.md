@@ -1,8 +1,6 @@
 ---
 title: "Batch Operations"
 permalink: batch-ops-2.1.html
-folder: samvera/manager_guide/batch-works-2.1.md
-sidebar: home_sidebar
 keywords:
   - "Best Practices"
   - "Managers"
@@ -10,8 +8,7 @@ keywords:
   - "Hyrax Administration"
   - "Creating Works"
   - "Batch"
-  - "Operations"
-categories: How to use the Administration panel in hyrax
+  - "Upload"
 version:
   id: 'hyrax_2.1-stable'
   versions:
