@@ -25,6 +25,7 @@ The Admin Set configurations are consistent with the concept of Collections allo
   * Clicking an Admin Set will go to the current UI for managing an Admin Set.
   * When creating a new collection, if the collection type is selected to be Admin Set, it will go to the existing New form for Admin Sets.  
   * When editing an Admin Set, it will go to the existing Edit for for Admin Sets.
+  * All Admin Sets will have a `Private` visibility badge. This badge does not represent the visibility settings for the works associated with the Admin Set. The visibility badge is set to `Private` because Admin Sets do not have public landing pages and cannot themselves be discoverable to end-users.
 
 ### Can the configuration for Admin Sets collection type be changed?
 
