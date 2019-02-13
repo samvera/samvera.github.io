@@ -19,6 +19,8 @@ be encouraged as much as possible. The committers may accept any any contributio
 to samvera-labs by any Samvera Licensed Contributors wishing to offer their work.
 
 ## Guidelines for Promotion to Samvera from Labs
+You may utilize this [template](https://docs.google.com/document/d/1pq80frBACLzA_q9cE1ZnMZh4WTiBv6iMUXELligbcv0/edit?usp=sharing) to display how your repository meets each criteria
+
 To move from `samvera-labs` to the core `samvera` code organization, the following
 requirements must be met:
 
