@@ -9,6 +9,13 @@ toc: false
 folder: samvera/getting_started/
 ---
 
+### Tyre Kicking with Hyrax
+
+Hyku (multi-tenant Hyrax application) and Nurax (Hyrax instance for testing) both provide Docker scripts to help you get a development instance up and runing quickly:
+
+- [Running Nurax with Docker](https://github.com/curationexperts/nurax/blob/master/DOCKER.md)
+- [Running Hyku with Docker](https://github.com/samvera/hyku#with-docker)
+
 ### External Components
 
 - [ImageMagick](http://www.imagemagick.org/) with JPEG-2000 support
