@@ -259,6 +259,20 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 [![Build Status](https://travis-ci.org/samvera/samvera.github.io.svg?branch=master)](https://travis-ci.org/samvera/samvera.github.io)
 
+### valkyrie
+
+**Code:** [valkyrie](https://github.com/samvera/valkyrie)
+
+**Product Owner:** [Carolyn Cole](https://github.com/cam156)
+
+**Technical Lead:** [Trey Pendragon](https://github.com/tpendragon)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/valkyrie.svg)](https://badge.fury.io/rb/valkyrie)
+[![Build Status](https://circleci.com/gh/samvera/valkyrie.svg?style=svg)](https://circleci.com/gh/samvera/valkyrie)
+![Coverage Status](https://img.shields.io/badge/Coverage-100-brightgreen.svg)
+
 ## Component Statistics
 
 The Component Maintenance Working Group occasionally generates reports on the
