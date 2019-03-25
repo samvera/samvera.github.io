@@ -83,4 +83,6 @@ Workflows dictate how a Work moves through review and publishing stages in your 
 - Comment only - this action should be chosen if there is a person in your workflow who needs to review, but not publish, the submission.
 - Click “Submit.”
 
+Note: Users given the "Manager" role on an admin set will always see the Review and Approval window, regardless of the status of the work. This is a feature meant to allow admin set managers to always have the option of requesting changes to a file or re-entering the workflow as needed. 
+
 Notifications help reviewers and depositors know when an action is required. Notifications can be accessed from any page by clicking the “bell” icon at the top right of the page.
