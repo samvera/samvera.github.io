@@ -21,4 +21,5 @@ group :development, :test do
   gem 'launchy'
   gem "rack-jekyll"
   gem "pry-byebug"
+  gem 'rspec_junit_formatter'
 end

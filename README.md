@@ -1,6 +1,6 @@
 # samvera.github.io
 
-[![Build Status](https://travis-ci.org/samvera/samvera.github.io.svg?branch=master)](https://travis-ci.org/samvera/samvera.github.io)
+[![CircleCI](https://circleci.com/gh/samvera/samvera.github.io.svg?style=svg)](https://circleci.com/gh/samvera/samvera.github.io)
 ## How Does This Work?
 
 We use a Jekyll-based custom theme for markup and display, and pages are published to http://samvera.github.io.
