@@ -78,7 +78,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/hydra-derivatives.svg)](https://badge.fury.io/rb/hydra-derivatives)
-[![Build Status](https://travis-ci.org/samvera/hydra-derivatives.svg?branch=master)](https://travis-ci.org/samvera/hydra-derivatives)
+[![Build Status](https://circleci.com/gh/samvera/hydra-derivatives.svg?style=svg)](https://circleci.com/gh/samvera/hydra-derivatives)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-derivatives/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-derivatives?branch=master)
 
 ### questioning_authority
@@ -90,7 +90,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/qa.svg)](https://badge.fury.io/rb/qa)
-[![Build Status](https://travis-ci.org/samvera/questioning_authority.svg?branch=master)](https://travis-ci.org/samvera/questioning_authority)
+[![Build Status](https://circleci.com/gh/samvera/questioning_authority.svg?style=svg)](https://circleci.com/gh/samvera/questioning_authority)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/questioning_authority/badge.svg?branch=master)](https://coveralls.io/github/samvera/questioning_authority?branch=master)
 
 ### hydra-head
@@ -102,8 +102,8 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/hydra-head.svg)](https://badge.fury.io/rb/hydra-head)
-[![Build Status](https://travis-ci.org/samvera/hydra-head.svg?branch=master)](https://travis-ci.org/samvera/hydra-head)
- no Coverage info
+[![Build Status](https://circleci.com/gh/samvera/hydra-head.svg?style=svg)](https://circleci.com/gh/samvera/hydra-head)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-head/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-head?branch=master)
 
 ### browse-everything
 
@@ -114,7 +114,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/browse-everything.svg)](https://badge.fury.io/rb/browse-everything)
-[![Build Status](https://travis-ci.org/samvera/browse-everything.svg?branch=master)](https://travis-ci.org/samvera/browse-everything)
+[![Build Status](https://circleci.com/gh/samvera/browse-everything.svg?style=svg)](https://circleci.com/gh/samvera/browse-everything)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/browse-everything/badge.svg?branch=master)](https://coveralls.io/github/samvera/browse-everything?branch=master)
 
 ### noid-rails
@@ -126,8 +126,8 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/noid-rails.svg)](https://badge.fury.io/rb/noid-rails)
-[![Build Status](https://travis-ci.org/samvera/noid-rails.svg?branch=master)](https://travis-ci.org/samvera/noid-rails)
- no Coverage info
+[![Build Status](https://circleci.com/gh/samvera/noid-rails.svg?style=svg)](https://circleci.com/gh/samvera/noid-rails)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/noid-rails/badge.svg?branch=master)](https://coveralls.io/github/samvera/noid-rails?branch=master)
 
 ### hydra-pcdm
 
@@ -138,7 +138,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/hydra-pcdm.svg)](https://badge.fury.io/rb/hydra-pcdm)
-[![Build Status](https://travis-ci.org/samvera/hydra-pcdm.svg?branch=master)](https://travis-ci.org/samvera/hydra-pcdm)
+[![Build Status](https://circleci.com/gh/samvera/hydra-pcdm.svg?style=svg)](https://circleci.com/gh/samvera/hydra-pcdm)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-pcdm/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-pcdm?branch=master)
 
 ### active_fedora
@@ -150,8 +150,8 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/active-fedora.svg)](https://badge.fury.io/rb/active-fedora)
-[![Build Status](https://travis-ci.org/samvera/active_fedora.svg?branch=master)](https://travis-ci.org/samvera/active_fedora)
- no Coverage info
+[![Build Status](https://circleci.com/gh/samvera/active_fedora.svg?style=svg)](https://circleci.com/gh/samvera/active_fedora)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/active_fedora/badge.svg?branch=master)](https://coveralls.io/github/samvera/active_fedora?branch=master)
 
 ### ldp
 
@@ -162,7 +162,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/ldp.svg)](https://badge.fury.io/rb/ldp)
-[![Build Status](https://travis-ci.org/samvera/ldp.svg?branch=master)](https://travis-ci.org/samvera/ldp)
+[![Build Status](https://circleci.com/gh/samvera/ldp.svg?style=svg)](https://circleci.com/gh/samvera/ldp)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/ldp/badge.svg?branch=master)](https://coveralls.io/github/samvera/ldp?branch=master)
 
 ### solrizer
@@ -174,7 +174,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/solrizer.svg)](https://badge.fury.io/rb/solrizer)
-[![Build Status](https://travis-ci.org/samvera/solrizer.svg?branch=master)](https://travis-ci.org/samvera/solrizer)
+[![Build Status](https://circleci.com/gh/samvera/solrizer.svg?style=svg)](https://circleci.com/gh/samvera/solrizer)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/solrizer/badge.svg?branch=master)](https://coveralls.io/github/samvera/solrizer?branch=master)
 
 ### rubydora
@@ -186,7 +186,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/rubydora.svg)](https://badge.fury.io/rb/rubydora)
-[![Build Status](https://travis-ci.org/samvera/rubydora.svg?branch=master)](https://travis-ci.org/samvera/rubydora)
+[![Build Status](https://circleci.com/gh/samvera/rubydora.svg?style=svg)](https://circleci.com/gh/samvera/rubydora)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/rubydora/badge.svg?branch=master)](https://coveralls.io/github/samvera/rubydora?branch=master)
 
 ### hydra-role-management
@@ -198,7 +198,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/hydra-role-management.svg)](https://badge.fury.io/rb/hydra-role-management)
-[![Build Status](https://travis-ci.org/samvera/hydra-role-management.svg?branch=master)](https://travis-ci.org/samvera/hydra-role-management)
+[![Build Status](https://circleci.com/gh/samvera/hydra-role-management.svg?style=svg)](https://circleci.com/gh/samvera/hydra-role-management)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-role-management/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-role-management?branch=master)
 
 ### hydra-works
@@ -222,8 +222,8 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/hydra-file_characterization.svg)](https://badge.fury.io/rb/hydra-file_characterization)
-[![Build Status](https://travis-ci.org/samvera/hydra-file_characterization.svg?branch=master)](https://travis-ci.org/samvera/hydra-file_characterization)
- no Coverage info
+[![Build Status](https://circleci.com/gh/samvera/hydra-works.svg?style=svg)](https://circleci.com/gh/samvera/hydra-works)
+[![Coverage Status](https://coveralls.io/repos/samvera/hydra-works/badge.svg?branch=master)](https://coveralls.io/r/samvera/hydra-works?branch=master)
 
 ### hydra-editor
 
@@ -234,8 +234,8 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/hydra-editor.svg)](https://badge.fury.io/rb/hydra-editor)
-[![Build Status](https://travis-ci.org/samvera/hydra-editor.svg?branch=master)](https://travis-ci.org/samvera/hydra-editor)
- no Coverage info
+[![Build Status](https://circleci.com/gh/samvera/hydra-editor.svg?style=svg)](https://circleci.com/gh/samvera/hydra-editor)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-editor/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-editor?branch=master)
 
 ### om
 
@@ -246,8 +246,8 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/om.svg)](https://badge.fury.io/rb/om)
-[![Build Status](https://travis-ci.org/samvera/om.svg?branch=master)](https://travis-ci.org/samvera/om)
- no Coverage info
+[![Build Status](https://circleci.com/gh/samvera/om.svg?style=svg)](https://circleci.com/gh/samvera/om)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/om/badge.svg?branch=master)](https://coveralls.io/github/samvera/om?branch=master)
 
 ### samvera.github.io
 
@@ -257,13 +257,13 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Vital Statistics:**
 
-[![Build Status](https://travis-ci.org/samvera/samvera.github.io.svg?branch=master)](https://travis-ci.org/samvera/samvera.github.io)
+[![Build Status](https://circleci.com/gh/samvera/samvera.github.io.svg?style=svg)](https://circleci.com/gh/samvera/samvera.github.io)
 
 ### valkyrie
 
 **Code:** [valkyrie](https://github.com/samvera/valkyrie)
 
-**Product Owner:** [Carolyn Cole](https://github.com/cam156)
+**Product Owner:** [Kate Lynch](https://github.com/kelynch)
 
 **Technical Lead:** [Trey Pendragon](https://github.com/tpendragon)
 
