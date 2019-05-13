@@ -23,3 +23,12 @@ group :development, :test do
   gem "pry-byebug"
   gem 'rspec_junit_formatter'
 end
+
+if ENV['RAILS_VERSION']
+  if ENV['RAILS_VERSION'] == 'edge'
+    gem 'rails', github: 'rails/rails'
+    ENV['ENGINE_CART_RAILS_OPTIONS'] = '--edge --skip-turbolinks'
+  else
+    gem 'rails', ENV['RAILS_VERSION']
+  end
+end
