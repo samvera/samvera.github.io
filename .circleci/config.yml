@@ -3,11 +3,10 @@ version: 2.1
 orbs:
   samvera: samvera/circleci-orb@0
 jobs:
-  bundle:
+  bundle_and_test:
     parameters:
       ruby_version:
         type: string
-        default: 2.6.3
       bundler_version:
         type: string
         default: 1.17.3
@@ -15,6 +14,7 @@ jobs:
       name: 'samvera/ruby'
       ruby_version: << parameters.ruby_version >>
     environment:
+      WAIT_FOR_JEKYLL: 10
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     steps:
       - samvera/cached_checkout
@@ -26,52 +26,18 @@ jobs:
           paths:
           - project/*
           - project/**/*
-  test:
-    parameters:
-      ruby_version:
-        type: string
-        default: 2.6.3
-      bundler_version:
-        type: string
-        default: 1.17.3
-    executor:
-      name: 'samvera/ruby'
-      ruby_version: << parameters.ruby_version >>
-    environment:
-      WAIT_FOR_JEKYLL: 10
-    steps:
-      - attach_workspace:
-          at: ~/
-      - samvera/bundle:
-          ruby_version: << parameters.ruby_version >>
-          bundler_version: << parameters.bundler_version >>
       - samvera/parallel_rspec
 
 workflows:
   version: 2
   ci:
     jobs:
-      - bundle:
-          name: "bundle_ruby2-6"
-          ruby_version: "2.6.3"
-      - test:
-          name: "ruby2-6"
-          ruby_version: "2.6.3"
-          requires:
-            - bundle_ruby2-6
-      - bundle:
-          name: "bundle_ruby2-5"
-          ruby_version: "2.5.5"
-      - test:
-          name: "ruby2-5"
-          ruby_version: "2.5.5"
-          requires:
-            - bundle_ruby2-5
-      - bundle:
-          name: "bundle_ruby2-4"
-          ruby_version: "2.4.6"
-      - test:
-          name: "ruby2-4"
-          ruby_version: "2.4.6"
-          requires:
-            - bundle_ruby2-4
+      - bundle_and_test:
+          name: ruby2-6
+          ruby_version: 2.6.3
+      - bundle_and_test:
+          name: ruby2-5
+          ruby_version: 2.5.5
+      - bundle_and_test:
+          name: ruby2-4
+          ruby_version: 2.4.6
