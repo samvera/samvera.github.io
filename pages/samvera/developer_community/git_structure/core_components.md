@@ -69,53 +69,17 @@ their component. Their responsibilities are as follows:
 
 Please note that Hyrax is not considered a 'component' under the definition used by the CCMWG.
 
-### hydra-derivatives
+### active_fedora
 
-**Code:** [hydra-derivatives](https://github.com/samvera/hydra-derivatives)
+**Code:** [active_fedora](https://github.com/samvera/active_fedora)
 
-**Product Owner:** [Jennifer Lindner](https://github.com/jenlindner)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/hydra-derivatives.svg)](https://badge.fury.io/rb/hydra-derivatives)
-[![Build Status](https://circleci.com/gh/samvera/hydra-derivatives.svg?style=svg)](https://circleci.com/gh/samvera/hydra-derivatives)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-derivatives/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-derivatives?branch=master)
-
-### iiif_manifest
-
-**Code:** [iiif_manifest](https://github.com/samvera/iiif_manifest)
-
-**Product Owner:** [Adam Wead](https://github.com/awead)
+**Product Owner:** [Tom Johnson](https://github.com/no-reply)
 
 **Vital Statistics:**
 
-[![Gem Version](https://badge.fury.io/rb/iiif_manifest.svg)](https://badge.fury.io/rb/iiif_manifest)
-[![Build Status](https://circleci.com/gh/samvera/iiif_manifest.svg?style=svg)](https://circleci.com/gh/samvera/iiif_manifest)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/iiif_manifest/badge.svg?branch=master)](https://coveralls.io/github/samvera/iiif_manifest)
-
-### questioning_authority
-
-**Code:** [questioning_authority](https://github.com/samvera/questioning_authority)
-
-**Product Owner:** [Lynette Rayle](https://github.com/elrayle)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/qa.svg)](https://badge.fury.io/rb/qa)
-[![Build Status](https://circleci.com/gh/samvera/questioning_authority.svg?style=svg)](https://circleci.com/gh/samvera/questioning_authority)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/questioning_authority/badge.svg?branch=master)](https://coveralls.io/github/samvera/questioning_authority?branch=master)
-
-### hydra-head
-
-**Code:** [hydra-head](https://github.com/samvera/hydra-head)
-
-**Product Owner:** [Chris Colvard](https://github.com/cjcolvar)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/hydra-head.svg)](https://badge.fury.io/rb/hydra-head)
-[![Build Status](https://circleci.com/gh/samvera/hydra-head.svg?style=svg)](https://circleci.com/gh/samvera/hydra-head)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-head/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-head?branch=master)
+[![Gem Version](https://badge.fury.io/rb/active-fedora.svg)](https://badge.fury.io/rb/active-fedora)
+[![Build Status](https://circleci.com/gh/samvera/active_fedora.svg?style=svg)](https://circleci.com/gh/samvera/active_fedora)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/active_fedora/badge.svg?branch=master)](https://coveralls.io/github/samvera/active_fedora?branch=master)
 
 ### browse-everything
 
@@ -129,17 +93,53 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Build Status](https://circleci.com/gh/samvera/browse-everything.svg?style=svg)](https://circleci.com/gh/samvera/browse-everything)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/browse-everything/badge.svg?branch=master)](https://coveralls.io/github/samvera/browse-everything?branch=master)
 
-### noid-rails
+### hydra-derivatives
 
-**Code:** [noid-rails](https://github.com/samvera/noid-rails)
+**Code:** [hydra-derivatives](https://github.com/samvera/hydra-derivatives)
 
-**Product Owner:** [Justin Coyne](https://github.com/jcoyne)
+**Product Owner:** [Jennifer Lindner](https://github.com/jenlindner)
 
 **Vital Statistics:**
 
-[![Gem Version](https://badge.fury.io/rb/noid-rails.svg)](https://badge.fury.io/rb/noid-rails)
-[![Build Status](https://circleci.com/gh/samvera/noid-rails.svg?style=svg)](https://circleci.com/gh/samvera/noid-rails)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/noid-rails/badge.svg?branch=master)](https://coveralls.io/github/samvera/noid-rails?branch=master)
+[![Gem Version](https://badge.fury.io/rb/hydra-derivatives.svg)](https://badge.fury.io/rb/hydra-derivatives)
+[![Build Status](https://circleci.com/gh/samvera/hydra-derivatives.svg?style=svg)](https://circleci.com/gh/samvera/hydra-derivatives)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-derivatives/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-derivatives?branch=master)
+
+### hydra-editor
+
+**Code:** [hydra-editor](https://github.com/samvera/hydra-editor)
+
+**Product Owner:** [James Griffin III](https://github.com/jrgriffiniii)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/hydra-editor.svg)](https://badge.fury.io/rb/hydra-editor)
+[![Build Status](https://circleci.com/gh/samvera/hydra-editor.svg?style=svg)](https://circleci.com/gh/samvera/hydra-editor)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-editor/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-editor?branch=master)
+
+### hydra-file_characterization
+
+**Code:** [hydra-file_characterization](https://github.com/samvera/hydra-file_characterization)
+
+**Product Owner:** [Jamie Little](https://github.com/little9)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/hydra-file_characterization.svg)](https://badge.fury.io/rb/hydra-file_characterization)
+[![Build Status](https://circleci.com/gh/samvera/hydra-works.svg?style=svg)](https://circleci.com/gh/samvera/hydra-works)
+[![Coverage Status](https://coveralls.io/repos/samvera/hydra-works/badge.svg?branch=master)](https://coveralls.io/r/samvera/hydra-works?branch=master)
+
+### hydra-head
+
+**Code:** [hydra-head](https://github.com/samvera/hydra-head)
+
+**Product Owner:** [Chris Colvard](https://github.com/cjcolvar)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/hydra-head.svg)](https://badge.fury.io/rb/hydra-head)
+[![Build Status](https://circleci.com/gh/samvera/hydra-head.svg?style=svg)](https://circleci.com/gh/samvera/hydra-head)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-head/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-head?branch=master)
 
 ### hydra-pcdm
 
@@ -152,54 +152,6 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Gem Version](https://badge.fury.io/rb/hydra-pcdm.svg)](https://badge.fury.io/rb/hydra-pcdm)
 [![Build Status](https://circleci.com/gh/samvera/hydra-pcdm.svg?style=svg)](https://circleci.com/gh/samvera/hydra-pcdm)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-pcdm/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-pcdm?branch=master)
-
-### active_fedora
-
-**Code:** [active_fedora](https://github.com/samvera/active_fedora)
-
-**Product Owner:** [Tom Johnson](https://github.com/no-reply)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/active-fedora.svg)](https://badge.fury.io/rb/active-fedora)
-[![Build Status](https://circleci.com/gh/samvera/active_fedora.svg?style=svg)](https://circleci.com/gh/samvera/active_fedora)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/active_fedora/badge.svg?branch=master)](https://coveralls.io/github/samvera/active_fedora?branch=master)
-
-### ldp
-
-**Code:** [ldp](https://github.com/samvera/ldp)
-
-**Product Owner:** [Randall Floyd](https://github.com/randalldfloyd)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/ldp.svg)](https://badge.fury.io/rb/ldp)
-[![Build Status](https://circleci.com/gh/samvera/ldp.svg?style=svg)](https://circleci.com/gh/samvera/ldp)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/ldp/badge.svg?branch=master)](https://coveralls.io/github/samvera/ldp?branch=master)
-
-### solrizer
-
-**Code:** [solrizer](https://github.com/samvera/solrizer)
-
-**Product Owner:** [Carolyn Cole](https://github.com/cam156)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/solrizer.svg)](https://badge.fury.io/rb/solrizer)
-[![Build Status](https://circleci.com/gh/samvera/solrizer.svg?style=svg)](https://circleci.com/gh/samvera/solrizer)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/solrizer/badge.svg?branch=master)](https://coveralls.io/github/samvera/solrizer?branch=master)
-
-### rubydora
-
-**Code:** [rubydora](https://github.com/samvera/rubydora)
-
-**Product Owner:** [Justin Coyne](https://github.com/jcoyne)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/rubydora.svg)](https://badge.fury.io/rb/rubydora)
-[![Build Status](https://circleci.com/gh/samvera/rubydora.svg?style=svg)](https://circleci.com/gh/samvera/rubydora)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/rubydora/badge.svg?branch=master)](https://coveralls.io/github/samvera/rubydora?branch=master)
 
 ### hydra-role-management
 
@@ -225,29 +177,41 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Build Status](https://circleci.com/gh/samvera/hydra-works.svg?style=svg)](https://circleci.com/gh/samvera/hydra-works)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-works/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-works?branch=master)
 
-### hydra-file_characterization
+### iiif_manifest
 
-**Code:** [hydra-file_characterization](https://github.com/samvera/hydra-file_characterization)
+**Code:** [iiif_manifest](https://github.com/samvera/iiif_manifest)
 
-**Product Owner:** [Jamie Little](https://github.com/little9)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/hydra-file_characterization.svg)](https://badge.fury.io/rb/hydra-file_characterization)
-[![Build Status](https://circleci.com/gh/samvera/hydra-works.svg?style=svg)](https://circleci.com/gh/samvera/hydra-works)
-[![Coverage Status](https://coveralls.io/repos/samvera/hydra-works/badge.svg?branch=master)](https://coveralls.io/r/samvera/hydra-works?branch=master)
-
-### hydra-editor
-
-**Code:** [hydra-editor](https://github.com/samvera/hydra-editor)
-
-**Product Owner:** [James Griffin III](https://github.com/jrgriffiniii)
+**Product Owner:** [Adam Wead](https://github.com/awead)
 
 **Vital Statistics:**
 
-[![Gem Version](https://badge.fury.io/rb/hydra-editor.svg)](https://badge.fury.io/rb/hydra-editor)
-[![Build Status](https://circleci.com/gh/samvera/hydra-editor.svg?style=svg)](https://circleci.com/gh/samvera/hydra-editor)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-editor/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-editor?branch=master)
+[![Gem Version](https://badge.fury.io/rb/iiif_manifest.svg)](https://badge.fury.io/rb/iiif_manifest)
+[![Build Status](https://circleci.com/gh/samvera/iiif_manifest.svg?style=svg)](https://circleci.com/gh/samvera/iiif_manifest)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/iiif_manifest/badge.svg?branch=master)](https://coveralls.io/github/samvera/iiif_manifest)
+
+### ldp
+
+**Code:** [ldp](https://github.com/samvera/ldp)
+
+**Product Owner:** [Randall Floyd](https://github.com/randalldfloyd)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/ldp.svg)](https://badge.fury.io/rb/ldp)
+[![Build Status](https://circleci.com/gh/samvera/ldp.svg?style=svg)](https://circleci.com/gh/samvera/ldp)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/ldp/badge.svg?branch=master)](https://coveralls.io/github/samvera/ldp?branch=master)
+
+### noid-rails
+
+**Code:** [noid-rails](https://github.com/samvera/noid-rails)
+
+**Product Owner:** [Justin Coyne](https://github.com/jcoyne)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/noid-rails.svg)](https://badge.fury.io/rb/noid-rails)
+[![Build Status](https://circleci.com/gh/samvera/noid-rails.svg?style=svg)](https://circleci.com/gh/samvera/noid-rails)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/noid-rails/badge.svg?branch=master)](https://coveralls.io/github/samvera/noid-rails?branch=master)
 
 ### om
 
@@ -260,6 +224,30 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Gem Version](https://badge.fury.io/rb/om.svg)](https://badge.fury.io/rb/om)
 [![Build Status](https://circleci.com/gh/samvera/om.svg?style=svg)](https://circleci.com/gh/samvera/om)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/om/badge.svg?branch=master)](https://coveralls.io/github/samvera/om?branch=master)
+
+### questioning_authority
+
+**Code:** [questioning_authority](https://github.com/samvera/questioning_authority)
+
+**Product Owner:** [Lynette Rayle](https://github.com/elrayle)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/qa.svg)](https://badge.fury.io/rb/qa)
+[![Build Status](https://circleci.com/gh/samvera/questioning_authority.svg?style=svg)](https://circleci.com/gh/samvera/questioning_authority)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/questioning_authority/badge.svg?branch=master)](https://coveralls.io/github/samvera/questioning_authority?branch=master)
+
+### rubydora
+
+**Code:** [rubydora](https://github.com/samvera/rubydora)
+
+**Product Owner:** [Justin Coyne](https://github.com/jcoyne)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/rubydora.svg)](https://badge.fury.io/rb/rubydora)
+[![Build Status](https://circleci.com/gh/samvera/rubydora.svg?style=svg)](https://circleci.com/gh/samvera/rubydora)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/rubydora/badge.svg?branch=master)](https://coveralls.io/github/samvera/rubydora?branch=master)
 
 ### samvera.github.io
 
