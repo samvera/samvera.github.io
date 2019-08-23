@@ -210,7 +210,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 **Vital Statistics:**
 
 [![Gem Version](https://badge.fury.io/rb/hydra-works.svg)](https://badge.fury.io/rb/hydra-works)
-[![Build Status](https://travis-ci.org/samvera/hydra-works.svg?branch=master)](https://travis-ci.org/samvera/hydra-works)
+[![Build Status](https://circleci.com/gh/samvera/hydra-works.svg?style=svg)](https://circleci.com/gh/samvera/hydra-works)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-works/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-works?branch=master)
 
 ### hydra-file_characterization

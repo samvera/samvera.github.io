@@ -44,7 +44,7 @@ Pull requests are evaluated in many different ways; fortunately, we have tools t
 review so that human review can focus on overall code quality and maintainability. For instance, we
 use:
 
-* TravisCI, to ensure the test suite is passing
+* A continous integration (CI) service, to ensure the test suite is passing (typically CircleCI or Travis)
 * Rubocop, to be consistent w/ a baseline of Ruby style conventions
 * Coveralls, to ensure code changes are covered by test changes
 * Hound, to be consistent w/ Javascript and CSS style conventions
@@ -65,7 +65,7 @@ The key things to focus on are:
 As a reviewer, it's also your responsibility to make sure:
 
 * Does the submitter have a signed CLA [on file](https://wiki.duraspace.org/display/samvera/CLA+submission+list)?
-* Did the Travis tests complete successfully?
+* Did the CI tests complete successfully?
 * Is there a significant drop in code coverage?
 * Do all new or changed methods, modules, and classes have comments?
 

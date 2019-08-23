@@ -26,7 +26,7 @@ We also recommend writing tests early and running them often, making small commi
 
 Many developers in the Samvera community practice [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development), and you will notice as you begin submitting pull requests that the common code review process requires that you cover all code changes with tests; this is equally true of bugfixes, features, and refactoring changes.
 
-We tend to use RSpec as our testing tool of choice, with Capybara for feature tests, and our tests tend to conform to [community-driven testing guidelines](http://betterspecs.org/). All of our codebases on GitHub integrate with the Travis continuous integration service, which allows reviewers to see if changes made in pull requests have a passing test suite. We also tend to use Coveralls to determine whether the proposed changes have increased or decreased overall code coverage.
+We tend to use RSpec as our testing tool of choice, with Capybara for feature tests, and our tests tend to conform to [community-driven testing guidelines](http://betterspecs.org/). All of our codebases on GitHub integrate with the CircleCI or Travis continuous integration services, which allows reviewers to see if changes made in pull requests have a passing test suite. We also tend to use Coveralls to determine whether the proposed changes have increased or decreased overall code coverage.
 
 ## Style guidelines
 

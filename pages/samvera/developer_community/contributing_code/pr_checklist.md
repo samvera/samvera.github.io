@@ -20,8 +20,7 @@ Checklist to use when creating and reviewing a PR.
   - [ ] Feature tests:  There are tests that cover the functionality as it is used by end users in the UI.
   - [ ] Test efficiency: Tests use factorybot `build` instead of `create` where ever possible.  This is especially important for repository objects that cause the object to be created in Fedora.
   - [ ] Test coverage: Test coverage stayed the same or rose.  Review coveralls report for the PR.
-  - [ ] Travis completes without error for continuous-integration/travis-ci/push.
-  - [ ] Travis completes without error for continuous-integration/travis-ci/pr.
+  - [ ] The continous integration (CI) service completes without error.
 - Backward compatibility
   - [ ] Public API: Public method signatures are not changed when going into a bug release or minor release.  These are ok for a major release, but should be an intentional change that is deemed necessary.
   - [ ] Public API: Requires unit tests exist that ensure correct behavior of new classes/modules/methods

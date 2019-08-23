@@ -8,7 +8,7 @@ sidebar: home_sidebar
 
 # Importance of Consistent Coding Styles
 
-Coding styles are controlled by RuboCop which performs a number of style related checks on the code.  The code may run fine and pass tests while not being style compliant, but compliance with the configured style makes code easier to read and maintain.  Travis CI for Hyrax and many other Samvera gems is configured to fail if RuboCop detects errors.  It is recommneded that you configure Travis CI to fail for RuboCop errors in your Samvera based apps.
+Coding styles are controlled by RuboCop which performs a number of style related checks on the code.  The code may run fine and pass tests while not being style compliant, but compliance with the configured style makes code easier to read and maintain.  The continuous integration (CI) service for Hyrax and many other Samvera gems is configured to fail if RuboCop detects errors.  It is recommneded that you configure CI to fail for RuboCop errors in your Samvera based apps.
 
 # What is RuboCop
 

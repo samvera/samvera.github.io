@@ -30,7 +30,7 @@ requirements must be met:
 
   1. Good unit test coverage measured by community (e.g. 100% or 75% of what’s important)
 
-  1. uses CI (Preferably Travis-CI, unless there is a compelling reason to do something else)
+  1. uses CI (Preferably CircleCI, unless there is a compelling reason to do something else)
 
   1. uses Coverage tool (coveralls or simplecov)
 
