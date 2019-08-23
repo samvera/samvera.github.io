@@ -20,7 +20,7 @@ Before pushing any new commits to your pull request, you may wish to do the foll
   * If any of your PR changes depend on brand new gems, then you will need to ensure your Gemfile.lock gets updated in the codebase. This file controls the version of all gems (including Hyrax) that are currently in use.
   * Just run bundle update AND commit the changes made to your local Gemfile.lock
 
-        NOTE: if you forget to update the Gemfile.lock file in your PR, then Travis CI will not pick up the latest versions of Hyrax, and therefore may throw unexpected errors.
+        NOTE: if you forget to update the Gemfile.lock file in your PR, then the CI service will not pick up the latest versions of Hyrax, and therefore may throw unexpected errors.
 
     Once your PR is ready for review, remove the [WIP] prefix from your PRs name and ping the development team (on Slack or GitHub).
 
