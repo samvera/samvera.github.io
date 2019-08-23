@@ -81,6 +81,18 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Build Status](https://circleci.com/gh/samvera/hydra-derivatives.svg?style=svg)](https://circleci.com/gh/samvera/hydra-derivatives)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/hydra-derivatives/badge.svg?branch=master)](https://coveralls.io/github/samvera/hydra-derivatives?branch=master)
 
+### iiif_manifest
+
+**Code:** [iiif_manifest](https://github.com/samvera/iiif_manifest)
+
+**Product Owner:** [Adam Wead](https://github.com/awead)
+
+**Vital Statistics:**
+
+[![Gem Version](https://badge.fury.io/rb/iiif_manifest.svg)](https://badge.fury.io/rb/iiif_manifest)
+[![Build Status](https://circleci.com/gh/samvera/iiif_manifest.svg?style=svg)](https://circleci.com/gh/samvera/iiif_manifest)
+[![Coverage Status](https://coveralls.io/repos/github/samvera/iiif_manifest/badge.svg?branch=master)](https://coveralls.io/github/samvera/iiif_manifest)
+
 ### questioning_authority
 
 **Code:** [questioning_authority](https://github.com/samvera/questioning_authority)
