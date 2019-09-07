@@ -213,18 +213,6 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Build Status](https://circleci.com/gh/samvera/noid-rails.svg?style=svg)](https://circleci.com/gh/samvera/noid-rails)
 [![Coverage Status](https://coveralls.io/repos/github/samvera/noid-rails/badge.svg?branch=master)](https://coveralls.io/github/samvera/noid-rails?branch=master)
 
-### om
-
-**Code:** [om](https://github.com/samvera/om)
-
-**Product Owner:** [Jon Cameron](https://github.com/joncameron)
-
-**Vital Statistics:**
-
-[![Gem Version](https://badge.fury.io/rb/om.svg)](https://badge.fury.io/rb/om)
-[![Build Status](https://circleci.com/gh/samvera/om.svg?style=svg)](https://circleci.com/gh/samvera/om)
-[![Coverage Status](https://coveralls.io/repos/github/samvera/om/badge.svg?branch=master)](https://coveralls.io/github/samvera/om?branch=master)
-
 ### questioning_authority
 
 **Code:** [questioning_authority](https://github.com/samvera/questioning_authority)
