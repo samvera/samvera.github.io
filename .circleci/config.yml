@@ -33,11 +33,14 @@ workflows:
   ci:
     jobs:
       - bundle_and_test:
+          name: ruby2-7
+          ruby_version: 2.7.0
+      - bundle_and_test:
           name: ruby2-6
-          ruby_version: 2.6.3
+          ruby_version: 2.6.5
       - bundle_and_test:
           name: ruby2-5
-          ruby_version: 2.5.5
+          ruby_version: 2.5.7
       - bundle_and_test:
           name: ruby2-4
-          ruby_version: 2.4.6
+          ruby_version: 2.4.9
