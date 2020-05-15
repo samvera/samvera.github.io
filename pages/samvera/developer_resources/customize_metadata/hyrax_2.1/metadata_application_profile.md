@@ -4,8 +4,13 @@ permalink: metadata_application_profile.html
 keywords: ['Metadata', 'Customize']
 last_updated:
 version:
-  id: 'hyrax_2.1-stable'
-  label: 'Hyrax v2.1'
+  versions:
+    - id: 'hyrax_2.1-stable'
+      label: 'Hyrax v2.1'
+      link: 'metadata_application_profile.html'
+      selected: 'true'
+    - label: 'Hyrax v3.0'
+      link: 'metadata_application_profile_3_0.html'
 tags: [development_resources]
 summary: "Describes the metadata properties provided in Hyrax upon default installation, and the core properties required for Hyrax to function correctly"
 sidebar: home_sidebar

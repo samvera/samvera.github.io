@@ -1,11 +1,16 @@
 ---
 title: "Metadata Application Profile"
-permalink: metadata_application_profile.html
+permalink: metadata_application_profile_3_0.html
 keywords: ['Metadata', 'Customize']
 last_updated:
 version:
-  id: 'hyrax_2.1-stable'
-  label: 'Hyrax v2.1'
+  versions:
+    - id: 'hyrax_2.1-stable'
+      label: 'Hyrax v2.1'
+      link: 'metadata_application_profile.html'
+    - label: 'Hyrax v3.0'
+      link: 'metadata_application_profile_3_0.html'
+      selected: 'true'
 tags: [development_resources]
 summary: "Describes the metadata properties provided in Hyrax upon default installation, and the core properties required for Hyrax to function correctly"
 sidebar: home_sidebar
@@ -20,7 +25,7 @@ sidebar: home_sidebar
 
 The following Metadata Application Profile lists properties provided by Hyrax by default upon installation. Core Metadata are properties required for Hyrax to function correctly. Basic Metadata properties listed as Required are configured for validation. Basic Metadata properties can be modified within Hyrax but Core Metadata properties cannot be modified. This profile also applies to Hyrax v2.0. More details and links to code available below.
 
-An expanded version of this documentation is available providing the list of fields below for both Basic and Core metadata. Additionally, we need to list the fields that will be shown in the Google Sheet (make a list?). Indicate any new fields for Hyrax 3 with asterisk or something. Explain that fields are listed in the order they appear in the form with a default Hyrax install.
+A list of fields is provided below for both Basic and Core metadata. An expanded version of this documentation is linked providing more information per field than can be readily shown on this page. New fields for Hyrax 3 are indicated with _italics_. Fields are listed in the order they appear in the Hyrax Work form by default.
 
 ## Namespaces
 
@@ -43,36 +48,43 @@ Reference: Local controlled vocabularies and forms pulled in here: [https://gith
 
 Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera/hyrax/blob/2.0-stable/app/models/concerns/hyrax/basic_metadata.rb)
 
-Add link to Basic tab in Google Sheet
+[Expanded documentation for Hyrax Basic Metadata](https://docs.google.com/spreadsheets/d/1yZZvoQG6lANyqinMlxuOWT4W4ZIIyBJVrSii5laxEm4/edit?usp=sharing)
 
 | Property (Field) | Predicate | Rdf-vocab Predicate | Recommendation | Expected Value (Data Type) |
-| ---------------- | --------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| creator          | dce:creator | ::RDF::Vocab::DC11.creator | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {1,n} |
-| keyword          | dce:relation | ::RDF::Vocab::DC11.relation | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {1,n} |
-| rights_statement | edm:rights | ::RDF::Vocab::EDM.rights | MUST (Required) | xsd:anyUri | Rights statements menu as YAML | **FALSE** | {1} |
-| contributor      | dce:contributor | ::RDF::Vocab::DC11.contributor | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
-| description      | dce:description | ::RDF::Vocab::DC11.description | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
-| license          | dct:rights | ::RDF::Vocab::DC.rights | MAY | xsd:anyURI | License menu as YAML | TRUE | {0,n} |
-| publisher        | dce:publisher | ::RDF::Vocab::DC11.publisher | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
-| date_created     | dct:created | ::RDF::Vocab::DC.created | MAY | xsd:date or xsd:dateTime xsd:string (Literal) | n/a | TRUE | {0,n} |
-| subject          | dce:subject | ::RDF::Vocab::DC11.subject | MAY | xsd:string (Literal) | n/a (but existing vocab encouraged) | TRUE | {0,n} |
-| language         | dce:language | ::RDF::Vocab::DC11.language | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
-| identifier       | dct:identifier | ::RDF::Vocab::DC.identifier | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
-| based_near | foaf:basedNear | ::RDF::Vocab::FOAF.based_near | MAY | xsd:anyURI | GeoNames web service | TRUE | {0,n} |
-| related_url      | rdfs:seeAlso | ::RDF::RDFS.seeAlso | MAY | xsd:string or xsd:anyURI | n/a | TRUE | {0,n} |
-| source           | dct:source | ::RDF::Vocab::DC.source | MAY | xsd:string (Literal) | n/a | TRUE | {0,n} |
-| resource_type    | dct:type | ::RDF::Vocab::DC.type | MAY | xsd:string (Literal) | Type menu as YAML | TRUE | {0,n} |
+| ---------------- | --------- | -------- | -------- | -------- | 
+| creator          | dce:creator | ::RDF::Vocab::DC11.creator | MUST (Required) | xsd:string (Literal) |
+| rights_statement | edm:rights | ::RDF::Vocab::EDM.rights | MUST (Required) | xsd:anyUri |
+| contributor      | dce:contributor | ::RDF::Vocab::DC11.contributor | MAY | xsd:string (Literal) |
+| description      | dce:description | ::RDF::Vocab::DC11.description | MAY | xsd:string (Literal) |
+| _abstract_         | dct:abstract | ::RDF::Vocab::DC.abstract | MAY | xsd:string (Literal) |
+| keyword          | schema:keywords | ::RDF::Vocab::SCHEMA.keywords | MAY | xsd:string (Literal) |
+| license          | dct:license | ::RDF::Vocab::DC.license | MAY | xsd:anyURI |
+| _access_right_     | dct:accessRights | ::RDF::Vocab::DC.accessRights | MAY | xsd:string (Literal) |
+| _rights_notes_     | dct:rights | ::RDF::Vocab::DC.rights | MAY | xsd:string (Literal) |
+| publisher        | dce:publisher | ::RDF::Vocab::DC11.publisher | MAY | xsd:string (Literal) |
+| date_created     | dct:created | ::RDF::Vocab::DC.created | MAY | xsd:date or xsd:dateTime xsd:string (Literal) |
+| subject          | dce:subject | ::RDF::Vocab::DC11.subject | MAY | xsd:string (Literal) |
+| language         | dce:language | ::RDF::Vocab::DC11.language | MAY | xsd:string (Literal) |
+| identifier       | dct:identifier | ::RDF::Vocab::DC.identifier | MAY | xsd:string (Literal) |
+| based_near       | foaf:basedNear | ::RDF::Vocab::FOAF.based_near | MAY | xsd:anyURI |
+| related_url      | rdfs:seeAlso | ::RDF::RDFS.seeAlso | MAY | xsd:string or xsd:anyURI |
+| source           | dct:source | ::RDF::Vocab::DC.source | MAY | xsd:string (Literal) |
+| resource_type    | dct:type | ::RDF::Vocab::DC.type | MAY | xsd:string (Literal) |
+| alternative_title* | dct:alternative | ::RDF::Vocab::DC.alternative | MAY | xsd:string (Literal) |
+| bibliographic_citation* | dct:bibliographicCitation | ::RDF::Vocab::DC.biliographic_citation | MAY | xsd:string (Literal) |
+
+Asterisks(*) indicate fields that are included as defined metadata properties but are not shown in the Hyrax Work form by default.
 
 ## Core Metadata
 
 Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/samvera/hyrax/blob/2.0-stable/app/models/concerns/hyrax/core_metadata.rb)
 
-Add link to Core tab in Google Sheet
+[Expanded documentation for Hyrax Core Metadata](https://docs.google.com/spreadsheets/d/1yZZvoQG6lANyqinMlxuOWT4W4ZIIyBJVrSii5laxEm4/edit#gid=1559174934)
 
 
 | Property (Field) | Predicate | Rdf-vocab Predicate | Recommendation | Expected Value (Data Type) |
-| -------- | --------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| title | dct:title | ::RDF::Vocab::DC.title | MUST (Required) | xsd:string (Literal) | n/a | TRUE | {1,n} |
-| depositor | mrel:dpt | ::RDF::URI.new('http://id.loc.gov/vocabulary/relators/dpt') | MUST (Required) | user | n/a | **FALSE** | {1} |
-| date_uploaded | dct:dateSubmitted | ::RDF::Vocab::DC.dateSubmitted | MUST (Required) | Literal | n/a | **FALSE** | {1} |
-| date_modified | dct:modified | ::RDF::Vocab::DC.modified | MUST (Required) | Literal | n/a | **FALSE** | {1} |
+| -------- | --------- | -------- | -------- | -------- |
+| title | dct:title | ::RDF::Vocab::DC.title | MUST (Required) | xsd:string (Literal) |
+| depositor | mrel:dpt | ::RDF::URI.new('http://id.loc.gov/vocabulary/relators/dpt') | MUST (Required) | user |
+| date_uploaded | dct:dateSubmitted | ::RDF::Vocab::DC.dateSubmitted | MUST (Required) | Literal |
+| date_modified | dct:modified | ::RDF::Vocab::DC.modified | MUST (Required) | Literal |
