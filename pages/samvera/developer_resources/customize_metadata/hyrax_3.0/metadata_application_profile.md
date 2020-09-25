@@ -1,15 +1,15 @@
 ---
 title: "Metadata Application Profile"
-permalink: metadata_application_profile_3_0.html
+permalink: metadata_application_profile.html
 keywords: ['Metadata', 'Customize']
 last_updated:
 version:
   versions:
     - id: 'hyrax_2.1-stable'
       label: 'Hyrax v2.1'
-      link: 'metadata_application_profile.html'
+      link: 'metadata_application_profile_2_1.html'
     - label: 'Hyrax v3.0'
-      link: 'metadata_application_profile_3_0.html'
+      link: 'metadata_application_profile.html'
       selected: 'true'
 tags: [development_resources]
 summary: "Describes the metadata properties provided in Hyrax upon default installation, and the core properties required for Hyrax to function correctly"
@@ -25,7 +25,7 @@ sidebar: home_sidebar
 
 The following Metadata Application Profile lists properties provided by Hyrax by default upon installation. Core Metadata are properties required for Hyrax to function correctly. Basic Metadata properties listed as Required are configured for validation. Basic Metadata properties can be modified within Hyrax but Core Metadata properties cannot be modified. This profile also applies to Hyrax v2.0. More details and links to code available below.
 
-A list of fields is provided below for both Basic and Core metadata. An expanded version of this documentation is linked providing more information per field than can be readily shown on this page. New fields for Hyrax 3 are indicated with _italics_. Fields are listed in the order they appear in the Hyrax Work form by default.
+A list of fields is provided below for both Basic and Core metadata. An expanded version of this documentation is linked providing more information per field than can be readily shown on this page. New fields for Hyrax 3 are indicated with _italics_. Fields are listed in the order they appear in the Hyrax Work form by default. Most of the same metadata fields are offered by default for describing Collections, but there are some differences. For more information on how the metadata specification differs between Collections and Works, see the [Machine-readable Metadata Modeling (M3) Specification Working Group's Hyrax Profile](https://github.com/samvera-labs/houndstooth/blob/master/examples/hyrax.yaml).
 
 ## Namespaces
 
@@ -42,11 +42,11 @@ A list of fields is provided below for both Basic and Core metadata. An expanded
 
 Distinction: The [MUST out of the box](https://github.com/samvera/hyrax/blob/master/app/forms/hyrax/forms/work_form.rb#L33) is a slightly different set of things from what is in Core.
 
-Reference: Local controlled vocabularies and forms pulled in here: [https://github.com/samvera/hyrax/blob/4fd8d9ad3c32db7deffc3b5246af5d1459a4b046/lib/generators/hyrax/config_generator.rb](https://github.com/samvera/hyrax/blob/4fd8d9ad3c32db7deffc3b5246af5d1459a4b046/lib/generators/hyrax/config_generator.rb)
+Reference: Local controlled vocabularies and forms pulled in here: [https://github.com/samvera/hyrax/blob/master/lib/generators/hyrax/config_generator.rb](https://github.com/samvera/hyrax/blob/master/lib/generators/hyrax/config_generator.rb)
 
 ## Basic Metadata
 
-Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera/hyrax/blob/2.0-stable/app/models/concerns/hyrax/basic_metadata.rb)
+Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb)
 
 [Expanded documentation for Hyrax Basic Metadata](https://docs.google.com/spreadsheets/d/1yZZvoQG6lANyqinMlxuOWT4W4ZIIyBJVrSii5laxEm4/edit?usp=sharing)
 
@@ -56,11 +56,11 @@ Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metada
 | rights_statement | edm:rights | ::RDF::Vocab::EDM.rights | MUST (Required) | xsd:anyUri |
 | contributor      | dce:contributor | ::RDF::Vocab::DC11.contributor | MAY | xsd:string (Literal) |
 | description      | dce:description | ::RDF::Vocab::DC11.description | MAY | xsd:string (Literal) |
-| _abstract_         | dct:abstract | ::RDF::Vocab::DC.abstract | MAY | xsd:string (Literal) |
+| _abstract_         | _dct:abstract_ | _::RDF::Vocab::DC.abstract_ | _MAY_ | _xsd:string (Literal)_ |
 | keyword          | schema:keywords | ::RDF::Vocab::SCHEMA.keywords | MAY | xsd:string (Literal) |
 | license          | dct:license | ::RDF::Vocab::DC.license | MAY | xsd:anyURI |
-| _access_right_     | dct:accessRights | ::RDF::Vocab::DC.accessRights | MAY | xsd:string (Literal) |
-| _rights_notes_     | dct:rights | ::RDF::Vocab::DC.rights | MAY | xsd:string (Literal) |
+| _access_right_     | _dct:accessRights_ | _::RDF::Vocab::DC.accessRights_ | _MAY_ | _xsd:string (Literal)_ |
+| _rights_notes_     | _dct:rights_ | _::RDF::Vocab::DC.rights_ | _MAY_ | _xsd:string (Literal)_ |
 | publisher        | dce:publisher | ::RDF::Vocab::DC11.publisher | MAY | xsd:string (Literal) |
 | date_created     | dct:created | ::RDF::Vocab::DC.created | MAY | xsd:date or xsd:dateTime xsd:string (Literal) |
 | subject          | dce:subject | ::RDF::Vocab::DC11.subject | MAY | xsd:string (Literal) |
@@ -77,7 +77,7 @@ Asterisks(*) indicate fields that are included as defined metadata properties bu
 
 ## Core Metadata
 
-Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/samvera/hyrax/blob/2.0-stable/app/models/concerns/hyrax/core_metadata.rb)
+Core metadata properties (**_that should never be removed_**) are defined in [app/models/concerns/hyrax/core_metadata.rb](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb)
 
 [Expanded documentation for Hyrax Core Metadata](https://docs.google.com/spreadsheets/d/1yZZvoQG6lANyqinMlxuOWT4W4ZIIyBJVrSii5laxEm4/edit#gid=1559174934)
 
