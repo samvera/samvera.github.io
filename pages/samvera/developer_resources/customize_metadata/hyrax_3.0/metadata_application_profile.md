@@ -25,7 +25,7 @@ sidebar: home_sidebar
 
 The following Metadata Application Profile lists properties provided by Hyrax by default upon installation. Core Metadata are properties required for Hyrax to function correctly. Basic Metadata properties listed as Required are configured for validation. Basic Metadata properties can be modified within Hyrax but Core Metadata properties cannot be modified. This profile also applies to Hyrax v2.0. More details and links to code available below.
 
-A list of fields is provided below for both Basic and Core metadata. An expanded version of this documentation is linked providing more information per field than can be readily shown on this page. Most of the same metadata fields are offered by default for describing Collections, but there are some differences. For more information on how the metadata specification differs between Collections and Works, see the [Machine-readable Metadata Modeling (M3) Specification Working Group's Hyrax Profile](https://github.com/samvera-labs/houndstooth/blob/master/examples/hyrax.yaml).
+A list of fields is provided below for both Basic and Core metadata. An expanded version of this documentation is linked providing more information per field than can be readily shown on this page. Most of the same metadata fields are offered by default for describing Collections, but there are some differences. For more information on how the metadata specification differs between Collections and Works, see the [Machine-readable Metadata Modeling (M3) Specification Working Group's Hyrax Profile](https://github.com/samvera-labs/houndstooth/tree/master/examples).
 
 ## Namespaces
 
