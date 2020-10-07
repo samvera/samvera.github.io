@@ -25,7 +25,7 @@ sidebar: home_sidebar
 
 The following Metadata Application Profile lists properties provided by Hyrax by default upon installation. Core Metadata are properties required for Hyrax to function correctly. Basic Metadata properties listed as Required are configured for validation. Basic Metadata properties can be modified within Hyrax but Core Metadata properties cannot be modified. This profile also applies to Hyrax v2.0. More details and links to code available below.
 
-A list of fields is provided below for both Basic and Core metadata. An expanded version of this documentation is linked providing more information per field than can be readily shown on this page. New fields for Hyrax 3 are indicated with _italics_. Fields are listed in the order they appear in the Hyrax Work form by default. Most of the same metadata fields are offered by default for describing Collections, but there are some differences. For more information on how the metadata specification differs between Collections and Works, see the [Machine-readable Metadata Modeling (M3) Specification Working Group's Hyrax Profile](https://github.com/samvera-labs/houndstooth/blob/master/examples/hyrax.yaml).
+A list of fields is provided below for both Basic and Core metadata. An expanded version of this documentation is linked providing more information per field than can be readily shown on this page. Most of the same metadata fields are offered by default for describing Collections, but there are some differences. For more information on how the metadata specification differs between Collections and Works, see the [Machine-readable Metadata Modeling (M3) Specification Working Group's Hyrax Profile](https://github.com/samvera-labs/houndstooth/blob/master/examples/hyrax.yaml).
 
 ## Namespaces
 
@@ -50,10 +50,13 @@ Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metada
 
 [Expanded documentation for Hyrax Basic Metadata](https://docs.google.com/spreadsheets/d/1yZZvoQG6lANyqinMlxuOWT4W4ZIIyBJVrSii5laxEm4/edit?usp=sharing)
 
+New fields for Hyrax 3 are indicated with _italics_. Fields are listed in the order they appear in the Hyrax Work form by default.
+
 | Property (Field) | Predicate | Rdf-vocab Predicate | Recommendation | Expected Value (Data Type) |
 | ---------------- | --------- | -------- | -------- | -------- | 
 | creator          | dce:creator | ::RDF::Vocab::DC11.creator | MUST (Required) | xsd:string (Literal) |
 | rights_statement | edm:rights | ::RDF::Vocab::EDM.rights | MUST (Required) | xsd:anyUri |
+| alternative_title | dct:alternative | ::RDF::Vocab::DC.alternative | MAY | xsd:string (Literal) |
 | contributor      | dce:contributor | ::RDF::Vocab::DC11.contributor | MAY | xsd:string (Literal) |
 | description      | dce:description | ::RDF::Vocab::DC11.description | MAY | xsd:string (Literal) |
 | _abstract_         | _dct:abstract_ | _::RDF::Vocab::DC.abstract_ | _MAY_ | _xsd:string (Literal)_ |
@@ -70,7 +73,6 @@ Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metada
 | related_url      | rdfs:seeAlso | ::RDF::RDFS.seeAlso | MAY | xsd:string or xsd:anyURI |
 | source           | dct:source | ::RDF::Vocab::DC.source | MAY | xsd:string (Literal) |
 | resource_type    | dct:type | ::RDF::Vocab::DC.type | MAY | xsd:string (Literal) |
-| alternative_title* | dct:alternative | ::RDF::Vocab::DC.alternative | MAY | xsd:string (Literal) |
 | bibliographic_citation* | dct:bibliographicCitation | ::RDF::Vocab::DC.biliographic_citation | MAY | xsd:string (Literal) |
 
 Asterisks(*) indicate fields that are included as defined metadata properties but are not shown in the Hyrax Work form by default.
