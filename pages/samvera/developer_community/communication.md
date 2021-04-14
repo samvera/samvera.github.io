@@ -15,7 +15,7 @@ information on broader community communication, please see the Samvera wiki
 ## Regular Calls
 
 * [Weekly Technical Call](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211059/Notes+from+Tech+Meetings+and+Calls) for technical discussion, and coordinating releases and code review
-* [Monthly Partner Call](https://wiki.duraspace.org/display/samvera/Samvera+Partner+Calls) complements the tech call with a focus on community and functional progress
+* [Monthly Partner Call](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211008/Samvera+Partner+Calls) complements the tech call with a focus on community and functional progress
 * Community Sprint Calls are also organized to coordinate development
 
 ## Slack
@@ -33,16 +33,16 @@ Slack has become the primary mode of synchronous communication in the Samvera co
 
 ## Wiki
 
-* DuraSpace wiki: https://wiki.duraspace.org/display/samvera/ for general project
+* DuraSpace wiki: https://samvera.atlassian.net/wiki/spaces/samvera/overview for general project
   documentation, meeting notes, and working group pages
-  * To request an account, please email [sysadmin@duraspace.org](mailto:sysadmin@duraspace.org)
+  * To request an account, please email [sysadmin@duraspace.org](mailto:heather@samvera.org)
 * GitHub codebase-specific wikis for technical documentation and tutorials: e.g.,
   * https://github.com/samvera/hydra-head/wiki
   * https://github.com/samvera/sufia/wiki
 
 ## Conferences
 
-* [SamveraConnect](https://wiki.duraspace.org/display/samvera/Samvera+Connect+Meetings): the annual go-to
+* [SamveraConnect](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405210633/Samvera%2BConnect%2BMeetings): the annual go-to
   event for the entire Samvera community, primarily geared towards connecting with fellow Samvera
   community members to learn how they are using Samvera
 * Developer Congresses: these community hackfests tend to be held 1-2 times per year, and have a strong record of delivering advances in our community codebases and helping to onboard new Samvera developers
