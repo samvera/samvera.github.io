@@ -14,7 +14,7 @@ information on broader community communication, please see the Samvera wiki
 
 ## Regular Calls
 
-* [Weekly Technical Call](https://wiki.duraspace.org/display/samvera/Notes+from+Meetings+and+Calls) for technical discussion, and coordinating releases and code review
+* [Weekly Technical Call](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211059/Notes+from+Tech+Meetings+and+Calls) for technical discussion, and coordinating releases and code review
 * [Monthly Partner Call](https://wiki.duraspace.org/display/samvera/Samvera+Partner+Calls) complements the tech call with a focus on community and functional progress
 * Community Sprint Calls are also organized to coordinate development
 
