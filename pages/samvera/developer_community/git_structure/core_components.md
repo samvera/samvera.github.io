@@ -85,7 +85,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [browse-everything](https://github.com/samvera/browse-everything)
 
-**Product Owner:** [Michael Klein](https://github.com/mbklein)
+**Product Owner:** [James Griffin III](https://github.com/jrgriffiniii)
 
 **Vital Statistics:**
 
