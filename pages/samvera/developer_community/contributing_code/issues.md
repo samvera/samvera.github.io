@@ -30,10 +30,3 @@ They can also be used for more general discussion, such as asking a question.
 * Bring people into the discussion:
   * If you've talked about the issue with someone already, or know someone's looking into it, tag
     them in the issue to make sure they're notified
-
-## Waffle
-
-Most Samvera community sprints use Waffle.io to manage GitHub issues and organize their work, e.g.:
-
-* https://waffle.io/samvera/curation_concerns
-* https://waffle.io/samvera/sufia
