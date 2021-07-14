@@ -63,17 +63,17 @@ New fields for Hyrax 3 are indicated with _italics_. Fields are listed in the or
 | keyword          | schema:keywords | ::RDF::Vocab::SCHEMA.keywords | MAY | xsd:string (Literal) |
 | license          | dct:license | ::RDF::Vocab::DC.license | MAY | xsd:anyURI |
 | _access_right_     | _dct:accessRights_ | _::RDF::Vocab::DC.accessRights_ | _MAY_ | _xsd:string (Literal)_ |
-| _rights_notes_     | _dct:rights_ | _::RDF::Vocab::DC.rights_ | _MAY_ | _xsd:string (Literal)_ |
+| _rights_notes_     | _dce:rights_ | _::RDF::Vocab::DC11.rights_ | _MAY_ | _xsd:string (Literal)_ |
 | publisher        | dce:publisher | ::RDF::Vocab::DC11.publisher | MAY | xsd:string (Literal) |
 | date_created     | dct:created | ::RDF::Vocab::DC.created | MAY | xsd:date or xsd:dateTime xsd:string (Literal) |
 | subject          | dce:subject | ::RDF::Vocab::DC11.subject | MAY | xsd:string (Literal) |
 | language         | dce:language | ::RDF::Vocab::DC11.language | MAY | xsd:string (Literal) |
 | identifier       | dct:identifier | ::RDF::Vocab::DC.identifier | MAY | xsd:string (Literal) |
-| based_near       | foaf:basedNear | ::RDF::Vocab::FOAF.based_near | MAY | xsd:anyURI |
+| based_near       | foaf:based_near | ::RDF::Vocab::FOAF.based_near | MAY | xsd:anyURI |
 | related_url      | rdfs:seeAlso | ::RDF::RDFS.seeAlso | MAY | xsd:string or xsd:anyURI |
 | source           | dct:source | ::RDF::Vocab::DC.source | MAY | xsd:string (Literal) |
 | resource_type    | dct:type | ::RDF::Vocab::DC.type | MAY | xsd:string (Literal) |
-| bibliographic_citation* | dct:bibliographicCitation | ::RDF::Vocab::DC.biliographic_citation | MAY | xsd:string (Literal) |
+| bibliographic_citation* | dct:bibliographicCitation | ::RDF::Vocab::DC.biliographicCitation | MAY | xsd:string (Literal) |
 
 Asterisks(*) indicate fields that are included as defined metadata properties but are not shown in the Hyrax Work form by default.
 
