@@ -73,7 +73,7 @@ New fields for Hyrax 3 are indicated with _italics_. Fields are listed in the or
 | related_url      | rdfs:seeAlso | ::RDF::RDFS.seeAlso | MAY | xsd:string or xsd:anyURI |
 | source           | dct:source | ::RDF::Vocab::DC.source | MAY | xsd:string (Literal) |
 | resource_type    | dct:type | ::RDF::Vocab::DC.type | MAY | xsd:string (Literal) |
-| bibliographic_citation* | dct:bibliographicCitation | ::RDF::Vocab::DC.biliographicCitation | MAY | xsd:string (Literal) |
+| bibliographic_citation* | dct:bibliographicCitation | ::RDF::Vocab::DC.bibliographicCitation | MAY | xsd:string (Literal) |
 
 Asterisks(*) indicate fields that are included as defined metadata properties but are not shown in the Hyrax Work form by default.
 
