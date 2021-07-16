@@ -26,6 +26,8 @@ end
 
 ## Basic and Core metadata
 
+For an current list of metadata fields for the latest version of Hyrax, see the [Metadata Application Profile](metadata_application_profile.html).
+
 ### Basic metadata
 
 Basic metadata properties are defined in [app/models/concerns/hyrax/basic_metadata.rb](https://github.com/samvera/hyrax/blob/1-0-stable/app/models/concerns/hyrax/basic_metadata.rb)
