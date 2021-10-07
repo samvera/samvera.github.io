@@ -1,6 +1,6 @@
 ---
-title: "Manage Proxies (3.0)"
-permalink: manage-proxies-3.0.html
+title: "Manage Proxies"
+permalink: manage-proxies-3.x.html
 keywords:
   - "Best Practices"
   - "Managers"
@@ -8,7 +8,6 @@ keywords:
   - "Hyrax Administration"
   - "Proxy"
 ---
-# Manage Proxies
 
 Proxy deposit allows users to designate other users to deposit works on their behalf. If a work is deposited on behalf of another user, the ownership of the work will automatically be transferred to that user when the deposit completes. Proxies will retain editing privileges to works they deposit unless the owner revokes access. This feature may be disabled by the repository administrator.
 

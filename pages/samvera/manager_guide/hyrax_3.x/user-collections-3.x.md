@@ -1,6 +1,6 @@
 ---
-title: "Manage Proxies (3.0)"
-permalink: manage-proxies-3.0.html
+title: "User Collections"
+permalink: user-collections-3.x.html
 keywords:
   - "Best Practices"
   - "Managers"
@@ -8,7 +8,6 @@ keywords:
   - "Hyrax Administration"
   - "Collections"
 ---
-# User Collections
 
 This page focuses on the basics of an end user creating a collection. For a detailed overview of collection types and configurations, please visit the Collection configuration and [Admin Sets](https://samvera.github.io/administrative-sets-3.x.html) section of this website.
 
