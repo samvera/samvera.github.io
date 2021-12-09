@@ -11,9 +11,9 @@ folder: samvera/getting_started/
 
 ### Tyre Kicking with Hyrax
 
-Hyku (multi-tenant Hyrax application) and Nurax (Hyrax instance for testing) both provide Docker scripts to help you get a development instance up and runing quickly:
+Hyku (multi-tenant Hyrax application) and Hyrax (using the internal test app .dassie that comes with Hyrax for testing) both provide Docker scripts to help you get a development instance up and running quickly:
 
-- [Running Nurax with Docker](https://github.com/curationexperts/nurax/blob/master/DOCKER.md)
+- [Running Hyrax with Docker](https://github.com/samvera/hyrax/blob/main/CONTAINERS.md)
 - [Running Hyku with Docker](https://github.com/samvera/hyku#with-docker)
 
 ### External Components
@@ -28,4 +28,4 @@ Hyku (multi-tenant Hyrax application) and Nurax (Hyrax instance for testing) bot
 
 ### Detailed Setup Instructions, Components and Application
 
-[Here](https://github.com/samvera/hyrax#getting-started) is the current set of steps for everything you need to run your Hyrax application locally.
+[Here](https://github.com/samvera/hyrax#working-with-hyrax) is the current set of steps for everything you need to run your Hyrax application locally.
