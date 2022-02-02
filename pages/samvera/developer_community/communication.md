@@ -1,7 +1,7 @@
 ---
 title: Communication
 permalink: communication.html
-last_updated: March 30, 2017
+last_updated: February 2, 2022
 tags: [getting_started, community]
 summary: "Community Channels of Communication"
 folder: samvera/developer_community/
@@ -33,7 +33,7 @@ Slack has become the primary mode of synchronous communication in the Samvera co
 
 ## Wiki
 
-* DuraSpace wiki: https://samvera.atlassian.net/wiki/spaces/samvera/overview for general project
+* Samvera wiki: https://samvera.atlassian.net/wiki/spaces/samvera/overview for general project
   documentation, meeting notes, and working group pages
   * To request an account, please email [sysadmin@duraspace.org](mailto:heather@samvera.org)
 * GitHub codebase-specific wikis for technical documentation and tutorials: e.g.,

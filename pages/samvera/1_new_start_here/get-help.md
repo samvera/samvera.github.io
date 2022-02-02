@@ -101,9 +101,9 @@ A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slac
 
   For more information on how to start using irc, check out the instructions on the [code4lib](http://code4lib.org/irc) site.
 
-## DuraSpace Wiki
+## Samvera Wiki
 
-The [DuraSpace Wiki](Samvera Wiki (this site) http://wiki.duraspace.org/display/samvera) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the DuraSpace Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to sysadmin@duraspace.org.
+The [Samvera Wiki](https://samvera.atlassian.net/wiki/spaces/samvera/overview) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the Samvera Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to heather@samvera.org.
 
 ## Samvera Connect, Partner & Steering Group Meetings
 
