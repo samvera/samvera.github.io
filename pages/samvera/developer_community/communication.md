@@ -10,7 +10,7 @@ folder: samvera/developer_community/
 
 This page details the communication channels used by developers in the Samvera community.  For more
 information on broader community communication, please see the Samvera wiki
-[Get in touch!](https://wiki.duraspace.org/pages/viewpage.action?pageId=87460391) page.
+[Get Started in the Samvera Community](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211682/Getting+Started+in+the+Samvera+Community) page.
 
 ## Regular Calls
 
