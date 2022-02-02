@@ -2,7 +2,7 @@
 title: Samvera Labs
 permalink: samvera_labs.html
 keywords: ["Labs", "Experiments", "Starting a Project", "Development"]
-last_updated: February 26, 2018
+last_updated: February 2, 2022
 folder: samvera/developer_community/git_structure/
 sidebar: samvera_sidebar
 toc: true
@@ -36,7 +36,7 @@ requirements must be met:
 
   1. Show compatibility with current Rails versions and other dependencies, when was it last tested; note compatibility with prior versions when available. Compatibility can be specified in the gemspec(s) or verified via CI matrix.
 
-  1. [Hierarchy of promises](https://wiki.duraspace.org/display/samvera/Hydra+Stack+-+The+Hierarchy+of+Promises) asserted in clearly defined acceptance tests
+  1. [Hierarchy of promises](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211336/Hydra+Stack+-+The+Hierarchy+of+Promises) asserted in clearly defined acceptance tests
 
 ### Documentation Requirements
 
