@@ -35,7 +35,7 @@ Slack has become the primary mode of synchronous communication in the Samvera co
 
 * Samvera wiki: https://samvera.atlassian.net/wiki/spaces/samvera/overview for general project
   documentation, meeting notes, and working group pages
-  * To request an account, please email [sysadmin@duraspace.org](mailto:heather@samvera.org)
+  * To request an account, please email [heather@samvera.org](mailto:heather@samvera.org)
 * GitHub codebase-specific wikis for technical documentation and tutorials: e.g.,
   * https://github.com/samvera/hydra-head/wiki
   * https://github.com/samvera/sufia/wiki
