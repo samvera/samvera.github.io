@@ -3,13 +3,13 @@ title: "Technology Stack"
 permalink: our_technology_stack.html
 keywords: [ "Hyrax", "Front End", "Blacklight", "Rails", "Hydra Editor", "Search",
             "Persistence", "Solr", "Fedora", "Middleware", "Hydra Head", "Ldp", "Plugins" ]
-last_updated:
+last_updated: February 2, 2022
 tags: [getting_started]
 summary: "An introduction to the technologies used in Samvera"
 folder: samvera/getting_started/
 ---
 
-![Architecture Diagram](https://wiki.duraspace.org/download/attachments/87460044/hydra_9_architecture_2016.png?version=1&modificationDate=1497776440777&api=v2)
+![Architecture Diagram](https://samvera.atlassian.net/wiki/download/thumbnails/405211335/hydra_9_architecture_2016.png?version=1&modificationDate=1497758440777&cacheVersion=1&api=v2)
 
 ## Hyrax
 
