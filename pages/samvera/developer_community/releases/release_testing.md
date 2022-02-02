@@ -1,13 +1,13 @@
 ---
 title: How to Coordinate Testing for a Release
 keywords: ['Testing', 'Release', 'Community']
-last_updated: March 30, 2017
+last_updated: February 2, 2022
 sidebar: samvera_sidebar
 permalink: release_testing.html
 folder: samvera/developer_community/releases/
 ---
 
-Each release will have a release testing coordinator, usually the QA specialist from the [Hyrax Working Group](https://wiki.duraspace.org/display/samvera/Hyrax+Working+Group). This person can vary from release to release. They will work closely with the Hyrax Tech Lead and Product Owner. Follow the newly-defined process outlined in [Hyrax Testing and Release Process](/release_process.html). As this is a new process, you may find that some sections need adjustment or more detail.
+Each release will have a release testing coordinator, usually the QA specialist from the [Hyrax Working Group](https://samvera.atlassian.net/wiki/spaces/samvera/pages/496632295/Hyrax+Maintenance+Working+Group). This person can vary from release to release. They will work closely with the Hyrax Tech Lead and Product Owner. Follow the newly-defined process outlined in [Hyrax Testing and Release Process](/release_process.html). As this is a new process, you may find that some sections need adjustment or more detail.
 
 ### PR testing:
 
