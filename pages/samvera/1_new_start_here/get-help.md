@@ -1,7 +1,7 @@
 ---
 title: "Help Resources"
 permalink: get-help.html
-last_updated:
+last_updated: February 2, 2022
 keywords: ["Contact", "Community", "Help"]
 toc: true
 tags: [getting_started]
@@ -76,7 +76,7 @@ A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slac
   Wednesdays at 9:00 AM Pacific Time, noon Eastern Time
   Check out this helpful [time zone](http://www.timeanddate.com/worldclock/fixedtime.html?month=12&day=6&year=2010&hour=8&min=0&sec=0&p1=224) translation
 
-  Connect via [Zoom](https://psu.zoom.us/j/613720745), which will launch the Zoom client. Instructions to connect by telephone are included at the top of [the agenda for each call](https://wiki.duraspace.org/display/samvera/Notes+from+Meetings+and+Calls).  
+  Connect via [Zoom](https://psu.zoom.us/j/613720745), which will launch the Zoom client. Instructions to connect by telephone are included at the top of [the agenda for each call](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211059/Notes+from+Tech+Meetings+and+Calls).
 
 - **Monthly Partner Call**
 
