@@ -64,7 +64,7 @@ The key things to focus on are:
 
 As a reviewer, it's also your responsibility to make sure:
 
-* Does the submitter have a signed CLA [on file](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211653/CLA+collection+process)?
+* Does the submitter have a signed CLA? (Indicated by a `cla-signed` label in github.)
 * Did the CI tests complete successfully?
 * Is there a significant drop in code coverage?
 * Do all new or changed methods, modules, and classes have comments?
