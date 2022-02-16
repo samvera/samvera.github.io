@@ -127,6 +127,25 @@ entries:
       output: web, pdf
 
       subfolders:
+      
+      - title: Hyrax Version 3.x
+        output: web, pdf
+        subfolderitems:
+        
+        - title: Manage Proxies
+          url: /manage-proxies-3.x.html
+          output: web, pdf
+          
+        - title: User Collections
+          url: /user-collections-3.x.html
+          output: web, pdf    
+          
+        - title: Administrative Sets
+          url: /administrative-sets-3.x.html
+          output: web, pdf
+          
+         
+          
       - title: Hyrax Version 2.1
         output: web, pdf
         subfolderitems:
