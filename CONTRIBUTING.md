@@ -18,7 +18,7 @@ All code contributors must have an Individual Contributor License Agreement
 an institution, the institution must have a Corporate Contributor License
 Agreement (cCLA) on file.
 
-https://wiki.duraspace.org/display/samvera/Samvera+Community+Intellectual+Property+Licensing+and+Ownership
+https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211651/Samvera+Community+Intellectual+Property+Licensing+and+Ownership
 
 You should also add yourself to the `CONTRIBUTORS.md` file in the root of the project.
 
@@ -77,10 +77,10 @@ further details.
   * Test functionality with RSpec; Test features / UI with Capybara.
 * Run _all_ the tests to assure nothing else was accidentally broken.
 
-NOTE: This repository follows the [Samvera Community Code of Conduct](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405212316/Code+of+Conduct) 
-and [language recommendations](#language).  
-Please ***do not*** create a branch called `master` for this repository or as part of 
-your pull request; the branch will either need to be removed or renamed before it can 
+NOTE: This repository follows the [Samvera Community Code of Conduct](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405212316/Code+of+Conduct)
+and [language recommendations](#language).
+Please ***do not*** create a branch called `master` for this repository or as part of
+your pull request; the branch will either need to be removed or renamed before it can
 be considered for inclusion in the code base and history of this repository.
 
 ### Documenting Code

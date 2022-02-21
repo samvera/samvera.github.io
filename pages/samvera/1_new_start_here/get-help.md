@@ -1,7 +1,7 @@
 ---
 title: "Help Resources"
 permalink: get-help.html
-last_updated:
+last_updated: February 2, 2022
 keywords: ["Contact", "Community", "Help"]
 toc: true
 tags: [getting_started]
@@ -76,7 +76,7 @@ A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slac
   Wednesdays at 9:00 AM Pacific Time, noon Eastern Time
   Check out this helpful [time zone](http://www.timeanddate.com/worldclock/fixedtime.html?month=12&day=6&year=2010&hour=8&min=0&sec=0&p1=224) translation
 
-  Connect via [Zoom](https://psu.zoom.us/j/613720745), which will launch the Zoom client. Instructions to connect by telephone are included at the top of [the agenda for each call](https://wiki.duraspace.org/display/samvera/Notes+from+Meetings+and+Calls).  
+  Connect via [Zoom](https://psu.zoom.us/j/613720745), which will launch the Zoom client. Instructions to connect by telephone are included at the top of [the agenda for each call](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211059/Notes+from+Tech+Meetings+and+Calls).
 
 - **Monthly Partner Call**
 
@@ -101,9 +101,9 @@ A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slac
 
   For more information on how to start using irc, check out the instructions on the [code4lib](http://code4lib.org/irc) site.
 
-## DuraSpace Wiki
+## Samvera Wiki
 
-The [DuraSpace Wiki](Samvera Wiki (this site) http://wiki.duraspace.org/display/samvera) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the DuraSpace Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to sysadmin@duraspace.org.
+The [Samvera Wiki](https://samvera.atlassian.net/wiki/spaces/samvera/overview) has a wealth of information, and is the place where working groups are formed and track their progress, where the technical calls record their agendas and meetings notes. You need an account for the Samvera Wiki so that you can contribute to Samvera's pages. If you do not have one already, please request an account by sending an email to heather@samvera.org.
 
 ## Samvera Connect, Partner & Steering Group Meetings
 

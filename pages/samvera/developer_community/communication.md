@@ -1,7 +1,7 @@
 ---
 title: Communication
 permalink: communication.html
-last_updated: March 30, 2017
+last_updated: February 2, 2022
 tags: [getting_started, community]
 summary: "Community Channels of Communication"
 folder: samvera/developer_community/
@@ -10,7 +10,7 @@ folder: samvera/developer_community/
 
 This page details the communication channels used by developers in the Samvera community.  For more
 information on broader community communication, please see the Samvera wiki
-[Get in touch!](https://wiki.duraspace.org/pages/viewpage.action?pageId=87460391) page.
+[Get Started in the Samvera Community](https://samvera.atlassian.net/wiki/spaces/samvera/pages/405211682/Getting+Started+in+the+Samvera+Community) page.
 
 ## Regular Calls
 
@@ -33,9 +33,9 @@ Slack has become the primary mode of synchronous communication in the Samvera co
 
 ## Wiki
 
-* DuraSpace wiki: https://samvera.atlassian.net/wiki/spaces/samvera/overview for general project
+* Samvera wiki: https://samvera.atlassian.net/wiki/spaces/samvera/overview for general project
   documentation, meeting notes, and working group pages
-  * To request an account, please email [sysadmin@duraspace.org](mailto:heather@samvera.org)
+  * To request an account, please email [heather@samvera.org](mailto:heather@samvera.org)
 * GitHub codebase-specific wikis for technical documentation and tutorials: e.g.,
   * https://github.com/samvera/hydra-head/wiki
   * https://github.com/samvera/sufia/wiki

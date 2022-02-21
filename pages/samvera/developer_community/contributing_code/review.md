@@ -2,7 +2,7 @@
 title: Code Review
 permalink: review.html
 keywords: ["Code", "Review", "PR", "Pull Request"]
-last_updated: March 30, 2017
+last_updated: February 2, 2022
 folder: samvera/developer_community/contributing_code/
 tags: [getting_started, community]
 summary: "Procedure for adding code to a community repository"
@@ -64,7 +64,7 @@ The key things to focus on are:
 
 As a reviewer, it's also your responsibility to make sure:
 
-* Does the submitter have a signed CLA [on file](https://wiki.duraspace.org/display/samvera/CLA+submission+list)?
+* Does the submitter have a signed CLA? (Indicated by a `cla-signed` label in github.)
 * Did the CI tests complete successfully?
 * Is there a significant drop in code coverage?
 * Do all new or changed methods, modules, and classes have comments?
