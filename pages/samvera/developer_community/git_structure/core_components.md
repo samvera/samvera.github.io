@@ -28,7 +28,7 @@ that falls into disuse should be a candidate for [deprecation](deprecation.html)
 
 ## Maintenance
 
-The Component Maintenance Interest Group (CIG) is in the process of creating a framework for
+The Component Maintenance Interest Group is in the process of creating a framework for
 addressing ongoing maintenance of shared code repositories.
 
 ## Product Owner Responsibilities
@@ -294,7 +294,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
   1. Any additional documentation and areas of code
 1. Commit these changes (using `git commit`) and push these to the GitHub repository using `git push origin prepare-release-3.2.1`
 1. [Create a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and request a review from `@samvera/maintenance`
-1. A member of the Component Interest Group should approved of and merge the pull request
+1. A member of the Component Maintenance Interest Group should approved of and merge the pull request
 1. One this has been completed, there are now two tasks left (both can be delegated to members of `@samvera/maintenance`):
   1. The new Gem release can be published to RubyGems
     1. Invoke `bundle exec rake release`
