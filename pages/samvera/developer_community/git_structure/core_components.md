@@ -2,7 +2,7 @@
 title: Core Samvera Code Repository
 permalink: core_components.html
 keywords: [ 'Components', 'Labs', 'Community', 'Development', 'Maintenance' ]
-last_updated: April 11, 2022
+last_updated: May 9, 2022
 folder: samvera/developer_community/git_structure/
 ---
 # Samvera Code Repository
@@ -28,7 +28,7 @@ that falls into disuse should be a candidate for [deprecation](deprecation.html)
 
 ## Maintenance
 
-The Component Interest Group (CIG) is in the process of creating a framework for
+The Component Maintenance Interest Group is in the process of creating a framework for
 addressing ongoing maintenance of shared code repositories.
 
 ## Product Owner Responsibilities
@@ -285,9 +285,20 @@ Please note that Hyrax is not considered a 'component' under the definition used
 [![Orb Version Badge](https://badges.circleci.com/orbs/samvera/circleci-orb.svg)](https://circleci.com/developer/orbs/orb/samvera/circleci-orb)
 [![Build Status](https://circleci.com/gh/samvera/samvera-circleci-orb.svg?style=svg)](https://circleci.com/gh/samvera/samvera-circleci-orb)
 
-## Component Statistics
+## Gem Release Process
 
-The Component Maintenance Interest Group occasionally generates reports on the current usage of components in Gemfiles across repositories. The code to generate the reports can be found at [https://github.com/samvera-labs/core-dependency-report](https://github.com/samvera-labs/core-dependency-report). The reports are linked below:
+1. Create a new branch of the following form: `git checkout -b prepare-release-3.2.1` where `3` is the major release, `2` is the minor release, and `1` is the patch release (please see [Semantic Versioning](https://semver.org/) for reference).
+1. Within this branch, please update the following:
+  1. Version number (this is often found within `lib/[GEM_NAME]/version.rb`)
+  1. The [`CHANGELOG.md`](https://keepachangelog.com/en/1.0.0/)
+  1. Any additional documentation and areas of code
+1. Commit these changes (using `git commit`) and push these to the GitHub repository using `git push origin prepare-release-3.2.1`
+1. [Create a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and request a review from `@samvera/maintenance`
+1. A member of the Component Maintenance Interest Group should approved of and merge the pull request
+1. One this has been completed, there are now two tasks left (both can be delegated to members of `@samvera/maintenance`):
+  1. The new Gem release can be published to RubyGems
+    1. Invoke `bundle exec rake release`
+    1. This requires that one have an account with the necessary privileges on [RubyGems](https://guides.rubygems.org/publishing/#publishing-to-rubygemsorg)
+  1. As this creates a new `git tag` with the version as the tag name, this can be used to [draft and publish a release on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release)
+  1. Please notify any member of the Component Maintenance Interest Group, and we can assist by announcing the new release to the `#devs` Samvera Slack Channel and the [`samvera-tech` Google Group](https://groups.google.com/g/samvera-tech).
 
-* [2018-03-09](https://docs.google.com/spreadsheets/d/1Cvg4fxhJPyC2KRj43kmXK24YA2GXubuqNRNMP0e2kfw#gid=1356649611)
-* [2018-10-07](https://docs.google.com/spreadsheets/d/19gpCMn4nQT2OJecFvNyxtgrGqwtcKCvBVG8w_PAnQ2g#gid=41964284)
