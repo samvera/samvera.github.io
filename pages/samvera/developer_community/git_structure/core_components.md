@@ -251,7 +251,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [valkyrie](https://github.com/samvera/valkyrie)
 
-**Product Owner:** [Kate Lynch](https://github.com/kelynch)
+**Product Owner:** [Alexandra Dunn](https://github.com/dunn)
 
 **Technical Lead:** [Trey Pendragon](https://github.com/tpendragon)
 
