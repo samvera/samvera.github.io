@@ -36,34 +36,29 @@ To move from `samvera-labs` to the core `samvera` code organization, the followi
   1. Code releases must follow the [Semantic Versioning specification](https://semver.org/) standards
 
 ### Documentation Requirements
+These document files are derived from the templates managed within [the Samvera Maintenance repository](https://github.com/samvera/maintenance).
 
-  1. LICENSE file, Apache 2 (or compatible)
+  1. [`README.md`](https://github.com/samvera/maintenance/blob/main/templates/README.md)
 
-  1. README.md
+  1. [`LICENSE`](https://github.com/samvera/maintenance/blob/main/templates/LICENSE)
 
-  1. Statement of purpose
+  1. [`CODE_OF_CONDUCT.md`](https://github.com/samvera/maintenance/blob/main/templates/CODE_OF_CONDUCT.md)
 
-  1. Basic install steps
+  1. [`SUPPORT.md`](https://github.com/samvera/maintenance/blob/main/templates/SUPPORT.md)
 
-  1. Identify any volatile/experimental features
+  1. [`CONTRIBUTING.md`](https://github.com/samvera/maintenance/blob/main/templates/CONTRIBUTING.md)
 
-  1. How to contribute -> CONTRIBUTING.md
+  1. Known issues documented in GitHub Issues
 
-  1. How/Who to contact for help -> push out to all gems like CONTRIBUTING.md
-
-  1. Known issues documented in github Issues tickets (not just listed in text)
-
-  1. Tutorial / Walkthrough / Example usage
-
-  1. Resolve TODO items in documents and remove them
+  1. Resolve any `TODO` comments within the code base (or, remove the comments and please create these as GitHub Issues)
 
 ### Use Requirements
 
-  1. Community use by three or more institutions
+  1. Community use by three or more organizations
 
   1. In active use for six months
 
-  1. Has an ongoing maintenance plan.
+  1. Has an ongoing maintenance plan
 
 ## Mechanism for Promotion
 
