@@ -2,7 +2,7 @@
 title: Core Samvera Code Repository
 permalink: core_components.html
 keywords: [ 'Components', 'Labs', 'Community', 'Development', 'Maintenance' ]
-last_updated: May 9, 2022
+last_updated: June 23, 2022
 folder: samvera/developer_community/git_structure/
 ---
 # Samvera Code Repository
@@ -97,7 +97,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-derivatives](https://github.com/samvera/hydra-derivatives)
 
-**Product Owner:** [Jennifer Lindner](https://github.com/jenlindner)
+**Product Owner (Interim):** [James R. Griffin III](https://github.com/jrgriffiniii)  
 
 **Vital Statistics:**
 
@@ -145,7 +145,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-pcdm](https://github.com/samvera/hydra-pcdm)
 
-**Product Owner:** [Mark Bussey](https://github.com/mark-dce)  
+**Product Owner (Interim):** [James R. Griffin III](https://github.com/jrgriffiniii)  
 
 **Vital Statistics:**
 
@@ -169,7 +169,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-works](https://github.com/samvera/hydra-works)
 
-**Product Owner:** [Mark Bussey](https://github.com/mark-dce)    
+**Product Owner (Interim):** [James R. Griffin III](https://github.com/jrgriffiniii)
 
 **Vital Statistics:**
 
@@ -193,7 +193,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [ldp](https://github.com/samvera/ldp)
 
-**Product Owner:** [Randall Floyd](https://github.com/randalldfloyd)
+**Product Owner (Interim):** [James R. Griffin III](https://github.com/jrgriffiniii)  
 
 **Vital Statistics:**
 
@@ -217,7 +217,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [questioning_authority](https://github.com/samvera/questioning_authority)
 
-**Product Owner:** [Lynette Rayle](https://github.com/elrayle)
+**Product Owner (Interim):** [James R. Griffin III](https://github.com/jrgriffiniii)  
 
 **Vital Statistics:**
 
@@ -301,4 +301,3 @@ Please note that Hyrax is not considered a 'component' under the definition used
     1. This requires that one have an account with the necessary privileges on [RubyGems](https://guides.rubygems.org/publishing/#publishing-to-rubygemsorg)
   1. As this creates a new `git tag` with the version as the tag name, this can be used to [draft and publish a release on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release)
   1. Please notify any member of the Component Maintenance Interest Group, and we can assist by announcing the new release to the `#devs` Samvera Slack Channel and the [`samvera-tech` Google Group](https://groups.google.com/g/samvera-tech).
-
