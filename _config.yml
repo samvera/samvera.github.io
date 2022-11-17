@@ -119,7 +119,6 @@ BASE_PATH : https://samvera.github.io
 theme: jekyll-theme-minimal
 
 # needed for sitemap.xml file only
-url: http://samvera.github.io
 plugins:
   - jekyll-sitemap
 
