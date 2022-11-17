@@ -40,12 +40,10 @@ Next, find these lines:
       devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-
 Replace them with:
 
       devise :cas_authenticatable,
          :recoverable, :rememberable, :trackable
-
 
 Finally, add a function that takes extra attributes from your CAS server and maps them to fields in the Hyrax contributor profile. In this example, we will get the department name and email address.
 

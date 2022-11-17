@@ -450,7 +450,7 @@ that use the API provided by core.
       if (indexInBounds(indexOrId)) {
         index = indexOrId;
       } else if (typeof indexOrId === "string") {
-      /* Id string index, search for it and set integer index */
+        /* Id string index, search for it and set integer index */
         $.each(slides, function (i, $slide) {
           if ($slide.attr("id") === indexOrId) {
             index = i;

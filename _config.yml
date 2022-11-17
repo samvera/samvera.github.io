@@ -61,10 +61,10 @@ highlighter: rouge
 
 markdown: kramdown
 kramdown:
- input: GFM
- auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
 
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
@@ -74,8 +74,7 @@ collections:
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
@@ -83,8 +82,7 @@ defaults:
       comments: true
       search: true
       sidebar: home_sidebar
-  -
-    scope:
+  - scope:
       path: ""
       type: "tooltips"
     values:
@@ -93,8 +91,7 @@ defaults:
       search: true
       tooltip: true
 
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
@@ -106,15 +103,15 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
+  - home_sidebar
 
-- other
+  - other
 
 description: ""
 # the description is used in the feed.xml file
 url: http://samvera.github.io
-production_url : https://samvera.github.io
-BASE_PATH : https://samvera.github.io
+production_url: https://samvera.github.io
+BASE_PATH: https://samvera.github.io
 
 theme: jekyll-theme-minimal
 
@@ -122,4 +119,4 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-sitemap
 
-github_pages_save_generated_files: ['browse_pages.html']
+github_pages_save_generated_files: ["browse_pages.html"]
