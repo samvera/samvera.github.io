@@ -7,6 +7,7 @@ tags: getting_started
 summary: "Membership in GitHub organizations and repositories"
 folder: samvera/getting_started/
 ---
+
 # Formalities
 
 ## Membership in GitHub organizations and repositories

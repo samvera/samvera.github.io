@@ -1,10 +1,11 @@
 ---
 title: Core Samvera Code Repository
 permalink: core_components.html
-keywords: [ 'Components', 'Labs', 'Community', 'Development', 'Maintenance' ]
+keywords: ["Components", "Labs", "Community", "Development", "Maintenance"]
 last_updated: May 9, 2022
 folder: samvera/developer_community/git_structure/
 ---
+
 # Samvera Code Repository
 
 The [primary Samvera code repository](https://github.com/samvera) contains the
@@ -40,30 +41,34 @@ the component. They are not required to have a deep technical understanding of
 their component. Their responsibilities are as follows:
 
 1. Ensure a release gets cut.
-  * Decide when a release is done, what the version number should be, what will
-     be in a release, ensure the CHANGELOG is updated, and announce the release to
-     the community.
-  * Decide what the policy for your component is in regards to backwards
-    compatibility and which versions are supported.
+
+- Decide when a release is done, what the version number should be, what will
+  be in a release, ensure the CHANGELOG is updated, and announce the release to
+  the community.
+- Decide what the policy for your component is in regards to backwards
+  compatibility and which versions are supported.
+
 2. Own the Backlog
-  * Handle incoming issue labeling
-  * Create tickets for security issues discovered by automated tooling.
-  * Ensure pull requests aren’t sitting around without any response for a long time.
-  * Know what priorities are by being in touch with stakeholders enough to understand what the greatest pain points/desires for features are.
-  * Be able to give the Component Interest Group a gauge of how important a set of work is and when it needs to be done. Have a ready answer for “if we could give you a week of work, what would you spend it on?”
-  * Be able to find answers for “so and so wants to do this with the library, is that a good idea?”
+
+- Handle incoming issue labeling
+- Create tickets for security issues discovered by automated tooling.
+- Ensure pull requests aren’t sitting around without any response for a long time.
+- Know what priorities are by being in touch with stakeholders enough to understand what the greatest pain points/desires for features are.
+- Be able to give the Component Interest Group a gauge of how important a set of work is and when it needs to be done. Have a ready answer for “if we could give you a week of work, what would you spend it on?”
+- Be able to find answers for “so and so wants to do this with the library, is that a good idea?”
+
 3. Act as point of contact for questions about the component’s goals and path
 4. Ensure there’s sufficient documentation for the component to be useful
-   * Doesn’t necessarily have to write the documentation, but should know what’s out
+   - Doesn’t necessarily have to write the documentation, but should know what’s out
      there and have an idea of what might need to be updated if the scope changes,
      etc.
 5. Actively participate during sprints to provide guidance and prioritization.
 6. Report on whether the component still meets the requirements for being a core
    component.
-   * Meets the criteria here:
+   - Meets the criteria here:
      [http://samvera-labs.github.io/promotion.html](http://samvera-labs.github.io/promotion.html)
 7. Recruit any necessary positions for better maintaining their component.
-   * E.g a technical lead.
+   - E.g a technical lead.
 
 ## Core Components and Product Owners
 
@@ -145,7 +150,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-pcdm](https://github.com/samvera/hydra-pcdm)
 
-**Product Owner:** [Mark Bussey](https://github.com/mark-dce)  
+**Product Owner:** [Mark Bussey](https://github.com/mark-dce)
 
 **Vital Statistics:**
 
@@ -169,7 +174,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-works](https://github.com/samvera/hydra-works)
 
-**Product Owner:** [Mark Bussey](https://github.com/mark-dce)    
+**Product Owner:** [Mark Bussey](https://github.com/mark-dce)
 
 **Vital Statistics:**
 
@@ -289,16 +294,15 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 1. Create a new branch of the following form: `git checkout -b prepare-release-3.2.1` where `3` is the major release, `2` is the minor release, and `1` is the patch release (please see [Semantic Versioning](https://semver.org/) for reference).
 1. Within this branch, please update the following:
-  1. Version number (this is often found within `lib/[GEM_NAME]/version.rb`)
-  1. The [`CHANGELOG.md`](https://keepachangelog.com/en/1.0.0/)
-  1. Any additional documentation and areas of code
+1. Version number (this is often found within `lib/[GEM_NAME]/version.rb`)
+1. The [`CHANGELOG.md`](https://keepachangelog.com/en/1.0.0/)
+1. Any additional documentation and areas of code
 1. Commit these changes (using `git commit`) and push these to the GitHub repository using `git push origin prepare-release-3.2.1`
 1. [Create a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) and request a review from `@samvera/maintenance`
 1. A member of the Component Maintenance Interest Group should approved of and merge the pull request
 1. One this has been completed, there are now two tasks left (both can be delegated to members of `@samvera/maintenance`):
-  1. The new Gem release can be published to RubyGems
-    1. Invoke `bundle exec rake release`
-    1. This requires that one have an account with the necessary privileges on [RubyGems](https://guides.rubygems.org/publishing/#publishing-to-rubygemsorg)
-  1. As this creates a new `git tag` with the version as the tag name, this can be used to [draft and publish a release on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release)
-  1. Please notify any member of the Component Maintenance Interest Group, and we can assist by announcing the new release to the `#devs` Samvera Slack Channel and the [`samvera-tech` Google Group](https://groups.google.com/g/samvera-tech).
-
+1. The new Gem release can be published to RubyGems
+1. Invoke `bundle exec rake release`
+1. This requires that one have an account with the necessary privileges on [RubyGems](https://guides.rubygems.org/publishing/#publishing-to-rubygemsorg)
+1. As this creates a new `git tag` with the version as the tag name, this can be used to [draft and publish a release on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository#creating-a-release)
+1. Please notify any member of the Component Maintenance Interest Group, and we can assist by announcing the new release to the `#devs` Samvera Slack Channel and the [`samvera-tech` Google Group](https://groups.google.com/g/samvera-tech).

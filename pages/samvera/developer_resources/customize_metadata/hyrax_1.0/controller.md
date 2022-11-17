@@ -4,13 +4,13 @@ permalink: customize-metadata-controller.html
 keywords: ["Controller", "Customize", "Metadata", "Tutorial"]
 last_updated:
 version:
-  id: 'hyrax_1.0-stable'
+  id: "hyrax_1.0-stable"
 sidebar: home_sidebar
 ---
 
 <ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>
 
-The GenericWorksController class is generated with some default behaviors.  It is located at `app/controllers/curation_concerns/generic_works_controller.rb`
+The GenericWorksController class is generated with some default behaviors. It is located at `app/controllers/curation_concerns/generic_works_controller.rb`
 
 ```ruby
 # Generated via
@@ -26,8 +26,7 @@ module Hyrax
 end
 ```
 
-As usual, you can add code for special processing to the controller.  The controller's main purpose is to connect it to other classes that define the model, set up forms, and display show pages.
-
+As usual, you can add code for special processing to the controller. The controller's main purpose is to connect it to other classes that define the model, set up forms, and display show pages.
 
 ## Files defined by the controller...
 
@@ -37,10 +36,9 @@ The model class, which is part of the standard Rails Model-View-Controller, has 
 
 `model_name = controller_name minus 'Controller'` (e.g. GenericWork)
 
-
 ### Form class
 
-The form class is used to control how metadata appears on the new/edit work form.  A form class is created for each work type when the work type is generated.  The controller knows about this class through the [work_form_service.rb form_class](https://github.com/samvera/hyrax/blob/master/app/services/hyrax/work_form_service.rb) method.
+The form class is used to control how metadata appears on the new/edit work form. A form class is created for each work type when the work type is generated. The controller knows about this class through the [work_form_service.rb form_class](https://github.com/samvera/hyrax/blob/master/app/services/hyrax/work_form_service.rb) method.
 
 Default: form_class = model_name.name + Form (e.g. GenericWorkForm)
 
@@ -51,13 +49,12 @@ Modifying: You can change the class that is used as the form class by setting it
 ```
 
 NOTE:
+
 - It is uncommon to set self.form_class as the form class is already generated (e.g. GenericWorkForm) and can hold your extensions.
-
-
 
 ### Presenter class
 
-The presenter class is used to control how metadata appears on the work show page.  This class is NOT generated.  See [Modifying the Show Page](customize-metadata-show-page.html) for more information on creating a presenter class.  The default presenter class is defined in [works_controller_behavior.rb](https://github.com/samvera/hyrax/blob/master/app/controllers/concerns/hyrax/works_controller_behavior.rb)
+The presenter class is used to control how metadata appears on the work show page. This class is NOT generated. See [Modifying the Show Page](customize-metadata-show-page.html) for more information on creating a presenter class. The default presenter class is defined in [works_controller_behavior.rb](https://github.com/samvera/hyrax/blob/master/app/controllers/concerns/hyrax/works_controller_behavior.rb)
 
 Default: show_presenter = Hyrax::WorkShowPresenter
 

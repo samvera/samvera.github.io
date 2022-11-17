@@ -7,10 +7,11 @@ toc: false
 ---
 
 ### Creating Groups of Users: Database-backed Solutions
-  This page demonstrates managing groups with Hyrax Role Management, but there are a few other options available. See:
 
-  - [Rolify](https://github.com/RolifyCommunity/rolify),
-  - [Hydra-ldap]( https://github.com/samvera-labs/hydra-ldap)
+This page demonstrates managing groups with Hyrax Role Management, but there are a few other options available. See:
+
+- [Rolify](https://github.com/RolifyCommunity/rolify),
+- [Hydra-ldap](https://github.com/samvera-labs/hydra-ldap)
 
 ### Setup - Development Note
 
@@ -61,9 +62,9 @@ admin.save
 
 You can add more administrative users via the command-line like you did above, or you can do so via the UI:
 
-* Login as an admin user
-* Browse to http://your.app.host/roles
-* Select a role and add one or more users to it
+- Login as an admin user
+- Browse to http://your.app.host/roles
+- Select a role and add one or more users to it
 
 ### Confirm user was made an admin
 
@@ -79,9 +80,9 @@ If `u.admin?` returns `true` then everything worked as expected.
 
 Or you can verify this in the UI:
 
-* Login as an admin user
-* Browse to http://your.app.host/roles
-  * The page should load without exceptions
-  * You should see a button labeled "Create a new role"
+- Login as an admin user
+- Browse to http://your.app.host/roles
+  - The page should load without exceptions
+  - You should see a button labeled "Create a new role"
 
 If you don't see this or get a permission error, you may need to restart your Rails server and try again in the browser.

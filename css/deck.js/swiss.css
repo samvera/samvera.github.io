@@ -1,13 +1,71 @@
 /* Resets and base styles from HTML5 Boilerplate */
-div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,15 +74,28 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -46,7 +117,8 @@ del {
   text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
+abbr[title],
+dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
@@ -65,26 +137,35 @@ hr {
   padding: 0;
 }
 
-input, select {
+input,
+select {
   vertical-align: middle;
 }
 
-select, input, textarea, button {
+select,
+input,
+textarea,
+button {
   font: 99% sans-serif;
 }
 
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
   font-family: monospace, sans-serif;
 }
 
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-a:hover, a:active {
+a:hover,
+a:active {
   outline: none;
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: 2em;
   vertical-align: top;
 }
@@ -93,7 +174,8 @@ ol {
   list-style-type: decimal;
 }
 
-nav ul, nav li {
+nav ul,
+nav li {
   margin: 0;
   list-style: none;
   list-style-image: none;
@@ -103,7 +185,8 @@ small {
   font-size: 85%;
 }
 
-strong, th {
+strong,
+th {
   font-weight: bold;
 }
 
@@ -111,7 +194,8 @@ td {
   vertical-align: top;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -145,17 +229,22 @@ button {
   cursor: pointer;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   margin: 0;
 }
 
-input:invalid, textarea:invalid {
+input:invalid,
+textarea:invalid {
   border-radius: 1px;
   -moz-box-shadow: 0px 0px 5px red;
   -webkit-box-shadow: 0px 0px 5px red;
   box-shadow: 0px 0px 5px red;
 }
-input:invalid .no-boxshadow, textarea:invalid .no-boxshadow {
+input:invalid .no-boxshadow,
+textarea:invalid .no-boxshadow {
   background-color: #f0dddd;
 }
 
@@ -164,14 +253,17 @@ button {
   overflow: visible;
 }
 
-select, input, textarea {
+select,
+input,
+textarea {
   color: #444444;
 }
 
 a {
   color: #607890;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #036;
 }
 a:link {
@@ -183,13 +275,15 @@ h1 {
   font-size: 4.5em;
 }
 
-h1, .vcenter {
+h1,
+.vcenter {
   font-weight: bold;
   text-align: center;
   padding-top: 1em;
   max-height: 100%;
 }
-.csstransforms h1, .csstransforms .vcenter {
+.csstransforms h1,
+.csstransforms .vcenter {
   padding: 0 48px;
   position: absolute;
   left: 0;
@@ -216,27 +310,27 @@ h1, .vcenter {
 h2 {
   font-size: 2.25em;
   font-weight: bold;
-  padding-top: .5em;
-  margin: 0 0 .66666em 0;
+  padding-top: 0.5em;
+  margin: 0 0 0.66666em 0;
   border-bottom: 3px solid #888;
 }
 
 h3 {
   font-size: 1.4375em;
   font-weight: bold;
-  margin-bottom: .30435em;
+  margin-bottom: 0.30435em;
 }
 
 h4 {
   font-size: 1.25em;
   font-weight: bold;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 h5 {
   font-size: 1.125em;
   font-weight: bold;
-  margin-bottom: .2222em;
+  margin-bottom: 0.2222em;
 }
 
 h6 {
@@ -244,17 +338,28 @@ h6 {
   font-weight: bold;
 }
 
-img, iframe, video {
+img,
+iframe,
+video {
   display: block;
   max-width: 100%;
 }
 
-video, iframe, img {
+video,
+iframe,
+img {
   display: block;
   margin: 0 auto;
 }
 
-p, blockquote, iframe, img, ul, ol, pre, video {
+p,
+blockquote,
+iframe,
+img,
+ul,
+ol,
+pre,
+video {
   margin-bottom: 1em;
 }
 
@@ -271,10 +376,11 @@ em {
 }
 
 li {
-  padding: .25em 0;
+  padding: 0.25em 0;
   vertical-align: middle;
 }
-li > ol, li > ul {
+li > ol,
+li > ul {
   margin-bottom: inherit;
 }
 
@@ -322,7 +428,7 @@ blockquote p {
   margin: 0;
 }
 blockquote cite {
-  font-size: .5em;
+  font-size: 0.5em;
   font-style: normal;
   font-weight: bold;
   color: #888;
@@ -338,11 +444,16 @@ blockquote cite {
   color: #fff;
 }
 
-a, a:hover, a:focus, a:active, a:visited {
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
   color: #c00;
   text-decoration: none;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: underline;
 }
 
@@ -355,24 +466,41 @@ a:hover, a:focus {
   padding: 0 48px;
 }
 
-.slide .deck-before, .slide .deck-previous {
+.slide .deck-before,
+.slide .deck-previous {
   opacity: 0.4;
 }
-.slide .deck-before:not(.deck-child-current) .deck-before, .slide .deck-before:not(.deck-child-current) .deck-previous, .slide .deck-previous:not(.deck-child-current) .deck-before, .slide .deck-previous:not(.deck-child-current) .deck-previous {
+.slide .deck-before:not(.deck-child-current) .deck-before,
+.slide .deck-before:not(.deck-child-current) .deck-previous,
+.slide .deck-previous:not(.deck-child-current) .deck-before,
+.slide .deck-previous:not(.deck-child-current) .deck-previous {
   opacity: 1;
 }
 .slide .deck-child-current {
   opacity: 1;
 }
 
-.deck-prev-link, .deck-next-link {
+.deck-prev-link,
+.deck-next-link {
   background: #ccc;
   font-family: serif;
 }
-.deck-prev-link, .deck-prev-link:hover, .deck-prev-link:focus, .deck-prev-link:active, .deck-prev-link:visited, .deck-next-link, .deck-next-link:hover, .deck-next-link:focus, .deck-next-link:active, .deck-next-link:visited {
+.deck-prev-link,
+.deck-prev-link:hover,
+.deck-prev-link:focus,
+.deck-prev-link:active,
+.deck-prev-link:visited,
+.deck-next-link,
+.deck-next-link:hover,
+.deck-next-link:focus,
+.deck-next-link:active,
+.deck-next-link:visited {
   color: #fff;
 }
-.deck-prev-link:hover, .deck-prev-link:focus, .deck-next-link:hover, .deck-next-link:focus {
+.deck-prev-link:hover,
+.deck-prev-link:focus,
+.deck-next-link:hover,
+.deck-next-link:focus {
   background: #c00;
   text-decoration: none;
 }
@@ -384,6 +512,7 @@ a:hover, a:focus {
 .deck-menu .slide {
   background: #eee;
 }
-.deck-menu .deck-current, .no-touch .deck-menu .slide:hover {
+.deck-menu .deck-current,
+.no-touch .deck-menu .slide:hover {
   background: #ddf;
 }

@@ -11,7 +11,7 @@ jobs:
         type: string
         default: 2.3.11
     executor:
-      name: 'samvera/ruby'
+      name: "samvera/ruby"
       ruby_version: << parameters.ruby_version >>
     environment:
       WAIT_FOR_JEKYLL: 10
@@ -33,8 +33,8 @@ jobs:
       - persist_to_workspace:
           root: ~/
           paths:
-          - project/*
-          - project/**/*
+            - project/*
+            - project/**/*
       - samvera/parallel_rspec
 
 workflows:

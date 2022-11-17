@@ -1,7 +1,7 @@
 ---
 title: Deprecation
 permalink: deprecation.html
-keywords: ['Deprecation', 'Gems', 'Maintenance']
+keywords: ["Deprecation", "Gems", "Maintenance"]
 last_updated: February 26, 2018
 tags: [community]
 summary: "Our process for the deprecation of legacy code"
@@ -9,6 +9,7 @@ folder: samvera/developer_community/git_structure/
 sidebar: samvera_sidebar
 toc: true
 ---
+
 # Deprecation
 
 The [`samvera-deprecated` github organization](https://github.com/samvera-deprecated) is the place for older gems, apps, and experiments that we no longer recommend deploying in production but that may be
@@ -27,7 +28,7 @@ If a code repository in the core Samvera github:
 1. no longer has three institutions using it
 
 1. cannot be upgraded (which might mean no one is willing to upgrade it) to current
-versions of core libraries
+   versions of core libraries
 
 1. is not recommended for production use for some other reason
 
@@ -38,13 +39,13 @@ what should be deprecated.
 The process looks a lot like the promotion process:
 
 1. Email the samvera-tech mailing list saying what code repository you think should
-be deprecated and why. Ask whether three institutions can commit to maintaining
-it and addressing any concerns (e.g., any unaddressed security issues). Provide a
-date, at least 30 days later, by which these responses should be received.
+   be deprecated and why. Ask whether three institutions can commit to maintaining
+   it and addressing any concerns (e.g., any unaddressed security issues). Provide a
+   date, at least 30 days later, by which these responses should be received.
 
 2. If that date has been reached and no agreement has been reached, the code can
-be moved to the samvera-deprecated organization. Please also send an email to all
-Samvera lists documenting its move.
+   be moved to the samvera-deprecated organization. Please also send an email to all
+   Samvera lists documenting its move.
 
 ## Deprecation process from labs
 

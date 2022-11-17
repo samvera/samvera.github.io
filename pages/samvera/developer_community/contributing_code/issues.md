@@ -1,7 +1,7 @@
 ---
 title: Issues
 permalink: issues.html
-keywords: [ "Issues", "Pull Request", "PR" ]
+keywords: ["Issues", "Pull Request", "PR"]
 last_updated: March 30, 2017
 folder: samvera/developer_community/contributing_code/
 ---
@@ -16,17 +16,17 @@ They can also be used for more general discussion, such as asking a question.
 
 ## What Makes a Good Issue?
 
-* Give the issue a short, descriptive title
-* Clearly describe the problem in the description, with enough detail to help someone that's not
+- Give the issue a short, descriptive title
+- Clearly describe the problem in the description, with enough detail to help someone that's not
   familiar with the issue get started
-* Explain how to reproduce bugs:
-  * Explain the expected behavior
-  * Explain the actual behavior
-  * Provide step-by-step instructions for triggering the actual behavior
-* Provide details:
-  * Include a screenshot if something doesn't look right
-  * Include any error messages in the description
-  * Link to mailing-list discussions, wiki pages, specifications or anything else that's relevant
-* Bring people into the discussion:
-  * If you've talked about the issue with someone already, or know someone's looking into it, tag
+- Explain how to reproduce bugs:
+  - Explain the expected behavior
+  - Explain the actual behavior
+  - Provide step-by-step instructions for triggering the actual behavior
+- Provide details:
+  - Include a screenshot if something doesn't look right
+  - Include any error messages in the description
+  - Link to mailing-list discussions, wiki pages, specifications or anything else that's relevant
+- Bring people into the discussion:
+  - If you've talked about the issue with someone already, or know someone's looking into it, tag
     them in the issue to make sure they're notified

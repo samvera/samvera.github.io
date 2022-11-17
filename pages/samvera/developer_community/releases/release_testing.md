@@ -1,6 +1,6 @@
 ---
 title: How to Coordinate Testing for a Release
-keywords: ['Testing', 'Release', 'Community']
+keywords: ["Testing", "Release", "Community"]
 last_updated: February 2, 2022
 sidebar: samvera_sidebar
 permalink: release_testing.html
@@ -13,54 +13,53 @@ Each release will have a release testing coordinator, usually the QA specialist 
 
 The Hyrax [Pull Request Template](https://github.com/samvera/hyrax/blob/master/.github/PULL_REQUEST_TEMPLATE.md) asks for guidance on QA testing. To the extent possible, pull requests will undergo QA testing from the QA Specialist _in addition to_ code review by the [Hyrax code reviewers](https://github.com/orgs/samvera/teams/hyrax-code-reviewers). The QA Specialist will either use [NURAX-DEV](https://nurax-dev.curationexperts.com) or a local instance of Hyrax for testing pull requests.
 
-
 ### When release is ready:
 
-  - **Figure out what needs to be tested**
+- **Figure out what needs to be tested**
 
-    When a release is ready there will be a list of commits that have been merged since the last release. You may or may not understand the implications of these changes for testing. The tech lead (or others) will be able to help you determine what needs to be tested. In some cases, large community efforts like a shared sprint, may have a person to document how features are supposed to work.
+  When a release is ready there will be a list of commits that have been merged since the last release. You may or may not understand the implications of these changes for testing. The tech lead (or others) will be able to help you determine what needs to be tested. In some cases, large community efforts like a shared sprint, may have a person to document how features are supposed to work.
 
-    Here are some common situations to consider:
+  Here are some common situations to consider:
 
-    Is this a major, minor, or patch release? For major releases we test all the features we can on Nurax across browsers and platforms as well as testing for accessibility. Minor release process is in flux and will likely be determined on a case by case basis. Patch releases will usually happen without your involvement.
+  Is this a major, minor, or patch release? For major releases we test all the features we can on Nurax across browsers and platforms as well as testing for accessibility. Minor release process is in flux and will likely be determined on a case by case basis. Patch releases will usually happen without your involvement.
 
-    Are there changes to the UI?
+  Are there changes to the UI?
 
-    UI updates should have cross browser, platform and accessibility testing. This is not necessary for minor changes like text updates, but does the page look totally different to you? It should be tested!
+  UI updates should have cross browser, platform and accessibility testing. This is not necessary for minor changes like text updates, but does the page look totally different to you? It should be tested!
 
-    Are there updates to core gems that may potential affect certain tasks (like searching, access controls, etc)?
+  Are there updates to core gems that may potential affect certain tasks (like searching, access controls, etc)?
 
-    You will need to work closely with a developer to figure this out. Generally, it would be ideal to do a single browser test of the entire spreadsheet but in some cases this may not be needed.
+  You will need to work closely with a developer to figure this out. Generally, it would be ideal to do a single browser test of the entire spreadsheet but in some cases this may not be needed.
 
-  - **Make sure Nurax is updated with the release**
+- **Make sure Nurax is updated with the release**
 
-    You will hopefully have one or two people that can help get the release on Nurax. Once Nurax is up to date, update the announcement text so people who may be checking out Hyrax (or documenters) know what they are seeing.
+  You will hopefully have one or two people that can help get the release on Nurax. Once Nurax is up to date, update the announcement text so people who may be checking out Hyrax (or documenters) know what they are seeing.
 
-  - **Conduct a preliminary test on Nurax**
+- **Conduct a preliminary test on Nurax**
 
-    Conduct some basic testing to ensure there are not any major problems. (log in, submit a work, edit a work, test the new feature). At this stage you are trying to make sure the release is ready to be tested by the rest of the testing team. You don't want to call on your team to get ready to test if there are major blockers that prohibit testing, for example. This is also a time to work with the PO to make sure new features seem ready to release (user acceptance testing). Any problems you see, document by added issue in Nurax Github and working directly with your Nurax point person or tech lead depending on the release.
+  Conduct some basic testing to ensure there are not any major problems. (log in, submit a work, edit a work, test the new feature). At this stage you are trying to make sure the release is ready to be tested by the rest of the testing team. You don't want to call on your team to get ready to test if there are major blockers that prohibit testing, for example. This is also a time to work with the PO to make sure new features seem ready to release (user acceptance testing). Any problems you see, document by added issue in Nurax Github and working directly with your Nurax point person or tech lead depending on the release.
 
-  - **Create a testing spreadsheet**
+- **Create a testing spreadsheet**
 
-    Create a release version of the testing template spreadsheet and update the spreadsheet with what needs to be tested for each release. Ideally you will run through any new tests before sharing with a larger group. You may have 5 versions of the spreadsheet filled out depending on how many beta and release candidates are in the cycle. You will name them specifically for the release. For example an RC 2 would be called: "Hyrax_2.0.0_testing_spreadsheet_RC2"
+  Create a release version of the testing template spreadsheet and update the spreadsheet with what needs to be tested for each release. Ideally you will run through any new tests before sharing with a larger group. You may have 5 versions of the spreadsheet filled out depending on how many beta and release candidates are in the cycle. You will name them specifically for the release. For example an RC 2 would be called: "Hyrax_2.0.0_testing_spreadsheet_RC2"
 
-    Some common things you will need to consider when creating the spreadsheet:
+  Some common things you will need to consider when creating the spreadsheet:
 
-    1. Browsers/platforms
-    2. Accessibility
-    3. Update an existing tests if any features change
-    4. Add new tests for new feature sets
-    5. Remove tests that are not needed
+  1. Browsers/platforms
+  2. Accessibility
+  3. Update an existing tests if any features change
+  4. Add new tests for new feature sets
+  5. Remove tests that are not needed
 
-  - **PIN the testing template to the #nurax channel on slack**
+- **PIN the testing template to the #nurax channel on slack**
 
-    Right now we aren't posting the URL for the template on this page since it needs to be open.
+  Right now we aren't posting the URL for the template on this page since it needs to be open.
 
-  - **Identify testers**
+- **Identify testers**
 
-    Put a call out to find people to help you test and add their initials to the tasks in first page of the testing spreadsheet. This could be between 3-10 people depending on the size and scope of the release. You want to try to give them a timeline and a target due date. Most testers are busy but able to help out with some notice. Accessibility is particularly tricky to schedule because of limited number of testers, complexity of the test, and timing of the testing. Some places to find testers: repo-managers, UX (accessibility). Please note: the tests will range various roles in the system, some may only be conducted by those with repo-admin status on Nurax. You will need to update the .yml file for anyone who needs this and a deploy to the server will be needed (this should be automatic, but ask your Nurax Helpers if needed).
+  Put a call out to find people to help you test and add their initials to the tasks in first page of the testing spreadsheet. This could be between 3-10 people depending on the size and scope of the release. You want to try to give them a timeline and a target due date. Most testers are busy but able to help out with some notice. Accessibility is particularly tricky to schedule because of limited number of testers, complexity of the test, and timing of the testing. Some places to find testers: repo-managers, UX (accessibility). Please note: the tests will range various roles in the system, some may only be conducted by those with repo-admin status on Nurax. You will need to update the .yml file for anyone who needs this and a deploy to the server will be needed (this should be automatic, but ask your Nurax Helpers if needed).
 
-    Ask your testers to join the #nurax channel on github - this is where they may communicate with other testers and helpers who may be able to resolve bugs and system issues. Some helpers may say "Restarting Nurax, any problems with that?"
+  Ask your testers to join the #nurax channel on github - this is where they may communicate with other testers and helpers who may be able to resolve bugs and system issues. Some helpers may say "Restarting Nurax, any problems with that?"
 
 - **Conducting testing**
 
@@ -95,7 +94,7 @@ The Hyrax [Pull Request Template](https://github.com/samvera/hyrax/blob/master/.
 - **How do you know when the release is "done"?**
 
   - This will be determined by the PO and Technical Lead signing off that all blocker issues are successfully resolved.
-  - In addition, you will want to help make sure the targets are ready for documentation mentioned here.  Although you are not responsible for creating documentation, it's helpful for you to communicate when testing.
+  - In addition, you will want to help make sure the targets are ready for documentation mentioned here. Although you are not responsible for creating documentation, it's helpful for you to communicate when testing.
 
 - **Stuff you can't test**
 
