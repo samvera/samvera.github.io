@@ -27,6 +27,14 @@ jobs:
               echo "$(git branch --all --list master */master)"
             fi
             [[ -z "$(git branch --all --list master */master)" ]]
+      - run:
+          name: Install the NPM dependencies using Yarn
+          command: |
+            yarn install -D
+      - run:
+          name: Lint the formatting of source code files using Prettier
+          command: |
+            yarn run prettier --check .
       - samvera/bundle:
           ruby_version: << parameters.ruby_version >>
           bundler_version: << parameters.bundler_version >>
