@@ -1,8 +1,22 @@
 ---
 title: "Technology Stack"
 permalink: our_technology_stack.html
-keywords: [ "Hyrax", "Front End", "Blacklight", "Rails", "Hydra Editor", "Search",
-            "Persistence", "Solr", "Fedora", "Middleware", "Hydra Head", "Ldp", "Plugins" ]
+keywords:
+  [
+    "Hyrax",
+    "Front End",
+    "Blacklight",
+    "Rails",
+    "Hydra Editor",
+    "Search",
+    "Persistence",
+    "Solr",
+    "Fedora",
+    "Middleware",
+    "Hydra Head",
+    "Ldp",
+    "Plugins",
+  ]
 last_updated: February 2, 2022
 tags: [getting_started]
 summary: "An introduction to the technologies used in Samvera"

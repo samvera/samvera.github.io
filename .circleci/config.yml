@@ -11,7 +11,7 @@ jobs:
         type: string
         default: 2.3.11
     executor:
-      name: 'samvera/ruby'
+      name: "samvera/ruby"
       ruby_version: << parameters.ruby_version >>
     environment:
       WAIT_FOR_JEKYLL: 10
@@ -27,14 +27,22 @@ jobs:
               echo "$(git branch --all --list master */master)"
             fi
             [[ -z "$(git branch --all --list master */master)" ]]
+      - run:
+          name: Install the NPM dependencies using Yarn
+          command: |
+            yarn install -D
+      - run:
+          name: Lint the formatting of source code files using Prettier
+          command: |
+            yarn run prettier --check .
       - samvera/bundle:
           ruby_version: << parameters.ruby_version >>
           bundler_version: << parameters.bundler_version >>
       - persist_to_workspace:
           root: ~/
           paths:
-          - project/*
-          - project/**/*
+            - project/*
+            - project/**/*
       - samvera/parallel_rspec
 
 workflows:

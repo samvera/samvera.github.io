@@ -11,30 +11,31 @@ sidebar: home_sidebar
 <ul class='info'><li><b>Primary Goal: Isolate views from business logic code.</b></li></ul>
 
 ## Characteristics:
-* Presenters are used to hide implementation details from views.  They serve as a go-between for controllers and views.
-* Presenters provide access to controller instance variables.
-* `@presenter` should be the only instance variable accessed in the view.
-* `@presenter` can be passed as `presenter` to partials rendered from the primary view.
-* The same presenter can be shared by multiple views and partials.
-* Presenters are _not_ used for new/edit forms. Instead, Form objects are used. Form objects work similarly to Presenters, but include some additional features for dealing with forms, such as specifying which fields should be required.
 
-This documentation uses object show page presenters to highlight some characteristics of presenters.  Show page presenters are the most common to customize with overrides ond extensions.
+- Presenters are used to hide implementation details from views. They serve as a go-between for controllers and views.
+- Presenters provide access to controller instance variables.
+- `@presenter` should be the only instance variable accessed in the view.
+- `@presenter` can be passed as `presenter` to partials rendered from the primary view.
+- The same presenter can be shared by multiple views and partials.
+- Presenters are _not_ used for new/edit forms. Instead, Form objects are used. Form objects work similarly to Presenters, but include some additional features for dealing with forms, such as specifying which fields should be required.
+
+This documentation uses object show page presenters to highlight some characteristics of presenters. Show page presenters are the most common to customize with overrides ond extensions.
 
 ## A deeper dive into some of the show page presenters methods
 
-Show pages are views that display information for a single object in the repository.  Show page presenters you may want to explore are...
+Show pages are views that display information for a single object in the repository. Show page presenters you may want to explore are...
 
-* [app/presenters/hyrax/admin_set_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/admin_set_presenter.rb)
-* [app/presenters/hyrax/collection_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/collection_presenter.rb)
-* [app/presenters/hyrax/work_show_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/work_show_presenter.rb)
-* [app/presenters/hyrax/file_set_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/file_set_presenter.rb)
-* [app/presenters/hyrax/presents_attributes.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/presents_attributes.rb)
+- [app/presenters/hyrax/admin_set_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/admin_set_presenter.rb)
+- [app/presenters/hyrax/collection_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/collection_presenter.rb)
+- [app/presenters/hyrax/work_show_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/work_show_presenter.rb)
+- [app/presenters/hyrax/file_set_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/file_set_presenter.rb)
+- [app/presenters/hyrax/presents_attributes.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/presents_attributes.rb)
 
 ### Delegate retrieval to solr_document
 
-Access to property values is provided by the solr document.  To allow presenters to surface these values, the metadata access methods are delegated to `solr_document`.  All the show page presenters use delegation in this way.
+Access to property values is provided by the solr document. To allow presenters to surface these values, the metadata access methods are delegated to `solr_document`. All the show page presenters use delegation in this way.
 
-*Example Default*
+_Example Default_
 
 [actual default for works](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/work_show_presenter.rb#L38-L42)
 
@@ -46,9 +47,9 @@ Access to property values is provided by the solr document.  To allow presenters
              :rendering_ids, :member_of_collection_ids, to: :solr_document
 ```
 
-*Example Extension*
+_Example Extension_
 
-The original delegations still exist.  The following is an example of adding more delegations for custom metadata fields.
+The original delegations still exist. The following is an example of adding more delegations for custom metadata fields.
 
 ```ruby
   # Custom Metadata Methods
@@ -57,11 +58,11 @@ The original delegations still exist.  The following is an example of adding mor
 
 ### Specify which properties to show
 
-For works, this is not determined by the presenter.  It is determined by [app/views/curation_concerns/base/_attribute_rows.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/base/_attribute_rows.html.erb).  For more information on updating `_attribute_rows.html.erb`, see the Customizing Metadata tutorial's lesson on <a href="customize-metadata-show-page.html">Modifying the Show Page</a>.
+For works, this is not determined by the presenter. It is determined by [app/views/curation_concerns/base/\_attribute_rows.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/base/_attribute_rows.html.erb). For more information on updating `_attribute_rows.html.erb`, see the Customizing Metadata tutorial's lesson on <a href="customize-metadata-show-page.html">Modifying the Show Page</a>.
 
 For collections, this is determined by the `terms` method in the presenter.
 
-*Example Default*
+_Example Default_
 
 [actual default for collections](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/collection_show_presenter.rb#L41-L46)
 
@@ -74,9 +75,9 @@ For collections, this is determined by the `terms` method in the presenter.
     end
 ```
 
-*Example Override*
+_Example Override_
 
-In this case, the `terms` method is completely overridden and only the terms defined in this `self.terms` will be displayed. In this example, a few of the default properties are included and custom properties are added.  Any default property not included in this list will not be shown on the collection show page.
+In this case, the `terms` method is completely overridden and only the terms defined in this `self.terms` will be displayed. In this example, a few of the default properties are included and custom properties are added. Any default property not included in this list will not be shown on the collection show page.
 
 ```ruby
     # Terms is the list of fields displayed by
@@ -90,10 +91,10 @@ In this case, the `terms` method is completely overridden and only the terms def
 
 By default, terms with blank values are hidden.
 
-* For works, I do not know if you can change this.
-* For collections, the hiding of terms with blank values is controlled by the `terms_with_values` method.
+- For works, I do not know if you can change this.
+- For collections, the hiding of terms with blank values is controlled by the `terms_with_values` method.
 
-*Example Default*
+_Example Default_
 
 The default code for object presenters excludes display of terms with `nil` values in method...
 
@@ -105,7 +106,7 @@ The default code for object presenters excludes display of terms with `nil` valu
   end
 ```
 
-*Example Override*
+_Example Override_
 
 If you want terms without values to be displayed, override this method with...
 
@@ -129,7 +130,7 @@ If your data has blank strings, you can ignore the blank string values too by ov
 
 ### Example work presenter method
 
-*Method in work presenter*
+_Method in work presenter_
 
 [app/presenters/hyrax/work_show_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/work_show_presenter.rb#L136-L138)
 
@@ -139,9 +140,9 @@ If your data has blank strings, you can ignore the blank string values too by ov
     end
 ```
 
-*Used in view*
+_Used in view_
 
-[app/views/hyrax/base/_show_actions.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/base/_show_actions.html.erb#L32-L40)
+[app/views/hyrax/base/\_show_actions.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/base/_show_actions.html.erb#L32-L40)
 
 ```
   <% if presenter.work_featurable? %>
@@ -157,10 +158,9 @@ If your data has blank strings, you can ignore the blank string values too by ov
 
 [Additional work presenter methods used to isolate business logic](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/collection_presenter.rb#L63-L85)
 
-
 ### Example collection presenter method
 
-*Method in collection presenter*
+_Method in collection presenter_
 
 [app/presenters/hyrax/collection_presenter.rb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/collection_presenter.rb#L83-L85)
 
@@ -170,9 +170,9 @@ If your data has blank strings, you can ignore the blank string values too by ov
     end
 ```
 
-*Used in view*
+_Used in view_
 
-* [app/views/hyrax/dashboard/collections/_collection_title.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/dashboard/collections/_collection_title.html.erb#L18)
+- [app/views/hyrax/dashboard/collections/\_collection_title.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/dashboard/collections/_collection_title.html.erb#L18)
 
 ```
     <div class="collection-title-row-content">
@@ -187,11 +187,11 @@ If your data has blank strings, you can ignore the blank string values too by ov
     </div>
 ```
 
-*Also used in views...*
+_Also used in views..._
 
-* [app/views/catalog/_index_header_list_collection.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/catalog/_index_header_list_collection.html.erb#L3)
-* [app/views/hyrax/my/collections/_list_collections.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/my/collections/_list_collections.html.erb#L60)
-* [app/views/hyrax/collections/show.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/collections/show.html.erb#L14)
+- [app/views/catalog/\_index_header_list_collection.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/catalog/_index_header_list_collection.html.erb#L3)
+- [app/views/hyrax/my/collections/\_list_collections.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/my/collections/_list_collections.html.erb#L60)
+- [app/views/hyrax/collections/show.html.erb](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/views/hyrax/collections/show.html.erb#L14)
 
 [Additional collection presenter methods used to isolate business logic](https://github.com/samvera/hyrax/blob/v2.1.0.rc3/app/presenters/hyrax/collection_presenter.rb#L63-L85)
 
@@ -199,7 +199,7 @@ If your data has blank strings, you can ignore the blank string values too by ov
 
 <ul class='warning'><li><b>To limit future refactoring of customized code, it is recommended that you use the Module#Prepend pattern to override and extend presenter classes.  The examples here use this approach.</b></li></ul>
 
-On occasion you may want to change the behavior of an existing presenter method.  For example, in a local app, we wanted to limit the `total_items` method to return a count of a specific type of work only.  We used class prepending to make the override, so our changed looks like...
+On occasion you may want to change the behavior of an existing presenter method. For example, in a local app, we wanted to limit the `total_items` method to return a count of a specific type of work only. We used class prepending to make the override, so our changed looks like...
 
 ```
 # Based on the Module#prepend pattern in ruby which is used in some Hyrax.
@@ -213,7 +213,7 @@ module PrependedPresenters::AdminSetPresenter
 end
 ```
 
-You may also want to add custom methods to presenters.  This is also done by adding the new method to the presenter prepend class and then adjusting the view to use the new presenter method.
+You may also want to add custom methods to presenters. This is also done by adding the new method to the presenter prepend class and then adjusting the view to use the new presenter method.
 
 ## Presenters used in context
 

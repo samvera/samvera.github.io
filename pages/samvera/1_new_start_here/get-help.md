@@ -23,13 +23,13 @@ Joining the Slack team requires an invitation, but anyone can generate an automa
 
 Several Samvera Partners use Slack within their institutions for team communication and collaboration. There is a Samvera Slack team that is used for discussion, questions, announcements, interest groups, and working groups. Anyone can create a new channel within the Samvera Slack team once they have registered for an account.
 
-A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slack has clients for Mac, PC, Linux, and mobile devices, and may be used via any web browser.
+A tutorial can be found [here](https://samvera.slack.com/getting-started). Slack has clients for Mac, PC, Linux, and mobile devices, and may be used via any web browser.
 
 ## Mailing Lists
 
 - **Samvera-Releases** (1-2 messages a month)
 
-  [Subscribe](https://groups.google.com/forum/#!forum/samvera-releases/join) to this list if you want notification of every new point (bugfix) release of Samvera and related software.  Most people will not need this density of release information.  Major releases are notified to the Samvera-Announces list.
+  [Subscribe](https://groups.google.com/forum/#!forum/samvera-releases/join) to this list if you want notification of every new point (bugfix) release of Samvera and related software. Most people will not need this density of release information. Major releases are notified to the Samvera-Announces list.
 
 - **Samvera-Announces** (2-5 messages a month)
 
@@ -65,7 +65,7 @@ A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slac
 
 - **Blacklight**
 
-  Not a Samvera list as such but possibly of interest to those whose focus is on the Blacklight layer.  The primary [mailing list](http://groups.google.com/group/blacklight-development) for anyone using or improving Blacklight.
+  Not a Samvera list as such but possibly of interest to those whose focus is on the Blacklight layer. The primary [mailing list](http://groups.google.com/group/blacklight-development) for anyone using or improving Blacklight.
 
 ## Calls
 
@@ -86,20 +86,20 @@ A tutorial can be found [here](https://samvera.slack.com/getting-started).  Slac
   8:30 AM - 9:30 AM Pacific Time
   Check out this helpful [time zone](http://www.timeanddate.com/worldclock/fixedtime.html?month=12&day=6&year=2010&hour=8&min=0&sec=0&p1=224) translation
 
-  This call used to use the conference line above but has recently been exploring other systems.  For a given call, check the agenda on the right of the Samvera Partner Calls page for the dial-in (etc) information.
+  This call used to use the conference line above but has recently been exploring other systems. For a given call, check the agenda on the right of the Samvera Partner Calls page for the dial-in (etc) information.
 
 ## IRC
 
-  While the #samvera room in IRC is in continuous use, most conversations now take place on Slack (as of spring/summer 2016).
+While the #samvera room in IRC is in continuous use, most conversations now take place on Slack (as of spring/summer 2016).
 
-  **Server: chat.freenode.net
-  Channel: #samvera**
+**Server: chat.freenode.net
+Channel: #samvera**
 
-  If you don't already use an IRC client, connect through the web at http://webchat.freenode.net/
-  Nickname: pick a name,
-  Channels: #samvera
+If you don't already use an IRC client, connect through the web at http://webchat.freenode.net/
+Nickname: pick a name,
+Channels: #samvera
 
-  For more information on how to start using irc, check out the instructions on the [code4lib](http://code4lib.org/irc) site.
+For more information on how to start using irc, check out the instructions on the [code4lib](http://code4lib.org/irc) site.
 
 ## Samvera Wiki
 

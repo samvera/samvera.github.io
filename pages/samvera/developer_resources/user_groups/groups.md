@@ -8,7 +8,7 @@ toc: false
 
 ### Creating Groups of Users: The Default Setup
 
-Samvera ships with a YAML based group management system.  Typically this is only used when learning Samvera.
+Samvera ships with a YAML based group management system. Typically this is only used when learning Samvera.
 
 To change the groups in the default YAML implementation, you want to edit `config/role_map.yml`. That file should look something like this:
 
@@ -47,8 +47,9 @@ development:
 ```
 
 We can change the groups implementation (default is `RoleMapper`) by setting
+
 ```
 User.groups_service = MyCustomService
 ```
 
-Here is the original implementation of the [RoleMapper class]( https://github.com/samvera/hydra-head/blob/master/hydra-access-controls/lib/hydra/role_mapper_behavior.rb).
+Here is the original implementation of the [RoleMapper class](https://github.com/samvera/hydra-head/blob/master/hydra-access-controls/lib/hydra/role_mapper_behavior.rb).

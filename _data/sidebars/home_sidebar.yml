@@ -1,409 +1,386 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: Sidebar Menu
-  folders:
-
-  - title: New? Start Here
-    output: web, pdf
-    folderitems:
-
-    - title: Introduction
-      url: /introduction.html
-      output: web, pdf
-
-    - title: Formalities
-      url: /formalities.html
-      output: web, pdf
-
-      subfolders:
-      - title: Training Slideshows
+  - title: Sidebar Menu
+    folders:
+      - title: New? Start Here
         output: web, pdf
-        subfolderitems:
+        folderitems:
+          - title: Introduction
+            url: /introduction.html
+            output: web, pdf
 
-        - title: Dive Deeper Into Samvera (Slideshow)
-          url: /deeper_samvera_index.html
-          output: web, pdf
+          - title: Formalities
+            url: /formalities.html
+            output: web, pdf
 
-        - title: Samvera Design Patterns (Slideshow)
-          url: /touring_samvera_index.html
-          output: web, pdf
+            subfolders:
+              - title: Training Slideshows
+                output: web, pdf
+                subfolderitems:
+                  - title: Dive Deeper Into Samvera (Slideshow)
+                    url: /deeper_samvera_index.html
+                    output: web, pdf
 
-    - title: Our Technology Stack
-      url: /our_technology_stack.html
-      output: web, pdf
+                  - title: Samvera Design Patterns (Slideshow)
+                    url: /touring_samvera_index.html
+                    output: web, pdf
 
-    - title: How to Ask for Help
-      url: /get-help.html
-      output: web, pdf
+          - title: Our Technology Stack
+            url: /our_technology_stack.html
+            output: web, pdf
 
-    - title: Up and Running
-      url: /getting_started.html
-      output: web, pdf
+          - title: How to Ask for Help
+            url: /get-help.html
+            output: web, pdf
 
-    - title: Other Helpful Getting Started Docs
-      url: /other-getting-started.html
-      output: web, pdf
+          - title: Up and Running
+            url: /getting_started.html
+            output: web, pdf
 
-    - title: Hyku vs Hyrax
-      url: /hyku-vs-hyrax.html
-      output: web, pdf
+          - title: Other Helpful Getting Started Docs
+            url: /other-getting-started.html
+            output: web, pdf
 
-    - title: Blacklight Plugins
-      url: /blacklight-plugins.html
-      output: web, pdf
+          - title: Hyku vs Hyrax
+            url: /hyku-vs-hyrax.html
+            output: web, pdf
 
-  - title: Developer Community
-    output: web, pdf
-    folderitems:
+          - title: Blacklight Plugins
+            url: /blacklight-plugins.html
+            output: web, pdf
 
-    - title: Communication
-      url: /communication.html
-      output: web, pdf
-
-      subfolders:
-      - title: Samvera Organizations
+      - title: Developer Community
         output: web, pdf
-        subfolderitems:
+        folderitems:
+          - title: Communication
+            url: /communication.html
+            output: web, pdf
 
-        - title: Samvera Labs
-          url: /samvera_labs.html
-          output: web, pdf
+            subfolders:
+              - title: Samvera Organizations
+                output: web, pdf
+                subfolderitems:
+                  - title: Samvera Labs
+                    url: /samvera_labs.html
+                    output: web, pdf
 
-        - title: Core Components
-          url: /core_components.html
-          output: web, pdf
+                  - title: Core Components
+                    url: /core_components.html
+                    output: web, pdf
 
-        - title: Deprecation
-          url: /deprecation.html
-          output: web, pdf
+                  - title: Deprecation
+                    url: /deprecation.html
+                    output: web, pdf
 
-      - title: Contributing Code
+              - title: Contributing Code
+                output: web, pdf
+                subfolderitems:
+                  - title: Creating Issues
+                    url: /issues.html
+                    output: web, pdf
+
+                  - title: Code Guidelines
+                    url: /code.html
+                    output: web, pdf
+
+                  - title: Coding Style with RuboCop
+                    url: /best-practices-coding-styles.html
+                    output: web
+
+                  - title: Contributing to the Project
+                    url: /how-to-pr.html
+                    output: web, pdf
+
+                  - title: Code Review Process
+                    url: /review.html
+                    output: web, pdf
+
+                  - title: Pull Request Checklist
+                    url: /pr-checklist.html
+                    output: web, pdf
+
+              - title: Releases
+                output: web, pdf
+                subfolderitems:
+                  - title: Release Process
+                    url: /release_process.html
+                    output: web, pdf
+
+                  - title: Release Testing
+                    url: /release_testing.html
+                    output: web, pdf
+
+      - title: Feature Guides
         output: web, pdf
-        subfolderitems:
+        folderitems:
+          - title: Introduction
+            url: /intro-to.html
+            output: web, pdf
 
-        - title: Creating Issues
-          url: /issues.html
-          output: web, pdf
+            subfolders:
+              - title: Hyrax Version 3.x
+                output: web, pdf
+                subfolderitems:
+                  - title: Manage Proxies
+                    url: /manage-proxies-3.x.html
+                    output: web, pdf
 
-        - title: Code Guidelines
-          url: /code.html
-          output: web, pdf
+                  - title: User Collections
+                    url: /user-collections-3.x.html
+                    output: web, pdf
 
-        - title: Coding Style with RuboCop
-          url: /best-practices-coding-styles.html
-          output: web
+                  - title: Administrative Sets
+                    url: /administrative-sets-3.x.html
+                    output: web, pdf
 
-        - title: Contributing to the Project
-          url: /how-to-pr.html
-          output: web, pdf
+              - title: Hyrax Version 2.1
+                output: web, pdf
+                subfolderitems:
+                  - title: Configuring the Repository
+                    url: /configuration-2.1.html
+                    output: web, pdf
 
-        - title: Code Review Process
-          url: /review.html
-          output: web, pdf
+                  - title: Creating a Work
+                    url: /create-works-2.1.html
+                    output: web, pdf
 
-        - title: Pull Request Checklist
-          url: /pr-checklist.html
-          output: web, pdf
+                  - title: Editing a Work
+                    url: /edit-works-2.1.html
+                    output: web, pdf
 
-      - title: Releases
+                  - title: Collections
+                    url: /collections-2.1.html
+                    output: web, pdf
+
+                  - title: Batch Operations
+                    url: /batch-ops-2.1.html
+                    output: web, pdf
+
+                  - title: Leases and Embargoes
+                    url: /lease-embargoes-2.1.html
+                    output: web, pdf
+
+              - title: Hyrax Version 2.0
+                output: web, pdf
+                subfolderitems:
+                  - title: Configuring the Repository
+                    url: /configuration-2.0.html
+                    output: web, pdf
+
+                  - title: Creating a Work
+                    url: /create-works-2.0.html
+                    output: web, pdf
+
+                  - title: Editing a Work
+                    url: /edit-works-2.0.html
+                    output: web, pdf
+
+                  - title: Administrative Sets
+                    url: /admin-sets-2.0.html
+                    output: web, pdf
+
+                  - title: Collections
+                    url: /collections-2.0.html
+                    output: web, pdf
+
+                  - title: Batch Operations
+                    url: /batch-works-2.0.html
+                    output: web, pdf
+
+                  - title: Leases and Embargoes
+                    url: /lease-embargoes-2.0.html
+                    output: web, pdf
+
+              - title: Hyrax Version 1.0
+                output: web, pdf
+                subfolderitems:
+                  - title: Creating a Work
+                    url: /create-works-1.0.html
+                    output: web, pdf
+
+                  - title: Editing a Work
+                    url: /edit-works-1.0.html
+                    output: web, pdf
+
+                  - title: Batch Operations
+                    url: /batch-works-1.0.html
+                    output: web, pdf
+
+      - title: Development Resources
         output: web, pdf
-        subfolderitems:
+        folderitems:
+          - title: Access Controls and Visibility
+            url: /access-controls.html
+            output: web
 
-        - title: Release Process
-          url: /release_process.html
-          output: web, pdf
+            subfolders:
+              - title: Creating User Groups
+                output: web
+                subfolderitems:
+                  - title: Default Setup
+                    url: /groups.html
+                    output: web
 
-        - title: Release Testing
-          url: /release_testing.html
-          output: web, pdf
+                  - title: Database-backed Setup
+                    url: /admin-users.html
+                    output: web
 
-  - title: Feature Guides
-    output: web, pdf
-    folderitems:
+              - title: Collections and Admin Sets
+                output: web
+                subfolderitems:
+                  - title: "Overview"
+                    url: /collection-overview.html
+                    output: web
 
-    - title: Introduction
-      url: /intro-to.html
-      output: web, pdf
+                  - title: "Collection Types"
+                    url: /collection-types.html
+                    output: web
 
-      subfolders:
-      
-      - title: Hyrax Version 3.x
+                  - title: "Admin Sets as Collections FAQ"
+                    url: /admin-sets-as-collections-faq.html
+                    output: web
+
+                  - title: "Admin Set Participants"
+                    url: /admin-set-participants.html
+                    output: web
+
+                  - title: "Collection Type Participants"
+                    url: /collection-type-participants.html
+                    output: web
+
+                  - title: "Collection Sharing"
+                    url: /collection-sharing.html
+                    output: web
+
+                  - title: "Collection Nesting FAQ"
+                    url: /collection-nesting-faq.html
+                    output: web
+
+                  - title: "Collection Discovery FAQ"
+                    url: /collection-discovery-faq.html
+                    output: web
+
+                  - title: "Collection Metadata FAQ"
+                    url: /collection-metadata-faq.html
+                    output: web
+
+                  - title: "Collection Indexing"
+                    url: /nested-indexing.html
+                    output: web
+
+              - title: Customizing Metadata Tutorial
+                output: web
+                subfolderitems:
+                  - title: "Prereq: Generating a Work Type"
+                    url: /customize-metadata-generate-work-type.html
+                    output: web
+
+                  - title: "Prereq: Defining a Controlled Vocabulary"
+                    url: /customize-metadata-controlled-vocabulary.html
+                    output: web
+
+                  - title: "Metadata Application Profile"
+                    url: /metadata_application_profile.html
+                    output: web
+
+                  - title: Labels and Help Text
+                    url: /customize-metadata-labels.html
+                    output: web
+
+                  - title: Understanding the Controller
+                    url: /customize-metadata-controller.html
+                    output: web
+
+                  - title: Defining Metadata in the Model
+                    url: /customize-metadata-model.html
+                    output: web
+
+                  - title: Modifying the Edit Form
+                    url: /customize-metadata-edit-form.html
+                    output: web
+
+                  - title: Modifying the Show Page
+                    url: /customize-metadata-show-page.html
+                    output: web
+
+                  - title: Configuring Discovery
+                    url: /customize-metadata-discovery.html
+                    output: web
+
+                  - title: Other Metadata Customizations
+                    url: /customize-metadata-other-customizations.html
+                    output: web
+
+              - title: "Depositing Works"
+                output: web
+                subfolderitems:
+                  - title: What Happens (1.0)
+                    url: /what-happens-deposit-1.0.html
+                    output: web
+
+                  - title: What Happens (2.0)
+                    url: /what-happens-deposit-2.0.html
+                    output: web
+
+          - title: Enabling Features
+            url: /toggle-features.html
+            output: web
+
+            subfolders:
+              - title: "Managing Hyrax Notifications"
+                output: web
+                subfolderitems:
+                  - title: Email Notifications
+                    url: /email_notifications.html
+                    output: web
+
+                  - title: How-To Disable User Notifications v
+                    url: /how-to-disable-notifications.html
+                    output: web
+
+              - title: "Samvera Design Patterns"
+                output: web
+                subfolderitems:
+                  - title: Overview
+                    url: /patterns-overview.html
+                    output: web
+
+                  - title: Presenters
+                    url: /patterns-presenters.html
+                    output: web
+
+                  - title: Actor Stack
+                    url: /actor_stack.html
+                    output: web
+
+                  - title: Search Builders
+                    url: /building-searches.html
+                    output: web
+
+          - title: Storing Binaries Externally
+            url: /external_binaries.html
+            output: web
+
+          - title: Troubleshooting RIIIF
+            url: /troubleshooting_riiif.html
+            output: web
+
+          - title: Workflow and Mediated Deposit
+            url: /workflow_and_mediated_deposit.html
+            output: web
+
+      - title: Running in Production
         output: web, pdf
-        subfolderitems:
-        
-        - title: Manage Proxies
-          url: /manage-proxies-3.x.html
-          output: web, pdf
-          
-        - title: User Collections
-          url: /user-collections-3.x.html
-          output: web, pdf    
-          
-        - title: Administrative Sets
-          url: /administrative-sets-3.x.html
-          output: web, pdf
-          
-         
-          
-      - title: Hyrax Version 2.1
-        output: web, pdf
-        subfolderitems:
-
-        - title: Configuring the Repository
-          url: /configuration-2.1.html
-          output: web, pdf
-
-        - title: Creating a Work
-          url: /create-works-2.1.html
-          output: web, pdf
-
-        - title: Editing a Work
-          url: /edit-works-2.1.html
-          output: web, pdf
-
-        - title: Collections
-          url: /collections-2.1.html
-          output: web, pdf
-
-        - title: Batch Operations
-          url: /batch-ops-2.1.html
-          output: web, pdf
-
-        - title: Leases and Embargoes
-          url: /lease-embargoes-2.1.html
-          output: web, pdf
-
-      - title: Hyrax Version 2.0
-        output: web, pdf
-        subfolderitems:
-
-        - title: Configuring the Repository
-          url: /configuration-2.0.html
-          output: web, pdf
-
-        - title: Creating a Work
-          url: /create-works-2.0.html
-          output: web, pdf
-
-        - title: Editing a Work
-          url: /edit-works-2.0.html
-          output: web, pdf
-
-        - title: Administrative Sets
-          url: /admin-sets-2.0.html
-          output: web, pdf
-
-        - title: Collections
-          url: /collections-2.0.html
-          output: web, pdf
-
-        - title: Batch Operations
-          url: /batch-works-2.0.html
-          output: web, pdf
-
-        - title: Leases and Embargoes
-          url: /lease-embargoes-2.0.html
-          output: web, pdf
-
-      - title: Hyrax Version 1.0
-        output: web, pdf
-        subfolderitems:
-
-        - title: Creating a Work
-          url: /create-works-1.0.html
-          output: web, pdf
-
-        - title: Editing a Work
-          url: /edit-works-1.0.html
-          output: web, pdf
-
-        - title: Batch Operations
-          url: /batch-works-1.0.html
-          output: web, pdf
-
-  - title: Development Resources
-    output: web, pdf
-    folderitems:
-
-    - title: Access Controls and Visibility
-      url: /access-controls.html
-      output: web
-
-      subfolders:
-      - title: Creating User Groups
-        output: web
-        subfolderitems:
-
-        - title: Default Setup
-          url: /groups.html
-          output: web
-
-        - title: Database-backed Setup
-          url: /admin-users.html
-          output: web
-
-      - title: Collections and Admin Sets
-        output: web
-        subfolderitems:
-
-        - title: "Overview"
-          url: /collection-overview.html
-          output: web
-
-        - title: "Collection Types"
-          url: /collection-types.html
-          output: web
-
-        - title: "Admin Sets as Collections FAQ"
-          url: /admin-sets-as-collections-faq.html
-          output: web
-
-        - title: "Admin Set Participants"
-          url: /admin-set-participants.html
-          output: web
-
-        - title: "Collection Type Participants"
-          url: /collection-type-participants.html
-          output: web
-
-        - title: "Collection Sharing"
-          url: /collection-sharing.html
-          output: web
-
-        - title: "Collection Nesting FAQ"
-          url: /collection-nesting-faq.html
-          output: web
-
-        - title: "Collection Discovery FAQ"
-          url: /collection-discovery-faq.html
-          output: web
-
-        - title: "Collection Metadata FAQ"
-          url: /collection-metadata-faq.html
-          output: web
-
-        - title: "Collection Indexing"
-          url: /nested-indexing.html
-          output: web
-
-      - title: Customizing Metadata Tutorial
-        output: web
-        subfolderitems:
-
-        - title: "Prereq: Generating a Work Type"
-          url: /customize-metadata-generate-work-type.html
-          output: web
-
-        - title: "Prereq: Defining a Controlled Vocabulary"
-          url: /customize-metadata-controlled-vocabulary.html
-          output: web
-
-        - title: "Metadata Application Profile"
-          url: /metadata_application_profile.html
-          output: web
-
-        - title: Labels and Help Text
-          url: /customize-metadata-labels.html
-          output: web
-
-        - title: Understanding the Controller
-          url: /customize-metadata-controller.html
-          output: web
-
-        - title: Defining Metadata in the Model
-          url: /customize-metadata-model.html
-          output: web
-
-        - title: Modifying the Edit Form
-          url: /customize-metadata-edit-form.html
-          output: web
-
-        - title: Modifying the Show Page
-          url: /customize-metadata-show-page.html
-          output: web
-
-        - title: Configuring Discovery
-          url: /customize-metadata-discovery.html
-          output: web
-
-        - title: Other Metadata Customizations
-          url: /customize-metadata-other-customizations.html
-          output: web
-
-      - title: 'Depositing Works'
-        output: web
-        subfolderitems:
-
-        - title: What Happens (1.0)
-          url: /what-happens-deposit-1.0.html
-          output: web
-
-        - title: What Happens (2.0)
-          url: /what-happens-deposit-2.0.html
-          output: web
-
-    - title: Enabling Features
-      url: /toggle-features.html
-      output: web
-
-      subfolders:
-      - title: 'Managing Hyrax Notifications'
-        output: web
-        subfolderitems:
-
-        - title: Email Notifications
-          url: /email_notifications.html
-          output: web
-
-        - title: How-To Disable User Notifications v
-          url: /how-to-disable-notifications.html
-          output: web
-
-      - title: 'Samvera Design Patterns'
-        output: web
-        subfolderitems:
-
-        - title: Overview
-          url: /patterns-overview.html
-          output: web
-
-        - title: Presenters
-          url: /patterns-presenters.html
-          output: web
-
-        - title: Actor Stack
-          url: /actor_stack.html
-          output: web
-
-        - title: Search Builders
-          url: /building-searches.html
-          output: web
-
-    - title: Storing Binaries Externally
-      url: /external_binaries.html
-      output: web
-
-    - title: Troubleshooting RIIIF
-      url: /troubleshooting_riiif.html
-      output: web
-
-    - title: Workflow and Mediated Deposit
-      url: /workflow_and_mediated_deposit.html
-      output: web
-
-  - title: Running in Production
-    output: web, pdf
-    folderitems:
-
-    - title: Samvera Services Stack
-      url: /service-stack.html
-      output: web, pdf
-
-    - title: Campus Authentication with Shibboleth
-      url: /campus-auth-integrating.html
-      output: web, pdf
-
-    - title: Troubleshooting Production
-      url: /troubleshooting-production.html
-      output: web, pdf
+        folderitems:
+          - title: Samvera Services Stack
+            url: /service-stack.html
+            output: web, pdf
+
+          - title: Campus Authentication with Shibboleth
+            url: /campus-auth-integrating.html
+            output: web, pdf
+
+          - title: Troubleshooting Production
+            url: /troubleshooting-production.html
+            output: web, pdf

@@ -1,24 +1,31 @@
 ---
 title: "Prereq: Defining a Controlled Vocabulary"
 permalink: customize-metadata-controlled-vocabulary.html
-keywords: ["Customize", "Metadata", "Controlled Vocabulary", "Controlled Vocabularies", "Tutorial"]
+keywords:
+  [
+    "Customize",
+    "Metadata",
+    "Controlled Vocabulary",
+    "Controlled Vocabularies",
+    "Tutorial",
+  ]
 last_updated:
 version:
-  id: 'hyrax_1.0-stable'
+  id: "hyrax_1.0-stable"
 sidebar: home_sidebar
 ---
 
 <ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>
 
-Creating controlled vocabularies is not required for your app, but we will be using one in this tutorial.  So we'll go ahead and create it now.
+Creating controlled vocabularies is not required for your app, but we will be using one in this tutorial. So we'll go ahead and create it now.
 
-Controlled vocabularies can be created in your app and then accessed through the [Questioning Authority (QA)](https://github.com/samvera/questioning_authority) gem.  These instructions show a simple way to create your own controlled vocabulary.  To get information on accessing external authorities and details on creating local sub-autorities, see the QA README, especially the [Local Sub-Authorities](https://github.com/samvera/questioning_authority#local-sub-authorities) section.
+Controlled vocabularies can be created in your app and then accessed through the [Questioning Authority (QA)](https://github.com/samvera/questioning_authority) gem. These instructions show a simple way to create your own controlled vocabulary. To get information on accessing external authorities and details on creating local sub-autorities, see the QA README, especially the [Local Sub-Authorities](https://github.com/samvera/questioning_authority#local-sub-authorities) section.
 
-Once the controlled vocabulary is created, you can use it for autocomplete.  See [Modifying the Edit Form]() -> [Customizing the form field](customize-metadata-edit-form.html#customizing-the-form-field) -> [For a controlled vocabulary](customize-metadata-edit-form.html#for-a-controlled-vocabulary-required).
+Once the controlled vocabulary is created, you can use it for autocomplete. See [Modifying the Edit Form]() -> [Customizing the form field](customize-metadata-edit-form.html#customizing-the-form-field) -> [For a controlled vocabulary](customize-metadata-edit-form.html#for-a-controlled-vocabulary-required).
 
 ## Create a vocabulary
 
-Authorities are defined as a yml file in `config/authorities`.  Here we will define a departments controlled vocabulary.
+Authorities are defined as a yml file in `config/authorities`. Here we will define a departments controlled vocabulary.
 
 ```ruby
 ## config/authorities/departments.yml

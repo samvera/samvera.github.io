@@ -4,10 +4,12 @@ permalink: access-controls.html
 keywords: ["Visibility", "Access Controls", "Authorization"]
 last_updated:
 tags: [development_resources]
-summary: 'An overview of how Samvera applications authorize users to see content and perform actions'
+summary: "An overview of how Samvera applications authorize users to see content and perform actions"
 sidebar: home_sidebar
 ---
+
 ### Quickstart
+
 Samvera uses [cancancan](https://github.com/CanCanCommunity/cancancan#1-define-abilities) to do authorization of many actions.
 
 Cancancan generates `app/models/ability.rb` into your application and then hydra-head's generator and later Hyrax's generator each adds a couple of lines so that the class looks like this:
@@ -36,7 +38,7 @@ class Ability
 end
 ```
 
-You don't need to make any changes to this class as the included behavior provides all that you need to get started.   However, if you are integrating an group system other than the default (See Hydra::RoleMapper), then you may want to change who has the admin role.
+You don't need to make any changes to this class as the included behavior provides all that you need to get started. However, if you are integrating an group system other than the default (See Hydra::RoleMapper), then you may want to change who has the admin role.
 
 You can do this by overriding the `admin?` method on the `Ability` class like this:
 
@@ -45,6 +47,7 @@ You can do this by overriding the `admin?` method on the `Ability` class like th
       user_groups.include? 'librarians'
     end
 ```
+
 ### Legacy
 
 In-depth tutorials and explanations of the structure

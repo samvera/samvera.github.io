@@ -11,6 +11,7 @@ folder: samvera/getting_started/
 ---
 
 ### The Hyrax Stack
+
 - [Hyrax ](https://github.com/samvera/hyrax#getting-started)
 
 - [Solr](http://lucene.apache.org/solr/quickstart.html)

@@ -5,6 +5,7 @@ sidebar: home_sidebar
 permalink: index.html
 toc: false
 ---
+
 <div class="row">
    <div class="col-lg-12">
       <h2 class="page-header">Knowledge Base Categories</h2>
@@ -12,6 +13,7 @@ toc: false
       <a href="https://github.com/samvera/samvera.github.io" class="btn btn-lg btn-primary" target="_blank">Contribute New Documentation</a>
 
       <ul class='info'><li>Note: This site is under active development. If there's a content you'd like to see here, or if you notice errors, please create an <a href="https://github.com/samvera/samvera.github.io/issues/new">issue</a>. All content has been reviewed and approved.</li></ul>
+
    </div>
    <div class="col-md-3 col-sm-6">
        <div class="panel panel-default text-center">

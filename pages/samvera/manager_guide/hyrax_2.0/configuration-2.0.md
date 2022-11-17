@@ -9,14 +9,15 @@ keywords:
   - "Configuration"
   - "Settings"
 version:
-  id: 'hyrax_2.0-stable'
-  versions:  
-  - label: 'Hyrax 2.0'
-    link:  'configuration-2.0.html'
-    selected: 'true'
-  - label: 'Hyrax 2.1'
-    link:  'configuration-2.1.html'
+  id: "hyrax_2.0-stable"
+  versions:
+    - label: "Hyrax 2.0"
+      link: "configuration-2.0.html"
+      selected: "true"
+    - label: "Hyrax 2.1"
+      link: "configuration-2.1.html"
 ---
+
 # Configuring the Repository
 
 From the Dashboard, Administrators have several Configuration options.

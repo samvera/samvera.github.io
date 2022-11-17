@@ -1,27 +1,23 @@
-{% case page.version.id %}
-{% when 'hyrax_1.0-stable' %}
-  {% include version_info/version_hyrax_1.0-stable.html %}
-{% when 'hyrax_2.0-stable' %}
-  {% include version_info/version_hyrax_2.0-stable.html %}
-{% when 'hyrax_2.1-stable' %}
-  {% include version_info/version_hyrax_2.1-stable.html %}
-{% else %}
-  {% include version_info/version_custom.html %}
-{% endcase %}
+{% case page.version.id %} {% when 'hyrax_1.0-stable' %} {% include
+version_info/version_hyrax_1.0-stable.html %} {% when 'hyrax_2.0-stable' %} {%
+include version_info/version_hyrax_2.0-stable.html %} {% when 'hyrax_2.1-stable'
+%} {% include version_info/version_hyrax_2.1-stable.html %} {% else %} {%
+include version_info/version_custom.html %} {% endcase %}
 
-<div id='version_container'>
-  <div class='version_label'>{{ version_label }} ( branch: <a href='{{ branch_link }}'>{{ branch_label }}</a> )</div>
+<div id="version_container">
+  <div class="version_label">
+    {{ version_label }} ( branch:
+    <a href="{{ branch_link }}">{{ branch_label }}</a> )
+  </div>
 
   {% if page.version.versions %}
-  <div class='version_selector'>
+  <div class="version_selector">
     Documentation for Versions:
     <select onChange="window.location.href=this.value">
-      {% for version in page.version.versions %}
-        {% assign selected = '' %}
-        {% if version.selected == 'true' %}
-          {% assign selected = ' selected' %}
-        {% endif %}
-      <option value='{{version.link}}'{{selected}}>{{version.label}}</option>
+      {% for version in page.version.versions %} {% assign selected = '' %} {%
+      if version.selected == 'true' %} {% assign selected = ' selected' %} {%
+      endif %}
+      <option value="{{version.link}}" {{selected}}>{{version.label}}</option>
       {% endfor %}
     </select>
   </div>

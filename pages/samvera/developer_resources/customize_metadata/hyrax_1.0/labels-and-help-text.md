@@ -4,7 +4,7 @@ permalink: customize-metadata-labels.html
 keywords: ["Customize", "Metadata", "Labels", "Help Text", "Tutorial"]
 last_updated:
 version:
-  id: 'hyrax_1.0-stable'
+  id: "hyrax_1.0-stable"
 sidebar: home_sidebar
 ---
 
@@ -12,7 +12,7 @@ sidebar: home_sidebar
 
 ## Labels and help text
 
-One of the generated files includes `config/locales/generic_work.en.yml` in which many of the labels used on forms and show pages for the new work type are defined.  You can modify these labels and also add labels for any new properties defined.
+One of the generated files includes `config/locales/generic_work.en.yml` in which many of the labels used on forms and show pages for the new work type are defined. You can modify these labels and also add labels for any new properties defined.
 
 Application specific labels are defined in `config/locales/hyrax.en.yml` which was created when you generated your Hyrax app.
 

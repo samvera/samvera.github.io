@@ -14,7 +14,7 @@ its state, as well as basic key bindings for going to the next and previous
 slides.  More functionality is provided by wholly separate extension modules
 that use the API provided by core.
 */
-(function($, undefined) {
+(function ($, undefined) {
   var slides, currentIndex, $container, $fragmentLinks;
 
   var events = {
@@ -25,7 +25,7 @@ that use the API provided by core.
     on the event object within this event. If that is done, the deck.change
     event will never be fired and the slide will not change.
     */
-    beforeChange: 'deck.beforeChange',
+    beforeChange: "deck.beforeChange",
 
     /*
     This event fires whenever the current slide changes, whether by way of
@@ -38,7 +38,7 @@ that use the API provided by core.
        alert('Moving from slide ' + from + ' to ' + to);
     });
     */
-    change: 'deck.change',
+    change: "deck.change",
 
     /*
     This event fires at the beginning of deck initialization. This event makes
@@ -58,7 +58,7 @@ that use the API provided by core.
     The init event will be fired regardless of locks after
     options.initLockTimeout milliseconds.
     */
-    beforeInitialize: 'deck.beforeInit',
+    beforeInitialize: "deck.beforeInit",
 
     /*
     This event fires at the end of deck initialization. Extensions should
@@ -77,25 +77,25 @@ that use the API provided by core.
        });
     });
     */
-    initialize: 'deck.init'
+    initialize: "deck.init",
   };
 
   var options = {};
   var $document = $(document);
   var $window = $(window);
-  var stopPropagation = function(event) {
+  var stopPropagation = function (event) {
     event.stopPropagation();
   };
 
-  var updateContainerState = function() {
-    var oldIndex = $container.data('onSlide');
+  var updateContainerState = function () {
+    var oldIndex = $container.data("onSlide");
     $container.removeClass(options.classes.onPrefix + oldIndex);
     $container.addClass(options.classes.onPrefix + currentIndex);
-    $container.data('onSlide', currentIndex);
+    $container.data("onSlide", currentIndex);
   };
 
-  var updateChildCurrent = function() {
-    var $oldCurrent = $('.' + options.classes.current);
+  var updateChildCurrent = function () {
+    var $oldCurrent = $("." + options.classes.current);
     var $oldParents = $oldCurrent.parentsUntil(options.selectors.container);
     var $newCurrent = slides[currentIndex];
     var $newParents = $newCurrent.parentsUntil(options.selectors.container);
@@ -103,54 +103,56 @@ that use the API provided by core.
     $newParents.addClass(options.classes.childCurrent);
   };
 
-  var removeOldSlideStates = function() {
+  var removeOldSlideStates = function () {
     var $all = $();
-    $.each(slides, function(i, el) {
+    $.each(slides, function (i, el) {
       $all = $all.add(el);
     });
-    $all.removeClass([
-      options.classes.before,
-      options.classes.previous,
-      options.classes.current,
-      options.classes.next,
-      options.classes.after
-    ].join(' '));
+    $all.removeClass(
+      [
+        options.classes.before,
+        options.classes.previous,
+        options.classes.current,
+        options.classes.next,
+        options.classes.after,
+      ].join(" ")
+    );
   };
 
-  var addNewSlideStates = function() {
+  var addNewSlideStates = function () {
     slides[currentIndex].addClass(options.classes.current);
     if (currentIndex > 0) {
-      slides[currentIndex-1].addClass(options.classes.previous);
+      slides[currentIndex - 1].addClass(options.classes.previous);
     }
     if (currentIndex + 1 < slides.length) {
-      slides[currentIndex+1].addClass(options.classes.next);
+      slides[currentIndex + 1].addClass(options.classes.next);
     }
     if (currentIndex > 1) {
-      $.each(slides.slice(0, currentIndex - 1), function(i, $slide) {
+      $.each(slides.slice(0, currentIndex - 1), function (i, $slide) {
         $slide.addClass(options.classes.before);
       });
     }
     if (currentIndex + 2 < slides.length) {
-      $.each(slides.slice(currentIndex+2), function(i, $slide) {
+      $.each(slides.slice(currentIndex + 2), function (i, $slide) {
         $slide.addClass(options.classes.after);
       });
     }
   };
 
-  var setAriaHiddens = function() {
-    $(options.selectors.slides).each(function() {
+  var setAriaHiddens = function () {
+    $(options.selectors.slides).each(function () {
       var $slide = $(this);
-      var isSub = $slide.closest('.' + options.classes.childCurrent).length;
+      var isSub = $slide.closest("." + options.classes.childCurrent).length;
       var isBefore = $slide.hasClass(options.classes.before) && !isSub;
       var isPrevious = $slide.hasClass(options.classes.previous) && !isSub;
       var isNext = $slide.hasClass(options.classes.next);
       var isAfter = $slide.hasClass(options.classes.after);
       var ariaHiddenValue = isBefore || isPrevious || isNext || isAfter;
-      $slide.attr('aria-hidden', ariaHiddenValue);
+      $slide.attr("aria-hidden", ariaHiddenValue);
     });
   };
 
-  var updateStates = function() {
+  var updateStates = function () {
     updateContainerState();
     updateChildCurrent();
     removeOldSlideStates();
@@ -160,31 +162,30 @@ that use the API provided by core.
     }
   };
 
-  var initSlidesArray = function(elements) {
+  var initSlidesArray = function (elements) {
     if ($.isArray(elements)) {
-      $.each(elements, function(i, element) {
+      $.each(elements, function (i, element) {
         slides.push($(element));
       });
-    }
-    else {
-      $(elements).each(function(i, element) {
+    } else {
+      $(elements).each(function (i, element) {
         slides.push($(element));
       });
     }
   };
 
-  var bindKeyEvents = function() {
+  var bindKeyEvents = function () {
     var editables = [
-      'input',
-      'textarea',
-      'select',
-      'button',
-      'meter',
-      'progress',
-      '[contentEditable]'
-    ].join(', ');
+      "input",
+      "textarea",
+      "select",
+      "button",
+      "meter",
+      "progress",
+      "[contentEditable]",
+    ].join(", ");
 
-    $document.unbind('keydown.deck').bind('keydown.deck', function(event) {
+    $document.unbind("keydown.deck").bind("keydown.deck", function (event) {
       if (event.altKey) {
         // ignore events when the ALT key is down
         // NB: browsers use ALT+arrow to navigate history
@@ -198,34 +199,33 @@ that use the API provided by core.
       if (isNext) {
         methods.next();
         event.preventDefault();
-      }
-      else if (isPrev) {
+      } else if (isPrev) {
         methods.prev();
         event.preventDefault();
       }
     });
 
-    $document.undelegate(editables, 'keydown.deck', stopPropagation);
-    $document.delegate(editables, 'keydown.deck', stopPropagation);
+    $document.undelegate(editables, "keydown.deck", stopPropagation);
+    $document.delegate(editables, "keydown.deck", stopPropagation);
   };
 
-  var bindTouchEvents = function() {
+  var bindTouchEvents = function () {
     var startTouch;
     var direction = options.touch.swipeDirection;
     var tolerance = options.touch.swipeTolerance;
-    var listenToHorizontal = ({ both: true, horizontal: true })[direction];
-    var listenToVertical = ({ both: true, vertical: true })[direction];
+    var listenToHorizontal = { both: true, horizontal: true }[direction];
+    var listenToVertical = { both: true, vertical: true }[direction];
 
-    $container.unbind('touchstart.deck');
-    $container.bind('touchstart.deck', function(event) {
+    $container.unbind("touchstart.deck");
+    $container.bind("touchstart.deck", function (event) {
       if (!startTouch) {
         startTouch = $.extend({}, event.originalEvent.targetTouches[0]);
       }
     });
 
-    $container.unbind('touchmove.deck');
-    $container.bind('touchmove.deck', function(event) {
-      $.each(event.originalEvent.changedTouches, function(i, touch) {
+    $container.unbind("touchmove.deck");
+    $container.bind("touchmove.deck", function (event) {
+      $.each(event.originalEvent.changedTouches, function (i, touch) {
         if (!startTouch || touch.identifier !== startTouch.identifier) {
           return true;
         }
@@ -237,11 +237,10 @@ that use the API provided by core.
         var bottomToTop = yDistance < -tolerance && listenToVertical;
 
         if (leftToRight || topToBottom) {
-          $.deck('prev');
+          $.deck("prev");
           startTouch = undefined;
-        }
-        else if (rightToLeft || bottomToTop) {
-          $.deck('next');
+        } else if (rightToLeft || bottomToTop) {
+          $.deck("next");
           startTouch = undefined;
         }
         return false;
@@ -252,9 +251,9 @@ that use the API provided by core.
       }
     });
 
-    $container.unbind('touchend.deck');
-    $container.bind('touchend.deck', function(event) {
-      $.each(event.originalEvent.changedTouches, function(i, touch) {
+    $container.unbind("touchend.deck");
+    $container.bind("touchend.deck", function (event) {
+      $.each(event.originalEvent.changedTouches, function (i, touch) {
         if (startTouch && touch.identifier === startTouch.identifier) {
           startTouch = undefined;
         }
@@ -262,18 +261,18 @@ that use the API provided by core.
     });
   };
 
-  var indexInBounds = function(index) {
-    return typeof index === 'number' && index >=0 && index < slides.length;
+  var indexInBounds = function (index) {
+    return typeof index === "number" && index >= 0 && index < slides.length;
   };
 
-  var createBeforeInitEvent = function() {
+  var createBeforeInitEvent = function () {
     var event = $.Event(events.beforeInitialize);
     event.locks = 0;
     event.done = $.noop;
-    event.lockInit = function() {
+    event.lockInit = function () {
       ++event.locks;
     };
-    event.releaseInit = function() {
+    event.releaseInit = function () {
       --event.locks;
       if (!event.locks) {
         event.done();
@@ -282,65 +281,65 @@ that use the API provided by core.
     return event;
   };
 
-  var goByHash = function(str) {
+  var goByHash = function (str) {
     var id = str.substr(str.indexOf("#") + 1);
 
-    $.each(slides, function(i, $slide) {
-      if ($slide.attr('id') === id) {
-        $.deck('go', i);
+    $.each(slides, function (i, $slide) {
+      if ($slide.attr("id") === id) {
+        $.deck("go", i);
         return false;
       }
     });
 
     // If we don't set these to 0 the container scrolls due to hashchange
     if (options.preventFragmentScroll) {
-      $.deck('getContainer').scrollLeft(0).scrollTop(0);
+      $.deck("getContainer").scrollLeft(0).scrollTop(0);
     }
   };
 
-  var assignSlideId = function(i, $slide) {
-    var currentId = $slide.attr('id');
-    var previouslyAssigned = $slide.data('deckAssignedId') === currentId;
+  var assignSlideId = function (i, $slide) {
+    var currentId = $slide.attr("id");
+    var previouslyAssigned = $slide.data("deckAssignedId") === currentId;
     if (!currentId || previouslyAssigned) {
-      $slide.attr('id', options.hashPrefix + i);
-      $slide.data('deckAssignedId', options.hashPrefix + i);
+      $slide.attr("id", options.hashPrefix + i);
+      $slide.data("deckAssignedId", options.hashPrefix + i);
     }
   };
 
-  var removeContainerHashClass = function(id) {
+  var removeContainerHashClass = function (id) {
     $container.removeClass(options.classes.onPrefix + id);
   };
 
-  var addContainerHashClass = function(id) {
+  var addContainerHashClass = function (id) {
     $container.addClass(options.classes.onPrefix + id);
   };
 
-  var setupHashBehaviors = function() {
+  var setupHashBehaviors = function () {
     $fragmentLinks = $();
-    $.each(slides, function(i, $slide) {
+    $.each(slides, function (i, $slide) {
       var hash;
 
       assignSlideId(i, $slide);
-      hash = '#' + $slide.attr('id');
+      hash = "#" + $slide.attr("id");
       if (hash === window.location.hash) {
-        setTimeout(function() {
-          $.deck('go', i);
+        setTimeout(function () {
+          $.deck("go", i);
         }, 1);
       }
       $fragmentLinks = $fragmentLinks.add('a[href="' + hash + '"]');
     });
 
     if (slides.length) {
-      addContainerHashClass($.deck('getSlide').attr('id'));
-    };
+      addContainerHashClass($.deck("getSlide").attr("id"));
+    }
   };
 
-  var changeHash = function(from, to) {
-    var hash = '#' + $.deck('getSlide', to).attr('id');
-    var hashPath = window.location.href.replace(/#.*/, '') + hash;
+  var changeHash = function (from, to) {
+    var hash = "#" + $.deck("getSlide", to).attr("id");
+    var hashPath = window.location.href.replace(/#.*/, "") + hash;
 
-    removeContainerHashClass($.deck('getSlide', from).attr('id'));
-    addContainerHashClass($.deck('getSlide', to).attr('id'));
+    removeContainerHashClass($.deck("getSlide", from).attr("id"));
+    addContainerHashClass($.deck("getSlide", to).attr("id"));
     if (Modernizr.history) {
       window.history.replaceState({}, "", hashPath);
     }
@@ -348,7 +347,6 @@ that use the API provided by core.
 
   /* Methods exposed in the jQuery.deck namespace */
   var methods = {
-
     /*
     jQuery.deck(selector, options)
 
@@ -374,7 +372,7 @@ that use the API provided by core.
        '#etc'
     ]);
     */
-    init: function(opts) {
+    init: function (opts) {
       var beforeInitEvent = createBeforeInitEvent();
       var overrides = opts;
 
@@ -382,8 +380,8 @@ that use the API provided by core.
         overrides = arguments[1] || {};
         $.extend(true, overrides, {
           selectors: {
-            slides: arguments[0]
-          }
+            slides: arguments[0],
+          },
         });
       }
 
@@ -398,7 +396,7 @@ that use the API provided by core.
       // populate the array of slides for pre-init
       initSlidesArray(options.selectors.slides);
       // Pre init event for preprocessing hooks
-      beforeInitEvent.done = function() {
+      beforeInitEvent.done = function () {
         // re-populate the array of slides
         slides = [];
         initSlidesArray(options.selectors.slides);
@@ -420,12 +418,14 @@ that use the API provided by core.
       if (!beforeInitEvent.locks) {
         beforeInitEvent.done();
       }
-      window.setTimeout(function() {
+      window.setTimeout(function () {
         if (beforeInitEvent.locks) {
           if (window.console) {
-            window.console.warn('Something locked deck initialization\
+            window.console.warn(
+              "Something locked deck initialization\
               without releasing it before the timeout. Proceeding with\
-              initialization anyway.');
+              initialization anyway."
+            );
           }
           beforeInitEvent.done();
         }
@@ -442,24 +442,23 @@ that use the API provided by core.
     string this will move to the slide with the specified id. If index is out
     of bounds or doesn't match a slide id the call is ignored.
     */
-    go: function(indexOrId) {
+    go: function (indexOrId) {
       var beforeChangeEvent = $.Event(events.beforeChange);
       var index;
 
       /* Number index, easy. */
       if (indexInBounds(indexOrId)) {
         index = indexOrId;
-      }
-      /* Id string index, search for it and set integer index */
-      else if (typeof indexOrId === 'string') {
-        $.each(slides, function(i, $slide) {
-          if ($slide.attr('id') === indexOrId) {
+      } else if (typeof indexOrId === "string") {
+        /* Id string index, search for it and set integer index */
+        $.each(slides, function (i, $slide) {
+          if ($slide.attr("id") === indexOrId) {
             index = i;
             return false;
           }
         });
       }
-      if (typeof index === 'undefined') {
+      if (typeof index === "undefined") {
         return;
       }
 
@@ -480,8 +479,8 @@ that use the API provided by core.
     Moves to the next slide. If the last slide is already active, the call
     is ignored.
     */
-    next: function() {
-      methods.go(currentIndex+1);
+    next: function () {
+      methods.go(currentIndex + 1);
     },
 
     /*
@@ -490,8 +489,8 @@ that use the API provided by core.
     Moves to the previous slide. If the first slide is already active, the
     call is ignored.
     */
-    prev: function() {
-      methods.go(currentIndex-1);
+    prev: function () {
+      methods.go(currentIndex - 1);
     },
 
     /*
@@ -502,8 +501,8 @@ that use the API provided by core.
     Returns a jQuery object containing the slide at index. If index is not
     specified, the current slide is returned.
     */
-    getSlide: function(index) {
-      index = typeof index !== 'undefined' ? index : currentIndex;
+    getSlide: function (index) {
+      index = typeof index !== "undefined" ? index : currentIndex;
       if (!indexInBounds(index)) {
         return null;
       }
@@ -515,7 +514,7 @@ that use the API provided by core.
 
     Returns all slides as an array of jQuery objects.
     */
-    getSlides: function() {
+    getSlides: function () {
       return slides;
     },
 
@@ -524,11 +523,11 @@ that use the API provided by core.
 
     Returns all slides that are not subslides.
     */
-    getTopLevelSlides: function() {
+    getTopLevelSlides: function () {
       var topLevelSlides = [];
       var slideSelector = options.selectors.slides;
-      var subSelector = [slideSelector, slideSelector].join(' ');
-      $.each(slides, function(i, $slide) {
+      var subSelector = [slideSelector, slideSelector].join(" ");
+      $.each(slides, function (i, $slide) {
         if (!$slide.is(subSelector)) {
           topLevelSlides.push($slide);
         }
@@ -545,16 +544,15 @@ that use the API provided by core.
     specified it returns the nested slides of the slide at that index.
     If there are no nested slides this will return an empty array.
     */
-    getNestedSlides: function(index) {
+    getNestedSlides: function (index) {
       var targetIndex = index == null ? currentIndex : index;
-      var $targetSlide = $.deck('getSlide', targetIndex);
+      var $targetSlide = $.deck("getSlide", targetIndex);
       var $nesteds = $targetSlide.find(options.selectors.slides);
       var nesteds = $nesteds.get();
-      return $.map(nesteds, function(slide, i) {
+      return $.map(nesteds, function (slide, i) {
         return $(slide);
       });
     },
-
 
     /*
     jQuery.deck('getContainer')
@@ -562,7 +560,7 @@ that use the API provided by core.
     Returns a jQuery object containing the deck container as defined by the
     container option.
     */
-    getContainer: function() {
+    getContainer: function () {
       return $container;
     },
 
@@ -572,7 +570,7 @@ that use the API provided by core.
     Returns the options object for the deck, including any overrides that
     were defined at initialization.
     */
-    getOptions: function() {
+    getOptions: function () {
       return options;
     },
 
@@ -594,18 +592,17 @@ that use the API provided by core.
     // Alerts 'boom'
     $.deck('alert', 'boom');
     */
-    extend: function(name, method) {
+    extend: function (name, method) {
       methods[name] = method;
-    }
+    },
   };
 
   /* jQuery extension */
-  $.deck = function(method, arg) {
+  $.deck = function (method, arg) {
     var args = Array.prototype.slice.call(arguments, 1);
     if (methods[method]) {
       return methods[method].apply(this, args);
-    }
-    else {
+    } else {
       return methods.init(method, arg);
     }
   };
@@ -699,53 +696,52 @@ that use the API provided by core.
   */
   $.deck.defaults = {
     classes: {
-      after: 'deck-after',
-      before: 'deck-before',
-      childCurrent: 'deck-child-current',
-      current: 'deck-current',
-      loading: 'deck-loading',
-      next: 'deck-next',
-      onPrefix: 'on-slide-',
-      previous: 'deck-previous'
+      after: "deck-after",
+      before: "deck-before",
+      childCurrent: "deck-child-current",
+      current: "deck-current",
+      loading: "deck-loading",
+      next: "deck-next",
+      onPrefix: "on-slide-",
+      previous: "deck-previous",
     },
 
     selectors: {
-      container: '.deck-container',
-      slides: '.slide'
+      container: ".deck-container",
+      slides: ".slide",
     },
 
     keys: {
       // enter, space, page down, right arrow, down arrow,
       next: [13, 32, 34, 39, 40],
       // backspace, page up, left arrow, up arrow
-      previous: [8, 33, 37, 38]
+      previous: [8, 33, 37, 38],
     },
 
     touch: {
-      swipeDirection: 'horizontal',
-      swipeTolerance: 60
+      swipeDirection: "horizontal",
+      swipeTolerance: 60,
     },
 
     initLockTimeout: 10000,
-    hashPrefix: 'slide-',
+    hashPrefix: "slide-",
     preventFragmentScroll: true,
-    setAriaHiddens: true
+    setAriaHiddens: true,
   };
 
-  $document.ready(function() {
-    $('html').addClass('ready');
+  $document.ready(function () {
+    $("html").addClass("ready");
   });
 
-  $window.bind('hashchange.deck', function(event) {
+  $window.bind("hashchange.deck", function (event) {
     if (event.originalEvent && event.originalEvent.newURL) {
       goByHash(event.originalEvent.newURL);
-    }
-    else {
+    } else {
       goByHash(window.location.hash);
     }
   });
 
-  $window.bind('load.deck', function() {
+  $window.bind("load.deck", function () {
     if (options.preventFragmentScroll) {
       $container.scrollLeft(0).scrollTop(0);
     }

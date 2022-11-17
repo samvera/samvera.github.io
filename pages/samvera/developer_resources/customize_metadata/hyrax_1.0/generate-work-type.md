@@ -4,7 +4,7 @@ permalink: customize-metadata-generate-work-type.html
 keywords: ["Customize", "Metadata", "Work Types", "Tutorial"]
 last_updated:
 version:
-  id: 'hyrax_1.0-stable'
+  id: "hyrax_1.0-stable"
 sidebar: home_sidebar
 ---
 
@@ -12,13 +12,13 @@ sidebar: home_sidebar
 
 ## Generating a new work type
 
-We'll begin by generating a new Hyrax work-type for Hyrax for use in the tutorial.  We'll call our work type `GenericWork` although you could use any name you choose (e.g. `Image`, `ETD`, etc).  The first step is to run this generator:
+We'll begin by generating a new Hyrax work-type for Hyrax for use in the tutorial. We'll call our work type `GenericWork` although you could use any name you choose (e.g. `Image`, `ETD`, etc). The first step is to run this generator:
 
 ```
 $ bin/rails generate hyrax:work GenericWork
 ```
 
-This will generate a number of files into your application.  Now we can update these files to handle our customized metadata.
+This will generate a number of files into your application. Now we can update these files to handle our customized metadata.
 
 ---
 

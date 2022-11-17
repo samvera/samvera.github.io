@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -32,7 +33,10 @@ html, body {
   position: relative;
 }
 
-.deck-before, .deck-previous, .deck-next, .deck-after {
+.deck-before,
+.deck-previous,
+.deck-next,
+.deck-after {
   position: absolute;
   left: -999em;
   top: -999em;
@@ -55,7 +59,8 @@ html, body {
 .deck-child-current .slide {
   visibility: hidden;
 }
-.deck-child-current .deck-previous, .deck-child-current .deck-before, .deck-child-current .deck-current {
+.deck-child-current .deck-previous,
+.deck-child-current .deck-before,
+.deck-child-current .deck-current {
   visibility: visible;
 }
-

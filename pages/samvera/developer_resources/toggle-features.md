@@ -1,17 +1,17 @@
 ---
 title: "How to Enable and Disable Features"
 permalink: toggle-features.html
-keywords: [ "Configuration", "FlipFlop", "Feature Flipper" ]
+keywords: ["Configuration", "FlipFlop", "Feature Flipper"]
 last_updated:
 tags: [development_resources]
-summary: 'A number of Hyrax features can be flipped on and off, either via the Administrative Dashboard or via a YAML configuration file'
+summary: "A number of Hyrax features can be flipped on and off, either via the Administrative Dashboard or via a YAML configuration file"
 sidebar: home_sidebar
 toc: false
 ---
 
 Some features in Hyrax can be flipped on and off from either the Administrative Dashboard, or via a YAML configuration file at `config/features.yml`. This .yml file doesn't ship with Hyrax but can easily be created.
 
-``` ruby
+```ruby
 assign_admin_set:
   enabled: false
 proxy_deposit:
