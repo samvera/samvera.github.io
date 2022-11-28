@@ -12,7 +12,7 @@ toc: false
 
 There are probably many ways of doing this.
 
-Data Curation Experts has a repeatable way for accomplishing it, documented  [here](https://curationexperts.github.io/playbook/authentication/shibboleth.html).
+Data Curation Experts has a repeatable way for accomplishing it, documented  [here](https://curationexperts.github.io/recipes/authentication/shibboleth.html).
 
 ### Authenticate against CAS
 
