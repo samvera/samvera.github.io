@@ -2,16 +2,12 @@
 title: Core Samvera Code Repository
 permalink: core_components.html
 keywords: [ 'Components', 'Labs', 'Community', 'Development', 'Maintenance' ]
-last_updated: May 9, 2022
+last_updated: June 23, 2022
 folder: samvera/developer_community/git_structure/
 ---
 # Samvera Code Repository
 
-The [primary Samvera code repository](https://github.com/samvera) contains the
-Samvera community's current consensus
-on what we are using, maintaining, and recommending. Ideally, this repository
-only contains code modules that are being actively used and maintained. Anything
-that falls into disuse should be a candidate for [deprecation](deprecation.html).
+The [primary Samvera GitHub Organization](https://github.com/samvera) contains the Samvera community's current consensus on what we are using, maintaining, and recommending. Ideally, this repository only contains code modules that are being actively used and maintained. Anything that falls into disuse should be a candidate for [deprecation](deprecation.html).
 
 ## Requirements for a Core Component
 
