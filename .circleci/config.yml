@@ -49,10 +49,7 @@ workflows:
           ruby_version: 3.0.3
       - bundle_and_test:
           name: ruby2-7
-          ruby_version: 2.7.5
-      - bundle_and_test:
-          name: ruby2-6
-          ruby_version: 2.6.9
+          ruby_version: 2.7.7
 
   nightly:
     triggers:
@@ -71,7 +68,4 @@ workflows:
           ruby_version: 3.0.3
       - bundle_and_test:
           name: ruby2-7
-          ruby_version: 2.7.5
-      - bundle_and_test:
-          name: ruby2-6
-          ruby_version: 2.6.9
+          ruby_version: 2.7.7
