@@ -2,7 +2,7 @@
 title: Core Samvera Code Repository
 permalink: core_components.html
 keywords: [ 'Components', 'Labs', 'Community', 'Development', 'Maintenance' ]
-last_updated: May 9, 2022
+last_updated: May 2, 2023
 folder: samvera/developer_community/git_structure/
 ---
 # Samvera Code Repository
@@ -97,7 +97,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [hydra-derivatives](https://github.com/samvera/hydra-derivatives)
 
-**Product Owner:** [Jennifer Lindner](https://github.com/jenlindner)
+**Product Owner:** [Stuart Kenny](https://github.com/stkenny)
 
 **Vital Statistics:**
 
@@ -181,7 +181,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [iiif_manifest](https://github.com/samvera/iiif_manifest)
 
-**Product Owner:** [Adam Wead](https://github.com/awead)
+**Product Owner:** [Karen Shaw](https://github.com/kdid)
 
 **Vital Statistics:**
 
@@ -217,7 +217,7 @@ Please note that Hyrax is not considered a 'component' under the definition used
 
 **Code:** [questioning_authority](https://github.com/samvera/questioning_authority)
 
-**Product Owner:** [Lynette Rayle](https://github.com/elrayle)
+**Product Owner:** [James R. Griffin III](https://github.com/jrgriffiniii)
 
 **Vital Statistics:**
 
