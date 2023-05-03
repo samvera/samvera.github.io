@@ -86,16 +86,6 @@ defaults:
   -
     scope:
       path: ""
-      type: "tooltips"
-    values:
-      layout: "page"
-      comments: true
-      search: true
-      tooltip: true
-
-  -
-    scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"

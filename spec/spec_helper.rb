@@ -17,6 +17,11 @@ require 'capybara/dsl'
 require 'capybara/session'
 require 'rack/jekyll'
 
+require 'logger'
+
+logger = Logger.new(STDOUT)
+logger.level = Logger::INFO
+
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
@@ -109,20 +114,28 @@ RSpec.configure do |config|
   # Configure Capybara to use Selenium.
   Capybara.register_driver :selenium do |app|
     # Configure selenium to use Chrome.
-    Capybara::Selenium::Driver.new(app, :browser => :chrome)
+    Capybara::Selenium::Driver.new(app, browser: :chrome)
   end
+
+  logger = Logger.new(STDOUT)
+  logger.level = Logger::INFO
 
   config.before :suite do
     # Configure Capybara to load the website through rack-jekyll.
     # (force_build: true) builds the site before the tests are run,
     # so our tests are always running against the latest version
     # of our jekyll site.
-    Capybara.app = Rack::Jekyll.new(force_build: true)
+    jekyll_site = Rack::Jekyll.new(force_build: true)
+    Capybara.app = jekyll_site
 
     # Sleep a while to let the site build. Tell the user what you're doing.
-    @wait_for_jekyll = ENV['WAIT_FOR_JEKYLL'].to_i || 5
-    puts "\nWaiting #{@wait_for_jekyll} seconds for the site to build.\n\n"
-    @wait_for_jekyll.times { sleep 1 }
+    wait_for_jekyll = ENV.fetch('WAIT_FOR_JEKYLL', "1")
+    logger.info("Waiting for the Jekyll site to build...")
+
+    while jekyll_site.compiling?
+      build_delay = wait_for_jekyll.to_i
+      build_delay.times { sleep(1) }
+    end
 
     # Run HTMLProofer
     # require 'html-proofer'

@@ -2,7 +2,7 @@
 title: Formalities
 permalink: formalities.html
 last_updated: February 2, 2022
-keywords: ["Formalities", "Contributor"
+keywords: ["Formalities", "Contributor"]
 tags: getting_started
 summary: "Membership in GitHub organizations and repositories"
 folder: samvera/getting_started/
