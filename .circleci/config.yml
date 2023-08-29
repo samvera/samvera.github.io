@@ -9,12 +9,12 @@ jobs:
         type: string
       bundler_version:
         type: string
-        default: 2.3.11
+        default: 2.3.26
     executor:
       name: 'samvera/ruby'
       ruby_version: << parameters.ruby_version >>
     environment:
-      WAIT_FOR_JEKYLL: 10
+      WAIT_FOR_JEKYLL: 1
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     steps:
       - samvera/cached_checkout
@@ -27,6 +27,10 @@ jobs:
               echo "$(git branch --all --list master */master)"
             fi
             [[ -z "$(git branch --all --list master */master)" ]]
+      - run:
+          name: Ensure that libxslt is installed for the nokogiri gem
+          command: |
+            sudo apt-get update && sudo apt-get install -y libxslt1.1 libxslt1-dev pkg-config
       - samvera/bundle:
           ruby_version: << parameters.ruby_version >>
           bundler_version: << parameters.bundler_version >>
@@ -42,17 +46,15 @@ workflows:
   ci:
     jobs:
       - bundle_and_test:
+          name: ruby3-2
+          ruby_version: 3.2.2
+          bundler_version: 2.3.26
+      - bundle_and_test:
           name: ruby3-1
-          ruby_version: 3.1.1
+          ruby_version: 3.1.4
       - bundle_and_test:
           name: ruby3-0
-          ruby_version: 3.0.3
-      - bundle_and_test:
-          name: ruby2-7
-          ruby_version: 2.7.5
-      - bundle_and_test:
-          name: ruby2-6
-          ruby_version: 2.6.9
+          ruby_version: 3.0.6
 
   nightly:
     triggers:
@@ -64,14 +66,12 @@ workflows:
                 - main
     jobs:
       - bundle_and_test:
+          name: ruby3-2
+          ruby_version: 3.2.2
+          bundler_version: 2.3.26
+      - bundle_and_test:
           name: ruby3-1
-          ruby_version: 3.1.1
+          ruby_version: 3.1.4
       - bundle_and_test:
           name: ruby3-0
-          ruby_version: 3.0.3
-      - bundle_and_test:
-          name: ruby2-7
-          ruby_version: 2.7.5
-      - bundle_and_test:
-          name: ruby2-6
-          ruby_version: 2.6.9
+          ruby_version: 3.0.6
